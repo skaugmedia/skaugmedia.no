@@ -23,16 +23,18 @@ export function Home() {
       <div className="flex-container">
         <div className="flex-child text-container">
           <div className="intro-tekst">
-            Nina Merethe Skaug <p>Fotograf og designer på Jessheim</p>
+            Nina Merethe Skaug <br />
+            Fotograf og designer på Jessheim
           </div>
           <div className="uthevet-intro-tekst">
             Portrettfoto, produktfoto,
-            <p>matfoto og grafisk design.</p>
+            <br />
+            matfoto og grafisk design.
           </div>
-          <Button>Kontakt meg</Button>
+          <Button className="homecontactbutton">Kontakt meg</Button>
         </div>
 
-        <div class="flex-child image-container">
+        <div className="flex-child image-container">
           <img className="foto-header" src={liamforside} alt="Liam"></img>
           <img
             className="foto-header"

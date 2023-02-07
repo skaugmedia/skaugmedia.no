@@ -1,5 +1,7 @@
 import "./button.css";
 
 export default function Button(props) {
-  return <button className="button">{props.children}</button>;
+  return (
+    <button className={`button ${props.className}`}>{props.children}</button>
+  );
 }

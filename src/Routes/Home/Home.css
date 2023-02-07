@@ -1,5 +1,9 @@
 .flex-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  justify-items: stretch;
+  justify-content: center;
 }
 
 .flex-child:not(:last-child) {
@@ -10,21 +14,21 @@
   color: var(--lightblue);
   font-weight: 100;
   text-align: right;
-  line-height: 7pt;
 }
 
 .uthevet-intro-tekst {
   color: white;
   text-transform: uppercase;
-  line-height: 12pt;
   font-size: x-large;
   font-weight: 700;
 }
 
 .foto-header {
   width: 275px;
-  margin: 20px;
-  align-items: center;
+}
+
+.foto-header:not(:last-child) {
+  margin-right: 20px;
 }
 
 .section-intro {
@@ -35,7 +39,9 @@
   display: flex;
   align-items: flex-end;
   flex-flow: column;
+  justify-self: end;
   width: 550px;
+  align-self: center;
 }
 
 .image-container {
@@ -47,4 +53,8 @@
   background-color: var(--blue);
   padding-top: 85px;
   padding-bottom: 85px;
+}
+
+.homecontactbutton {
+  margin-top: 20px;
 }
