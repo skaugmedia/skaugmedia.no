@@ -1,0 +1,50 @@
+.flex-container {
+  display: flex;
+}
+
+.flex-child:not(:last-child) {
+  margin-right: 0px;
+}
+
+.intro-tekst {
+  color: var(--lightblue);
+  font-weight: 100;
+  text-align: right;
+  line-height: 7pt;
+}
+
+.uthevet-intro-tekst {
+  color: white;
+  text-transform: uppercase;
+  line-height: 12pt;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.foto-header {
+  width: 275px;
+  margin: 20px;
+  align-items: center;
+}
+
+.section-intro {
+  width: full;
+}
+
+.text-container {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column;
+  width: 550px;
+}
+
+.image-container {
+  display: flex;
+  width: 890px;
+}
+
+.background-intro {
+  background-color: var(--blue);
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
