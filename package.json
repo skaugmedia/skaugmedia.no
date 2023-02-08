@@ -14,7 +14,7 @@
   },
   "browserslist": ">0.2%, not dead, not op_mini all",
   "scripts": {
-    "start": "parcel watch public/index.html",
+    "start": "parcel serve public/index.html",
     "build": "parcel build public/index.html"
   },
   "devDependencies": {

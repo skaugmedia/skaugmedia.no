@@ -41,7 +41,28 @@ function Root() {
       <main>
         <Outlet />
       </main>
-      <footer></footer>
+      <footer>
+        <div className="footer-links">
+          <NavLink className="footer-link" to={Home.route}>
+            {Home.pageName}
+          </NavLink>
+          <NavLink className="footer-link" to={Photography.route}>
+            {Photography.pageName}
+          </NavLink>
+          <NavLink className="footer-link" to={GraphicalDesign.route}>
+            {GraphicalDesign.pageName}
+          </NavLink>
+          <NavLink className="footer-link" to={Prices.route}>
+            {Prices.pageName}
+          </NavLink>
+          <NavLink className="footer-link" to={About.route}>
+            {About.pageName}
+          </NavLink>
+          <NavLink className="footer-link" to={Contact.route}>
+            {Contact.pageName}
+          </NavLink>
+        </div>
+      </footer>
     </div>
   );
 }

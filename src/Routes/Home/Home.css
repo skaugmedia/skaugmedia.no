@@ -1,9 +1,18 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .flex-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: auto 1fr;
   gap: 50px;
   justify-items: stretch;
   justify-content: center;
+  max-width: var(--content-width);
+  width: 100%;
 }
 
 .flex-child:not(:last-child) {
@@ -14,42 +23,40 @@
   color: var(--lightblue);
   font-weight: 100;
   text-align: right;
+  font-size: 16px;
 }
 
 .uthevet-intro-tekst {
   color: white;
   text-transform: uppercase;
-  font-size: x-large;
+  font-size: 20px;
   font-weight: 700;
+  text-align: right;
 }
 
 .foto-header {
-  width: 275px;
+  width: 31.5%;
 }
 
 .foto-header:not(:last-child) {
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
-.section-intro {
-  width: full;
-}
-
-.text-container {
+.section.intro .text-container {
   display: flex;
   align-items: flex-end;
   flex-flow: column;
   justify-self: end;
-  width: 550px;
   align-self: center;
 }
 
-.image-container {
+.section.intro .image-container {
   display: flex;
-  width: 890px;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.background-intro {
+.section.intro {
   background-color: var(--blue);
   padding-top: 85px;
   padding-bottom: 85px;
@@ -57,4 +64,57 @@
 
 .homecontactbutton {
   margin-top: 20px;
+}
+
+.round-nina {
+  width: 220px;
+}
+
+.nina-text {
+  text-align: left;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+.skaugmedia-overskrift {
+  color: var(--blue);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.lesmer-button {
+  background-color: var(--blue);
+  color: white;
+}
+
+.works-img {
+  width: 330px;
+}
+
+.works-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section.works {
+  background-color: var(--lightgreen);
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.skaugmedia.section .text-container {
+  text-align: left;
+  font-size: 18px;
+  padding-left: 30px;
+}
+.skaugmedia.section .image-container {
+  justify-self: end;
+}
+
+.skaugmedia.section.flex-container {
+  grid-template-columns: 1fr 3fr;
+}
+.section.skaugmedia {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
