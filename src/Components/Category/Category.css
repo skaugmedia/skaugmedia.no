@@ -1,0 +1,20 @@
+.photography-category-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.photography-category-title {
+  color: var(--green);
+  text-align: left;
+  font-weight: 700;
+}
+
+.photography-category-count {
+  text-align: left;
+  font-weight: 200;
+}
+
+.photography-category {
+  position: relative;
+}

@@ -1,0 +1,7 @@
+.underline {
+  height: 1.5px;
+  width: 230px;
+  background-color: var(--green);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

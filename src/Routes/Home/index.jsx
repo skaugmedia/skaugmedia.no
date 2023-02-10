@@ -1,4 +1,7 @@
+import * as Contact from "../Contact";
+import * as About from "../About";
 import Button from "../../Components/Button";
+import { ButtonLink } from "../../Components/ButtonLink";
 import "./Home.css";
 
 export const route = "";
@@ -55,7 +58,9 @@ export function Home() {
               <br />
               matfoto og grafisk design.
             </div>
-            <Button className="homecontactbutton">Kontakt meg</Button>
+            <ButtonLink to={Contact.route} className="homecontactbutton">
+              Kontakt meg
+            </ButtonLink>
           </div>
           <div className="flex-child image-container">
             <img className="foto-header" src={liamforside} alt="Liam"></img>
@@ -90,57 +95,78 @@ export function Home() {
               holder til på Jessheim i Ullensaker kommune, men <br />
               fotograferer over hele Oslo, Romerike og omegn.
             </div>
-            <Button className="lesmer-button">Les mer</Button>
+            <ButtonLink to={About.route} className="lesmer-button">
+              Les mer
+            </ButtonLink>
           </div>
         </div>
       </div>
       <div className="section works">
-        <div className="works-forside">
-          <img className="works-img" src={liamnyfødtforside} alt="Liam"></img>
-          <div className="works-title">Nyfødt</div>
-          <img className="works-img" src={edwinforside} alt="Edwin"></img>
-          <div className="works-title">Familie og barn</div>
-          <img className="works-img" src={siljeforside} alt="Silje"></img>
-          <div className="works-title">Konfirmant</div>
-          <img className="works-img" src={marianneforside} alt="Marianne"></img>
-          <div className="works-title">Portrett</div>
-          <img
-            className="works-img"
-            src={matforside}
-            alt="Appelsinformkake med mørk sjokolade"
-          ></img>
-          <div className="works-title">Matfotografi</div>
-          <img
-            className="works-img"
-            src={produktforside}
-            alt="Rosendahl champagneglass"
-          ></img>
-          <div className="works-title">Produktfotografi</div>
-          {/*           <img
+        <div className="flex-container works-forside">
+          <div className="flex-child">
+            <img className="works-img" src={liamnyfødtforside} alt="Liam"></img>
+            <div className="works-title">Nyfødt</div>
+          </div>
+          <div className="flex-child">
+            <img className="works-img" src={edwinforside} alt="Edwin"></img>
+            <div className="works-title">Familie og barn</div>
+          </div>
+          <div className="flex-child">
+            <img className="works-img" src={siljeforside} alt="Silje"></img>
+            <div className="works-title">Konfirmant</div>
+          </div>
+          <div className="flex-child">
+            <img
+              className="works-img"
+              src={marianneforside}
+              alt="Marianne"
+            ></img>
+            <div className="works-title">Portrett</div>
+          </div>
+          <div className="flex-child">
+            {" "}
+            <img
+              className="works-img"
+              src={matforside}
+              alt="Appelsinformkake med mørk sjokolade"
+            ></img>
+            <div className="works-title">Matfotografi</div>
+          </div>
+          <div className="flex-child">
+            <img
+              className="works-img"
+              src={produktforside}
+              alt="Rosendahl champagneglass"
+            ></img>
+            <div className="works-title">Produktfotografi</div>
+          </div>
+          {/*        <div className="flex-child">   <img
             className="works-img"
             src={}
             alt=""
           ></img>
-          <div className="works-title">Forlovelse</div>
-          <img
+          <div className="works-title">Forlovelse</div></div>
+          <div className="flex-child"> <img
             className="works-img"
             src={}
             alt=""
           ></img>
-          <div className="works-title">Bryllup</div>
-          <img
+          <div className="works-title">Bryllup</div></div>
+         <div className="flex-child">  <img
             className="works-img"
             src={}
             alt=""
           ></img>
-          <div className="works-title">Interiør</div>  */}
-
-          <img
-            className="works-img"
-            src={designforside}
-            alt="LashBrowser prisliste"
-          ></img>
-          <div className="works-title">Grafisk design</div>
+          <div className="works-title">Interiør</div></div>  */}
+          <div className="flex-child">
+            {" "}
+            <img
+              className="works-img"
+              src={designforside}
+              alt="LashBrowser prisliste"
+            ></img>
+            <div className="works-title">Grafisk design</div>
+          </div>
         </div>
       </div>
     </>

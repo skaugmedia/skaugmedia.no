@@ -88,7 +88,7 @@
 }
 
 .works-img {
-  width: 330px;
+  width: 200px;
 }
 
 .works-title {
@@ -98,14 +98,15 @@
 
 .section.works {
   background-color: var(--lightgreen);
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .skaugmedia.section .text-container {
   text-align: left;
   font-size: 18px;
   padding-left: 30px;
+  padding-top: 40px;
 }
 .skaugmedia.section .image-container {
   justify-self: end;
@@ -117,4 +118,9 @@
 .section.skaugmedia {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.section.works .flex-container {
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
 }

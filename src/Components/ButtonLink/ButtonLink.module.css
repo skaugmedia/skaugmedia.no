@@ -1,0 +1,36 @@
+.button {
+  background-color: white;
+  border-style: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  width: 200px;
+  height: 40px;
+  font-family: oswald;
+  text-transform: uppercase;
+  font-size: large;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--lightblue);
+}
+
+.button:focus {
+  background-color: var(--lightblue);
+}
+.button:visited {
+  color: inherit;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

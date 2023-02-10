@@ -1,3 +1,5 @@
 .DesignHeading {
   color: var(--blue);
+  text-transform: uppercase;
+  text-align: left;
 }
