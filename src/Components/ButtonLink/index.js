@@ -1,25 +1,6 @@
 import { NavLink } from "react-router-dom";
 import buttonLink from "./ButtonLink.module.css";
 
-const business = {
-  title: "adpkfjadsolkfhjlkajn",
-  body: "dafijsadfkljslkj",
-  cover: {
-    title: "fadfsaoj",
-    url: "adfas",
-  },
-  images: [
-    {
-      title: "adfadfkj",
-      url: "adfal",
-    },
-    {
-      title: "adfadfkj",
-      url: "adfal",
-    },
-  ],
-};
-
 const props = {
   className: "ommeg-button",
   children: "Les mer",

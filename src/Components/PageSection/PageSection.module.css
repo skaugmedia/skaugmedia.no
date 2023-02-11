@@ -1,0 +1,11 @@
+.inner {
+  max-width: var(--content-width);
+  width: 100%;
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

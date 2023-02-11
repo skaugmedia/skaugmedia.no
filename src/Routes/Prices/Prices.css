@@ -1,0 +1,88 @@
+.prices {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.prices-content {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.prices-heading {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.category-title {
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.price-category {
+  color: var(--blue);
+  font-weight: 700;
+  text-align: left;
+}
+
+.price-category-price {
+  color: var(--blue);
+  font-weight: 700;
+  text-align: left;
+}
+
+.category-price {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.line-between {
+  height: 1px;
+  width: 100%;
+  background-color: var(--green);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.category-image {
+  max-height: 550px;
+  /* width: 400px; */
+  object-fit: cover;
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.section-category {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 0.5rem;
+  width: 100%;
+}
+
+.price-info {
+  font-weight: 200;
+  text-align: left;
+}
+
+.includes-list {
+  list-style-type: circle;
+}
+
+.price-extra-info {
+  font-size: 0.83em;
+}
+
+.section-divider {
+  height: 2px;
+  width: 80%;
+  max-width: calc(0.8 * var(--content-width));
+  background-color: var(--lightgreen);
+  margin-bottom: 40px;
+  margin-top: 40px;
+}

@@ -1,7 +1,7 @@
 import * as Contact from "../Contact";
 import * as About from "../About";
-import Button from "../../Components/Button";
 import { ButtonLink } from "../../Components/ButtonLink";
+import { PageSection } from "../../Components/PageSection";
 import "./Home.css";
 
 export const route = "";
@@ -46,7 +46,7 @@ const designforside = new URL(
 export function Home() {
   return (
     <>
-      <div className="section intro">
+      <PageSection outerClassName="intro-outer" innerClassName="intro">
         <div className="flex-container">
           <div className="flex-child text-container">
             <div className="intro-tekst">
@@ -76,8 +76,8 @@ export function Home() {
             ></img>
           </div>
         </div>
-      </div>
-      <div className="skaugmedia section">
+      </PageSection>
+      <PageSection innerClassName="skaugmedia">
         <div className="flex-container">
           <div className="flex-child image-container">
             <img
@@ -100,8 +100,8 @@ export function Home() {
             </ButtonLink>
           </div>
         </div>
-      </div>
-      <div className="section works">
+      </PageSection>
+      {/* <PageSection outerClassName="works-outer" innerClassName="works">
         <div className="flex-container works-forside">
           <div className="flex-child">
             <img className="works-img" src={liamnyfødtforside} alt="Liam"></img>
@@ -124,7 +124,6 @@ export function Home() {
             <div className="works-title">Portrett</div>
           </div>
           <div className="flex-child">
-            {" "}
             <img
               className="works-img"
               src={matforside}
@@ -140,7 +139,7 @@ export function Home() {
             ></img>
             <div className="works-title">Produktfotografi</div>
           </div>
-          {/*        <div className="flex-child">   <img
+          {        <div className="flex-child">   <img
             className="works-img"
             src={}
             alt=""
@@ -157,9 +156,8 @@ export function Home() {
             src={}
             alt=""
           ></img>
-          <div className="works-title">Interiør</div></div>  */}
+          <div className="works-title">Interiør</div></div>  }
           <div className="flex-child">
-            {" "}
             <img
               className="works-img"
               src={designforside}
@@ -168,7 +166,7 @@ export function Home() {
             <div className="works-title">Grafisk design</div>
           </div>
         </div>
-      </div>
+      </PageSection> */}
     </>
   );
 }
