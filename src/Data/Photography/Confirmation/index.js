@@ -1,8 +1,7 @@
 import { oneLine } from "common-tags";
 
 export default {
-  title: "Bedrift",
-  date: "2023-02-11",
+  title: "Konfirmant",
   tags: ["jente", "konfirmant", "nasjonaldrakt"],
   body: oneLine`
     adsfgchjvgcfdxzfs<adDFGH
@@ -13,7 +12,7 @@ export default {
     adskgjsøfdgj
   `,
   cover: {
-    url: new URL("./PentOgBrukt/storefront.jpg", import.meta.url),
+    url: new URL("", import.meta.url),
     title: "gfgfg",
   },
   shoots: [
