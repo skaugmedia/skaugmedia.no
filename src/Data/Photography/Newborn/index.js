@@ -48,6 +48,8 @@ export default {
         {
           url: liam7,
           title: "Liam Oleander",
+          width: 667,
+          height: 1000,
         },
       ],
       date: "2021-11-01",
