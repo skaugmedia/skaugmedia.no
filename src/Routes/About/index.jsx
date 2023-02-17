@@ -1,10 +1,9 @@
 import "./About.css";
 import FotografiHeading from "../../Components/Headings/FotografiHeading";
+import aboutnina from "../../Images/me.jpg";
 
 export const route = "ommeg";
 export const pageName = "Om meg";
-
-const aboutnina = new URL("../../Images/me.jpg", import.meta.url);
 
 export function About() {
   return (

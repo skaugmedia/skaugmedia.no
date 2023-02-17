@@ -3,45 +3,20 @@ import * as About from "../About";
 import { ButtonLink } from "../../Components/ButtonLink";
 import { PageSection } from "../../Components/PageSection";
 import "./Home.css";
+import liamforside from "../../Images/liam_kvadrat_forside.jpg";
+import lashbrowserforside from "../../Images/lashbrowser_forside.jpg";
+import konfirmantsiljeforside from "../../Images/konfirmant_silje_forside.jpg";
+import ninaforside from "../../Images/nina_forside.png";
+import liamnyfødtforside from "../../Images/liam_nyfødt_forside.jpg";
+import marianneforside from "../../Images/marianne_forside.jpg";
+import edwinforside from "../../Images/edwin_forside.jpg";
+import siljeforside from "../../Images/silje_forside.jpg";
+import matforside from "../../Images/matfotografi_forside.jpg";
+import produktforside from "../../Images/produkt_forside.jpg";
+import designforside from "../../Images/design_forside.jpg";
 
 export const route = "";
 export const pageName = "Hjem";
-
-const liamforside = new URL(
-  "../../Images/liam_kvadrat_forside.jpg",
-  import.meta.url
-);
-const lashbrowserforside = new URL(
-  "../../Images/lashbrowser_forside.jpg",
-  import.meta.url
-);
-const konfirmantsiljeforside = new URL(
-  "../../Images/konfirmant_silje_forside.jpg",
-  import.meta.url
-);
-const ninaforside = new URL("../../Images/nina_forside.png", import.meta.url);
-const liamnyfødtforside = new URL(
-  "../../Images/liam_nyfødt_forside.jpg",
-  import.meta.url
-);
-const marianneforside = new URL(
-  "../../Images/marianne_forside.jpg",
-  import.meta.url
-);
-const edwinforside = new URL("../../Images/edwin_forside.jpg", import.meta.url);
-const siljeforside = new URL("../../Images/silje_forside.jpg", import.meta.url);
-const matforside = new URL(
-  "../../Images/matfotografi_forside.jpg",
-  import.meta.url
-);
-const produktforside = new URL(
-  "../../Images/produkt_forside.jpg",
-  import.meta.url
-);
-const designforside = new URL(
-  "../../Images/design_forside.jpg",
-  import.meta.url
-);
 
 export function Home() {
   return (

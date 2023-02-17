@@ -1,4 +1,5 @@
 import { oneLine } from "common-tags";
+import cover from "./PentOgBrukt/storefront.jpg";
 
 export default {
   title: "Bedrift",
@@ -13,7 +14,7 @@ export default {
     adskgjsøfdgj
   `,
   cover: {
-    url: new URL("./PentOgBrukt/storefront.jpg", import.meta.url),
+    url: cover,
     title: "gfgfg",
   },
   shoots: [

@@ -15,14 +15,10 @@
   },
   "browserslist": ">0.2%, not dead, not op_mini all",
   "scripts": {
-    "start": "parcel serve public/index.html",
-    "build": "parcel build public/index.html"
+    "start": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "^2.8.3",
-    "@parcel/transformer-webmanifest": "^2.8.3",
-    "@parcel/transformer-yaml": "^2.8.3",
-    "parcel": "^2.8.3",
-    "process": "^0.11.10"
+    "vite": "^4.1.2"
   }
 }

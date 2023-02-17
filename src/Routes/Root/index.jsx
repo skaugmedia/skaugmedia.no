@@ -9,12 +9,11 @@ import * as Prices from "../Prices";
 import * as Home from "../Home";
 import "./Root.css";
 import { Outlet, NavLink } from "react-router-dom";
-
-const skaugmedia = new URL("../../Images/skaugmedia.png", import.meta.url);
-const facebook = new URL("../../Images/facebook.png", import.meta.url);
-const instagram = new URL("../../Images/instagram.png", import.meta.url);
-const tiktok = new URL("../../Images/tiktok.png", import.meta.url);
-const etsy = new URL("../../Images/etsy.png", import.meta.url);
+import skaugmedia from "../../Images/skaugmedia.png";
+import facebook from "../../Images/facebook.png";
+import instagram from "../../Images/instagram.png";
+import tiktok from "../../Images/tiktok.png";
+import etsy from "../../Images/etsy.png";
 
 function Root() {
   return (

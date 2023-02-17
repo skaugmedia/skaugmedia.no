@@ -2,9 +2,9 @@ import "./GraphicalDesign.css";
 import { Underline } from "../../Components/Underline";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { Project } from "../../Components/Project";
-import lashbrowser from "../../Data/GraphicalDesign/lashbrowser.yaml";
-import naturalis from "../../Data/GraphicalDesign/naturalis.yaml";
-import pentogbrukt from "../../Data/GraphicalDesign/pentogbrukt.yaml";
+import lashbrowser from "../../Data/GraphicalDesign/lashbrowser";
+import naturalis from "../../Data/GraphicalDesign/naturalis";
+import pentogbrukt from "../../Data/GraphicalDesign/pentogbrukt";
 
 export const route = "grafiskdesign";
 export const pageName = "Grafisk design";
