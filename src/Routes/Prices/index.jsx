@@ -6,23 +6,16 @@ import { PageSection } from "../../Components/PageSection";
 import { IncludesList } from "./Components/IncludesList";
 import { oneLine } from "common-tags";
 import { Image } from "../../Components/Image";
+import portrettimg from "../../Images/portrett_priser.jpg";
+import newbornimg from "../../Images/newborn_prices.jpg";
+import pregnantimg from "../../Images/pregnant_prices.jpg";
+import coupleimg from "../../Images/couple_prices.jpg";
+import weddingimg from "../../Images/wedding-prices.jpg";
+import foodimg from "../../Images/food_prices.jpg";
+import designimg from "../../Images/design_prices.jpg";
 
 export const route = "priser";
 export const pageName = "Priser";
-
-const portrettimg = new URL(
-  "../../Images/portrett_priser.jpg",
-  import.meta.url
-);
-const newbornimg = new URL("../../Images/newborn_prices.jpg", import.meta.url);
-const pregnantimg = new URL(
-  "../../Images/pregnant_prices.jpg",
-  import.meta.url
-);
-const coupleimg = new URL("../../Images/couple_prices.jpg", import.meta.url);
-const weddingimg = new URL("../../Images/wedding-prices.jpg", import.meta.url);
-const foodimg = new URL("../../Images/food_prices.jpg", import.meta.url);
-const designimg = new URL("../../Images/design_prices.jpg", import.meta.url);
 
 export function Prices() {
   return (

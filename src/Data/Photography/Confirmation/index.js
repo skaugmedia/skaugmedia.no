@@ -12,7 +12,7 @@ export default {
     adskgjsøfdgj
   `,
   cover: {
-    url: new URL("", import.meta.url),
+    url: "",
     title: "gfgfg",
   },
   shoots: [
