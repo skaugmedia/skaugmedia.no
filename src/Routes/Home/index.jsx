@@ -101,49 +101,53 @@ export function Home() {
           </div>
         </div>
       </PageSection>
-      {/* <PageSection outerClassName="works-outer" innerClassName="works">
-        <div className="flex-container works-forside">
-          <div className="flex-child">
-            <img className="works-img" src={liamnyfødtforside} alt="Liam"></img>
-            <div className="works-title">Nyfødt</div>
-          </div>
-          <div className="flex-child">
-            <img className="works-img" src={edwinforside} alt="Edwin"></img>
-            <div className="works-title">Familie og barn</div>
-          </div>
-          <div className="flex-child">
-            <img className="works-img" src={siljeforside} alt="Silje"></img>
-            <div className="works-title">Konfirmant</div>
-          </div>
-          <div className="flex-child">
-            <img
-              className="works-img"
-              src={marianneforside}
-              alt="Marianne"
-            ></img>
-            <div className="works-title">Portrett</div>
-          </div>
-          <div className="flex-child">
-            <img
-              className="works-img"
-              src={matforside}
-              alt="Appelsinformkake med mørk sjokolade"
-            ></img>
-            <div className="works-title">Matfotografi</div>
-          </div>
-          <div className="flex-child">
-            <img
-              className="works-img"
-              src={produktforside}
-              alt="Rosendahl champagneglass"
-            ></img>
-            <div className="works-title">Produktfotografi</div>
-          </div>
-          {        <div className="flex-child">   <img
+      {
+        <PageSection outerClassName="works-outer" innerClassName="works">
+          <div className="flex-container works-forside">
+            <div className="flex-child">
+              <img
+                className="works-img"
+                src={liamnyfødtforside}
+                alt="Liam"
+              ></img>
+              <div className="works-title">Nyfødt</div>
+            </div>
+            <div className="flex-child">
+              <img className="works-img" src={edwinforside} alt="Edwin"></img>
+              <div className="works-title">Familie og barn</div>
+            </div>
+            <div className="flex-child">
+              <img className="works-img" src={siljeforside} alt="Silje"></img>
+              <div className="works-title">Konfirmant</div>
+            </div>
+            <div className="flex-child">
+              <img
+                className="works-img"
+                src={marianneforside}
+                alt="Marianne"
+              ></img>
+              <div className="works-title">Portrett</div>
+            </div>
+            <div className="flex-child">
+              <img
+                className="works-img"
+                src={matforside}
+                alt="Appelsinformkake med mørk sjokolade"
+              ></img>
+              <div className="works-title">Matfotografi</div>
+            </div>
+            <div className="flex-child">
+              <img
+                className="works-img"
+                src={produktforside}
+                alt="Rosendahl champagneglass"
+              ></img>
+              <div className="works-title">Produktfotografi</div>
+            </div>
+            {/*   <div className="flex-child">   <img
             className="works-img"
             src={}
-            alt=""
-          ></img>
+            alt=""></img>
           <div className="works-title">Forlovelse</div></div>
           <div className="flex-child"> <img
             className="works-img"
@@ -156,17 +160,18 @@ export function Home() {
             src={}
             alt=""
           ></img>
-          <div className="works-title">Interiør</div></div>  }
-          <div className="flex-child">
-            <img
-              className="works-img"
-              src={designforside}
-              alt="LashBrowser prisliste"
-            ></img>
-            <div className="works-title">Grafisk design</div>
+          <div className="works-title">Interiør</div></div>  */}
+            <div className="flex-child">
+              <img
+                className="works-img"
+                src={designforside}
+                alt="LashBrowser prisliste"
+              ></img>
+              <div className="works-title">Grafisk design</div>
+            </div>
           </div>
-        </div>
-      </PageSection> */}
+        </PageSection>
+      }
     </>
   );
 }

@@ -5,6 +5,7 @@ import { PriceList } from "./Components/PriceList";
 import { PageSection } from "../../Components/PageSection";
 import { IncludesList } from "./Components/IncludesList";
 import { oneLine } from "common-tags";
+import { Image } from "../../Components/Image";
 
 export const route = "priser";
 export const pageName = "Priser";
@@ -30,11 +31,11 @@ export function Prices() {
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 
         <div className="section-category">
-          <img
+          <Image
             className="category-image"
             src={portrettimg}
             alt="Konfirmanten Silje"
-          ></img>
+          />
           <div className="section-text">
             <div className="category-title">
               Portrett, barn, familie og konfirmant
@@ -43,19 +44,19 @@ export function Prices() {
               items={[
                 {
                   name: "Portrettfotografering",
-                  price: "Kr. 2750,-",
+                  price: "Kr. 2500,-",
                 },
                 {
                   name: "Barnefotografering",
-                  price: "Kr. 2750,-",
+                  price: "Kr. 2500,-",
                 },
                 {
                   name: "Konfirmantfotografering",
-                  price: "Kr. 2750,-",
+                  price: "Kr. 2500,-",
                 },
                 {
                   name: "Familiefotografering",
-                  price: "Kr. 2750,-",
+                  price: "Kr. 3000,-",
                 },
                 {
                   name: "Portretter bedrift",
@@ -75,8 +76,18 @@ export function Prices() {
                   "Bildene leveres digitalt",
                 ]}
               />
+              <p>
+                Jeg samarbeider tett med makeup-artist LashBrowser, som kan
+                sminke før fotografering mot et tillegg i prisen. LashBrowswer
+                holder til i Storgata 7B, 2050 Jessheim.
+              </p>
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
               er prisen kr. 800,- per bilde.
+              <p className="additional-prices">
+                Kvelds- og helgetillegg: kr. 1000,-
+                <br />
+                Ikke møtt opp til fotografering: kr. 500,-
+              </p>
               <p className="price-extra-info">
                 *Eventuell betalt parkering og/eller kjøring over lange
                 avstander kommer i tillegg i prisen
@@ -88,7 +99,7 @@ export function Prices() {
         <div class="section-divider"></div>
 
         <div className="section-category">
-          <img className="category-image" src={newbornimg} alt="Liam"></img>
+          <Image src={newbornimg} alt="Liam" />
           <div className="section-text">
             <div className="category-title">Nyfødt</div>
             <PriceList
@@ -103,7 +114,9 @@ export function Prices() {
               søsken.
               <br />
               <br />
-              Inkluderer:
+              Ved booking av nyfødtfotografering gjennom meg, får man 50% avslag
+              på babyfotografering (når babyen er mellom 6 og 12 måneder
+              gammel.) Inkluderer:
               <IncludesList
                 items={[
                   "Samtale før fotografering for å avtale nærmere",
@@ -117,7 +130,11 @@ export function Prices() {
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
               er prisen kr. 800,- per bilde.
               <br />
-              <br />
+              <p className="additional-prices">
+                Kvelds- og helgetillegg: kr. 1000,-
+                <br />
+                Ikke møtt opp til fotografering: kr. 500,-
+              </p>
               <div className="price-extra-info">
                 *Eventuell betalt parkering og/eller kjøring over lange
                 avstander kommer i tillegg i prisen
@@ -129,11 +146,11 @@ export function Prices() {
         <div class="section-divider"></div>
 
         <div className="section-category">
-          <img className="category-image" src={pregnantimg} alt="Tonje"></img>
+          <Image src={pregnantimg} alt="Tonje" />
           <div className="section-text">
             <div className="category-title">Gravidfotografering</div>
             <PriceList
-              items={[{ name: "Gravidfotografering", price: "Kr. 2750,-" }]}
+              items={[{ name: "Gravidfotografering", price: "Kr. 2500,-" }]}
             />
 
             <div className="price-info">
@@ -147,7 +164,8 @@ export function Prices() {
               avslag på nyfødtfotografering.
               <br />
               <br />
-              Inkluderer:
+              Ved booking av gravidfotografering gjennom meg, får man 50% avslag
+              på nyfødtfotografering. Inkluderer:
               <IncludesList
                 items={[
                   "Samtale før fotografering for å avtale nærmere",
@@ -158,10 +176,19 @@ export function Prices() {
                   "Bildene leveres digitalt",
                 ]}
               />
+              <p>
+                Jeg samarbeider tett med makeup-artist LashBrowser, som kan
+                sminke før fotografering mot et tillegg i prisen. LashBrowswer
+                holder til i Storgata 7B, 2050 Jessheim.
+              </p>
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
               er prisen kr. 800,- per bilde.
               <br />
-              <br />
+              <p className="additional-prices">
+                Kvelds- og helgetillegg: kr. 1000,-
+                <br />
+                Ikke møtt opp til fotografering: kr. 500,-
+              </p>
               <div className="price-extra-info">
                 *Eventuell betalt parkering og/eller kjøring over lange
                 avstander kommer i tillegg i prisen
@@ -172,18 +199,18 @@ export function Prices() {
         <div class="section-divider"></div>
 
         <div className="section-category">
-          <img
+          <Image
             className="category-image"
             src={coupleimg}
             alt="Victor og Nina"
-          ></img>
+          />
           <div className="section-text">
             <div className="category-title">Parfotografering</div>
             <PriceList
               items={[
                 {
                   name: "Kjæreste- eller forlovelses-fotografering",
-                  price: "Kr. 4000,-",
+                  price: "Kr. 3000,-",
                 },
               ]}
             />
@@ -193,7 +220,6 @@ export function Prices() {
               også flott innendørs om dere helst ønsker dette. Vi tilbringer
               mellom 1 og 2 timer sammen, der dere er dere selv foran kamera, og
               viser frem deres kjærlighet til hverandre.
-              <br />
               <br />
               Inkluderer:
               <IncludesList
@@ -205,10 +231,19 @@ export function Prices() {
                   "Bildene leveres digitalt",
                 ]}
               />
+              <p>
+                Jeg samarbeider tett med makeup-artist LashBrowser, som kan
+                sminke før fotografering mot et tillegg i prisen. LashBrowswer
+                holder til i Storgata 7B, 2050 Jessheim.
+              </p>
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
               er prisen kr. 800,- per bilde.
               <br />
-              <br />
+              <p className="additional-prices">
+                Kvelds- og helgetillegg: kr. 1000,-
+                <br />
+                Ikke møtt opp til fotografering: kr. 500,-
+              </p>
               <div className="price-extra-info">
                 *Eventuell betalt parkering og/eller kjøring over lange
                 avstander kommer i tillegg i prisen
@@ -220,11 +255,11 @@ export function Prices() {
         <div class="section-divider"></div>
 
         <div className="section-category">
-          <img
+          <Image
             className="category-image"
             src={weddingimg}
             alt="Borddekking"
-          ></img>
+          ></Image>
           <div className="section-text">
             <div className="category-title">Bryllupsfotografering</div>
             <PriceList
@@ -277,11 +312,7 @@ export function Prices() {
         </div>
         <div class="section-divider"></div>
         <div className="section-category">
-          <img
-            className="category-image"
-            src={foodimg}
-            alt="Rødbetesalat"
-          ></img>
+          <Image className="category-image" src={foodimg} alt="Rødbetesalat" />
           <div className="section-text">
             <div className="category-title">Produkt og matfotografering</div>
             <PriceList
@@ -304,11 +335,11 @@ export function Prices() {
         </div>
         <div class="section-divider"></div>
         <div className="section-category">
-          <img
+          <Image
             className="category-image"
             src={designimg}
             alt="Naturalis prislapper"
-          ></img>
+          />
           <div className="section-text">
             <div className="category-title">Design</div>
             <PriceList

@@ -1,16 +1,9 @@
 import { oneLine } from "common-tags";
 
 export default {
-  title: "Barn",
-  date: "2023-02-11",
-  tags: ["jente", "konfirmant", "nasjonaldrakt"],
+  title: "Barn og baby",
   body: oneLine`
-    adsfgchjvgcfdxzfs<adDFGH
-    DSSFFGS
-    dgfåolsajgløk
-    adlfjsdaøk
-
-    adskgjsøfdgj
+    Portretter av barn i alle aldre mellom 2 måneder og konfirmasjonstid. Disse bildene er så koselig å henge opp på veggen eller å gi bort innrammet i gave. 
   `,
   cover: {
     url: new URL("", import.meta.url),
@@ -18,34 +11,23 @@ export default {
   },
   shoots: [
     {
-      description: "Silje",
-      tags: ["foo", "bar"],
+      description: "Edwin Atlas",
+      tags: ["gutt", "baby", "barn"],
       images: [
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: new URL("../../../Images/edwin_1.jpg", import.meta.url),
+          title: "Edwin Atlas",
         },
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: new URL("../../../Images/edwin_2.jpg", import.meta.url),
+          title: "Edwin Atlas",
+        },
+        {
+          url: new URL("../../../Images/edwin_3.jpg", import.meta.url),
+          title: "Edwin Atlas",
         },
       ],
-      date: "2023-02-11",
-    },
-    {
-      description: "Tobias",
-      tags: ["foo", "bar"],
-      images: [
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-      ],
-      date: "2023-02-11",
+      date: "2021-12-13",
     },
   ],
 };

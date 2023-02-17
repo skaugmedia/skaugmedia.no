@@ -2,50 +2,44 @@ import { oneLine } from "common-tags";
 
 export default {
   title: "Nyfødt",
-  date: "2023-02-11",
-  tags: ["jente", "konfirmant", "nasjonaldrakt"],
   body: oneLine`
-    adsfgchjvgcfdxzfs<adDFGH
-    DSSFFGS
-    dgfåolsajgløk
-    adlfjsdaøk
-
-    adskgjsøfdgj
+  Det er noe helt spesielt med nyfødtfotografering. Den helt ferske, nydelige, lille babyen din sover mesteparten av tiden, men kan også være våken I korte perioder. De små ser så fredfulle og avslappede ut, mens de ligger der og sover mens man kan flytte rundt på dem og plassere dem akkurat slik man ønsker. 
   `,
   cover: {
-    url: new URL("", import.meta.url),
-    title: "gfgfg",
+    url: new URL("../../../Images/newborn_liam_1.jpg", import.meta.url),
+    title: "Liam Oleander",
   },
   shoots: [
     {
-      description: "Silje",
-      tags: ["foo", "bar"],
+      description: "Liam Oleander",
+      tags: ["nyfødt", "baby", "gutt"],
       images: [
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: new URL("../../../Images/newborn_liam_1.jpg", import.meta.url),
+          title: "Liam Oleander",
         },
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: new URL("../../../Images/newborn_liam_2.jpg", import.meta.url),
+          title: "Liam Oleander",
+        },
+        {
+          url: new URL("../../../Images/newborn_liam_3.jpg", import.meta.url),
+          title: "Liam Oleander",
+        },
+        {
+          url: new URL("../../../Images/newborn_liam_4.jpg", import.meta.url),
+          title: "Liam Oleander",
+        },
+        {
+          url: new URL("../../../Images/newborn_liam_5.jpg", import.meta.url),
+          title: "Liam Oleander",
+        },
+        {
+          url: new URL("../../../Images/newborn_liam_6.jpg", import.meta.url),
+          title: "Liam Oleander",
         },
       ],
-      date: "2023-02-11",
-    },
-    {
-      description: "Tobias",
-      tags: ["foo", "bar"],
-      images: [
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-      ],
-      date: "2023-02-11",
+      date: "2021-11-01",
     },
   ],
 };
