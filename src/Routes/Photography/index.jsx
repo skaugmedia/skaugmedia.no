@@ -1,3 +1,4 @@
+import React from "react";
 import "./Photography.css";
 import { Underline } from "../../Components/Underline";
 import FotografiHeading from "../../Components/Headings/FotografiHeading";

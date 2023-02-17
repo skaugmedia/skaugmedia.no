@@ -1,3 +1,4 @@
+import React from "react";
 import "./FotografiHeading.css";
 import PageHeading from "../PageHeading";
 

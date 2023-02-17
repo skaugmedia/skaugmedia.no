@@ -1,3 +1,4 @@
+import React from "react";
 import project from "../Project/Project.module.css";
 
 export function Project(props) {

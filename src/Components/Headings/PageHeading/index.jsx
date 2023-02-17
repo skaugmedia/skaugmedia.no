@@ -1,3 +1,4 @@
+import React from "react";
 import "./PageHeading.css";
 
 export default function PageHeading({ className, ...props }) {

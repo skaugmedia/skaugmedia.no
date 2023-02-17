@@ -1,3 +1,4 @@
+import React from "react";
 import "./GraphicalDesign.css";
 import { Underline } from "../../Components/Underline";
 import DesignHeading from "../../Components/Headings/DesignHeading";

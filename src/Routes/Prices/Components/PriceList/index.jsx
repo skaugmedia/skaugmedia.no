@@ -1,3 +1,4 @@
+import React from "react";
 import css from "./PriceList.module.css";
 import { ItemPrice } from "../ItemPrice";
 

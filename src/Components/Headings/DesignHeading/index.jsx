@@ -1,3 +1,4 @@
+import React from "react";
 import "./DesignHeading.css";
 import PageHeading from "../PageHeading";
 

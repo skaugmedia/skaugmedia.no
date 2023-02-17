@@ -1,3 +1,4 @@
+import React from "react";
 import "./Contact.css";
 import { PageSection } from "../../Components/PageSection";
 import DesignHeading from "../../Components/Headings/DesignHeading";

@@ -1,3 +1,4 @@
+import React from "react";
 import "./About.css";
 import FotografiHeading from "../../Components/Headings/FotografiHeading";
 import aboutnina from "../../Images/me.jpg";

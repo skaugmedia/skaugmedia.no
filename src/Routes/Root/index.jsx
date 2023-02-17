@@ -1,3 +1,4 @@
+import React from "react";
 import Button from "../../Components/Button";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import FotografiHeading from "../../Components/Headings/FotografiHeading";
