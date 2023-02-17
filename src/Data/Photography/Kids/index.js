@@ -8,7 +8,7 @@ import liam_barn_3 from "../../../Images/liam_barn_3.jpg";
 import liam_barn_4 from "../../../Images/liam_barn_4.jpg";
 import liam_barn_5 from "../../../Images/liam_barn_5.jpg";
 import liam_barn_6 from "../../../Images/liam_barn_6.jpg";
-
+import ellioteliascover from "../../../Images/elliot_elias_cover.jpg";
 import elliotelias1 from "../../../Images/elliot_elias_1.jpg";
 import elliotelias2 from "../../../Images/elliot_elias_2.jpg";
 import elliotelias3 from "../../../Images/elliot_elias_3.jpg";
@@ -22,8 +22,8 @@ export default {
     Portretter av barn i alle aldre mellom 2 måneder og konfirmasjonstid. Disse bildene er så koselig å henge opp på veggen eller å gi bort innrammet i gave.
   `,
   cover: {
-    url: "",
-    title: "gfgfg",
+    url: ellioteliascover,
+    title: "Elliot Elias",
   },
   shoots: [
     {

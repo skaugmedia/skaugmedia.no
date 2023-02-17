@@ -1,50 +1,106 @@
 import { oneLine } from "common-tags";
+import silje_1 from "../../../Images/silje_konfirmant_1.jpg";
+import silje_2 from "../../../Images/silje_konfirmant_2.jpg";
+import silje_3 from "../../../Images/silje_konfirmant_3.jpg";
+import silje_4 from "../../../Images/silje_konfirmant_4.jpg";
+import silje_5 from "../../../Images/silje_konfirmant_5.jpg";
+import silje_6 from "../../../Images/silje_konfirmant_6.jpg";
+import keshra_1 from "../../../Images/keshra_1.jpg";
+import keshra_2 from "../../../Images/keshra_2.jpg";
+import keshra_3 from "../../../Images/keshra_3.jpg";
+import keshra_4 from "../../../Images/keshra_4.jpg";
+import keshra_5 from "../../../Images/keshra_5.jpg";
+import keshra_6 from "../../../Images/keshra_6.jpg";
+import heidi_1 from "../../../Images/heidi_1.jpg";
+import heidi_2 from "../../../Images/heidi_2.jpg";
 
 export default {
   title: "Konfirmant",
-  tags: ["jente", "konfirmant", "nasjonaldrakt"],
   body: oneLine`
-    adsfgchjvgcfdxzfs<adDFGH
-    DSSFFGS
-    dgfåolsajgløk
-    adlfjsdaøk
-
-    adskgjsøfdgj
+    Både for foreldre og konfirmanten selv, er det viktig med gode bilder for å forevige den store konfirmasjonsdagen. 
+    Det er også fint å ha gode bilder som kan brukes til takkekort og å kunne henge på veggen i etterkant av konfirmasjonen.
   `,
   cover: {
-    url: "",
-    title: "gfgfg",
+    url: silje_4,
+    title: "Silje Viktoria",
   },
   shoots: [
     {
-      description: "Silje",
-      tags: ["foo", "bar"],
+      description: "Silje Viktoria",
+      tags: ["jente", "konfirmant", "festdrakt", "nordbytjernet"],
       images: [
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: silje_1,
+          title: "Silje Viktoria",
         },
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: silje_2,
+          title: "Silje Viktoria",
+        },
+        {
+          url: silje_3,
+          title: "Silje Viktoria",
+        },
+        {
+          url: silje_4,
+          title: "Silje Viktoria",
+        },
+        {
+          url: silje_5,
+          title: "Silje Viktoria",
+        },
+        {
+          url: silje_6,
+          title: "Silje Viktoria",
         },
       ],
-      date: "2023-02-11",
+      date: "2022-05-07",
     },
     {
-      description: "Tobias",
-      tags: ["foo", "bar"],
+      description: "Keshra",
+      tags: ["konfirmant", "jente", "bunad"],
       images: [
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: keshra_1,
+          title: "Keshra",
         },
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: keshra_2,
+          title: "Keshra",
+        },
+        {
+          url: keshra_3,
+          title: "Keshra",
+        },
+        {
+          url: keshra_4,
+          title: "Keshra",
+        },
+        {
+          url: keshra_5,
+          title: "Keshra",
+        },
+        {
+          url: keshra_6,
+          title: "Keshra",
         },
       ],
-      date: "2023-02-11",
+      date: "2019-05-26",
+    },
+    {
+      description: "Heidi Therese",
+      tags: ["konfirmant", "jente", "bunad"],
+      images: [
+        {
+          url: heidi_1,
+          title: "Heidi Therese",
+        },
+        {
+          url: heidi_2,
+          title: "Heidi Therese",
+        },
+      ],
+      date: "2014-05-26",
     },
   ],
 };
