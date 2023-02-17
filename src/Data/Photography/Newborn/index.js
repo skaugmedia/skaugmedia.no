@@ -5,6 +5,7 @@ import liam3 from "../../../Images/newborn_liam_3.jpg";
 import liam4 from "../../../Images/newborn_liam_4.jpg";
 import liam5 from "../../../Images/newborn_liam_5.jpg";
 import liam6 from "../../../Images/newborn_liam_6.jpg";
+import liam7 from "../../../Images/newborn_liam_7.jpg";
 
 export default {
   title: "Nyfødt",
@@ -42,6 +43,10 @@ export default {
         },
         {
           url: liam6,
+          title: "Liam Oleander",
+        },
+        {
+          url: liam7,
           title: "Liam Oleander",
         },
       ],
