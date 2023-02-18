@@ -1,4 +1,3 @@
-import React from "react";
 import css from "./PageSection.module.css";
 
 export function PageSection({

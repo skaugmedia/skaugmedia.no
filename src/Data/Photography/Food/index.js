@@ -40,6 +40,7 @@ import mat38 from "../../../Images/mat_38.jpg";
 import mat39 from "../../../Images/mat_39.jpg";
 
 export default {
+  id: "mat",
   title: "Mat",
   body: oneLine`
     Fotografering av mat er en helt egen kunst, som jeg har jobbet mye med å presisere og lære. Det er viktig 

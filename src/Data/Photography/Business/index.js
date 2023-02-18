@@ -2,6 +2,7 @@ import { oneLine } from "common-tags";
 import cover from "./PentOgBrukt/storefront.jpg";
 
 export default {
+  id: "bedrift",
   title: "Bedrift",
   date: "2023-02-11",
   tags: ["jente", "konfirmant", "nasjonaldrakt"],

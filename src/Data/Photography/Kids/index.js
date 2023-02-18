@@ -23,6 +23,7 @@ import silje2 from "../../../Images/silje_barn_2.jpg";
 import silje3 from "../../../Images/silje_barn_3.jpg";
 
 export default {
+  id: "barn-og-baby",
   title: "Barn og baby",
   body: oneLine`
     Portretter av barn i alle aldre mellom 2 måneder og konfirmasjonstid. Disse bildene er så koselig å henge opp på veggen eller å gi bort innrammet i gave.
@@ -39,14 +40,20 @@ export default {
         {
           url: edwin_1,
           title: "Edwin Atlas",
+          width: 1000,
+          height: 667,
         },
         {
           url: edwin_2,
           title: "Edwin Atlas",
+          width: 1000,
+          height: 667,
         },
         {
           url: edwin_3,
           title: "Edwin Atlas",
+          width: 667,
+          height: 1000,
         },
       ],
       date: "2021-12-13",
@@ -58,14 +65,20 @@ export default {
         {
           url: liam_barn_1,
           title: "Liam Oleander",
+          width: 667,
+          height: 1000,
         },
         {
           url: liam_barn_2,
           title: "Liam Oleander",
+          width: 533,
+          height: 800,
         },
         {
           url: liam_barn_3,
           title: "Liam Oleander",
+          width: 533,
+          height: 800,
         },
       ],
       date: "2022-09-24",
@@ -77,14 +90,20 @@ export default {
         {
           url: liam_barn_4,
           title: "Liam Oleander",
+          width: 533,
+          height: 800,
         },
         {
           url: liam_barn_5,
           title: "Liam Oleander",
+          width: 533,
+          height: 800,
         },
         {
           url: liam_barn_6,
           title: "Liam Oleander",
+          width: 533,
+          height: 800,
         },
       ],
       date: "2022-10-06",
@@ -96,29 +115,41 @@ export default {
         {
           url: elliotelias1,
           title: "Elliot Elias",
+          width: 467,
+          height: 700,
         },
         {
           url: elliotelias2,
           title: "Elliot Elias",
+          width: 467,
+          height: 700,
         },
         {
           url: elliotelias3,
           title: "Elliot Elias",
+          width: 467,
+          height: 700,
         },
         {
           url: elliotelias4,
           title: "Elliot Elias",
+          width: 467,
+          height: 700,
         },
         {
           url: elliotelias5,
           title: "Elliot Elias",
+          width: 467,
+          height: 700,
         },
         {
           url: elliotelias6,
           title: "Elliot Elias",
+          width: 467,
+          height: 700,
         },
       ],
-      date: "2022-10-06",
+      date: "2023-02-14",
     },
     {
       description: "Olaf Theodor",

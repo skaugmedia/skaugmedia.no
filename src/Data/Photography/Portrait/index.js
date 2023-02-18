@@ -10,6 +10,7 @@ import victor1 from "../../../Images/victor_1.jpg";
 import victor2 from "../../../Images/victor_2.jpg";
 
 export default {
+  id: "portrett",
   title: "Portrett",
   body: oneLine`
     Portretter er noe de fleste trenger en gang eller to i løpet av livet. Enten det er i jobbsammenheng, eller man bare ønsker noen flotte bilder av seg selv!

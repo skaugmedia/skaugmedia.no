@@ -2,6 +2,7 @@ import { oneLine } from "common-tags";
 import bilde_kommer from "../../../Images/bilde_kommer.jpg";
 
 export default {
+  id: "par",
   title: "Par",
 
   body: oneLine`

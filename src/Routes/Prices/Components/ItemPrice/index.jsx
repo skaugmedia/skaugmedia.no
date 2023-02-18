@@ -1,4 +1,3 @@
-import React from "react";
 import css from "./ItemPrice.module.css";
 
 export function ItemPrice({ className, name, price, ...props }) {

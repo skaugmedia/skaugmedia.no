@@ -15,6 +15,7 @@ import heidi_1 from "../../../Images/heidi_1.jpg";
 import heidi_2 from "../../../Images/heidi_2.jpg";
 
 export default {
+  id: "konfirmant",
   title: "Konfirmant",
   body: oneLine`
     Både for foreldre og konfirmanten selv, er det viktig med gode bilder for å forevige den store konfirmasjonsdagen. 

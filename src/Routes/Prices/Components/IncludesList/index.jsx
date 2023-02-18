@@ -1,4 +1,3 @@
-import React from "react";
 import css from "./IncludesList.module.css";
 
 export function IncludesList({ className, items, ...props }) {

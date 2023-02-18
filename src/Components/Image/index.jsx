@@ -1,4 +1,3 @@
-import React from "react";
 import css from "./Image.module.css";
 
 export function Image({ className, src, alt, ...props }) {

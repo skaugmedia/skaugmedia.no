@@ -1,4 +1,3 @@
-import React from "react";
 import "./Prices.css";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { Underline } from "../../Components/Underline";

@@ -1,6 +1,7 @@
 import { oneLine } from "common-tags";
 
 export default {
+  id: "bryllup",
   title: "Bryllup",
   date: "2023-02-11",
   tags: ["jente", "konfirmant", "nasjonaldrakt"],
