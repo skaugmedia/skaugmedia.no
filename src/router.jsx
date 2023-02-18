@@ -1,4 +1,3 @@
-import React from "react";
 import Root from "./Routes/Root";
 import { createBrowserRouter } from "react-router-dom";
 import * as Home from "./Routes/Home";

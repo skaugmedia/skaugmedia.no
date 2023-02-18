@@ -28,6 +28,7 @@ import produkt26 from "../../../Images/produkt_26.jpg";
 import produkt27 from "../../../Images/produkt_27.jpg";
 
 export default {
+  id: "produkt",
   title: "Produkt",
   body: oneLine`
     Produktbilder kan enten tas i studio, eller i et flott miljø sammen med andre produkter. 

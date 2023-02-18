@@ -3,6 +3,7 @@ import tonje1 from "../../../Images/tonje_1.jpg";
 import tonje2 from "../../../Images/tonje_2.jpg";
 
 export default {
+  id: "gravid",
   title: "Gravid",
   body: oneLine`
     Det er veldig mange som tenker at de ikke trenger gravidbilder, og ikke vil bruke penger på dette. Veldig 
