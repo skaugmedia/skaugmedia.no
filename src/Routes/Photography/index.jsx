@@ -1,13 +1,12 @@
+import { NavLink, useLoaderData } from "react-router-dom";
 import "./Photography.css";
 import { Underline } from "../../Components/Underline";
 import FotografiHeading from "../../Components/Headings/FotografiHeading";
-import { categories } from "../../Data/Photography";
 import { Category } from "../../Components/Category";
-
-export const route = "fotografi";
-export const pageName = "Fotografi";
+import pageName from "./PageName";
 
 export function Photography() {
+  const { categories } = useLoaderData();
   return (
     <div className="photography">
       <div className="content">
@@ -17,7 +16,13 @@ export function Photography() {
         <div className="section">
           <div className=" photography-category">
             {categories.map((category) => (
-              <Category className="item" {...category}></Category>
+              <NavLink
+                className="photography-category-link"
+                to={category.id}
+                key={category.id}
+              >
+                <Category className="item" {...category}></Category>
+              </NavLink>
             ))}
           </div>
         </div>

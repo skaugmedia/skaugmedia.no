@@ -5,9 +5,7 @@ import { Project } from "../../Components/Project";
 import lashbrowser from "../../Data/GraphicalDesign/lashbrowser";
 import naturalis from "../../Data/GraphicalDesign/naturalis";
 import pentogbrukt from "../../Data/GraphicalDesign/pentogbrukt";
-
-export const route = "grafiskdesign";
-export const pageName = "Grafisk design";
+import pageName from "./PageName";
 
 const projects = [lashbrowser, naturalis, pentogbrukt];
 

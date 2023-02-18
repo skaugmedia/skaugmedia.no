@@ -13,9 +13,7 @@ import coupleimg from "../../Images/couple_prices.jpg";
 import weddingimg from "../../Images/produkt_9.jpg";
 import foodimg from "../../Images/mat_12.jpg";
 import designimg from "../../Images/design_prices.jpg";
-
-export const route = "priser";
-export const pageName = "Priser";
+import pageName from "./PageName";
 
 export function Prices() {
   return (

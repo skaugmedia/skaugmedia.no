@@ -158,14 +158,20 @@ export default {
         {
           url: olaf1,
           title: "Olaf Theodor",
+          width: 1000,
+          height: 667,
         },
         {
           url: olaf2,
           title: "Olaf Theodor",
+          width: 667,
+          height: 1000,
         },
         {
           url: olaf3,
           title: "Olaf Theodor",
+          width: 667,
+          height: 1000,
         },
       ],
       date: "2020-07-26",
@@ -177,14 +183,20 @@ export default {
         {
           url: silje1,
           title: "Silje Viktoria",
-        },
-        {
-          url: silje3,
-          title: "Silje Viktoria",
+          width: 667,
+          height: 1000,
         },
         {
           url: silje2,
           title: "Silje Viktoria",
+          width: 800,
+          height: 513,
+        },
+        {
+          url: silje3,
+          title: "Silje Viktoria",
+          width: 667,
+          height: 1000,
         },
       ],
       date: "2015-08-20",

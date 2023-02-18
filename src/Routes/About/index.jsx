@@ -1,9 +1,7 @@
 import "./About.css";
 import FotografiHeading from "../../Components/Headings/FotografiHeading";
 import aboutnina from "../../Images/me.jpg";
-
-export const route = "ommeg";
-export const pageName = "Om meg";
+import pageName from "./PageName";
 
 export function About() {
   return (

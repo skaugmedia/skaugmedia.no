@@ -1,5 +1,5 @@
-import * as Contact from "../Contact";
-import * as About from "../About";
+import ContactRoute from "../Contact/Route";
+import AboutRoute from "../About/Route";
 import { ButtonLink } from "../../Components/ButtonLink";
 import { PageSection } from "../../Components/PageSection";
 import "./Home.css";
@@ -14,9 +14,6 @@ import siljeforside from "../../Images/silje_forside.jpg";
 import matforside from "../../Images/matfotografi_forside.jpg";
 import produktforside from "../../Images/produkt_forside.jpg";
 import designforside from "../../Images/design_forside.jpg";
-
-export const route = "";
-export const pageName = "Hjem";
 
 export function Home() {
   return (
@@ -33,7 +30,7 @@ export function Home() {
               <br />
               matfoto og grafisk design.
             </div>
-            <ButtonLink to={Contact.route} className="homecontactbutton">
+            <ButtonLink to={ContactRoute} className="homecontactbutton">
               Kontakt meg
             </ButtonLink>
           </div>
@@ -70,7 +67,7 @@ export function Home() {
               holder til på Jessheim i Ullensaker kommune, men <br />
               fotograferer over hele Oslo, Romerike og omegn.
             </div>
-            <ButtonLink to={About.route} className="lesmer-button">
+            <ButtonLink to={AboutRoute} className="lesmer-button">
               Les mer
             </ButtonLink>
           </div>

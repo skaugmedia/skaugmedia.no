@@ -1,11 +1,21 @@
-import Root from "./Routes/Root";
+import { Root } from "./Routes/Root";
 import { createBrowserRouter } from "react-router-dom";
-import * as Home from "./Routes/Home";
-import * as About from "./Routes/About";
-import * as Contact from "./Routes/Contact";
-import * as GraphicalDesign from "./Routes/GraphicalDesign";
-import * as Photography from "./Routes/Photography";
-import * as Prices from "./Routes/Prices";
+import HomeRoute from "./Routes/Home/Route";
+import { Home } from "./Routes/Home";
+import AboutRoute from "./Routes/About/Route";
+import { About } from "./Routes/About";
+import ContactRoute from "./Routes/Contact/Route";
+import { Contact } from "./Routes/Contact";
+import GraphicalDesignRoute from "./Routes/GraphicalDesign/Route";
+import { GraphicalDesign } from "./Routes/GraphicalDesign";
+import PhotographyLoader from "./Routes/Photography/Loader";
+import PhotographyRoute from "./Routes/Photography/Route";
+import { Photography } from "./Routes/Photography";
+import PricesRoute from "./Routes/Prices/Route";
+import { Prices } from "./Routes/Prices";
+import { PhotographyCategory } from "./Routes/PhotographyCategory";
+import PhotographyCategoryLoader from "./Routes/PhotographyCategory/Loader";
+import PhotographyCategoryRoute from "./Routes/PhotographyCategory/Route";
 
 export const router = createBrowserRouter([
   {
@@ -15,16 +25,22 @@ export const router = createBrowserRouter([
       {
         // errorElement: <div>Oh no!</div>,
         children: [
-          { index: true, element: <Home.Home /> },
-          { path: Home.route, element: <Home.Home /> },
-          { path: About.route, element: <About.About /> },
-          { path: Contact.route, element: <Contact.Contact /> },
+          { index: true, element: <Home /> },
+          { path: HomeRoute, element: <Home /> },
+          { path: AboutRoute, element: <About /> },
+          { path: ContactRoute, element: <Contact /> },
+          { path: GraphicalDesignRoute, element: <GraphicalDesign /> },
           {
-            path: GraphicalDesign.route,
-            element: <GraphicalDesign.GraphicalDesign />,
+            path: PhotographyRoute,
+            loader: PhotographyLoader,
+            element: <Photography />,
           },
-          { path: Photography.route, element: <Photography.Photography /> },
-          { path: Prices.route, element: <Prices.Prices /> },
+          {
+            path: PhotographyCategoryRoute,
+            loader: PhotographyCategoryLoader,
+            element: <PhotographyCategory />,
+          },
+          { path: PricesRoute, element: <Prices /> },
         ],
       },
     ],
