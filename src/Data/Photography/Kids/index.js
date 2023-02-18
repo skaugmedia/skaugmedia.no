@@ -15,6 +15,12 @@ import elliotelias3 from "../../../Images/elliot_elias_3.jpg";
 import elliotelias4 from "../../../Images/elliot_elias_4.jpg";
 import elliotelias5 from "../../../Images/elliot_elias_5.jpg";
 import elliotelias6 from "../../../Images/elliot_elias_6.jpg";
+import olaf1 from "../../../Images/olaf_1.jpg";
+import olaf2 from "../../../Images/olaf_2.jpg";
+import olaf3 from "../../../Images/olaf_3.jpg";
+import silje1 from "../../../Images/silje_barn_1.jpg";
+import silje2 from "../../../Images/silje_barn_2.jpg";
+import silje3 from "../../../Images/silje_barn_3.jpg";
 
 export default {
   title: "Barn og baby",
@@ -23,7 +29,7 @@ export default {
   `,
   cover: {
     url: ellioteliascover,
-    title: "Elliot Elias",
+    title: "Elliot",
   },
   shoots: [
     {
@@ -113,6 +119,44 @@ export default {
         },
       ],
       date: "2022-10-06",
+    },
+    {
+      description: "Olaf Theodor",
+      tags: ["gutt", "baby", "barn"],
+      images: [
+        {
+          url: olaf1,
+          title: "Olaf Theodor",
+        },
+        {
+          url: olaf2,
+          title: "Olaf Theodor",
+        },
+        {
+          url: olaf3,
+          title: "Olaf Theodor",
+        },
+      ],
+      date: "2020-07-26",
+    },
+    {
+      description: "Silje Viktoria",
+      tags: ["jente", "barn"],
+      images: [
+        {
+          url: silje1,
+          title: "Silje Viktoria",
+        },
+        {
+          url: silje3,
+          title: "Silje Viktoria",
+        },
+        {
+          url: silje2,
+          title: "Silje Viktoria",
+        },
+      ],
+      date: "2015-08-20",
     },
   ],
 };

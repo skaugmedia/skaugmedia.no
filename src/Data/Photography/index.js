@@ -17,7 +17,7 @@ export const categories = [
   confirmation,
   pregnant,
   portrait,
-  // engagement,
+  engagement,
   // wedding,
   food,
   product,

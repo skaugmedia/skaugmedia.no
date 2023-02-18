@@ -1,51 +1,33 @@
 import { oneLine } from "common-tags";
+import bilde_kommer from "../../../Images/bilde_kommer.jpg";
 
 export default {
   title: "Par",
   date: "2023-02-11",
   tags: ["jente", "konfirmant", "nasjonaldrakt"],
   body: oneLine`
-    adsfgchjvgcfdxzfs<adDFGH
-    DSSFFGS
-    dgfåolsajgløk
-    adlfjsdaøk
-
-    adskgjsøfdgj
+    Det er så hyggelig å ha bilder som viser den ekte kjærligheten mellom et par, minner å 
+    se tilbake på, og ikke bilder som kan brukes i forbindelse med invitasjoner og bryllupsdekorasjoner.
   `,
   cover: {
-    url: "",
-    title: "gfgfg",
+    url: bilde_kommer,
+    title: "Bilde kommer",
   },
   shoots: [
     {
-      description: "Silje",
-      tags: ["foo", "bar"],
+      description: "",
+      tags: ["", ""],
       images: [
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: "",
+          title: "",
         },
         {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
+          url: "",
+          title: "",
         },
       ],
-      date: "2023-02-11",
-    },
-    {
-      description: "Tobias",
-      tags: ["foo", "bar"],
-      images: [
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-      ],
-      date: "2023-02-11",
+      date: "",
     },
   ],
 };
