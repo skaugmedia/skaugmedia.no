@@ -9,7 +9,7 @@ import lashbrowserforside from "../../Images/lashbrowser_forside.jpg";
 import konfirmantsiljeforside from "../../Images/konfirmant_silje_forside.jpg";
 import ninaforside from "../../Images/nina_forside.png";
 import liamnyfødtforside from "../../Images/liam_nyfødt_forside.jpg";
-import marianneforside from "../../Images/marianne_forside.jpg";
+
 import edwinforside from "../../Images/edwin_forside.jpg";
 import siljeforside from "../../Images/silje_forside.jpg";
 import matforside from "../../Images/matfotografi_forside.jpg";
@@ -96,14 +96,7 @@ export function Home() {
               <img className="works-img" src={siljeforside} alt="Silje"></img>
               <div className="works-title">Konfirmant</div>
             </div>
-            <div className="flex-child">
-              <img
-                className="works-img"
-                src={marianneforside}
-                alt="Marianne"
-              ></img>
-              <div className="works-title">Portrett</div>
-            </div>
+
             <div className="flex-child">
               <img
                 className="works-img"

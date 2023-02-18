@@ -1,51 +1,16 @@
 import { oneLine } from "common-tags";
+import bilde_kommer from "../../../Images/bilde_kommer.jpg";
 
 export default {
   title: "Familie",
-  date: "2023-02-11",
-  tags: ["jente", "konfirmant", "nasjonaldrakt"],
-  body: oneLine`
-    adsfgchjvgcfdxzfs<adDFGH
-    DSSFFGS
-    dgfåolsajgløk
-    adlfjsdaøk
 
-    adskgjsøfdgj
+  body: oneLine`
+    Familiebilder er så koselig å ha for å se tilbake på når barna har vokst opp, og flyttet ut, 
+    eller når de vi er så glade i, ikke lenger er her med oss!
   `,
   cover: {
-    url: "",
-    title: "gfgfg",
+    url: bilde_kommer,
+    title: "Bilde kommer",
   },
-  shoots: [
-    {
-      description: "Silje",
-      tags: ["foo", "bar"],
-      images: [
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-      ],
-      date: "2023-02-11",
-    },
-    {
-      description: "Tobias",
-      tags: ["foo", "bar"],
-      images: [
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-        {
-          url: "https://www.gravatar.com/avatar/deabcb6140a4cad604de58990bc2094c?s=64&d=identicon&r=PG&f=1",
-          title: "altext",
-        },
-      ],
-      date: "2023-02-11",
-    },
-  ],
+  shoots: [],
 };

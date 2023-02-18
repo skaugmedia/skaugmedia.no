@@ -21,5 +21,5 @@ export const categories = [
   // wedding,
   food,
   product,
-  business,
+  // business,
 ];

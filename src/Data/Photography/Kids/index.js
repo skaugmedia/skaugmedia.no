@@ -72,7 +72,7 @@ export default {
     },
     {
       description: "Liam Oleander",
-      tags: ["gutt", "baby", "barn"],
+      tags: ["gutt", "baby", "barn", "studio"],
       images: [
         {
           url: liam_barn_4,

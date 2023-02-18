@@ -7,12 +7,12 @@ import { PageSection } from "../../Components/PageSection";
 import { IncludesList } from "./Components/IncludesList";
 import { oneLine } from "common-tags";
 import { Image } from "../../Components/Image";
-import portrettimg from "../../Images/portrett_priser.jpg";
-import newbornimg from "../../Images/newborn_prices.jpg";
-import pregnantimg from "../../Images/pregnant_prices.jpg";
+import portrettimg from "../../Images/silje_konfirmant_3.jpg";
+import newbornimg from "../../Images/newborn_liam_4.jpg";
+import pregnantimg from "../../Images/tonje_1.jpg";
 import coupleimg from "../../Images/couple_prices.jpg";
-import weddingimg from "../../Images/wedding-prices.jpg";
-import foodimg from "../../Images/food_prices.jpg";
+import weddingimg from "../../Images/produkt_9.jpg";
+import foodimg from "../../Images/mat_12.jpg";
 import designimg from "../../Images/design_prices.jpg";
 
 export const route = "priser";
@@ -78,13 +78,13 @@ export function Prices() {
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
               er prisen kr. 800,- per bilde.
               <p className="additional-prices">
-                Kvelds- og helgetillegg: kr. 1000,-
+                Kvelds- og helgetillegg: kr. 750,-
                 <br />
                 Ikke møtt opp til fotografering: kr. 500,-
               </p>
               <p className="price-extra-info">
-                *Eventuell betalt parkering og/eller kjøring over lange
-                avstander kommer i tillegg i prisen
+                Eventuell betalt parkering og/eller kjøring over lange avstander
+                kommer i tillegg i prisen
               </p>
             </div>
           </div>
@@ -125,13 +125,13 @@ export function Prices() {
               er prisen kr. 800,- per bilde.
               <br />
               <p className="additional-prices">
-                Kvelds- og helgetillegg: kr. 1000,-
+                Kvelds- og helgetillegg: kr. 750,-
                 <br />
                 Ikke møtt opp til fotografering: kr. 500,-
               </p>
               <div className="price-extra-info">
-                *Eventuell betalt parkering og/eller kjøring over lange
-                avstander kommer i tillegg i prisen
+                Eventuell betalt parkering og/eller kjøring over lange avstander
+                kommer i tillegg i prisen
               </div>
             </div>
           </div>
@@ -179,13 +179,13 @@ export function Prices() {
               er prisen kr. 800,- per bilde.
               <br />
               <p className="additional-prices">
-                Kvelds- og helgetillegg: kr. 1000,-
+                Kvelds- og helgetillegg: kr. 750,-
                 <br />
                 Ikke møtt opp til fotografering: kr. 500,-
               </p>
               <div className="price-extra-info">
-                *Eventuell betalt parkering og/eller kjøring over lange
-                avstander kommer i tillegg i prisen
+                Eventuell betalt parkering og/eller kjøring over lange avstander
+                kommer i tillegg i prisen
               </div>
             </div>
           </div>
@@ -234,13 +234,13 @@ export function Prices() {
               er prisen kr. 800,- per bilde.
               <br />
               <p className="additional-prices">
-                Kvelds- og helgetillegg: kr. 1000,-
+                Kvelds- og helgetillegg: kr. 750,-
                 <br />
                 Ikke møtt opp til fotografering: kr. 500,-
               </p>
               <div className="price-extra-info">
-                *Eventuell betalt parkering og/eller kjøring over lange
-                avstander kommer i tillegg i prisen
+                Eventuell betalt parkering og/eller kjøring over lange avstander
+                kommer i tillegg i prisen
               </div>
             </div>
           </div>
@@ -298,8 +298,8 @@ export function Prices() {
               <br />
               <br />
               <div className="price-extra-info">
-                *Eventuell betalt parkering og/eller kjøring over lange
-                avstander kommer i tillegg i prisen
+                Eventuell betalt parkering og/eller kjøring over lange avstander
+                kommer i tillegg i prisen
               </div>
             </div>
           </div>

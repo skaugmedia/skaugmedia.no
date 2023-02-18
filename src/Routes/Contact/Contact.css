@@ -6,3 +6,41 @@
   font-weight: 200;
   text-align: left;
 }
+
+.contact-info-box {
+  background-color: var(--lightblue);
+  max-height: 350px;
+  max-width: 350px;
+  position: absolute;
+  right: 0;
+}
+
+.contact-info-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.contact-info {
+  font-weight: 200;
+  text-align: left;
+  padding-top: 5px;
+
+  padding-left: 30px;
+}
+
+.contact-social-icon {
+  padding-bottom: 30px;
+  padding-left: 30px;
+  display: flex;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  padding-top: 10px;
+  padding-right: 5px;
+}
