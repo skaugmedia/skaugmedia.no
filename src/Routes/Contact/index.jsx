@@ -1,4 +1,3 @@
-import React from "react";
 import "./Contact.css";
 import { PageSection } from "../../Components/PageSection";
 import DesignHeading from "../../Components/Headings/DesignHeading";
@@ -7,9 +6,7 @@ import facebook from "../../Images/facebook.png";
 import instagram from "../../Images/instagram.png";
 import tiktok from "../../Images/tiktok.png";
 import etsy from "../../Images/etsy.png";
-
-export const route = "kontakt";
-export const pageName = "Kontakt";
+import pageName from "./PageName";
 
 export function Contact() {
   return (

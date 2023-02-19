@@ -18,7 +18,7 @@ export default {
   id: "konfirmant",
   title: "Konfirmant",
   body: oneLine`
-    Både for foreldre og konfirmanten selv, er det viktig med gode bilder for å forevige den store konfirmasjonsdagen. 
+    Både for foreldre og konfirmanten selv, er det viktig med gode bilder for å forevige den store konfirmasjonsdagen.
     Det er også fint å ha gode bilder som kan brukes til takkekort og å kunne henge på veggen i etterkant av konfirmasjonen.
   `,
   cover: {
@@ -33,26 +33,38 @@ export default {
         {
           url: silje_1,
           title: "Silje Viktoria",
+          width: 667,
+          height: 1000,
         },
         {
           url: silje_2,
           title: "Silje Viktoria",
+          width: 533,
+          height: 800,
         },
         {
           url: silje_3,
           title: "Silje Viktoria",
+          width: 533,
+          height: 800,
         },
         {
           url: silje_4,
           title: "Silje Viktoria",
+          width: 700,
+          height: 467,
         },
         {
           url: silje_5,
           title: "Silje Viktoria",
+          width: 600,
+          height: 900,
         },
         {
           url: silje_6,
           title: "Silje Viktoria",
+          width: 533,
+          height: 800,
         },
       ],
       date: "2022-05-07",
@@ -64,26 +76,38 @@ export default {
         {
           url: keshra_1,
           title: "Keshra",
+          width: 467,
+          height: 700,
         },
         {
           url: keshra_2,
           title: "Keshra",
+          width: 700,
+          height: 467,
         },
         {
           url: keshra_3,
           title: "Keshra",
+          width: 467,
+          height: 700,
         },
         {
           url: keshra_4,
           title: "Keshra",
+          width: 467,
+          height: 700,
         },
         {
           url: keshra_5,
           title: "Keshra",
+          width: 467,
+          height: 700,
         },
         {
           url: keshra_6,
           title: "Keshra",
+          width: 467,
+          height: 700,
         },
       ],
       date: "2019-05-26",
@@ -95,10 +119,14 @@ export default {
         {
           url: heidi_1,
           title: "Heidi Therese",
+          width: 467,
+          height: 700,
         },
         {
           url: heidi_2,
           title: "Heidi Therese",
+          width: 467,
+          height: 700,
         },
       ],
       date: "2014-05-26",
