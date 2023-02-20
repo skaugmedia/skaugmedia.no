@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router-dom";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import classes from "./PhotographyCategory.module.css";
@@ -34,7 +33,7 @@ export function PhotographyCategory() {
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
-        plugins={[Slideshow, Thumbnails]}
+        plugins={[Thumbnails]}
         render={{
           iconPrev: () => <PrevIcon size="90" />,
           iconNext: () => <NextIcon size="90" />,
