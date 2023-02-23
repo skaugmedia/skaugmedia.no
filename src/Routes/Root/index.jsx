@@ -14,6 +14,7 @@ import PricesRoute from "../Prices/Route";
 import HomeRoute from "../Home/Route";
 import HomePageName from "../Home/PageName";
 import "./Root.css";
+import classes from "./Root.module.css";
 import { Outlet, NavLink } from "react-router-dom";
 import skaugmedia from "../../Images/skaugmedia.png";
 import facebook from "../../Images/facebook.png";
@@ -25,7 +26,9 @@ export function Root() {
   return (
     <div className="Root">
       <header className="header">
-        <img className="logo" src={skaugmedia} alt="Skaug Media logo"></img>
+        <NavLink to={HomeRoute} className={classes.plainLink}>
+          <img className="logo" src={skaugmedia} alt="Skaug Media logo"></img>
+        </NavLink>
         <nav className="header row">
           <NavLink className="nav-link" to={HomeRoute}>
             {HomePageName}
