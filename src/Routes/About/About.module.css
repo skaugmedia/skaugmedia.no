@@ -1,0 +1,86 @@
+.text {
+  font-weight: 300;
+}
+
+.background {
+  background-color: var(--lightgreen);
+  padding-top: 117px;
+  padding-bottom: 60px;
+  text-align: left;
+}
+
+.container {
+  --text-width: calc(var(--content-width) * 0.6);
+  --gap-width: calc(var(--content-width) * 0.083);
+  --image-pre-width: calc(var(--content-width) * 0.0587);
+  --image-rest-width: calc(
+    var(--content-width) - var(--text-width) - var(--gap-width) -
+      var(--image-pre-width)
+  );
+  /* --image-rest-width: calc(var(--content-width) * 0.203); */
+  background-color: white;
+  display: grid;
+  width: 100%;
+  grid-template-columns:
+    1fr var(--text-width) var(--gap-width) var(--image-pre-width)
+    var(--image-rest-width) 1fr;
+  grid-template-rows: 111px auto 15px 20px auto 56px;
+  grid-template-areas:
+    "                .                  .                  .                  .           top-lightgreen     top-lightgreen"
+    "                .            heading                  .                  .           top-lightgreen     top-lightgreen"
+    "                .            heading                  .           headshot                 headshot   right-lightgreen"
+    "                .                  .                  .           headshot                 headshot   right-lightgreen"
+    "                .               text                  .           headshot                 headshot   right-lightgreen"
+    "                .                  .                  .                  .  bottom-right-lightgreen   right-lightgreen";
+}
+
+.topLightgreen,
+.rightLightgreen,
+.bottomRightLightgreen {
+  place-self: stretch;
+  background-color: var(--lightgreen);
+}
+
+.topLightgreen {
+  grid-area: top-lightgreen;
+}
+
+.rightLightgreen {
+  grid-area: right-lightgreen;
+}
+
+.bottomRightLightgreen {
+  grid-area: bottom-right-lightgreen;
+}
+
+.headshot {
+  grid-area: headshot;
+  place-self: stretch;
+  object-fit: cover;
+}
+
+.text {
+  grid-area: text;
+}
+
+.heading {
+  grid-area: heading;
+}
+
+.quote {
+  background-color: var(--blue);
+  text-align: left;
+  padding: 83px 0;
+}
+
+.quoteTitle {
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+}
+
+.quoteContent {
+  color: var(--lightgreen);
+  font-size: 30px;
+  font-weight: 600;
+}
