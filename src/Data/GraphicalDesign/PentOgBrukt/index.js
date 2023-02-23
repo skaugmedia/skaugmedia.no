@@ -1,8 +1,10 @@
 import { oneLine } from "common-tags";
-import pentogbrukt_logo from "../../Images/pentogbrukt_logo.jpg";
+import pentogbrukt_logo from "../../../Images/pentogbrukt_logo.jpg";
 
 export default {
+  id: "pent-og-brukt-as",
   title: "Pent og Brukt AS",
+  date: "2021-11-01",
   ingress: oneLine`
     text
   `,

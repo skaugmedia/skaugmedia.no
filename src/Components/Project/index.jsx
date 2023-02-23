@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import project from "../Project/Project.module.css";
 
 export function Project(props) {
@@ -7,9 +8,6 @@ export function Project(props) {
     <div className={`${project.main} ${props.className}`}>
       <img className={project.image} src={img.url} alt={img.title}></img>
       <h3 className={project.title}>{props.title}</h3>
-      <div className={project.count}>
-        {props.images.length} {plural}
-      </div>
     </div>
   );
 }

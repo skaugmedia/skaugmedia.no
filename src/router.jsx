@@ -8,11 +8,15 @@ import ContactRoute from "./Routes/Contact/Route";
 import { Contact } from "./Routes/Contact";
 import GraphicalDesignRoute from "./Routes/GraphicalDesign/Route";
 import { GraphicalDesign } from "./Routes/GraphicalDesign";
+import GraphicalDesignLoader from "./Routes/GraphicalDesign/Loader";
 import PhotographyLoader from "./Routes/Photography/Loader";
 import PhotographyRoute from "./Routes/Photography/Route";
 import { Photography } from "./Routes/Photography";
 import PricesRoute from "./Routes/Prices/Route";
 import { Prices } from "./Routes/Prices";
+import GraphicalDesignProjectRoute from "./Routes/GraphicalDesignProject/Route";
+import GraphicalDesignProjectLoader from "./Routes/GraphicalDesignProject/Loader";
+import { GraphicalDesignProject } from "./Routes/GraphicalDesignProject";
 import { PhotographyCategory } from "./Routes/PhotographyCategory";
 import PhotographyCategoryLoader from "./Routes/PhotographyCategory/Loader";
 import PhotographyCategoryRoute from "./Routes/PhotographyCategory/Route";
@@ -29,7 +33,16 @@ export const router = createBrowserRouter([
           { path: HomeRoute, element: <Home /> },
           { path: AboutRoute, element: <About /> },
           { path: ContactRoute, element: <Contact /> },
-          { path: GraphicalDesignRoute, element: <GraphicalDesign /> },
+          {
+            path: GraphicalDesignRoute,
+            loader: GraphicalDesignLoader,
+            element: <GraphicalDesign />,
+          },
+          {
+            path: GraphicalDesignProjectRoute,
+            loader: GraphicalDesignProjectLoader,
+            element: <GraphicalDesignProject />,
+          },
           {
             path: PhotographyRoute,
             loader: PhotographyLoader,
