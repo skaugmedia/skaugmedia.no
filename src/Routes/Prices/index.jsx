@@ -14,12 +14,29 @@ import weddingimg from "../../Images/produkt_9.jpg";
 import foodimg from "../../Images/mat_12.jpg";
 import designimg from "../../Images/design_prices.jpg";
 import pageName from "./PageName";
+import giftcardimg from "../../Images/mockup_gavekort.jpg";
 
 export function Prices() {
   return (
     <PageSection innerClassName="prices">
       <div className="prices-content">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
+
+        <div className="section-category">
+          <Image className="giftcard-img" src={giftcardimg} alt="Gavekort" />
+          <div className="section-text">
+            <div className="category-title">Gavekort</div>
+            <PriceList items={[{ name: "Gavekort", price: "Valgfri sum" }]} />
+
+            <div className="price-info">
+              Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan
+              brukes på fotograferinger, men gjelder ikke for mine
+              designtjenester.
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
 
         <div className="section-category">
           <Image
