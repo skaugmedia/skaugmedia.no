@@ -1,4 +1,3 @@
-import "./About.css";
 import FotografiHeading from "../../Components/Headings/FotografiHeading";
 import aboutnina from "../../Images/me.jpg";
 import classes from "./About.module.css";
