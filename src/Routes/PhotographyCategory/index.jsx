@@ -8,6 +8,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import classes from "./PhotographyCategory.module.css";
 import { useState } from "react";
 import { NextIcon, PrevIcon } from "./Icons";
+import PhotographyHeading from "../../Components/Headings/FotografiHeading";
 
 export function PhotographyCategory() {
   const { category } = useLoaderData();
@@ -20,8 +21,8 @@ export function PhotographyCategory() {
 
   return (
     <PageSection>
-      <div>{category.title}</div>
-      <p>{category.body}</p>
+      <PhotographyHeading>{category.title}</PhotographyHeading>
+      <p className={classes.bodyText}>{category.body}</p>
       <PhotoAlbum
         layout="columns"
         photos={images}

@@ -1,11 +1,16 @@
 .lightbox {
-    --yarl__color_backdrop: rgba(0, 0, 0, .97);
+  --yarl__color_backdrop: rgba(0, 0, 0, 0.97);
 }
 
 :global .yarl__thumbnails_thumbnail {
-    border-width: 0px;
+  border-width: 0px;
 }
 
 :global .yarl__thumbnails_thumbnail_active {
-    border-width: 1px;
+  border-width: 1px;
+}
+
+.bodyText {
+  font-weight: 200;
+  text-align: left;
 }

@@ -50,6 +50,10 @@ export function Prices() {
                   price: "Kr. 3000,-",
                 },
                 {
+                  name: "Profilbilde / CV-foto / Headshots",
+                  price: "Kr. 1750,-",
+                },
+                {
                   name: "Portretter bedrift",
                   price: "Ta kontakt for pristilbud",
                 },
