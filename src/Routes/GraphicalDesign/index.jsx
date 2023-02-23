@@ -1,15 +1,14 @@
+import { NavLink, useLoaderData } from "react-router-dom";
 import "./GraphicalDesign.css";
 import { Underline } from "../../Components/Underline";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { Project } from "../../Components/Project";
-import lashbrowser from "../../Data/GraphicalDesign/lashbrowser";
-import naturalis from "../../Data/GraphicalDesign/naturalis";
-import pentogbrukt from "../../Data/GraphicalDesign/pentogbrukt";
+import classes from "./GraphicalDesign.module.css";
 import pageName from "./PageName";
 
-const projects = [lashbrowser, naturalis, pentogbrukt];
-
 export function GraphicalDesign() {
+  const { projects } = useLoaderData();
+
   return (
     <div className="design">
       <div className="content">
@@ -19,7 +18,13 @@ export function GraphicalDesign() {
         <div className="section">
           <div className="design-project">
             {projects.map((project) => (
-              <Project className="item" {...project}></Project>
+              <NavLink
+                className={classes.link}
+                to={project.id}
+                key={project.id}
+              >
+                <Project className="item" {...project}></Project>
+              </NavLink>
             ))}
           </div>
         </div>
