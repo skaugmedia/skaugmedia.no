@@ -45,8 +45,8 @@ export default {
         {
           url: produkt1,
           title: "Rosendahl champagneglass",
-          width: 667,
-          height: 1000,
+          width: 1000,
+          height: 667,
         },
       ],
       date: "2018-08-09",

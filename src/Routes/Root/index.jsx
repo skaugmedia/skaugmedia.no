@@ -21,6 +21,7 @@ import facebook from "../../Images/facebook.png";
 import instagram from "../../Images/instagram.png";
 import tiktok from "../../Images/tiktok.png";
 import etsy from "../../Images/etsy.png";
+import { Link } from "react-router-dom";
 
 export function Root() {
   return (
@@ -80,20 +81,18 @@ export function Root() {
           </NavLink>
         </div>
         <div className="footer-social">
-          <a>
-            {" "}
+          <Link to="https://www.facebook.com/profile.php?id=100089990337611">
             <img className="social" src={facebook} alt="Facebook"></img>
-          </a>
-          <a>
+          </Link>
+          <Link to="https://www.instagram.com/skaugmedia/">
             <img className="social" src={instagram} alt="Instagram"></img>
-          </a>
-          <a>
-            {" "}
+          </Link>
+          <Link to="https://www.tiktok.com/@skaugmedia?_t=8a92nGlyw7N&_r=1">
             <img className="social" src={tiktok} alt="Tiktok"></img>
-          </a>
-          <a>
+          </Link>
+          <Link to="https://www.etsy.com/shop/SkaugMedia?ref=search_shop_redirect">
             <img className="social" src={etsy} alt="Etsy"></img>
-          </a>
+          </Link>
         </div>
       </footer>
     </div>

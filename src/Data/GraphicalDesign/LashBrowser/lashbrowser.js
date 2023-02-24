@@ -11,6 +11,7 @@ import pricelist from "./Images/prisliste.jpg";
 import typography from "./Images/typografi.jpg";
 import card from "./Images/visittkort.jpg";
 import logomockup from "./Images/logo_mockup.jpg";
+import sketch from "./Images/skisser.jpg";
 
 export default {
   id: "lashbrowser",
@@ -136,6 +137,7 @@ export default {
     ],
 
     logo: logo,
+    sketches: sketch,
   },
   graphicalElements: [
     {
