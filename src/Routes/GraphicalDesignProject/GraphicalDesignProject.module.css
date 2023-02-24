@@ -1,0 +1,53 @@
+:global .image-gallery-image {
+  width: 100%;
+  height: 600px;
+}
+
+.container {
+  text-align: left;
+}
+
+.ingress {
+  font-weight: 300;
+}
+
+.designElements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.designElement {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--lightblue);
+  height: 314px;
+  width: 48%;
+}
+
+.colorPalette {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.colorCard {
+  padding-top: 150px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.colorDetails {
+  background-color: #fff;
+  outline-style: solid;
+  outline-color: rgb(209, 209, 209);
+  outline-width: 1px;
+  border-radius: 10px;
+  margin: 0;
+  list-style: none;
+  padding: 20px;
+}
