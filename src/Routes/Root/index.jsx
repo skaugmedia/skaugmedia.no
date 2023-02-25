@@ -23,6 +23,10 @@ import tiktok from "../../Images/tiktok.png";
 import etsy from "../../Images/etsy.png";
 import { Link } from "react-router-dom";
 
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
 export function Root() {
   return (
     <div className="Root">
@@ -51,6 +55,13 @@ export function Root() {
           </NavLink>
         </nav>
       </header>
+
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
       <main>
         <Outlet />
       </main>

@@ -96,3 +96,18 @@
 .giftcard-img {
   min-height: 250px;
 }
+
+@media only screen and (max-width: 600px) {
+  .prices {
+    flex-flow: column;
+  }
+  .section-category {
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    grid-gap: none;
+    width: 100%;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
