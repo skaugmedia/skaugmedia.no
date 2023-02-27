@@ -7,9 +7,9 @@ export function Image({ className, src, alt, fit, ...props }) {
         fit === "contain" ? css.contain : css.cover
       } ${className}`}
       aria-label={alt}
-      aria-role="img"
+      role="img"
       {...props}
-      style={{ "background-image": `url(${src})` }}
+      style={{ backgroundImage: `url(${src})` }}
     />
   );
 }

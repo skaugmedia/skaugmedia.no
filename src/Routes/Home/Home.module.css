@@ -1,0 +1,6 @@
+.plainLink,
+.plainLink:hover,
+.plainLink:visited {
+  text-decoration: none;
+  color: inherit;
+}

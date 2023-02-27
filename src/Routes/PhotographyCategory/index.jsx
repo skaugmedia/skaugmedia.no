@@ -7,6 +7,7 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import classes from "./PhotographyCategory.module.css";
 import { useState } from "react";
+import { byDate } from "/src/util";
 import { NextIcon, PrevIcon } from "./Icons";
 import PhotographyHeading from "../../Components/Headings/FotografiHeading";
 
@@ -15,7 +16,7 @@ export function PhotographyCategory() {
   const [index, setIndex] = useState(-1);
 
   const images = category.shoots
-    .sort((shoot1, shoot2) => new Date(shoot2.date) - new Date(shoot1.date))
+    .sort(byDate)
     .flatMap((x) => x.images)
     .map((x) => ({ ...x, src: x.url }));
 

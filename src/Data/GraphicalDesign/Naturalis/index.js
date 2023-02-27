@@ -20,16 +20,17 @@ import cardgreen from "./Images/visittkort_gronn.jpg";
 export default {
   id: "naturalis",
   title: "Naturalis by Synne Wik",
+  category: "Visuell identitet",
   date: "21-05-15",
   ingress: oneLine`
-    Naturalis var et skoleprosjekt jeg laget mens jeg gikk på Fagskolen Kristiania. Oppgaven gikk ut på å lage en komplett visuell identitet inkludert en animasjon, 
-    webside både responsiv og for desktop, postalia, og alt annet som medfølger en slik type bedrift. Dette er altså en fiksjonell bedrift, for en interiørdesigner ved navn Synne Wik, 
-    som spesialiserer seg på bærekraftig interiørdesign, og bruker naturmaterialer i alle sine prosjekter. Hun er nå i ferd med å åpne sin egen butikk der hun selger interiør og 
-    dekor til bruk i hjemmet. 
+    Naturalis var et skoleprosjekt jeg laget mens jeg gikk på Fagskolen Kristiania. Oppgaven gikk ut på å lage en komplett visuell identitet inkludert en animasjon,
+    webside både responsiv og for desktop, postalia, og alt annet som medfølger en slik type bedrift. Dette er altså en fiksjonell bedrift, for en interiørdesigner ved navn Synne Wik,
+    som spesialiserer seg på bærekraftig interiørdesign, og bruker naturmaterialer i alle sine prosjekter. Hun er nå i ferd med å åpne sin egen butikk der hun selger interiør og
+    dekor til bruk i hjemmet.
   `,
   body: oneLine`
-    Fargepaletten til Naturalis er i alle høyeste grad inspirert av naturen, og alle naturmaterialene vi kan finne utendørs i naturen. I form av de grafiske elementene og logoen til denne 
-    bedriften, er det også enkelt å forstå at dette er et design som er inspirert av og som fremmer naturen. 
+    Fargepaletten til Naturalis er i alle høyeste grad inspirert av naturen, og alle naturmaterialene vi kan finne utendørs i naturen. I form av de grafiske elementene og logoen til denne
+    bedriften, er det også enkelt å forstå at dette er et design som er inspirert av og som fremmer naturen.
   `,
   cover: {
     url: logomockup,

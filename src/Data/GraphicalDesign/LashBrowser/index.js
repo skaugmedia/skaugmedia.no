@@ -1,7 +1,7 @@
 import { oneLine } from "common-tags";
-import lashbrowser_logo from "../../Images/lashbrowser_logo.jpg";
+import lashbrowser_logo from "./Images/logo_mockup.jpg";
 import giftcard from "./Images/gavekort.jpg";
-import giveaway from "./Images/webside_1.jpg";
+import giveaway from "./Images/giveaway.jpg";
 import instagramicon from "./Images/instagram.jpg";
 import instagram from "./Images/instagram_1.jpg";
 import logo from "./Images/logo.jpg";
@@ -16,16 +16,17 @@ import sketch from "./Images/skisser.jpg";
 export default {
   id: "lashbrowser",
   title: "LashBrowser",
+  category: "Visuell identitet",
   date: "2023-01-30",
   ingress: oneLine`
-    LashBrowser er en bedrift som utfører Brynslaminering, Vippeløft, Make-up og andre ting innen vipper og bryn. Bedriften var opptatt av å få 
-    frem essensen av hva de jobber med, derfor var det naturlig å bruke vipper og bryn i logoen og designet generelt. Ved utvidelse til egen salong, 
-    trengte bedriften ulike forskjellige design knyttet til åpning av salong og å drive en bedrift. LashBrowser fokuserer mye av sin markedsføring gjennom 
-    sosiale medier, og har derfor hatt behov for flere maler og lignende til bruk på Instagram. 
+    LashBrowser er en bedrift som utfører Brynslaminering, Vippeløft, Make-up og andre ting innen vipper og bryn. Bedriften var opptatt av å få
+    frem essensen av hva de jobber med, derfor var det naturlig å bruke vipper og bryn i logoen og designet generelt. Ved utvidelse til egen salong,
+    trengte bedriften ulike forskjellige design knyttet til åpning av salong og å drive en bedrift. LashBrowser fokuserer mye av sin markedsføring gjennom
+    sosiale medier, og har derfor hatt behov for flere maler og lignende til bruk på Instagram.
   `,
   body: oneLine`
-    Fargepaletten til LashBrowser, er inspirert av personen bak bedriften, men ikke helt tro til inspirasjonsfargene. Dette er en dame med bein i nesa, som har 
-    blått hår, blå bil og blå behandlingsbenk, hun elsker blått, grønt og gull- som til en viss grad synes gjennom bedriftens design. 
+    Fargepaletten til LashBrowser, er inspirert av personen bak bedriften, men ikke helt tro til inspirasjonsfargene. Dette er en dame med bein i nesa, som har
+    blått hår, blå bil og blå behandlingsbenk, hun elsker blått, grønt og gull- som til en viss grad synes gjennom bedriftens design.
   `,
   cover: {
     url: lashbrowser_logo,
