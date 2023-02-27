@@ -56,10 +56,10 @@ export function Root() {
         </nav>
       </header>
 
-      <div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+      <div className="container" onClick={myFunction}>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
       </div>
 
       <main>
