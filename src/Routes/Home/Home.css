@@ -109,13 +109,27 @@
   font-weight: 700;
 }
 
+.works-category {
+  font-weight: 200;
+}
+
 .works-outer {
   background-color: var(--lightgreen);
 }
 
 .works {
   padding-top: 50px;
-  padding-bottom: 50px;
+}
+
+.works-text-box {
+  background-color: var(--lightblue);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.flex-child.latest:hover {
+  opacity: 90%;
+  color: var(--blue);
 }
 
 .works .flex-container {

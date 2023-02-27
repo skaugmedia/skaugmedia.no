@@ -7,6 +7,11 @@
   --content-width: 1000px;
 }
 
+input,
+textarea {
+  font-family: inherit;
+}
+
 * {
   box-sizing: border-box;
 }

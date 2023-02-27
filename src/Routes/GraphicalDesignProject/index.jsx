@@ -34,8 +34,8 @@ export function GraphicalDesignProject() {
           alt="Logo"
         />
       </div>
+      <div className={classes.designInfoHeading}>Fargepalett</div>
       <div className={classes.colorPalette}>
-        Fargepalette{" "}
         {project.designElements.colorPalette.map((color) => (
           <div
             className={classes.colorCard}

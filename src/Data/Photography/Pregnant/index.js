@@ -1,5 +1,12 @@
 import { oneLine } from "common-tags";
-import imagesoon from "../../../Images/bilde_kommer.jpg";
+
+import pregnant_1 from "../../../Images/gravid_1.jpg";
+import pregnant_2 from "../../../Images/gravid_2.jpg";
+import pregnant_3 from "../../../Images/gravid_3.jpg";
+import pregnant_4 from "../../../Images/gravid_4.jpg";
+import pregnant_5 from "../../../Images/gravid_5.jpg";
+import pregnant_6 from "../../../Images/gravid_6.jpg";
+import pregnant_7 from "../../../Images/gravid_7.jpg";
 
 export default {
   id: "gravid",
@@ -11,23 +18,59 @@ export default {
     fordi det er noe helt eget som du ønsker å kunne se tilbake på etter at babyen er ute.
   `,
   cover: {
-    url: imagesoon,
-    title: "Bilde kommer",
+    url: pregnant_6,
+    title: "Prini",
   },
   shoots: [
-    /*{
-      description: "",
-      tags: ["gravid",],
+    {
+      description: "Prini",
+      tags: ["gravid"],
       images: [
         {
-          url: ,
-          title: "",
-          width: 626,
+          url: pregnant_4,
+          title: "Prini",
+          width: 667,
           height: 1000,
         },
-        
+        {
+          url: pregnant_1,
+          title: "Prini",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: pregnant_2,
+          title: "Prini",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: pregnant_3,
+          title: "Prini",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: pregnant_6,
+          title: "Prini",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: pregnant_5,
+          title: "Prini",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: pregnant_7,
+          title: "Prini",
+          width: 667,
+          height: 1000,
+        },
       ],
-      date: "2013-03-18",
-    },*/
+      date: "2023-02-25",
+    },
   ],
 };

@@ -80,14 +80,16 @@ export function Home() {
               to={recentWork.url}
               className={classes.plainLink}
             >
-              <div className="flex-child">
+              <div className="flex-child latest">
                 <Image
                   className="works-img"
                   src={recentWork.img.url}
                   alt={recentWork.img.title}
                 />
-                <div className="works-title">{recentWork.category}</div>
-                <div className="works-category">{recentWork.title}</div>
+                <div className="works-text-box">
+                  <div className="works-title">{recentWork.category}</div>
+                  <div className="works-category">{recentWork.title}</div>
+                </div>
               </div>
             </NavLink>
           ))}

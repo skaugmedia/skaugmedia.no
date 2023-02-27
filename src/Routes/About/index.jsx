@@ -26,7 +26,6 @@ export function About() {
           <div className={classes.bottomRightLightgreen} />
         </div>
       </div>
-      <Quote />
     </>
   );
 }
@@ -66,21 +65,5 @@ function Paragraphs() {
         du og din bedrift ønsker.
       </p>
     </>
-  );
-}
-
-function Quote() {
-  return (
-    <PageSection className={classes.quote}>
-      <div className={classes.quoteTitle}>
-        Nina Merethe Skaug, fotograf og grafisk designer
-      </div>
-      <div className={classes.quoteContent}>
-        - Som fotograf fokuserer jeg på å få frem de magiske øyeblikkene og jeg
-        er opptatt av at alle skal ha en fin opplevelse foran kamera. Mens jeg
-        som designer er leken og eksperimentell, samtidig som jeg gjerne
-        forholder meg til et stramt gridsystem.
-      </div>
-    </PageSection>
   );
 }

@@ -4,11 +4,11 @@ import { Underline } from "../../Components/Underline";
 import { PriceList } from "./Components/PriceList";
 import { PageSection } from "../../Components/PageSection";
 import { IncludesList } from "./Components/IncludesList";
-import { oneLine } from "common-tags";
+
 import { Image } from "../../Components/Image";
 import portrettimg from "../../Images/silje_konfirmant_3.jpg";
 import newbornimg from "../../Images/newborn_liam_4.jpg";
-import pregnantimg from "../../Images/tonje_1.jpg";
+import pregnantimg from "../../Images/gravid_4.jpg";
 import coupleimg from "../../Images/couple_prices.jpg";
 import weddingimg from "../../Images/produkt_9.jpg";
 import foodimg from "../../Images/mat_12.jpg";

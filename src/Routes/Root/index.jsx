@@ -56,7 +56,7 @@ export function Root() {
         </nav>
       </header>
 
-      <div className="container" onClick={myFunction}>
+      <div className="hamburger" onClick={myFunction}>
         <div className="bar1"></div>
         <div className="bar2"></div>
         <div className="bar3"></div>
