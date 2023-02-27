@@ -1,44 +1,56 @@
-import Button from "../../Components/Button";
-import DesignHeading from "../../Components/Headings/DesignHeading";
-import FotografiHeading from "../../Components/Headings/FotografiHeading";
-import AboutRoute from "../About/Route";
-import AboutPageName from "../About/PageName";
-import ContactRoute from "../Contact/Route";
-import ContactPageName from "../Contact/PageName";
-import GraphicalDesignRoute from "../GraphicalDesign/Route";
-import GraphicalDesignPageName from "../GraphicalDesign/PageName";
-import PhotographyRoute from "../Photography/Route";
-import PhotographyPageName from "../Photography/PageName";
-import PricesPageName from "../Prices/PageName";
-import PricesRoute from "../Prices/Route";
-import HomeRoute from "../Home/Route";
-import HomePageName from "../Home/PageName";
-import "./Root.css";
-import classes from "./Root.module.css";
-import { Outlet, NavLink } from "react-router-dom";
-import skaugmedia from "../../Images/skaugmedia.png";
+import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+import { Link, NavLink, Outlet } from "react-router-dom";
+import etsy from "../../Images/etsy.png";
 import facebook from "../../Images/facebook.png";
 import instagram from "../../Images/instagram.png";
+import skaugmedia from "../../Images/skaugmedia.png";
 import tiktok from "../../Images/tiktok.png";
-import etsy from "../../Images/etsy.png";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import AboutPageName from "../About/PageName";
+import AboutRoute from "../About/Route";
+import ContactPageName from "../Contact/PageName";
+import ContactRoute from "../Contact/Route";
+import GraphicalDesignPageName from "../GraphicalDesign/PageName";
+import GraphicalDesignRoute from "../GraphicalDesign/Route";
+import HomePageName from "../Home/PageName";
+import HomeRoute from "../Home/Route";
+import PhotographyPageName from "../Photography/PageName";
+import PhotographyRoute from "../Photography/Route";
+import PricesPageName from "../Prices/PageName";
+import PricesRoute from "../Prices/Route";
+import "./Root.css";
+import classes from "./Root.module.css";
 
 export function Root() {
-  const [showNav, toggleNav] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+  const isMobile = useMediaQuery({ maxWidth: 600 });
 
   return (
     <>
       <div className="Root">
-        <header className="header">
+        <header className={classes.header}>
           <NavLink to={HomeRoute} className={classes.plainLink}>
-            <img className="logo" src={skaugmedia} alt="Skaug Media logo"></img>
+            {isMobile ? (
+              <h1 className={classes.mobileHeading}>
+                <span className={classes.mobileHeadingFirst}>Skaug</span>
+                <span className={classes.mobileHeadingSecond}>Media</span>
+              </h1>
+            ) : (
+              <img className="logo" src={skaugmedia} alt="Skaug Media logo" />
+            )}
           </NavLink>
 
-          <div className="hamburger" onClick={toggleNav}>
-            <div className="bar1"></div>
-            <div className="bar2"></div>
-            <div className="bar3"></div>
+          <div
+            className={`
+              ${classes.hamburger}
+              ${classes.showOnMobile}
+              ${showNav ? classes.change : ""}
+            `}
+            onClick={() => setShowNav(!showNav)}
+          >
+            <div className={classes.bar1}></div>
+            <div className={classes.bar2}></div>
+            <div className={classes.bar3}></div>
           </div>
 
           <Nav
@@ -69,7 +81,19 @@ export function Root() {
           </div>
         </footer>
       </div>
-      <div className={classes.mobileNav}></div>
+      <div
+        className={`
+          ${classes.mobileNavContainer}
+          ${classes.showOnMobile}
+          ${showNav ? "" : classes.hide}
+        `}
+        onClick={() => setShowNav(false)}
+      >
+        <Nav
+          containerClassName={classes.mobileNav}
+          linkClassName={classes.mobileNavLink}
+        />
+      </div>
     </>
   );
 }
