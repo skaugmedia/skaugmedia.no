@@ -90,6 +90,8 @@
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+}
 /* .container {
   --text-width: calc(var(--content-width) * 0.7);
   --gap-width: calc(var(--content-width) * 0.06);

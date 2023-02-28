@@ -47,11 +47,15 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .photography {
-    max-width: var(--content-width);
+  /* .content {
+    width: var(--content-width);
     max-width: 80%;
-    display: flex;
   }
+
+  .photography {
+    max-width: 100%;
+    display: flex;
+  } */
 
   .photography-category {
     justify-content: center;

@@ -100,9 +100,11 @@
 @media only screen and (max-width: 600px) {
   .prices {
     flex-flow: column;
-    max-width: var(--content-width);
     width: 100%;
+    width: var(--content-width);
+    max-width: 80%;
   }
+
   .section-category {
     grid-template-columns: 100%;
     grid-template-rows: max-content;

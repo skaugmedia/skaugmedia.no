@@ -5,12 +5,13 @@ import DesignHeading from "../../Components/Headings/DesignHeading";
 import { Project } from "../../Components/Project";
 import classes from "./GraphicalDesign.module.css";
 import pageName from "./PageName";
+import { PageSection } from "../../Components/PageSection";
 
 export function GraphicalDesign() {
   const { projects } = useLoaderData();
 
   return (
-    <div className="design">
+    <PageSection className="design">
       <div className="content">
         <div>
           <DesignHeading>{pageName}</DesignHeading>
@@ -30,6 +31,6 @@ export function GraphicalDesign() {
         </div>
       </div>
       <Underline></Underline>
-    </div>
+    </PageSection>
   );
 }

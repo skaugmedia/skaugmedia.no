@@ -6,12 +6,32 @@
 
 .price {
   color: var(--blue);
-  font-weight: 700;
+  font-weight: 600;
   text-align: left;
 }
 
 .name {
   color: var(--blue);
-  font-weight: 700;
+  font-weight: 600;
   text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+  .price {
+    font-size: 0.85em;
+  }
+
+  .name {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .price {
+    font-size: 0.75em;
+  }
+
+  .name {
+    font-size: 0.75em;
+  }
 }

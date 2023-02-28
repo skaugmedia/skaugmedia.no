@@ -193,7 +193,13 @@
   .skaugmedia-outer {
     width: 100%;
   }
+  .round-nina {
+    width: 250px;
+  }
 
+  .skaugmedia .text-container {
+    padding-top: 0px;
+  }
   .skaugmedia {
     justify-content: center;
     max-width: var(--content-width);

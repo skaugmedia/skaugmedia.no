@@ -4,11 +4,12 @@ import { Underline } from "../../Components/Underline";
 import FotografiHeading from "../../Components/Headings/FotografiHeading";
 import { Category } from "../../Components/Category";
 import pageName from "./PageName";
+import { PageSection } from "../../Components/PageSection";
 
 export function Photography() {
   const { categories } = useLoaderData();
   return (
-    <div className="photography">
+    <PageSection className="photography">
       <div className="content">
         <div>
           <FotografiHeading>{pageName}</FotografiHeading>
@@ -28,6 +29,6 @@ export function Photography() {
         </div>
       </div>
       <Underline></Underline>
-    </div>
+    </PageSection>
   );
 }
