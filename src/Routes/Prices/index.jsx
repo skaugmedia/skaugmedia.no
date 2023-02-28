@@ -9,7 +9,7 @@ import { Image } from "../../Components/Image";
 import portrettimg from "../../Images/silje_konfirmant_3.jpg";
 import newbornimg from "../../Images/newborn_liam_4.jpg";
 import pregnantimg from "../../Images/gravid_4.jpg";
-import coupleimg from "../../Images/couple_prices.jpg";
+import coupleimg from "../../Images/forlovelse_3.jpg";
 import weddingimg from "../../Images/produkt_9.jpg";
 import foodimg from "../../Images/mat_12.jpg";
 import designimg from "../../Images/design_prices.jpg";

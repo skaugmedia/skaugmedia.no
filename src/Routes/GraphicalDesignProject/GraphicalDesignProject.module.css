@@ -15,6 +15,8 @@
 .designElements {
   display: flex;
   justify-content: space-between;
+  width: 48%;
+  flex-flow: column;
 }
 
 .designElement {
@@ -22,7 +24,14 @@
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.18);
   height: 314px;
+  width: 100%;
+}
+
+.graphicalElements {
+  display: flex;
+  justify-content: space-between;
   width: 48%;
+  flex-flow: row wrap;
 }
 
 .designInfoHeading {
@@ -39,6 +48,7 @@
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 10px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .colorCard {
@@ -60,4 +70,20 @@
   margin: 0;
   list-style: none;
   padding: 20px;
+}
+
+.body {
+  font-weight: 300;
+}
+
+.infoBoxesGridTop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.infoBoxesGridBottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

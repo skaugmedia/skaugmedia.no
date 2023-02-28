@@ -48,7 +48,10 @@ export function Home() {
           </div>
         </div>
       </PageSection>
-      <PageSection innerClassName="skaugmedia">
+      <PageSection
+        outerClassName="skaugmedia-outer"
+        innerClassName="skaugmedia"
+      >
         <div className="flex-container">
           <div className="flex-child image-container">
             <img
@@ -61,10 +64,10 @@ export function Home() {
             <div className="skaugmedia-overskrift">Skaug Media</div>
             <div className="nina-text">
               Jeg heter Nina Merethe Skaug, er mamma, fotograf og grafisk
-              designer. Jeg elsker å være kreativ, og brenner for å<br />
-              skape flotte bilder og design, både til privat og bedrifter. Jeg
-              holder til på Jessheim i Ullensaker kommune, men <br />
-              fotograferer over hele Oslo, Romerike og omegn.
+              designer. Jeg elsker å være kreativ, og brenner for å skape flotte
+              bilder og design, både til privat og bedrifter. Jeg holder til på
+              Jessheim i Ullensaker kommune, men fotograferer over hele Oslo,
+              Romerike og omegn.
             </div>
             <ButtonLink to={AboutRoute} className="lesmer-button">
               Les mer
@@ -73,12 +76,13 @@ export function Home() {
         </div>
       </PageSection>
       <PageSection outerClassName="works-outer" innerClassName="works">
+        <div className="works-home-title">Mine siste arbeider</div>
         <div className="flex-container works-forside">
           {recentWorks.map((recentWork) => (
             <NavLink
               key={recentWork.url}
               to={recentWork.url}
-              className={classes.plainLink}
+              className={`${classes.plainLink} flex-child`}
             >
               <div className="flex-child latest">
                 <Image

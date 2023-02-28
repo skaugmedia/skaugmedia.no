@@ -37,6 +37,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .design {
+    max-width: var(--content-width);
+    max-width: 80%;
+    display: flex;
+  }
   .design-project {
     justify-content: center;
     grid-template-columns: 100%;

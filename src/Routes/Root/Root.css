@@ -77,6 +77,16 @@ footer {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .footer-link {
+    display: none;
+  }
+
+  .social {
+    padding-top: 0px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .footer-link {
     display: none;

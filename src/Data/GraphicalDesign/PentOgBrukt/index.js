@@ -11,6 +11,7 @@ import logo from "./Images/logo.jpg";
 import logomockup from "./Images/logo_mockup.jpg";
 import webpage from "./Images/webside.jpg";
 import webpage1 from "./Images/webside_1.jpg";
+import sketch from "./Images/skisser.jpg";
 
 export default {
   id: "pent-og-brukt-as",
@@ -133,5 +134,6 @@ export default {
       },
     ],
     logo: logo,
+    sketches: sketch,
   },
 };

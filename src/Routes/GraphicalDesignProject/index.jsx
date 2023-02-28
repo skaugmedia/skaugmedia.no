@@ -19,21 +19,6 @@ export function GraphicalDesignProject() {
         showBullets={true}
       />
       <p className={classes.ingress}>{project.ingress}</p>
-      <div className={classes.designElements}>
-        <Image
-          className={classes.designElement}
-          fit="contain"
-          src={project.designElements.fonts}
-          alt="Fonts"
-        />
-
-        <Image
-          className={classes.designElement}
-          fit="contain"
-          src={project.designElements.logo}
-          alt="Logo"
-        />
-      </div>
       <div className={classes.designInfoHeading}>Fargepalett</div>
       <div className={classes.colorPalette}>
         {project.designElements.colorPalette.map((color) => (
@@ -49,6 +34,52 @@ export function GraphicalDesignProject() {
             </ul>
           </div>
         ))}
+      </div>
+      <p className={classes.body}>{project.body}</p>
+      <div className={classes.infoBoxesGridTop}>
+        <div className={classes.designElements}>
+          <div className={classes.designInfoHeading}>Typografi</div>
+          <Image
+            className={classes.designElement}
+            fit="contain"
+            src={project.designElements.fonts}
+            alt="Fonts"
+          />
+        </div>
+        <div className={classes.designElements}>
+          <div className={classes.designInfoHeading}>Logo</div>
+          <Image
+            className={classes.designElement}
+            fit="contain"
+            src={project.designElements.logo}
+            alt="Logo"
+          />
+        </div>
+      </div>
+      <div className={classes.infoBoxesGridBottom}>
+        <div className={classes.graphicalElements}>
+          <div className={classes.designInfoHeading}>Skisser</div>
+
+          <Image
+            className={classes.designElement}
+            fit="contain"
+            src={project.designElements.sketches}
+            alt="Skisser"
+          />
+          {project.graphicalElements?.map((graphicalElement) => (
+            <div className={classes.graphicalElements}>
+              <div className={classes.designInfoHeading}>
+                {graphicalElement.title}
+              </div>
+              <Image
+                className={classes.designElement}
+                src={graphicalElement.url}
+                alt={graphicalElement.title}
+                fit="contain"
+              ></Image>
+            </div>
+          ))}
+        </div>
       </div>
     </PageSection>
   );

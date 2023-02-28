@@ -10,6 +10,17 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 1000px) {
+  .inner {
+    max-width: var(--content-width);
+    width: 80%;
+  }
+
+  .outer {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .inner {
     max-width: var(--content-width);
