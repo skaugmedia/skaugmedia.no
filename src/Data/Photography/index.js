@@ -18,8 +18,8 @@ export const categories = [
   pregnant,
   portrait,
   engagement,
+  business,
   // wedding,
   food,
   product,
-  // business,
 ];

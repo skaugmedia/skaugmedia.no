@@ -23,7 +23,7 @@ import classes from "./Root.module.css";
 
 export function Root() {
   const [showNav, setShowNav] = useState(false);
-  const isMobile = useMediaQuery({ maxWidth: 600 });
+  const isMobile = useMediaQuery({ maxWidth: 1000 });
 
   return (
     <>
@@ -93,6 +93,28 @@ export function Root() {
           containerClassName={classes.mobileNav}
           linkClassName={classes.mobileNavLink}
         />
+        <div>
+          <Link to="https://www.facebook.com/profile.php?id=100089990337611">
+            <img
+              className="social-hamburger"
+              src={facebook}
+              alt="Facebook"
+            ></img>
+          </Link>
+          <Link to="https://www.instagram.com/skaugmedia/">
+            <img
+              className="social-hamburger"
+              src={instagram}
+              alt="Instagram"
+            ></img>
+          </Link>
+          <Link to="https://www.tiktok.com/@skaugmedia?_t=8a92nGlyw7N&_r=1">
+            <img className="social-hamburger" src={tiktok} alt="Tiktok"></img>
+          </Link>
+          <Link to="https://www.etsy.com/shop/SkaugMedia?ref=search_shop_redirect">
+            <img className="social-hamburger" src={etsy} alt="Etsy"></img>
+          </Link>
+        </div>
       </div>
     </>
   );

@@ -9,6 +9,15 @@ import forlovelse6 from "../../../Images/forlovelse_6.jpg";
 import forlovelse7 from "../../../Images/forlovelse_7.jpg";
 import forlovelse8 from "../../../Images/forlovelse_8.jpg";
 import forlovelse9 from "../../../Images/forlovelse_9.jpg";
+import luciaole1 from "../../../Images/lucia_ole_1.jpg";
+import luciaole2 from "../../../Images/lucia_ole_2.jpg";
+import luciaole3 from "../../../Images/lucia_ole_3.jpg";
+import luciaole4 from "../../../Images/lucia_ole_4.jpg";
+import luciaole5 from "../../../Images/lucia_ole_5.jpg";
+import luciaole6 from "../../../Images/lucia_ole_6.jpg";
+import luciaole7 from "../../../Images/lucia_ole_7.jpg";
+import luciaole8 from "../../../Images/lucia_ole_8.jpg";
+import luciaole9 from "../../../Images/lucia_ole_9.jpg";
 
 export default {
   id: "kjaereste-og-forlovelse",
@@ -87,6 +96,70 @@ export default {
         },
       ],
       date: "2023-02-19",
+    },
+    {
+      description: "Lucia og Ole",
+      tags: ["hund", "kjæreste"],
+      images: [
+        {
+          url: luciaole1,
+          title: "Lucia og Ole",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: luciaole6,
+          title: "Lucia og Ole",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: luciaole3,
+          title: "Lucia og Ole",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: luciaole2,
+          title: "Lucia og Ole",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: luciaole4,
+          title: "Lucia og Ole",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: luciaole7,
+          title: "Lucia og Ole",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: luciaole5,
+          title: "Lucia og Ole",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: luciaole8,
+          title: "Lucia og Ole",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: luciaole9,
+          title: "Lucia og Ole",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2023-02-26",
     },
   ],
 };

@@ -34,14 +34,18 @@ export function Home() {
             </ButtonLink>
           </div>
           <div className="flex-child image-container">
-            <img className="foto-header" src={liamforside} alt="Liam"></img>
             <img
-              className="foto-header"
+              className="foto-header foto-header-liam"
+              src={liamforside}
+              alt="Liam"
+            ></img>
+            <img
+              className="foto-header foto-header-lashbrowser"
               src={lashbrowserforside}
               alt="Lashbrowser logo"
             ></img>
             <img
-              className="foto-header"
+              className="foto-header foto-header-silje"
               src={konfirmantsiljeforside}
               alt="Konfirmanten Silje"
             ></img>
@@ -53,7 +57,7 @@ export function Home() {
         innerClassName="skaugmedia"
       >
         <div className="flex-container">
-          <div className="flex-child image-container">
+          <div className="flex-child about-image-container">
             <img
               className="round-nina"
               src={ninaforside}
@@ -77,7 +81,7 @@ export function Home() {
       </PageSection>
       <PageSection outerClassName="works-outer" innerClassName="works">
         <div className="works-home-title">Mine siste arbeider</div>
-        <div className="flex-container works-forside">
+        <div className="works-forside">
           {recentWorks.map((recentWork) => (
             <NavLink
               key={recentWork.url}

@@ -36,7 +36,7 @@ export function GraphicalDesignProject() {
         ))}
       </div>
       <p className={classes.body}>{project.body}</p>
-      <div className={classes.infoBoxesGridTop}>
+      <div className={classes.infoBoxesGrid}>
         <div className={classes.designElements}>
           <div className={classes.designInfoHeading}>Typografi</div>
           <Image
@@ -55,8 +55,6 @@ export function GraphicalDesignProject() {
             alt="Logo"
           />
         </div>
-      </div>
-      <div className={classes.infoBoxesGridBottom}>
         <div className={classes.graphicalElements}>
           <div className={classes.designInfoHeading}>Skisser</div>
 

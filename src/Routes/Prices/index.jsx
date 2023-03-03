@@ -82,7 +82,7 @@ export function Prices() {
               <IncludesList
                 items={[
                   "Samtale før fotografering med veiledning til valg av lokasjon og anbefalte klær",
-                  "1-2 timer fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+                  "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
                   "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
                   "3 stk. redigerte, høyoppløselige bilder",
                   "Bildene leveres digitalt",
@@ -94,9 +94,11 @@ export function Prices() {
                 holder til i Storgata 7B, 2050 Jessheim.
               </p>
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 800,- per bilde.
+              er prisen kr. 750,- per bilde.
               <p className="additional-prices">
-                Kvelds- og helgetillegg: kr. 750,-
+                Kveldstillegg: kr. 700,-
+                <br />
+                Helgetillegg: kr. 1000,-
                 <br />
                 Ikke møtt opp til fotografering: kr. 500,-
               </p>
@@ -140,10 +142,12 @@ export function Prices() {
                 ]}
               />
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 800,- per bilde.
+              er prisen kr. 750,- per bilde.
               <br />
               <p className="additional-prices">
-                Kvelds- og helgetillegg: kr. 750,-
+                Kveldstillegg: kr. 700,-
+                <br />
+                Helgetillegg: kr. 1000,-
                 <br />
                 Ikke møtt opp til fotografering: kr. 500,-
               </p>
@@ -181,7 +185,7 @@ export function Prices() {
               <IncludesList
                 items={[
                   "Samtale før fotografering for å avtale nærmere",
-                  "1-2 timer fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+                  "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
                   "Bilder sammen med partner og barn",
                   "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
                   "3 stk. redigerte, høyoppløselige bilder",
@@ -194,10 +198,12 @@ export function Prices() {
                 holder til i Storgata 7B, 2050 Jessheim.
               </p>
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 800,- per bilde.
+              er prisen kr. 750,- per bilde.
               <br />
               <p className="additional-prices">
-                Kvelds- og helgetillegg: kr. 750,-
+                Kveldstillegg: kr. 700,-
+                <br />
+                Helgetillegg: kr. 1000,-
                 <br />
                 Ikke møtt opp til fotografering: kr. 500,-
               </p>
@@ -249,10 +255,12 @@ export function Prices() {
                 holder til i Storgata 7B, 2050 Jessheim.
               </p>
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 800,- per bilde.
+              er prisen kr. 750,- per bilde.
               <br />
               <p className="additional-prices">
-                Kvelds- og helgetillegg: kr. 750,-
+                Kveldstillegg: kr. 700,-
+                <br />
+                Helgetillegg: kr. 1000,-
                 <br />
                 Ikke møtt opp til fotografering: kr. 500,-
               </p>
@@ -312,7 +320,7 @@ export function Prices() {
                 ]}
               />
               Ønsker du å bestille flere bilder enn de som er inkludert, er
-              prisen kr. 800,- per bilde.
+              prisen kr. 750,- per bilde.
               <br />
               <br />
               <div className="price-extra-info">
