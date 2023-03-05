@@ -29,16 +29,3 @@ export const PrevIcon = ({ size, ...props }) =>
     glyph: <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />,
     ...props,
   });
-
-export function Pip({ active }) {
-  return (
-    <div
-      style={{
-        "border-radius": "100%",
-        "background-color": active ? "#BAC624" : "#D8F4A4",
-        width: "24px",
-        height: "24px",
-      }}
-    />
-  );
-}

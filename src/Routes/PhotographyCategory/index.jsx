@@ -1,24 +1,25 @@
-import { PageSection } from "../../Components/PageSection";
-import { useLoaderData } from "react-router-dom";
+import { useRef, useState } from "react";
+import ImageGallery from "react-image-gallery";
 import PhotoAlbum from "react-photo-album";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import classes from "./PhotographyCategory.module.css";
-import { useState } from "react";
-import { byDate } from "/src/util";
-import { NextIcon, PrevIcon } from "./Icons";
+import { useLoaderData } from "react-router-dom";
 import PhotographyHeading from "../../Components/Headings/FotografiHeading";
+import { PageSection } from "../../Components/PageSection";
+import classes from "./PhotographyCategory.module.css";
+import { byDate } from "/src/util";
 
 export function PhotographyCategory() {
   const { category } = useLoaderData();
   const [index, setIndex] = useState(-1);
+  const gallery = useRef(null);
 
   const images = category.shoots
     .sort(byDate)
     .flatMap((x) => x.images)
     .map((x) => ({ ...x, src: x.url }));
+
+  const fullscreenGallery = () => {
+    gallery.current.fullScreen();
+  };
 
   return (
     <PageSection>
@@ -27,20 +28,44 @@ export function PhotographyCategory() {
       <PhotoAlbum
         layout="columns"
         photos={images}
-        onClick={({ index }) => setIndex(index)}
-      />
-      <Lightbox
-        className={classes.lightbox}
-        slides={images}
-        open={index >= 0}
-        index={index}
-        close={() => setIndex(-1)}
-        plugins={[Thumbnails]}
-        render={{
-          iconPrev: () => <PrevIcon size="90" />,
-          iconNext: () => <NextIcon size="90" />,
+        onClick={({ index }) => {
+          setIndex(index);
+          fullscreenGallery();
         }}
       />
+      <ImageGallery
+        additionalClass={`${classes.gallery} ${index >= 0 ? "show" : ""}`}
+        items={images.map((x) => ({ original: x.src }))}
+        showThumbnails={false}
+        startIndex={index}
+        ref={gallery}
+        useBrowserFullscreen={false}
+        showPlayButton={false}
+        showBullets={true}
+        showFullscreenButton={true}
+        renderFullscreenButton={(onClick) =>
+          FullscreenButton({
+            onClick: (...e) => {
+              setIndex(-1);
+              onClick(...e);
+            },
+          })
+        }
+      />
     </PageSection>
+  );
+}
+
+function FullscreenButton({ onClick }) {
+  return (
+    <button
+      className={classes.closeFullscreen}
+      type="button"
+      onClick={onClick}
+      aria-label="Lukk fullskjerm"
+    >
+      <div className={classes.closeFullscreenLine1} />
+      <div className={classes.closeFullscreenLine2} />
+    </button>
   );
 }
