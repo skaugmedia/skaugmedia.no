@@ -93,10 +93,24 @@
   gap: 20px;
 }
 
+.element {
+  display: grid;
+  grid-template-rows: 66px auto;
+  height: 100%;
+  width: 100%;
+}
+
 .elementImage {
   border-style: solid;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.18);
-  height: 314px;
+  height: 100%;
+  max-height: 314px;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .elements {
+    grid-template-columns: 1fr;
+  }
 }
