@@ -230,27 +230,6 @@
     align-items: center;
   }
 
-  .foto-header {
-    position: absolute;
-  }
-
-  .foto-header-liam {
-    top: 375px;
-    left: 20px;
-    width: 155px;
-  }
-
-  .foto-header-silje {
-    top: 575px;
-    left: 20px;
-    width: 155px;
-  }
-
-  .foto-header-lashbrowser {
-    top: 475px;
-    left: 150px;
-    width: 155px;
-  }
   .skaugmedia-outer {
     width: 100%;
   }
@@ -286,5 +265,40 @@
 
   .works-img {
     width: 100%;
+  }
+
+  .intro .flex-container {
+    align-items: center;
+  }
+
+  .intro .image-triangle {
+    width: 300px;
+    --rotation: 10deg;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "first second"
+      "third second";
+    row-gap: 16px;
+    transform: rotate(calc(0deg - var(--rotation)));
+  }
+  .intro .image-triangle > * {
+    place-self: stretch;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transform: rotate(var(--rotation));
+  }
+  .intro .image-triangle > *:nth-child(1) {
+    grid-area: first;
+  }
+  .intro .image-triangle > *:nth-child(2) {
+    grid-area: second;
+    place-self: center;
+    align-self: center;
+  }
+  .intro .image-triangle > *:nth-child(3) {
+    grid-area: third;
   }
 }
