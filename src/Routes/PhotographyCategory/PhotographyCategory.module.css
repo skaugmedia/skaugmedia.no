@@ -14,3 +14,47 @@
   font-weight: 200;
   text-align: left;
 }
+
+.gallery:not(:global .show) {
+  display: none;
+}
+
+.closeFullscreen {
+  display: block;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.closeFullscreen:hover {
+  transform: scale(1.1);
+}
+
+.closeFullscreenLine1,
+.closeFullscreenLine2 {
+  width: 50px;
+  height: 4px;
+  border-radius: 9000px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.2s;
+}
+.closeFullscreen:hover * {
+  background-color: var(--lightblue);
+}
+
+.closeFullscreenLine1 {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.closeFullscreenLine2 {
+  transform: translateY(-50%) rotate(-45deg);
+}

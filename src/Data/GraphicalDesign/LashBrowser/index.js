@@ -149,7 +149,7 @@ export default {
     },
     {
       url: instagramicon,
-      title: "Knapper til Instagram highlights",
+      title: "Instagram highlights",
       height: 750,
       width: 1000,
     },

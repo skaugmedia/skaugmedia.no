@@ -9,6 +9,26 @@ import { Image } from "/src/Components/Image";
 export function GraphicalDesignProject() {
   const { project } = useLoaderData();
   const images = project.images.map((img) => ({ original: img.url }));
+
+  const elements = [
+    {
+      title: "Typografi",
+      src: project.designElements.fonts,
+    },
+    {
+      title: "Logo",
+      src: project.designElements.logo,
+    },
+    {
+      title: "Skisser",
+      src: project.designElements.sketches,
+    },
+    ...(project.graphicalElements?.map((g) => ({
+      title: g.title,
+      src: g.url,
+    })) ?? []),
+  ];
+
   return (
     <PageSection className={classes.container}>
       <GraphicalDesignHeading>{project.title}</GraphicalDesignHeading>
@@ -17,9 +37,10 @@ export function GraphicalDesignProject() {
         showThumbnails={false}
         showPlayButton={false}
         showBullets={true}
+        showFullscreenButton={false}
       />
       <p className={classes.ingress}>{project.ingress}</p>
-      <div className={classes.designInfoHeading}>Fargepalett</div>
+      <div className={classes.elementHeading}>Fargepalett</div>
       <div className={classes.colorPalette}>
         {project.designElements.colorPalette.map((color) => (
           <div
@@ -36,48 +57,19 @@ export function GraphicalDesignProject() {
         ))}
       </div>
       <p className={classes.body}>{project.body}</p>
-      <div className={classes.infoBoxesGrid}>
-        <div className={classes.designElements}>
-          <div className={classes.designInfoHeading}>Typografi</div>
-          <Image
-            className={classes.designElement}
-            fit="contain"
-            src={project.designElements.fonts}
-            alt="Fonts"
-          />
-        </div>
-        <div className={classes.designElements}>
-          <div className={classes.designInfoHeading}>Logo</div>
-          <Image
-            className={classes.designElement}
-            fit="contain"
-            src={project.designElements.logo}
-            alt="Logo"
-          />
-        </div>
-        <div className={classes.graphicalElements}>
-          <div className={classes.designInfoHeading}>Skisser</div>
-
-          <Image
-            className={classes.designElement}
-            fit="contain"
-            src={project.designElements.sketches}
-            alt="Skisser"
-          />
-          {project.graphicalElements?.map((graphicalElement) => (
-            <div className={classes.graphicalElements}>
-              <div className={classes.designInfoHeading}>
-                {graphicalElement.title}
-              </div>
+      <div className={classes.elements}>
+        {elements &&
+          elements.map((element) => (
+            <div className={classes.element}>
+              <div className={classes.elementHeading}>{element.title}</div>
               <Image
-                className={classes.designElement}
-                src={graphicalElement.url}
-                alt={graphicalElement.title}
+                className={classes.elementImage}
                 fit="contain"
-              ></Image>
+                src={element.src}
+                alt={element.title}
+              />
             </div>
           ))}
-        </div>
       </div>
     </PageSection>
   );

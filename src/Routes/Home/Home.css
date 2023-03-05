@@ -202,6 +202,39 @@
     align-items: center;
     justify-content: center;
   }
+
+  .intro .image-triangle {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "second second"
+      "first third";
+    column-gap: 16px;
+  }
+
+  .intro .image-triangle > * {
+    place-self: stretch;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .intro .image-triangle > *:nth-child(1) {
+    grid-area: first;
+  }
+
+  .intro .image-triangle > *:nth-child(2) {
+    grid-area: second;
+    place-self: center;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .intro .image-triangle > *:nth-child(3) {
+    grid-area: third;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -272,33 +305,16 @@
   }
 
   .intro .image-triangle {
-    width: 300px;
     --rotation: 10deg;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "first second"
       "third second";
+    column-gap: 0;
     row-gap: 16px;
     transform: rotate(calc(0deg - var(--rotation)));
   }
+
   .intro .image-triangle > * {
-    place-self: stretch;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
     transform: rotate(var(--rotation));
-  }
-  .intro .image-triangle > *:nth-child(1) {
-    grid-area: first;
-  }
-  .intro .image-triangle > *:nth-child(2) {
-    grid-area: second;
-    place-self: center;
-    align-self: center;
-  }
-  .intro .image-triangle > *:nth-child(3) {
-    grid-area: third;
   }
 }
