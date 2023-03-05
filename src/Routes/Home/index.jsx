@@ -33,19 +33,15 @@ export function Home() {
               Kontakt meg
             </ButtonLink>
           </div>
-          <div className="flex-child image-container">
+          <div className="flex-child image-container image-triangle">
+            <img className="foto-header" src={liamforside} alt="Liam"></img>
             <img
-              className="foto-header foto-header-liam"
-              src={liamforside}
-              alt="Liam"
-            ></img>
-            <img
-              className="foto-header foto-header-lashbrowser"
+              className="foto-header"
               src={lashbrowserforside}
               alt="Lashbrowser logo"
             ></img>
             <img
-              className="foto-header foto-header-silje"
+              className="foto-header"
               src={konfirmantsiljeforside}
               alt="Konfirmanten Silje"
             ></img>
