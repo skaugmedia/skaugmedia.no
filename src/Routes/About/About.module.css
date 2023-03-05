@@ -84,3 +84,45 @@
   font-size: 30px;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 1000px) {
+  .background {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .container {
+    background-color: var(--lightgreen);
+    grid-template-areas:
+      "top-lightgreen headshot"
+      "       heading headshot"
+      "          text     text";
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 0;
+    grid-template-columns: auto 210px;
+    grid-template-rows: 150px 150px auto;
+  }
+  .text {
+    background-color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+  .heading {
+    background-color: #fff;
+    align-self: stretch;
+    display: flex;
+    align-items: flex-end;
+    line-height: 0.9;
+    padding-left: 30px;
+  }
+
+  .bottomRightLightgreen,
+  .rightLightgreen,
+  .bottomRightLightgreen {
+    display: none;
+  }
+}
