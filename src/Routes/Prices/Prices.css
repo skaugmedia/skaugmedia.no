@@ -76,12 +76,13 @@
   text-align: left;
 }
 
-.includes-list {
-  list-style-type: circle;
+.discount-price {
+  color: var(--green);
+  font-weight: 600;
 }
 
-.price-extra-info {
-  font-size: 0.83em;
+.includes-list {
+  list-style-type: circle;
 }
 
 .section-divider {

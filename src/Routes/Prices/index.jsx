@@ -15,6 +15,7 @@ import foodimg from "../../Images/mat_12.jpg";
 import designimg from "../../Images/design_prices.jpg";
 import pageName from "./PageName";
 import giftcardimg from "../../Images/mockup_gavekort.jpg";
+import businessimg from "../../Images/stranger_as_4.jpg";
 
 export function Prices() {
   return (
@@ -55,24 +56,16 @@ export function Prices() {
                   price: "Kr. 2500,-",
                 },
                 {
-                  name: "Barnefotografering",
+                  name: "Portrettfotografering: barn fra 6mnd - 13år ",
+                  price: "Kr. 2750,-",
+                },
+                {
+                  name: "Portrettfotografering: konfirmant",
                   price: "Kr. 2500,-",
                 },
                 {
-                  name: "Konfirmantfotografering",
-                  price: "Kr. 2500,-",
-                },
-                {
-                  name: "Familiefotografering",
+                  name: "Portrettfotografering: familie/gruppe",
                   price: "Kr. 3000,-",
-                },
-                {
-                  name: "Profilbilde / CV-foto / Headshots",
-                  price: "Kr. 1750,-",
-                },
-                {
-                  name: "Portretter bedrift",
-                  price: "Ta kontakt for pristilbud",
                 },
               ]}
             />
@@ -94,17 +87,20 @@ export function Prices() {
                 holder til i Storgata 7B, 2050 Jessheim.
               </p>
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 750,- per bilde.
+              er prisen kr. 600,- per bilde.
               <p className="additional-prices">
-                Kveldstillegg: kr. 700,-
+                Kveldstillegg etter 17.30: kr. 700,-
                 <br />
                 Helgetillegg: kr. 1000,-
                 <br />
-                Ikke møtt opp til fotografering: kr. 500,-
+                <br />
+                Ved kansellering innen 24 timer før avtalt tid eller ikke
+                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
+                helhet.
               </p>
-              <p className="price-extra-info">
-                Eventuell betalt parkering og/eller kjøring over lange avstander
-                kommer i tillegg i prisen
+              <p>
+                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+                faktureres med kr. 10,- per km.
               </p>
             </div>
           </div>
@@ -124,17 +120,23 @@ export function Prices() {
               Jeg anbefaler å ha nyfødtfotografering innen babyen har fylt 14
               dager, men det går også fint etter dette om tiden ikke strekker
               til. Husk bare på at jo eldre babyen blir, jo mer våken blir den.
-              Denne fotograferingen inkluderer også bilder med foreldre og
-              søsken.
+              Jeg har et lite utvalg av rekvisitter og klær som passer til
+              nyfødtfotograferingen, lån av disse er inkludert i prisen. Denne
+              fotograferingen inkluderer også bilder med foreldre og søsken.
               <br />
               <br />
-              Ved booking av nyfødtfotografering gjennom meg, får man 50% avslag
-              på babyfotografering (når babyen er mellom 6 og 12 måneder
-              gammel.) Inkluderer:
+              <span className="discount-price">
+                Ved booking av nyfødtfotografering gjennom meg, får man 50%
+                avslag på babyfotografering (når babyen er mellom 6 og 12
+                måneder gammel.)
+              </span>
+              <br />
+              <br />
+              Inkluderer:
               <IncludesList
                 items={[
                   "Samtale før fotografering for å avtale nærmere",
-                  "2-3 timer fotografering hjemme hos dere (jeg tar med enkel styling og lamper)",
+                  "Opptil 2-3 timer fotografering hjemme hos dere (jeg tar med enkel styling og lamper)",
                   "Bilder sammen med foreldre og søsken",
                   "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
                   "3 stk. redigerte, høyoppløselige bilder",
@@ -142,18 +144,21 @@ export function Prices() {
                 ]}
               />
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 750,- per bilde.
+              er prisen kr. 600,- per bilde.
               <br />
               <p className="additional-prices">
-                Kveldstillegg: kr. 700,-
+                Kveldstillegg etter 17.30: kr. 700,-
                 <br />
                 Helgetillegg: kr. 1000,-
                 <br />
-                Ikke møtt opp til fotografering: kr. 500,-
+                <br />
+                Ved kansellering innen 24 timer før avtalt tid eller ikke
+                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
+                helhet.
               </p>
-              <div className="price-extra-info">
-                Eventuell betalt parkering og/eller kjøring over lange avstander
-                kommer i tillegg i prisen
+              <div>
+                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+                faktureres med kr. 10,- per km.
               </div>
             </div>
           </div>
@@ -176,17 +181,21 @@ export function Prices() {
               inn bak gardinene. Jeg har et lite utvalg av flotte kjoler og
               rekvisitter som passer til gravidfotografering, lån av disse er
               inkludert i prisen. Denne fotograferingen inkluderer også partner
-              og søsken. Ved bestilling av denne fotograferingen, får du 25%
-              avslag på nyfødtfotografering.
+              og søsken.
               <br />
               <br />
-              Ved booking av gravidfotografering gjennom meg, får man 50% avslag
-              på nyfødtfotografering. Inkluderer:
+              <span className="discount-price">
+                Ved booking av gravidfotografering gjennom meg, får man 50%
+                avslag på nyfødtfotografering.
+              </span>
+              <br />
+              <br />
+              Inkluderer:
               <IncludesList
                 items={[
                   "Samtale før fotografering for å avtale nærmere",
                   "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-                  "Bilder sammen med partner og barn",
+                  "Bilder sammen med partner og andre barn",
                   "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
                   "3 stk. redigerte, høyoppløselige bilder",
                   "Bildene leveres digitalt",
@@ -198,18 +207,21 @@ export function Prices() {
                 holder til i Storgata 7B, 2050 Jessheim.
               </p>
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 750,- per bilde.
+              er prisen kr. 600,- per bilde.
               <br />
               <p className="additional-prices">
-                Kveldstillegg: kr. 700,-
+                Kveldstillegg etter 17.30: kr. 700,-
                 <br />
                 Helgetillegg: kr. 1000,-
                 <br />
-                Ikke møtt opp til fotografering: kr. 500,-
+                <br />
+                Ved kansellering innen 24 timer før avtalt tid eller ikke
+                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
+                helhet.
               </p>
-              <div className="price-extra-info">
-                Eventuell betalt parkering og/eller kjøring over lange avstander
-                kommer i tillegg i prisen
+              <div>
+                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+                faktureres med kr. 10,- per km.
               </div>
             </div>
           </div>
@@ -239,6 +251,7 @@ export function Prices() {
               mellom 1 og 2 timer sammen, der dere er dere selv foran kamera, og
               viser frem deres kjærlighet til hverandre.
               <br />
+              <br />
               Inkluderer:
               <IncludesList
                 items={[
@@ -255,18 +268,21 @@ export function Prices() {
                 holder til i Storgata 7B, 2050 Jessheim.
               </p>
               Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 750,- per bilde.
+              er prisen kr. 600,- per bilde.
               <br />
               <p className="additional-prices">
-                Kveldstillegg: kr. 700,-
+                Kveldstillegg etter 17.30: kr. 700,-
                 <br />
                 Helgetillegg: kr. 1000,-
                 <br />
-                Ikke møtt opp til fotografering: kr. 500,-
+                <br />
+                Ved kansellering innen 24 timer før avtalt tid eller ikke
+                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
+                helhet.
               </p>
-              <div className="price-extra-info">
-                Eventuell betalt parkering og/eller kjøring over lange avstander
-                kommer i tillegg i prisen
+              <div>
+                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+                faktureres med kr. 10,- per km.
               </div>
             </div>
           </div>
@@ -307,6 +323,12 @@ export function Prices() {
               forlovere etter vielsen.
               <br />
               <br />
+              <span className="discount-price">
+                Ved booking av bryllupsfotografering gjennom meg, får man 50%
+                avslag på forlovelsesfotografering i forkant av bryllupet.
+              </span>
+              <br />
+              <br />
               Inkluderer:
               <IncludesList
                 items={[
@@ -320,13 +342,75 @@ export function Prices() {
                 ]}
               />
               Ønsker du å bestille flere bilder enn de som er inkludert, er
-              prisen kr. 750,- per bilde.
+              prisen kr. 600,- per bilde.
               <br />
-              <br />
-              <div className="price-extra-info">
-                Eventuell betalt parkering og/eller kjøring over lange avstander
-                kommer i tillegg i prisen
+              <p className="additional-prices">
+                Kveldstillegg etter 17.30: kr. 700,-
+                <br />
+                Helgetillegg: kr. 1000,-
+                <br />
+                <br />
+                Ved kansellering innen 24 timer før avtalt tid eller ikke
+                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
+                helhet.
+              </p>
+              <div>
+                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+                faktureres med kr. 10,- per km.
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-divider"></div>
+
+        <div className="section-category">
+          <Image
+            className="category-image"
+            src={businessimg}
+            alt="Cecilie Stranger"
+          />
+          <div className="section-text">
+            <div className="category-title">Bedriftsfotografering</div>
+            <PriceList
+              items={[
+                {
+                  name: "Profilbilde / CV-foto / Headshots",
+                  price: "Kr. 1500,-",
+                },
+                {
+                  name: "Portretter bedrift",
+                  price: "Ta kontakt for pristilbud",
+                },
+              ]}
+            />
+            <div className="price-info">
+              Inkluderer:
+              <IncludesList
+                items={[
+                  "Samtale før fotografering med planlegging og veiledning",
+                  "Opptil 30 minutters fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+                  "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+                  "1 stk. redigert og høyoppløselig bilde",
+                  "Bildet leveres digitalt",
+                ]}
+              />
+              Ønsker du å bestille flere bilder enn det som er inkludert, er
+              prisen kr. 600,- per bilde.
+              <br />
+              <p className="additional-prices">
+                Kveldstillegg etter 17.30: kr. 700,-
+                <br />
+                Helgetillegg: kr. 1000,-
+                <br />
+                <br />
+                Ved kansellering innen 24 timer før avtalt tid eller ikke
+                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
+                helhet.
+              </p>
+              <p>
+                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+                faktureres med kr. 10,- per km.
+              </p>
             </div>
           </div>
         </div>
