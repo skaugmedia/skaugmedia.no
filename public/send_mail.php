@@ -1,9 +1,5 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 // Should contain the secret "RECAPTCHA_KEY", which is the server-side ReCaptcha
 // secret used to verify the ReCaptcha token passed from the frontend.
 require_once 'secrets.php';
@@ -27,36 +23,24 @@ class CodedError extends Exception {
 	}
 }
 
-$invalidName = 'invalid:name';
-$invalidEmail = 'invalid:email';
-$invalidPhone = 'invalid:phone';
-$invalidMessage = 'invalid:message';
-$invalidToken = 'invalid:token';
-$internalRequestFailed = 'internal:request-failed';
-$internalTokenVerificationRequestFailed = 'internal:token-verification:request-failed';
-$invalidTokenExpirationOrDuplicate = 'invalid:token-expired-or-duplicate';
-$internalTokenVerificationUnknown = 'internal:token-verification:unknown';
-$invalidTokenForDifferentDomain = 'invalid:token-for-different-domain';
-$internalEmailFailed = 'internal:email-failed';
-
 function assertValidName($val) {
 	if (!preg_match("#^[-a-zA-Z0-9éèÉÈäöæøåÄÖÆØÅ._ ]+$#", $val)) {
-		throw new CodedError($invalidName, 'Ugyldig navn');
+		throw new CodedError('invalid:name', 'Ugyldig navn');
 	}
 }
 function assertValidEmail($val) {
 	if (!preg_match("#^[-a-zA-Z0-9.@+!=()_:]+$#", $val)) {
-		throw new CodedError($invalidEmail, 'Ugyldig e-post');
+		throw new CodedError('invalid:email', 'Ugyldig e-post');
 	}
 }
 function assertValidPhone($val) {
-	if (!preg_match("#^+?\d+$", $val)) {
-		throw new CodedError($invalidPhone, 'Ugyldig telefonnummer');
+	if (!preg_match("#^\+?\d+$#", $val)) {
+		throw new CodedError('invalid:phone', 'Ugyldig telefonnummer');
 	}
 }
 function assertValidMessage($val) {
-	if (is_string($val) && $val !== '' && strlen($val) < 500) {
-		throw new CodedError($invalidMessage, 'Ugyldig melding');
+	if (!is_string($val) or $val === '' or strlen($val) > 500) {
+		throw new CodedError('invalid:message', 'Ugyldig melding');
 	}
 }
 
@@ -75,7 +59,7 @@ function request($method, $url, $headers, $data) {
 	$status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 	curl_close($ch);
 	if ($status < 200 || $status >= 300) {
-		throw new CodedError($internalRequestFailed, "Received non-OK response code on POST to $url: $status, $response");
+		throw new CodedError('internal:request-failed', "Received non-OK response code on POST to $url: $status, $response");
 	}
 
 	return $response;
@@ -112,24 +96,24 @@ function verifyToken($RECAPTCHA_KEY, $ip, $token) {
 		$body
 	);
 	if (!is_string($result) || $result === '') {
-		throw new CodedError($internalTokenVerificationRequestFailed, 'Request failed when verifying token');
+		throw new CodedError('internal:token-verification:request-failed', 'Request failed when verifying token');
 	}
 	$response = json_decode($result, true);
 
 	if (!$response['success']) {
 		$errorCodes = $response['error-codes'];
 		if (isInvalidInputResponse($errorCodes)) {
-			throw new CodedError($invalidToken, 'ReCaptcha token is invalid');
+			throw new CodedError('invalid:token', 'ReCaptcha token is invalid');
 		}
 		if (isTimeoutOrDuplicate($errorCodes)) {
-			throw new CodedError($invalidTokenExpirationOrDuplicate, 'ReCaptcha token has expired or is a duplicate');
+			throw new CodedError('invalid:token-expired-or-duplicate', 'ReCaptcha token has expired or is a duplicate');
 		}
 		$codes = implode(", ", $response['error-codes']);
-		throw new CodedError($internalTokenVerificationUnknown, "Token verification failed: $codes");
+		throw new CodedError('internal:token-verification:unknown', "Token verification failed: $codes");
 	}
 
 	if (!str_ends_with($response['hostname'], 'skaugmedia.no')) {
-		throw new CodedError($invalidTokenForDifferentDomain, "Token meant for different domain: {$response['hostname']}");
+		throw new CodedError('invalid:token-for-different-domain', "Token meant for different domain: {$response['hostname']}");
 	}
 
 	return $response;
@@ -147,7 +131,7 @@ function sendMail($vars) {
 		"From: Tilbakemeldingsskjema <contact@skaugmedia.no>"
 	);
 	if (!$res) {
-		throw new CodedError($internalEmailFailed, 'Failed to send Email');
+		throw new CodedError('internal:email-failed', 'Failed to send Email');
 	}
 }
 
