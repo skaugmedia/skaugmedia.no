@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { Link, useNavigation } from "react-router-dom";
 import Button from "../../Components/Button";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
@@ -43,6 +43,13 @@ export function Contact() {
     }
   })();
   const showResults = isSent || isErr;
+
+  const reCaptcha = useRef();
+  useEffect(() => {
+    try {
+      window.grecaptcha.render(reCaptcha.current);
+    } catch (e) {}
+  });
 
   return (
     <>
@@ -107,6 +114,7 @@ export function Contact() {
           />
 
           <div
+            ref={reCaptcha}
             className="g-recaptcha"
             data-sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
           />
