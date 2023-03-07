@@ -90,6 +90,18 @@
   margin-top: 20px;
 }
 
+.contact-result {
+  padding: 10px 20px;
+  background-color: var(--lightgreen);
+  border-radius: 9999px;
+  margin-top: 20px;
+}
+
+.contact-result.contact-result-error {
+  background-color: var(--dark-pink);
+  color: #fff;
+}
+
 @media only screen and (max-width: 1000px) {
   .contact-info-box {
     position: static;

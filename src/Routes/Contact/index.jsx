@@ -1,20 +1,53 @@
-import "./Contact.css";
-import { PageSection } from "../../Components/PageSection";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
+import Button from "../../Components/Button";
 import DesignHeading from "../../Components/Headings/DesignHeading";
-import skaugmedia from "../../Images/skaugmedia.png";
+import { PageSection } from "../../Components/PageSection";
+import etsy from "../../Images/etsy.png";
 import facebook from "../../Images/facebook.png";
 import instagram from "../../Images/instagram.png";
 import tiktok from "../../Images/tiktok.png";
-import etsy from "../../Images/etsy.png";
+import "./Contact.css";
 import pageName from "./PageName";
-import { Link } from "react-router-dom";
-import Button from "../../Components/Button";
 
 export function Contact() {
+  const queries = new URLSearchParams(window.location.search);
+  const isSent = queries.has("sent");
+  const isErr = queries.has("err");
+  const isInvalidName = queries.has("invalid:name");
+  const isInvalidPhone = queries.has("invalid:phone");
+  const isInvalidEmail = queries.has("invalid:email");
+  const isInvalidMessage = queries.has("invalid:message");
+  const isInvalidToken = queries.has("invaid:token");
+  const isTokenExpiredOrDuplicate = queries.has(
+    "invalid:token-expired-or-duplicate"
+  );
+  const resultMessage = (() => {
+    switch (true) {
+      case isSent:
+        return "Din melding har blitt sendt.";
+      case isErr && isInvalidName:
+        return "Ugyldig navn.";
+      case isErr && isInvalidPhone:
+        return "Ugyldig telefonnummer.";
+      case isErr && isInvalidEmail:
+        return "Ugyldig e-postadresse.";
+      case isErr && isInvalidMessage:
+        return "Ugyldig meldingstekst.";
+      case isErr && isInvalidToken:
+        return "Ugyldig ReCaptcha. Vennligst gjennomfør ReCaptcha.";
+      case isErr && isTokenExpiredOrDuplicate:
+        return "ReCaptcha utløp, eller har allerede blitt brukt. Vennligst gjennomfør ReCaptcha på nytt.";
+      default:
+        return "En ukjent feil oppstod. Meldingen ble ikke sendt.";
+    }
+  })();
+  const showResults = isSent || isErr;
+
   return (
     <>
       <PageSection className="container">
-        <form className="form">
+        <form className="form" action="/send_mail.php" method="POST">
           <div className="contact">
             <div className="contact-content">
               <DesignHeading className="contact-heading">
@@ -26,7 +59,7 @@ export function Contact() {
               gjennom dette skjemaet eller kontakt meg per telefon eller e-post.
             </div>
           </div>
-          <label for="name" className="form-titles">
+          <label htmlFor="name" className="form-titles">
             Navn
           </label>
 
@@ -38,7 +71,7 @@ export function Contact() {
             name="name"
           />
 
-          <label for="phonenumber" className="form-titles">
+          <label htmlFor="phone" className="form-titles">
             Telefonnummer
           </label>
 
@@ -47,10 +80,10 @@ export function Contact() {
             placeholder="12345678"
             type="text"
             id="phonenumber"
-            name="phonenumber"
+            name="phone"
           />
 
-          <label for="email" className="form-titles">
+          <label htmlFor="email" className="form-titles">
             E-post
           </label>
 
@@ -62,7 +95,7 @@ export function Contact() {
             name="email"
           />
 
-          <label for="message" className="form-titles">
+          <label htmlFor="message" className="form-titles">
             Melding
           </label>
 
@@ -73,9 +106,30 @@ export function Contact() {
             name="message"
           />
 
+          <div
+            className="g-recaptcha"
+            data-sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
+          />
+
+          <input
+            type="hidden"
+            name="callback"
+            value="https://www.ninaskaug.no/kontakt"
+          />
+
           <Button className="send-button" type="submit">
             Send
           </Button>
+
+          {showResults && (
+            <div
+              className={`contact-result ${
+                isErr ? "contact-result-error" : ""
+              }`}
+            >
+              {resultMessage}
+            </div>
+          )}
         </form>
       </PageSection>
       <div className="contact-info-box">
