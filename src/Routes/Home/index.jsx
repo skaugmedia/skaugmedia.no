@@ -6,7 +6,7 @@ import "./Home.css";
 import liamforside from "../../Images/liam_kvadrat_forside.jpg";
 import lashbrowserforside from "../../Images/lashbrowser_forside.jpg";
 import konfirmantsiljeforside from "../../Images/konfirmant_silje_forside.jpg";
-import ninaforside from "../../Images/nina_forside.png";
+import ninaforside from "../../Images/nina_forside.jpg";
 import { useLoaderData } from "react-router-dom";
 import classes from "./Home.module.css";
 import { Image } from "../../Components/Image";
