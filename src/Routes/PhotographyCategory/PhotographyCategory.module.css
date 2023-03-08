@@ -55,6 +55,7 @@
   transform: translate(0deg);
   display: flex;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.95);
 }
 
 :global .image-gallery.fullscreen-modal .image-gallery-content.fullscreen {
@@ -62,6 +63,7 @@
   transform: none;
   position: relative;
   width: 100%;
+  background-color: transparent;
 }
 
 :global .image-gallery-content.fullscreen .image-gallery-image {
