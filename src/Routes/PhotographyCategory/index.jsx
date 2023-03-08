@@ -17,6 +17,12 @@ export function PhotographyCategory() {
     .flatMap((x) => x.images)
     .map((x) => ({ ...x, src: x.url }));
 
+  const galleryImages = images.map((x) => ({
+    original: x.src,
+    originalWidth: x.width,
+    originalHeight: x.height,
+  }));
+
   const fullscreenGallery = () => {
     gallery.current.fullScreen();
   };
@@ -35,7 +41,7 @@ export function PhotographyCategory() {
       />
       <ImageGallery
         additionalClass={`${classes.gallery} ${index >= 0 ? "show" : ""}`}
-        items={images.map((x) => ({ original: x.src }))}
+        items={galleryImages}
         showThumbnails={false}
         startIndex={index}
         ref={gallery}

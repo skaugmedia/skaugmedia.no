@@ -8,7 +8,11 @@ import { Image } from "/src/Components/Image";
 
 export function GraphicalDesignProject() {
   const { project } = useLoaderData();
-  const images = project.images.map((img) => ({ original: img.url }));
+  const images = project.images.map((img) => ({
+    original: img.url,
+    originalWidth: img.width,
+    originalHeight: img.height,
+  }));
 
   const elements = [
     {
