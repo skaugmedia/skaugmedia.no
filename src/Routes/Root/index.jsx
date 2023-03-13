@@ -1,11 +1,8 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { Link, NavLink, Outlet } from "react-router-dom";
-import etsy from "../../Images/etsy.png";
-import facebook from "../../Images/facebook.png";
-import instagram from "../../Images/instagram.png";
+import { NavLink, Outlet } from "react-router-dom";
+
 import skaugmedia from "../../Images/skaugmedia.png";
-import tiktok from "../../Images/tiktok.png";
 import AboutPageName from "../About/PageName";
 import AboutRoute from "../About/Route";
 import ContactPageName from "../Contact/PageName";
@@ -65,20 +62,10 @@ export function Root() {
 
         <footer>
           <Nav containerClassName="footer-links" linkClassName="footer-link" />
-          <div className="footer-social">
-            <Link to="https://www.facebook.com/profile.php?id=100089990337611">
-              <img className="social" src={facebook} alt="Facebook"></img>
-            </Link>
-            <Link to="https://www.instagram.com/skaugmedia/">
-              <img className="social" src={instagram} alt="Instagram"></img>
-            </Link>
-            <Link to="https://www.tiktok.com/@skaugmedia?_t=8a92nGlyw7N&_r=1">
-              <img className="social" src={tiktok} alt="Tiktok"></img>
-            </Link>
-            <Link to="https://www.etsy.com/shop/SkaugMedia?ref=search_shop_redirect">
-              <img className="social" src={etsy} alt="Etsy"></img>
-            </Link>
-          </div>
+          <SocialIcons
+            containerClassName="footer-social"
+            itemClassName="social"
+          />
         </footer>
       </div>
       <div
@@ -93,28 +80,7 @@ export function Root() {
           containerClassName={classes.mobileNav}
           linkClassName={classes.mobileNavLink}
         />
-        <div>
-          <Link to="https://www.facebook.com/profile.php?id=100089990337611">
-            <img
-              className="social-hamburger"
-              src={facebook}
-              alt="Facebook"
-            ></img>
-          </Link>
-          <Link to="https://www.instagram.com/skaugmedia/">
-            <img
-              className="social-hamburger"
-              src={instagram}
-              alt="Instagram"
-            ></img>
-          </Link>
-          <Link to="https://www.tiktok.com/@skaugmedia?_t=8a92nGlyw7N&_r=1">
-            <img className="social-hamburger" src={tiktok} alt="Tiktok"></img>
-          </Link>
-          <Link to="https://www.etsy.com/shop/SkaugMedia?ref=search_shop_redirect">
-            <img className="social-hamburger" src={etsy} alt="Etsy"></img>
-          </Link>
-        </div>
+        <SocialIcons itemClassName="social-hamburger" />
       </div>
     </>
   );
