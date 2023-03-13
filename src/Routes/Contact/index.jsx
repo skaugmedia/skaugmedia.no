@@ -76,6 +76,9 @@ export function Contact() {
             type="text"
             id="name"
             name="name"
+            minLength={2}
+            title="navn"
+            required
           />
 
           <label htmlFor="phone" className="form-titles">
@@ -85,9 +88,12 @@ export function Contact() {
           <input
             className="form-box phonenumber"
             placeholder="12345678"
-            type="text"
+            type="tel"
             id="phonenumber"
             name="phone"
+            pattern="((\+|00)47)?[24689][0-9]{7}"
+            title="telefonnummer"
+            required
           />
 
           <label htmlFor="email" className="form-titles">
@@ -100,6 +106,9 @@ export function Contact() {
             type="text"
             id="email"
             name="email"
+            pattern="\S+@\S+\.\S+"
+            title="e-post"
+            required
           />
 
           <label htmlFor="message" className="form-titles">
@@ -111,6 +120,8 @@ export function Contact() {
             placeholder="Skriv din tekst her"
             id="message"
             name="message"
+            minLength={3}
+            required
           />
 
           <div

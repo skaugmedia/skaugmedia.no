@@ -78,6 +78,14 @@
   margin-bottom: 3px;
 }
 
+.form-box:focus:invalid {
+  border-color: var(--light-pink);
+}
+
+.form-box:focus-visible {
+  outline: none;
+}
+
 .form-titles {
   font-weight: 600;
   text-align: left;
