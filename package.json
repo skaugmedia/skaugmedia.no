@@ -15,10 +15,12 @@
   "browserslist": ">0.2%, not dead, not op_mini all",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "deploy": "npm run build && node deploy"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^3.1.0",
+    "basic-ftp": "^5.0.2",
     "vite": "^4.1.2"
   }
 }
