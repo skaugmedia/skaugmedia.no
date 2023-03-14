@@ -1,14 +1,10 @@
 import { useEffect, useRef } from "react";
-import { Link, useNavigation } from "react-router-dom";
 import Button from "../../Components/Button";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import etsy from "../../Images/etsy.png";
-import facebook from "../../Images/facebook.png";
-import instagram from "../../Images/instagram.png";
-import tiktok from "../../Images/tiktok.png";
 import "./Contact.css";
 import pageName from "./PageName";
+import { SocialIcons } from "/src/Components/SocialIcons";
 
 export function Contact() {
   const queries = new URLSearchParams(window.location.search);
@@ -161,24 +157,10 @@ export function Contact() {
             <br />
             +47 464 18 241
           </div>
-          <div className="contact-social-icon">
-            <Link to="https://www.facebook.com/profile.php?id=100089990337611">
-              <img className="contact-icon" src={facebook} alt="Facebook"></img>
-            </Link>
-            <Link to="https://www.instagram.com/skaugmedia/">
-              <img
-                className="contact-icon"
-                src={instagram}
-                alt="Instagram"
-              ></img>
-            </Link>
-            <Link to="https://www.tiktok.com/@skaugmedia?_t=8a92nGlyw7N&_r=1">
-              <img className="contact-icon" src={tiktok} alt="Tiktok"></img>
-            </Link>
-            <Link to="https://www.etsy.com/shop/SkaugMedia?ref=search_shop_redirect">
-              <img className="contact-icon" src={etsy} alt="Etsy"></img>
-            </Link>
-          </div>
+          <SocialIcons
+            containerClassName="contact-social-icon"
+            itemClassName="contact-icon"
+          />
         </div>
       </div>
     </>
