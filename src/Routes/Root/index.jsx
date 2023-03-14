@@ -17,6 +17,7 @@ import PricesPageName from "../Prices/PageName";
 import PricesRoute from "../Prices/Route";
 import "./Root.css";
 import classes from "./Root.module.css";
+import { SocialIcons } from "/src/Components/SocialIcons";
 
 export function Root() {
   const [showNav, setShowNav] = useState(false);
