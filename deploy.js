@@ -32,7 +32,6 @@ const clearNonMatching = async (client, files) => {
   const nonMatching = remoteFiles.filter((f) => !files.includes(f.name));
   let count = 0;
   for (const f of nonMatching) {
-    console.log("NonMatch", f.name);
     await client.remove(f.name);
     count += 1;
   }
@@ -42,7 +41,6 @@ const clearNonMatching = async (client, files) => {
 const uploadIfNotMatched = async (client, filePath, files) => {
   const fileName = basename(filePath);
   if (!files.find((f) => f.name === fileName)) {
-    console.log("Not found", fileName);
     await client.uploadFrom(filePath, fileName);
     return true;
   }
