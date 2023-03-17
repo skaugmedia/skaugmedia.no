@@ -38,6 +38,12 @@ export default {
   },
   images: [
     {
+      url: logomockup,
+      title: "Logo",
+      height: 669,
+      width: 1000,
+    },
+    {
       url: letter,
       title: "Brevpapir",
       height: 667,
@@ -61,12 +67,7 @@ export default {
       height: 687,
       width: 1000,
     },
-    {
-      url: logomockup,
-      title: "Logo",
-      height: 669,
-      width: 1000,
-    },
+
     {
       url: sign,
       title: "Fasadeskilt",

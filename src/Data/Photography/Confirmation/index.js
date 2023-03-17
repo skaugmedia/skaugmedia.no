@@ -5,6 +5,7 @@ import silje_3 from "../../../Images/silje_konfirmant_3.jpg";
 import silje_4 from "../../../Images/silje_konfirmant_4.jpg";
 import silje_5 from "../../../Images/silje_konfirmant_5.jpg";
 import silje_6 from "../../../Images/silje_konfirmant_6.jpg";
+import silje_7 from "../../../Images/silje_konfirmant_7.jpg";
 import keshra_1 from "../../../Images/keshra_1.jpg";
 import keshra_2 from "../../../Images/keshra_2.jpg";
 import keshra_3 from "../../../Images/keshra_3.jpg";
@@ -65,6 +66,12 @@ export default {
           title: "Silje Viktoria",
           width: 533,
           height: 800,
+        },
+        {
+          url: silje_7,
+          title: "Silje Viktoria",
+          width: 667,
+          height: 1000,
         },
       ],
       date: "2022-05-07",

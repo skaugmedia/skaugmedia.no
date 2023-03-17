@@ -1,11 +1,10 @@
 import { oneLine } from "common-tags";
 import lashbrowser_logo from "./Images/logo_mockup.jpg";
 import giftcard from "./Images/gavekort.jpg";
-import giveaway from "./Images/giveaway.jpg";
 import instagramicon from "./Images/instagram.jpg";
 import instagram from "./Images/instagram_1.jpg";
 import logo from "./Images/logo.jpg";
-import pattern from "./Images/pattern.jpg";
+
 import poster from "./Images/plakat.jpg";
 import pricelist from "./Images/prisliste.jpg";
 import typography from "./Images/typografi.jpg";
@@ -34,15 +33,15 @@ export default {
   },
   images: [
     {
-      url: giftcard,
-      title: "Gavekort",
-      height: 667,
+      url: logomockup,
+      title: "Logo",
+      height: 669,
       width: 1000,
     },
     {
-      url: giveaway,
-      title: "Giveaway mal til Instagram",
-      height: 1000,
+      url: giftcard,
+      title: "Gavekort",
+      height: 667,
       width: 1000,
     },
     {
@@ -51,12 +50,7 @@ export default {
       height: 667,
       width: 1000,
     },
-    {
-      url: logomockup,
-      title: "Logo",
-      height: 669,
-      width: 1000,
-    },
+
     {
       url: poster,
       title: "Plakat",
@@ -72,7 +66,7 @@ export default {
     {
       url: card,
       title: "Visittkort",
-      height: 1000,
+      height: 667,
       width: 1000,
     },
   ],
@@ -141,12 +135,6 @@ export default {
     sketches: sketch,
   },
   graphicalElements: [
-    {
-      url: pattern,
-      title: "Mønster",
-      height: 750,
-      width: 1000,
-    },
     {
       url: instagramicon,
       title: "Instagram highlights",

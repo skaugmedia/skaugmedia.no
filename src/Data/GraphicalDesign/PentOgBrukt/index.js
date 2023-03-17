@@ -2,10 +2,11 @@ import { oneLine } from "common-tags";
 import pentogbrukt_logo from "../../../Images/pentogbrukt_logo.jpg";
 import bussinesscardimg from "./Images/visittkort.jpg";
 import openinghoursimg from "./Images/openinghours.jpg";
-import openinghours1img from "./Images/openinghours_1.jpg";
+import poster1 from "./Images/plakat_1.jpg";
+import poster2 from "./Images/plakat_2.jpg";
 import signimg from "./Images/fasadeskilt.jpg";
 import sign1img from "./Images/fasadeskilt_1.jpg";
-import colorpalette from "./Images/fargepalett.jpg";
+
 import typography from "./Images/typografi.jpg";
 import logo from "./Images/logo.jpg";
 import logomockup from "./Images/logo_mockup.jpg";
@@ -45,11 +46,18 @@ export default {
       heigh: 743,
     },
     {
-      url: webpage1,
-      title: "Webside",
+      url: poster1,
+      title: "Åpen bruktbutikk skilt",
       width: 1000,
-      height: 722,
+      height: 667,
     },
+    {
+      url: poster2,
+      title: "Parkering bak butikken",
+      width: 1000,
+      height: 667,
+    },
+
     {
       url: bussinesscardimg,
       title: "Visittkort",
@@ -62,17 +70,18 @@ export default {
       width: 1000,
       height: 667,
     },
-    {
-      url: openinghours1img,
-      title: "Åpningstider",
-      width: 667,
-      height: 1000,
-    },
+
     {
       url: signimg,
       title: "Fasadeskilt",
       width: 1000,
       height: 667,
+    },
+    {
+      url: webpage1,
+      title: "Webside",
+      width: 1000,
+      height: 722,
     },
     {
       url: sign1img,
@@ -122,6 +131,14 @@ export default {
           r: 124,
           g: 167,
           b: 173,
+        },
+      },
+      {
+        hex: "#5D7D7F",
+        rgb: {
+          r: 93,
+          g: 125,
+          b: 127,
         },
       },
       {
