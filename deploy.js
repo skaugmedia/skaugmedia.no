@@ -1,4 +1,5 @@
 import * as ftp from "basic-ftp";
+import "dotenv/config";
 import { readdir, stat } from "fs/promises";
 import { stdin as input, stdout as output } from "node:process";
 import * as readline from "node:readline/promises";
@@ -52,12 +53,20 @@ const getDirectChildren = async (path) => {
   return children.filter((f) => f.isFile()).map((f) => f.name);
 };
 
+const getUsername = () => {
+  return process.env.FTP_USERNAME ?? rl.question("FTP Username: ");
+};
+
+const getPassword = () => {
+  return process.env.FTP_PASSWORD ?? rl.question("FTP Password: ");
+};
+
 (async () => {
   const rl = readline.createInterface({ input, output });
   const sourceDir = "./dist";
   console.log("Input credentials for Skaugmedia Domeneshop FTP");
-  const user = await rl.question("FTP Username: ");
-  const password = await rl.question("FTP Password: ");
+  const user = await getUsername();
+  const password = await getPassword();
   console.log("Connecting...");
 
   const client = new ftp.Client();
