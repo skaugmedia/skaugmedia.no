@@ -53,11 +53,11 @@ const getDirectChildren = async (path) => {
   return children.filter((f) => f.isFile()).map((f) => f.name);
 };
 
-const getUsername = () => {
+const getUsername = (rl) => {
   return process.env.FTP_USERNAME ?? rl.question("FTP Username: ");
 };
 
-const getPassword = () => {
+const getPassword = (rl) => {
   return process.env.FTP_PASSWORD ?? rl.question("FTP Password: ");
 };
 
@@ -65,8 +65,8 @@ const getPassword = () => {
   const rl = readline.createInterface({ input, output });
   const sourceDir = "./dist";
   console.log("Input credentials for Skaugmedia Domeneshop FTP");
-  const user = await getUsername();
-  const password = await getPassword();
+  const user = await getUsername(rl);
+  const password = await getPassword(rl);
   console.log("Connecting...");
 
   const client = new ftp.Client();
