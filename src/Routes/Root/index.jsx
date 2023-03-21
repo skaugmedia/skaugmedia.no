@@ -57,6 +57,13 @@ export function Root() {
           />
         </header>
 
+        <div className="marchdiscount">
+          <div className="discountheader">LANSERINGSTILBUD</div>
+          <div className="discount">
+            -25% avslag på alle fotograferinger som bookes i mars
+          </div>
+        </div>
+
         <main>
           <Outlet />
         </main>

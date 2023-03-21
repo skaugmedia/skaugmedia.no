@@ -48,6 +48,22 @@ img.headerlogo {
   margin: 40px;
 }
 
+.marchdiscount {
+  background-color: var(--green);
+  height: 75px;
+}
+
+.discountheader {
+  color: white;
+  padding-top: 10px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.discount {
+  padding-bottom: 10px;
+}
+
 .footer-link {
   color: var(--blue);
   text-transform: uppercase;
