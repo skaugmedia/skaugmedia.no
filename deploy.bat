@@ -1,2 +1,2 @@
-npm run deploy
+call npm run deploy
 pause
