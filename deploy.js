@@ -63,6 +63,10 @@ const getPassword = (rl) => {
   return process.env.FTP_PASSWORD ?? rl.question("FTP Password: ");
 };
 
+const colorRed = "\u001b[31;1m";
+const colorGreen = "\u001b[32;1m";
+const colorReset = "\u001b[0m";
+
 (async () => {
   const rl = readline.createInterface({ input, output });
   const sourceDir = "./dist";
@@ -108,9 +112,9 @@ const getPassword = (rl) => {
     console.log(`Uploaded ${assetsCount} files to the assets folder`);
     console.log(`Uploaded ${rootCount} files to the root folder`);
     console.log(`Uploaded ${assetsCount + rootCount} files in total`);
-    console.log("Deployment complete");
+    console.log(`\n${colorGreen}✔️ Deployment complete${colorReset}`);
   } catch (e) {
-    console.error("Failed");
+    console.error(`\n${colorRed}❌ Failed${colorReset}`);
     console.error(e);
   } finally {
     client.close();
