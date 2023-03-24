@@ -11,12 +11,50 @@ import { useLoaderData } from "react-router-dom";
 import classes from "./Home.module.css";
 import { Image } from "../../Components/Image";
 import { NavLink } from "react-router-dom";
+import siblingimg from "../../Images/sibling_photo.jpg";
+import confirmationimg from "../../Images/minisession_confirmation.jpg";
 
 export function Home() {
   const { recentWorks } = useLoaderData();
 
   return (
     <>
+      <PageSection outerClassName="minisession-sibling-outer">
+        <div className="minisession-sibling-whitebox">
+          <img
+            className="minisession-img"
+            src={siblingimg}
+            alt="Søskenfotografering"
+          ></img>
+
+          <div className="minisession-sibling-minisessiontext">
+            Minifotografering
+          </div>
+          <div className="minisession-sibling-heading">Søsken</div>
+          <div className="minisession-sibling-price">Kr. 1000,-</div>
+          <div className="minisession-sibling-when">
+            Kun fotograferinger i april 2023
+          </div>
+        </div>
+      </PageSection>
+      <PageSection outerClassName="minisession-confirmation-outer">
+        <div className="minisession-confirmation-whitebox">
+          <img
+            className="minisession-img"
+            src={confirmationimg}
+            alt="Konfirmantfotografering"
+          ></img>
+
+          <div className="minisession-confirmation-minisessiontext">
+            Minifotografering
+          </div>
+          <div className="minisession-confirmation-heading">Konfirmant</div>
+          <div className="minisession-confirmation-price">Kr. 1000,-</div>
+          <div className="minisession-confirmation-when">
+            Kun fotograferinger 20. mai 2023
+          </div>
+        </div>
+      </PageSection>
       <PageSection outerClassName="intro-outer" innerClassName="intro">
         <div className="flex-container">
           <div className="flex-child text-container">
