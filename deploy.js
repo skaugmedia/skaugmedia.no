@@ -1,11 +1,11 @@
 import * as ftp from "basic-ftp";
 import dotenv from "dotenv";
 import { readdir, stat } from "fs/promises";
-import { stdin as input, stdout as output } from "node:process";
+import { stdin as input, stdout as output, cwd } from "node:process";
 import * as readline from "node:readline/promises";
 import { basename, join } from "path";
 
-dotenv.config({ path: `${__dirname}/.env.local` });
+dotenv.config({ path: `${cwd()}/.env.local` });
 
 const dirSize = async (dir) => {
   const files = await readdir(dir, { withFileTypes: true });
