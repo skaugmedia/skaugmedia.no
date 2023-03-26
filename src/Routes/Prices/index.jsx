@@ -23,7 +23,11 @@ export function Prices() {
       <div className="prices-content">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 
-        <Collapsible title="Gavekort" price="Valgfri sum">
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Gavekort"
+          price="Valgfri sum"
+        >
           Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan brukes
           på fotograferinger, men gjelder ikke for mine designtjenester.
         </Collapsible>
@@ -38,7 +42,7 @@ export function Prices() {
           </div>
         </div>
 
-        <div class="section-divider"></div>
+        <div className="section-divider"></div>
 
         <div className="section-category">
           <Image
@@ -107,7 +111,7 @@ export function Prices() {
           </div>
         </div>
 
-        <div class="section-divider"></div>
+        <div className="section-divider"></div>
 
         <div className="section-category">
           <Image src={newbornimg} alt="Liam" />
@@ -165,7 +169,7 @@ export function Prices() {
           </div>
         </div>
 
-        <div class="section-divider"></div>
+        <div className="section-divider"></div>
 
         <div className="section-category">
           <Image src={pregnantimg} alt="Tonje" />
@@ -227,7 +231,7 @@ export function Prices() {
             </div>
           </div>
         </div>
-        <div class="section-divider"></div>
+        <div className="section-divider"></div>
 
         <div className="section-category">
           <Image
@@ -289,7 +293,7 @@ export function Prices() {
           </div>
         </div>
 
-        <div class="section-divider"></div>
+        <div className="section-divider"></div>
 
         <div className="section-category">
           <Image
@@ -362,7 +366,7 @@ export function Prices() {
             </div>
           </div>
         </div>
-        <div class="section-divider"></div>
+        <div className="section-divider"></div>
 
         <div className="section-category">
           <Image
@@ -415,7 +419,7 @@ export function Prices() {
             </div>
           </div>
         </div>
-        <div class="section-divider"></div>
+        <div className="section-divider"></div>
         <div className="section-category">
           <Image className="category-image" src={foodimg} alt="Rødbetesalat" />
           <div className="section-text">
@@ -438,7 +442,7 @@ export function Prices() {
             </div>
           </div>
         </div>
-        <div class="section-divider"></div>
+        <div className="section-divider"></div>
         <div className="section-category">
           <Image
             className="category-image"
