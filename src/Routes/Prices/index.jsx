@@ -4,7 +4,7 @@ import { Underline } from "../../Components/Underline";
 import { PriceList } from "./Components/PriceList";
 import { PageSection } from "../../Components/PageSection";
 import { IncludesList } from "./Components/IncludesList";
-
+import { Collapsible } from "../../Components/Collapsible";
 import { Image } from "../../Components/Image";
 import portrettimg from "../../Images/silje_konfirmant_3.jpg";
 import newbornimg from "../../Images/newborn_liam_4.jpg";
@@ -23,17 +23,18 @@ export function Prices() {
       <div className="prices-content">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 
+        <Collapsible title="Gavekort" price="Valgfri sum">
+          Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan brukes
+          på fotograferinger, men gjelder ikke for mine designtjenester.
+        </Collapsible>
+
         <div className="section-category">
           <Image className="giftcard-img" src={giftcardimg} alt="Gavekort" />
           <div className="section-text">
             <div className="category-title">Gavekort</div>
             <PriceList items={[{ name: "Gavekort", price: "Valgfri sum" }]} />
 
-            <div className="price-info">
-              Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan
-              brukes på fotograferinger, men gjelder ikke for mine
-              designtjenester.
-            </div>
+            <div className="price-info"></div>
           </div>
         </div>
 

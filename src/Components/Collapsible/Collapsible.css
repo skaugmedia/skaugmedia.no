@@ -1,0 +1,29 @@
+.collapsible-button {
+  background-color: transparent;
+  height: 45px;
+  width: 100%;
+  border-color: transparent;
+  justify-content: left;
+  text-align: left;
+  padding-left: 20px;
+  font-family: Oswald;
+  font-size: 1em;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.collapsible-textbox-outer {
+  background-color: var(--lightgreen);
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.prices-text {
+  color: black;
+  font-family: nunito;
+  text-align: left;
+  font-weight: 400;
+}
