@@ -12,6 +12,10 @@
   font-weight: 600;
 }
 
+.collapsible-button-line {
+  margin-bottom: 10px;
+}
+
 .collapsible-textbox-outer {
   background-color: var(--lightgreen);
   height: auto;
