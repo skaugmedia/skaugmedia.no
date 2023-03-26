@@ -43,6 +43,7 @@ export function Prices() {
 
         <div className="category-title">Minifotografering</div>
         <Collapsible
+          id="minifotografering-sosken"
           outerClassName="prices-heading"
           title="Søsken (gjelder kun fotografering i april)"
           price="Kr. 1000,-"
@@ -78,6 +79,7 @@ export function Prices() {
           </p>
         </Collapsible>
         <Collapsible
+          id="minifotografering-sosken"
           outerClassName="prices-heading"
           title="Konfirmant (gjelder fotografering 20. mai)"
           price="Kr. 1000,-"
