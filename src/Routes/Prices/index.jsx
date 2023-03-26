@@ -16,6 +16,7 @@ import designimg from "../../Images/design_prices.jpg";
 import pageName from "./PageName";
 import giftcardimg from "../../Images/mockup_gavekort.jpg";
 import businessimg from "../../Images/stranger_as_4.jpg";
+import { DottedLine } from "/src/Components/DottedLine";
 
 export function Prices() {
   return (
@@ -23,6 +24,85 @@ export function Prices() {
       <div className="prices-content">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 
+        <div className="category-title">Tilbud</div>
+        <div className="prices-offers">
+          Ved booking av gravidfotografering hos meg, får du -50% avslag på
+          nyfødtfotografering.
+          <DottedLine className="dottedline"></DottedLine>
+        </div>
+        <div className="prices-offers">
+          Ved booking av nyfødtfotografering hos meg, får du -50% avslag på
+          babyfotografering (6mnd-12mnd).
+          <DottedLine className="dottedline"></DottedLine>{" "}
+        </div>
+        <div className="prices-offers">
+          Ved booking av bryllupsfotografering hos meg, får du -50% avslag på
+          forlovelsesfotografering.
+        </div>
+        <div className="section-divider"></div>
+
+        <div className="category-title">Minifotografering</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Søsken (gjelder kun fotografering i april)"
+          price="Kr. 1000,-"
+        >
+          Minifotografering av søsken kan bookes for hele april, tilbudet
+          gjelder kun fotograferinger i april. Gjelder for 2 eller flere søsken
+          i aldre fra 6mnd og oppover. Kan ikke kombineres med andre tilbud.
+          <p>Inkluderer:</p>
+          <IncludesList
+            items={[
+              "Samtale før fotografering med veiledning til valg av lokasjon og anbefalte klær",
+              "20 minutters fotografering på lokasjon utendørs",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+              "Mulighet for å kjøpe ekstra bilder",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Konfirmant (gjelder fotografering 20. mai)"
+          price="Kr. 1000,-"
+        >
+          Minifotografering av konfirmanter 20. mai 2023, ved Nordbytjernet på
+          Jessheim. Kun oppsatte tidspunkter kan bookes. Kan ikke kombineres med
+          andre tilbud.
+          <p>Inkluderer:</p>
+          <IncludesList
+            items={[
+              "20 minutters fotografering ved Nordbytjernet på Jessheim",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+              "Mulighet for å kjøpe ekstra bilder",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <p className="additional-prices">
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+        </Collapsible>
+        <div className="category-title">Gavekort</div>
         <Collapsible
           outerClassName="prices-heading"
           title="Gavekort"
@@ -31,16 +111,6 @@ export function Prices() {
           Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan brukes
           på fotograferinger, men gjelder ikke for mine designtjenester.
         </Collapsible>
-
-        <div className="section-category">
-          <Image className="giftcard-img" src={giftcardimg} alt="Gavekort" />
-          <div className="section-text">
-            <div className="category-title">Gavekort</div>
-            <PriceList items={[{ name: "Gavekort", price: "Valgfri sum" }]} />
-
-            <div className="price-info"></div>
-          </div>
-        </div>
 
         <div className="section-divider"></div>
 
@@ -51,9 +121,6 @@ export function Prices() {
             alt="Konfirmanten Silje"
           />
           <div className="section-text">
-            <div className="category-title">
-              Portrett, barn, familie og konfirmant
-            </div>
             <PriceList
               items={[
                 {
