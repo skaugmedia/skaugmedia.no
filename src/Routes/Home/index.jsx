@@ -14,6 +14,7 @@ import AboutRoute from "../About/Route";
 import PricesRoute from "../Prices/Route";
 import ContactRoute from "../Contact/Route";
 import "./Home.css";
+import * as ids from "../Prices/Ids";
 import classes from "./Home.module.css";
 import { kr } from "/src/utils";
 
@@ -28,7 +29,7 @@ export function Home() {
         title="Søsken"
         price={kr(1000)}
         when="Kun fotograferinger i april."
-        link={`${PricesRoute}/minifotografering-sosken`}
+        link={`${PricesRoute}#${ids.siblings}`}
         classNames={{
           outer: classes.miniSessionSiblingOuter,
           category: classes.miniSessionSiblingCategory,
@@ -47,7 +48,7 @@ export function Home() {
         title="Konfirmant"
         price={kr(1000)}
         when="Kun fotograferinger 20. mai 2023."
-        link={`${PricesRoute}/minifotografering-konfirmant`}
+        link={`${PricesRoute}#${ids.confirmation}`}
         classNames={{
           outer: classes.miniSessionConfirmationOuter,
           category: classes.miniSessionConfirmationCategory,

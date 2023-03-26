@@ -16,9 +16,39 @@ import designimg from "../../Images/design_prices.jpg";
 import pageName from "./PageName";
 import giftcardimg from "../../Images/mockup_gavekort.jpg";
 import businessimg from "../../Images/stranger_as_4.jpg";
+import { useState } from "react";
 import { DottedLine } from "/src/Components/DottedLine";
+import { useLocation } from "react-router-dom";
+import * as ids from "./Ids";
+import { useEffect, useRef } from "react";
 
 export function Prices() {
+  const location = useLocation();
+  const miniSessions = {
+    siblings: {
+      outer: useRef(),
+    },
+    confirmation: {
+      outer: useRef(),
+    },
+  };
+  const [open, setOpen] = useState({});
+  useEffect(() => {
+    switch (location.hash) {
+      case `#${ids.siblings}`:
+        miniSessions.siblings.outer.current?.scrollIntoView();
+        if (!open.siblings) {
+          setOpen({ ...open, siblings: true });
+        }
+        break;
+      case `#${ids.confirmation}`:
+        miniSessions.confirmation.outer.current?.scrollIntoView();
+        if (!open.confirmation) {
+          setOpen({ ...open, confirmation: true });
+        }
+        break;
+    }
+  }, [location.hash]);
   return (
     <PageSection innerClassName="prices">
       <div className="prices-content">
@@ -44,7 +74,9 @@ export function Prices() {
 
         <div className="category-title">Minifotografering</div>
         <Collapsible
-          id="minifotografering-sosken"
+          id={ids.siblings}
+          outerRef={miniSessions.siblings.outer}
+          open={open.siblings}
           outerClassName="prices-heading"
           title="Søsken (gjelder kun fotografering i april)"
           price="Kr. 1000,-"
@@ -80,7 +112,9 @@ export function Prices() {
           </p>
         </Collapsible>
         <Collapsible
-          id="minifotografering-sosken"
+          id={ids.confirmation}
+          outerRef={miniSessions.confirmation.outer}
+          open={open.confirmation}
           outerClassName="prices-heading"
           title="Konfirmant (gjelder fotografering 20. mai)"
           price="Kr. 1000,-"

@@ -5,7 +5,15 @@ import { DottedLine } from "../DottedLine";
 import chevron from "./chevron-right-solid.svg";
 import classes from "./Collapsible.module.css";
 
-export function Collapsible({ title, price, textClassName, children }) {
+export function Collapsible({
+  id,
+  title,
+  price,
+  textClassName,
+  outerRef,
+  open,
+  children,
+}) {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -16,11 +24,13 @@ export function Collapsible({ title, price, textClassName, children }) {
           <DottedLine className={classes.line} />
         </>
       }
+      containerElementProps={{ id, ref: outerRef }}
       className={classes.outer}
       openedClassName={classNames(classes.outer, classes.outerOpened)}
       triggerClassName={classes.button}
       triggerOpenedClassName={classes.button}
       triggerTagName="div"
+      open={open}
       onOpening={() => setOpen(true)}
       onClosing={() => setOpen(false)}
       transitionTime={200}
