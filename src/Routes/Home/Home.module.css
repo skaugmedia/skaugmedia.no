@@ -4,3 +4,30 @@
   text-decoration: none;
   color: inherit;
 }
+
+.miniSessionSiblingCategory,
+.miniSessionSiblingPrice {
+  color: var(--dark-orange);
+}
+
+.miniSessionSiblingOuter {
+  background-color: var(--light-orange);
+}
+
+.miniSessionSiblingLink {
+  background-color: var(--light-orange);
+  color: white !important;
+}
+
+.miniSessionConfirmationOuter {
+  background-color: var(--lightgreen);
+}
+
+.miniSessionConfirmationCategory,
+.miniSessionConfirmationPrice {
+  color: var(--green);
+}
+
+.miniSessionConfirmationLink {
+  background-color: var(--green);
+}

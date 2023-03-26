@@ -1,43 +1,60 @@
-import ContactRoute from "../Contact/Route";
-import AboutRoute from "../About/Route";
+import { NavLink, useLoaderData } from "react-router-dom";
 import { ButtonLink } from "../../Components/ButtonLink";
-import { PageSection } from "../../Components/PageSection";
-import "./Home.css";
-import liamforside from "../../Images/liam_kvadrat_forside.jpg";
-import lashbrowserforside from "../../Images/lashbrowser_forside.jpg";
-import konfirmantsiljeforside from "../../Images/konfirmant_silje_forside.jpg";
-import ninaforside from "../../Images/nina_forside.jpg";
-import { useLoaderData } from "react-router-dom";
-import classes from "./Home.module.css";
 import { Image } from "../../Components/Image";
-import { NavLink } from "react-router-dom";
-import siblingimg from "../../Images/sibling_photo.jpg";
+import { MiniSession } from "../../Components/MiniSession";
+import { MiniSessionImage } from "../../Components/MiniSession/MiniSessionImage";
+import { PageSection } from "../../Components/PageSection";
+import konfirmantsiljeforside from "../../Images/konfirmant_silje_forside.jpg";
+import lashbrowserforside from "../../Images/lashbrowser_forside.jpg";
+import liamforside from "../../Images/liam_kvadrat_forside.jpg";
 import confirmationimg from "../../Images/minisession_confirmation.jpg";
+import ninaforside from "../../Images/nina_forside.jpg";
+import siblingimg from "../../Images/sibling_photo.jpg";
+import AboutRoute from "../About/Route";
+import ContactRoute from "../Contact/Route";
+import "./Home.css";
+import classes from "./Home.module.css";
+import { kr } from "/src/utils";
 
 export function Home() {
   const { recentWorks } = useLoaderData();
 
   return (
     <>
-      <PageSection outerClassName="minisession-sibling-outer">
-        <div className="minisession-sibling-whitebox">
-          <img
-            className="minisession-img"
-            src={siblingimg}
-            alt="Søskenfotografering"
-          ></img>
-
-          <div className="minisession-sibling-minisessiontext">
-            Minifotografering
-          </div>
-          <div className="minisession-sibling-heading">Søsken</div>
-          <div className="minisession-sibling-price">Kr. 1000,-</div>
-          <div className="minisession-sibling-when">
-            Kun fotograferinger i april 2023
-          </div>
-        </div>
-      </PageSection>
-      <PageSection outerClassName="minisession-confirmation-outer">
+      <MiniSession
+        image={<MiniSessionImage src={siblingimg} alt="Søskenfotografering" />}
+        category="Minifotografering"
+        title="Søsken"
+        price={kr(1000)}
+        when="Kun fotograferinger i april."
+        link={"/"}
+        classNames={{
+          outer: classes.miniSessionSiblingOuter,
+          category: classes.miniSessionSiblingCategory,
+          price: classes.miniSessionSiblingPrice,
+          link: classes.miniSessionSiblingLink,
+        }}
+      />
+      <MiniSession
+        image={
+          <MiniSessionImage
+            src={confirmationimg}
+            alt="Konfirmantfotografering"
+          />
+        }
+        category="Minifotografering"
+        title="Konfirmant"
+        price={kr(1000)}
+        when="Kun fotograferinger 20. mai 2023."
+        link={"/"}
+        classNames={{
+          outer: classes.miniSessionConfirmationOuter,
+          category: classes.miniSessionConfirmationCategory,
+          price: classes.miniSessionConfirmationPrice,
+          link: classes.miniSessionConfirmationLink,
+        }}
+      />
+      {/* <PageSection outerClassName="minisession-confirmation-outer">
         <div className="minisession-confirmation-whitebox">
           <img
             className="minisession-img"
@@ -54,7 +71,7 @@ export function Home() {
             Kun fotograferinger 20. mai 2023
           </div>
         </div>
-      </PageSection>
+      </PageSection> */}
       <PageSection outerClassName="intro-outer" innerClassName="intro">
         <div className="flex-container">
           <div className="flex-child text-container">

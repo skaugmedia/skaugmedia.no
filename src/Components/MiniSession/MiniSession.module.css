@@ -1,0 +1,79 @@
+.main {
+  --horizontal-padding: calc((100vw - var(--content-width)) / 2);
+  align-items: flex-end;
+  display: flex;
+  padding-bottom: 10px;
+  padding-left: var(--horizontal-padding);
+  padding-top: 20px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.imageWrapper {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.image {
+  width: 210px;
+  border-radius: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.whitePadding {
+  padding-bottom: 25px;
+  width: calc(100% - 100px);
+}
+
+.white {
+  --vertical-padding: 20px;
+  align-items: flex-end;
+  background-color: white;
+  display: flex;
+  padding-bottom: var(--vertical-padding);
+  padding-left: 125px;
+  padding-right: var(--horizontal-padding);
+  padding-top: var(--vertical-padding);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  width: 350px;
+}
+
+.category {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 22px;
+}
+
+.when {
+  font-size: 16px;
+}
+
+.link,
+.link:visited,
+.link:active {
+  z-index: 2;
+  color: inherit;
+  grid-area: link;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 9999px;
+}
