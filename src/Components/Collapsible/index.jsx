@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import { useState } from "react";
 import ReactCollapsible from "react-collapsible";
-import { ItemPrice } from "../../Routes/Prices/Components/ItemPrice";
 import { DottedLine } from "../DottedLine";
 import chevron from "./chevron-right-solid.svg";
 import classes from "./Collapsible.module.css";
@@ -18,7 +17,7 @@ export function Collapsible({ title, price, textClassName, children }) {
         </>
       }
       className={classes.outer}
-      openedClassName={classes.outer}
+      openedClassName={classNames(classes.outer, classes.outerOpened)}
       triggerClassName={classes.button}
       triggerOpenedClassName={classes.button}
       triggerTagName="div"
