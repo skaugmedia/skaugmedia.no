@@ -1,4 +1,12 @@
 import { oneLine } from "common-tags";
+import heidi_1 from "../../../Images/heidi_1.jpg";
+import heidi_2 from "../../../Images/heidi_2.jpg";
+import keshra_1 from "../../../Images/keshra_1.jpg";
+import keshra_2 from "../../../Images/keshra_2.jpg";
+import keshra_3 from "../../../Images/keshra_3.jpg";
+import keshra_4 from "../../../Images/keshra_4.jpg";
+import keshra_5 from "../../../Images/keshra_5.jpg";
+import keshra_6 from "../../../Images/keshra_6.jpg";
 import silje_1 from "../../../Images/silje_konfirmant_1.jpg";
 import silje_2 from "../../../Images/silje_konfirmant_2.jpg";
 import silje_3 from "../../../Images/silje_konfirmant_3.jpg";
@@ -6,14 +14,8 @@ import silje_4 from "../../../Images/silje_konfirmant_4.jpg";
 import silje_5 from "../../../Images/silje_konfirmant_5.jpg";
 import silje_6 from "../../../Images/silje_konfirmant_6.jpg";
 import silje_7 from "../../../Images/silje_konfirmant_7.jpg";
-import keshra_1 from "../../../Images/keshra_1.jpg";
-import keshra_2 from "../../../Images/keshra_2.jpg";
-import keshra_3 from "../../../Images/keshra_3.jpg";
-import keshra_4 from "../../../Images/keshra_4.jpg";
-import keshra_5 from "../../../Images/keshra_5.jpg";
-import keshra_6 from "../../../Images/keshra_6.jpg";
-import heidi_1 from "../../../Images/heidi_1.jpg";
-import heidi_2 from "../../../Images/heidi_2.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "konfirmant",
@@ -25,6 +27,11 @@ export default {
   cover: {
     url: silje_4,
     title: "Silje Viktoria",
+  },
+  listing: {
+    title: "Portrettforografering: konfirmant",
+    price: 2500,
+    link: `/${PricesRoute}#${ids.confirmation}`,
   },
   shoots: [
     {

@@ -2,6 +2,34 @@
   --yarl__color_backdrop: rgba(0, 0, 0, 0.97);
 }
 
+.description {
+  display: flex;
+}
+
+.listing {
+  text-align: left;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.listingTitle {
+  color: var(--blue);
+}
+
+.listingPrice {
+  color: var(--green);
+}
+
+.listingLink,
+.listingLink:visited,
+.listingLink:active {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 9999px;
+  background-color: var(--blue);
+  padding: 2px 20px;
+}
+
 .bodyText {
   font-weight: 200;
   text-align: left;

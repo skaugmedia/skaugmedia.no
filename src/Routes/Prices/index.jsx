@@ -35,13 +35,13 @@ export function Prices() {
   const [open, setOpen] = useState({});
   useEffect(() => {
     switch (location.hash) {
-      case `#${ids.siblings}`:
+      case `#${ids.miniSessionSiblings}`:
         miniSessions.siblings.outer.current?.scrollIntoView();
         if (!open.siblings) {
           setOpen({ ...open, siblings: true });
         }
         break;
-      case `#${ids.confirmation}`:
+      case `#${ids.miniSessionConfirmation}`:
         miniSessions.confirmation.outer.current?.scrollIntoView();
         if (!open.confirmation) {
           setOpen({ ...open, confirmation: true });
@@ -74,7 +74,7 @@ export function Prices() {
 
         <div className="category-title">Minifotografering</div>
         <Collapsible
-          id={ids.siblings}
+          id={ids.miniSessionSiblings}
           outerRef={miniSessions.siblings.outer}
           open={open.siblings}
           outerClassName="prices-heading"
@@ -112,7 +112,7 @@ export function Prices() {
           </p>
         </Collapsible>
         <Collapsible
-          id={ids.confirmation}
+          id={ids.miniSessionConfirmation}
           outerRef={miniSessions.confirmation.outer}
           open={open.confirmation}
           outerClassName="prices-heading"

@@ -1,2 +1,4 @@
-export const siblings = "minifotografering-sosken";
-export const confirmation = "minifotografering-konfirmasjon";
+export const miniSessionSiblings = "minifotografering-sosken";
+export const miniSessionConfirmation = "minifotografering-konfirmasjon";
+export const confirmation = "konfirmant";
+export const business = "bedrift";

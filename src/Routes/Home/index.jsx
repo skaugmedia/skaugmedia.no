@@ -29,7 +29,7 @@ export function Home() {
         title="Søsken"
         price={kr(1000)}
         when="Kun fotograferinger i april."
-        link={`${PricesRoute}#${ids.siblings}`}
+        link={`${PricesRoute}#${ids.miniSessionSiblings}`}
         classNames={{
           outer: classes.miniSessionSiblingOuter,
           category: classes.miniSessionSiblingCategory,
@@ -48,7 +48,7 @@ export function Home() {
         title="Konfirmant"
         price={kr(1000)}
         when="Kun fotograferinger 20. mai 2023."
-        link={`${PricesRoute}#${ids.confirmation}`}
+        link={`${PricesRoute}#${ids.miniSessionConfirmation}`}
         classNames={{
           outer: classes.miniSessionConfirmationOuter,
           category: classes.miniSessionConfirmationCategory,
