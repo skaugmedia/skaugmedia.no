@@ -102,6 +102,9 @@ export function Prices() {
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
         </Collapsible>
+
+        <div className="section-divider"></div>
+
         <div className="category-title">Gavekort</div>
         <Collapsible
           outerClassName="prices-heading"
@@ -110,6 +113,139 @@ export function Prices() {
         >
           Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan brukes
           på fotograferinger, men gjelder ikke for mine designtjenester.
+        </Collapsible>
+
+        <div className="section-divider"></div>
+
+        <div className="category-title">Barnefotografering</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Nyfødtfotografering"
+          price="Kr. 3000,-"
+        >
+          Jeg anbefaler å ha nyfødtfotografering innen babyen har fylt 14 dager,
+          men det går også fint etter dette om tiden ikke strekker til. Husk
+          bare på at jo eldre babyen blir, jo mer våken blir den. Jeg har et
+          lite utvalg av rekvisitter og klær som passer til
+          nyfødtfotograferingen, lån av disse er inkludert i prisen. Denne
+          fotograferingen inkluderer også bilder med foreldre og søsken.
+          <br />
+          <br />
+          <span className="discount-price">
+            Ved booking av nyfødtfotografering gjennom meg, får man 50% avslag
+            på babyfotografering (når babyen er mellom 6 og 12 måneder gammel.)
+          </span>
+          <br />
+          <br />
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 2-3 timer fotografering hjemme hos dere (jeg tar med enkel styling og lamper)",
+              "Bilder sammen med foreldre og søsken",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="1-års fotografering"
+          price="Kr. 2750,-"
+        >
+          1-års fotografering er bilder mange per i dag ønsker å ha av sine
+          barn. Dette kan innebære enkle portretter med litt styling utendørs,
+          innendørs eller mer avansert med cakesmash- som navnet tilsier, der
+          barnet får spise en kake mens de blir fotografert.
+          <br />
+          <br />
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Valget om man ønsker cakesmash eller ikke",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Barnefotografering (6 mnd - 13 år)"
+          price="Kr. 2750,-"
+        >
+          Fotografering av barn i alle aldre mellom 6 måneder og 13 år.
+          <br />
+          <br />
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Barnehagefotografering"
+          price="Ta kontakt for pristilbud"
+        >
+          Fotografering av gruppebilder, portrettbilder, søskenbilder og
+          miljøbilder i barnehager.
         </Collapsible>
 
         <div className="section-divider"></div>
