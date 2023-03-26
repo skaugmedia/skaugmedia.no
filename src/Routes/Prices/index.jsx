@@ -38,6 +38,7 @@ export function Prices() {
         <div className="prices-offers">
           Ved booking av bryllupsfotografering hos meg, får du -50% avslag på
           forlovelsesfotografering.
+          <DottedLine className="dottedline"></DottedLine>
         </div>
         <div className="section-divider"></div>
 
@@ -252,401 +253,435 @@ export function Prices() {
 
         <div className="section-divider"></div>
 
-        <div className="section-category">
-          <Image
-            className="category-image"
-            src={portrettimg}
-            alt="Konfirmanten Silje"
+        <div className="category-title">Portrettfotografering</div>
+
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Portrettfotografering"
+          price="Kr. 2500,-"
+        >
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
           />
-          <div className="section-text">
-            <PriceList
-              items={[
-                {
-                  name: "Portrettfotografering",
-                  price: "Kr. 2500,-",
-                },
-                {
-                  name: "Portrettfotografering: barn fra 6mnd - 13år ",
-                  price: "Kr. 2750,-",
-                },
-                {
-                  name: "Portrettfotografering: konfirmant",
-                  price: "Kr. 2500,-",
-                },
-                {
-                  name: "Portrettfotografering: familie/gruppe",
-                  price: "Kr. 3000,-",
-                },
-              ]}
-            />
-
-            <div className="price-info">
-              Inkluderer:
-              <IncludesList
-                items={[
-                  "Samtale før fotografering med veiledning til valg av lokasjon og anbefalte klær",
-                  "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-                  "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-                  "3 stk. redigerte, høyoppløselige bilder",
-                  "Bildene leveres digitalt",
-                ]}
-              />
-              <p>
-                Jeg samarbeider tett med makeup-artist LashBrowser, som kan
-                sminke før fotografering mot et tillegg i prisen. LashBrowswer
-                holder til i Storgata 7B, 2050 Jessheim.
-              </p>
-              Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 600,- per bilde.
-              <p className="additional-prices">
-                Kveldstillegg etter 17.30: kr. 700,-
-                <br />
-                Helgetillegg: kr. 1000,-
-                <br />
-                <br />
-                Ved kansellering innen 24 timer før avtalt tid eller ikke
-                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
-                helhet.
-              </p>
-              <p>
-                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-                faktureres med kr. 10,- per km.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="section-divider"></div>
-
-        <div className="section-category">
-          <Image src={newbornimg} alt="Liam" />
-          <div className="section-text">
-            <div className="category-title">Nyfødt</div>
-            <PriceList
-              items={[{ name: "Nyfødtfotografering", price: "Kr. 3000,-" }]}
-            />
-
-            <div className="price-info">
-              Jeg anbefaler å ha nyfødtfotografering innen babyen har fylt 14
-              dager, men det går også fint etter dette om tiden ikke strekker
-              til. Husk bare på at jo eldre babyen blir, jo mer våken blir den.
-              Jeg har et lite utvalg av rekvisitter og klær som passer til
-              nyfødtfotograferingen, lån av disse er inkludert i prisen. Denne
-              fotograferingen inkluderer også bilder med foreldre og søsken.
-              <br />
-              <br />
-              <span className="discount-price">
-                Ved booking av nyfødtfotografering gjennom meg, får man 50%
-                avslag på babyfotografering (når babyen er mellom 6 og 12
-                måneder gammel.)
-              </span>
-              <br />
-              <br />
-              Inkluderer:
-              <IncludesList
-                items={[
-                  "Samtale før fotografering for å avtale nærmere",
-                  "Opptil 2-3 timer fotografering hjemme hos dere (jeg tar med enkel styling og lamper)",
-                  "Bilder sammen med foreldre og søsken",
-                  "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-                  "3 stk. redigerte, høyoppløselige bilder",
-                  "Bildene leveres digitalt",
-                ]}
-              />
-              Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 600,- per bilde.
-              <br />
-              <p className="additional-prices">
-                Kveldstillegg etter 17.30: kr. 700,-
-                <br />
-                Helgetillegg: kr. 1000,-
-                <br />
-                <br />
-                Ved kansellering innen 24 timer før avtalt tid eller ikke
-                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
-                helhet.
-              </p>
-              <div>
-                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-                faktureres med kr. 10,- per km.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="section-divider"></div>
-
-        <div className="section-category">
-          <Image src={pregnantimg} alt="Tonje" />
-          <div className="section-text">
-            <div className="category-title">Gravidfotografering</div>
-            <PriceList
-              items={[{ name: "Gravidfotografering", price: "Kr. 2500,-" }]}
-            />
-
-            <div className="price-info">
-              Gravidfotografering blir flott både utendørs i naturen, eller
-              hjemme hos dere, for eksempel i en lekker oppredd dobbeltseng
-              eller foran lyse luftige gardiner med lyset fra vinduet strømmende
-              inn bak gardinene. Jeg har et lite utvalg av flotte kjoler og
-              rekvisitter som passer til gravidfotografering, lån av disse er
-              inkludert i prisen. Denne fotograferingen inkluderer også partner
-              og søsken.
-              <br />
-              <br />
-              <span className="discount-price">
-                Ved booking av gravidfotografering gjennom meg, får man 50%
-                avslag på nyfødtfotografering.
-              </span>
-              <br />
-              <br />
-              Inkluderer:
-              <IncludesList
-                items={[
-                  "Samtale før fotografering for å avtale nærmere",
-                  "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-                  "Bilder sammen med partner og andre barn",
-                  "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-                  "3 stk. redigerte, høyoppløselige bilder",
-                  "Bildene leveres digitalt",
-                ]}
-              />
-              <p>
-                Jeg samarbeider tett med makeup-artist LashBrowser, som kan
-                sminke før fotografering mot et tillegg i prisen. LashBrowswer
-                holder til i Storgata 7B, 2050 Jessheim.
-              </p>
-              Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 600,- per bilde.
-              <br />
-              <p className="additional-prices">
-                Kveldstillegg etter 17.30: kr. 700,-
-                <br />
-                Helgetillegg: kr. 1000,-
-                <br />
-                <br />
-                Ved kansellering innen 24 timer før avtalt tid eller ikke
-                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
-                helhet.
-              </p>
-              <div>
-                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-                faktureres med kr. 10,- per km.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="section-divider"></div>
-
-        <div className="section-category">
-          <Image
-            className="category-image"
-            src={coupleimg}
-            alt="Victor og Nina"
+          <p>
+            Jeg samarbeider tett med makeup-artist LashBrowser, som kan sminke
+            før fotografering mot et tillegg i prisen. LashBrowswer holder til i
+            Storgata 7B, 2050 Jessheim.
+          </p>
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Gravidfotografering"
+          price="Kr. 2500,-"
+        >
+          Gravidfotografering blir flott både utendørs i naturen, eller hjemme
+          hos dere, for eksempel i en lekker oppredd dobbeltseng eller foran
+          lyse luftige gardiner med lyset fra vinduet strømmende inn bak
+          gardinene. Jeg har et lite utvalg av flotte kjoler og rekvisitter som
+          passer til gravidfotografering, lån av disse er inkludert i prisen.
+          Denne fotograferingen inkluderer også partner og søsken.
+          <br />
+          <br />
+          <span className="discount-price">
+            Ved booking av gravidfotografering gjennom meg, får man 50% avslag
+            på nyfødtfotografering.
+          </span>
+          <br />
+          <br />
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Bilder sammen med partner og andre barn",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
           />
-          <div className="section-text">
-            <div className="category-title">Parfotografering</div>
-            <PriceList
-              items={[
-                {
-                  name: "Kjæreste- eller forlovelses-fotografering",
-                  price: "Kr. 3000,-",
-                },
-              ]}
-            />
-
-            <div className="price-info">
-              Parfotografering blir etter min mening best utendørs, men det er
-              også flott innendørs om dere helst ønsker dette. Vi tilbringer
-              mellom 1 og 2 timer sammen, der dere er dere selv foran kamera, og
-              viser frem deres kjærlighet til hverandre.
-              <br />
-              <br />
-              Inkluderer:
-              <IncludesList
-                items={[
-                  "Samtale før fotografering for å avtale nærmere",
-                  "1-2 timer fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-                  "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-                  "3 stk. redigerte, høyoppløselige bilder",
-                  "Bildene leveres digitalt",
-                ]}
-              />
-              <p>
-                Jeg samarbeider tett med makeup-artist LashBrowser, som kan
-                sminke før fotografering mot et tillegg i prisen. LashBrowswer
-                holder til i Storgata 7B, 2050 Jessheim.
-              </p>
-              Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert,
-              er prisen kr. 600,- per bilde.
-              <br />
-              <p className="additional-prices">
-                Kveldstillegg etter 17.30: kr. 700,-
-                <br />
-                Helgetillegg: kr. 1000,-
-                <br />
-                <br />
-                Ved kansellering innen 24 timer før avtalt tid eller ikke
-                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
-                helhet.
-              </p>
-              <div>
-                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-                faktureres med kr. 10,- per km.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="section-divider"></div>
-
-        <div className="section-category">
-          <Image
-            className="category-image"
-            src={weddingimg}
-            alt="Borddekking"
-          ></Image>
-          <div className="section-text">
-            <div className="category-title">Bryllupsfotografering</div>
-            <PriceList
-              items={[
-                {
-                  name: "Vielse + portrettfotografering - 2,5 timer",
-                  price: "Kr. 14.000,-",
-                },
-                {
-                  name: "Portrettfotografering - 1,5 time",
-                  price: "Kr. 10.000,-",
-                },
-              ]}
-            />
-            <div className="price-info">
-              Hvis du velger vielse + portrettfotografering vil dette inkludere
-              ca. 2,5 timer med fotografering. Da fotograferer jeg hele vielsen
-              og portretter etter vielsen. Dere får da 35 ferdig redigerte
-              bilder- som dere selv velger ut.
-              <br />
-              <br />
-              Om dere velger kun portretter, får dere 10 ferdig redigerte
-              bilder, som dere selv velger ut. Da fotograferer jeg i ca. 1,5
-              time, og begge pakkene inkluderer fotografering med familie og
-              forlovere etter vielsen.
-              <br />
-              <br />
-              <span className="discount-price">
-                Ved booking av bryllupsfotografering gjennom meg, får man 50%
-                avslag på forlovelsesfotografering i forkant av bryllupet.
-              </span>
-              <br />
-              <br />
-              Inkluderer:
-              <IncludesList
-                items={[
-                  "Samtale før fotografering for å avtale nærmere",
-                  "Fotografering under vielsen (hvis du velger pakken der dette er inkludert)",
-                  "1,5 timers portrettfotografering etter vielsen",
-                  "Fotografering med familie og forlovere etter vielsen",
-                  "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-                  "35/10 stk. redigerte, høyoppløselige bilder",
-                  "Bildene leveres digitalt",
-                ]}
-              />
-              Ønsker du å bestille flere bilder enn de som er inkludert, er
-              prisen kr. 600,- per bilde.
-              <br />
-              <p className="additional-prices">
-                Kveldstillegg etter 17.30: kr. 700,-
-                <br />
-                Helgetillegg: kr. 1000,-
-                <br />
-                <br />
-                Ved kansellering innen 24 timer før avtalt tid eller ikke
-                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
-                helhet.
-              </p>
-              <div>
-                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-                faktureres med kr. 10,- per km.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="section-divider"></div>
-
-        <div className="section-category">
-          <Image
-            className="category-image"
-            src={businessimg}
-            alt="Cecilie Stranger"
+          <p>
+            Jeg samarbeider tett med makeup-artist LashBrowser, som kan sminke
+            før fotografering mot et tillegg i prisen. LashBrowswer holder til i
+            Storgata 7B, 2050 Jessheim.
+          </p>
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Konfirmantfotografering"
+          price="Kr. 2500,-"
+        >
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
           />
-          <div className="section-text">
-            <div className="category-title">Bedriftsfotografering</div>
-            <PriceList
-              items={[
-                {
-                  name: "Profilbilde / CV-foto / Headshots",
-                  price: "Kr. 1500,-",
-                },
-                {
-                  name: "Portretter bedrift",
-                  price: "Ta kontakt for pristilbud",
-                },
-              ]}
-            />
-            <div className="price-info">
-              Inkluderer:
-              <IncludesList
-                items={[
-                  "Samtale før fotografering med planlegging og veiledning",
-                  "Opptil 30 minutters fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-                  "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-                  "1 stk. redigert og høyoppløselig bilde",
-                  "Bildet leveres digitalt",
-                ]}
-              />
-              Ønsker du å bestille flere bilder enn det som er inkludert, er
-              prisen kr. 600,- per bilde.
-              <br />
-              <p className="additional-prices">
-                Kveldstillegg etter 17.30: kr. 700,-
-                <br />
-                Helgetillegg: kr. 1000,-
-                <br />
-                <br />
-                Ved kansellering innen 24 timer før avtalt tid eller ikke
-                oppmøtt til avtalt tidspunkt, vil beløpet bli fakturert i sin
-                helhet.
-              </p>
-              <p>
-                Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-                faktureres med kr. 10,- per km.
-              </p>
-            </div>
-          </div>
-        </div>
+          <p>
+            Jeg samarbeider tett med makeup-artist LashBrowser, som kan sminke
+            før fotografering mot et tillegg i prisen. LashBrowswer holder til i
+            Storgata 7B, 2050 Jessheim.
+          </p>
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Profilbilde / CV-foto / Headshots"
+          price="Kr. 1500,-"
+        >
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 30 minutters fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "1 stk. redigert høyoppløselig bilde",
+              "Bildet leveres digitalt",
+            ]}
+          />
+          <p>
+            Jeg samarbeider tett med makeup-artist LashBrowser, som kan sminke
+            før fotografering mot et tillegg i prisen. LashBrowswer holder til i
+            Storgata 7B, 2050 Jessheim.
+          </p>
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Portretter for bedrift"
+          price="Ta kontakt for pristilbud"
+        >
+          Ta kontakt for pristilbud.
+        </Collapsible>
         <div className="section-divider"></div>
-        <div className="section-category">
-          <Image className="category-image" src={foodimg} alt="Rødbetesalat" />
-          <div className="section-text">
-            <div className="category-title">Produkt og matfotografering</div>
-            <PriceList
-              items={[
-                {
-                  name: "Produktfotografering",
-                  price: "Ta kontakt for pristilbud",
-                },
-                {
-                  name: "Matfotografering",
-                  price: "Ta kontakt for pristilbud",
-                },
-              ]}
-            />
-            <div className="price-info">
-              Ta kontakt for å avklare pris, da dette avhenger av antall bilder,
-              stylinger, spesielle krav og lignende.
-            </div>
-          </div>
-        </div>
+        <div className="category-title">Gruppefotografering</div>
+
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Familiefotografering / Gruppefotografering"
+          price="Kr. 3000,-"
+        >
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
+          />
+          <p>
+            Jeg samarbeider tett med makeup-artist LashBrowser, som kan sminke
+            før fotografering mot et tillegg i prisen. LashBrowswer holder til i
+            Storgata 7B, 2050 Jessheim.
+          </p>
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Søskenfotografering"
+          price="Kr. 3000,-"
+        >
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Fotografering med 2 eller flere søsken",
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Kjæreste- eller forlovelsesfotografering"
+          price="Kr. 3000,-"
+        >
+          Parfotografering blir etter min mening best utendørs, men det er også
+          flott innendørs om dere helst ønsker dette. Vi tilbringer mellom 1 og
+          2 timer sammen, der dere er dere selv foran kamera, og viser frem
+          deres kjærlighet til hverandre.
+          <br />
+          <br />
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "1-2 timer fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Mommy & me / Daddy & me"
+          price="Kr. 2500,-"
+        >
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Fotografering med 2 eller flere søsken, i tillegg til mor eller far",
+              "Samtale før fotografering for å avtale nærmere",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "3 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+
+        <div className="section-divider"></div>
+        <div className="category-title">Bryllupsfotografering</div>
+
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Vielse + portrettfotografering - 2,5 timer"
+          price="Kr. 14.000,-"
+        >
+          Hvis man velger vielse + portrettfotografering, vil dette inkludere
+          ca. 2,5 timer med fotografering totalt. Da fotograferer jeg hele
+          vielsen, i tillegg til portretter etter vielsen. Dere får da 35 ferdig
+          redigerte bilder- som dere selv velger ut fra et online galleri.
+          <br />
+          <br />
+          <span className="discount-price">
+            Ved booking av bryllupsfotografering gjennom meg, får man 50% avslag
+            på forlovelsesfotografering i forkant av bryllupet.
+          </span>
+          <br />
+          <br />
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+              "Fotografering under vielsen",
+              "1,5 timers portrettfotografering etter vielsen",
+              "Fotografering med familie og forlovere etter vielsen",
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "35 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Portrettfotografering - 1,5 timer"
+          price="Kr. 10.000,-"
+        >
+          Hvis man velger kun portrettfotografering, vil dette inkludere ca. 1,5
+          timer med fotografering. Disse bildene kan fotograferes en annen dag
+          enn bryllupet, eller på selve dagen. Dere får 10 ferdig redigerte
+          bilder- som dere selv velger ut fra et online galleri.
+          <br />
+          <br />
+          <span className="discount-price">
+            Ved booking av bryllupsfotografering gjennom meg, får man 50% avslag
+            på forlovelsesfotografering i forkant av bryllupet.
+          </span>
+          <br />
+          <br />
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Samtale før fotografering for å avtale nærmere",
+
+              "1,5 timers portrettfotografering",
+
+              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "10 stk. redigerte, høyoppløselige bilder",
+              "Bildene leveres digitalt",
+            ]}
+          />
+          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
+          prisen kr. 600,- per bilde.
+          <br />
+          <p className="additional-prices">
+            Kveldstillegg etter 17.30: kr. 700,-
+            <br />
+            Helgetillegg: kr. 1000,-
+            <br />
+            <br />
+            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
+            faktureres med kr. 10,- per km.
+          </p>
+        </Collapsible>
+        <div className="section-divider"></div>
+        <div className="category-title">Produkt og matfotografering</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Produktfotografering"
+          price="Ta kontakt for pristilbud."
+        >
+          Ta kontakt for pristilbud.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Matfotografering"
+          price="Ta kontakt for pristilbud."
+        >
+          Ta kontakt for pristilbud.
+        </Collapsible>
+
         <div className="section-divider"></div>
         <div className="section-category">
           <Image
