@@ -18,6 +18,7 @@ export function Collapsible({ title, price, textClassName, children }) {
         </>
       }
       className={classes.outer}
+      openedClassName={classes.outer}
       triggerClassName={classes.button}
       triggerOpenedClassName={classes.button}
       triggerTagName="div"
