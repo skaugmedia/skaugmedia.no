@@ -10,9 +10,28 @@
   flex-flow: column;
 }
 
+.prices-offers-box {
+  background-color: var(--lightgreen);
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.category-title-offers {
+  text-align: center;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
 .prices-heading {
   width: 100%;
   margin-bottom: 15px;
+}
+
+.prices-time {
+  font-weight: 600;
 }
 
 .additional-prices {
@@ -21,11 +40,13 @@
 }
 
 .prices-offers {
-  color: var(--blue);
-  text-align: left;
-  font-weight: 600;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+  font-family: nunito;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .category-title {
@@ -126,5 +147,9 @@
     justify-content: center;
     margin-left: 30px;
     margin-right: 30px;
+  }
+
+  .prices-offers {
+    font-size: 0.9em;
   }
 }

@@ -30,7 +30,7 @@ export default {
   },
   listing: {
     title: "Portrettforografering: konfirmant",
-    price: 2500,
+    price: "Kr. 2500,-",
     link: `/${PricesRoute}#${ids.confirmation}`,
   },
   shoots: [

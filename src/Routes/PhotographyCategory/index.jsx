@@ -37,9 +37,7 @@ export function PhotographyCategory() {
         <p className={classes.bodyText}>{category.body}</p>
         <div className={classes.listing}>
           <div className={classes.listingTitle}>{category.listing.title}</div>
-          <div className={classes.listingPrice}>
-            {kr(category.listing.price)}
-          </div>
+          <div className={classes.listingPrice}>{category.listing.price}</div>
           <NavLink className={classes.listingLink} to={category.listing.link}>
             Les mer
           </NavLink>

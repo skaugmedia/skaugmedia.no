@@ -8,6 +8,8 @@ import victoria1 from "../../../Images/victoria_1.jpg";
 import victoria2 from "../../../Images/victoria_2.jpg";
 import victor1 from "../../../Images/victor_1.jpg";
 import victor2 from "../../../Images/victor_2.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "portrett",
@@ -18,6 +20,11 @@ export default {
   cover: {
     url: portrait_cover,
     title: "Victor",
+  },
+  listing: {
+    title: "Portrettfotografering",
+    price: "Fra kr. 1500,-",
+    link: `/${PricesRoute}#${ids.portrait}`,
   },
   shoots: [
     {

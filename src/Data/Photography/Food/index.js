@@ -38,6 +38,8 @@ import mat36 from "../../../Images/mat_36.jpg";
 import mat37 from "../../../Images/mat_37.jpg";
 import mat38 from "../../../Images/mat_38.jpg";
 import mat39 from "../../../Images/mat_39.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "mat",
@@ -49,6 +51,11 @@ export default {
   cover: {
     url: mat32,
     title: "Ciabatta med pesto, svinekjøtt og ost",
+  },
+  listing: {
+    title: "Matfotografering",
+    price: "Ta kontakt for pristilbud",
+    link: `/${PricesRoute}#${ids.food}`,
   },
   shoots: [
     {

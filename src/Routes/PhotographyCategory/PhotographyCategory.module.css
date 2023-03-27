@@ -8,16 +8,21 @@
 
 .listing {
   text-align: left;
-  width: 300px;
-  margin-left: 20px;
+  width: 600px;
+  margin-left: 40px;
+  margin-bottom: 30px;
 }
 
 .listingTitle {
   color: var(--blue);
+  font-size: 1.1em;
 }
 
 .listingPrice {
   color: var(--green);
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .listingLink,
@@ -27,7 +32,7 @@
   text-decoration: none;
   border-radius: 9999px;
   background-color: var(--blue);
-  padding: 2px 20px;
+  padding: 3px 20px;
 }
 
 .bodyText {
@@ -101,5 +106,8 @@
 @media only screen and (min-width: 600px) {
   :global .image-gallery-content.fullscreen .image-gallery-image {
     height: initial;
+  }
+  .description {
+    flex-flow: column;
   }
 }

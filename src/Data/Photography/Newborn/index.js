@@ -6,6 +6,8 @@ import liam4 from "../../../Images/newborn_liam_4.jpg";
 import liam5 from "../../../Images/newborn_liam_5.jpg";
 import liam6 from "../../../Images/newborn_liam_6.jpg";
 import liam7 from "../../../Images/newborn_liam_7.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "nyfodt",
@@ -19,6 +21,11 @@ export default {
   cover: {
     url: liam1,
     title: "Liam Oleander",
+  },
+  listing: {
+    title: "Barnefotografering: nyfødt",
+    price: "Kr. 3000,-",
+    link: `/${PricesRoute}#${ids.newborn}`,
   },
   shoots: [
     {

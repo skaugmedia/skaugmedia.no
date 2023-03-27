@@ -15,6 +15,8 @@ import familie13 from "../../../Images/familie_13.jpg";
 import familie14 from "../../../Images/familie_14.jpg";
 import familie15 from "../../../Images/familie_15.jpg";
 import familie16 from "../../../Images/familie_16.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "familie",
@@ -27,6 +29,11 @@ export default {
   cover: {
     url: familie1,
     title: "Familietid i snøen",
+  },
+  listing: {
+    title: "Gruppefotografering: familie",
+    price: "Kr. 3000,-",
+    link: `/${PricesRoute}#${ids.family}`,
   },
   shoots: [
     {

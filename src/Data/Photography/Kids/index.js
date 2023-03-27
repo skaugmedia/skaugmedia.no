@@ -21,6 +21,8 @@ import olaf3 from "../../../Images/olaf_3.jpg";
 import silje1 from "../../../Images/silje_barn_1.jpg";
 import silje2 from "../../../Images/silje_barn_2.jpg";
 import silje3 from "../../../Images/silje_barn_3.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "barn-og-baby",
@@ -31,6 +33,11 @@ export default {
   cover: {
     url: ellioteliascover,
     title: "Elliot",
+  },
+  listing: {
+    title: "Barnefotografering",
+    price: "Kr. 2750,-",
+    link: `/${PricesRoute}#${ids.kids}`,
   },
   shoots: [
     {

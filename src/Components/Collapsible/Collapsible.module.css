@@ -67,3 +67,17 @@
 .chevron.open {
   transform: rotate(90deg);
 }
+
+@media only screen and (max-width: 600px) {
+  .name {
+    font-size: 0.85em;
+  }
+
+  .price {
+    font-size: 0.85em;
+  }
+
+  .button {
+    padding: 0;
+  }
+}

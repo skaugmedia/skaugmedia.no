@@ -26,6 +26,8 @@ import produkt24 from "../../../Images/produkt_24.jpg";
 import produkt25 from "../../../Images/produkt_25.jpg";
 import produkt26 from "../../../Images/produkt_26.jpg";
 import produkt27 from "../../../Images/produkt_27.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "produkt",
@@ -36,6 +38,11 @@ export default {
   cover: {
     url: produkt1,
     title: "Rosendahl champagneglass",
+  },
+  listing: {
+    title: "Produktfotografering",
+    price: "Ta kontakt for pristilbud",
+    link: `/${PricesRoute}#${ids.product}`,
   },
   shoots: [
     {

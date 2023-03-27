@@ -11,6 +11,8 @@ import pentogbrukt2 from "../../../Images/pentogbrukt_2.jpg";
 import pentogbrukt3 from "../../../Images/pentogbrukt_3.jpg";
 import pentogbrukt4 from "../../../Images/pentogbrukt_4.jpg";
 import pentogbrukt5 from "../../../Images/pentogbrukt_5.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "bedrift",
@@ -21,6 +23,11 @@ export default {
   cover: {
     url: businesscover,
     title: "Bedriftfotografering",
+  },
+  listing: {
+    title: "Portrettfotografering: bedrift",
+    price: "Ta kontakt for pristilbud",
+    link: `/${PricesRoute}#${ids.business}`,
   },
   shoots: [
     {

@@ -54,21 +54,19 @@ export function Prices() {
       <div className="prices-content">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 
-        <div className="category-title">Tilbud</div>
-        <div className="prices-offers">
-          Ved booking av gravidfotografering hos meg, får du -50% avslag på
-          nyfødtfotografering.
-          <DottedLine className="dottedline"></DottedLine>
-        </div>
-        <div className="prices-offers">
-          Ved booking av nyfødtfotografering hos meg, får du -50% avslag på
-          babyfotografering (6mnd-12mnd).
-          <DottedLine className="dottedline"></DottedLine>{" "}
-        </div>
-        <div className="prices-offers">
-          Ved booking av bryllupsfotografering hos meg, får du -50% avslag på
-          forlovelsesfotografering.
-          <DottedLine className="dottedline"></DottedLine>
+        <div className="prices-offers-box">
+          <div className="category-title-offers">Tilbud</div>
+          <div className="prices-offers">
+            Book gravidfotografering, få 50% avslag på nyfødtfotografering.
+          </div>
+          <div className="prices-offers">
+            Book nyfødtfotografering, få 50% avslag på babyfotografering
+            (6mnd-12mnd).
+          </div>
+          <div className="prices-offers">
+            Book bryllupsfotografering, få 50% avslag på
+            forlovelsesfotografering.
+          </div>
         </div>
         <div className="section-divider"></div>
 
@@ -122,6 +120,11 @@ export function Prices() {
           Minifotografering av konfirmanter 20. mai 2023, ved Nordbytjernet på
           Jessheim. Kun oppsatte tidspunkter kan bookes. Kan ikke kombineres med
           andre tilbud.
+          <p>Ledige fotograferinger:</p>
+          <p className="prices-time">
+            Kl. 11.00, kl. 11.30, kl. 12.00, kl. 12.30, kl. 13.00, kl. 13.30,
+            kl. 14.00, kl. 14.30, kl. 15.00, kl. 15.30
+          </p>
           <p>Inkluderer:</p>
           <IncludesList
             items={[
@@ -150,6 +153,7 @@ export function Prices() {
         >
           Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan brukes
           på fotograferinger, men gjelder ikke for mine designtjenester.
+          Minstepris ved kjøp av gavekort er på kr. 100,-
         </Collapsible>
 
         <div className="section-divider"></div>
@@ -575,7 +579,8 @@ export function Prices() {
           title="Mommy & me / Daddy & me"
           price="Kr. 2500,-"
         >
-          Inkluderer:
+          En koselig fotografering med mor eller far med barna. Dette blir
+          hyggelige bilder å henge opp på veggen! Inkluderer:
           <IncludesList
             items={[
               "Fotografering med 2 eller flere søsken, i tillegg til mor eller far",
@@ -715,52 +720,85 @@ export function Prices() {
         >
           Ta kontakt for pristilbud.
         </Collapsible>
+        <div className="section-divider"></div>
+        <div className="category-title">Digitale bildefiler</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="1 ekstra bildefil"
+          price="Kr. 600,-"
+        >
+          1 stk. ekstra redigert høyoppløselig bildefil
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="5 ekstra bildefiler"
+          price="Kr. 2800,-"
+        >
+          5 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 200,- i rabatt.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="10 ekstra bildefiler"
+          price="Kr. 5600,-"
+        >
+          10 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 400,- i
+          rabatt.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="15 ekstra bildefiler"
+          price="Kr. 8400,-"
+        >
+          15 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 600,- i
+          rabatt.
+        </Collapsible>
 
         <div className="section-divider"></div>
-        <div className="section-category">
-          <Image
-            className="category-image"
-            src={designimg}
-            alt="Naturalis prislapper"
-          />
-          <div className="section-text">
-            <div className="category-title">Design</div>
-            <PriceList
-              items={[
-                {
-                  name: "Visuell identitet / Branding",
-                  price: "Kr. 950,- per time",
-                },
-                {
-                  name: "Websideutvikling",
-                  price: "Kr. 950,- per time",
-                },
-                {
-                  name: "Logo design",
-                  price: "Kr. 950,- per time",
-                },
-                {
-                  name: "Trykksaker til bryllup, konfirmasjon, dåp",
-                  price: "Ta kontakt for pristilbud",
-                },
-                {
-                  name: "Annet design",
-                  price: "Ta kontakt for pristilbud",
-                },
-              ]}
-            />
-            <div className="price-info">
-              Ta kontakt for å avklare omtrentlig mengde tid jeg vil bruke, hva
-              du kan forvente fra meg og hva ditt prosjekt går ut på.
-              <br />
-              <br />
-              Ønsker du trykksaker til bryllup, konfirmasjon eller dåp? Dette
-              inkluderer følgende ting: Invitasjoner, program til vielse,
-              bordkort, meny, takkekort og kort til kakebord, velkomsttavle,
-              photobooth etc.
-            </div>
-          </div>
-        </div>
+        <div className="category-title">Design</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Visuell identitet / Branding"
+          price="Kr. 950,- per time"
+        >
+          Ta kontakt for å avklare hva oppdraget går ut på, og omtrentlig hvor
+          mange timer det vil ta.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="UX-design"
+          price="Kr. 950,- per time"
+        >
+          Ta kontakt for å avklare hva oppdraget går ut på, hvilke forventninger
+          dere har og omtrentlig hvor mange timer det vil ta.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Logo design"
+          price="Kr. 950,- per time"
+        >
+          Ta kontakt for å avklare hva oppdraget går ut på, og omtrentlig hvor
+          mange timer det vil ta.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Trykksaker til bryllup o.l"
+          price="Ta kontakt for pristilbud"
+        >
+          Ta kontakt for pristilbud. For å gi en pris på dette, må jeg vite hva
+          dere ønsker, om det skal trykkes osv.
+          <br />
+          <br />
+          Ønsker du trykksaker til bryllup, konfirmasjon eller dåp? For
+          eksempel: Invitasjoner, program til vielse, bordkort, meny, takkekort
+          og kort til kakebord, velkomsttavle, photobooth etc.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Annet design"
+          price="Ta kontakt for pristilbud"
+        >
+          Ta kontakt for pristilbud.
+        </Collapsible>
       </div>
       <Underline></Underline>
     </PageSection>

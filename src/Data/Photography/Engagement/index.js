@@ -18,6 +18,8 @@ import luciaole6 from "../../../Images/lucia_ole_6.jpg";
 import luciaole7 from "../../../Images/lucia_ole_7.jpg";
 import luciaole8 from "../../../Images/lucia_ole_8.jpg";
 import luciaole9 from "../../../Images/lucia_ole_9.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "kjaereste-og-forlovelse",
@@ -31,6 +33,11 @@ export default {
   cover: {
     url: forlovelsecover,
     title: "Jan og Linn",
+  },
+  listing: {
+    title: "Gruppefotografering: forlovelse",
+    price: "Kr. 3000,-",
+    link: `/${PricesRoute}#${ids.engagement}`,
   },
   shoots: [
     {

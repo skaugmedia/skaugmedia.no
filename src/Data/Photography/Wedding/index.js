@@ -1,4 +1,6 @@
 import { oneLine } from "common-tags";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "bryllup",
@@ -16,6 +18,11 @@ export default {
   cover: {
     url: "",
     title: "gfgfg",
+  },
+  listing: {
+    title: "Bryllupsfotografering",
+    price: "Fra kr. 10.000,-",
+    link: `/${PricesRoute}#${ids.wedding}`,
   },
   shoots: [
     {

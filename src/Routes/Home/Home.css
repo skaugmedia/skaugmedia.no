@@ -318,6 +318,14 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .minisession-sibling-whitebox {
+  }
+
+  .minisession-img {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
   .flex-container {
     display: flex;
     flex-flow: column;

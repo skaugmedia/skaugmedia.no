@@ -7,6 +7,8 @@ import pregnant_4 from "../../../Images/gravid_4.jpg";
 import pregnant_5 from "../../../Images/gravid_5.jpg";
 import pregnant_6 from "../../../Images/gravid_6.jpg";
 import pregnant_7 from "../../../Images/gravid_7.jpg";
+import * as ids from "../../../Routes/Prices/Ids";
+import PricesRoute from "../../../Routes/Prices/Route";
 
 export default {
   id: "gravid",
@@ -20,6 +22,11 @@ export default {
   cover: {
     url: pregnant_6,
     title: "Prini",
+  },
+  listing: {
+    title: "Portrettfotografering: gravid",
+    price: "Kr. 2500,-",
+    link: `/${PricesRoute}#${ids.pregnant}`,
   },
   shoots: [
     {
