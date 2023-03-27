@@ -44,9 +44,11 @@
   text-align: center;
   font-weight: 500;
   font-family: nunito;
+  font-size: 1.2em;
   width: 100%;
   padding-left: 60px;
   padding-right: 60px;
+  padding-top: 5px;
 }
 
 .category-title {
@@ -151,5 +153,8 @@
 
   .prices-offers {
     font-size: 0.9em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
   }
 }

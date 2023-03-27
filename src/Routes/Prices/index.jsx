@@ -57,15 +57,21 @@ export function Prices() {
         <div className="prices-offers-box">
           <div className="category-title-offers">Tilbud</div>
           <div className="prices-offers">
-            Book gravidfotografering, få 50% avslag på nyfødtfotografering.
+            Book gravidfotografering
+            <br />
+            få 50% avslag på nyfødtfotografering.
           </div>
+          <br />
+
           <div className="prices-offers">
-            Book nyfødtfotografering, få 50% avslag på babyfotografering
-            (6mnd-12mnd).
+            Book nyfødtfotografering
+            <br /> få 50% avslag på babyfotografering (6mnd-12mnd).
           </div>
+          <br />
           <div className="prices-offers">
-            Book bryllupsfotografering, få 50% avslag på
-            forlovelsesfotografering.
+            Book bryllupsfotografering
+            <br />
+            få 50% avslag på forlovelsesfotografering.
           </div>
         </div>
         <div className="section-divider"></div>
