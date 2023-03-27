@@ -45,12 +45,12 @@ export function Collapsible({
 export function TriggerButton({ className, name, price, open, ...props }) {
   return (
     <div className={classNames(classes.triggerButton, className)} {...props}>
-      <div className={classes.name}>
+      <div className={classes.triggerButtonText}>
         <img
           src={chevron}
           className={classNames(classes.chevron, { [classes.open]: open })}
         />
-        {name}
+        <div className={classNames(classes.name)}>{name}</div>
       </div>
       <div className={classes.price}>{price}</div>
     </div>

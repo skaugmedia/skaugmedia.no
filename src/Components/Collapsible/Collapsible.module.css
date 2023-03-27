@@ -42,18 +42,26 @@
   justify-content: space-between;
   display: flex;
   width: 100%;
+  gap: 5px;
 }
 
 .price {
   color: var(--blue);
   font-weight: 600;
   text-align: left;
+  flex-shrink: 0;
 }
 
-.name {
+.triggerButtonText {
   color: var(--blue);
   font-weight: 600;
   text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  display: inline-block;
 }
 
 .chevron {
@@ -62,6 +70,8 @@
   margin-right: 5px;
   color: var(--green);
   transition: transform 0.2s;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .chevron.open {
