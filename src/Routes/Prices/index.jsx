@@ -24,29 +24,21 @@ import { useEffect, useRef } from "react";
 
 export function Prices() {
   const location = useLocation();
-  const miniSessions = {
-    siblings: {
-      outer: useRef(),
-    },
-    confirmation: {
-      outer: useRef(),
-    },
-  };
+  const refs = Object.entries(ids).reduce(
+    (acc, [key, id]) => ({ ...acc, [key]: { ref: useRef(), id: id } }),
+    {}
+  );
   const [open, setOpen] = useState({});
   useEffect(() => {
-    switch (location.hash) {
-      case `#${ids.miniSessionSiblings}`:
-        miniSessions.siblings.outer.current?.scrollIntoView();
-        if (!open.siblings) {
-          setOpen({ ...open, siblings: true });
-        }
-        break;
-      case `#${ids.miniSessionConfirmation}`:
-        miniSessions.confirmation.outer.current?.scrollIntoView();
-        if (!open.confirmation) {
-          setOpen({ ...open, confirmation: true });
-        }
-        break;
+    const entry = Object.entries(refs).find(
+      ([key, { id }]) => location.hash === `#${id}`
+    );
+    if (entry) {
+      const [key, { ref }] = entry;
+      ref.current?.scrollIntoView();
+      if (!open[key]) {
+        setOpen({ ...open, [key]: true });
+      }
     }
   }, [location.hash]);
   return (
@@ -79,8 +71,8 @@ export function Prices() {
         <div className="category-title">Minifotografering</div>
         <Collapsible
           id={ids.miniSessionSiblings}
-          outerRef={miniSessions.siblings.outer}
-          open={open.siblings}
+          outerRef={refs.miniSessionSiblings.ref}
+          open={open.miniSessionSiblings}
           outerClassName="prices-heading"
           title="Søsken (gjelder kun fotografering i april)"
           price="Kr. 1000,-"
@@ -117,8 +109,8 @@ export function Prices() {
         </Collapsible>
         <Collapsible
           id={ids.miniSessionConfirmation}
-          outerRef={miniSessions.confirmation.outer}
-          open={open.confirmation}
+          outerRef={refs.miniSessionConfirmation.ref}
+          open={open.miniSessionConfirmation}
           outerClassName="prices-heading"
           title="Konfirmant (gjelder fotografering 20. mai)"
           price="Kr. 1000,-"
@@ -166,6 +158,9 @@ export function Prices() {
 
         <div className="category-title">Barnefotografering</div>
         <Collapsible
+          id={ids.newborn}
+          outerRef={refs.newborn.ref}
+          open={open.newborn}
           outerClassName="prices-heading"
           title="Nyfødtfotografering"
           price="Kr. 3000,-"
@@ -252,6 +247,9 @@ export function Prices() {
           </p>
         </Collapsible>
         <Collapsible
+          id={ids.kids}
+          outerRef={refs.kids.ref}
+          open={open.kids}
           outerClassName="prices-heading"
           title="Barnefotografering (6 mnd - 13 år)"
           price="Kr. 2750,-"
@@ -300,6 +298,9 @@ export function Prices() {
         <div className="category-title">Portrettfotografering</div>
 
         <Collapsible
+          id={ids.portrait}
+          outerRef={refs.portrait.ref}
+          open={open.portrait}
           outerClassName="prices-heading"
           title="Portrettfotografering"
           price="Kr. 2500,-"
@@ -337,6 +338,9 @@ export function Prices() {
           </p>
         </Collapsible>
         <Collapsible
+          id={ids.pregnant}
+          outerRef={refs.pregnant.ref}
+          open={open.pregnant}
           outerClassName="prices-heading"
           title="Gravidfotografering"
           price="Kr. 2500,-"
@@ -389,6 +393,9 @@ export function Prices() {
           </p>
         </Collapsible>
         <Collapsible
+          id={ids.confirmation}
+          outerRef={refs.confirmation.ref}
+          open={open.confirmation}
           outerClassName="prices-heading"
           title="Konfirmantfotografering"
           price="Kr. 2500,-"
@@ -463,6 +470,9 @@ export function Prices() {
           </p>
         </Collapsible>
         <Collapsible
+          id={ids.business}
+          outerRef={refs.business.ref}
+          open={open.business}
           outerClassName="prices-heading"
           title="Portretter for bedrift"
           price="Ta kontakt for pristilbud"
@@ -473,6 +483,9 @@ export function Prices() {
         <div className="category-title">Gruppefotografering</div>
 
         <Collapsible
+          id={ids.family}
+          outerRef={refs.family.ref}
+          open={open.family}
           outerClassName="prices-heading"
           title="Familiefotografering / Gruppefotografering"
           price="Kr. 3000,-"
@@ -543,6 +556,9 @@ export function Prices() {
           </p>
         </Collapsible>
         <Collapsible
+          id={ids.engagement}
+          outerRef={refs.engagement.ref}
+          open={open.engagement}
           outerClassName="prices-heading"
           title="Kjæreste- eller forlovelsesfotografering"
           price="Kr. 3000,-"
@@ -713,6 +729,9 @@ export function Prices() {
         <div className="section-divider"></div>
         <div className="category-title">Produkt og matfotografering</div>
         <Collapsible
+          id={ids.product}
+          outerRef={refs.product.ref}
+          open={open.product}
           outerClassName="prices-heading"
           title="Produktfotografering"
           price="Ta kontakt for pristilbud."
@@ -720,6 +739,9 @@ export function Prices() {
           Ta kontakt for pristilbud.
         </Collapsible>
         <Collapsible
+          id={ids.food}
+          outerRef={refs.food.ref}
+          open={open.food}
           outerClassName="prices-heading"
           title="Matfotografering"
           price="Ta kontakt for pristilbud."

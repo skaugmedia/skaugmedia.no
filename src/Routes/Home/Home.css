@@ -5,85 +5,6 @@
   width: 100%;
 }
 
-.minisession-sibling-outer {
-  background-color: var(--light-orange);
-}
-
-.minisession-sibling-whitebox {
-  background-color: white;
-  height: 150px;
-  width: 70%;
-  justify-content: flex-end;
-}
-
-.minisession-img {
-  width: 30%;
-  border-radius: 100%;
-  flex-shrink: 1;
-  flex-grow: 0;
-  align-items: left;
-}
-
-.minisession-sibling-minisessiontext {
-  color: var(--dark-orange);
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.minisession-sibling-heading {
-  color: var(--light-orange);
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 1.4em;
-}
-
-.minisession-sibling-price {
-  color: var(--dark-orange);
-  text-align: left;
-  font-size: 1.4em;
-}
-
-.minisession-sibling-when {
-  color: black;
-  text-align: left;
-}
-
-.minisession-confirmation-outer {
-  background-color: var(--lightgreen);
-  height: 300px;
-}
-
-.minisession-confirmation-whitebox {
-  background-color: white;
-  height: 150px;
-  width: 70%;
-  justify-content: flex-end;
-}
-
-.minisession-confirmation-minisessiontext {
-  color: var(--green);
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.minisession-confirmation-heading {
-  color: black;
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 1.4em;
-}
-
-.minisession-confirmation-price {
-  color: var(--green);
-  text-align: left;
-  font-size: 1.4em;
-}
-
-.minisession-confirmation-when {
-  color: black;
-  text-align: left;
-}
-
 .flex-container {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -98,9 +19,10 @@
 
 .intro-tekst {
   color: var(--lightblue);
-  font-weight: 100;
+  font-weight: 300;
   text-align: right;
   font-size: 16px;
+  font-family: nunito;
 }
 
 .uthevet-intro-tekst {
@@ -156,8 +78,9 @@
 
 .nina-text {
   text-align: left;
-  font-weight: 200;
+  font-weight: 300;
   padding-bottom: 20px;
+  font-family: nunito;
 }
 
 .skaugmedia-overskrift {
@@ -200,7 +123,8 @@
 }
 
 .works-category {
-  font-weight: 200;
+  font-weight: 400;
+  font-family: nunito;
 }
 
 .works-outer {
