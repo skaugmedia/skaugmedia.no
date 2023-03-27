@@ -79,4 +79,15 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .main {
+    --horizontal-padding: 10px;
+  }
+  .white {
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .text {
+    width: auto;
+  }
 }
