@@ -8,6 +8,8 @@
   margin-bottom: 30px;
   flex-flow: column;
   text-align: left;
+  font-family: nunito;
+  font-weight: 400;
 }
 
 .listing {

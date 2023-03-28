@@ -31,6 +31,7 @@ img.headerlogo {
   justify-content: space-between;
   text-transform: uppercase;
   margin-bottom: 30px;
+  font-family: oswald;
 }
 
 .nav-link:not(:last-child) {
@@ -62,6 +63,7 @@ img.headerlogo {
 
 .discount {
   padding-bottom: 10px;
+  font-family: nunito;
 }
 
 .footer-link {
@@ -72,6 +74,7 @@ img.headerlogo {
   margin-right: 20px;
   margin-left: 20px;
   text-decoration: none;
+  font-family: oswald;
 }
 .footer-link:hover {
   color: #000000;

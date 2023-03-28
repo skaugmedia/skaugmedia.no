@@ -18,6 +18,7 @@
   width: 100%;
   max-width: var(--content-width);
   padding-top: 10px;
+  font-family: nunito;
 }
 
 .design {

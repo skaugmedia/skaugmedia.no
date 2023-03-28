@@ -6,6 +6,7 @@
   font-weight: 200;
   text-align: left;
   padding-bottom: 20px;
+  font-family: nunito;
 }
 
 .contact-info-box {
@@ -33,9 +34,10 @@
 }
 
 .contact-info {
-  font-weight: 200;
+  font-weight: 300;
   text-align: left;
   margin-top: 5px;
+  font-family: nunito;
 }
 
 .contact-social-icon {
@@ -70,6 +72,8 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border-width: 1px;
+  font-family: nunito;
+  font-weight: 500;
 }
 
 .form-box.message {
