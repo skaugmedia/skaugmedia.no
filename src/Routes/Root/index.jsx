@@ -57,12 +57,17 @@ export function Root() {
           />
         </header>
 
-        {/* <div className="marchdiscount">
-          <div className="discountheader">LANSERINGSTILBUD</div>
+        <div className="discount-banner">
+          <div className="discountheader">PÅSKETILBUD</div>
           <div className="discount">
-            -25% avslag på alle fotograferinger som bookes i mars
+            50% avslag på alle fotograferinger som bookes mellom 04. april og
+            11. april 2023
           </div>
-        </div> */}
+          <div className="discount-additional-info">
+            *Gjelder ikke minifotograferinger eller bryllupsfotografering og kan
+            ikke kombineres med andre tilbud
+          </div>
+        </div>
 
         <main>
           <Outlet />

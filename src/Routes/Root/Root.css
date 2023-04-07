@@ -49,9 +49,9 @@ img.headerlogo {
   margin: 40px;
 }
 
-.marchdiscount {
+.discount-banner {
   background-color: var(--green);
-  height: 75px;
+  height: 100px;
 }
 
 .discountheader {
@@ -59,11 +59,18 @@ img.headerlogo {
   padding-top: 10px;
   font-size: 1.2em;
   font-weight: 500;
+  height: auto;
 }
 
 .discount {
-  padding-bottom: 10px;
   font-family: nunito;
+  font-weight: 500;
+}
+
+.discount-additional-info {
+  font-family: nunito;
+  font-weight: 200;
+  padding-bottom: 10px;
 }
 
 .footer-link {
