@@ -57,7 +57,7 @@ export function Root() {
           />
         </header>
 
-        <div className="discount-banner">
+        {/* <div className="discount-banner">
           <div className="discountheader">PÅSKETILBUD</div>
           <div className="discount">
             50% avslag på alle fotograferinger som bookes mellom 04. april og
@@ -67,7 +67,7 @@ export function Root() {
             *Gjelder ikke minifotograferinger eller bryllupsfotografering og kan
             ikke kombineres med andre tilbud
           </div>
-        </div>
+        </div> */}
 
         <main>
           <Outlet />
