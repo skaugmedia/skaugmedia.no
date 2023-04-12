@@ -8,6 +8,14 @@ import victoria1 from "../../../Images/victoria_1.jpg";
 import victoria2 from "../../../Images/victoria_2.jpg";
 import victor1 from "../../../Images/victor_1.jpg";
 import victor2 from "../../../Images/victor_2.jpg";
+import sigurd1 from "../../../Images/sigurd_portrett_1.jpg";
+import sigurd2 from "../../../Images/sigurd_portrett_2.jpg";
+import sigurd3 from "../../../Images/sigurd_portrett_3.jpg";
+import ninahelene1 from "../../../Images/nina_helene_1.jpg";
+import ninahelene2 from "../../../Images/nina_helene_2.jpg";
+import ninahelene3 from "../../../Images/nina_helene_3.jpg";
+import ninahelene4 from "../../../Images/nina_helene_4.jpg";
+import ninahelene5 from "../../../Images/nina_helene_5.jpg";
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
 
@@ -27,6 +35,69 @@ export default {
     link: `/${PricesRoute}#${ids.portrait}`,
   },
   shoots: [
+    {
+      description: "Nina Helene",
+      tags: ["portrett", "dame", "urban", "frodig"],
+      images: [
+        {
+          url: ninahelene1,
+          title: "Nina Helene",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: ninahelene2,
+          title: "Nina Helene",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: ninahelene3,
+          title: "Nina Helene",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: ninahelene4,
+          title: "Nina Helene",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: ninahelene5,
+          title: "Nina Helene",
+          height: 1000,
+          width: 667,
+        },
+      ],
+      date: "2014-07-13",
+    },
+
+    {
+      description: "Sigurd",
+      tags: ["portrett", "mann", "urban", "skog"],
+      images: [
+        {
+          url: sigurd3,
+          title: "Sigurd",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: sigurd1,
+          title: "Sigurd",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: sigurd2,
+          title: "Sigurd",
+          height: 1000,
+          width: 667,
+        },
+      ],
+      date: "2023-03-29",
+    },
     {
       description: "Madeleine",
       tags: ["portrett", "dame", "urban"],

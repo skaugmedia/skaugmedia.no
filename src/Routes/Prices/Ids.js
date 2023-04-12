@@ -11,3 +11,4 @@ export const portrait = "portrett";
 export const pregnant = "gravid";
 export const product = "produkt";
 export const wedding = "bryllup";
+export const mommyandme = "mommyandme";
