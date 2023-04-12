@@ -61,6 +61,17 @@
   width: 100%;
 }
 
+.category-under-title {
+  color: var(--green);
+  text-transform: uppercase;
+
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 1em;
+  width: 100%;
+}
+
 .price-category {
   color: var(--blue);
   font-weight: 700;

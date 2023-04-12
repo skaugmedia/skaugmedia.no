@@ -748,38 +748,6 @@ export function Prices() {
         >
           Ta kontakt for pristilbud.
         </Collapsible>
-        <div className="section-divider"></div>
-        <div className="category-title">Digitale bildefiler</div>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="1 ekstra bildefil"
-          price="Kr. 600,-"
-        >
-          1 stk. ekstra redigert høyoppløselig bildefil
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="5 ekstra bildefiler"
-          price="Kr. 2800,-"
-        >
-          5 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 200,- i rabatt.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="10 ekstra bildefiler"
-          price="Kr. 5600,-"
-        >
-          10 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 400,- i
-          rabatt.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="15 ekstra bildefiler"
-          price="Kr. 8400,-"
-        >
-          15 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 600,- i
-          rabatt.
-        </Collapsible>
 
         <div className="section-divider"></div>
         <div className="category-title">Design</div>
@@ -826,6 +794,268 @@ export function Prices() {
           price="Ta kontakt for pristilbud"
         >
           Ta kontakt for pristilbud.
+        </Collapsible>
+        <div className="section-divider"></div>
+        <div className="category-title">Bildeprodukter</div>
+        <div className="category-under-title">Digitale bildefiler</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="1 ekstra bildefil"
+          price="Kr. 600,-"
+        >
+          1 stk. ekstra redigert høyoppløselig bildefil
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="5 ekstra bildefiler"
+          price="Kr. 2800,-"
+        >
+          5 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 200,- i rabatt.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="10 ekstra bildefiler"
+          price="Kr. 5600,-"
+        >
+          10 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 400,- i
+          rabatt.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="15 ekstra bildefiler"
+          price="Kr. 8400,-"
+        >
+          15 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 600,- i
+          rabatt.
+        </Collapsible>
+
+        <div className="section-divider"></div>
+
+        <div className="category-under-title">Bildekopier</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildekopi 10x12cm / 12x12cm"
+          price="Kr. 89,-"
+        >
+          Bildekopi trykket på fotopapir, med blank overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildekopi 15x20cm / 15x15cm"
+          price="Kr. 119,-"
+        >
+          Bildekopi trykket på fotopapir, med blank overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildekopi 20x20cm"
+          price="Kr. 199,-"
+        >
+          Bildekopi trykket på fotopapir, med blank overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildekopi 20x25cm / 20x30cm"
+          price="Kr. 239,-"
+        >
+          Bildekopi trykket på fotopapir, med blank overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildekopi 30x30cm / 30x40cm"
+          price="Kr. 309,-"
+        >
+          Bildekopi trykket på fotopapir, med blank overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildekopi 30x60cm / 40x40cm / 40x50cm"
+          price="Kr. 415,-"
+        >
+          Bildekopi trykket på fotopapir, med blank overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildekopi 40x80cm / 50x60cm / 50x70cm"
+          price="Kr. 545,-"
+        >
+          Bildekopi trykket på fotopapir, med blank overflate.
+        </Collapsible>
+        <div className="section-divider"></div>
+        <div className="category-under-title">Bildekopier i ramme</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildekopi i ramme 20x25cm"
+          price="Kr. 389,-"
+        >
+          Bildekopi trykket på fotopapir med blank overflate, som er montert i
+          ramme.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildekopi i ramme 20x30cm"
+          price="Kr. 459,-"
+        >
+          Bildekopi trykket på fotopapir med blank overflate, som er montert i
+          ramme.
+        </Collapsible>
+        <div className="section-divider"></div>
+        <div className="category-under-title">Lerretsbilder</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Lerret med blindramme 20x25cm / 20x30cm"
+          price="Kr. 889,-"
+        >
+          Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
+          lamineres med satinmatt overflate for holdbarhet, før lerretet
+          monteres på en blindramme.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Lerret med blindramme 30x40cm"
+          price="Kr. 1045,-"
+        >
+          Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
+          lamineres med satinmatt overflate for holdbarhet, før lerretet
+          monteres på en blindramme.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Lerret med blindramme 30x60cm / 40x40cm / 40x50cm"
+          price="Kr. 1289,-"
+        >
+          Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
+          lamineres med satinmatt overflate for holdbarhet, før lerretet
+          monteres på en blindramme.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Lerret med blindramme 40x60cm / 50x60cm / 50x70cm"
+          price="Kr. 1489,-"
+        >
+          Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
+          lamineres med satinmatt overflate for holdbarhet, før lerretet
+          monteres på en blindramme.
+        </Collapsible>
+        <div className="section-divider"></div>
+        <div className="category-under-title">Album</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Album 20x20cm - 20 sider"
+          price="Kr. 1045,-"
+        >
+          Her bestiller man ferdig monterte album, hvor man kan velge mellom
+          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
+          sider. Det er ikke mulig å velge flere eller færre sider.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Album 20x20cm - 30 sider"
+          price="Kr. 1389,-"
+        >
+          Her bestiller man ferdig monterte album, hvor man kan velge mellom
+          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
+          sider. Det er ikke mulig å velge flere eller færre sider.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Album 20x20cm - 40 sider"
+          price="Kr. 1689,-"
+        >
+          Her bestiller man ferdig monterte album, hvor man kan velge mellom
+          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
+          sider. Det er ikke mulig å velge flere eller færre sider.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Album 30x30cm - 20 sider"
+          price="Kr. 1345,-"
+        >
+          Her bestiller man ferdig monterte album, hvor man kan velge mellom
+          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
+          sider. Det er ikke mulig å velge flere eller færre sider.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Album 30x30cm - 30 sider"
+          price="Kr. 1689,-"
+        >
+          Her bestiller man ferdig monterte album, hvor man kan velge mellom
+          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
+          sider. Det er ikke mulig å velge flere eller færre sider.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Album 30x30cm - 40 sider"
+          price="Kr. 1989,-"
+        >
+          Her bestiller man ferdig monterte album, hvor man kan velge mellom
+          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
+          sider. Det er ikke mulig å velge flere eller færre sider.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Album panorama 30x22,5cm - 20 sider"
+          price="Kr. 1145,-"
+        >
+          Her bestiller man ferdig monterte album, hvor man kan velge mellom
+          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
+          sider. Det er ikke mulig å velge flere eller færre sider.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Album panorama 30x22,5cm - 30 sider"
+          price="Kr. 1489,-"
+        >
+          Her bestiller man ferdig monterte album, hvor man kan velge mellom
+          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
+          sider. Det er ikke mulig å velge flere eller færre sider.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Album panorama 30x22,5cm - 40 sider"
+          price="Kr. 1789,-"
+        >
+          Her bestiller man ferdig monterte album, hvor man kan velge mellom
+          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
+          sider. Det er ikke mulig å velge flere eller færre sider.
+        </Collapsible>
+        <div className="section-divider"></div>
+        <div className="category-under-title">Skumplate</div>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Skumplate 15x20cm / 15x15cm"
+          price="Kr. 445,-"
+        >
+          Bildene monteres på Kapaplate, med matt overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Skumplate 20x25cm / 20x30cm"
+          price="Kr. 689,-"
+        >
+          Bildene monteres på Kapaplate, med matt overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Skumplate 30x30cm / 30x40cm"
+          price="Kr. 889,-"
+        >
+          Bildene monteres på Kapaplate, med matt overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Skumplate 30x60cm / 40x40cm / 40x50cm"
+          price="Kr. 1089,-"
+        >
+          Bildene monteres på Kapaplate, med matt overflate.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Skumplate 40x80cm / 50x60cm / 50x70cm"
+          price="Kr. 1289,-"
+        >
+          Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>
       </div>
       <Underline></Underline>
