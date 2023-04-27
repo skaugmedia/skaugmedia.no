@@ -5,9 +5,11 @@ import DesignHeading from "../../Components/Headings/DesignHeading";
 import { Project } from "../../Components/Project";
 import classes from "./GraphicalDesign.module.css";
 import pageName from "./PageName";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { PageSection } from "../../Components/PageSection";
 
 export function GraphicalDesign() {
+  useDocumentTitle(pageName);
   const { projects } = useLoaderData();
 
   return (

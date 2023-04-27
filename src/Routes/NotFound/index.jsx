@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
-import HomeRoute from "../Home/Route";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { PageSection } from "/src/Components/PageSection";
 
 export function NotFound() {
+  useDocumentTitle("Ukjent side");
   return (
     <PageSection>
       <meta name="robots" content="noindex" />

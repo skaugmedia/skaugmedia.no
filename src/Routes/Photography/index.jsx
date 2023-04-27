@@ -5,8 +5,10 @@ import FotografiHeading from "../../Components/Headings/FotografiHeading";
 import { Category } from "../../Components/Category";
 import pageName from "./PageName";
 import { PageSection } from "../../Components/PageSection";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 
 export function Photography() {
+  useDocumentTitle(pageName);
   const { categories } = useLoaderData();
   return (
     <PageSection className="photography">

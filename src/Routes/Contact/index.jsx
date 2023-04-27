@@ -5,8 +5,10 @@ import { PageSection } from "../../Components/PageSection";
 import "./Contact.css";
 import pageName from "./PageName";
 import { SocialIcons } from "/src/Components/SocialIcons";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 
 export function Contact() {
+  useDocumentTitle(pageName);
   const queries = new URLSearchParams(window.location.search);
   const isSent = queries.has("sent");
   const isErr = queries.has("err");

@@ -4,10 +4,12 @@ import { PageSection } from "../../Components/PageSection";
 import "react-image-gallery/styles/css/image-gallery.css";
 import classes from "./GraphicalDesignProject.module.css";
 import ImageGallery from "react-image-gallery";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { Image } from "/src/Components/Image";
 
 export function GraphicalDesignProject() {
   const { project } = useLoaderData();
+  useDocumentTitle(project.title);
   const images = project.images.map((img) => ({
     original: img.url,
     originalWidth: img.width,
