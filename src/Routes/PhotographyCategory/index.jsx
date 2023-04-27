@@ -11,8 +11,8 @@ import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { byDate, kr } from "/src/utils";
 
 export function PhotographyCategory() {
-  useDocumentTitle(pageName);
   const { category } = useLoaderData();
+  useDocumentTitle(category.title);
   const [index, setIndex] = useState(-1);
   const gallery = useRef(null);
 
