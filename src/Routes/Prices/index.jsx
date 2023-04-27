@@ -23,6 +23,7 @@ import * as ids from "./Ids";
 import { useEffect, useRef } from "react";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import * as minishoot from "./minishoots";
+import { isWithinRange, localTime } from "../../utils";
 
 export function Prices() {
   useDocumentTitle(pageName);
@@ -58,6 +59,16 @@ export function Prices() {
       open: open.miniSessionMinisessions,
     },
   };
+
+  const now = new Date();
+  const miniSessionElements = [
+    {
+      el: () => minishoot.minisessions(minishootsOpts.minisessions),
+      validFrom: localTime("27-04-2023 00:00"),
+      validTo: localTime("01-07-2023 00:00"),
+    },
+  ].filter((s) => isWithinRange(s.validFrom, now, s.validTo));
+
   return (
     <PageSection innerClassName="prices">
       <div className="prices-content">
@@ -85,11 +96,15 @@ export function Prices() {
         </div>
         <div className="section-divider"></div>
 
-        <div className="category-title">Minifotografering</div>
-
-        {minishoot.minisessions(minishootsOpts.minisessions)}
-
-        <div className="section-divider"></div>
+        {miniSessionElements.length > 0 && (
+          <>
+            <div className="category-title">Minifotografering</div>
+            {miniSessionElements.map(({ el: El }, i) => (
+              <El key={i} />
+            ))}
+            <div className="section-divider"></div>
+          </>
+        )}
 
         <div className="category-title">Gavekort</div>
         <Collapsible
