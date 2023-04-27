@@ -1,3 +1,4 @@
+export const miniSessionMinisessions = "minifotografering-valgfri";
 export const miniSessionSiblings = "minifotografering-sosken";
 export const miniSessionConfirmation = "minifotografering-konfirmasjon";
 export const confirmation = "konfirmant";

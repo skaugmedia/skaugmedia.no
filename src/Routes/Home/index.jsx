@@ -23,7 +23,7 @@ export function Home() {
 
   return (
     <>
-      <MiniSession
+      {/* <MiniSession 
         image={<MiniSessionImage src={siblingimg} alt="Søskenfotografering" />}
         category="Minifotografering"
         title="Søsken"
@@ -54,8 +54,8 @@ export function Home() {
           category: classes.miniSessionConfirmationCategory,
           price: classes.miniSessionConfirmationPrice,
           link: classes.miniSessionConfirmationLink,
-        }}
-      />
+        }}/>*/}
+
       {/* <PageSection outerClassName="minisession-confirmation-outer">
         <div className="minisession-confirmation-whitebox">
           <img

@@ -57,17 +57,16 @@ export function Root() {
           />
         </header>
 
-        {/* <div className="discount-banner">
-          <div className="discountheader">PÅSKETILBUD</div>
-          <div className="discount">
-            50% avslag på alle fotograferinger som bookes mellom 04. april og
-            11. april 2023
-          </div>
+        <div className="discount-banner">
+          <div className="discountheader">VALGFRI MINIFOTOGRAFERING</div>
+          <div className="discount">Kr. 850,-</div>
           <div className="discount-additional-info">
-            *Gjelder ikke minifotograferinger eller bryllupsfotografering og kan
-            ikke kombineres med andre tilbud
+            *Gjelder ikke nyfødtfotograferinger eller bryllupsfotografering, og
+            kan ikke kombineres med andre tilbud. <br />
+            Helgetillegg og kveldstillegg kommer i tillegg i prisen, samt
+            kjøring utover 30Km fra Jessheim.
           </div>
-        </div> */}
+        </div>
 
         <main>
           <Outlet />
