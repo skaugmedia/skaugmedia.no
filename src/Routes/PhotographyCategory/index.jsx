@@ -7,10 +7,11 @@ import { PageSection } from "../../Components/PageSection";
 import * as ids from "../Prices/Ids";
 import classes from "./PhotographyCategory.module.css";
 import PricesRoute from "../Prices/Route";
-import { byDate } from "/src/util";
-import { kr } from "../../utils";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { byDate, kr } from "/src/utils";
 
 export function PhotographyCategory() {
+  useDocumentTitle(pageName);
   const { category } = useLoaderData();
   const [index, setIndex] = useState(-1);
   const gallery = useRef(null);

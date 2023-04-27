@@ -14,16 +14,19 @@ import AboutRoute from "../About/Route";
 import PricesRoute from "../Prices/Route";
 import ContactRoute from "../Contact/Route";
 import "./Home.css";
+import pageName from "./PageName";
 import * as ids from "../Prices/Ids";
 import classes from "./Home.module.css";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { kr } from "/src/utils";
 
 export function Home() {
+  useDocumentTitle(pageName);
   const { recentWorks } = useLoaderData();
 
   return (
     <>
-      {/* <MiniSession 
+      {/* <MiniSession
         image={<MiniSessionImage src={siblingimg} alt="Søskenfotografering" />}
         category="Minifotografering"
         title="Søsken"

@@ -21,9 +21,11 @@ import { DottedLine } from "/src/Components/DottedLine";
 import { useLocation } from "react-router-dom";
 import * as ids from "./Ids";
 import { useEffect, useRef } from "react";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import * as minishoot from "./minishoots";
 
 export function Prices() {
+  useDocumentTitle(pageName);
   const location = useLocation();
   const refs = Object.entries(ids).reduce(
     (acc, [key, id]) => ({ ...acc, [key]: { ref: useRef(), id: id } }),

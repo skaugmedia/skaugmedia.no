@@ -4,8 +4,10 @@ import classes from "./About.module.css";
 import { Image } from "/src/Components/Image";
 import pageName from "./PageName";
 import { PageSection } from "../../Components/PageSection";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 
 export function About() {
+  useDocumentTitle(pageName);
   return (
     <>
       <div className={classes.background}>

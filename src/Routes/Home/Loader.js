@@ -2,7 +2,7 @@ import { categories } from "/src/Data/Photography";
 import { projects } from "/src/Data/GraphicalDesign";
 import photoRoute from "../Photography/Route";
 import designRoute from "../GraphicalDesign/Route";
-import { byDate } from "/src/util";
+import { byDate } from "/src/utils";
 
 export default function Loader() {
   const shoots = categories.flatMap((category) =>
