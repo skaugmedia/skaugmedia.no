@@ -5,7 +5,6 @@
   "type": "module",
   "dependencies": {
     "classnames": "^2.3.2",
-    "common-tags": "^1.8.2",
     "react": "^18.2.0",
     "react-collapsible": "^2.10.0",
     "react-dom": "^18.2.0",
@@ -17,14 +16,18 @@
   "browserslist": ">0.2%, not dead, not op_mini all",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
-    "deploy": "npm run build && node deploy"
+    "build": "vite build && npm run build:sitemap",
+    "deploy": "npm run build && node deploy",
+    "build:sitemap": "node sitemap.js"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^3.1.0",
     "basic-ftp": "^5.0.2",
+    "common-tags": "^1.8.2",
     "dotenv": "^16.0.3",
+    "prettier": "^2.8.8",
     "vite": "^4.1.2",
-    "vite-imagetools": "^4.0.18"
+    "vite-imagetools": "^4.0.18",
+    "xml": "^1.0.1"
   }
 }
