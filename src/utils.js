@@ -62,7 +62,5 @@ export const localTime = (s) => {
 
 export const isBefore = (x, y) => x.valueOf() - y.valueOf() < 0;
 
-export const isWithinRange = (start, middle, end) => {
-  console.log(start, middle, end);
-  return isBefore(start, middle) && isBefore(middle, end);
-};
+export const isWithinRange = (start, middle, end) =>
+  isBefore(start, middle) && isBefore(middle, end);
