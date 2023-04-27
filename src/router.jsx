@@ -10,7 +10,7 @@ import { GraphicalDesignProject } from "./Routes/GraphicalDesignProject";
 import GraphicalDesignProjectLoader from "./Routes/GraphicalDesignProject/Loader";
 import GraphicalDesignProjectRoute from "./Routes/GraphicalDesignProject/Route";
 import { Home } from "./Routes/Home";
-import { NotFound } from "./Routes/NotFound";
+import { ErrorHandler } from "./Routes/ErrorHandler";
 import HomeLoader from "./Routes/Home/Loader";
 import HomeRoute from "./Routes/Home/Route";
 import { Photography } from "./Routes/Photography";
@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <NotFound />,
+    errorElement: <ErrorHandler />,
     children: [
       {
         children: [
