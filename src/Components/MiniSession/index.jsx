@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { NavLink } from "react-router-dom";
+import { MiniSessionButton } from "../MiniSessionButton";
 import classes from "./MiniSession.module.css";
 
 export function MiniSession({
@@ -24,9 +24,7 @@ export function MiniSession({
             <div className={cn(classes.price, classNames?.price)}>{price}</div>
             <div className={cn(classes.when, classNames?.when)}>{when}</div>
           </div>
-          <NavLink className={cn(classes.link, classNames?.link)} to={link}>
-            Les mer
-          </NavLink>
+          <MiniSessionButton link={link} className={classNames?.link} />
         </div>
       </div>
     </div>

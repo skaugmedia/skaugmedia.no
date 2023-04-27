@@ -49,34 +49,6 @@ img.headerlogo {
   margin: 40px;
 }
 
-.discount-banner {
-  background-color: var(--green);
-  height: 120px;
-}
-
-.discountheader {
-  color: white;
-  padding-top: 10px;
-  font-size: 1.2em;
-  font-weight: 500;
-  height: auto;
-}
-
-.discount {
-  font-family: nunito;
-  font-weight: 500;
-}
-
-.discount-additional-info {
-  font-family: nunito;
-  font-weight: 200;
-  padding-bottom: 10px;
-}
-
-.discountbannerbutton {
-  color: white;
-}
-
 .footer-link {
   color: var(--blue);
   text-transform: uppercase;

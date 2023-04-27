@@ -8,6 +8,7 @@ import AboutRoute from "../About/Route";
 import ContactPageName from "../Contact/PageName";
 import ContactRoute from "../Contact/Route";
 import GraphicalDesignPageName from "../GraphicalDesign/PageName";
+import { MiniSessionButton } from "../../Components/MiniSessionButton";
 import GraphicalDesignRoute from "../GraphicalDesign/Route";
 import HomePageName from "../Home/PageName";
 import HomeRoute from "../Home/Route";
@@ -18,6 +19,9 @@ import PricesRoute from "../Prices/Route";
 import "./Root.css";
 import classes from "./Root.module.css";
 import { SocialIcons } from "/src/Components/SocialIcons";
+import * as ids from "../Prices/Ids";
+import { discounts } from "../../Data/discounts";
+import { DiscountBanner } from "../../Components/DiscountBanner";
 
 export function Root() {
   const [showNav, setShowNav] = useState(false);
@@ -57,16 +61,9 @@ export function Root() {
           />
         </header>
 
-        <div className="discount-banner">
-          <div className="discountheader">VALGFRI MINIFOTOGRAFERING</div>
-          <div className="discount">Kr. 850,-</div>
-          <div className="discount-additional-info">
-            *Gjelder ikke nyfødtfotograferinger eller bryllupsfotografering, og
-            kan ikke kombineres med andre tilbud. <br />
-            Helgetillegg og kveldstillegg kommer i tillegg i prisen, samt
-            kjøring utover 30Km fra Jessheim.
-          </div>
-        </div>
+        {discounts.map((discount) => (
+          <DiscountBanner key={discount.link} {...discount} />
+        ))}
 
         <main>
           <Outlet />
