@@ -5,7 +5,6 @@ import confirmation from "./Confirmation";
 import pregnant from "./Pregnant";
 import portrait from "./Portrait";
 import engagement from "./Engagement";
-import wedding from "./Wedding";
 import food from "./Food";
 import product from "./Product";
 import business from "./Business";
@@ -19,7 +18,6 @@ export const categories = [
   portrait,
   engagement,
   business,
-  // wedding,
   food,
   product,
 ];
