@@ -17,7 +17,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build && npm run build:sitemap",
-    "deploy": "npm run build && node deploy",
+    "deploy": "npm i && npm run build && node deploy",
     "build:sitemap": "node sitemap.js"
   },
   "devDependencies": {
