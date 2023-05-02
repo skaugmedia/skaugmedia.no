@@ -1,6 +1,6 @@
-import { stripIndent } from "common-tags";
 import * as fs from "node:fs";
 import { cwd } from "node:process";
+import { pathToFileURL } from "node:url";
 import prettier from "prettier";
 import xml from "xml";
 
@@ -90,7 +90,7 @@ const getSubPages = (baseDir) =>
           const routeFile = `${routeDir}/${f.name}/Route.js`;
           if (fs.existsSync(routeFile)) {
             try {
-              return [import(`${routeDir}/${f.name}/Route.js`)];
+              return [import(pathToFileURL(routeFile))];
             } catch (e) {
               return [];
             }
