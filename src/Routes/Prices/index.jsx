@@ -157,9 +157,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,-
             <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
@@ -196,10 +195,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -234,10 +231,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -287,10 +282,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -342,10 +335,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -382,10 +373,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -419,10 +408,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -472,10 +459,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -505,10 +490,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -546,10 +529,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -580,10 +561,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -630,10 +609,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
@@ -676,10 +653,8 @@ export function Prices() {
           prisen kr. 600,- per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter 17.00: kr. 700,-
-            <br />
-            Helgetillegg: kr. 1000,-
-            <br />
+            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
+            Helgetillegg: kr. 700,- <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
