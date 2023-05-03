@@ -128,7 +128,10 @@ function sendMail($vars) {
 		"contact@skaugmedia.no",
 		"Tilbakemelding fra skaugmedia.no",
 		"Melding fra $name <$email><$phone>:\n\n$message",
-		"From: Tilbakemeldingsskjema <contact@skaugmedia.no>"
+		[
+			"From" => "Tilbakemeldingsskjema <contact@skaugmedia.no>",
+			"Reply-To" => "$name <$email>",
+		],
 	);
 	if (!$res) {
 		throw new CodedError('internal:email-failed', 'Failed to send Email');
