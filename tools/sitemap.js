@@ -1,9 +1,10 @@
 import prettier from "prettier";
 import xml from "xml";
-import * as fs from "note:fs";
+import * as fs from "node:fs";
+import { cwd } from "node:process";
 
 const xmlHeader = '<?xml version="1.0" encoding="UTF-8"?>';
-const baseURL = "https://skaugmedia.no";
+const baseURL = "https://www.skaugmedia.no";
 const outPath = `${cwd()}/dist/sitemap.xml`;
 
 const mkUrl = ({ route, priority }) => ({

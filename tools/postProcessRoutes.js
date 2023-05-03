@@ -1,8 +1,7 @@
 import * as fs from "node:fs";
 import { cwd } from "node:process";
-import { pathToFileURL } from "node:url";
-import { updateSiteMap } from "file:///sitemap.js";
-import { updateApacheWhitelist } from "file:///whitelist.js";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import * as path from "node:path";
 
 const routeDir = `${cwd()}/src/Routes`;
 const photoDir = `${cwd()}/src/Data/Photography`;
@@ -57,7 +56,6 @@ const getRoutes = async (subPageMap) =>
         if (fs.existsSync(routeFile)) {
           try {
             const file = pathToFileURL(routeFile);
-            console.log(file);
             return [import(file)];
           } catch (e) {
             return [];
@@ -80,7 +78,15 @@ const getRoutes = async (subPageMap) =>
       })
   );
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 (async () => {
+  const sitemapFile = pathToFileURL(`${__dirname}/sitemap.js`).href;
+  const whitelistFile = pathToFileURL(`${__dirname}/whitelist.js`).href;
+
+  const { updateSiteMap } = await import(sitemapFile);
+  const { updateApacheWhitelist } = await import(whitelistFile);
+
   const photoPages = getSubPages(photoDir);
   const designPages = getSubPages(designDir);
   const subPageMap = {
