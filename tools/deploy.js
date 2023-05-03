@@ -69,7 +69,7 @@ const colorReset = "\u001b[0m";
 
 (async () => {
   const rl = readline.createInterface({ input, output });
-  const sourceDir = "./dist";
+  const sourceDir = `${cwd()}/dist`;
   console.log("Input credentials for Skaugmedia Domeneshop FTP");
   const user = await getUsername(rl);
   const password = await getPassword(rl);
