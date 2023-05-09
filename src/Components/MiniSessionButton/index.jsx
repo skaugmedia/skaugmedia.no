@@ -2,10 +2,10 @@ import cn from "classnames";
 import { NavLink } from "react-router-dom";
 import classes from "./MiniSessionButton.module.css";
 
-export function MiniSessionButton({ link, className, ...props }) {
+export function MiniSessionButton({ link, className, buttonText, ...props }) {
   return (
     <NavLink className={cn(classes.link, className)} to={link} {...props}>
-      Les mer
+      {buttonText ?? "Les mer"}
     </NavLink>
   );
 }

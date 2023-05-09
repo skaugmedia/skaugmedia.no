@@ -9,6 +9,7 @@ export function DiscountBanner({
   link,
   validFrom,
   validTo,
+  buttonText,
 }) {
   const now = new Date();
   if (!isWithinRange(validFrom, now, validTo)) {
@@ -20,7 +21,11 @@ export function DiscountBanner({
       <div className={classes.title}>{title}</div>
       <div className={classes.price}>{price}</div>
       <div className={classes.description}>{description}</div>
-      <MiniSessionButton link={link} className={classes.button} />
+      <MiniSessionButton
+        buttonText={buttonText}
+        link={link}
+        className={classes.button}
+      />
     </div>
   );
 }
