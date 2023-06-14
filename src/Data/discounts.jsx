@@ -33,7 +33,7 @@ export const discounts = [
     ),
     link: `/${PricesRoute}#${ids.miniSessionMinisessions}`,
     validFrom: localTime("25-05-2023 00:00"),
-    validTo: localTime("14-06-2023 00:00"),
+    validTo: localTime("15-06-2023 00:00"),
   },
   {
     title: "HELGETILBUD",
