@@ -1,29 +1,17 @@
-import "./Prices.css";
-import DesignHeading from "../../Components/Headings/DesignHeading";
-import { Underline } from "../../Components/Underline";
-import { PriceList } from "./Components/PriceList";
-import { PageSection } from "../../Components/PageSection";
-import { IncludesList } from "./Components/IncludesList";
-import { Collapsible } from "../../Components/Collapsible";
-import { Image } from "../../Components/Image";
-import portrettimg from "../../Images/silje_konfirmant_3.jpg";
-import newbornimg from "../../Images/newborn_liam_4.jpg";
-import pregnantimg from "../../Images/gravid_4.jpg";
-import coupleimg from "../../Images/forlovelse_3.jpg";
-import weddingimg from "../../Images/produkt_9.jpg";
-import foodimg from "../../Images/mat_12.jpg";
-import designimg from "../../Images/design_prices.jpg";
-import pageName from "./PageName";
-import giftcardimg from "../../Images/mockup_gavekort.jpg";
-import businessimg from "../../Images/stranger_as_4.jpg";
-import { useState } from "react";
-import { DottedLine } from "/src/Components/DottedLine";
+import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import * as ids from "./Ids";
-import { useEffect, useRef } from "react";
+import { Collapsible } from "../../Components/Collapsible";
+import DesignHeading from "../../Components/Headings/DesignHeading";
+import { PageSection } from "../../Components/PageSection";
+import { Underline } from "../../Components/Underline";
+import { priceList } from "../../Data/priceList";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import * as minishoot from "./minishoots";
 import { isWithinRange, localTime } from "../../utils";
+import { IncludesList } from "./Components/IncludesList";
+import * as ids from "./Ids";
+import pageName from "./PageName";
+import "./Prices.css";
+import * as minishoot from "./minishoots";
 
 export function Prices() {
   useDocumentTitle(pageName);
@@ -114,7 +102,7 @@ export function Prices() {
         >
           Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan brukes
           på fotograferinger, men gjelder ikke for mine designtjenester.
-          Minstepris ved kjøp av gavekort er på kr. 100,-
+          Minstepris ved kjøp av gavekort er på {priceList.giftCardMinimum}
         </Collapsible>
 
         <div className="section-divider"></div>
@@ -126,7 +114,7 @@ export function Prices() {
           open={open.newborn}
           outerClassName="prices-heading"
           title="Nyfødtfotografering"
-          price="Kr. 3000,-"
+          price={priceList.newborn}
         >
           Jeg anbefaler å ha nyfødtfotografering innen babyen har fylt 14 dager,
           men det går også fint etter dette om tiden ikke strekker til. Husk
@@ -154,11 +142,11 @@ export function Prices() {
             ]}
           />
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,-
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
@@ -166,13 +154,13 @@ export function Prices() {
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="1-års fotografering"
-          price="Kr. 2750,-"
+          price={priceList.oneyearolds}
         >
           1-års fotografering er bilder mange per i dag ønsker å ha av sine
           barn. Dette kan innebære enkle portretter med litt styling utendørs,
@@ -192,18 +180,19 @@ export function Prices() {
             ]}
           />
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -212,7 +201,7 @@ export function Prices() {
           open={open.kids}
           outerClassName="prices-heading"
           title="Barnefotografering (6 mnd - 13 år)"
-          price="Kr. 2750,-"
+          price={priceList.kids}
         >
           Fotografering av barn i alle aldre mellom 6 måneder og 13 år.
           <br />
@@ -228,18 +217,19 @@ export function Prices() {
             ]}
           />
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -261,7 +251,7 @@ export function Prices() {
           open={open.portrait}
           outerClassName="prices-heading"
           title="Portrettfotografering"
-          price="Kr. 2500,-"
+          price={priceList.portraits}
         >
           Inkluderer:
           <IncludesList
@@ -279,18 +269,19 @@ export function Prices() {
             Storgata 7B, 2050 Jessheim.
           </p>
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -299,7 +290,7 @@ export function Prices() {
           open={open.pregnant}
           outerClassName="prices-heading"
           title="Gravidfotografering"
-          price="Kr. 2500,-"
+          price={priceList.pregnant}
         >
           Gravidfotografering blir flott både utendørs i naturen, eller hjemme
           hos dere, for eksempel i en lekker oppredd dobbeltseng eller foran
@@ -332,18 +323,19 @@ export function Prices() {
             Storgata 7B, 2050 Jessheim.
           </p>
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -352,7 +344,7 @@ export function Prices() {
           open={open.confirmation}
           outerClassName="prices-heading"
           title="Konfirmantfotografering"
-          price="Kr. 2500,-"
+          price={priceList.confirmation}
         >
           Inkluderer:
           <IncludesList
@@ -370,24 +362,25 @@ export function Prices() {
             Storgata 7B, 2050 Jessheim.
           </p>
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Profilbilde / CV-foto / Headshots"
-          price="Kr. 1500,-"
+          price={priceList.headshots}
         >
           Inkluderer:
           <IncludesList
@@ -404,19 +397,20 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          Ønsker du å bestille flere bilder enn bildet som er inkludert, er
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -438,7 +432,7 @@ export function Prices() {
           open={open.family}
           outerClassName="prices-heading"
           title="Familiefotografering / Gruppefotografering"
-          price="Kr. 3000,-"
+          price={priceList.family}
         >
           Inkluderer:
           <IncludesList
@@ -456,24 +450,25 @@ export function Prices() {
             Storgata 7B, 2050 Jessheim.
           </p>
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Søskenfotografering"
-          price="Kr. 3000,-"
+          price={priceList.siblings}
         >
           Inkluderer:
           <IncludesList
@@ -487,18 +482,19 @@ export function Prices() {
             ]}
           />
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -507,7 +503,7 @@ export function Prices() {
           open={open.engagement}
           outerClassName="prices-heading"
           title="Kjæreste- eller forlovelsesfotografering"
-          price="Kr. 3000,-"
+          price={priceList.engagement}
         >
           Parfotografering blir etter min mening best utendørs, men det er også
           flott innendørs om dere helst ønsker dette. Vi tilbringer mellom 1 og
@@ -526,24 +522,25 @@ export function Prices() {
             ]}
           />
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Mommy & me / Daddy & me"
-          price="Kr. 2500,-"
+          price={priceList.mommyandme}
         >
           En koselig fotografering med mor eller far med barna. Dette blir
           hyggelige bilder å henge opp på veggen! Inkluderer:
@@ -558,18 +555,19 @@ export function Prices() {
             ]}
           />
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
 
@@ -579,7 +577,7 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Vielse + portrettfotografering - 2,5 timer"
-          price="Kr. 14.000,-"
+          price={priceList.wedding1}
         >
           Hvis man velger vielse + portrettfotografering, vil dette inkludere
           ca. 2,5 timer med fotografering totalt. Da fotograferer jeg hele
@@ -606,24 +604,25 @@ export function Prices() {
             ]}
           />
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Portrettfotografering - 1,5 timer"
-          price="Kr. 10.000,-"
+          price={priceList.wedding2}
         >
           Hvis man velger kun portrettfotografering, vil dette inkludere ca. 1,5
           timer med fotografering. Disse bildene kan fotograferes en annen dag
@@ -650,18 +649,19 @@ export function Prices() {
             ]}
           />
           Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen kr. 600,- per bilde.
+          prisen {priceList.extraPicture} per bilde.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: kr. 400,- <br />
-            Helgetillegg: kr. 700,- <br />
+            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Helgetillegg: {priceList.weekendSurcharge}
+            <br />
             <br />
             Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med kr. 10,- per km.
+            faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <div className="section-divider"></div>
@@ -692,7 +692,7 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Visuell identitet / Branding"
-          price="Kr. 950,- per time"
+          price={priceList.branding}
         >
           Ta kontakt for å avklare hva oppdraget går ut på, og omtrentlig hvor
           mange timer det vil ta.
@@ -700,7 +700,7 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="UX-design"
-          price="Kr. 950,- per time"
+          price={priceList.uxDesign}
         >
           Ta kontakt for å avklare hva oppdraget går ut på, hvilke forventninger
           dere har og omtrentlig hvor mange timer det vil ta.
@@ -708,7 +708,7 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Logo design"
-          price="Kr. 950,- per time"
+          price={priceList.logo}
         >
           Ta kontakt for å avklare hva oppdraget går ut på, og omtrentlig hvor
           mange timer det vil ta.
@@ -739,21 +739,21 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="1 ekstra bildefil"
-          price="Kr. 600,-"
+          price={priceList.extraPicture}
         >
           1 stk. ekstra redigert høyoppløselig bildefil
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="5 ekstra bildefiler"
-          price="Kr. 2800,-"
+          price={priceList.extraPicture5}
         >
           5 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 200,- i rabatt.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="10 ekstra bildefiler"
-          price="Kr. 5600,-"
+          price={priceList.extraPicture10}
         >
           10 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 400,- i
           rabatt.
@@ -761,7 +761,7 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="15 ekstra bildefiler"
-          price="Kr. 8400,-"
+          price={priceList.extraPicture15}
         >
           15 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 600,- i
           rabatt.
@@ -773,76 +773,59 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Bildekopi 10x12cm / 12x12cm"
-          price="Kr. 89,-"
+          price={priceList.copy10x12}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Bildekopi 15x20cm / 15x15cm"
-          price="Kr. 119,-"
+          price={priceList.copy15x20}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Bildekopi 20x20cm"
-          price="Kr. 199,-"
+          price={priceList.copy20x20}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Bildekopi 20x25cm / 20x30cm"
-          price="Kr. 239,-"
+          price={priceList.copy20x25}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Bildekopi 30x30cm / 30x40cm"
-          price="Kr. 309,-"
+          price={priceList.copy30x30}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Bildekopi 30x60cm / 40x40cm / 40x50cm"
-          price="Kr. 415,-"
+          price={priceList.copy30x60}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Bildekopi 40x80cm / 50x60cm / 50x70cm"
-          price="Kr. 545,-"
+          price={priceList.copy40x80}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <div className="section-divider"></div>
-        <div className="category-under-title">Bildekopier i ramme</div>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Bildekopi i ramme 20x25cm"
-          price="Kr. 389,-"
-        >
-          Bildekopi trykket på fotopapir med blank overflate, som er montert i
-          ramme.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Bildekopi i ramme 20x30cm"
-          price="Kr. 459,-"
-        >
-          Bildekopi trykket på fotopapir med blank overflate, som er montert i
-          ramme.
-        </Collapsible>
-        <div className="section-divider"></div>
+
         <div className="category-under-title">Lerretsbilder</div>
         <Collapsible
           outerClassName="prices-heading"
           title="Lerret med blindramme 20x25cm / 20x30cm"
-          price="Kr. 889,-"
+          price={priceList.canvas20x25}
         >
           Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
           lamineres med satinmatt overflate for holdbarhet, før lerretet
@@ -851,7 +834,7 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Lerret med blindramme 30x40cm"
-          price="Kr. 1045,-"
+          price={priceList.canvas30x40}
         >
           Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
           lamineres med satinmatt overflate for holdbarhet, før lerretet
@@ -860,7 +843,7 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Lerret med blindramme 30x60cm / 40x40cm / 40x50cm"
-          price="Kr. 1289,-"
+          price={priceList.canvas30x60}
         >
           Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
           lamineres med satinmatt overflate for holdbarhet, før lerretet
@@ -869,7 +852,7 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Lerret med blindramme 40x60cm / 50x60cm / 50x70cm"
-          price="Kr. 1489,-"
+          price={priceList.canvas40x60}
         >
           Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
           lamineres med satinmatt overflate for holdbarhet, før lerretet
@@ -880,7 +863,7 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Album 20x20cm - 20 sider"
-          price="Kr. 1045,-"
+          price={priceList.album20x20x20}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
           kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
@@ -889,25 +872,17 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Album 20x20cm - 30 sider"
-          price="Kr. 1389,-"
+          price={priceList.album20x20x30}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
           kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
           sider. Det er ikke mulig å velge flere eller færre sider.
         </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Album 20x20cm - 40 sider"
-          price="Kr. 1689,-"
-        >
-          Her bestiller man ferdig monterte album, hvor man kan velge mellom
-          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
-          sider. Det er ikke mulig å velge flere eller færre sider.
-        </Collapsible>
+
         <Collapsible
           outerClassName="prices-heading"
           title="Album 30x30cm - 20 sider"
-          price="Kr. 1345,-"
+          price={priceList.album30x30x20}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
           kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
@@ -916,25 +891,17 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Album 30x30cm - 30 sider"
-          price="Kr. 1689,-"
+          price={priceList.album30x30x30}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
           kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
           sider. Det er ikke mulig å velge flere eller færre sider.
         </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Album 30x30cm - 40 sider"
-          price="Kr. 1989,-"
-        >
-          Her bestiller man ferdig monterte album, hvor man kan velge mellom
-          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
-          sider. Det er ikke mulig å velge flere eller færre sider.
-        </Collapsible>
+
         <Collapsible
           outerClassName="prices-heading"
           title="Album panorama 30x22,5cm - 20 sider"
-          price="Kr. 1145,-"
+          price={priceList.album30x22x20}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
           kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
@@ -943,55 +910,47 @@ export function Prices() {
         <Collapsible
           outerClassName="prices-heading"
           title="Album panorama 30x22,5cm - 30 sider"
-          price="Kr. 1489,-"
+          price={priceList.album30x22x30}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
           kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
           sider. Det er ikke mulig å velge flere eller færre sider.
         </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Album panorama 30x22,5cm - 40 sider"
-          price="Kr. 1789,-"
-        >
-          Her bestiller man ferdig monterte album, hvor man kan velge mellom
-          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
-          sider. Det er ikke mulig å velge flere eller færre sider.
-        </Collapsible>
+
         <div className="section-divider"></div>
         <div className="category-under-title">Skumplate</div>
         <Collapsible
           outerClassName="prices-heading"
           title="Skumplate 15x20cm / 15x15cm"
-          price="Kr. 445,-"
+          price={priceList.foam15x20}
         >
           Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Skumplate 20x25cm / 20x30cm"
-          price="Kr. 689,-"
+          price={priceList.foam20x25}
         >
           Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Skumplate 30x30cm / 30x40cm"
-          price="Kr. 889,-"
+          price={priceList.foam30x30}
         >
           Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Skumplate 30x60cm / 40x40cm / 40x50cm"
-          price="Kr. 1089,-"
+          price={priceList.foam30x60}
         >
           Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Skumplate 40x80cm / 50x60cm / 50x70cm"
-          price="Kr. 1289,-"
+          price={priceList.foam40x80}
         >
           Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>

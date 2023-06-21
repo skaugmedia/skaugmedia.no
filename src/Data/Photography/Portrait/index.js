@@ -1,23 +1,24 @@
 import { oneLine } from "common-tags";
-import portrait_cover from "../../../Images/portrett_cover.jpg";
 import madeleine1 from "../../../Images/madeleine_1.jpg";
 import madeleine2 from "../../../Images/madeleine_2.jpg";
 import marianne1 from "../../../Images/marianne_1.jpg";
 import marianne2 from "../../../Images/marianne_2.jpg";
-import victoria1 from "../../../Images/victoria_1.jpg";
-import victoria2 from "../../../Images/victoria_2.jpg";
-import victor1 from "../../../Images/victor_1.jpg";
-import victor2 from "../../../Images/victor_2.jpg";
-import sigurd1 from "../../../Images/sigurd_portrett_1.jpg";
-import sigurd2 from "../../../Images/sigurd_portrett_2.jpg";
-import sigurd3 from "../../../Images/sigurd_portrett_3.jpg";
 import ninahelene1 from "../../../Images/nina_helene_1.jpg";
 import ninahelene2 from "../../../Images/nina_helene_2.jpg";
 import ninahelene3 from "../../../Images/nina_helene_3.jpg";
 import ninahelene4 from "../../../Images/nina_helene_4.jpg";
 import ninahelene5 from "../../../Images/nina_helene_5.jpg";
+import portrait_cover from "../../../Images/portrett_cover.jpg";
+import sigurd1 from "../../../Images/sigurd_portrett_1.jpg";
+import sigurd2 from "../../../Images/sigurd_portrett_2.jpg";
+import sigurd3 from "../../../Images/sigurd_portrett_3.jpg";
+import victor1 from "../../../Images/victor_1.jpg";
+import victor2 from "../../../Images/victor_2.jpg";
+import victoria1 from "../../../Images/victoria_1.jpg";
+import victoria2 from "../../../Images/victoria_2.jpg";
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
+import { priceList } from "/src/Data/priceList";
 
 export default {
   id: "portrett",
@@ -31,7 +32,7 @@ export default {
   },
   listing: {
     title: "Portrettfotografering",
-    price: "Fra kr. 1500,-",
+    price: priceList.portraits,
     link: `/${PricesRoute}#${ids.portrait}`,
   },
   shoots: [

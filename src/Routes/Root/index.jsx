@@ -2,13 +2,14 @@ import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { NavLink, Outlet } from "react-router-dom";
 
+import { DiscountBanner } from "../../Components/DiscountBanner";
+import { discounts } from "../../Data/discounts";
 import skaugmedia from "../../Images/skaugmedia.png";
 import AboutPageName from "../About/PageName";
 import AboutRoute from "../About/Route";
 import ContactPageName from "../Contact/PageName";
 import ContactRoute from "../Contact/Route";
 import GraphicalDesignPageName from "../GraphicalDesign/PageName";
-import { MiniSessionButton } from "../../Components/MiniSessionButton";
 import GraphicalDesignRoute from "../GraphicalDesign/Route";
 import HomePageName from "../Home/PageName";
 import HomeRoute from "../Home/Route";
@@ -19,9 +20,6 @@ import PricesRoute from "../Prices/Route";
 import "./Root.css";
 import classes from "./Root.module.css";
 import { SocialIcons } from "/src/Components/SocialIcons";
-import * as ids from "../Prices/Ids";
-import { discounts } from "../../Data/discounts";
-import { DiscountBanner } from "../../Components/DiscountBanner";
 
 export function Root() {
   const [showNav, setShowNav] = useState(false);
@@ -62,7 +60,10 @@ export function Root() {
         </header>
 
         {discounts.map((discount) => (
-          <DiscountBanner key={discount.link} {...discount} />
+          <DiscountBanner
+            key={`${discount.title}${discount.validFrom}${discount.link}`}
+            {...discount}
+          />
         ))}
 
         <main>

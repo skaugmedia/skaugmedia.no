@@ -16,6 +16,7 @@ import silje_6 from "../../../Images/silje_konfirmant_6.jpg";
 import silje_7 from "../../../Images/silje_konfirmant_7.jpg";
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
+import { priceList } from "/src/Data/priceList";
 
 export default {
   id: "konfirmant",
@@ -30,7 +31,7 @@ export default {
   },
   listing: {
     title: "Portrettforografering: konfirmant",
-    price: "Kr. 2500,-",
+    price: priceList.confirmation,
     link: `/${PricesRoute}#${ids.confirmation}`,
   },
   shoots: [

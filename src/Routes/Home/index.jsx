@@ -1,24 +1,17 @@
 import { NavLink, useLoaderData } from "react-router-dom";
 import { ButtonLink } from "../../Components/ButtonLink";
 import { Image } from "../../Components/Image";
-import { MiniSession } from "../../Components/MiniSession";
-import { MiniSessionImage } from "../../Components/MiniSession/MiniSessionImage";
 import { PageSection } from "../../Components/PageSection";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import konfirmantsiljeforside from "../../Images/konfirmant_silje_forside.jpg";
 import lashbrowserforside from "../../Images/lashbrowser_forside.jpg";
 import liamforside from "../../Images/liam_kvadrat_forside.jpg";
-import confirmationimg from "../../Images/minisession_confirmation.jpg";
 import ninaforside from "../../Images/nina_forside.jpg";
-import siblingimg from "../../Images/sibling_photo.jpg";
 import AboutRoute from "../About/Route";
-import PricesRoute from "../Prices/Route";
 import ContactRoute from "../Contact/Route";
 import "./Home.css";
-import pageName from "./PageName";
-import * as ids from "../Prices/Ids";
 import classes from "./Home.module.css";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import { kr } from "/src/utils";
+import pageName from "./PageName";
 
 export function Home() {
   useDocumentTitle(pageName);
@@ -140,14 +133,14 @@ export function Home() {
         <div className="works-forside">
           {recentWorks.map((recentWork) => (
             <NavLink
-              key={recentWork.url}
+              key={`${recentWork.title}${recentWork.url}`}
               to={recentWork.url}
               className={`${classes.plainLink} flex-child`}
             >
               <div className="flex-child latest">
                 <Image
                   className="works-img"
-                  src={recentWork.img.url}
+                  src={recentWork.thumbnail ?? recentWork.img.url}
                   alt={recentWork.img.title}
                 />
                 <div className="works-text-box">

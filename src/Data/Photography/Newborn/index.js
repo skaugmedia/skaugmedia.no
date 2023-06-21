@@ -8,6 +8,7 @@ import liam6 from "../../../Images/newborn_liam_6.jpg";
 import liam7 from "../../../Images/newborn_liam_7.jpg";
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
+import { priceList } from "../../priceList";
 
 export default {
   id: "nyfodt",
@@ -24,7 +25,7 @@ export default {
   },
   listing: {
     title: "Barnefotografering: nyfødt",
-    price: "Kr. 3000,-",
+    price: priceList.newborn,
     link: `/${PricesRoute}#${ids.newborn}`,
   },
   shoots: [

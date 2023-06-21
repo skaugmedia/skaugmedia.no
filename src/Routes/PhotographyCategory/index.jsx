@@ -4,11 +4,9 @@ import PhotoAlbum from "react-photo-album";
 import { NavLink, useLoaderData } from "react-router-dom";
 import PhotographyHeading from "../../Components/Headings/FotografiHeading";
 import { PageSection } from "../../Components/PageSection";
-import * as ids from "../Prices/Ids";
-import classes from "./PhotographyCategory.module.css";
-import PricesRoute from "../Prices/Route";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import { byDate, kr } from "/src/utils";
+import classes from "./PhotographyCategory.module.css";
+import { byDate } from "/src/utils";
 
 export function PhotographyCategory() {
   const { category } = useLoaderData();

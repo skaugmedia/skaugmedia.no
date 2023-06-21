@@ -26,6 +26,7 @@
     "common-tags": "^1.8.2",
     "dotenv": "^16.0.3",
     "prettier": "^2.8.8",
+    "prettier-plugin-organize-imports": "^3.2.2",
     "vite": "^4.1.2",
     "vite-imagetools": "^4.0.18",
     "xml": "^1.0.1"

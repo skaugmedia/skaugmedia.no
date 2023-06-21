@@ -1,5 +1,12 @@
 import { oneLine } from "common-tags";
 import familie1 from "../../../Images/familie_1.jpg";
+import familie10 from "../../../Images/familie_10.jpg";
+import familie11 from "../../../Images/familie_11.jpg";
+import familie12 from "../../../Images/familie_12.jpg";
+import familie13 from "../../../Images/familie_13.jpg";
+import familie14 from "../../../Images/familie_14.jpg";
+import familie15 from "../../../Images/familie_15.jpg";
+import familie16 from "../../../Images/familie_16.jpg";
 import familie2 from "../../../Images/familie_2.jpg";
 import familie3 from "../../../Images/familie_3.jpg";
 import familie4 from "../../../Images/familie_4.jpg";
@@ -8,15 +15,9 @@ import familie6 from "../../../Images/familie_6.jpg";
 import familie7 from "../../../Images/familie_7.jpg";
 import familie8 from "../../../Images/familie_8.jpg";
 import familie9 from "../../../Images/familie_9.jpg";
-import familie10 from "../../../Images/familie_10.jpg";
-import familie11 from "../../../Images/familie_11.jpg";
-import familie12 from "../../../Images/familie_12.jpg";
-import familie13 from "../../../Images/familie_13.jpg";
-import familie14 from "../../../Images/familie_14.jpg";
-import familie15 from "../../../Images/familie_15.jpg";
-import familie16 from "../../../Images/familie_16.jpg";
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
+import { priceList } from "/src/Data/priceList";
 
 export default {
   id: "familie",
@@ -32,7 +33,7 @@ export default {
   },
   listing: {
     title: "Gruppefotografering: familie",
-    price: "Kr. 3000,-",
+    price: priceList.family,
     link: `/${PricesRoute}#${ids.family}`,
   },
   shoots: [

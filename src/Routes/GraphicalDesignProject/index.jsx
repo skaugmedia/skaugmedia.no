@@ -1,10 +1,10 @@
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
 import { useLoaderData } from "react-router-dom";
 import GraphicalDesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import "react-image-gallery/styles/css/image-gallery.css";
-import classes from "./GraphicalDesignProject.module.css";
-import ImageGallery from "react-image-gallery";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import classes from "./GraphicalDesignProject.module.css";
 import { Image } from "/src/Components/Image";
 
 export function GraphicalDesignProject() {
@@ -50,8 +50,9 @@ export function GraphicalDesignProject() {
       <div className={classes.colorPalette}>
         {project.designElements.colorPalette.map((color) => (
           <div
+            key={color.hex}
             className={classes.colorCard}
-            style={{ "background-color": color.hex }}
+            style={{ backgroundColor: color.hex }}
           >
             <ul className={classes.colorDetails}>
               <li>Hex: {color.hex}</li>
@@ -66,7 +67,7 @@ export function GraphicalDesignProject() {
       <div className={classes.elements}>
         {elements &&
           elements.map((element) => (
-            <div className={classes.element}>
+            <div key={element.src} className={classes.element}>
               <div className={classes.elementHeading}>{element.title}</div>
               <Image
                 className={classes.elementImage}

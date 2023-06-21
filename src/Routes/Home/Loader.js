@@ -9,6 +9,7 @@ export default function Loader() {
     category.shoots.map((shoot) => ({
       url: `${photoRoute}/${category.id}`,
       date: shoot.date,
+      thumbnail: shoot.thumbnail,
       img: shoot.images[0],
       title: shoot.description,
       category: category.title,
@@ -18,6 +19,7 @@ export default function Loader() {
   const projs = projects.map((project) => ({
     date: project.date,
     url: `${designRoute}/${project.id}`,
+    thumbnail: project.thumbnail,
     img: project.cover,
     title: project.title,
     category: project.category,

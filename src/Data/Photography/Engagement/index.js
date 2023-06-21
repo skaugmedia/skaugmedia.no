@@ -1,5 +1,4 @@
 import { oneLine } from "common-tags";
-import forlovelsecover from "../../../Images/forlovelse_cover.jpg";
 import forlovelse1 from "../../../Images/forlovelse_1.jpg";
 import forlovelse2 from "../../../Images/forlovelse_2.jpg";
 import forlovelse3 from "../../../Images/forlovelse_3.jpg";
@@ -9,6 +8,7 @@ import forlovelse6 from "../../../Images/forlovelse_6.jpg";
 import forlovelse7 from "../../../Images/forlovelse_7.jpg";
 import forlovelse8 from "../../../Images/forlovelse_8.jpg";
 import forlovelse9 from "../../../Images/forlovelse_9.jpg";
+import forlovelsecover from "../../../Images/forlovelse_cover.jpg";
 import luciaole1 from "../../../Images/lucia_ole_1.jpg";
 import luciaole2 from "../../../Images/lucia_ole_2.jpg";
 import luciaole3 from "../../../Images/lucia_ole_3.jpg";
@@ -20,6 +20,7 @@ import luciaole8 from "../../../Images/lucia_ole_8.jpg";
 import luciaole9 from "../../../Images/lucia_ole_9.jpg";
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
+import { priceList } from "/src/Data/priceList";
 
 export default {
   id: "kjaereste-og-forlovelse",
@@ -36,7 +37,7 @@ export default {
   },
   listing: {
     title: "Gruppefotografering: forlovelse",
-    price: "Kr. 3000,-",
+    price: priceList.engagement,
     link: `/${PricesRoute}#${ids.engagement}`,
   },
   shoots: [

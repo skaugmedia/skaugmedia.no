@@ -8,6 +8,7 @@ import pregnant_5 from "../../../Images/gravid_5.jpg";
 import pregnant_6 from "../../../Images/gravid_6.jpg";
 import pregnant_7 from "../../../Images/gravid_7.jpg";
 import j_gravid_01 from "../../../Images/j_gravid_01.jpg";
+import j_gravid_01_thumbnail from "../../../Images/j_gravid_01.jpg?width=200&height=200";
 import j_gravid_02 from "../../../Images/j_gravid_02.jpg";
 import j_gravid_03 from "../../../Images/j_gravid_03.jpg";
 import j_gravid_04 from "../../../Images/j_gravid_04.jpg";
@@ -19,12 +20,14 @@ import j_gravid_09 from "../../../Images/j_gravid_09.jpg";
 import m_gravid_01 from "../../../Images/m_gravid_01.jpg";
 import m_gravid_02 from "../../../Images/m_gravid_02.jpg";
 import m_gravid_03 from "../../../Images/m_gravid_03.jpg";
+import m_gravid_03_thumbnail from "../../../Images/m_gravid_03.jpg?width=200&height=200";
 import m_gravid_04 from "../../../Images/m_gravid_04.jpg";
 import m_gravid_05 from "../../../Images/m_gravid_05.jpg";
 import m_gravid_06 from "../../../Images/m_gravid_06.jpg";
 import m_gravid_07 from "../../../Images/m_gravid_07.jpg";
 import m_gravid_08 from "../../../Images/m_gravid_08.jpg";
 import m_gravid_09 from "../../../Images/m_gravid_09.jpg";
+import { priceList } from "/src/Data/priceList";
 
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
@@ -44,7 +47,7 @@ export default {
   },
   listing: {
     title: "Portrettfotografering: gravid",
-    price: "Kr. 2500,-",
+    price: priceList.pregnant,
     link: `/${PricesRoute}#${ids.pregnant}`,
   },
   shoots: [
@@ -101,6 +104,7 @@ export default {
     {
       description: "Jenny",
       tags: ["gravid", "innendørs", "sorthvitt"],
+      thumbnail: j_gravid_01_thumbnail,
       images: [
         {
           url: j_gravid_01,
@@ -162,6 +166,7 @@ export default {
     {
       description: "Marianne",
       tags: ["gravid", "innendørs", "sorthvitt"],
+      thumbnail: m_gravid_03_thumbnail,
       images: [
         {
           url: m_gravid_03,

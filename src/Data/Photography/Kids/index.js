@@ -2,19 +2,19 @@ import { oneLine } from "common-tags";
 import edwin_1 from "../../../Images/edwin_1.jpg";
 import edwin_2 from "../../../Images/edwin_2.jpg";
 import edwin_3 from "../../../Images/edwin_3.jpg";
-import liam_barn_1 from "../../../Images/liam_barn_1.jpg";
-import liam_barn_2 from "../../../Images/liam_barn_2.jpg";
-import liam_barn_3 from "../../../Images/liam_barn_3.jpg";
-import liam_barn_4 from "../../../Images/liam_barn_4.jpg";
-import liam_barn_5 from "../../../Images/liam_barn_5.jpg";
-import liam_barn_6 from "../../../Images/liam_barn_6.jpg";
-import ellioteliascover from "../../../Images/elliot_elias_cover.jpg";
 import elliotelias1 from "../../../Images/elliot_elias_1.jpg";
 import elliotelias2 from "../../../Images/elliot_elias_2.jpg";
 import elliotelias3 from "../../../Images/elliot_elias_3.jpg";
 import elliotelias4 from "../../../Images/elliot_elias_4.jpg";
 import elliotelias5 from "../../../Images/elliot_elias_5.jpg";
 import elliotelias6 from "../../../Images/elliot_elias_6.jpg";
+import ellioteliascover from "../../../Images/elliot_elias_cover.jpg";
+import liam_barn_1 from "../../../Images/liam_barn_1.jpg";
+import liam_barn_2 from "../../../Images/liam_barn_2.jpg";
+import liam_barn_3 from "../../../Images/liam_barn_3.jpg";
+import liam_barn_4 from "../../../Images/liam_barn_4.jpg";
+import liam_barn_5 from "../../../Images/liam_barn_5.jpg";
+import liam_barn_6 from "../../../Images/liam_barn_6.jpg";
 import olaf1 from "../../../Images/olaf_1.jpg";
 import olaf2 from "../../../Images/olaf_2.jpg";
 import olaf3 from "../../../Images/olaf_3.jpg";
@@ -23,6 +23,7 @@ import silje2 from "../../../Images/silje_barn_2.jpg";
 import silje3 from "../../../Images/silje_barn_3.jpg";
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
+import { priceList } from "/src/Data/priceList";
 
 export default {
   id: "barn-og-baby",
@@ -36,7 +37,7 @@ export default {
   },
   listing: {
     title: "Barnefotografering",
-    price: "Kr. 2750,-",
+    price: priceList.kids,
     link: `/${PricesRoute}#${ids.kids}`,
   },
   shoots: [
