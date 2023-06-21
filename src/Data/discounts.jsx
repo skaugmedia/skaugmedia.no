@@ -42,7 +42,7 @@ export const discounts = [
       <>
         Tilbudet gjelder 15.06.23 - 18.06.23.
         <br />
-        *Gjelder ikke minifotograferinger.
+        *Gjelder ikke minifotograferinger eller for bedrifter.
       </>
     ),
     buttonText: "Book her",
