@@ -38,6 +38,11 @@ import mat36 from "../../../Images/mat_36.jpg";
 import mat37 from "../../../Images/mat_37.jpg";
 import mat38 from "../../../Images/mat_38.jpg";
 import mat39 from "../../../Images/mat_39.jpg";
+import pasta_pesto_1 from "../../../Images/pasta_pesto-046.jpg";
+import pasta_pesto_2 from "../../../Images/pasta_pesto-085.jpg";
+import pasta_pesto_3 from "../../../Images/pasta_pesto-121.jpg";
+import pasta_pesto_4 from "../../../Images/pasta_pesto-144.jpg";
+
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
 
@@ -58,6 +63,38 @@ export default {
     link: `/${PricesRoute}#${ids.food}`,
   },
   shoots: [
+    {
+      description: "Pestopasta",
+      tags: ["mat", "lys", "studiofotografering", "stilleben"],
+      images: [
+        {
+          url: pasta_pesto_1,
+          title: "Pestopasta",
+          width: 677,
+          height: 1000,
+        },
+        {
+          url: pasta_pesto_2,
+          title: "Pestopasta",
+          width: 677,
+          height: 1000,
+        },
+        {
+          url: pasta_pesto_3,
+          title: "Pestopasta",
+          width: 677,
+          height: 1000,
+        },
+        {
+          url: pasta_pesto_4,
+          title: "Pestopasta",
+          width: 677,
+          height: 1000,
+        },
+      ],
+      date: "2023-06-09",
+    },
+
     {
       description: "Egg",
       tags: ["mat", "moody", "stilleben"],
