@@ -2,10 +2,10 @@ import { useEffect, useRef } from "react";
 import Button from "../../Components/Button";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import "./Contact.css";
 import pageName from "./PageName";
 import { SocialIcons } from "/src/Components/SocialIcons";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 
 export function Contact() {
   useDocumentTitle(pageName);
@@ -51,7 +51,7 @@ export function Contact() {
 
   return (
     <>
-      <PageSection className="container">
+      <PageSection className="container relative">
         <form className="form" action="/send_mail.php" method="POST">
           <div className="contact">
             <div className="contact-content">
@@ -148,23 +148,23 @@ export function Contact() {
             </div>
           )}
         </form>
-      </PageSection>
-      <div className="contact-info-box">
-        <div className="contact-info-content">
-          <div className="contact-info-title">Kontaktinfo</div>
-          <div className="contact-info">
-            Nina Merethe Skaug
-            <br />
-            kontakt@skaugmedia.no
-            <br />
-            +47 464 18 241
+        <div className="contact-info-box">
+          <div className="contact-info-content">
+            <div className="contact-info-title">Kontaktinfo</div>
+            <div className="contact-info">
+              Nina Merethe Skaug
+              <br />
+              kontakt@skaugmedia.no
+              <br />
+              +47 464 18 241
+            </div>
+            <SocialIcons
+              containerClassName="contact-social-icon"
+              itemClassName="contact-icon"
+            />
           </div>
-          <SocialIcons
-            containerClassName="contact-social-icon"
-            itemClassName="contact-icon"
-          />
         </div>
-      </div>
+      </PageSection>
     </>
   );
 }

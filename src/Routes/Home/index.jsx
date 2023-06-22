@@ -3,10 +3,10 @@ import { ButtonLink } from "../../Components/ButtonLink";
 import { Image } from "../../Components/Image";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import konfirmantsiljeforside from "../../Images/konfirmant_silje_forside.jpg";
-import lashbrowserforside from "../../Images/lashbrowser_forside.jpg";
-import liamforside from "../../Images/liam_kvadrat_forside.jpg";
+import jennyforside from "../../Images/j_gravid_kvadrat.jpg";
 import ninaforside from "../../Images/nina_forside.jpg";
+import matforside from "../../Images/pasta_pesto_kvadrat.jpg";
+import pentogbruktforside from "../../Images/pentogbrukt_logo_kvadrat.jpg";
 import AboutRoute from "../About/Route";
 import ContactRoute from "../Contact/Route";
 import "./Home.css";
@@ -87,16 +87,20 @@ export function Home() {
             </ButtonLink>
           </div>
           <div className="flex-child image-container image-triangle">
-            <img className="foto-header" src={liamforside} alt="Liam"></img>
             <img
               className="foto-header"
-              src={lashbrowserforside}
-              alt="Lashbrowser logo"
+              src={jennyforside}
+              alt="Gravidfotografering"
             ></img>
             <img
               className="foto-header"
-              src={konfirmantsiljeforside}
-              alt="Konfirmanten Silje"
+              src={pentogbruktforside}
+              alt="Visuell identitet"
+            ></img>
+            <img
+              className="foto-header"
+              src={matforside}
+              alt="Matfotografering"
             ></img>
           </div>
         </div>
