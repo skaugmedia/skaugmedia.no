@@ -1,8 +1,7 @@
-import { kr } from "../utils";
-import PricesRoute from "../Routes/Prices/Route";
 import ContactRoute from "../Routes/Contact/Route";
 import * as ids from "../Routes/Prices/Ids";
-import { localTime } from "../utils";
+import PricesRoute from "../Routes/Prices/Route";
+import { kr, localTime } from "../utils";
 
 export const discounts = [
   {
@@ -64,5 +63,19 @@ export const discounts = [
     link: `/${PricesRoute}#${ids.miniSessionMinisessions}`,
     validFrom: localTime("19-06-2023 00:00"),
     validTo: localTime("01-07-2023 00:00"),
+  },
+  {
+    title: "Få 15% avslag på alle bookinger i juli!",
+    price: "-15% på alle fotograferinger",
+    description: (
+      <>
+        I hele juli tilbyr jeg en eksklusiv rabatt på 15% på alle bookinger som
+        gjøres i løpet av måneden. Ta kontakt nå for å sikre deg 15% avslag på
+        din fotografering! *Gjelder ikke for bedrifter.
+      </>
+    ),
+    link: `/${PricesRoute}#${ids.miniSessionMinisessions}`,
+    validFrom: localTime("01-07-2023 00:00"),
+    validTo: localTime("01-08-2023 00:00"),
   },
 ];

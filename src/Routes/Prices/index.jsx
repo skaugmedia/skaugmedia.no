@@ -74,7 +74,7 @@ export function Prices() {
             <div className="prices-offers-next-free-date-box">
               <div className="prices-offers-next-free-date">
                 {" "}
-                Neste ledige dato: 31.07.2023
+                Neste ledige dato: 07.08.2023
               </div>
             </div>
           </div>
@@ -86,7 +86,6 @@ export function Prices() {
             <br />
             <br />
             Dette inkluderer:
-            <br />- Lån av kjoler og rekvisitter
             <br />- 20 minutters fotografering utendørs
             <br />- Online bildegalleri hvor du velger dine bilder
             <br />- 1 etterbehandlet digital bildefil
