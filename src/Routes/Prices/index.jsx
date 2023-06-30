@@ -6,6 +6,9 @@ import { PageSection } from "../../Components/PageSection";
 import { Underline } from "../../Components/Underline";
 import { priceList } from "../../Data/priceList";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import oneyear_offer_img from "../../Images/liam_1_kvadrat.jpg";
+import pregnant_offer_img from "../../Images/m_gravid_kvadrat.jpg";
+import always_discount_img from "../../Images/silje_konfirmant_kvadrat.jpg";
 import { isWithinRange, localTime } from "../../utils";
 import { IncludesList } from "./Components/IncludesList";
 import * as ids from "./Ids";
@@ -63,23 +66,75 @@ export function Prices() {
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 
         <div className="prices-offers-box">
-          <div className="category-title-offers">Tilbud</div>
-          <div className="prices-offers">
-            Book gravidfotografering
-            <br />
-            få 50% avslag på nyfødtfotografering.
+          <div className="category-title-offers">
+            Gratis minifotografering av gravide
           </div>
-          <br />
+          <div className="prices-offers-next-free-date-title"></div>
+          <div className="prices-offers-next-free-date-row">
+            <div className="prices-offers-next-free-date-box">
+              <div className="prices-offers-next-free-date">
+                {" "}
+                Neste ledige dato: 07.08.2023
+              </div>
+            </div>
+          </div>
+          <div className="prices-offers">
+            Hver måned har jeg en dag med GRATIS utendørs minifotograferinger av
+            gravide som er i uke 30-36 av svangerskapet. Begrenset kapasitet, så
+            book tidlig! Følg med her på nettsiden, og i sosiale medier for å se
+            neste ledige dato.
+            <br />
+            <br />
+            Dette inkluderer:
+            <br />- 20 minutters fotografering utendørs
+            <br />- Online bildegalleri hvor du velger dine bilder
+            <br />- 1 etterbehandlet digital bildefil
+            <br />- Mulighet for å kjøpe flere bilder, og trykkede produkter
+            <br />- Rabattkupong som kan brukes på valgfri fotografering
+          </div>
 
-          <div className="prices-offers">
-            Book nyfødtfotografering
-            <br /> få 50% avslag på babyfotografering (6mnd-12mnd).
-          </div>
-          <br />
-          <div className="prices-offers">
-            Book bryllupsfotografering
-            <br />
-            få 50% avslag på forlovelsesfotografering.
+          <div className="discount-offer-box-title">Faste rabatter</div>
+
+          <div className="discount-offer-box">
+            <div className="pregnancy-discount-offer">
+              <img
+                className="discount-offer-img"
+                src={pregnant_offer_img}
+                alt="Gravidfotografering"
+              ></img>
+
+              <div className="discount-offer-text">
+                50% avslag på gravidfotografering, ved booking av
+                nyfødtfotografering.
+              </div>
+            </div>
+            <div className="oneyear-discount_offer">
+              <img
+                className="discount-offer-img"
+                src={oneyear_offer_img}
+                alt="1-års fotografering"
+              ></img>
+
+              <div className="discount-offer-text">
+                50% avslag på 1-års fotografering, etter nyfødtfotografering.
+              </div>
+            </div>
+            <div className="always-discount-offer">
+              <img
+                className="discount-offer-img"
+                src={always_discount_img}
+                alt="Konfirmantfotografering"
+              ></img>
+
+              <div className="discount-offer-text">
+                10% avslag på din neste fotografering.
+                <br />
+                <div className="discount-offer-special">
+                  *Gjelder kun privatpersoner og kan ikke kombineres med andre
+                  tilbud.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="section-divider"></div>
@@ -133,28 +188,27 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
               "Opptil 2-3 timer fotografering hjemme hos dere (jeg tar med enkel styling og lamper)",
               "Bilder sammen med foreldre og søsken",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
+              "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -171,28 +225,27 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
               "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
               "Valget om man ønsker cakesmash eller ikke",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
+              "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -209,27 +262,26 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
               "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
+              "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -256,11 +308,9 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
               "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
+              "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
           <p>
@@ -268,20 +318,21 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -309,12 +360,10 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
               "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man velger bilder",
               "Bilder sammen med partner og andre barn",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
             ]}
           />
           <p>
@@ -322,20 +371,21 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -349,11 +399,9 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
               "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
+              "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
           <p>
@@ -361,20 +409,21 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -385,11 +434,10 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
-              "Opptil 30 minutters fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "1 stk. redigert høyoppløselig bilde",
-              "Bildet leveres digitalt",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man velger bilder",
+              "Inkludert 1 digitalt bilde, levert både i sorthvitt og farger",
             ]}
           />
           <p>
@@ -397,20 +445,21 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Ønsker du å bestille flere bilder enn bildet som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -437,11 +486,9 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
               "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
+              "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
           <p>
@@ -449,20 +496,21 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -474,27 +522,26 @@ export function Prices() {
           <IncludesList
             items={[
               "Fotografering med 2 eller flere søsken",
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
               "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
+              "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -514,27 +561,26 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
-              "1-2 timer fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -547,27 +593,26 @@ export function Prices() {
           <IncludesList
             items={[
               "Fotografering med 2 eller flere søsken, i tillegg til mor eller far",
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
               "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "3 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
+              "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
 
@@ -594,29 +639,31 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
               "Fotografering under vielsen",
               "1,5 timers portrettfotografering etter vielsen",
               "Fotografering med familie og forlovere etter vielsen",
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+              "Digitalt bildegalleri hvor man velger bilder",
               "35 stk. redigerte, høyoppløselige bilder",
               "Bildene leveres digitalt",
             ]}
           />
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -626,7 +673,7 @@ export function Prices() {
         >
           Hvis man velger kun portrettfotografering, vil dette inkludere ca. 1,5
           timer med fotografering. Disse bildene kan fotograferes en annen dag
-          enn bryllupet, eller på selve dagen. Dere får 10 ferdig redigerte
+          enn bryllupet, eller på selve dagen. Dere får 15 ferdig redigerte
           bilder- som dere selv velger ut fra et online galleri.
           <br />
           <br />
@@ -639,29 +686,30 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale nærmere",
-
-              "1,5 timers portrettfotografering",
-
-              "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-              "10 stk. redigerte, høyoppløselige bilder",
+              "Samtale før fotografering for å avtale antrekk og lokasjon",
+              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Fotografering under vielsen",
+              "1,5 timers portrettfotografering etter vielsen",
+              "Digitalt bildegalleri hvor man velger bilder",
+              "15 stk. redigerte, høyoppløselige bilder",
               "Bildene leveres digitalt",
             ]}
           />
-          Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er
-          prisen {priceList.extraPicture} per bilde.
+          Les mer om hvilke produkter man kan bestille etter fotograferingen,
+          lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 18.00: {priceList.eveningSurcharge} <br />
+            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt
+            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
             til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering og kjøring utover 20km fra Jessheim,
-            faktureres med {priceList.driveSurcharge} per km.
+            Eventuell betalt parkering faktureres i sin helhet, og kjøring
+            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
+            per km.
           </p>
         </Collapsible>
         <div className="section-divider"></div>
@@ -738,164 +786,177 @@ export function Prices() {
         <div className="category-under-title">Digitale bildefiler</div>
         <Collapsible
           outerClassName="prices-heading"
-          title="1 ekstra bildefil"
-          price={priceList.extraPicture}
+          title="Minipakke m/ 3 digitale filer"
+          price={priceList.extraPicture3}
         >
-          1 stk. ekstra redigert høyoppløselig bildefil
+          3 stk. etterbehandlede digitale bildefiler i høy oppløsning.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="5 ekstra bildefiler"
+          title="Liten pakke m/ 5 digitale filer"
           price={priceList.extraPicture5}
         >
-          5 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 200,- i rabatt.
+          5 stk. etterbehandlede digitale bildefiler i høy oppløsning.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="10 ekstra bildefiler"
+          title="Medium pakke m/ 10 digitale filer"
           price={priceList.extraPicture10}
         >
-          10 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 400,- i
-          rabatt.
+          10 stk. etterbehandlede digitale bildefiler i høy oppløsning.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="15 ekstra bildefiler"
+          title="Stor pakke m/ 15 digitale filer"
           price={priceList.extraPicture15}
         >
-          15 stk. ekstra redigerte høyoppløselige bildefiler, Kr. 600,- i
-          rabatt.
+          15 stk. etterbehandlede digitale bildefiler i høy oppløsning.
         </Collapsible>
-
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildefil før pakkepris"
+          price={priceList.extraPictureBefore}
+        >
+          1-2 stk. digital bildefil i høy oppløsning. Prisen gjelder hvis man
+          kun ønsker 1 eller 2 digitale bilder.
+        </Collapsible>
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Bildefil etter pakkepris"
+          price={priceList.extraPictureAfter}
+        >
+          Ekstra digitale bildefiler i høy oppløsning. Prisen gjelder etter man
+          har bestilt en pakke med digitale filer.
+        </Collapsible>
         <div className="section-divider"></div>
 
         <div className="category-under-title">Bildekopier</div>
+
         <Collapsible
           outerClassName="prices-heading"
-          title="Bildekopi 10x12cm / 12x12cm"
-          price={priceList.copy10x12}
-        >
-          Bildekopi trykket på fotopapir, med blank overflate.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Bildekopi 15x20cm / 15x15cm"
+          title="Bildekopi 15x20cm"
           price={priceList.copy15x20}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="Bildekopi 20x20cm"
-          price={priceList.copy20x20}
-        >
-          Bildekopi trykket på fotopapir, med blank overflate.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Bildekopi 20x25cm / 20x30cm"
+          title="Bildekopi 20x30cm"
           price={priceList.copy20x25}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="Bildekopi 30x30cm / 30x40cm"
+          title="Bildekopi 30x40cm"
           price={priceList.copy30x30}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="Bildekopi 30x60cm / 40x40cm / 40x50cm"
+          title="Bildekopi 40x50cm"
           price={priceList.copy30x60}
-        >
-          Bildekopi trykket på fotopapir, med blank overflate.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Bildekopi 40x80cm / 50x60cm / 50x70cm"
-          price={priceList.copy40x80}
         >
           Bildekopi trykket på fotopapir, med blank overflate.
         </Collapsible>
         <div className="section-divider"></div>
 
-        <div className="category-under-title">Lerretsbilder</div>
+        <div className="category-under-title">Veggbilder</div>
         <Collapsible
           outerClassName="prices-heading"
-          title="Lerret med blindramme 20x25cm / 20x30cm"
-          price={priceList.canvas20x25}
+          title="Veggbilde 20x30cm"
+          price={priceList.wallPicture20x30}
         >
-          Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
-          lamineres med satinmatt overflate for holdbarhet, før lerretet
+          Lerretsbilder og bilde trykket på skumplate har samme pris. Du velger
+          derfor mellom disse. <br />
+          <br />
+          Lerret: Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet,
+          og lamineres med satinmatt overflate for holdbarhet, før lerretet
           monteres på en blindramme.
+          <br />
+          Skumplate: Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="Lerret med blindramme 30x40cm"
-          price={priceList.canvas30x40}
+          title="Veggbilde 30x40cm"
+          price={priceList.wallPicture30x40}
         >
-          Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
-          lamineres med satinmatt overflate for holdbarhet, før lerretet
+          Lerretsbilder og bilde trykket på skumplate har samme pris. Du velger
+          derfor mellom disse. <br />
+          <br />
+          Lerret: Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet,
+          og lamineres med satinmatt overflate for holdbarhet, før lerretet
           monteres på en blindramme.
+          <br />
+          Skumplate: Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="Lerret med blindramme 30x60cm / 40x40cm / 40x50cm"
-          price={priceList.canvas30x60}
+          title="Veggbilde 40x50cm"
+          price={priceList.wallPicture40x50}
         >
-          Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
-          lamineres med satinmatt overflate for holdbarhet, før lerretet
+          Lerretsbilder og bilde trykket på skumplate har samme pris. Du velger
+          derfor mellom disse. <br />
+          <br />
+          Lerret: Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet,
+          og lamineres med satinmatt overflate for holdbarhet, før lerretet
           monteres på en blindramme.
+          <br />
+          Skumplate: Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="Lerret med blindramme 40x60cm / 50x60cm / 50x70cm"
-          price={priceList.canvas40x60}
+          title="Veggbilde 50x70cm"
+          price={priceList.wallPicture50x70}
         >
-          Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet, og
-          lamineres med satinmatt overflate for holdbarhet, før lerretet
+          Lerretsbilder og bilde trykket på skumplate har samme pris. Du velger
+          derfor mellom disse. <br />
+          <br />
+          Lerret: Bilder trykkes på syrefritt bomullslerret av høyeste kvalitet,
+          og lamineres med satinmatt overflate for holdbarhet, før lerretet
           monteres på en blindramme.
+          <br />
+          Skumplate: Bildene monteres på Kapaplate, med matt overflate.
         </Collapsible>
         <div className="section-divider"></div>
         <div className="category-under-title">Album</div>
         <Collapsible
           outerClassName="prices-heading"
-          title="Album 20x20cm - 20 sider"
+          title="Album kvadratisk 20x20cm - 20 sider"
           price={priceList.album20x20x20}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
-          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
-          sider. Det er ikke mulig å velge flere eller færre sider.
+          kvadratisk eller panorama. Disse albumene består av 20 eller 30 sider.
+          Det er ikke mulig å velge flere eller færre sider.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="Album 20x20cm - 30 sider"
+          title="Album kvadratisk 20x20cm - 30 sider"
           price={priceList.album20x20x30}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
-          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
-          sider. Det er ikke mulig å velge flere eller færre sider.
+          kvadratisk eller panorama. Disse albumene består av 20 eller 30 sider.
+          Det er ikke mulig å velge flere eller færre sider.
         </Collapsible>
 
         <Collapsible
           outerClassName="prices-heading"
-          title="Album 30x30cm - 20 sider"
+          title="Album kvadratisk 30x30cm - 20 sider"
           price={priceList.album30x30x20}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
-          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
-          sider. Det er ikke mulig å velge flere eller færre sider.
+          kvadratisk eller panorama. Disse albumene består av 20 eller 30 sider.
+          Det er ikke mulig å velge flere eller færre sider.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
-          title="Album 30x30cm - 30 sider"
+          title="Album kvadratisk 30x30cm - 30 sider"
           price={priceList.album30x30x30}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
-          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
-          sider. Det er ikke mulig å velge flere eller færre sider.
+          kvadratisk eller panorama. Disse albumene består av 20 eller 30 sider.
+          Det er ikke mulig å velge flere eller færre sider.
         </Collapsible>
 
         <Collapsible
@@ -904,8 +965,8 @@ export function Prices() {
           price={priceList.album30x22x20}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
-          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
-          sider. Det er ikke mulig å velge flere eller færre sider.
+          kvadratisk eller panorama. Disse albumene består av 20 eller 30 sider.
+          Det er ikke mulig å velge flere eller færre sider.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
@@ -913,46 +974,8 @@ export function Prices() {
           price={priceList.album30x22x30}
         >
           Her bestiller man ferdig monterte album, hvor man kan velge mellom
-          kvadratisk eller panorama. Disse albumene består av 20, 30 eller 40
-          sider. Det er ikke mulig å velge flere eller færre sider.
-        </Collapsible>
-
-        <div className="section-divider"></div>
-        <div className="category-under-title">Skumplate</div>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Skumplate 15x20cm / 15x15cm"
-          price={priceList.foam15x20}
-        >
-          Bildene monteres på Kapaplate, med matt overflate.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Skumplate 20x25cm / 20x30cm"
-          price={priceList.foam20x25}
-        >
-          Bildene monteres på Kapaplate, med matt overflate.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Skumplate 30x30cm / 30x40cm"
-          price={priceList.foam30x30}
-        >
-          Bildene monteres på Kapaplate, med matt overflate.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Skumplate 30x60cm / 40x40cm / 40x50cm"
-          price={priceList.foam30x60}
-        >
-          Bildene monteres på Kapaplate, med matt overflate.
-        </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Skumplate 40x80cm / 50x60cm / 50x70cm"
-          price={priceList.foam40x80}
-        >
-          Bildene monteres på Kapaplate, med matt overflate.
+          kvadratisk eller panorama. Disse albumene består av 20 eller 30 sider.
+          Det er ikke mulig å velge flere eller færre sider.
         </Collapsible>
       </div>
       <Underline></Underline>

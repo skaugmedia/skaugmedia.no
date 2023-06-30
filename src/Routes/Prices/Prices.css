@@ -1,3 +1,96 @@
+.discount-offer-box-title{
+  padding-left: 60px;
+  text-align: left;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.prices-offers-next-free-date-title{
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: left;
+  color: var(--blue);
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.prices-offers-next-free-date-row {
+  text-align: left;
+}
+
+
+.prices-offers-next-free-date-box{
+  background-color: var(--blue);
+  color: #e7e7e7;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: inline-flex;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+ align-items: center; 
+}
+
+.prices-offers-next-free-date {
+
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.discount-offer-box {
+display:flex;
+padding-top: 10px;
+width: var(--content-width);
+gap: 10px;
+justify-content: center;
+padding-bottom: 20px;
+background-color: var(--lightgreen);
+padding-left: 60px;
+padding-right: 60px;
+}
+
+.pregnancy-discount-offer {
+  width: 310px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.oneyear-discount_offer {
+  width: 310px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.always-discount-offer {
+  width: 310px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.discount-offer-special {
+  font-size: 0.8em;
+}
+
+.discount-offer-img{
+width: 200px;
+}
+
+.discount-offer-title{
+  font-size: 1.2em;
+}
+
 .prices {
   display: flex;
   align-items: center;
@@ -13,16 +106,18 @@
 .prices-offers-box {
   background-color: var(--lightgreen);
   width: 100%;
-  padding-bottom: 50px;
+
   padding-top: 50px;
 }
 
 .category-title-offers {
-  text-align: center;
+ padding-left: 60px;
+  text-align: left;
   color: var(--blue);
   font-weight: 600;
   font-size: 1.5em;
   text-transform: uppercase;
+  
 }
 
 .prices-heading {
@@ -41,7 +136,7 @@
 
 .prices-offers {
   color: black;
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   font-family: nunito;
   font-size: 1.2em;
@@ -49,6 +144,7 @@
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 5px;
+
 }
 
 .category-title {

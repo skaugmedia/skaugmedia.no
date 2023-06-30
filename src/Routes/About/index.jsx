@@ -1,10 +1,9 @@
 import FotografiHeading from "../../Components/Headings/FotografiHeading";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import aboutnina from "../../Images/me.jpg";
 import classes from "./About.module.css";
-import { Image } from "/src/Components/Image";
 import pageName from "./PageName";
-import { PageSection } from "../../Components/PageSection";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { Image } from "/src/Components/Image";
 
 export function About() {
   useDocumentTitle(pageName);
@@ -42,9 +41,9 @@ function Paragraphs() {
         du kan ha glede av i mange år fremover, om ikke for alltid!
       </p>
       <p>
-        Jeg bor på Jessheim i Ullensaker kommune, sammen med samboer og en sønn
-        på 1 år. Jeg tar på meg oppdrag på Romerike, Oslo og omegn, men ta
-        gjerne kontakt om du lurer på om du bor for langt unna.
+        Jeg bor på Jessheim i Ullensaker kommune, sammen med min forlovede og en
+        sønn på 1,5 år. Jeg tar på meg oppdrag på Romerike, Oslo og omegn, men
+        ta gjerne kontakt om du lurer på om du bor for langt unna.
       </p>
       <p>
         For meg er det viktig at dere skal kose dere foran kamera, og tørre å
