@@ -1,4 +1,4 @@
-.discount-offer-box-title{
+.discount-offer-box-title {
   padding-left: 60px;
   text-align: left;
   color: var(--blue);
@@ -8,7 +8,7 @@
   margin-top: 20px;
 }
 
-.prices-offers-next-free-date-title{
+.prices-offers-next-free-date-title {
   padding-left: 60px;
   padding-right: 60px;
   text-align: left;
@@ -21,8 +21,7 @@
   text-align: left;
 }
 
-
-.prices-offers-next-free-date-box{
+.prices-offers-next-free-date-box {
   background-color: var(--blue);
   color: #e7e7e7;
   padding-left: 60px;
@@ -32,62 +31,49 @@
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 1.5em;
- align-items: center; 
+  align-items: center;
 }
 
 .prices-offers-next-free-date {
-
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .discount-offer-box {
-display:flex;
-padding-top: 10px;
-width: var(--content-width);
-gap: 10px;
-justify-content: center;
-padding-bottom: 20px;
-background-color: var(--lightgreen);
-padding-left: 60px;
-padding-right: 60px;
+  display: flex;
+  padding-top: 10px;
+  width: 100vw;
+  max-width: var(--content-width);
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 20px;
+  background-color: var(--lightgreen);
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-.pregnancy-discount-offer {
-  width: 310px;
-  background-color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.oneyear-discount_offer {
-  width: 310px;
-  background-color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+.pregnancy-discount-offer,
+.oneyear-discount_offer,
 .always-discount-offer {
-  width: 310px;
+  width: 100%;
+  max-width: 310px;
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .discount-offer-special {
   font-size: 0.8em;
 }
 
-.discount-offer-img{
-width: 200px;
+.discount-offer-img {
+  width: 200px;
 }
 
-.discount-offer-title{
+.discount-offer-title {
   font-size: 1.2em;
 }
 
@@ -111,13 +97,12 @@ width: 200px;
 }
 
 .category-title-offers {
- padding-left: 60px;
+  padding-left: 60px;
   text-align: left;
   color: var(--blue);
   font-weight: 600;
   font-size: 1.5em;
   text-transform: uppercase;
-  
 }
 
 .prices-heading {
@@ -144,7 +129,6 @@ width: 200px;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 5px;
-
 }
 
 .category-title {
@@ -263,5 +247,12 @@ width: 200px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
+  }
+
+  .discount-offer-box {
+    flex-flow: column;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
   }
 }
