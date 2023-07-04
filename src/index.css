@@ -47,6 +47,6 @@ code {
 
 @media only screen and (max-width: 600px) {
   :root {
-    --content-width: 600px;
+    --content-width: 100vw;
   }
 }
