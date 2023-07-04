@@ -57,7 +57,7 @@
 .oneyear-discount_offer,
 .always-discount-offer {
   width: 100%;
-  max-width: 310px;
+  max-width: 300px;
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -70,7 +70,8 @@
 }
 
 .discount-offer-img {
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
 }
 
 .discount-offer-title {
@@ -223,11 +224,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+  
+  
   .prices {
     flex-flow: column;
     width: 100%;
     width: var(--content-width);
     max-width: 80%;
+  }
+
+  .prices-content{
+    width: 100%;
   }
 
   .section-category {
@@ -244,15 +251,64 @@
 
   .prices-offers {
     font-size: 0.9em;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 5px;
+    text-align: left;
+   
+  }
+
+  .pregnancy-discount-offer,
+  .oneyear-discount_offer,
+  .always-discount-offer {
+    width: calc(100% - 60px);
+    max-width: initial;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
   }
 
   .discount-offer-box {
     flex-flow: column;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0;
+    padding-right: 0;
     align-items: center;
+    width: 100%;
+    align-self: center;
+    margin-left: 0;
+    margin-right: 0;
   }
+
+  .discount-offer-img {
+    max-width: initial;
+    width: calc(100% - 30px);
+  }
+
+  .discount-offer-box-title{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+ .category-title-offers{
+    font-size: 1.25em;
+    text-align: left;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .prices-offers-next-free-date-box {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .prices-offers-next-free-date{
+    font-size: 0.9em;
+    
+  
+  }
+
+  
+
+ 
 }

@@ -91,6 +91,11 @@ export function Prices() {
             <br />- 1 etterbehandlet digital bildefil
             <br />- Mulighet for å kjøpe flere bilder, og trykkede produkter
             <br />- Rabattkupong som kan brukes på valgfri fotografering
+            <br />
+            <br />
+            <span style={{ fontWeight: "bold" }}>
+              Fotograferingen vil foregå ved Nordbytjernet på Jessheim.
+            </span>
           </div>
 
           <div className="discount-offer-box-title">Faste rabatter</div>
@@ -104,8 +109,8 @@ export function Prices() {
               ></img>
 
               <div className="discount-offer-text">
-                50% avslag på gravidfotografering, ved booking av
-                nyfødtfotografering.
+                50% avslag på nyfødtfotografering, ved booking av ordinær
+                gravidfotografering.
               </div>
             </div>
             <div className="oneyear-discount_offer">
@@ -181,7 +186,7 @@ export function Prices() {
           <br />
           <span className="discount-price">
             Ved booking av nyfødtfotografering gjennom meg, får man 50% avslag
-            på babyfotografering (når babyen er mellom 6 og 12 måneder gammel.)
+            på 1-års fotografering.
           </span>
           <br />
           <br />
@@ -352,8 +357,9 @@ export function Prices() {
           <br />
           <br />
           <span className="discount-price">
-            Ved booking av gravidfotografering gjennom meg, får man 50% avslag
-            på nyfødtfotografering.
+            Få 50% avslag på nyfødtfotografering ved booking av ordinær
+            gravidfotografering. Hver måned tilbyr jeg også en dag med
+            minifotograferinger av gravide. Se mer info øverst på denne siden.
           </span>
           <br />
           <br />
