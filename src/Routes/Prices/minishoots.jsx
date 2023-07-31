@@ -1,6 +1,6 @@
-import * as ids from "./Ids";
 import { Collapsible } from "../../Components/Collapsible";
 import { IncludesList } from "./Components/IncludesList";
+import * as ids from "./Ids";
 
 export const siblings = ({ ref, open }) => (
   <Collapsible
@@ -74,6 +74,36 @@ export const confirmation = ({ ref, open }) => (
       Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt til
       avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
     </p>
+  </Collapsible>
+);
+
+export const sunflower = ({ ref, open }) => (
+  <Collapsible
+    id={ids.miniSessionSunflower}
+    outerRef={ref}
+    open={open}
+    outerClassName="prices-heading"
+    title="Minifotografering i solsikkeåker"
+    price="Kr. 900,-"
+  >
+    Valgfri minifotografering i solsikkeåker 21. august 2023 på en gård i
+    Lillestrøm kommune. Adressen mottas ved booking. Kan ikke kombineres med
+    andre tilbud. Fotograferingen betales ved booking for å reservere din tid.
+    <p>Ledige fotograferinger:</p>
+    <p className="prices-time">
+      Kl. 13.30, kl. 14.00, kl. 14.30, kl. 15.00, kl. 15.30, kl. 16.00, kl.
+      16.30, kl. 17.00
+    </p>
+    <p>Inkluderer:</p>
+    <IncludesList
+      items={[
+        "20 minutters fotografering på en gård i Lillestrøm kommune",
+        "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+        "3 stk. redigerte, høyoppløselige bilder",
+        "Bildene leveres digitalt",
+        "Mulighet for å kjøpe ekstra bilder og trykk",
+      ]}
+    />
   </Collapsible>
 );
 

@@ -76,6 +76,19 @@ export const discounts = [
     ),
     link: `/${PricesRoute}#${ids.miniSessionMinisessions}`,
     validFrom: localTime("01-07-2023 00:00"),
-    validTo: localTime("01-08-2023 00:00"),
+    validTo: localTime("30-07-2023 00:00"),
+  },
+  {
+    title: "Valgfri minifotografering i solsikkeåker",
+    price: "Kr. 900,-",
+    description: (
+      <>
+        Valgfri minifotografering i solsikkeåker 21. august 2023, på en gård i
+        Lillestrøm kommune.
+      </>
+    ),
+    link: `/${PricesRoute}#${ids.miniSessionSunflower}`,
+    validFrom: localTime("31-07-2023 00:00"),
+    validTo: localTime("21-08-2023 00:00"),
   },
 ];

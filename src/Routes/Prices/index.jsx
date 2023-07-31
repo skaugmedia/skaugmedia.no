@@ -49,14 +49,18 @@ export function Prices() {
       ref: refs.miniSessionMinisessions.ref,
       open: open.miniSessionMinisessions,
     },
+    sunflower: {
+      ref: refs.miniSessionSunflower.ref,
+      open: open.miniSessionSunflower,
+    },
   };
 
   const now = new Date();
   const miniSessionElements = [
     {
-      el: () => minishoot.minisessions(minishootsOpts.minisessions),
-      validFrom: localTime("27-04-2023 00:00"),
-      validTo: localTime("01-07-2023 00:00"),
+      el: () => minishoot.sunflower(minishootsOpts.sunflower),
+      validFrom: localTime("31-07-2023 00:00"),
+      validTo: localTime("22-08-2023 00:00"),
     },
   ].filter((s) => isWithinRange(s.validFrom, now, s.validTo));
 
