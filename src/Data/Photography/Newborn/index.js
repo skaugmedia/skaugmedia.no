@@ -1,4 +1,12 @@
 import { oneLine } from "common-tags";
+import l1 from "../../../Images/l_newborn_1.jpg";
+import l2 from "../../../Images/l_newborn_2.jpg";
+import l3 from "../../../Images/l_newborn_3.jpg";
+import l4 from "../../../Images/l_newborn_4.jpg";
+import l5 from "../../../Images/l_newborn_5.jpg";
+import l6 from "../../../Images/l_newborn_6.jpg";
+import l7 from "../../../Images/l_newborn_7.jpg";
+import l8 from "../../../Images/l_newborn_8.jpg";
 import liam1 from "../../../Images/newborn_liam_1.jpg";
 import liam2 from "../../../Images/newborn_liam_2.jpg";
 import liam3 from "../../../Images/newborn_liam_3.jpg";
@@ -6,6 +14,7 @@ import liam4 from "../../../Images/newborn_liam_4.jpg";
 import liam5 from "../../../Images/newborn_liam_5.jpg";
 import liam6 from "../../../Images/newborn_liam_6.jpg";
 import liam7 from "../../../Images/newborn_liam_7.jpg";
+
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
 import { priceList } from "../../priceList";
@@ -77,6 +86,61 @@ export default {
         },
       ],
       date: "2021-11-01",
+    },
+    {
+      description: "Lille L",
+      tags: ["nyfødt", "baby", "gutt"],
+      images: [
+        {
+          url: l1,
+          title: "Lille L",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: l2,
+          title: "Lille L",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: l3,
+          title: "Lille L",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: l4,
+          title: "Lille L",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: l5,
+          title: "Lille L",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: l6,
+          title: "Lille L",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: l7,
+          title: "Lille L",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: l8,
+          title: "Lille L",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-06-19",
     },
   ],
 };

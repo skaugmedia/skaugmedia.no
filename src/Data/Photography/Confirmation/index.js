@@ -1,4 +1,12 @@
 import { oneLine } from "common-tags";
+import espen_1 from "../../../Images/espen_konfirmant_1.jpg";
+import espen_2 from "../../../Images/espen_konfirmant_2.jpg";
+import espen_3 from "../../../Images/espen_konfirmant_3.jpg";
+import espen_4 from "../../../Images/espen_konfirmant_4.jpg";
+import espen_5 from "../../../Images/espen_konfirmant_5.jpg";
+import espen_6 from "../../../Images/espen_konfirmant_6.jpg";
+import espen_7 from "../../../Images/espen_konfirmant_7.jpg";
+import espen_8 from "../../../Images/espen_konfirmant_8.jpg";
 import heidi_1 from "../../../Images/heidi_1.jpg";
 import heidi_2 from "../../../Images/heidi_2.jpg";
 import keshra_1 from "../../../Images/keshra_1.jpg";
@@ -35,6 +43,61 @@ export default {
     link: `/${PricesRoute}#${ids.confirmation}`,
   },
   shoots: [
+    {
+      description: "Espen",
+      tags: ["gutt", "konfirmant", "festpyntet", "nordbytjernet"],
+      images: [
+        {
+          url: espen_1,
+          title: "Espen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: espen_2,
+          title: "Espen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: espen_3,
+          title: "Espen",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: espen_4,
+          title: "Espen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: espen_5,
+          title: "Espen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: espen_6,
+          title: "Espen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: espen_7,
+          title: "Espen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: espen_8,
+          title: "Espen",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-06-23",
+    },
     {
       description: "Silje Viktoria",
       tags: ["jente", "konfirmant", "festdrakt", "nordbytjernet"],
