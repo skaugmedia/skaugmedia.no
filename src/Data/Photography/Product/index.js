@@ -72,6 +72,7 @@ export default {
     {
       description: "Pent og Brukt sommer",
       tags: ["produkt", "bedrift"],
+      hideFromRecentWorks: true,
       images: [
         {
           url: pogb_produkt_3,
@@ -218,7 +219,7 @@ export default {
           height: 1000,
         },
       ],
-      date: "2023-05-16",
+      date: "2023-06-12",
     },
     {
       description: "Rosendahl champagneglass",
