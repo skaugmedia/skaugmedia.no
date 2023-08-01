@@ -1,10 +1,11 @@
-import { categories } from "/src/Data/Photography";
-import { projects } from "/src/Data/GraphicalDesign";
-import photoRoute from "../Photography/Route";
 import designRoute from "../GraphicalDesign/Route";
+import photoRoute from "../Photography/Route";
+import { projects } from "/src/Data/GraphicalDesign";
+import { categories } from "/src/Data/Photography";
 import { byDate } from "/src/utils";
 
 export default function Loader() {
+  const shouldNotHideFromRecentWorks = (work) => !work.hideFromRecentWorks;
   const shoots = categories.flatMap((category) =>
     category.shoots.map((shoot) => ({
       url: `${photoRoute}/${category.id}`,
@@ -13,6 +14,7 @@ export default function Loader() {
       img: shoot.images[0],
       title: shoot.description,
       category: category.title,
+      hideFromRecentWorks: shoot.hideFromRecentWorks,
     }))
   );
 
@@ -23,8 +25,13 @@ export default function Loader() {
     img: project.cover,
     title: project.title,
     category: project.category,
+    hideFromRecentWorks: project.hideFromRecentWorks,
   }));
 
-  const recentWorks = shoots.concat(projs).sort(byDate).slice(0, 4);
+  const recentWorks = shoots
+    .concat(projs)
+    .filter(shouldNotHideFromRecentWorks)
+    .sort(byDate)
+    .slice(0, 4);
   return { recentWorks };
 }
