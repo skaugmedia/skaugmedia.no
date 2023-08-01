@@ -89,6 +89,21 @@ export const discounts = [
     ),
     link: `/${PricesRoute}#${ids.miniSessionSunflower}`,
     validFrom: localTime("31-07-2023 00:00"),
+    validTo: localTime("17-08-2023 00:00"),
+  },
+
+  {
+    title: "HELGETILBUD",
+    price: "-30% på fotograferinger",
+    description: (
+      <>
+        -30% på alle fotograferinger som bookes torsdag, fredag, lørdag og
+        søndag. Tilbudet gjelder 17.08.23 - 20.08.23. *Gjelder ikke for
+        bedrifter eller minifotograferinger.
+      </>
+    ),
+
+    validFrom: localTime("17-08-2023 00:00"),
     validTo: localTime("21-08-2023 00:00"),
   },
 ];
