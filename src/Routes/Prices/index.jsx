@@ -78,7 +78,7 @@ export function Prices() {
             <div className="prices-offers-next-free-date-box">
               <div className="prices-offers-next-free-date">
                 {" "}
-                Neste ledige dato: 07.08.2023
+                Neste ledige dato: 04.09.2023
               </div>
             </div>
           </div>
@@ -637,7 +637,8 @@ export function Prices() {
           Hvis man velger vielse + portrettfotografering, vil dette inkludere
           ca. 2,5 timer med fotografering totalt. Da fotograferer jeg hele
           vielsen, i tillegg til portretter etter vielsen. Dere får da 35 ferdig
-          redigerte bilder- som dere selv velger ut fra et online galleri.
+          redigerte bilder- som dere selv velger ut fra et online galleri. Denne
+          pakken kan også tilpasses deres ønsker.
           <br />
           <br />
           <span className="discount-price">
@@ -649,26 +650,22 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale antrekk og lokasjon",
-              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
+              "Samtale/møte i god tid før den store dagen for planlegging",
               "Fotografering under vielsen",
-              "1,5 timers portrettfotografering etter vielsen",
+              "Portrettfotografering",
               "Fotografering med familie og forlovere etter vielsen",
               "Digitalt bildegalleri hvor man velger bilder",
               "35 stk. redigerte, høyoppløselige bilder",
               "Bildene leveres digitalt",
+              "Mulighet for å kjøpe flere digitale filer og bildeprodukter",
             ]}
           />
           Les mer om hvilke produkter man kan bestille etter fotograferingen,
           lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
-            Helgetillegg: {priceList.weekendSurcharge}
-            <br />
-            <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering under 24 timer før avtalt tid, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering faktureres i sin helhet, og kjøring
@@ -696,25 +693,20 @@ export function Prices() {
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale før fotografering for å avtale antrekk og lokasjon",
-              "Opptil 1 time fotografering på lokasjon inne eller ute (vi blir sammen enige om hvor)",
-              "Fotografering under vielsen",
-              "1,5 timers portrettfotografering etter vielsen",
+              "Samtale/møte i god tid før den store dagen for planlegging",
+              "Portrettfotografering ca. 1,5 time",
               "Digitalt bildegalleri hvor man velger bilder",
               "15 stk. redigerte, høyoppløselige bilder",
               "Bildene leveres digitalt",
+              "Mulighet for å kjøpe flere digitale filer og bildeprodukter",
             ]}
           />
           Les mer om hvilke produkter man kan bestille etter fotograferingen,
           lenger ned på siden.
           <br />
           <p className="additional-prices">
-            Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
-            Helgetillegg: {priceList.weekendSurcharge}
-            <br />
-            <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering under 24 timer før avtalt tid, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
             Eventuell betalt parkering faktureres i sin helhet, og kjøring
