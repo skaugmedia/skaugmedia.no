@@ -1,4 +1,4 @@
-import { isBefore, isWithinRange } from "../../utils";
+import { isWithinRange } from "../../utils";
 import { MiniSessionButton } from "../MiniSessionButton";
 import classes from "./DiscountBanner.module.css";
 
@@ -21,11 +21,13 @@ export function DiscountBanner({
       <div className={classes.title}>{title}</div>
       <div className={classes.price}>{price}</div>
       <div className={classes.description}>{description}</div>
-      <MiniSessionButton
-        buttonText={buttonText}
-        link={link}
-        className={classes.button}
-      />
+      {!!link && (
+        <MiniSessionButton
+          buttonText={buttonText}
+          link={link}
+          className={classes.button}
+        />
+      )}
     </div>
   );
 }
