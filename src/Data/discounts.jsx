@@ -102,7 +102,7 @@ export const discounts = [
         bedrifter eller minifotograferinger.
       </>
     ),
-
+    link: `/${PricesRoute}`,
     validFrom: localTime("17-08-2023 00:00"),
     validTo: localTime("21-08-2023 00:00"),
   },
