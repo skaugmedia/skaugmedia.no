@@ -98,8 +98,9 @@ export const discounts = [
     description: (
       <>
         -30% på alle fotograferinger som bookes torsdag, fredag, lørdag og
-        søndag. Tilbudet gjelder 17.08.23 - 20.08.23. *Gjelder ikke for
-        bedrifter eller minifotograferinger.
+        søndag. Tilbudet gjelder 17.08.23 - 20.08.23.
+        <br />
+        *Gjelder ikke for bedrifter eller minifotograferinger.
       </>
     ),
 
