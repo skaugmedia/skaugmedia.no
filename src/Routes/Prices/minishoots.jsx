@@ -67,6 +67,35 @@ export const confirmation = ({ ref, open }) => (
   </Collapsible>
 );
 
+export const christmas = ({ ref, open }) => (
+  <Collapsible
+    id={ids.miniSessionChristmas}
+    outerRef={ref}
+    open={open}
+    outerClassName="prices-heading"
+    title="Minifotografering jul"
+    price="Kr. 1200,-"
+  >
+    Minifotografering julefotografering 21. oktober 2023.
+    <p>Inkluderer:</p>
+    <IncludesList
+      items={[
+        "20 minutters valgfri fotografering utendørs",
+        "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
+        "2 stk. digitale bildefiler i høy oppløsning",
+        "Mulighet for å kjøpe digitale bilder og flere bildeprodukter",
+        "Mail med informasjon om lokasjon og tips til hva du kan ha på deg når det nærmer seg",
+      ]}
+    />
+    Du booker fotograferingen ved å sende en mail til booking@skaugmedia.no,
+    merket med "julefotografering" eller ta kontakt via kontaktskjema her på
+    nettsiden.
+    <p className="additional-prices">
+      Faktura sendes ut ved booking, og må betales før fotograferingen.
+    </p>
+  </Collapsible>
+);
+
 export const sunflower = ({ ref, open }) => (
   <Collapsible
     id={ids.miniSessionSunflower}

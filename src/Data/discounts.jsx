@@ -117,4 +117,17 @@ export const discounts = [
     validFrom: localTime("20-08-2023 00:00"),
     validTo: localTime("26-08-2023 00:00"),
   },
+  {
+    title: "Minifotografering jul",
+    price: "Kr. 1200,-",
+    description: (
+      <>
+        Julefotografering utendørs 21. oktober 2023.
+        <br />
+      </>
+    ),
+    link: `/${PricesRoute}#${ids.miniSessionChristmas}`,
+    validFrom: localTime("26-08-2023 00:00"),
+    validTo: localTime("21-10-2023 00:00"),
+  },
 ];
