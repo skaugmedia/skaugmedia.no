@@ -47,32 +47,22 @@ export const confirmation = ({ ref, open }) => (
     outerRef={ref}
     open={open}
     outerClassName="prices-heading"
-    title="Konfirmant (gjelder fotografering 20. mai)"
+    title="Minifotografering konfirmanter"
     price="Kr. 1000,-"
   >
-    Minifotografering av konfirmanter 20. mai 2023, ved Nordbytjernet på
-    Jessheim. Kun oppsatte tidspunkter kan bookes. Kan ikke kombineres med andre
-    tilbud.
-    <p>Ledige fotograferinger:</p>
-    <p className="prices-time">
-      Kl. 11.00, kl. 11.30, kl. 12.00, kl. 12.30, kl. 13.00, kl. 13.30, kl.
-      14.00, kl. 14.30, kl. 15.00, kl. 15.30
-    </p>
+    Minifotografering av konfirmanter 26. august 2023, ved Nordbytjernet på
+    Jessheim.
     <p>Inkluderer:</p>
     <IncludesList
       items={[
         "20 minutters fotografering ved Nordbytjernet på Jessheim",
         "Digitalt bildegalleri hvor man selv velger hvilke bilder man ønsker å bestille",
-        "3 stk. redigerte, høyoppløselige bilder",
-        "Bildene leveres digitalt",
-        "Mulighet for å kjøpe ekstra bilder",
+        "2 stk. valgfrie bildekopier i 15x20cm",
+        "Mulighet for å kjøpe digitale bilder og flere bildeprodukter",
       ]}
     />
-    Ønsker du å bestille flere bilder enn de 3 stk. som er inkludert, er prisen
-    kr. 600,- per bilde.
     <p className="additional-prices">
-      Ved kansellering innen 24 timer før avtalt tid eller ikke oppmøtt til
-      avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+      Faktura sendes ut ved booking, og må betales før fotograferingen.
     </p>
   </Collapsible>
 );

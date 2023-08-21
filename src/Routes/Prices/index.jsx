@@ -58,9 +58,9 @@ export function Prices() {
   const now = new Date();
   const miniSessionElements = [
     {
-      el: () => minishoot.sunflower(minishootsOpts.sunflower),
-      validFrom: localTime("31-07-2023 00:00"),
-      validTo: localTime("22-08-2023 00:00"),
+      el: () => minishoot.confirmation(minishootsOpts.confirmation),
+      validFrom: localTime("20-08-2023 00:00"),
+      validTo: localTime("26-08-2023 00:00"),
     },
   ].filter((s) => isWithinRange(s.validFrom, now, s.validTo));
 

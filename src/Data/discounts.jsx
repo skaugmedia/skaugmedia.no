@@ -107,4 +107,14 @@ export const discounts = [
     validFrom: localTime("17-08-2023 00:00"),
     validTo: localTime("21-08-2023 00:00"),
   },
+  {
+    title: "Minifotografering konfirmanter 26.08.2023",
+    price: "Kr. 1000,-",
+    description: (
+      <>Minifotografering av konfirmanter ved Nordbytjernet på Jessheim.</>
+    ),
+    link: `/${PricesRoute}#${ids.miniSessionConfirmation}`,
+    validFrom: localTime("20-08-2023 00:00"),
+    validTo: localTime("26-08-2023 00:00"),
+  },
 ];
