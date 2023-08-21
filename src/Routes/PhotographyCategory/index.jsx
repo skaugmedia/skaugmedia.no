@@ -5,12 +5,14 @@ import { NavLink, useLoaderData } from "react-router-dom";
 import PhotographyHeading from "../../Components/Headings/FotografiHeading";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { useNoIndex } from "../../Hooks/useNoIndex";
 import classes from "./PhotographyCategory.module.css";
 import { byDate } from "/src/utils";
 
 export function PhotographyCategory() {
   const { category } = useLoaderData();
   useDocumentTitle(category.title);
+  useNoIndex();
   const [index, setIndex] = useState(-1);
   const gallery = useRef(null);
 
