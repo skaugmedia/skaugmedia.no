@@ -142,6 +142,100 @@ padding-top: 200px;
   align-items: right;
 }
 
+.newborn-discount-row {
+  display: flex;
+  gap: 20%px;
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: center;
+  align-items: left;
+  padding-bottom: 20px;
+margin-top: 30px;
+}
+
+.newborn-discount-textbox {
+  width: 50%;
+  align-items: left;
+  padding-top: 70px;
+  margin-left: 40px;
+  
+  }
+
+  .newborn-discount-header {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--green);
+    text-align: left;
+    margin-bottom: -40px;
+  }
+
+  .newborn-discount-sub-header {
+    font-size: 10em;
+    font-weight: 700;
+    color: var(--blue);
+    text-align: left;
+    margin-bottom: -20px;
+  }
+
+  .newborn-discount-text {
+    font-size: 2em;
+    
+    text-align: left;
+    margin-top: 2px;
+  }
+
+.newborn-discount-img {
+  width: 50%;
+  align-items: left;
+}
+
+.one-discount-row {
+  display: flex;
+  gap: 20%px;
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: center;
+  align-items: left;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.one-discount-textbox {
+  width: 50%;
+  align-items: right;
+  padding-top: 70px;
+  margin-left: 40px;
+  
+  }
+
+  .one-discount-header {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--blue);
+    text-align: left;
+    margin-bottom: -40px;
+  }
+
+  .one-discount-sub-header {
+    font-size: 10em;
+    font-weight: 700;
+    color: var(--green);
+    text-align: left;
+    margin-bottom: -20px;
+  }
+
+  .one-discount-text {
+    font-size: 2em;
+    
+    text-align: left;
+    margin-top: 2px;
+  }
+
+.one-discount-img {
+  width: 50%;
+  align-items: right;
+}
+
 .flex-child:not(:last-child) {
   margin-right: 0px;
 }

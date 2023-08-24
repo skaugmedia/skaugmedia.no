@@ -2,8 +2,10 @@ import { NavLink, useLoaderData } from "react-router-dom";
 import { Image } from "../../Components/Image";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import oneDiscount from "../../Images/1-year-photo.jpg";
 import cover from "../../Images/coverphoto.jpg";
 import freePregnancyShoot from "../../Images/free_pregnancy_shoot.jpg";
+import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
 
 import "./Home.css";
@@ -137,6 +139,50 @@ export function Home() {
           <img
             className="free-pregnancy-img"
             src={freePregnancyShoot}
+            alt="Gratis minifotografering av gravide"
+          ></img>
+        </div>
+
+        <div className="newborn-discount-row">
+          <img
+            className="newborn-discount-img"
+            src={newbornDiscount}
+            alt="50% avslag på nyfødtfotografering"
+          ></img>
+          <div className="newborn-discount-textbox">
+            <div className="newborn-discount-header">ALLTID</div>
+            <div className="newborn-discount-sub-header">50%</div>
+            <div className="newborn-discount-text">
+              avslag på nyfødtfotografering, etter ordinær gravidfotografering
+            </div>
+          </div>
+        </div>
+        <div className="one-discount-row">
+          <div className="one-discount-textbox">
+            <div className="one-discount-header">ALLTID</div>
+            <div className="one-discount-sub-header">50%</div>
+            <div className="one-discount-text">
+              avslag på 1-års fotografering, etter nyfødtfotografering
+            </div>
+          </div>
+          <img
+            className="one-discount-img"
+            src={oneDiscount}
+            alt="50% avslag på 1-års fotografering"
+          ></img>
+        </div>
+      </PageSection>
+
+      <PageSection outerClassName="myquote-outer" innerClassName="myquote">
+        <div className="quote-section">
+          <img className="quote-left-png" src={quotepng} alt="Quote icon"></img>
+          <div className="quote-text">
+            Som designer er jeg leken og eksperimentell, samtidig som jeg
+            foretrekker rette linjer og et stramt gridsystem.
+          </div>
+          <img
+            className="quote-right-png"
+            src={quotepng}
             alt="Quote icon"
           ></img>
         </div>
