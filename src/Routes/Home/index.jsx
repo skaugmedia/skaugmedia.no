@@ -1,14 +1,11 @@
 import { NavLink, useLoaderData } from "react-router-dom";
-import { ButtonLink } from "../../Components/ButtonLink";
 import { Image } from "../../Components/Image";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import jennyforside from "../../Images/j_gravid_kvadrat.jpg";
-import ninaforside from "../../Images/nina_forside.jpg";
-import matforside from "../../Images/pasta_pesto_kvadrat.jpg";
-import pentogbruktforside from "../../Images/pentogbrukt_logo_kvadrat.jpg";
-import AboutRoute from "../About/Route";
-import ContactRoute from "../Contact/Route";
+import cover from "../../Images/coverphoto.jpg";
+import freePregnancyShoot from "../../Images/free_pregnancy_shoot.jpg";
+import quotepng from "../../Images/quote_icon.png";
+
 import "./Home.css";
 import classes from "./Home.module.css";
 import pageName from "./PageName";
@@ -70,42 +67,82 @@ export function Home() {
           </div>
         </div>
       </PageSection> */}
-      <PageSection outerClassName="intro-outer" innerClassName="intro">
-        <div className="flex-container">
-          <div className="flex-child text-container">
-            <div className="intro-tekst">
-              Nina Merethe Skaug <br />
-              Fotograf og designer på Jessheim
-            </div>
-            <div className="uthevet-intro-tekst">
-              Portrettfoto, produktfoto,
-              <br />
-              matfoto og grafisk design.
-            </div>
-            <ButtonLink to={ContactRoute} className="homecontactbutton">
-              Kontakt meg
-            </ButtonLink>
-          </div>
-          <div className="flex-child image-container image-triangle">
-            <img
-              className="foto-header"
-              src={jennyforside}
-              alt="Gravidfotografering"
-            ></img>
-            <img
-              className="foto-header"
-              src={pentogbruktforside}
-              alt="Visuell identitet"
-            ></img>
-            <img
-              className="foto-header"
-              src={matforside}
-              alt="Matfotografering"
-            ></img>
+
+      <div
+        className="top-cover-img"
+        style={{ backgroundImage: `url(${cover})` }}
+        alt="Familiefotografering"
+      >
+        <div className="top-cover-text-box">
+          <div className="cover-headertext">SKAUG MEDIA</div>
+          <div className="cover-text">
+            Fotograf og grafisk designer på Jessheim
           </div>
         </div>
+      </div>
+      <PageSection outerClassName="myquote-outer" innerClassName="myquote">
+        <div className="quote-section">
+          <img className="quote-left-png" src={quotepng} alt="Quote icon"></img>
+          <div className="quote-text">
+            Jeg fokuserer på å få frem de magiske øyeblikkene og jeg er opptatt
+            av at alle skal ha en fin opplevelse foran kamera.
+          </div>
+          <img
+            className="quote-right-png"
+            src={quotepng}
+            alt="Quote icon"
+          ></img>
+        </div>
       </PageSection>
+      <PageSection outerClassName="works-outer" innerClassName="works">
+        <div className="works-forside">
+          {recentWorks.map((recentWork) => (
+            <NavLink
+              key={`${recentWork.title}${recentWork.url}`}
+              to={recentWork.url}
+              className={`${classes.plainLink} flex-child recent-img`}
+            >
+              <Image
+                className="works-img"
+                src={recentWork.thumbnail ?? recentWork.img.url}
+                alt={recentWork.img.title}
+              />
+            </NavLink>
+          ))}
+        </div>
+      </PageSection>
+
       <PageSection
+        outerClassName="regular-discounts-outer"
+        innerClassName="regular-discounts"
+      >
+        <div className="free-pregnancy-row">
+          <div className="free-pregnancy-textbox">
+            <div className="free-pregnancy-header">HVER MÅNED</div>
+            <div className="free-pregnancy-sub-header">
+              GRATIS MINIFOTOGRAFERING AV GRAVIDE
+            </div>
+            <div className="free-pregnancy-next-date">
+              Neste ledige dato: 04-09.2023
+            </div>
+            <div className="free-pregnancy-text">
+              Hver måned setter jeg av en dato der jeg tilbyr GRATIS utendørs
+              minifotografering av gravide som er i uke 30-36 av svangerskapet.
+              Fotograferingen vil foregå ved Nordbytjernet på Jessheim.
+              <br />
+              <br />
+              Det er begrenset med kapasitet, så book tidlig!
+            </div>
+          </div>
+          <img
+            className="free-pregnancy-img"
+            src={freePregnancyShoot}
+            alt="Quote icon"
+          ></img>
+        </div>
+      </PageSection>
+
+      {/* <PageSection
         outerClassName="skaugmedia-outer"
         innerClassName="skaugmedia"
       >
@@ -131,85 +168,7 @@ export function Home() {
             </ButtonLink>
           </div>
         </div>
-      </PageSection>
-      <PageSection outerClassName="works-outer" innerClassName="works">
-        <div className="works-home-title">Mine siste arbeider</div>
-        <div className="works-forside">
-          {recentWorks.map((recentWork) => (
-            <NavLink
-              key={`${recentWork.title}${recentWork.url}`}
-              to={recentWork.url}
-              className={`${classes.plainLink} flex-child`}
-            >
-              <div className="flex-child latest">
-                <Image
-                  className="works-img"
-                  src={recentWork.thumbnail ?? recentWork.img.url}
-                  alt={recentWork.img.title}
-                />
-                <div className="works-text-box">
-                  <div className="works-title">{recentWork.category}</div>
-                  <div className="works-category">{recentWork.title}</div>
-                </div>
-              </div>
-            </NavLink>
-          ))}
-          {/* <div className="flex-child">
-            <img className="works-img" src={liamnyfødtforside} alt="Liam"></img>
-            <div className="works-title">Nyfødt</div>
-          </div>
-          <div className="flex-child">
-            <img className="works-img" src={edwinforside} alt="Edwin"></img>
-            <div className="works-title">Familie og barn</div>
-          </div>
-          <div className="flex-child">
-            <img className="works-img" src={siljeforside} alt="Silje"></img>
-            <div className="works-title">Konfirmant</div>
-          </div>
-
-          <div className="flex-child">
-            <img
-              className="works-img"
-              src={matforside}
-              alt="Appelsinformkake med mørk sjokolade"
-            ></img>
-            <div className="works-title">Matfotografi</div>
-          </div>
-          <div className="flex-child">
-            <img
-              className="works-img"
-              src={produktforside}
-              alt="Rosendahl champagneglass"
-            ></img>
-            <div className="works-title">Produktfotografi</div>
-          </div> */}
-          {/*   <div className="flex-child">   <img
-            className="works-img"
-            src={}
-            alt=""></img>
-          <div className="works-title">Forlovelse</div></div>
-          <div className="flex-child"> <img
-            className="works-img"
-            src={}
-            alt=""
-          ></img>
-          <div className="works-title">Bryllup</div></div>
-         <div className="flex-child">  <img
-            className="works-img"
-            src={}
-            alt=""
-          ></img>
-          <div className="works-title">Interiør</div></div>  */}
-          {/* <div className="flex-child">
-            <img
-              className="works-img"
-              src={designforside}
-              alt="LashBrowser prisliste"
-            ></img>
-            <div className="works-title">Grafisk design</div>
-          </div> */}
-        </div>
-      </PageSection>
+      </PageSection>*/}
     </>
   );
 }

@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.home-container {
+  width: 100%;
+}
+
 .flex-container {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -13,54 +17,135 @@
   justify-content: space-between;
 }
 
+.top-cover-img {
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
+}
+
+.top-cover-text-box {
+  max-width: var(--content-width);
+  width: 100%;
+}
+
+.cover-headertext {
+  font-size: 6em;
+  font-weight: 700;
+  color: white;
+  opacity: 80%;
+  text-align: left;
+  max-width: var(--content-width);
+  justify-content: left;
+  align-items: left;
+  margin-bottom: -20px;
+}
+
+.cover-text {
+  font-size: 2em;
+  font-family: nunito;
+  color: white;
+  text-align: left;
+  max-width: var(--content-width);
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 30px;
+}
+
+.quote-section {
+max-width: var(--content-width);
+display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: row;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.quote-left-png {
+  width: 90px;
+  
+}
+
+.quote-right-png {
+  width: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
+  transform: scaleX(-1);
+}
+
+.quote-text {
+  font-family: nunito;
+  font-size: 1.2em;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.free-pregnancy-row {
+  display: flex;
+  gap: 20%px;
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: center;
+  align-items: left;
+  padding-bottom: 20px;
+
+}
+
+.free-pregnancy-textbox {
+width: 50%;
+align-items: left;
+padding-top: 200px;
+
+}
+
+.free-pregnancy-header {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+}
+
+.free-pregnancy-sub-header {
+  font-size: 1.5em;
+  margin-top: -12px;
+  font-weight: 700;
+  color: var(--green);
+  text-align: left;
+}
+
+.free-pregnancy-next-date {
+  font-size: 1.1em;
+  font-family: nunito;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.free-pregnancy-text {
+  font-size: 1em;
+  font-family: nunito;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.free-pregnancy-img {
+  width: 50%;
+  align-items: right;
+}
+
 .flex-child:not(:last-child) {
   margin-right: 0px;
 }
 
-.intro-tekst {
-  color: var(--lightblue);
-  font-weight: 300;
-  text-align: right;
-  font-size: 16px;
-  font-family: nunito;
-}
-
-.uthevet-intro-tekst {
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 700;
-  text-align: right;
-}
-
-.foto-header {
-  width: 31.5%;
-  border-radius: 100%;
-  flex-shrink: 1;
-  flex-grow: 0;
-}
-
-.intro .text-container {
-  display: flex;
-  align-items: flex-end;
-  flex-flow: column;
-  justify-self: end;
-  align-self: center;
-}
-
-.intro .image-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.intro-outer {
-  background-color: var(--blue);
-}
-.intro {
-  padding-top: 85px;
-  padding-bottom: 85px;
-}
 
 .homecontactbutton {
   margin-top: 20px;
@@ -105,6 +190,7 @@
 }
 
 .works-forside {
+ max-width: var(--content-width);
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 50px;
@@ -113,13 +199,12 @@
 }
 
 .works-img {
-  width: 200px;
-  height: 200px;
-}
-
-.works-title {
-  text-transform: uppercase;
-  font-weight: 700;
+  width: 325px;
+  height: 325px;
+  display: flex;
+  justify-content: cent;
+  align-items: center;
+  flex-flow: column;
 }
 
 .works-category {
@@ -127,27 +212,20 @@
   font-family: nunito;
 }
 
-.works-outer {
-  background-color: var(--lightgreen);
-}
 
 .works {
   padding-top: 50px;
 }
 
-.works-text-box {
-  background-color: var(--lightblue);
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+
 
 .flex-child.latest:hover {
-  opacity: 90%;
-  color: var(--blue);
+  opacity: 80%;
+ 
 }
 
 .works-forside {
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 10px 10px 10px 10px;
   grid-template-rows: auto auto;
 }
 
@@ -207,38 +285,7 @@
     justify-content: center;
   }
 
-  .intro .image-triangle {
-    width: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "second second"
-      "first third";
-    column-gap: 16px;
-  }
 
-  .intro .image-triangle > * {
-    place-self: stretch;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-  }
-
-  .intro .image-triangle > *:nth-child(1) {
-    grid-area: first;
-  }
-
-  .intro .image-triangle > *:nth-child(2) {
-    grid-area: second;
-    place-self: center;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .intro .image-triangle > *:nth-child(3) {
-    grid-area: third;
-  }
 }
 
 @media only screen and (max-width: 600px) {
