@@ -42,7 +42,7 @@
   text-align: left;
   max-width: var(--content-width);
   justify-content: left;
-  align-items: left;
+
   margin-bottom: -20px;
 }
 
@@ -53,13 +53,13 @@
   text-align: left;
   max-width: var(--content-width);
   justify-content: left;
-  align-items: left;
+
   margin-bottom: 30px;
 }
 
 .quote-section {
-max-width: var(--content-width);
-display: flex;
+  max-width: var(--content-width);
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-flow: row;
@@ -69,7 +69,6 @@ display: flex;
 
 .quote-left-png {
   width: 90px;
-  
 }
 
 .quote-right-png {
@@ -91,20 +90,19 @@ display: flex;
 
 .free-pregnancy-row {
   display: flex;
-  gap: 20%px;
+
+  gap: 40px;
   width: 100%;
   max-width: var(--content-width);
-  justify-content: center;
-  align-items: left;
-  padding-bottom: 20px;
+  justify-content: space-between;
 
+  padding-bottom: 20px;
 }
 
 .free-pregnancy-textbox {
-width: 50%;
-align-items: left;
-padding-top: 200px;
+  width: 50%;
 
+  padding-top: 200px;
 }
 
 .free-pregnancy-header {
@@ -144,58 +142,55 @@ padding-top: 200px;
 
 .newborn-discount-row {
   display: flex;
-  gap: 20%px;
+  gap: 40px;
   width: 100%;
   max-width: var(--content-width);
-  justify-content: center;
-  align-items: left;
+  justify-content: space-between;
+
   padding-bottom: 20px;
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 .newborn-discount-textbox {
   width: 50%;
-  align-items: left;
+
   padding-top: 70px;
-  margin-left: 40px;
-  
-  }
+}
 
-  .newborn-discount-header {
-    font-size: 2em;
-    font-weight: 700;
-    color: var(--green);
-    text-align: left;
-    margin-bottom: -40px;
-  }
+.newborn-discount-header {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--green);
+  text-align: left;
+  margin-bottom: -40px;
+}
 
-  .newborn-discount-sub-header {
-    font-size: 10em;
-    font-weight: 700;
-    color: var(--blue);
-    text-align: left;
-    margin-bottom: -20px;
-  }
+.newborn-discount-sub-header {
+  font-size: 10em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  margin-bottom: -20px;
+}
 
-  .newborn-discount-text {
-    font-size: 2em;
-    
-    text-align: left;
-    margin-top: 2px;
-  }
+.newborn-discount-text {
+  font-size: 2em;
+
+  text-align: left;
+  margin-top: 2px;
+}
 
 .newborn-discount-img {
   width: 50%;
-  align-items: left;
 }
 
 .one-discount-row {
   display: flex;
-  gap: 20%px;
+  gap: 40px;
   width: 100%;
   max-width: var(--content-width);
-  justify-content: center;
-  align-items: left;
+  justify-content: space-between;
+
   padding-bottom: 20px;
   margin-top: 30px;
 }
@@ -204,32 +199,30 @@ margin-top: 30px;
   width: 50%;
   align-items: right;
   padding-top: 70px;
-  margin-left: 40px;
-  
-  }
+}
 
-  .one-discount-header {
-    font-size: 2em;
-    font-weight: 700;
-    color: var(--blue);
-    text-align: left;
-    margin-bottom: -40px;
-  }
+.one-discount-header {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  margin-bottom: -40px;
+}
 
-  .one-discount-sub-header {
-    font-size: 10em;
-    font-weight: 700;
-    color: var(--green);
-    text-align: left;
-    margin-bottom: -20px;
-  }
+.one-discount-sub-header {
+  font-size: 10em;
+  font-weight: 700;
+  color: var(--green);
+  text-align: left;
+  margin-bottom: -20px;
+}
 
-  .one-discount-text {
-    font-size: 2em;
-    
-    text-align: left;
-    margin-top: 2px;
-  }
+.one-discount-text {
+  font-size: 2em;
+
+  text-align: left;
+  margin-top: 2px;
+}
 
 .one-discount-img {
   width: 50%;
@@ -239,7 +232,6 @@ margin-top: 30px;
 .flex-child:not(:last-child) {
   margin-right: 0px;
 }
-
 
 .homecontactbutton {
   margin-top: 20px;
@@ -284,7 +276,7 @@ margin-top: 30px;
 }
 
 .works-forside {
- max-width: var(--content-width);
+  max-width: var(--content-width);
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 50px;
@@ -306,16 +298,12 @@ margin-top: 30px;
   font-family: nunito;
 }
 
-
 .works {
   padding-top: 50px;
 }
 
-
-
 .flex-child.latest:hover {
   opacity: 80%;
- 
 }
 
 .works-forside {
@@ -378,8 +366,6 @@ margin-top: 30px;
     align-items: center;
     justify-content: center;
   }
-
-
 }
 
 @media only screen and (max-width: 600px) {

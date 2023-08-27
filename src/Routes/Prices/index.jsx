@@ -6,9 +6,6 @@ import { PageSection } from "../../Components/PageSection";
 import { Underline } from "../../Components/Underline";
 import { priceList } from "../../Data/priceList";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import oneyear_offer_img from "../../Images/liam_1_kvadrat.jpg";
-import pregnant_offer_img from "../../Images/m_gravid_kvadrat.jpg";
-import always_discount_img from "../../Images/silje_konfirmant_kvadrat.jpg";
 import { isWithinRange, localTime } from "../../utils";
 import { IncludesList } from "./Components/IncludesList";
 import * as ids from "./Ids";
@@ -78,7 +75,7 @@ export function Prices() {
       <div className="prices-content">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 
-        <div className="prices-offers-box">
+        {/* <div className="prices-offers-box">
           <div className="category-title-offers">
             Gratis minifotografering av gravide
           </div>
@@ -156,7 +153,7 @@ export function Prices() {
           </div>
         </div>
         <div className="section-divider"></div>
-
+ */}
         {miniSessionElements.length > 0 && (
           <>
             <div className="category-title">Minifotografering</div>

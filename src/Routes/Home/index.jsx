@@ -1,18 +1,15 @@
-import classNames from "classnames";
-import { NavLink, useLoaderData } from "react-router-dom";
-import { Image } from "../../Components/Image";
-import * as presentables from "/src/Data/presentables";
+import { useLoaderData } from "react-router-dom";
+import { ImageSection } from "../../Components/ImageSection";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import oneDiscount from "../../Images/1-year-photo.jpg";
 import cover from "../../Images/coverphoto.jpg";
 import freePregnancyShoot from "../../Images/free_pregnancy_shoot.jpg";
-import { ImageSection } from "../../Components/ImageSection";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
+import * as presentables from "/src/Data/presentables";
 
 import "./Home.css";
-import classes from "./Home.module.css";
 import pageName from "./PageName";
 
 export function Home() {
@@ -114,7 +111,7 @@ export function Home() {
               GRATIS MINIFOTOGRAFERING AV GRAVIDE
             </div>
             <div className="free-pregnancy-next-date">
-              Neste ledige dato: 04-09.2023
+              Neste ledige dato: 04.09.2023
             </div>
             <div className="free-pregnancy-text">
               Hver måned setter jeg av en dato der jeg tilbyr GRATIS utendørs

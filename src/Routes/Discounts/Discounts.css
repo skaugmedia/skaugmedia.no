@@ -1,4 +1,87 @@
-.Discounts {
-  color: magenta;
-  background-color: cyan;
+.Discounts__RegularDiscounts {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 1.3em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.Discounts__RegularDiscountsRow {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.Discounts__RegularDiscountsNewborn {
+  width: 350px;
+  gap: 10px;
+}
+
+.Discounts__RegularDiscountsNewbornImg {
+  width: 300px;
+}
+
+.Discounts__RegularDiscountsNewbornHeader {
+  font-size: 3.3em;
+  font-family: oswald;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.Discounts__RegularDiscountsNewbornText {
+  font-size: 1.1em;
+  font-family: nunito;
+  font-weight: 600;
+}
+
+.Discounts__RegularDiscountsOneYear {
+  width: 350px;
+  gap: 10px;
+}
+
+.Discounts__RegularDiscountsOneYearImg {
+  width: 300px;
+}
+
+.Discounts__RegularDiscountsOneYearHeader {
+  font-size: 3.3em;
+  font-family: oswald;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.Discounts__RegularDiscountsOneYearText {
+  font-size: 1.1em;
+  font-family: nunito;
+  font-weight: 600;
+}
+
+.Discounts__RegularDiscountsTenPercent {
+  width: 350px;
+  gap: 10px;
+}
+
+.Discounts__RegularDiscountsTenPercentImg {
+  width: 300px;
+}
+
+.Discounts__RegularDiscountsTenPercentHeader {
+  font-size: 3.3em;
+  font-family: oswald;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.Discounts__RegularDiscountsTenPercentText {
+  font-size: 1.1em;
+  font-family: nunito;
+  font-weight: 600;
+}
+
+.Discounts__RegularDiscountsTenPercentTextImportant {
+  font-size: 0.8em;
+  font-weight: 400;
 }

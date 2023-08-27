@@ -1,4 +1,4 @@
-import FotografiHeading from "../../Components/Headings/FotografiHeading";
+import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import AboutMe from "../../Images/meg.jpg";
@@ -12,7 +12,7 @@ export function About() {
         outerClassName="AboutMe__Outer"
         innerClassName="AboutMe__Inner"
       >
-        <FotografiHeading>Om meg</FotografiHeading>
+        <DesignHeading>Om meg</DesignHeading>
         <div className="AboutMe__Box">
           <div className="AboutMe__Text">
             <p>

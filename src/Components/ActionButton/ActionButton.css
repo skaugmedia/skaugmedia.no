@@ -1,0 +1,27 @@
+.ActionButton {
+  background-color: black;
+  border-style: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 130px;
+  height: 30px;
+  font-family: oswald;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.ActionButton:hover {
+  background-color: var(--blue);
+}
+
+.ActionButton:focus {
+  background-color: var(--blue);
+}
+.ActionButton:visited {
+  color: white;
+}

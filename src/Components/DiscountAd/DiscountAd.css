@@ -1,0 +1,70 @@
+.DiscountAd {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.DiscountAd__Img {
+  width: 50%;
+  height: 100%;
+}
+
+.DiscountAd__Textbox {
+  width: 50%;
+}
+
+.DiscountAd__Header {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--green);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.Discounts__FreePregnancyNextDate {
+  font-size: 1.1em;
+  font-family: nunito;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.Discounts__FreePregnancyText {
+  font-size: 1em;
+  font-family: nunito;
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.Discounts__ChristmasNextDate {
+  font-size: 1.1em;
+  font-family: nunito;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.Discounts__ChristmasText {
+  font-size: 1em;
+  font-family: nunito;
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.Discounts__ChristmasTextImportant {
+  font-weight: 700;
+}
+
+.Discounts__ChristmasDiscountAd {
+  flex-flow: row-reverse;
+}
+
+.Discounts__FreePregnancyTextImportant {
+  font-weight: 700;
+}

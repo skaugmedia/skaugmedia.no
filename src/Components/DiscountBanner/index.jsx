@@ -20,7 +20,10 @@ export function DiscountBanner({
     <div className={classes.main}>
       <div className={classes.title}>{title}</div>
       <div className={classes.price}>{price}</div>
-      <div className={classes.description}>{description}</div>
+      <div className={classes.text}>
+        <div className={classes.description}>{description}</div>
+      </div>
+
       {!!link && (
         <MiniSessionButton
           buttonText={buttonText}
