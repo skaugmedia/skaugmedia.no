@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { NavLink, useLoaderData } from "react-router-dom";
 import { Image } from "../../Components/Image";
 import { PageSection } from "../../Components/PageSection";
@@ -5,6 +6,7 @@ import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import oneDiscount from "../../Images/1-year-photo.jpg";
 import cover from "../../Images/coverphoto.jpg";
 import freePregnancyShoot from "../../Images/free_pregnancy_shoot.jpg";
+import { ImageSection } from "../../Components/ImageSection";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
 
@@ -97,21 +99,7 @@ export function Home() {
         </div>
       </PageSection>
       <PageSection outerClassName="works-outer" innerClassName="works">
-        <div className="works-forside">
-          {recentWorks.map((recentWork) => (
-            <NavLink
-              key={`${recentWork.title}${recentWork.url}`}
-              to={recentWork.url}
-              className={`${classes.plainLink} flex-child recent-img`}
-            >
-              <Image
-                className="works-img"
-                src={recentWork.thumbnail ?? recentWork.img.url}
-                alt={recentWork.img.title}
-              />
-            </NavLink>
-          ))}
-        </div>
+        <ImageSection images={recentWorks} />
       </PageSection>
 
       <PageSection
