@@ -21,6 +21,8 @@ import PhotographyCategoryLoader from "./Routes/PhotographyCategory/Loader";
 import PhotographyCategoryRoute from "./Routes/PhotographyCategory/Route";
 import { Prices } from "./Routes/Prices";
 import PricesRoute from "./Routes/Prices/Route";
+import DiscountsRoute from "./Routes/Discounts/Route";
+import { Discounts } from "./Routes/Discounts";
 import { Root } from "./Routes/Root";
 
 export const router = createBrowserRouter([
@@ -56,6 +58,7 @@ export const router = createBrowserRouter([
             element: <PhotographyCategory />,
           },
           { path: PricesRoute, element: <Prices /> },
+          { path: DiscountsRoute, element: <Discounts /> },
         ],
       },
     ],
