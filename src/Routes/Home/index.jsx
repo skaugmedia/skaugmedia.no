@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { NavLink, useLoaderData } from "react-router-dom";
 import { Image } from "../../Components/Image";
+import * as presentables from "/src/Data/presentables";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import oneDiscount from "../../Images/1-year-photo.jpg";
@@ -174,6 +175,16 @@ export function Home() {
             alt="Quote icon"
           ></img>
         </div>
+      </PageSection>
+
+      <PageSection>
+        <h2>Fotografi</h2>
+        <ImageSection images={presentables.photography} />
+      </PageSection>
+
+      <PageSection>
+        <h2>Grafisk Design</h2>
+        <ImageSection images={presentables.graphicalDesign} />
       </PageSection>
 
       {/* <PageSection

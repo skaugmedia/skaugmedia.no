@@ -95,6 +95,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
   };
   const routes = await getRoutes(subPageMap);
 
-  updateSiteMap(routes);
+  await updateSiteMap(routes);
   updateApacheWhitelist(routes);
 })();
