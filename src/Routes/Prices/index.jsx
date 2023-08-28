@@ -209,21 +209,18 @@ export function Prices() {
               "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -246,21 +243,18 @@ export function Prices() {
               "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -282,21 +276,18 @@ export function Prices() {
               "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -333,21 +324,18 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -387,21 +375,18 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -425,21 +410,18 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -461,21 +443,18 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -512,21 +491,18 @@ export function Prices() {
             før fotografering mot et tillegg i prisen. LashBrowswer holder til i
             Storgata 7B, 2050 Jessheim.
           </p>
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -543,21 +519,18 @@ export function Prices() {
               "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -582,21 +555,18 @@ export function Prices() {
               "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
         <Collapsible
@@ -614,112 +584,105 @@ export function Prices() {
               "Digitalt bildegalleri hvor man velger bilder",
             ]}
           />
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
             Kveldstillegg etter kl. 16.00: {priceList.eveningSurcharge} <br />
             Helgetillegg: {priceList.weekendSurcharge}
             <br />
             <br />
-            Ved kansellering under 24 timer før avtalt tid eller ikke oppmøtt
-            til avtalt tidspunkt, vil beløpet bli fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed eller ikke oppmøtt til avtalt tidspunkt, vil beløpet bli
+            fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
 
         <div className="section-divider"></div>
         <div className="category-title">Bryllupsfotografering</div>
-
+        <Collapsible
+          outerClassName="prices-heading"
+          title="Halvdagsfotografering"
+          price={priceList.wedding2}
+        >
+          Dette er pakken for dere som ønsker bilder fra litt mer enn bare
+          seremonien og bryllupsportrettene. Ved å velge denne pakken,
+          fotograferer jeg under forberedelsene på den store dagen- enten det er
+          hjemme eller på lokasjon, under vielsen og fotografering av
+          bryllupsportrettene etter vielsen. Dere får ca. 200 digitale
+          bildefiler i høy oppløsning, til privat bruk. Vi setter av tid til et
+          planleggingsmøte i god tid før den store dagen, der vi snakker om
+          deres ønsker til bildene og for å bli litt kjent med hverandre.
+          <br />
+          <br />
+          <span className="discount-price">
+            Ved booking av en av bryllupsfotograferingene mine, får man 50%
+            avslag på forlovelsesfotografering i forkant av bryllupet.
+          </span>
+          <br />
+          <br />
+          Inkluderer:
+          <IncludesList
+            items={[
+              "Planleggingsmøte i god tid før den store dagen",
+              "Fotografering under forberedelser, vielse og bryllupsportretter",
+              "Inntil 5 timer fotografering",
+              "Ca. 200 stk. digitale bildefiler i høy oppløsning",
+              "Online bildegalleri hvor dere kan laste ned bildene",
+              "Mulighet for å kjøpe bildeprodukter",
+            ]}
+          />
+          <p className="additional-prices">
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed, vil beløpet bli fakturert i sin helhet.
+          </p>
+          <p>
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
+          </p>
+        </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
           title="Vielse + portrettfotografering - 2,5 timer"
           price={priceList.wedding1}
         >
           Hvis man velger vielse + portrettfotografering, vil dette inkludere
-          ca. 2,5 timer med fotografering totalt. Da fotograferer jeg hele
-          vielsen, i tillegg til portretter etter vielsen. Dere får da 35 ferdig
-          redigerte bilder- som dere selv velger ut fra et online galleri. Denne
-          pakken kan også tilpasses deres ønsker.
+          ca. 2,5 timer med fotografering totalt i tillegg til et digitalt
+          planleggingsmøte i god tid før den store dagen. Jeg fotograferer
+          vielsen, i tillegg til portretter rett før eller rett etter vielsen.
+          Dere får ca. 100 stk. digitale bildefiler i høy oppløsning til privat
+          bruk.
           <br />
           <br />
           <span className="discount-price">
-            Ved booking av bryllupsfotografering gjennom meg, får man 50% avslag
-            på forlovelsesfotografering i forkant av bryllupet.
+            Ved booking av en av bryllupsfotograferingene mine, får man 50%
+            avslag på forlovelsesfotografering i forkant av bryllupet.
           </span>
           <br />
           <br />
           Inkluderer:
           <IncludesList
             items={[
-              "Samtale/møte i god tid før den store dagen for planlegging",
-              "Fotografering under vielsen",
-              "Portrettfotografering",
-              "Fotografering med familie og forlovere etter vielsen",
-              "Digitalt bildegalleri hvor man velger bilder",
-              "35 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
-              "Mulighet for å kjøpe flere digitale filer og bildeprodukter",
+              "Ca. 2,5 timer fotografering",
+              "Digitalt planleggingsmøte i god tid før den store dagen",
+              "Fotografering under vielsen og portrettfotografering rett før eller rett etter vielsen",
+              "Fotografering med familie og forlovere",
+              "Ca. 100 stk. digitale bildefiler i høy oppløsning",
+              "Online bildegalleri hvor dere kan laste ned bildene",
+              "Mulighet for å kjøpe bildeprodukter",
             ]}
           />
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
           <p className="additional-prices">
-            Ved kansellering under 24 timer før avtalt tid, vil beløpet bli
-            fakturert i sin helhet.
+            Ved kansellering senere enn 48 timer før avtalt tid uten å gi
+            beskjed, vil beløpet bli fakturert i sin helhet.
           </p>
           <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
+            Eventuell betalt parkering vil bli fakturert, og kjøring utover 30km
+            fra Jessheim, faktureres med {priceList.driveSurcharge} per km.
           </p>
         </Collapsible>
-        <Collapsible
-          outerClassName="prices-heading"
-          title="Portrettfotografering - 1,5 timer"
-          price={priceList.wedding2}
-        >
-          Hvis man velger kun portrettfotografering, vil dette inkludere ca. 1,5
-          timer med fotografering. Disse bildene kan fotograferes en annen dag
-          enn bryllupet, eller på selve dagen. Dere får 15 ferdig redigerte
-          bilder- som dere selv velger ut fra et online galleri.
-          <br />
-          <br />
-          <span className="discount-price">
-            Ved booking av bryllupsfotografering gjennom meg, får man 50% avslag
-            på forlovelsesfotografering i forkant av bryllupet.
-          </span>
-          <br />
-          <br />
-          Inkluderer:
-          <IncludesList
-            items={[
-              "Samtale/møte i god tid før den store dagen for planlegging",
-              "Portrettfotografering ca. 1,5 time",
-              "Digitalt bildegalleri hvor man velger bilder",
-              "15 stk. redigerte, høyoppløselige bilder",
-              "Bildene leveres digitalt",
-              "Mulighet for å kjøpe flere digitale filer og bildeprodukter",
-            ]}
-          />
-          Les mer om hvilke produkter man kan bestille etter fotograferingen,
-          lenger ned på siden.
-          <br />
-          <p className="additional-prices">
-            Ved kansellering under 24 timer før avtalt tid, vil beløpet bli
-            fakturert i sin helhet.
-          </p>
-          <p>
-            Eventuell betalt parkering faktureres i sin helhet, og kjøring
-            utover 30km fra Jessheim, faktureres med {priceList.driveSurcharge}{" "}
-            per km.
-          </p>
-        </Collapsible>
+
         <div className="section-divider"></div>
         <div className="category-title">Produkt og matfotografering</div>
         <Collapsible

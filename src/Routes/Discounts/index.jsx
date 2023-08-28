@@ -48,7 +48,6 @@ export function Discounts() {
             }
             link={ContactRoute}
           />
-
           <DiscountAd
             imgSrc={PregnancyFree}
             imgAlt="En gravid kvinne"

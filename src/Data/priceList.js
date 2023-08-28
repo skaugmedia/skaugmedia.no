@@ -10,8 +10,8 @@ export const priceList = {
   family: "kr. 1800,-",
   siblings: "kr. 1800,-",
   engagement: "kr. 1800,-",
-  wedding1: "kr. 14.000,-",
-  wedding2: "kr. 10.000,-",
+  wedding1: "kr. 15.000,-",
+  wedding2: "kr. 21.000,-",
 
   extraPictureBefore: "kr. 1100,-",
   extraPictureAfter: "kr. 600,-",

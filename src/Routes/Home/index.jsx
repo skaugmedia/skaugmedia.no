@@ -159,6 +159,13 @@ export function Home() {
         </div>
       </PageSection>
 
+      <PageSection>
+        <h2 className="Home__Photography">Fotografi</h2>
+        <ImageSection
+          images={presentables.photography}
+          className="Home__PhotographyImageSection"
+        />
+      </PageSection>
       <PageSection outerClassName="myquote-outer" innerClassName="myquote">
         <div className="quote-section">
           <img className="quote-left-png" src={quotepng} alt="Quote icon"></img>
@@ -173,14 +180,8 @@ export function Home() {
           ></img>
         </div>
       </PageSection>
-
       <PageSection>
-        <h2>Fotografi</h2>
-        <ImageSection images={presentables.photography} />
-      </PageSection>
-
-      <PageSection>
-        <h2>Grafisk Design</h2>
+        <h2 className="Home__Graphical">Grafisk Design</h2>
         <ImageSection images={presentables.graphicalDesign} />
       </PageSection>
 
