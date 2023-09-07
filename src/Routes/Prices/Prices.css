@@ -1,3 +1,41 @@
+.Prices__TopSection {
+  align-items: left;
+  text-align: left;
+}
+
+.Prices__TextIntroHeader {
+  color: var(--green);
+  text-align: left;
+  text-transform: uppercase;
+  align-items: left;
+  font-weight: 500;
+}
+
+.Prices__TextIntroIncludes {
+  margin-top: -15px;
+  margin-bottom: -5px;
+  font-family: nunito;
+}
+
+.Prices__TextIntro {
+  font-family: nunito;
+  margin-bottom: 5px;
+}
+
+.Prices__Text {
+  font-family: nunito;
+  text-align: left;
+  margin-top: -15px;
+}
+
+.Prices__TextAdditional {
+  font-family: nunito;
+  text-align: left;
+  font-size: 0.8em;
+  align-items: left;
+  justify-content: left;
+}
+
 .discount-offer-box-title {
   padding-left: 60px;
   text-align: left;
@@ -101,8 +139,8 @@
   padding-left: 60px;
   text-align: left;
   color: var(--blue);
-  font-weight: 600;
-  font-size: 1.5em;
+  font-weight: 500;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -135,10 +173,11 @@
 .category-title {
   color: var(--green);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   text-align: left;
   margin-bottom: 15px;
-  font-size: 1.2em;
+  margin-top: 15px;
+  font-size: 1.3em;
   width: 100%;
 }
 
@@ -224,8 +263,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  
-  
   .prices {
     flex-flow: column;
     width: 100%;
@@ -233,7 +270,7 @@
     max-width: 80%;
   }
 
-  .prices-content{
+  .prices-content {
     width: 100%;
   }
 
@@ -255,7 +292,6 @@
     padding-right: 30px;
     padding-top: 5px;
     text-align: left;
-   
   }
 
   .pregnancy-discount-offer,
@@ -284,12 +320,12 @@
     width: calc(100% - 30px);
   }
 
-  .discount-offer-box-title{
+  .discount-offer-box-title {
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
   }
- .category-title-offers{
+  .category-title-offers {
     font-size: 1.25em;
     text-align: left;
     width: 100%;
@@ -302,13 +338,7 @@
     padding-right: 30px;
   }
 
-  .prices-offers-next-free-date{
+  .prices-offers-next-free-date {
     font-size: 0.9em;
-    
-  
   }
-
-  
-
- 
 }

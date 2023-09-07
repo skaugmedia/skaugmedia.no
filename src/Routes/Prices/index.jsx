@@ -154,7 +154,47 @@ export function Prices() {
         </div>
         <div className="section-divider"></div>
  */}
-        {miniSessionElements.length > 0 && (
+        <div className="Prices__TopSection">
+          <div className="Prices__TextIntroHeader">
+            Inkludert i alle mine fotograferinger:
+          </div>
+          <div className="Prices__TextIntroIncludes">
+            <IncludesList
+              items={[
+                "Inkludert i alle mine fotograferinger er et digitalt bildegalleri hvor man selv kan velge bilder fra. (unntak ved bryllupsfotografering)",
+                "Ingen bilder er inkludert i prisen med mindre annet er spesifisert, se egne priser på produkter lenger ned på siden",
+                "Mulighet for å booke time hos makeup-artist LashBrowser før fotograferingen",
+                "Opptil 1 time fotografering (unntak ved bryllup, nyfødt og minifotografering)",
+                "Du vil motta en mail med informasjon om din fotografering på forhånd",
+              ]}
+            />
+          </div>
+          <div className="Prices__TextIntroHeader">
+            Ønsker du fotografering etter kl. 16.00 på en hverdag?
+          </div>
+          <div className="Prices__TextIntro">
+            Etter kl. 16.00 på en hverdag vil det alltid tilkomme et tillegg på
+            kr. 400,- for alle fotograferinger.
+          </div>
+
+          <div className="Prices__TextIntroHeader">
+            Ønsker du fotografering i en helg eller på en helligdag?
+          </div>
+          <div className="Prices__TextIntro">
+            Alle helger og helligdager vil det tilkomme et helgetillegg på kr.
+            700,- (unntak ved bryllupsfotografering og ved minifotograferinger i
+            helger)
+          </div>
+          <div className="Prices__TextIntroHeader">
+            Ønsker du at jeg skal komme til deg?{" "}
+          </div>
+          <div className="Prices__TextIntro">
+            Jeg kommer gjerne til deg, men all kjøring utover 30km fra Jessheim,
+            vil faktureres med kr. 10,- per km. I tillegg vil betalt parkering
+            under fotograferingen vil faktureres i sin helhet.{" "}
+          </div>
+        </div>
+        {/* {miniSessionElements.length > 0 && (
           <>
             <div className="category-title">Minifotografering</div>
             {miniSessionElements.map(({ el: El }, i) => (
@@ -162,10 +202,20 @@ export function Prices() {
             ))}
             <div className="section-divider"></div>
           </>
-        )}
+        )} */}
 
         <div className="category-title">Gavekort</div>
-        <Collapsible
+        <div className="Prices__Text">
+          Hos meg kan du kjøpe gaven til den som har alt- nemlig et gavekort!
+          Perfekt for den kommende mammaen, besteforeldre som ønsker bilder av
+          hele familien og alle de andre som ønsker å stoppe tiden! Gavekortet
+          gjelder ikke for design-tjenestene mine.
+        </div>
+        <div className="Prices__TextAdditional">
+          *Minstepris ved kjøp av gavekort er kr. 100,-
+        </div>
+
+        {/* <Collapsible
           outerClassName="prices-heading"
           title="Gavekort"
           price="Valgfri sum"
@@ -173,9 +223,7 @@ export function Prices() {
           Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan brukes
           på fotograferinger, men gjelder ikke for mine designtjenester.
           Minstepris ved kjøp av gavekort er på {priceList.giftCardMinimum}
-        </Collapsible>
-
-        <div className="section-divider"></div>
+        </Collapsible> */}
 
         <div className="category-title">Barnefotografering</div>
         <Collapsible
