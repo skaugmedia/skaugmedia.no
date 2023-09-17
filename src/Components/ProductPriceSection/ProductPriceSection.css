@@ -1,0 +1,78 @@
+.ProductPriceSection {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  margin-top: 30px;
+}
+
+.ProductPriceSection--reverse {
+  flex-flow: row-reverse;
+}
+
+.ProductPriceSection__ImgSection {
+  display: flex;
+
+  width: 50%;
+  height: 100%;
+}
+
+.ProductPriceSection__Img {
+  width: 100%;
+  height: 100%;
+}
+
+.ProductPriceSection__Textbox {
+  width: 50%;
+}
+
+.ProductPriceSection__Header {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.ProductPriceSection__Text {
+  font-family: nunito;
+  text-align: left;
+}
+
+.ProductPriceSection__ContentBox {
+  display: flex;
+  flex-flow: row;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ProductPriceSection__ContentText {
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 5px;
+  font-family: oswald;
+  text-transform: uppercase;
+}
+
+.ProductPriceSection__ContentPrice {
+  display: flex;
+
+  flex-flow: column;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 5px;
+  font-family: oswald;
+  text-transform: uppercase;
+}

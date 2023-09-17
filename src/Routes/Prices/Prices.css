@@ -3,6 +3,31 @@
   text-align: left;
 }
 
+.Prices__Header {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.Prices__PriceBox {
+  align-items: right;
+  text-align: right;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--blue);
+  margin-top: -10px;
+  font-family: oswald;
+  text-transform: uppercase;
+}
+
+.Prices__PricesText {
+  display: flex;
+  text-align: right;
+}
+
 .Prices__TextIntroHeader {
   color: var(--green);
   text-align: left;
@@ -15,6 +40,14 @@
   margin-top: -15px;
   margin-bottom: -5px;
   font-family: nunito;
+}
+
+.Prices__Bryllup {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--green);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .Prices__TextIntro {
@@ -34,6 +67,45 @@
   font-size: 0.8em;
   align-items: left;
   justify-content: left;
+}
+
+.CompanyPrice__Section {
+  display: flex;
+
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: space-between;
+  align-items: left;
+  display: flex;
+  flex-flow: column;
+}
+
+.CompanyPrice__Header {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.CompanyPrice__Textbox {
+  width: 100%;
+}
+
+.CompanyPrice__Text {
+  font-family: nunito;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.CompanyPrice__Info {
+  font-family: nunito;
+  font-weight: 700;
+  color: var(--blue);
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .discount-offer-box-title {
@@ -263,6 +335,46 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Prices__TextIntroIncludes {
+    padding-left: 18px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .Prices__Section {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .Prices__Header {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .Prices__PriceBox {
+    margin-top: 5px;
+  }
+
+  .Prices__Outer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Prices__Inner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .prices {
     flex-flow: column;
     width: 100%;

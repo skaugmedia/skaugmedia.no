@@ -16,16 +16,16 @@
   font-family: Oswald;
   cursor: pointer;
   font-size: 1em;
-  color: var(--blue);
+  color: var(--green);
   font-weight: 600;
 }
 
 .line {
   margin-bottom: 10px;
+  color: var(--blue);
 }
 
 .textBox {
-  background-color: var(--lightgreen);
   height: auto;
   padding: 15px 20px;
   overflow: hidden;
@@ -46,14 +46,14 @@
 }
 
 .price {
-  color: var(--blue);
+  color: var(--green);
   font-weight: 600;
   text-align: left;
   flex-shrink: 0;
 }
 
 .triggerButtonText {
-  color: var(--blue);
+  color: var(--green);
   font-weight: 600;
   text-align: left;
   display: flex;
@@ -68,7 +68,7 @@
   height: 15px;
   width: 15px;
   margin-right: 5px;
-  color: var(--green);
+  color: var(--blue);
   transition: transform 0.2s;
   flex-grow: 0;
   flex-shrink: 0;

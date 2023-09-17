@@ -3,6 +3,9 @@ import { About } from "./Routes/About";
 import AboutRoute from "./Routes/About/Route";
 import { Contact } from "./Routes/Contact";
 import ContactRoute from "./Routes/Contact/Route";
+import { Discounts } from "./Routes/Discounts";
+import DiscountsRoute from "./Routes/Discounts/Route";
+import { ErrorHandler } from "./Routes/ErrorHandler";
 import { GraphicalDesign } from "./Routes/GraphicalDesign";
 import GraphicalDesignLoader from "./Routes/GraphicalDesign/Loader";
 import GraphicalDesignRoute from "./Routes/GraphicalDesign/Route";
@@ -10,7 +13,6 @@ import { GraphicalDesignProject } from "./Routes/GraphicalDesignProject";
 import GraphicalDesignProjectLoader from "./Routes/GraphicalDesignProject/Loader";
 import GraphicalDesignProjectRoute from "./Routes/GraphicalDesignProject/Route";
 import { Home } from "./Routes/Home";
-import { ErrorHandler } from "./Routes/ErrorHandler";
 import HomeLoader from "./Routes/Home/Loader";
 import HomeRoute from "./Routes/Home/Route";
 import { Photography } from "./Routes/Photography";
@@ -21,8 +23,8 @@ import PhotographyCategoryLoader from "./Routes/PhotographyCategory/Loader";
 import PhotographyCategoryRoute from "./Routes/PhotographyCategory/Route";
 import { Prices } from "./Routes/Prices";
 import PricesRoute from "./Routes/Prices/Route";
-import DiscountsRoute from "./Routes/Discounts/Route";
-import { Discounts } from "./Routes/Discounts";
+import { PricesProducts } from "./Routes/PricesProducts";
+import PricesProductsRoute from "./Routes/PricesProducts/Route";
 import { Root } from "./Routes/Root";
 
 export const router = createBrowserRouter([
@@ -58,6 +60,7 @@ export const router = createBrowserRouter([
             element: <PhotographyCategory />,
           },
           { path: PricesRoute, element: <Prices /> },
+          { path: PricesProductsRoute, element: <PricesProducts /> },
           { path: DiscountsRoute, element: <Discounts /> },
         ],
       },

@@ -1,11 +1,11 @@
 import { NavLink, useLoaderData } from "react-router-dom";
-import "./Photography.css";
-import { Underline } from "../../Components/Underline";
-import FotografiHeading from "../../Components/Headings/FotografiHeading";
 import { Category } from "../../Components/Category";
-import pageName from "./PageName";
+import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { Underline } from "../../Components/Underline";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import pageName from "./PageName";
+import "./Photography.css";
 
 export function Photography() {
   useDocumentTitle(pageName);
@@ -14,7 +14,7 @@ export function Photography() {
     <PageSection className="photography">
       <div className="content">
         <div>
-          <FotografiHeading>{pageName}</FotografiHeading>
+          <DesignHeading>{pageName}</DesignHeading>
         </div>
         <div className="section">
           <div className=" photography-category">

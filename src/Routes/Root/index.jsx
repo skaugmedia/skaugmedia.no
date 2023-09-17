@@ -9,16 +9,18 @@ import AboutPageName from "../About/PageName";
 import AboutRoute from "../About/Route";
 import ContactPageName from "../Contact/PageName";
 import ContactRoute from "../Contact/Route";
+import DiscountsPageName from "../Discounts/PageName";
+import DiscountsRoute from "../Discounts/Route";
 import GraphicalDesignPageName from "../GraphicalDesign/PageName";
 import GraphicalDesignRoute from "../GraphicalDesign/Route";
-import DiscountsPageName from "../Discounts/PageName";
 import HomePageName from "../Home/PageName";
-import DiscountsRoute from "../Discounts/Route";
 import HomeRoute from "../Home/Route";
 import PhotographyPageName from "../Photography/PageName";
 import PhotographyRoute from "../Photography/Route";
 import PricesPageName from "../Prices/PageName";
 import PricesRoute from "../Prices/Route";
+import PricesProductsPageName from "../PricesProducts/PageName";
+import PricesProductsRoute from "../PricesProducts/Route";
 import "./Root.css";
 import classes from "./Root.module.css";
 import { SocialIcons } from "/src/Components/SocialIcons";
@@ -112,6 +114,9 @@ function Nav({ containerClassName, linkClassName }) {
       </NavLink>
       <NavLink className={linkClassName} to={PricesRoute}>
         {PricesPageName}
+      </NavLink>
+      <NavLink className={linkClassName} to={PricesProductsRoute}>
+        {PricesProductsPageName}
       </NavLink>
       <NavLink className={linkClassName} to={DiscountsRoute}>
         {DiscountsPageName}

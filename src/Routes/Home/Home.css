@@ -387,6 +387,138 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .top-cover-img {
+    height: 50%;
+    width: 100%;
+  }
+
+  .top-cover-text-box {
+    width: var(--max-width);
+  }
+
+  .cover-headertext {
+    font-size: 2em;
+    margin-top: 100px;
+  }
+
+  .cover-text {
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .quote-section {
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .quote-left-png {
+    justify-content: space-between;
+    width: 30px;
+  }
+  .quote-right-png {
+    width: 30px;
+  }
+
+  .quote-text {
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .free-pregnancy-row {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .free-pregnancy-textbox {
+    width: 100%;
+  }
+
+  .free-pregnancy-sub-header {
+    font-size: 1.1em;
+  }
+
+  .free-pregnancy-next-date {
+    font-size: 1em;
+  }
+
+  .free-pregnancy-img {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .newborn-discount-img {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .newborn-discount-row {
+    display: flex;
+    flex-flow: column-reverse;
+    width: 100%;
+    gap: 0;
+    margin-top: 0;
+  }
+
+  .newborn-discount-textbox {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .newborn-discount-header {
+    text-align: left;
+  }
+
+  .newborn-discount-sub-header {
+    font-size: 8em;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .newborn-discount-text {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .one-discount-row {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    gap: 0;
+    margin-top: 0;
+  }
+
+  .one-discount-textbox {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .one-discount-header {
+    text-align: left;
+  }
+
+  .one-discount-sub-header {
+    font-size: 8em;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .one-discount-text {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .one-discount-img {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+
   .flex-container {
     display: flex;
     flex-flow: column;

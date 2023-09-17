@@ -16,6 +16,8 @@ export function Discounts() {
       <div className="Discounts">
         <PageSection>
           <DesignHeading>Tilbud</DesignHeading>
+        </PageSection>
+        <PageSection>
           <DiscountAd
             outerClassName="Discounts__ChristmasDiscountAd"
             imgSrc={ChristmasMinishoot}
@@ -55,7 +57,7 @@ export function Discounts() {
             text={
               <>
                 <div className="Discounts__FreePregnancyNextDate">
-                  Neste ledige dato: 04.09.2023
+                  Neste ledige dato: 10.10.2023
                 </div>
                 <div className="Discounts__FreePregnancyText">
                   Hver måned har jeg en dato der jeg tilbyr GRATIS utendørs
@@ -73,8 +75,7 @@ export function Discounts() {
                     ]}
                   />
                   <div className="Discounts__FreePregnancyTextImportant">
-                    Neste dato annonseres i slutten av august / starten av
-                    september.
+                    Neste dato annonseres i slutten av måneden.
                   </div>
                 </div>
               </>
