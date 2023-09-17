@@ -73,10 +73,10 @@ export const christmas = ({ ref, open }) => (
     outerRef={ref}
     open={open}
     outerClassName="prices-heading"
-    title="Minifotografering jul"
+    title="Jul minifotografering"
     price="Kr. 1200,-"
   >
-    Minifotografering julefotografering 21. oktober 2023.
+    Jul minifotografering 21. oktober 2023.
     <p>Inkluderer:</p>
     <IncludesList
       items={[
@@ -93,6 +93,24 @@ export const christmas = ({ ref, open }) => (
     <p className="additional-prices">
       Faktura sendes ut ved booking, og må betales før fotograferingen.
     </p>
+  </Collapsible>
+);
+
+export const autumn = ({ ref, open }) => (
+  <Collapsible
+    id={ids.miniSessionAutumn}
+    outerRef={ref}
+    open={open}
+    outerClassName="prices-heading"
+    title="Høstferie minifotografering"
+    price="Ta kontakt for mer informasjon"
+  >
+    Perfekt aktivitet i høstferien! Valgfri minifotografering på dagtid, i
+    nydelige høstfarger. Enten du ønsker familiebilder, søskenbilder eller
+    gravidbilder eller noe helt annet er dette mulig under denne shooten.
+    <p />
+    Send en mail til kontakt@skaugmedia.no eller ta kontakt via kontaktskjemaet
+    for mer informasjon.
   </Collapsible>
 );
 

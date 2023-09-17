@@ -57,6 +57,10 @@ export function Prices() {
       ref: refs.miniSessionChristmas.ref,
       open: open.miniSessionChristmas,
     },
+    autumn: {
+      ref: refs.miniSessionAutumn.ref,
+      open: open.miniSessionAutumn,
+    },
   };
 
   const now = new Date();
@@ -70,6 +74,11 @@ export function Prices() {
       el: () => minishoot.christmas(minishootsOpts.christmas),
       validFrom: localTime("23-08-2023 00:00"),
       validTo: localTime("21-10-2023 00:00"),
+    },
+    {
+      el: () => minishoot.autumn(minishootsOpts.autumn),
+      validFrom: localTime("17-09-2023 00:00"),
+      validTo: localTime("06-10-2023 00:00"),
     },
   ].filter((s) => isWithinRange(s.validFrom, now, s.validTo));
 

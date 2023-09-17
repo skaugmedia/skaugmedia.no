@@ -15,3 +15,4 @@ export const wedding = "bryllup";
 export const mommyandme = "mommyandme";
 export const miniSessionSunflower = "minifotografering-solsikke";
 export const miniSessionChristmas = "minifotografering-jul";
+export const miniSessionAutumn = "minifotografering-host";

@@ -118,7 +118,7 @@ export const discounts = [
     validTo: localTime("26-08-2023 00:00"),
   },
   {
-    title: "Minifotografering jul",
+    title: "Jul minifotografering",
     price: "Kr. 1200,-",
     description: (
       <>
@@ -128,6 +128,51 @@ export const discounts = [
     ),
     link: `/${PricesRoute}#${ids.miniSessionChristmas}`,
     validFrom: localTime("26-08-2023 00:00"),
-    validTo: localTime("21-10-2023 00:00"),
+    validTo: localTime("18-09-2023 00:00"),
+  },
+  {
+    title: "Høstferie minifotografering",
+    price: "Ta kontakt for mer informasjon",
+    description: (
+      <>
+        Perfekt aktivitet i høstferien! Enten du ønsker familiefotografering,
+        gravidfotografering eller noe helt annet.
+        <br />
+      </>
+    ),
+    link: `/${PricesRoute}#${ids.miniSessionAutumn}`,
+    validFrom: localTime("18-09-2023 00:00"),
+    validTo: localTime("20-10-2023 00:00"),
+  },
+  {
+    title: "ONSDAGSTILBUD",
+    price: "-30% på alle fotograferinger",
+    description: (
+      <>
+        Gjelder alle bookinger som kommer inn i dag, 20.09.2023, med dato for
+        fotograferingen i september eller oktober.
+        <p />
+        Tilbudet gjelder kun i dag, 20.09.2023.
+        <br />
+        *Gjelder ikke for bedrifter eller minifotograferinger.
+      </>
+    ),
+    link: `/${PricesRoute}`,
+    validFrom: localTime("20-09-2023 00:00"),
+    validTo: localTime("21-09-2023 00:00"),
+  },
+  {
+    title: "Høstferie minifotografering",
+    price: "Ta kontakt for mer informasjon",
+    description: (
+      <>
+        Perfekt aktivitet i høstferien! Enten du ønsker familiefotografering,
+        gravidfotografering eller noe helt annet.
+        <br />
+      </>
+    ),
+    link: `/${PricesRoute}#${ids.miniSessionAutumn}`,
+    validFrom: localTime("21-09-2023 00:00"),
+    validTo: localTime("06-10-2023 00:00"),
   },
 ];
