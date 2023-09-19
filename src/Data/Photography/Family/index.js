@@ -1,20 +1,24 @@
 import { oneLine } from "common-tags";
-import familie1 from "../../../Images/familie_1.jpg";
-import familie10 from "../../../Images/familie_10.jpg";
-import familie11 from "../../../Images/familie_11.jpg";
-import familie12 from "../../../Images/familie_12.jpg";
-import familie13 from "../../../Images/familie_13.jpg";
-import familie14 from "../../../Images/familie_14.jpg";
-import familie15 from "../../../Images/familie_15.jpg";
-import familie16 from "../../../Images/familie_16.jpg";
-import familie2 from "../../../Images/familie_2.jpg";
-import familie3 from "../../../Images/familie_3.jpg";
-import familie4 from "../../../Images/familie_4.jpg";
-import familie5 from "../../../Images/familie_5.jpg";
-import familie6 from "../../../Images/familie_6.jpg";
-import familie7 from "../../../Images/familie_7.jpg";
-import familie8 from "../../../Images/familie_8.jpg";
-import familie9 from "../../../Images/familie_9.jpg";
+import famE1 from "../../../Images/Family/fam_e_1.jpg";
+import famE2 from "../../../Images/Family/fam_e_2.jpg";
+import famE3 from "../../../Images/Family/fam_e_3.jpg";
+import famE4 from "../../../Images/Family/fam_e_4.jpg";
+import famE5 from "../../../Images/Family/fam_e_5.jpg";
+import famE6 from "../../../Images/Family/fam_e_6.jpg";
+import famE7 from "../../../Images/Family/fam_e_7.jpg";
+import famE8 from "../../../Images/Family/fam_e_8.jpg";
+import famE9 from "../../../Images/Family/fam_e_9.jpg";
+import famL1 from "../../../Images/Family/fam_l_1.jpg";
+import famL10 from "../../../Images/Family/fam_l_10.jpg";
+import famL11 from "../../../Images/Family/fam_l_11.jpg";
+import famL2 from "../../../Images/Family/fam_l_2.jpg";
+import famL3 from "../../../Images/Family/fam_l_3.jpg";
+import famL4 from "../../../Images/Family/fam_l_4.jpg";
+import famL5 from "../../../Images/Family/fam_l_5.jpg";
+import famL6 from "../../../Images/Family/fam_l_6.jpg";
+import famL7 from "../../../Images/Family/fam_l_7.jpg";
+import famL8 from "../../../Images/Family/fam_l_8.jpg";
+import famL9 from "../../../Images/Family/fam_l_9.jpg";
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
 import { priceList } from "/src/Data/priceList";
@@ -28,8 +32,8 @@ export default {
     eller når de vi er så glade i, ikke lenger er her med oss!
   `,
   cover: {
-    url: familie1,
-    title: "Familietid i snøen",
+    url: famE1,
+    title: "Familietid i skogen",
   },
   listing: {
     title: "Gruppefotografering: familie",
@@ -38,105 +42,139 @@ export default {
   },
   shoots: [
     {
+      description: "Familietid i skogen",
+      tags: ["familie", "skog", "sommer"],
+      images: [
+        {
+          url: famE1,
+          title: "Familietid i skogen",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famE2,
+          title: "Familietid i skogen",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: famE3,
+          title: "Familietid i skogen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famE4,
+          title: "Familietid i skogen",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: famE5,
+          title: "Familietid i skogen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famE6,
+          title: "Familietid i skogen",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famE7,
+          title: "Familietid i skogen",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: famE8,
+          title: "Familietid i skogen",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famE9,
+          title: "Familietid i skogen",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2023-06-23",
+    },
+
+    {
       description: "Familietid i snøen",
       tags: ["familie", "snø"],
       images: [
         {
-          url: familie1,
+          url: famL1,
           title: "Familietid i snøen",
           width: 1000,
           height: 667,
         },
         {
-          url: familie2,
+          url: famL2,
           title: "Familietid i snøen",
           width: 667,
           height: 1000,
         },
 
         {
-          url: familie3,
+          url: famL3,
           title: "Familietid i snøen",
           width: 667,
           height: 1000,
         },
         {
-          url: familie4,
+          url: famL4,
           title: "Familietid i snøen",
           width: 667,
           height: 1000,
         },
 
         {
-          url: familie5,
+          url: famL5,
+          title: "Familietid i snøen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famL6,
+          title: "Familietid i snøen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famL7,
+          title: "Familietid i snøen",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: famL8,
+          title: "Familietid i snøen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famL9,
+          title: "Familietid i snøen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famL10,
           title: "Familietid i snøen",
           width: 1000,
           height: 667,
         },
         {
-          url: familie6,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: familie7,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-
-        {
-          url: familie8,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: familie9,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: familie10,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: familie11,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: familie12,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-
-        {
-          url: familie13,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: familie14,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: familie15,
-          title: "Familietid i snøen",
-          width: 1000,
-          height: 667,
-        },
-        {
-          url: familie16,
+          url: famL11,
           title: "Familietid i snøen",
           width: 667,
           height: 1000,

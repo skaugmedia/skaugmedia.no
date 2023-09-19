@@ -1,19 +1,19 @@
 import { oneLine } from "common-tags";
-import l1 from "../../../Images/l_newborn_1.jpg";
-import l2 from "../../../Images/l_newborn_2.jpg";
-import l3 from "../../../Images/l_newborn_3.jpg";
-import l4 from "../../../Images/l_newborn_4.jpg";
-import l5 from "../../../Images/l_newborn_5.jpg";
-import l6 from "../../../Images/l_newborn_6.jpg";
-import l7 from "../../../Images/l_newborn_7.jpg";
-import l8 from "../../../Images/l_newborn_8.jpg";
-import liam1 from "../../../Images/newborn_liam_1.jpg";
-import liam2 from "../../../Images/newborn_liam_2.jpg";
-import liam3 from "../../../Images/newborn_liam_3.jpg";
-import liam4 from "../../../Images/newborn_liam_4.jpg";
-import liam5 from "../../../Images/newborn_liam_5.jpg";
-import liam6 from "../../../Images/newborn_liam_6.jpg";
-import liam7 from "../../../Images/newborn_liam_7.jpg";
+import l1 from "../../../Images/Newborn/l_newborn_1.jpg";
+import l2 from "../../../Images/Newborn/l_newborn_2.jpg";
+import l3 from "../../../Images/Newborn/l_newborn_3.jpg";
+import l4 from "../../../Images/Newborn/l_newborn_4.jpg";
+import l5 from "../../../Images/Newborn/l_newborn_5.jpg";
+import l6 from "../../../Images/Newborn/l_newborn_6.jpg";
+import l7 from "../../../Images/Newborn/l_newborn_7.jpg";
+import l8 from "../../../Images/Newborn/l_newborn_8.jpg";
+import LO1 from "../../../Images/Newborn/newborn_LO_1.jpg";
+import LO2 from "../../../Images/Newborn/newborn_LO_2.jpg";
+import LO3 from "../../../Images/Newborn/newborn_LO_3.jpg";
+import LO4 from "../../../Images/Newborn/newborn_LO_4.jpg";
+import LO5 from "../../../Images/Newborn/newborn_LO_5.jpg";
+import LO6 from "../../../Images/Newborn/newborn_LO_6.jpg";
+import LO7 from "../../../Images/Newborn/newborn_LO_7.jpg";
 
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
@@ -29,8 +29,8 @@ export default {
     akkurat slik man ønsker.
   `,
   cover: {
-    url: liam1,
-    title: "Liam Oleander",
+    url: LO1,
+    title: "LO",
   },
   listing: {
     title: "Barnefotografering: nyfødt",
@@ -39,48 +39,48 @@ export default {
   },
   shoots: [
     {
-      description: "Liam Oleander",
+      description: "LO",
       tags: ["nyfødt", "baby", "gutt"],
       images: [
         {
-          url: liam1,
-          title: "Liam Oleander",
+          url: LO1,
+          title: "LO",
           width: 1000,
           height: 667,
         },
         {
-          url: liam2,
-          title: "Liam Oleander",
+          url: LO2,
+          title: "LO",
           width: 1000,
           height: 667,
         },
         {
-          url: liam3,
-          title: "Liam Oleander",
+          url: LO3,
+          title: "LO",
           width: 1000,
           height: 666,
         },
         {
-          url: liam4,
-          title: "Liam Oleander",
+          url: LO4,
+          title: "LO",
           width: 667,
           height: 1000,
         },
         {
-          url: liam5,
-          title: "Liam Oleander",
+          url: LO5,
+          title: "LO",
           width: 1000,
           height: 667,
         },
         {
-          url: liam6,
-          title: "Liam Oleander",
+          url: LO6,
+          title: "LO",
           width: 1000,
           height: 667,
         },
         {
-          url: liam7,
-          title: "Liam Oleander",
+          url: LO7,
+          title: "LO",
           width: 667,
           height: 1000,
         },
