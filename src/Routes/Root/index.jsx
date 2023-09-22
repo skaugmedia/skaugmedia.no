@@ -24,6 +24,7 @@ import PricesProductsRoute from "../PricesProducts/Route";
 import "./Root.css";
 import classes from "./Root.module.css";
 import { SocialIcons } from "/src/Components/SocialIcons";
+import SimpleLogo from "/src/Images/Footer/skaug_media_simple_logo.png";
 
 export function Root() {
   const [showNav, setShowNav] = useState(false);
@@ -75,11 +76,22 @@ export function Root() {
         </main>
 
         <footer>
-          <Nav containerClassName="footer-links" linkClassName="footer-link" />
-          <SocialIcons
+          <div className="Footer__RowBox">
+          <Nav containerClassName="footer-links" linkClassName="footer-link" className="Footer__RowOne" />
+          <div className="Footer__RowTwo">
+            <img className="Footer__RowLogo" src="SimpleLogo" alt="Skaug Media simple logo" />
+            <div className="Footer__RowText">Nina Merethe Skaug</div>
+            <div className="Footer__RowText">Tlf. 464 18 241</div>
+            <div className="Footer__RowText">kontakt@skaugmedia.no</div>
+          </div>
+          <div>
+            <SocialIcons
             containerClassName="footer-social"
             itemClassName="social"
           />
+          </div>
+          </div>
+          
         </footer>
       </div>
       <div

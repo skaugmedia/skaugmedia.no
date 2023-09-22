@@ -1,47 +1,63 @@
 import { oneLine } from "common-tags";
-import mat1 from "../../../Images/mat_1.jpg";
-import mat2 from "../../../Images/mat_2.jpg";
-import mat3 from "../../../Images/mat_3.jpg";
-import mat4 from "../../../Images/mat_4.jpg";
-import mat5 from "../../../Images/mat_5.jpg";
-import mat6 from "../../../Images/mat_6.jpg";
-import mat7 from "../../../Images/mat_7.jpg";
-import mat8 from "../../../Images/mat_8.jpg";
-import mat9 from "../../../Images/mat_9.jpg";
-import mat10 from "../../../Images/mat_10.jpg";
-import mat11 from "../../../Images/mat_11.jpg";
-import mat12 from "../../../Images/mat_12.jpg";
-import mat13 from "../../../Images/mat_13.jpg";
-import mat14 from "../../../Images/mat_14.jpg";
-import mat15 from "../../../Images/mat_15.jpg";
-import mat16 from "../../../Images/mat_16.jpg";
-import mat17 from "../../../Images/mat_17.jpg";
-import mat18 from "../../../Images/mat_18.jpg";
-import mat19 from "../../../Images/mat_19.jpg";
-import mat20 from "../../../Images/mat_20.jpg";
-import mat21 from "../../../Images/mat_21.jpg";
-import mat22 from "../../../Images/mat_22.jpg";
-import mat23 from "../../../Images/mat_23.jpg";
-import mat24 from "../../../Images/mat_24.jpg";
-import mat25 from "../../../Images/mat_25.jpg";
-import mat26 from "../../../Images/mat_26.jpg";
-import mat27 from "../../../Images/mat_27.jpg";
-import mat28 from "../../../Images/mat_28.jpg";
-import mat29 from "../../../Images/mat_29.jpg";
-import mat30 from "../../../Images/mat_30.jpg";
-import mat31 from "../../../Images/mat_31.jpg";
-import mat32 from "../../../Images/mat_32.jpg";
-import mat33 from "../../../Images/mat_33.jpg";
-import mat34 from "../../../Images/mat_34.jpg";
-import mat35 from "../../../Images/mat_35.jpg";
-import mat36 from "../../../Images/mat_36.jpg";
-import mat37 from "../../../Images/mat_37.jpg";
-import mat38 from "../../../Images/mat_38.jpg";
-import mat39 from "../../../Images/mat_39.jpg";
-import pasta_pesto_1 from "../../../Images/pasta_pesto-046.jpg";
-import pasta_pesto_2 from "../../../Images/pasta_pesto-085.jpg";
-import pasta_pesto_3 from "../../../Images/pasta_pesto-121.jpg";
-import pasta_pesto_4 from "../../../Images/pasta_pesto-144.jpg";
+import food_belgian_waffle_1 from "../../../Images/Food/food_belgian_waffle_1.jpg";
+
+import food_bread_1 from "../../../Images/Food/food_bread_1.jpg";
+
+import food_cakes_1 from "../../../Images/Food/food_cakes_1.jpg";
+import food_cakes_10 from "../../../Images/Food/food_cakes_10.jpg";
+import food_cakes_11 from "../../../Images/Food/food_cakes_11.jpg";
+import food_cakes_12 from "../../../Images/Food/food_cakes_12.jpg";
+import food_cakes_2 from "../../../Images/Food/food_cakes_2.jpg";
+import food_cakes_3 from "../../../Images/Food/food_cakes_3.jpg";
+import food_cakes_4 from "../../../Images/Food/food_cakes_4.jpg";
+import food_cakes_5 from "../../../Images/Food/food_cakes_5.jpg";
+import food_cakes_6 from "../../../Images/Food/food_cakes_6.jpg";
+import food_cakes_7 from "../../../Images/Food/food_cakes_7.jpg";
+import food_cakes_8 from "../../../Images/Food/food_cakes_8.jpg";
+import food_cakes_9 from "../../../Images/Food/food_cakes_9.jpg";
+
+import food_christmas_truffles_1 from "../../../Images/Food/food_christmas_truffles_1.jpg";
+import food_christmas_truffles_2 from "../../../Images/Food/food_christmas_truffles_2.jpg";
+import food_christmas_truffles_3 from "../../../Images/Food/food_christmas_truffles_3.jpg";
+
+import food_eggs_1 from "../../../Images/Food/food_eggs_1.jpg";
+
+import food_granola_1 from "../../../Images/Food/food_granola_1.jpg";
+import food_granola_2 from "../../../Images/Food/food_granola_2.jpg";
+
+import food_hotdogs_1 from "../../../Images/Food/food_hotdogs_1.jpg";
+
+import food_limonade_1 from "../../../Images/Food/food_limonade_1.jpg";
+import food_limonade_2 from "../../../Images/Food/food_limonade_2.jpg";
+
+import food_lunch_1 from "../../../Images/Food/food_lunch_1.jpg";
+import food_lunch_2 from "../../../Images/Food/food_lunch_2.jpg";
+
+import food_lunch_3 from "../../../Images/Food/food_lunch_3.jpg";
+import food_lunch_4 from "../../../Images/Food/food_lunch_4.jpg";
+import food_lunch_5 from "../../../Images/Food/food_lunch_5.jpg";
+
+import food_milk_berry_1 from "../../../Images/Food/food_milk_berry_1.jpg";
+import food_milk_berry_2 from "../../../Images/Food/food_milk_berry_2.jpg";
+import food_milk_berry_3 from "../../../Images/Food/food_milk_berry_3.jpg";
+
+import food_pasta_alforno_1 from "../../../Images/Food/food_pasta_alforno_1.jpg";
+import food_pasta_alforno_2 from "../../../Images/Food/food_pasta_alforno_2.jpg";
+import food_pasta_alforno_3 from "../../../Images/Food/food_pasta_alforno_3.jpg";
+
+import food_pasta_pesto_1 from "../../../Images/Food/food_pasta_pesto_1.jpg";
+import food_pasta_pesto_2 from "../../../Images/Food/food_pasta_pesto_2.jpg";
+import food_pasta_pesto_3 from "../../../Images/Food/food_pasta_pesto_3.jpg";
+import food_pasta_pesto_4 from "../../../Images/Food/food_pasta_pesto_4.jpg";
+
+import food_smoothie_1 from "../../../Images/Food/food_smoothie_1.jpg";
+
+import food_soup_1 from "../../../Images/Food/food_soup_1.jpg";
+
+import food_tomato_1 from "../../../Images/Food/food_tomato_1.jpg";
+import food_tomato_2 from "../../../Images/Food/food_tomato_2.jpg";
+
+import food_tomatosoup_1 from "../../../Images/Food/food_tomatosoup_1.jpg";
 
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
@@ -54,7 +70,7 @@ export default {
     at maten alltid ser innbydende ut.
   `,
   cover: {
-    url: mat32,
+    url: food_lunch_1,
     title: "Ciabatta med pesto, svinekjøtt og ost",
   },
   listing: {
@@ -68,25 +84,25 @@ export default {
       tags: ["mat", "lys", "studiofotografering", "stilleben"],
       images: [
         {
-          url: pasta_pesto_1,
+          url: food_pasta_pesto_1,
           title: "Pestopasta",
           width: 677,
           height: 1000,
         },
         {
-          url: pasta_pesto_2,
+          url: food_pasta_pesto_2,
           title: "Pestopasta",
           width: 677,
           height: 1000,
         },
         {
-          url: pasta_pesto_3,
+          url: food_pasta_pesto_3,
           title: "Pestopasta",
           width: 677,
           height: 1000,
         },
         {
-          url: pasta_pesto_4,
+          url: food_pasta_pesto_4,
           title: "Pestopasta",
           width: 677,
           height: 1000,
@@ -100,7 +116,7 @@ export default {
       tags: ["mat", "moody", "stilleben"],
       images: [
         {
-          url: mat1,
+          url: food_eggs_1,
           title: "Egg",
           width: 467,
           height: 700,
@@ -109,75 +125,103 @@ export default {
       date: "2016-04-15",
     },
     {
-      description: "Pasjonsfruktpai",
+      description: "Kaker",
       tags: ["mat", "baking", "kake"],
       images: [
         {
-          url: mat2,
+          url: food_cakes_1,
           title: "Pasjonsfruktpai",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_2,
+          title: "Appelsinformkake",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_3,
+          title: "Blånærcupcakes",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_4,
+          title: "Sjokolade, lakris og bringebærkake",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_5,
+          title: "Sjokoladeknuter",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_6,
+          title: "Bringebærsnurrer",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_7,
+          title: "Pasjonsfrukt",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_8,
+          title: "Blåbærmuffins",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_9,
+          title: "Sjokolademuffins",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_10,
+          title: "Fiken",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_11,
+          title: "Red velvet kake",
+          width: 467,
+          height: 700,
+        },
+        {
+          url: food_cakes_12,
+          title: "Sjokoladekake med jordbær",
           width: 467,
           height: 700,
         },
       ],
       date: "2016-04-12",
     },
-    {
-      description: "Appelsinformkake med sjokoladetrekk",
-      tags: ["mat", "baking", "kake"],
-      images: [
-        {
-          url: mat3,
-          title: "Appelsinformkake med sjokoladetrekk",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2016-03-21",
-    },
-    {
-      description: "Blåbærcupcakes",
-      tags: ["mat", "baking", "kake"],
-      images: [
-        {
-          url: mat4,
-          title: "Blåbærcupcakes",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2016-04-17",
-    },
-    {
-      description: "Sjokoladekake med bringebærmousse",
-      tags: ["mat", "baking", "kake"],
-      images: [
-        {
-          url: mat5,
-          title: "Sjokoladekake med bringebærmousse",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2016-04-16",
-    },
+
     {
       description: "Bær i melk",
       tags: ["mat", "bær"],
       images: [
         {
-          url: mat6,
+          url: food_milk_berry_1,
           title: "Bær i melk",
           width: 467,
           height: 700,
         },
         {
-          url: mat7,
+          url: food_milk_berry_2,
           title: "Bær i melk",
           width: 467,
           height: 700,
         },
         {
-          url: mat8,
+          url: food_milk_berry_3,
           title: "Bær i melk",
           width: 467,
           height: 700,
@@ -185,25 +229,13 @@ export default {
       ],
       date: "2015-05-01",
     },
-    {
-      description: "Sjokoladeknuter",
-      tags: ["mat", "baking", "kake"],
-      images: [
-        {
-          url: mat9,
-          title: "Sjokoladeknuter",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2018-03-25",
-    },
+
     {
       description: "Tomatsuppe",
       tags: ["mat", "middag", "moody"],
       images: [
         {
-          url: mat10,
+          url: food_tomatosoup_1,
           title: "Tomatsuppe",
           width: 467,
           height: 700,
@@ -216,19 +248,19 @@ export default {
       tags: ["mat", "middag"],
       images: [
         {
-          url: mat11,
+          url: food_pasta_alforno_1,
           title: "Pasta al forno, på benken",
           width: 467,
           height: 700,
         },
         {
-          url: mat12,
+          url: food_pasta_alforno_2,
           title: "Pasta al forno",
           width: 467,
           height: 700,
         },
         {
-          url: mat13,
+          url: food_pasta_alforno_3,
           title: "Pasta al forno, ingredienser",
           height: 467,
           width: 700,
@@ -236,31 +268,19 @@ export default {
       ],
       date: "2018-03-22",
     },
-    {
-      description: "Bringebærsnurrer",
-      tags: ["mat", "baking", "kake"],
-      images: [
-        {
-          url: mat14,
-          title: "Bringebærsnurrer",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2016-05-02",
-    },
+
     {
       description: "Lemonade",
       tags: ["mat", "drikke"],
       images: [
         {
-          url: mat15,
+          url: food_limonade_1,
           title: "Lemonade",
           width: 700,
           height: 467,
         },
         {
-          url: mat16,
+          url: food_limonade_2,
           title: "Lemonade",
           width: 467,
           height: 700,
@@ -273,13 +293,13 @@ export default {
       tags: ["mat", "moody"],
       images: [
         {
-          url: mat17,
+          url: food_tomato_1,
           title: "Stekte cherrytomater",
           width: 467,
           height: 700,
         },
         {
-          url: mat18,
+          url: food_tomato_2,
           title: "Stekte cherrytomater",
           width: 467,
           height: 700,
@@ -292,7 +312,7 @@ export default {
       tags: ["mat", "moody"],
       images: [
         {
-          url: mat19,
+          url: food_lunch_5,
           title: "Rødbetesalat",
           width: 467,
           height: 700,
@@ -305,7 +325,7 @@ export default {
       tags: ["mat", "moody"],
       images: [
         {
-          url: mat20,
+          url: food_lunch_3,
           title: "Reddik på skiva",
           width: 467,
           height: 700,
@@ -313,64 +333,13 @@ export default {
       ],
       date: "2018-06-16",
     },
-    {
-      description: "Pasjonsfrukt",
-      tags: ["mat"],
-      images: [
-        {
-          url: mat21,
-          title: "Pasjonsfrukt",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2018-05-22",
-    },
-    {
-      description: "Blåbærmuffins",
-      tags: ["mat", "baking", "kake"],
-      images: [
-        {
-          url: mat22,
-          title: "Pasjonsfrukt",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2018-09-10",
-    },
-    {
-      description: "Sjokolademuffins",
-      tags: ["mat", "baking", "kake"],
-      images: [
-        {
-          url: mat23,
-          title: "Sjokolademuffins",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2018-09-05",
-    },
-    {
-      description: "Red velvet kake",
-      tags: ["mat", "baking", "kake"],
-      images: [
-        {
-          url: mat24,
-          title: "Red velvet kake",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2017-01-06",
-    },
+
     {
       description: "Belgisk vaffel",
       tags: ["mat", "baking"],
       images: [
         {
-          url: mat25,
+          url: food_belgian_waffle_1,
           title: "Belgisk vaffel",
           width: 467,
           height: 700,
@@ -383,7 +352,7 @@ export default {
       tags: ["mat", "smoothie"],
       images: [
         {
-          url: mat26,
+          url: food_smoothie_1,
           title: "Smoothie med bringebær og basilikum",
           width: 467,
           height: 700,
@@ -396,7 +365,7 @@ export default {
       tags: ["mat", "middag"],
       images: [
         {
-          url: mat27,
+          url: food_lunch_4,
           title: "Stekt sopp",
           width: 467,
           height: 700,
@@ -409,13 +378,13 @@ export default {
       tags: ["mat", "smoothie"],
       images: [
         {
-          url: mat29,
+          url: food_granola_2,
           title: "Granola med bringebær, gresk yoghurt og pasjonsfrukt",
           width: 467,
           height: 700,
         },
         {
-          url: mat28,
+          url: food_granola_1,
           title: "Granola med bringebær, i melk",
           width: 467,
           height: 700,
@@ -428,7 +397,7 @@ export default {
       tags: ["mat", "middag"],
       images: [
         {
-          url: mat30,
+          url: food_soup_1,
           title: "Søtpotetsuppe",
           width: 467,
           height: 700,
@@ -441,7 +410,7 @@ export default {
       tags: ["mat", "middag"],
       images: [
         {
-          url: mat31,
+          url: food_hotdogs_1,
           title: "Pølser med tilbehør",
           height: 467,
           width: 700,
@@ -454,13 +423,13 @@ export default {
       tags: ["mat", "middag"],
       images: [
         {
-          url: mat32,
+          url: food_lunch_1,
           title: "Ciabatta med pesto, svinekjøtt og ost",
           width: 700,
           height: 467,
         },
         {
-          url: mat33,
+          url: food_lunch_2,
           title: "Timian",
           width: 467,
           height: 700,
@@ -473,7 +442,7 @@ export default {
       tags: ["mat"],
       images: [
         {
-          url: mat34,
+          url: food_bread_1,
           title: "Brød",
           width: 700,
           height: 467,
@@ -486,51 +455,25 @@ export default {
       tags: ["mat", "sjokolade"],
       images: [
         {
-          url: mat35,
+          url: food_christmas_truffles_1,
           title: "Sjokolade",
           width: 467,
           height: 700,
         },
         {
-          url: mat38,
+          url: food_christmas_truffles_2,
           title: "Sjokoladetrøfler",
           width: 467,
           height: 700,
         },
         {
-          url: mat39,
+          url: food_christmas_truffles_3,
           title: "Stjerneanis",
           width: 467,
           height: 700,
         },
       ],
       date: "2015-11-12",
-    },
-    {
-      description: "Fiken",
-      tags: ["mat"],
-      images: [
-        {
-          url: mat36,
-          title: "Fiken",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2018-09-05",
-    },
-    {
-      description: "Brownie med jordbær",
-      tags: ["mat", "baking", "kake", "hånd"],
-      images: [
-        {
-          url: mat37,
-          title: "Brownie med jordbær",
-          width: 467,
-          height: 700,
-        },
-      ],
-      date: "2016-05-10",
     },
   ],
 };

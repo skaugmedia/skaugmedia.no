@@ -83,7 +83,7 @@ export default {
           height: 1000,
         },
       ],
-      date: "2023-06-23",
+      date: "2023-08-26",
     },
     {
       description: "Konfirmanten E",

@@ -102,10 +102,13 @@
   font-family: nunito;
   font-weight: 700;
   color: var(--blue);
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.CompanyPrice__Info > *{
+  justify-self: start;
 }
 
 .discount-offer-box-title {

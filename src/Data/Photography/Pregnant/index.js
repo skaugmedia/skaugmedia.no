@@ -175,56 +175,7 @@ export default {
       ],
       date: "2023-08-07",
     },
-    {
-      description: "Gravide K",
-      tags: ["gravid", "sommer", "blomstereng"],
-      images: [
-        {
-          url: preg_k_1,
-          title: "Gravide K",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: preg_k_2,
-          title: "Gravide K",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: preg_k_3,
-          title: "Gravide K",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: preg_k_4,
-          title: "Gravide K",
-          width: 667,
-          height: 1000,
-        },
 
-        {
-          url: preg_k_5,
-          title: "Gravide K",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: preg_k_6,
-          title: "Gravide K",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: preg_k_7,
-          title: "Gravide K",
-          width: 1000,
-          height: 667,
-        },
-      ],
-      date: "2023-08-16",
-    },
     {
       description: "Gravide P",
       tags: ["gravid", "vinter", "partner"],
@@ -368,12 +319,6 @@ export default {
         },
         {
           url: preg_m_7,
-          title: "Gravide M",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: preg_m_8,
           title: "Gravide M",
           width: 667,
           height: 1000,

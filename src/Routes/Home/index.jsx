@@ -164,6 +164,7 @@ export function Home() {
         <ImageSection
           images={presentables.photography}
           className="Home__PhotographyImageSection"
+          imageClassName="Home__PhotographyImageSection__Image"
         />
       </PageSection>
       <PageSection outerClassName="myquote-outer" innerClassName="myquote">
@@ -182,7 +183,8 @@ export function Home() {
       </PageSection>
       <PageSection>
         <h2 className="Home__Graphical">Grafisk Design</h2>
-        <ImageSection images={presentables.graphicalDesign} />
+        <ImageSection images={presentables.graphicalDesign} 
+        imageClassName="Home__GraphicalImageSection__Image"/>
       </PageSection>
 
       {/* <PageSection

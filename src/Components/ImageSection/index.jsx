@@ -12,7 +12,7 @@ export const ImageSection = ({
     <div className={classNames("ImageSection", className)} {...props}>
       {images.map((image) => (
         <NavLink
-          key={`${image.title}${image.url}`}
+          key={`${image.title}${image.url}${image.thumbnail ?? image.img.url}`}
           to={image.url}
           className={classNames("ImageSection__ImageContainer", imageClassName)}
         >

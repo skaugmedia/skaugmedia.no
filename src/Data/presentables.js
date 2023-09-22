@@ -1,3 +1,4 @@
+import { shuffle } from "fast-shuffle";
 import LashBrowser from "./GraphicalDesign/LashBrowser";
 import Naturalis from "./GraphicalDesign/Naturalis";
 import PentOgBrukt from "./GraphicalDesign/PentOgBrukt";
@@ -14,7 +15,7 @@ import Product from "./Photography/Product";
 import GraphicalDesignRoute from "/src/Routes/GraphicalDesign/Route";
 import PhotographyRoute from "/src/Routes/Photography/Route";
 
-export const photography = [
+const rawPhotography = [
   {
     image: Confirmation.shoots[1].images[5],
     category: Confirmation,
@@ -97,8 +98,9 @@ export const photography = [
   thumbnail: image.thumbnail,
   img: image,
 }));
+export const photography = shuffle(rawPhotography).slice(0, 5);
 
-export const graphicalDesign = [
+const graphicalDesign = [
   {
     image: LashBrowser.images[1],
     project: LashBrowser,
@@ -141,3 +143,5 @@ export const graphicalDesign = [
   thumbnail: image.thumbnail,
   img: image,
 }));
+const shuffledGraphicalDesign = shuffle(graphicalDesign).slice(0, 3);
+export { shuffledGraphicalDesign as graphicalDesign };

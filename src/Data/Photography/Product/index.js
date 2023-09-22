@@ -1,55 +1,64 @@
 import { oneLine } from "common-tags";
-import pogb_produkt_1 from "../../../Images/pentogbrukt_sommer_1.jpg";
-import pogb_produkt_10 from "../../../Images/pentogbrukt_sommer_10.jpg";
-import pogb_produkt_11 from "../../../Images/pentogbrukt_sommer_11.jpg";
-import pogb_produkt_12 from "../../../Images/pentogbrukt_sommer_12.jpg";
-import pogb_produkt_13 from "../../../Images/pentogbrukt_sommer_13.jpg";
-import pogb_produkt_14 from "../../../Images/pentogbrukt_sommer_14.jpg";
-import pogb_produkt_15 from "../../../Images/pentogbrukt_sommer_15.jpg";
-import pogb_produkt_16 from "../../../Images/pentogbrukt_sommer_16.jpg";
-import pogb_produkt_17 from "../../../Images/pentogbrukt_sommer_17.jpg";
-import pogb_produkt_18 from "../../../Images/pentogbrukt_sommer_18.jpg";
-import pogb_produkt_19 from "../../../Images/pentogbrukt_sommer_19.jpg";
-import pogb_produkt_2 from "../../../Images/pentogbrukt_sommer_2.jpg";
-import pogb_produkt_20 from "../../../Images/pentogbrukt_sommer_20.jpg";
-import pogb_produkt_21 from "../../../Images/pentogbrukt_sommer_21.jpg";
-import pogb_produkt_22 from "../../../Images/pentogbrukt_sommer_22.jpg";
-import pogb_produkt_23 from "../../../Images/pentogbrukt_sommer_23.jpg";
-import pogb_produkt_24 from "../../../Images/pentogbrukt_sommer_24.jpg";
-import pogb_produkt_3 from "../../../Images/pentogbrukt_sommer_3.jpg";
-import pogb_produkt_4 from "../../../Images/pentogbrukt_sommer_4.jpg";
-import pogb_produkt_5 from "../../../Images/pentogbrukt_sommer_5.jpg";
-import pogb_produkt_6 from "../../../Images/pentogbrukt_sommer_6.jpg";
-import pogb_produkt_7 from "../../../Images/pentogbrukt_sommer_7.jpg";
-import pogb_produkt_8 from "../../../Images/pentogbrukt_sommer_8.jpg";
-import pogb_produkt_9 from "../../../Images/pentogbrukt_sommer_9.jpg";
-import produkt1 from "../../../Images/produkt_1.jpg";
-import produkt10 from "../../../Images/produkt_10.jpg";
-import produkt11 from "../../../Images/produkt_11.jpg";
-import produkt12 from "../../../Images/produkt_12.jpg";
-import produkt13 from "../../../Images/produkt_13.jpg";
-import produkt14 from "../../../Images/produkt_14.jpg";
-import produkt15 from "../../../Images/produkt_15.jpg";
-import produkt16 from "../../../Images/produkt_16.jpg";
-import produkt17 from "../../../Images/produkt_17.jpg";
-import produkt18 from "../../../Images/produkt_18.jpg";
-import produkt19 from "../../../Images/produkt_19.jpg";
-import produkt2 from "../../../Images/produkt_2.jpg";
-import produkt20 from "../../../Images/produkt_20.jpg";
-import produkt21 from "../../../Images/produkt_21.jpg";
-import produkt22 from "../../../Images/produkt_22.jpg";
-import produkt23 from "../../../Images/produkt_23.jpg";
-import produkt24 from "../../../Images/produkt_24.jpg";
-import produkt25 from "../../../Images/produkt_25.jpg";
-import produkt26 from "../../../Images/produkt_26.jpg";
-import produkt27 from "../../../Images/produkt_27.jpg";
-import produkt3 from "../../../Images/produkt_3.jpg";
-import produkt4 from "../../../Images/produkt_4.jpg";
-import produkt5 from "../../../Images/produkt_5.jpg";
-import produkt6 from "../../../Images/produkt_6.jpg";
-import produkt7 from "../../../Images/produkt_7.jpg";
-import produkt8 from "../../../Images/produkt_8.jpg";
-import produkt9 from "../../../Images/produkt_9.jpg";
+import business_pogb_sommer_01 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_01.jpg";
+import business_pogb_sommer_02 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_02.jpg";
+import business_pogb_sommer_03 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_03.jpg";
+import business_pogb_sommer_04 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_04.jpg";
+import business_pogb_sommer_05 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_05.jpg";
+import business_pogb_sommer_06 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_06.jpg";
+import business_pogb_sommer_07 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_07.jpg";
+import business_pogb_sommer_08 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_08.jpg";
+import business_pogb_sommer_09 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_09.jpg";
+import business_pogb_sommer_10 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_10.jpg";
+import business_pogb_sommer_11 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_11.jpg";
+import business_pogb_sommer_12 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_12.jpg";
+import business_pogb_sommer_13 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_13.jpg";
+import business_pogb_sommer_14 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_14.jpg";
+import business_pogb_sommer_15 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_15.jpg";
+import business_pogb_sommer_16 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_16.jpg";
+import business_pogb_sommer_17 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_17.jpg";
+import business_pogb_sommer_18 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_18.jpg";
+import business_pogb_sommer_19 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_19.jpg";
+import business_pogb_sommer_20 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_20.jpg";
+import business_pogb_sommer_21 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_21.jpg";
+import business_pogb_sommer_22 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_22.jpg";
+import business_pogb_sommer_23 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_23.jpg";
+import business_pogb_sommer_24 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_24.jpg";
+
+import product_aida_1 from "../../../Images/Product/product_aida_1.jpg";
+import product_aida_2 from "../../../Images/Product/product_aida_2.jpg";
+import product_aida_3 from "../../../Images/Product/product_aida_3.jpg";
+
+import product_eva_solo_1 from "../../../Images/Product/product_eva_solo_1.jpg";
+import product_eva_solo_2 from "../../../Images/Product/product_eva_solo_2.jpg";
+import product_eva_solo_3 from "../../../Images/Product/product_eva_solo_3.jpg";
+
+import product_moody_5 from "../../../Images/Product/product_moody_5.jpg";
+import product_moody_6 from "../../../Images/Product/product_moody_6.jpg";
+import product_moody_7 from "../../../Images/Product/product_moody_7.jpg";
+import product_moody_8 from "../../../Images/Product/product_moody_8.jpg";
+
+import product_piliyvit_1 from "../../../Images/Product/product_piliyvit_1.jpg";
+import product_piliyvit_2 from "../../../Images/Product/product_piliyvit_2.jpg";
+import product_piliyvit_3 from "../../../Images/Product/product_piliyvit_3.jpg";
+import product_piliyvit_4 from "../../../Images/Product/product_piliyvit_4.jpg";
+import product_piliyvit_5 from "../../../Images/Product/product_piliyvit_5.jpg";
+import product_piliyvit_6 from "../../../Images/Product/product_piliyvit_6.jpg";
+import product_piliyvit_7 from "../../../Images/Product/product_piliyvit_7.jpg";
+import product_piliyvit_8 from "../../../Images/Product/product_piliyvit_8.jpg";
+
+import product_rosendahl_champagne_1 from "../../../Images/Product/product_rosendahl_champagne_1.jpg";
+
+import product_royal_copenhagen_1 from "../../../Images/Product/product_royal_copenhagen_1.jpg";
+
+import product_rosendahl_fcc_1 from "../../../Images/Product/product_rosendahl_fcc_1.jpg";
+import product_rosendahl_fcc_2 from "../../../Images/Product/product_rosendahl_fcc_2.jpg";
+import product_rosendahl_fcc_3 from "../../../Images/Product/product_rosendahl_fcc_3.jpg";
+import product_rosendahl_fcc_4 from "../../../Images/Product/product_rosendahl_fcc_4.jpg";
+
+import product_wikwalsoe_1 from "../../../Images/Product/product_wikwalsoe_1.jpg";
+import product_wikwalsoe_2 from "../../../Images/Product/product_wikwalsoe_2.jpg";
+import product_wikwalsoe_3 from "../../../Images/Product/product_wikwalsoe_3.jpg";
+
 import * as ids from "../../../Routes/Prices/Ids";
 import PricesRoute from "../../../Routes/Prices/Route";
 
@@ -60,8 +69,8 @@ export default {
     Produktbilder kan enten tas i studio, eller i et flott miljø sammen med andre produkter. 
   `,
   cover: {
-    url: produkt1,
-    title: "Rosendahl champagneglass",
+    url: product_eva_solo_1,
+    title: "Produkt",
   },
   listing: {
     title: "Produktfotografering",
@@ -75,145 +84,145 @@ export default {
       hideFromRecentWorks: true,
       images: [
         {
-          url: pogb_produkt_3,
+          url: business_pogb_sommer_01,
           title: "Pent og Brukt sommerstemning",
           width: 1000,
           height: 667,
         },
         {
-          url: pogb_produkt_4,
+          url: business_pogb_sommer_02,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_03,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_04,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_05,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_06,
           title: "Pent og Brukt sommerstemning",
           width: 1000,
           height: 667,
         },
         {
-          url: pogb_produkt_5,
+          url: business_pogb_sommer_07,
           title: "Pent og Brukt sommerstemning",
           width: 667,
           height: 1000,
         },
         {
-          url: pogb_produkt_1,
+          url: business_pogb_sommer_08,
           title: "Pent og Brukt sommerstemning",
           width: 667,
           height: 1000,
         },
         {
-          url: pogb_produkt_2,
+          url: business_pogb_sommer_09,
           title: "Pent og Brukt sommerstemning",
           width: 667,
           height: 1000,
         },
         {
-          url: pogb_produkt_6,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_7,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_8,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_9,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_10,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_11,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_12,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_13,
+          url: business_pogb_sommer_10,
           title: "Pent og Brukt sommerstemning",
           width: 1000,
           height: 667,
         },
         {
-          url: pogb_produkt_14,
+          url: business_pogb_sommer_11,
           title: "Pent og Brukt sommerstemning",
           width: 667,
           height: 1000,
         },
         {
-          url: pogb_produkt_15,
+          url: business_pogb_sommer_12,
           title: "Pent og Brukt sommerstemning",
           width: 667,
           height: 1000,
         },
         {
-          url: pogb_produkt_16,
+          url: business_pogb_sommer_13,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_14,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_15,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_16,
           title: "Pent og Brukt sommerstemning",
           width: 1000,
           height: 667,
         },
         {
-          url: pogb_produkt_17,
+          url: business_pogb_sommer_17,
           title: "Pent og Brukt sommerstemning",
           width: 667,
           height: 1000,
         },
         {
-          url: pogb_produkt_18,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_19,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_20,
+          url: business_pogb_sommer_18,
           title: "Pent og Brukt sommerstemning",
           width: 1000,
           height: 667,
         },
         {
-          url: pogb_produkt_21,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: pogb_produkt_22,
+          url: business_pogb_sommer_19,
           title: "Pent og Brukt sommerstemning",
           width: 1000,
           height: 667,
         },
         {
-          url: pogb_produkt_23,
+          url: business_pogb_sommer_20,
           title: "Pent og Brukt sommerstemning",
           width: 667,
           height: 1000,
         },
         {
-          url: pogb_produkt_24,
+          url: business_pogb_sommer_21,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_22,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_23,
+          title: "Pent og Brukt sommerstemning",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: business_pogb_sommer_24,
           title: "Pent og Brukt sommerstemning",
           width: 667,
           height: 1000,
@@ -226,7 +235,7 @@ export default {
       tags: ["produkt"],
       images: [
         {
-          url: produkt1,
+          url: product_rosendahl_champagne_1,
           title: "Rosendahl champagneglass",
           width: 1000,
           height: 667,
@@ -239,25 +248,25 @@ export default {
       tags: ["produkt", "borddekking"],
       images: [
         {
-          url: produkt2,
+          url: product_moody_5,
           title: "Mørk borddekking",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt3,
+          url: product_moody_6,
           title: "Mørk borddekking",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt4,
+          url: product_moody_7,
           title: "Mørk borddekking",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt5,
+          url: product_moody_8,
           title: "Mørk borddekking",
           width: 667,
           height: 1000,
@@ -270,49 +279,49 @@ export default {
       tags: ["produkt", "borddekking"],
       images: [
         {
-          url: produkt24,
+          url: product_piliyvit_1,
           title: "Pilluyvit servise",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt25,
+          url: product_piliyvit_2,
           title: "Pilluyvit servise",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt26,
+          url: product_piliyvit_3,
           title: "Pilluyvit servise",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt27,
+          url: product_piliyvit_4,
           title: "Pilluyvit servise",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt6,
+          url: product_piliyvit_5,
           title: "Pilluyvit servise",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt21,
+          url: product_piliyvit_6,
           title: "Pilluyvit servise",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt22,
+          url: product_piliyvit_7,
           title: "Pilluyvit servise",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt23,
+          url: product_piliyvit_8,
           title: "Pilluyvit servise",
           width: 667,
           height: 1000,
@@ -325,7 +334,7 @@ export default {
       tags: ["produkt"],
       images: [
         {
-          url: produkt7,
+          url: product_royal_copenhagen_1,
           title: "Royal Copenhagen contrast kopper",
           width: 667,
           height: 1000,
@@ -338,25 +347,25 @@ export default {
       tags: ["produkt", "borddekking"],
       images: [
         {
-          url: produkt8,
+          url: product_rosendahl_fcc_1,
           title: "Rosendahl servise og FCC bestikk",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt9,
+          url: product_rosendahl_fcc_2,
           title: "Rosendahl servise og FCC bestikk",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt10,
+          url: product_rosendahl_fcc_3,
           title: "Rosendahl servise og FCC bestikk",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt11,
+          url: product_rosendahl_fcc_4,
           title: "Rosendahl servise og FCC bestikk",
           width: 667,
           height: 1000,
@@ -369,19 +378,19 @@ export default {
       tags: ["produkt", "borddekking"],
       images: [
         {
-          url: produkt12,
+          url: product_eva_solo_1,
           title: "Eva Solo trio servise",
           width: 1000,
           height: 667,
         },
         {
-          url: produkt14,
+          url: product_eva_solo_2,
           title: "Eva Solo trio servise",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt13,
+          url: product_eva_solo_3,
           title: "Eva Solo trio servise",
           width: 1000,
           height: 667,
@@ -394,19 +403,19 @@ export default {
       tags: ["produkt", "borddekking"],
       images: [
         {
-          url: produkt15,
+          url: product_wikwalsoe_1,
           title: "Wik & Walsøe Slåpe",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt16,
+          url: product_wikwalsoe_2,
           title: "Wik & Walsøe Slåpe",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt17,
+          url: product_wikwalsoe_3,
           title: "Wik & Walsøe Slåpe",
           width: 667,
           height: 1000,
@@ -419,19 +428,19 @@ export default {
       tags: ["produkt", "borddekking"],
       images: [
         {
-          url: produkt19,
+          url: product_aida_2,
           title: "Aida Quatro",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt20,
+          url: product_aida_3,
           title: "Aida Quatro",
           width: 667,
           height: 1000,
         },
         {
-          url: produkt18,
+          url: product_aida_1,
           title: "Aida Paul Pava",
           width: 1000,
           height: 667,

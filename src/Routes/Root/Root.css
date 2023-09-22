@@ -32,6 +32,7 @@ img.headerlogo {
   text-transform: uppercase;
   margin-bottom: 30px;
   font-family: oswald;
+  back
 }
 
 .nav-link:not(:last-child) {
@@ -49,18 +50,49 @@ img.headerlogo {
   margin: 40px;
 }
 
+.footer-links {
+  display: flex;
+  flex-flow: row;
+  max-width: var(--content-width);
+  width: 100%;
+ 
+}
+
 .footer-link {
-  color: var(--blue);
+  color: white;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row;
   justify-content: space-between;
   margin-right: 20px;
   margin-left: 20px;
   text-decoration: none;
   font-family: oswald;
+  
 }
 .footer-link:hover {
   color: #000000;
+}
+
+.Footer__RowBox {
+  justify-content: center;
+background-color: var(--blue);
+height: 170px;
+display: flex;
+flex-flow: column;
+}
+
+.Footer__RowLogo {
+  height: 20px;
+}
+
+.Footer__RowTwo {
+  display: flex;
+  flex-flow: row;
+  justify-content: left;
+  gap: 30px;
+  font-family: nunito;
 }
 
 a.footer-social {

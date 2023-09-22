@@ -14,15 +14,11 @@ export function SocialIcons({ itemClassName, containerClassName }) {
       <Link to="https://www.instagram.com/skaugmedia/">
         <img className={itemClassName} src={instagram} alt="Instagram" />
       </Link>
-      <Link to="https://www.tiktok.com/@skaugmedia?_t=8a92nGlyw7N&_r=1">
-        <img className={itemClassName} src={tiktok} alt="Tiktok" />
-      </Link>
+      
       <Link to="https://www.etsy.com/shop/SkaugMedia?ref=search_shop_redirect">
         <img className={itemClassName} src={etsy} alt="Etsy" />
       </Link>
-      <Link to="https://no.pinterest.com/SkaugMedia/">
-        <img className={itemClassName} src={pinterest} alt="Pinterest" />
-      </Link>
+      
     </div>
   );
 }
