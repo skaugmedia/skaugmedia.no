@@ -837,8 +837,9 @@ export function Prices() {
           title="Bildefil før pakkepris"
           price={priceList.extraPictureBefore}
         >
-          1-2 stk. digital bildefil i høy oppløsning. Prisen gjelder hvis man
-          kun ønsker 1 eller 2 digitale bilder.
+          Digital bildefiler per stk. i høy oppløsning. Prisen gjelder per bilde
+          dersom du bare ønsker 1 eller 2 digitale bildefiler, og ikke en hel
+          bildepakke med 3, 5, 10 eller 15 bilder.
         </Collapsible>
         <Collapsible
           outerClassName="prices-heading"
@@ -846,7 +847,7 @@ export function Prices() {
           price={priceList.extraPictureAfter}
         >
           Ekstra digitale bildefiler i høy oppløsning. Prisen gjelder etter man
-          har bestilt en pakke med digitale filer.
+          har bestilt en pakke med digitale filer, og er per stk.
         </Collapsible>
         <div className="section-divider"></div>
 
