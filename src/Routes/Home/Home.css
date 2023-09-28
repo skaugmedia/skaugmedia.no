@@ -88,6 +88,16 @@
   padding-right: 50px;
 }
 
+.Home__WorksTitle {
+  font-family: oswald;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--blue);
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
 .free-pregnancy-row {
   display: flex;
   margin-top: 40px;
@@ -251,7 +261,7 @@
   margin-bottom: 10px;
 }
 
-.Home__GraphicalImageSection__Image{
+.Home__GraphicalImageSection__Image {
   aspect-ratio: 3/2;
 }
 

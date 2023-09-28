@@ -342,73 +342,76 @@ export function Prices() {
         </PageSection>
 
         <PageSection>
-          <WeddingSection
-            outerClassName="Prices__Outer"
-            innerClassName="Prices__Inner"
-            title1={
-              <div className="WeddingSection__Header">Bryllupspakke 1</div>
-            }
-            price1={
-              <div className="WeddingSection__PriceBox">Kr. 16.000,-</div>
-            }
-            text1={
-              <div className="WeddingSection__Text">
-                Dette er en ypperlig pakke for dere som kun ønsker fotografen
-                tilstede under vielsen og for å forevige portrettene deres. Jeg
-                er med dere på de viktigste øyeblikkene på deres store dag, og
-                fanger de magiske øyeblikkene når dere sier JA til hverandre.
-                <p /> Vi setter av tid til et planleggingsmøte i god tid før den
-                store dagen, der vi snakker om deres ønsker til bildene og for å
-                bli litt kjent med hverandre.
-                <p />
-                Inkluderer:
-                <IncludesList
-                  items={[
-                    "Planleggingsmøte i god tid før den store dagen",
-                    "3 timer fotografering",
-                    "Fotografering under vielsen og portrettfotografering før eller etter vielsen",
-                    "Ca. 70 stk. digitale bildefiler i høy oppløsning",
-                    "Online bildegalleri hvor dere kan laste ned bildene",
-                    "Mulighet for å kjøpe bildeprodukter",
-                    "50% rabatt på forlovelsesfotografering i forkant av bryllupet",
-                  ]}
-                />
-              </div>
-            }
-            title2={
-              <div className="WeddingSection__Header">Bryllupspakke 2</div>
-            }
-            price2={
-              <div className="WeddingSection__PriceBox">Kr. 24.000,-</div>
-            }
-            text2={
-              <div className="WeddingSection__Text">
-                Dette er pakken for dere som ønsker bilder fra litt mer enn bare
-                seremonien og bryllupsportrettene. Dere velger om jeg skal
-                fotografere dere under forberedelsene eller når dere ankommer
-                festen, i tillegg til at jeg fotograferer seremonien og
-                bryllupsportrettene før eller etter vielsen. <p />
-                Vi setter av tid til et planleggingsmøte i god tid før den store
-                dagen, der vi snakker om deres ønsker til bildene og for å bli
-                litt kjent med hverandre. I denne pakken er også
-                forlovelsesfotografering inkludert, der dere får velge 5 stk.
-                bilder i høy oppløsning.
-                <p />
-                Inkluderer:
-                <IncludesList
-                  items={[
-                    "Planleggingsmøte i god tid før den store dagen",
-                    "5 timer fotografering",
-                    "Fotografering under vielsen, portrettfotografering og fotografering av forberedelser eller når dere ankommer festen",
-                    "Ca. 150 stk. digitale bildefiler i høy oppløsning",
-                    "Online bildegalleri hvor dere kan laste ned bildene",
-                    "Mulighet for å kjøpe bildeprodukter",
-                    "Forlovelsesfotografering inkludert 5 stk. bilder i høy oppløsning",
-                  ]}
-                />
-              </div>
-            }
-          />
+          <div className="Prices__WeddingPackageSection">
+            <WeddingSection
+              outerClassName="Prices__Outer"
+              innerClassName="Prices__Inner"
+              title1={
+                <div className="WeddingSection__Header">Bryllupspakke 1</div>
+              }
+              price1={
+                <div className="WeddingSection__PriceBox">Kr. 16.000,-</div>
+              }
+              text1={
+                <div className="WeddingSection__Text">
+                  Dette er en ypperlig pakke for dere som kun ønsker fotografen
+                  tilstede under vielsen og for å forevige portrettene deres.
+                  Jeg er med dere på de viktigste øyeblikkene på deres store
+                  dag, og fanger de magiske øyeblikkene når dere sier JA til
+                  hverandre.
+                  <p /> Vi setter av tid til et planleggingsmøte i god tid før
+                  den store dagen, der vi snakker om deres ønsker til bildene og
+                  for å bli litt kjent med hverandre.
+                  <p />
+                  Inkluderer:
+                  <IncludesList
+                    items={[
+                      "Planleggingsmøte i god tid før den store dagen",
+                      "3 timer fotografering",
+                      "Fotografering under vielsen og portrettfotografering før eller etter vielsen",
+                      "Ca. 70 stk. digitale bildefiler i høy oppløsning",
+                      "Online bildegalleri hvor dere kan laste ned bildene",
+                      "Mulighet for å kjøpe bildeprodukter",
+                      "50% rabatt på forlovelsesfotografering i forkant av bryllupet",
+                    ]}
+                  />
+                </div>
+              }
+              title2={
+                <div className="WeddingSection__Header">Bryllupspakke 2</div>
+              }
+              price2={
+                <div className="WeddingSection__PriceBox">Kr. 24.000,-</div>
+              }
+              text2={
+                <div className="WeddingSection__Text">
+                  Dette er pakken for dere som ønsker bilder fra litt mer enn
+                  bare seremonien og bryllupsportrettene. Dere velger om jeg
+                  skal fotografere dere under forberedelsene eller når dere
+                  ankommer festen, i tillegg til at jeg fotograferer seremonien
+                  og bryllupsportrettene før eller etter vielsen. <p />
+                  Vi setter av tid til et planleggingsmøte i god tid før den
+                  store dagen, der vi snakker om deres ønsker til bildene og for
+                  å bli litt kjent med hverandre. I denne pakken er også
+                  forlovelsesfotografering inkludert, der dere får velge 5 stk.
+                  bilder i høy oppløsning.
+                  <p />
+                  Inkluderer:
+                  <IncludesList
+                    items={[
+                      "Planleggingsmøte i god tid før den store dagen",
+                      "5 timer fotografering",
+                      "Fotografering under vielsen, portrettfotografering og fotografering av forberedelser eller når dere ankommer festen",
+                      "Ca. 150 stk. digitale bildefiler i høy oppløsning",
+                      "Online bildegalleri hvor dere kan laste ned bildene",
+                      "Mulighet for å kjøpe bildeprodukter",
+                      "Forlovelsesfotografering inkludert 5 stk. bilder i høy oppløsning",
+                    ]}
+                  />
+                </div>
+              }
+            />
+          </div>
           <ProductPriceSection
             outerClassName="Prices__Outer"
             innerClassName="Prices__Inner"

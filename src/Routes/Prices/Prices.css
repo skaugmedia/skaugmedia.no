@@ -42,12 +42,9 @@
   font-family: nunito;
 }
 
-.Prices__Bryllup {
-  font-size: 1.2em;
-  font-weight: 700;
-  color: var(--green);
-  text-align: center;
-  text-transform: uppercase;
+.Prices__WeddingPackageSection {
+  display: flex;
+  align-items: flex-start;
 }
 
 .Prices__TextIntro {
@@ -107,7 +104,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.CompanyPrice__Info > *{
+.CompanyPrice__Info > * {
   justify-self: start;
 }
 

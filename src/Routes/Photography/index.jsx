@@ -2,7 +2,6 @@ import { NavLink, useLoaderData } from "react-router-dom";
 import { Category } from "../../Components/Category";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import { Underline } from "../../Components/Underline";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import pageName from "./PageName";
 import "./Photography.css";
@@ -30,7 +29,6 @@ export function Photography() {
           </div>
         </div>
       </div>
-      <Underline></Underline>
     </PageSection>
   );
 }

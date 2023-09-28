@@ -21,6 +21,11 @@
   font-family: nunito;
 }
 
+.title {
+  font-weight: 500;
+  color: black;
+}
+
 .design {
   display: flex;
   align-items: center;

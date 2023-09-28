@@ -1,12 +1,11 @@
 import { NavLink, useLoaderData } from "react-router-dom";
-import "./GraphicalDesign.css";
-import { Underline } from "../../Components/Underline";
 import DesignHeading from "../../Components/Headings/DesignHeading";
+import { PageSection } from "../../Components/PageSection";
 import { Project } from "../../Components/Project";
+import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import "./GraphicalDesign.css";
 import classes from "./GraphicalDesign.module.css";
 import pageName from "./PageName";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import { PageSection } from "../../Components/PageSection";
 
 export function GraphicalDesign() {
   useDocumentTitle(pageName);
@@ -32,7 +31,6 @@ export function GraphicalDesign() {
           </div>
         </div>
       </div>
-      <Underline></Underline>
     </PageSection>
   );
 }

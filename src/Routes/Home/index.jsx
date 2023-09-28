@@ -97,6 +97,8 @@ export function Home() {
         </div>
       </PageSection>
       <PageSection outerClassName="works-outer" innerClassName="works">
+        <div className="Home__WorksTitle">Nylige arbeider</div>
+
         <ImageSection images={recentWorks} />
       </PageSection>
 
@@ -183,8 +185,10 @@ export function Home() {
       </PageSection>
       <PageSection>
         <h2 className="Home__Graphical">Grafisk Design</h2>
-        <ImageSection images={presentables.graphicalDesign} 
-        imageClassName="Home__GraphicalImageSection__Image"/>
+        <ImageSection
+          images={presentables.graphicalDesign}
+          imageClassName="Home__GraphicalImageSection__Image"
+        />
       </PageSection>
 
       {/* <PageSection

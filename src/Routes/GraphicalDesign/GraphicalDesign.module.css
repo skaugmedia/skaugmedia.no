@@ -1,8 +1,16 @@
 .link {
   color: inherit;
   text-decoration: inherit;
+
+  font-weight: 500;
+  color: black;
 }
 
 .link:hover {
   opacity: 90%;
+}
+
+.title {
+  font-weight: 500;
+  color: black;
 }
