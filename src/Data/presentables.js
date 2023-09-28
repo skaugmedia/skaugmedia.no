@@ -97,6 +97,7 @@ const rawPhotography = [
   url: `/${PhotographyRoute}/${category.id}`,
   thumbnail: image.thumbnail,
   img: image,
+  category: category.title,
 }));
 export const photography = shuffle(rawPhotography).slice(0, 5);
 
@@ -142,6 +143,7 @@ const graphicalDesign = [
   url: `/${GraphicalDesignRoute}/${project.id}`,
   thumbnail: image.thumbnail,
   img: image,
+  category: project.title,
 }));
 const shuffledGraphicalDesign = shuffle(graphicalDesign).slice(0, 3);
 export { shuffledGraphicalDesign as graphicalDesign };
