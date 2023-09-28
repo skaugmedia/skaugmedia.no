@@ -1,6 +1,6 @@
 import { isWithinRange } from "../../utils";
 import { MiniSessionButton } from "../MiniSessionButton";
-import classes from "./DiscountBanner.css";
+import "./DiscountBanner.css";
 
 export function DiscountBanner({
   title,
