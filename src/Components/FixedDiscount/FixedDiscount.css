@@ -1,0 +1,22 @@
+.FixedDiscount {
+  width: 350px;
+  gap: 10px;
+  text-align: center;
+}
+
+.FixedDiscount__Img {
+  width: 300px;
+}
+
+.FixedDiscount__Header {
+  font-size: 3.3em;
+  font-family: oswald;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.FixedDiscount__Text {
+  font-size: 1.1em;
+  font-family: nunito;
+  font-weight: 600;
+}

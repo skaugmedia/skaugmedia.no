@@ -1,9 +1,12 @@
-.main {
+.DiscountBanner {
   background-color: var(--blue);
   padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
-.title {
+.DiscountBanner__Title {
   color: white;
   font-size: 1.2em;
   font-weight: 500;
@@ -12,20 +15,20 @@
   text-transform: uppercase;
 }
 
-.text {
+.DiscountBanner__Text {
   display: flex;
   flex-flow: row;
   justify-content: center;
 }
 
-.price {
+.DiscountBanner__Price {
   font-family: nunito;
   font-weight: 700;
 
   text-align: center;
 }
 
-.description {
+.DiscountBanner__Description {
   font-family: nunito;
   font-weight: 200;
   margin-bottom: 10px;
@@ -34,7 +37,7 @@
   text-align: center;
 }
 
-.button {
+.DiscountBanner__Button {
   background-color: var(--lightgreen);
   display: inline-block !important;
 }

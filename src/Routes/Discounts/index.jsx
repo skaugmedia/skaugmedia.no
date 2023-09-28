@@ -8,6 +8,7 @@ import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
 import ChristmasMinishoot from "/src/Images/christmas_minishoot.jpg";
 import PregnancyFree from "/src/Images/free_pregnancy_shoot_offers.jpg";
 import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
+import { FixedDiscount } from "../../Components/FixedDiscount";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function Discounts() {
@@ -87,53 +88,44 @@ export function Discounts() {
           <div className="Discounts__RegularDiscounts">Faste rabatter</div>
 
           <div className="Discounts__RegularDiscountsRow">
-            <div className="Discounts__RegularDiscountsNewborn">
-              <img
-                className="Discounts__RegularDiscountsNewbornImg"
-                src={NewbornDiscount}
-                alt="Våken nyfødt baby"
-              ></img>
-              <div className="Discounts__RegularDiscountsNewbornHeader">
-                50%
-              </div>
-              <div className="Discounts__RegularDiscountsNewbornText">
-                avslag på nyfødtfotografering, <br />
-                etter ordinær gravidfotografering
-              </div>
-            </div>
+            <FixedDiscount
+              imgSrc={NewbornDiscount}
+              imgAlt="Våken nyfødt baby"
+              discount="50%"
+              text={
+                <>
+                  avslag på nyfødtfotografering, <br />
+                  etter ordinær gravidfotografering
+                </>
+              }
+            />
 
-            <div className="Discounts__RegularDiscountsOneYear">
-              <img
-                className="Discounts__RegularDiscountsOneYearImg"
-                src={OneYear}
-                alt="Ettåring som spiser på Duplo"
-              ></img>
-              <div className="Discounts__RegularDiscountsOneYearHeader">
-                50%
-              </div>
-              <div className="Discounts__RegularDiscountsOneYearText">
-                avslag på 1-års fotografering, <br />
-                etter nyfødtfotografering
-              </div>
-            </div>
+            <FixedDiscount
+              imgSrc={OneYear}
+              imgAlt="Ettåring som spiser på Duplo"
+              discount="50%"
+              text={
+                <>
+                  avslag på 1-års fotografering, <br />
+                  etter nyfødtfotografering
+                </>
+              }
+            />
 
-            <div className="Discounts__RegularDiscountsTenPercent">
-              <img
-                className="Discounts__RegularDiscountsTenPercentImg"
-                src={TenPercent}
-                alt="Konfirmant i vårfarger"
-              ></img>
-              <div className="Discounts__RegularDiscountsTenPercentHeader">
-                10%
-              </div>
-              <div className="Discounts__RegularDiscountsTenPercentText">
-                avslag på din neste fotografering <br />
-                <span className="Discounts__RegularDiscountsTenPercentTextImportant">
-                  *Gjelder kun privatpersoner og kan ikke kombineres med andre
-                  tilbud
-                </span>
-              </div>
-            </div>
+            <FixedDiscount
+              imgSrc={TenPercent}
+              imgAlt="Konfirmant i vårfarger"
+              discount="10%"
+              text={
+                <>
+                  avslag på din neste fotografering <br />
+                  <span className="Discounts__RegularDiscountsTenPercentTextImportant">
+                    *Gjelder kun privatpersoner og kan ikke kombineres med andre
+                    tilbud
+                  </span>
+                </>
+              }
+            />
           </div>
         </PageSection>
       </div>

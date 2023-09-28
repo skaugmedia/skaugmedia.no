@@ -1,0 +1,82 @@
+:root {
+  --mobile-header-height: 60px;
+  --mobile-nav-background-color: #d8f4a4bb;
+}
+
+.Header__LogoContainer {
+  text-align: center;
+  display: block;
+}
+
+.Header__Logo {
+  height: 100px;
+  width: 100px;
+  margin: 40px;
+}
+
+.Header--Mobile {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.Header--Mobile__First {
+  font-weight: var(--font-weight-extra-light);
+}
+
+.Header--Mobile__Second {
+  font-weight: var(--font-weight-semibold);
+}
+
+.Header__Hamburger {
+  display: none;
+}
+
+.Header--Mobile__Nav {
+  justify-content: center;
+  display: flex;
+}
+
+.Header--Mobile__NavLink {
+  color: #000000;
+  text-decoration: none;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: oswald;
+}
+
+.Header--Mobile__NavLink:not(:last-child) {
+  margin-right: 80px;
+}
+
+.Header--Mobile__NavLink:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .Header__Hamburger {
+    display: inline-flex;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: var(--mobile-header-height);
+  }
+
+  .Header--Mobile__Nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .Header .Header__Hamburger {
+    display: none;
+  }
+}
