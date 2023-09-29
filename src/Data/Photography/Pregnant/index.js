@@ -46,15 +46,15 @@ import j_gravid_01_thumbnail from "../../../Images/j_gravid_01.jpg?width=200&hei
 import m_gravid_03_thumbnail from "../../../Images/m_gravid_03.jpg?width=200&height=200";
 import { priceList } from "/src/Data/priceList";
 
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 
 export default {
   id: "gravid",
   title: "Gravid",
   body: oneLine`
-    Det er veldig mange som tenker at de ikke trenger gravidbilder, og ikke vil bruke penger på dette. Veldig 
-    mange angrer seg i ettertid, fordi de ikke kan huske hvor flotte de så ut med den fine kula og hvor helt 
+    Det er veldig mange som tenker at de ikke trenger gravidbilder, og ikke vil bruke penger på dette. Veldig
+    mange angrer seg i ettertid, fordi de ikke kan huske hvor flotte de så ut med den fine kula og hvor helt
     spesielt fantastisk det er å kunne få bære frem et helt nytt menneske! Jeg anbefaler alle gravide å ta gravidbilder,
     fordi det er noe helt eget som du ønsker å kunne se tilbake på etter at babyen er ute.
   `,

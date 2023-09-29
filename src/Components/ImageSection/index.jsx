@@ -11,7 +11,11 @@ export const ImageSection = ({
   return (
     <div className={classNames("ImageSection", className)} {...props}>
       {images.map((image) => (
-        <Img {...image} className={imageClassName} />
+        <Img
+          {...image}
+          key={`${image.title}${image.url}${image.thumbnail ?? image.img.url}`}
+          className={imageClassName}
+        />
       ))}
     </div>
   );

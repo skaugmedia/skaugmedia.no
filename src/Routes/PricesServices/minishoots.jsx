@@ -1,5 +1,5 @@
 import { Collapsible } from "../../Components/Collapsible";
-import { IncludesList } from "./Components/IncludesList";
+import { IncludesList } from "../../Components/IncludesList";
 import * as ids from "./Ids";
 
 export const siblings = ({ ref, open }) => (

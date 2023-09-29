@@ -24,14 +24,14 @@ import business_pogb_sommer_22 from "../../../Images/Business/Pent_og_brukt/busi
 import business_pogb_sommer_23 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_23.jpg";
 import business_pogb_sommer_24 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_24.jpg";
 
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesServicesRoute from "../../../Routes/PricesServices/Route";
 
 export default {
   id: "bedrift",
   title: "Bedrift",
   body: oneLine`
-    Fotografering for bedrifter. Noen ønsker kun portretter, noen bedrifter ønsker å vise frem produkter, kontorene sine eller samholdet mellom sine ansatte. 
+    Fotografering for bedrifter. Noen ønsker kun portretter, noen bedrifter ønsker å vise frem produkter, kontorene sine eller samholdet mellom sine ansatte.
   `,
   cover: {
     url: business_pogb_sommer_19,
@@ -40,7 +40,7 @@ export default {
   listing: {
     title: "Portrettfotografering: bedrift",
     price: "Ta kontakt for pristilbud",
-    link: `/${PricesRoute}#${ids.business}`,
+    link: `/${PricesServicesRoute}#${ids.business}`,
   },
   shoots: [
     {

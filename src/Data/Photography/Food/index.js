@@ -59,14 +59,14 @@ import food_tomato_2 from "../../../Images/Food/food_tomato_2.jpg";
 
 import food_tomatosoup_1 from "../../../Images/Food/food_tomatosoup_1.jpg";
 
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 
 export default {
   id: "mat",
   title: "Mat",
   body: oneLine`
-    Fotografering av mat er en helt egen kunst, som jeg har jobbet mye med å presisere og lære. Det er viktig 
+    Fotografering av mat er en helt egen kunst, som jeg har jobbet mye med å presisere og lære. Det er viktig
     at maten alltid ser innbydende ut.
   `,
   cover: {

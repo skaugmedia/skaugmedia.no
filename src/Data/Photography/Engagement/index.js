@@ -18,8 +18,8 @@ import coup_LO_6 from "../../../Images/Couple/coup_LO_6.jpg";
 import coup_LO_7 from "../../../Images/Couple/coup_LO_7.jpg";
 import coup_LO_8 from "../../../Images/Couple/coup_LO_8.jpg";
 import coup_LO_9 from "../../../Images/Couple/coup_LO_9.jpg";
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
 export default {
@@ -27,8 +27,8 @@ export default {
   title: "Kjæreste og forlovelse",
 
   body: oneLine`
-    Det er så hyggelig å ha bilder som viser den ekte kjærligheten mellom et par, minner å 
-    se tilbake på, og ikke bilder som kan brukes i forbindelse med invitasjoner og bryllupsdekorasjoner, 
+    Det er så hyggelig å ha bilder som viser den ekte kjærligheten mellom et par, minner å
+    se tilbake på, og ikke bilder som kan brukes i forbindelse med invitasjoner og bryllupsdekorasjoner,
     eller rett og slett bare til å henge opp på veggen!
   `,
   cover: {

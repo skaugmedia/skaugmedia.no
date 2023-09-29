@@ -27,8 +27,8 @@ import SV1 from "../../../Images/Kids/SV_1.jpg";
 import SV2 from "../../../Images/Kids/SV_2.jpg";
 import SV3 from "../../../Images/Kids/SV_3.jpg";
 
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
 export default {

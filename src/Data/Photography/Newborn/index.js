@@ -15,8 +15,8 @@ import LO5 from "../../../Images/Newborn/newborn_LO_5.jpg";
 import LO6 from "../../../Images/Newborn/newborn_LO_6.jpg";
 import LO7 from "../../../Images/Newborn/newborn_LO_7.jpg";
 
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "../../priceList";
 
 export default {

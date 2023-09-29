@@ -1,7 +1,7 @@
 import { DiscountAd } from "../../Components/DiscountAd";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import { IncludesList } from "../Prices/Components/IncludesList";
+import { IncludesList } from "../../Components/IncludesList";
 import "./Discounts.css";
 import OneYear from "/src/Images/1-year-photo.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";

@@ -11,8 +11,8 @@ import HomeRoute from "../../Routes/Home/Route";
 import HomePageName from "../../Routes/Home/PageName";
 import PhotographyPageName from "../../Routes/Photography/PageName";
 import PhotographyRoute from "../../Routes/Photography/Route";
-import PricesPageName from "../../Routes/Prices/PageName";
-import PricesRoute from "../../Routes/Prices/Route";
+import PricesPageName from "../../Routes/PricesServices/PageName";
+import PricesRoute from "../../Routes/PricesServices/Route";
 import PricesProductsPageName from "../../Routes/PricesProducts/PageName";
 import PricesProductsRoute from "../../Routes/PricesProducts/Route";
 

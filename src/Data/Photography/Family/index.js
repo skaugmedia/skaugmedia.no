@@ -19,8 +19,8 @@ import famL6 from "../../../Images/Family/fam_l_6.jpg";
 import famL7 from "../../../Images/Family/fam_l_7.jpg";
 import famL8 from "../../../Images/Family/fam_l_8.jpg";
 import famL9 from "../../../Images/Family/fam_l_9.jpg";
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
 export default {
@@ -28,7 +28,7 @@ export default {
   title: "Familie",
 
   body: oneLine`
-    Familiebilder er så koselig å ha for å se tilbake på når barna har vokst opp, og flyttet ut, 
+    Familiebilder er så koselig å ha for å se tilbake på når barna har vokst opp, og flyttet ut,
     eller når de vi er så glade i, ikke lenger er her med oss!
   `,
   cover: {

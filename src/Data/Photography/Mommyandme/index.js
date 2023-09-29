@@ -19,15 +19,15 @@ import dad_VL_7 from "../../../Images/Mommy&me/dad_VL_7.jpg";
 
 import { priceList } from "/src/Data/priceList";
 
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 
 export default {
   id: "mommyandme",
   title: "Mommy & me / Daddy & me",
   body: oneLine`
-    Det er så hyggelig å ha bilder sammen med barna sine. Enten mommy & me bilder eller daddy & me, helt ettersom hva dere ønsker. Slike bilder er så koselige å henge 
-    opp på veggen og å se tilbake på om mange år. 
+    Det er så hyggelig å ha bilder sammen med barna sine. Enten mommy & me bilder eller daddy & me, helt ettersom hva dere ønsker. Slike bilder er så koselige å henge
+    opp på veggen og å se tilbake på om mange år.
   `,
   cover: {
     url: mom_IL_4,

@@ -21,8 +21,8 @@ import PhotographyRoute from "./Routes/Photography/Route";
 import { PhotographyCategory } from "./Routes/PhotographyCategory";
 import PhotographyCategoryLoader from "./Routes/PhotographyCategory/Loader";
 import PhotographyCategoryRoute from "./Routes/PhotographyCategory/Route";
-import { Prices } from "./Routes/Prices";
-import PricesRoute from "./Routes/Prices/Route";
+import { PricesServices } from "./Routes/PricesServices";
+import PricesRoute from "./Routes/PricesServices/Route";
 import { PricesProducts } from "./Routes/PricesProducts";
 import PricesProductsRoute from "./Routes/PricesProducts/Route";
 import { Root } from "./Routes/Root";
@@ -59,7 +59,7 @@ export const router = createBrowserRouter([
             loader: PhotographyCategoryLoader,
             element: <PhotographyCategory />,
           },
-          { path: PricesRoute, element: <Prices /> },
+          { path: PricesRoute, element: <PricesServices /> },
           { path: PricesProductsRoute, element: <PricesProducts /> },
           { path: DiscountsRoute, element: <Discounts /> },
         ],

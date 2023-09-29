@@ -10,7 +10,7 @@ import { WeddingSection } from "../../Components/WeddingSection";
 import { priceList } from "../../Data/priceList";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { isWithinRange, localTime } from "../../utils";
-import { IncludesList } from "./Components/IncludesList";
+import { IncludesList } from "../../Components/IncludesList";
 import * as ids from "./Ids";
 import pageName from "./PageName";
 import "./Prices.css";
@@ -25,7 +25,7 @@ import NewbornImg from "/src/Images/Prices/newborn_photography.jpg";
 import PregnantImg from "/src/Images/Prices/pregnancy_photography.jpg";
 import WeddingImg from "/src/Images/Prices/wedding.jpg";
 
-export function Prices() {
+export function PricesServices() {
   useDocumentTitle(pageName);
   const location = useLocation();
   const refs = Object.entries(ids).reduce(
@@ -263,9 +263,7 @@ export function Prices() {
             }
             link="http://localhost:5173/kontakt"
           />
-        </PageSection>
 
-        <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
             innerClassName="Prices__Inner"
@@ -288,9 +286,7 @@ export function Prices() {
             }
             link="http://localhost:5173/kontakt"
           />
-        </PageSection>
 
-        <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
             innerClassName="Prices__Inner"
@@ -311,9 +307,7 @@ export function Prices() {
             }
             link="http://localhost:5173/kontakt"
           />
-        </PageSection>
 
-        <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
             innerClassName="Prices__Inner"
@@ -339,9 +333,7 @@ export function Prices() {
             }
             link="http://localhost:5173/kontakt"
           />
-        </PageSection>
 
-        <PageSection>
           <div className="Prices__WeddingPackageSection">
             <WeddingSection
               outerClassName="Prices__Outer"
@@ -462,9 +454,7 @@ export function Prices() {
             price4={false}
             priceText5={false}
           />
-        </PageSection>
 
-        <PageSection>
           <div className="CompanyPrice__Section">
             <div className="CompanyPrice__Header">
               For bedrifter og næringsliv

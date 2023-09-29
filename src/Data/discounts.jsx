@@ -1,6 +1,6 @@
 import ContactRoute from "../Routes/Contact/Route";
-import * as ids from "../Routes/Prices/Ids";
-import PricesRoute from "../Routes/Prices/Route";
+import * as ids from "../Routes/PricesServices/Ids";
+import PricesRoute from "../Routes/PricesServices/Route";
 import { kr, localTime } from "../utils";
 
 export const discounts = [

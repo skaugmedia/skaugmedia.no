@@ -59,14 +59,14 @@ import product_wikwalsoe_1 from "../../../Images/Product/product_wikwalsoe_1.jpg
 import product_wikwalsoe_2 from "../../../Images/Product/product_wikwalsoe_2.jpg";
 import product_wikwalsoe_3 from "../../../Images/Product/product_wikwalsoe_3.jpg";
 
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 
 export default {
   id: "produkt",
   title: "Produkt",
   body: oneLine`
-    Produktbilder kan enten tas i studio, eller i et flott miljø sammen med andre produkter. 
+    Produktbilder kan enten tas i studio, eller i et flott miljø sammen med andre produkter.
   `,
   cover: {
     url: product_eva_solo_1,

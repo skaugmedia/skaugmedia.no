@@ -30,7 +30,6 @@ export function PriceSection({
         <div className="PriceSection__Header">{title}</div>
         <div className="PriceSection__PriceBox">{price}</div>
         {text}
-        <Collapsible />
         <ActionButton to={link}>Book her</ActionButton>
       </div>
     </div>

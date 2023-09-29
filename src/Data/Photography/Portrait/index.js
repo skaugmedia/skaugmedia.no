@@ -41,8 +41,8 @@ import port_T_04 from "../../../Images/Portrait/port_T_04.jpg";
 import port_T_05 from "../../../Images/Portrait/port_T_05.jpg";
 import port_T_06 from "../../../Images/Portrait/port_T_06.jpg";
 
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
 export default {
@@ -63,7 +63,7 @@ export default {
   shoots: [
     {
       description: "IM",
-      tags: ["portrett", "dame", "natur", "frodig", "sommer", "solsikke",],
+      tags: ["portrett", "dame", "natur", "frodig", "sommer", "solsikke"],
       images: [
         {
           url: port_IM_01,
@@ -77,7 +77,6 @@ export default {
           height: 1000,
           width: 667,
         },
-       
       ],
       date: "2023-08-22",
     },
