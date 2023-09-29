@@ -3,15 +3,45 @@
   --mobile-nav-background-color: #d8f4a4bb;
 }
 
+.Header {
+  display: flex;
+  justify-content: center;
+}
+
+.Header__Inner {
+  display: flex;
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  gap: 10px;
+}
+
 .Header__LogoContainer {
   text-align: center;
-  display: block;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.Header__Name {
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.Header__NameFirst {
+  font-weight: var(--font-weight-extra-light);
+}
+
+.Header__NameSecond {
+  font-weight: var(--font-weight-semibold);
 }
 
 .Header__Logo {
-  height: 100px;
-  width: 100px;
-  margin: 40px;
+  height: 55px;
+  width: 55px;
 }
 
 .Header--Mobile {
@@ -35,19 +65,17 @@
 .Header--Mobile__Nav {
   justify-content: center;
   display: flex;
+  gap: 30px;
 }
 
 .Header--Mobile__NavLink {
   color: #000000;
   text-decoration: none;
   justify-content: space-between;
+  align-items: center;
+  display: flex;
   text-transform: uppercase;
-  margin-bottom: 30px;
   font-family: oswald;
-}
-
-.Header--Mobile__NavLink:not(:last-child) {
-  margin-right: 80px;
 }
 
 .Header--Mobile__NavLink:hover {
