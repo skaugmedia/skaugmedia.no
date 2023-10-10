@@ -128,21 +128,23 @@ export const discounts = [
     ),
     link: `/${PricesRoute}#${ids.miniSessionChristmas}`,
     validFrom: localTime("26-08-2023 00:00"),
-    validTo: localTime("18-09-2023 00:00"),
+    validTo: localTime("12-10-2023 00:00"),
   },
 
   {
-    title: "Høstferie minifotografering",
-    price: "Ta kontakt for mer informasjon",
+    title: "HELGETILBUD",
+    price: "-40% på fotograferinger",
     description: (
       <>
-        Perfekt aktivitet i høstferien! Enten du ønsker familiefotografering,
-        gravidfotografering eller noe helt annet.
+        -40% på alle fotograferinger som gjennomføres i oktober, november eller
+        desember, fotograferingen må bookes i løpet av helgen.
         <br />
+        Tilbudet gjelder kun denne helgen, 12.10.23 - 15.10.23 <br />
+        *Gjelder ikke bedrifter eller minifotograferinger
       </>
     ),
-    link: `/${PricesRoute}#${ids.miniSessionAutumn}`,
-    validFrom: localTime("21-09-2023 00:00"),
-    validTo: localTime("06-10-2023 00:00"),
+
+    validFrom: localTime("12-10-2023 00:00"),
+    validTo: localTime("16-10-2023 00:00"),
   },
 ];
