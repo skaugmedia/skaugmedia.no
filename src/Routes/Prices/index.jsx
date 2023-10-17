@@ -96,7 +96,7 @@ export function Prices() {
             <div className="prices-offers-next-free-date-box">
               <div className="prices-offers-next-free-date">
                 {" "}
-                Neste ledige dato: 10.10.2023
+                Neste ledige dato: 02.11.2023
               </div>
             </div>
           </div>
@@ -116,7 +116,8 @@ export function Prices() {
             <br />
             <br />
             <span style={{ fontWeight: "bold" }}>
-              Fotograferingen vil foregå ved Nordbytjernet på Jessheim.
+              Fotograferingen vil foregå på en utendørs lokasjon på Jessheim,
+              eksakt lokasjon blir sendt ut på mail når det nærmer seg.
             </span>
           </div>
 

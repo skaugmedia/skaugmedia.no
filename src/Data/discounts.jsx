@@ -118,7 +118,7 @@ export const discounts = [
     validTo: localTime("26-08-2023 00:00"),
   },
   {
-    title: "Jul minifotografering",
+    title: "Juleminis",
     price: "Kr. 1200,-",
     description: (
       <>
@@ -128,7 +128,7 @@ export const discounts = [
     ),
     link: `/${PricesRoute}#${ids.miniSessionChristmas}`,
     validFrom: localTime("26-08-2023 00:00"),
-    validTo: localTime("12-10-2023 00:00"),
+    validTo: localTime("21-10-2023 00:00"),
   },
 
   {
@@ -146,5 +146,21 @@ export const discounts = [
 
     validFrom: localTime("12-10-2023 00:00"),
     validTo: localTime("16-10-2023 00:00"),
+  },
+  {
+    title: "HALLOWEENTILBUD",
+    price: "-50% på fotograferinger",
+    description: (
+      <>
+        -50% rabatt på alle fotograferinger som bookes i løpet av denne dagen.
+        Fotograferingen må gjennomføres på et senere tidspunkt.
+        <br />
+        Tilbudet gjelder kun i dag, 31.10.2023 <br />
+        *Gjelder ikke bedrifter eller minifotograferinger
+      </>
+    ),
+
+    validFrom: localTime("31-10-2023 00:00"),
+    validTo: localTime("01-11-2023 00:00"),
   },
 ];
