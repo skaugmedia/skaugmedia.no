@@ -12,6 +12,52 @@
   margin-bottom: 13px;
 }
 
+.Prices__ServicesRow {
+  width: 100%;
+  
+  display: flex;
+  flex-flow: row;
+  
+}
+
+.Prices__CollapsibleBox {
+  width: 50%;
+  
+}
+
+.Prices__CollapsibleBoxRow {
+  background-color: #E1E1E1;
+  margin-bottom: 2px;
+}
+
+.Prices__CollapsibleBox_Text {
+  margin-left: 70px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+}
+
+.Prices__CollapsibleBox_TextFromPrice {
+  font-size: 0.9em;
+  display: flex;
+  flex-flow: column;
+  font-family: nunito;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.Prices__ServicesImg {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.Prices__ProductsImg {
+  margin-right: 10px;
+  width: 50%;
+}
+
 .Prices__PriceBox {
   align-items: right;
   text-align: right;
@@ -29,7 +75,7 @@
 }
 
 .Prices__TextIntroHeader {
-  color: var(--green);
+  color: black;
   text-align: left;
   text-transform: uppercase;
   align-items: left;

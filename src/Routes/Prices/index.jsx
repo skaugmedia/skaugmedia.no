@@ -1,16 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Collapsible } from "../../Components/Collapsible";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { PriceSection } from "../../Components/PriceSection";
 import { ProductPriceSection } from "../../Components/ProductPriceSection";
-import { Underline } from "../../Components/Underline";
 import { WeddingSection } from "../../Components/WeddingSection";
-import { priceList } from "../../Data/priceList";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { isWithinRange, localTime } from "../../utils";
-import { IncludesList } from "../../Components/IncludesList";
+import { IncludesList } from "./Components/IncludesList";
 import * as ids from "./Ids";
 import pageName from "./PageName";
 import "./Prices.css";
@@ -24,10 +21,8 @@ import Headshot2Img from "/src/Images/Prices/headshot_2.jpg";
 import NewbornImg from "/src/Images/Prices/newborn_photography.jpg";
 import PregnantImg from "/src/Images/Prices/pregnancy_photography.jpg";
 import WeddingImg from "/src/Images/Prices/wedding.jpg";
-import ServicesImg from "/src/Images/Prices/prices.jpg";
-import ProductImg from "/src/Images/Prices/photocopy.jpg";
 
-export function PricesServices() {
+export function Prices() {
   useDocumentTitle(pageName);
   const location = useLocation();
   const refs = Object.entries(ids).reduce(
@@ -89,6 +84,86 @@ export function PricesServices() {
       <div className="prices-content">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 
+        {/* /* <div className="prices-offers-box">
+          <div className="category-title-offers">
+            Gratis minifotografering av gravide
+          </div>
+          <div className="prices-offers-next-free-date-title"></div>
+          <div className="prices-offers-next-free-date-row">
+            <div className="prices-offers-next-free-date-box">
+              <div className="prices-offers-next-free-date">
+                {" "}
+                Neste ledige dato: 04.09.2023
+              </div>
+            </div>
+          </div>
+          <div className="prices-offers">
+            Hver måned har jeg en dag med GRATIS utendørs minifotograferinger av
+            gravide som er i uke 30-36 av svangerskapet. Begrenset kapasitet, så
+            book tidlig! Følg med her på nettsiden, og i sosiale medier for å se
+            neste ledige dato.
+            <br />
+            <br />
+            Dette inkluderer:
+            <br />- 20 minutters fotografering utendørs
+            <br />- Online bildegalleri hvor du velger dine bilder
+            <br />- 1 etterbehandlet digital bildefil
+            <br />- Mulighet for å kjøpe flere bilder, og trykkede produkter
+            <br />- Rabattkupong som kan brukes på valgfri fotografering
+            <br />
+            <br />
+            <span style={{ fontWeight: "bold" }}>
+              Fotograferingen vil foregå ved Nordbytjernet på Jessheim.
+            </span>
+          </div>
+
+          <div className="discount-offer-box-title">Faste rabatter</div>
+
+          <div className="discount-offer-box">
+            <div className="pregnancy-discount-offer">
+              <img
+                className="discount-offer-img"
+                src={pregnant_offer_img}
+                alt="Gravidfotografering"
+              ></img>
+
+              <div className="discount-offer-text">
+                50% avslag på nyfødtfotografering, ved booking av ordinær
+                gravidfotografering.
+              </div>
+            </div>
+            <div className="oneyear-discount_offer">
+              <img
+                className="discount-offer-img"
+                src={oneyear_offer_img}
+                alt="1-års fotografering"
+              ></img>
+
+              <div className="discount-offer-text">
+                50% avslag på 1-års fotografering, etter nyfødtfotografering.
+              </div>
+            </div>
+            <div className="always-discount-offer">
+              <img
+                className="discount-offer-img"
+                src={always_discount_img}
+                alt="Konfirmantfotografering"
+              ></img>
+
+              <div className="discount-offer-text">
+                10% avslag på din neste fotografering.
+                <br />
+                <div className="discount-offer-special">
+                  *Gjelder kun privatpersoner og kan ikke kombineres med andre
+                  tilbud.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="section-divider"></div>
+ */}
+
         <PageSection innerClassName="Prices__Section">
           <div className="Prices__Header">Gavekort</div>
           <div className="Prices__Text">
@@ -104,85 +179,6 @@ export function PricesServices() {
             </div>
           </div>
         </PageSection>
-
-        <PageSection>
-        <div className="Prices__Header">Priser på fotografering og design</div>
-        <div className="Prices__ServicesRow">
-        <div className="Prices__CollapsibleBox">
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Barn</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 1700,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Portrett</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 1000,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Familie</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 1700,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Bryllup</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 16.000,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Bedrifter og næringsliv</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Design</div>
-          </div>
-        </div>
-        <img className="Prices__ServicesImg"
-            src={ServicesImg}
-            alt="Gravid kvinne">
-        </img>
-        </div>
-        </PageSection>
-
-        <PageSection>
-        <div className="Prices__Header">Priser på fotografering og design</div>
-        <div className="Prices__ServicesRow"><img className="Prices__ProductsImg"
-            src={ProductImg}
-            alt="Gravid kvinne">
-        </img>
-        <div className="Prices__CollapsibleBox">
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Bildekopier</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 500,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Veggbilder</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 2000,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Album</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 5000,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Digitale bildefiler</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 650,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Pakke med trykksaker</div>
-          </div>
-          
-        </div>
-        
-        </div>
-        </PageSection>
-        <br />
-       
 
         <div className="Prices__TopSection">
           <div className="Prices__TextIntroHeader">
@@ -225,13 +221,26 @@ export function PricesServices() {
             under fotograferingen vil faktureres i sin helhet.{" "}
           </div>
         </div>
-        
+        {/* {miniSessionElements.length > 0 && (
+          <>
+            <div className="category-title">Minifotografering</div>
+            {miniSessionElements.map(({ el: El }, i) => (
+              <El key={i} />
+            ))}
+            <div className="section-divider"></div>
+          </>
+        )} */}
 
-        
-        
-
-        
-        {/* <PageSection>
+        {/* <Collapsible
+          outerClassName="prices-heading"
+          title="Gavekort"
+          price="Valgfri sum"
+        >
+          Hos meg kan man kjøpe gavekort med valgfri sum, gavekortet kan brukes
+          på fotograferinger, men gjelder ikke for mine designtjenester.
+          Minstepris ved kjøp av gavekort er på {priceList.giftCardMinimum}
+        </Collapsible> */}
+        <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
             innerClassName="Prices__Inner"
@@ -252,7 +261,9 @@ export function PricesServices() {
             }
             link="http://localhost:5173/kontakt"
           />
+        </PageSection>
 
+        <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
             innerClassName="Prices__Inner"
@@ -275,7 +286,9 @@ export function PricesServices() {
             }
             link="http://localhost:5173/kontakt"
           />
+        </PageSection>
 
+        <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
             innerClassName="Prices__Inner"
@@ -296,7 +309,9 @@ export function PricesServices() {
             }
             link="http://localhost:5173/kontakt"
           />
+        </PageSection>
 
+        <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
             innerClassName="Prices__Inner"
@@ -322,7 +337,9 @@ export function PricesServices() {
             }
             link="http://localhost:5173/kontakt"
           />
+        </PageSection>
 
+        <PageSection>
           <div className="Prices__WeddingPackageSection">
             <WeddingSection
               outerClassName="Prices__Outer"
@@ -443,7 +460,9 @@ export function PricesServices() {
             price4={false}
             priceText5={false}
           />
+        </PageSection>
 
+        <PageSection>
           <div className="CompanyPrice__Section">
             <div className="CompanyPrice__Header">
               For bedrifter og næringsliv
@@ -490,9 +509,8 @@ export function PricesServices() {
               <div>Annet design</div>
             </div>
           </div>
-        </PageSection> */}
-
-        </div>
+        </PageSection>
+      </div>
     </PageSection>
   );
 }

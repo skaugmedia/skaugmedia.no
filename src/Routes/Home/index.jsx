@@ -2,12 +2,14 @@ import { useLoaderData } from "react-router-dom";
 import { ImageSection } from "../../Components/ImageSection";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import oneDiscount from "../../Images/1-year-photo.jpg";
+import OneYearDiscount from "../../Images/1-year-photo.jpg";
 import cover from "../../Images/coverphoto.jpg";
 import freePregnancyShoot from "../../Images/free_pregnancy_shoot.jpg";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
 import * as presentables from "/src/Data/presentables";
+import { ActionButton } from "../../Components/ActionButton";
+import ContactRoute from "/src/Routes/Contact/Route";
 
 import "./Home.css";
 import pageName from "./PageName";
@@ -113,16 +115,17 @@ export function Home() {
               GRATIS MINIFOTOGRAFERING AV GRAVIDE
             </div>
             <div className="free-pregnancy-next-date">
-              Neste ledige dato: 04.09.2023
+              Neste ledige dato: 02.11.2023
             </div>
             <div className="free-pregnancy-text">
               Hver måned setter jeg av en dato der jeg tilbyr GRATIS utendørs
               minifotografering av gravide som er i uke 30-36 av svangerskapet.
-              Fotograferingen vil foregå ved Nordbytjernet på Jessheim.
+              Fotograferingen vil foregå på en utendørs lokasjon på Jessheim. 
               <br />
               <br />
               Det er begrenset med kapasitet, så book tidlig!
             </div>
+            <ActionButton to={ContactRoute}>Book her</ActionButton>
           </div>
           <img
             className="free-pregnancy-img"
@@ -131,6 +134,45 @@ export function Home() {
           ></img>
         </div>
 
+        <div>
+        <div className="Home__DiscountSection">
+          <div className="Home__Discount_NewbornSquare">
+          <img
+            className="Home__Discount_NewbornImg"
+            src={newbornDiscount}
+            alt="50% avslag på nyfødtfotografering"
+          ></img>
+          <div className="Home__Discount_NewbornTextBox">
+            <div className="Home__Discount_NewbornHeader">ALLTID</div>
+            <div className="Home__Discount_NewbornSubHeader">50%</div>
+            <div className="Home__Discount_NewbornText">
+              avslag på nyfødtfotografering,<br /> etter ordinær gravidfotografering
+            </div>
+            <ActionButton to={ContactRoute}>Book her</ActionButton>
+          </div></div>
+          </div>
+        
+
+        <div>
+      
+          <div className="Home__Discount_OneYearSquare">
+          <img
+            className="Home__Discount_OneYearImg"
+            src={OneYearDiscount}
+            alt="50% avslag på nyfødtfotografering"
+          ></img>
+          <div className="Home__Discount_OneYearTextBox">
+            <div className="Home__Discount_OneYearHeader">ALLTID</div>
+            <div className="Home__Discount_OneYearSubHeader">50%</div>
+            <div className="Home__Discount_OneYearText">
+            avslag på 1-års fotografering,<br />  etter nyfødtfotografering
+            </div>
+            <ActionButton to={ContactRoute}>Book her</ActionButton>
+          </div></div>
+          </div>
+        </div>
+
+{/* 
         <div className="newborn-discount-row">
           <img
             className="newborn-discount-img"
@@ -144,21 +186,8 @@ export function Home() {
               avslag på nyfødtfotografering, etter ordinær gravidfotografering
             </div>
           </div>
-        </div>
-        <div className="one-discount-row">
-          <div className="one-discount-textbox">
-            <div className="one-discount-header">ALLTID</div>
-            <div className="one-discount-sub-header">50%</div>
-            <div className="one-discount-text">
-              avslag på 1-års fotografering, etter nyfødtfotografering
-            </div>
-          </div>
-          <img
-            className="one-discount-img"
-            src={oneDiscount}
-            alt="50% avslag på 1-års fotografering"
-          ></img>
-        </div>
+        </div> */}
+       
       </PageSection>
 
       <PageSection>

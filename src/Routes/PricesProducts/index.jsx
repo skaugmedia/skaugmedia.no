@@ -8,7 +8,7 @@ import AlbumImg from "/src/Images/ProductPrices/album.jpg";
 import CanvasImg from "/src/Images/ProductPrices/canvas.jpg";
 import PrintPackImg from "/src/Images/ProductPrices/designpack.jpg";
 import DigitalImg from "/src/Images/ProductPrices/digital_files.jpg";
-import PhotocopyImg from "/src/Images/ProductPrices/photocopy.jpg";
+import PhotocopyImg from "/src/Images/Prices/photocopy.jpg";
 
 export function PricesProducts() {
   useDocumentTitle(pageName);

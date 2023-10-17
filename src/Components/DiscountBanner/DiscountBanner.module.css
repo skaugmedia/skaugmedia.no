@@ -1,0 +1,27 @@
+.main {
+  background-color: var(--green);
+  padding: 10px;
+}
+
+.title {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  height: auto;
+}
+
+.price {
+  font-family: nunito;
+  font-weight: 500;
+}
+
+.description {
+  font-family: nunito;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: var(--lightgreen);
+  display: inline-block !important;
+}

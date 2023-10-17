@@ -1,3 +1,119 @@
+.Home__DiscountSection {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+}
+
+.Home__Discount_NewbornSquare {
+  display: flex;
+  flex-flow: column;
+}
+
+.Home__Discount_NewbornImg {
+  width: 50%;
+  object-fit: cover;
+  opacity: 65%;
+}
+
+.Home__Discount_NewbornTextBox {
+  width: 50%;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 35px;
+}
+
+.Home__Discount_NewbornHeader {
+  font-size: 3em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -40px;
+}
+
+.Home__Discount_NewbornSubHeader {
+  font-size: 7em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.Home__Discount_NewbornText {
+  font-size: 1.7em;
+  text-align: left;
+  margin-top: 2px;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.Home__Discount_OneYearSquare {
+  display: flex;
+  flex-flow: column;
+}
+
+.Home__Discount_OneYearImg {
+  width: 50%;
+  object-fit: cover;
+  opacity: 65%;
+}
+
+.Home__Discount_OneYearTextBox {
+  width: 50%;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 35px;
+}
+
+.Home__Discount_OneYearHeader {
+  font-size: 3em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -40px;
+}
+
+.Home__Discount_OneYearSubHeader {
+  font-size: 7em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.Home__Discount_OneYearText {
+  font-size: 1.7em;
+  text-align: left;
+  margin-top: 2px;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.newborn-discount-header {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--green);
+  text-align: left;
+  margin-bottom: -40px;
+}
+
+.newborn-discount-sub-header {
+  font-size: 10em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.newborn-discount-text {
+  font-size: 2em;
+
+  text-align: left;
+  margin-top: 2px;
+}
+
+
+
+
 .section {
   display: flex;
   align-items: center;
@@ -112,7 +228,7 @@
 .free-pregnancy-textbox {
   width: 50%;
 
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .free-pregnancy-header {
@@ -143,6 +259,7 @@
   font-family: nunito;
   text-align: left;
   margin-top: 2px;
+  margin-bottom: 10px;
 }
 
 .free-pregnancy-img {
