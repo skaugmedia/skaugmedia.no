@@ -106,83 +106,98 @@ export function PricesServices() {
         </PageSection>
 
         <PageSection>
-        <div className="Prices__Header">Priser på fotografering og design</div>
-        <div className="Prices__ServicesRow">
-        <div className="Prices__CollapsibleBox">
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Barn</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 1700,-</div>
+          <div className="Prices__Header">
+            Priser på fotografering og design
           </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Portrett</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 1000,-</div>
+          <div className="Prices__ServicesRow">
+            <div className="Prices__CollapsibleBox">
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">Barn</div>
+                <div className="Prices__CollapsibleBox_TextFromPrice">
+                  fra kr. 1700,-
+                </div>
+              </div>
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">Portrett</div>
+                <div className="Prices__CollapsibleBox_TextFromPrice">
+                  fra kr. 1000,-
+                </div>
+              </div>
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">Familie</div>
+                <div className="Prices__CollapsibleBox_TextFromPrice">
+                  fra kr. 1700,-
+                </div>
+              </div>
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">Bryllup</div>
+                <div className="Prices__CollapsibleBox_TextFromPrice">
+                  fra kr. 16.000,-
+                </div>
+              </div>
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">
+                  Bedrifter og næringsliv
+                </div>
+              </div>
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">Design</div>
+              </div>
+            </div>
+            <img
+              className="Prices__ServicesImg"
+              src={ServicesImg}
+              alt="Gravid kvinne"
+            ></img>
           </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Familie</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 1700,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Bryllup</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 16.000,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Bedrifter og næringsliv</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Design</div>
-          </div>
-        </div>
-        <img className="Prices__ServicesImg"
-            src={ServicesImg}
-            alt="Gravid kvinne">
-        </img>
-        </div>
         </PageSection>
 
         <PageSection>
-        <div className="Prices__Header">Priser på fotografering og design</div>
-        <div className="Prices__ServicesRow"><img className="Prices__ProductsImg"
-            src={ProductImg}
-            alt="Gravid kvinne">
-        </img>
-        <div className="Prices__CollapsibleBox">
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Bildekopier</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 500,-</div>
+          <div className="Prices__Header">
+            Priser på fotografering og design
           </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Veggbilder</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 2000,-</div>
+          <div className="Prices__ServicesRow">
+            <img
+              className="Prices__ProductsImg"
+              src={ProductImg}
+              alt="Gravid kvinne"
+            ></img>
+            <div className="Prices__CollapsibleBox">
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">Bildekopier</div>
+                <div className="Prices__CollapsibleBox_TextFromPrice">
+                  fra kr. 500,-
+                </div>
+              </div>
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">Veggbilder</div>
+                <div className="Prices__CollapsibleBox_TextFromPrice">
+                  fra kr. 2000,-
+                </div>
+              </div>
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">Album</div>
+                <div className="Prices__CollapsibleBox_TextFromPrice">
+                  fra kr. 5000,-
+                </div>
+              </div>
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">
+                  Digitale bildefiler
+                </div>
+                <div className="Prices__CollapsibleBox_TextFromPrice">
+                  fra kr. 650,-
+                </div>
+              </div>
+              <div className="Prices__CollapsibleBoxRow">
+                <div className="Prices__CollapsibleBox_Text">
+                  Pakke med trykksaker
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Album</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 5000,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Digitale bildefiler</div>
-            <div className="Prices__CollapsibleBox_TextFromPrice">fra kr. 650,-</div>
-          </div>
-          <div className="Prices__CollapsibleBoxRow">
-          <div className="Prices__CollapsibleBox_Text">
-            Pakke med trykksaker</div>
-          </div>
-          
-        </div>
-        
-        </div>
         </PageSection>
         <br />
-       
 
         <div className="Prices__TopSection">
           <div className="Prices__TextIntroHeader">
@@ -225,12 +240,7 @@ export function PricesServices() {
             under fotograferingen vil faktureres i sin helhet.{" "}
           </div>
         </div>
-        
 
-        
-        
-
-        
         {/* <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
@@ -491,8 +501,7 @@ export function PricesServices() {
             </div>
           </div>
         </PageSection> */}
-
-        </div>
+      </div>
     </PageSection>
   );
 }

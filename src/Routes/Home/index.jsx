@@ -101,7 +101,10 @@ export function Home() {
       <PageSection outerClassName="works-outer" innerClassName="works">
         <div className="Home__WorksTitle">Nylige arbeider</div>
 
-        <ImageSection images={recentWorks} />
+        <ImageSection
+          images={recentWorks}
+          imageClassName="Home__ImageSectionImage"
+        />
       </PageSection>
 
       <PageSection
@@ -120,7 +123,7 @@ export function Home() {
             <div className="free-pregnancy-text">
               Hver måned setter jeg av en dato der jeg tilbyr GRATIS utendørs
               minifotografering av gravide som er i uke 30-36 av svangerskapet.
-              Fotograferingen vil foregå på en utendørs lokasjon på Jessheim. 
+              Fotograferingen vil foregå på en utendørs lokasjon på Jessheim.
               <br />
               <br />
               Det er begrenset med kapasitet, så book tidlig!
@@ -135,44 +138,46 @@ export function Home() {
         </div>
 
         <div>
-        <div className="Home__DiscountSection">
-          <div className="Home__Discount_NewbornSquare">
-          <img
-            className="Home__Discount_NewbornImg"
-            src={newbornDiscount}
-            alt="50% avslag på nyfødtfotografering"
-          ></img>
-          <div className="Home__Discount_NewbornTextBox">
-            <div className="Home__Discount_NewbornHeader">ALLTID</div>
-            <div className="Home__Discount_NewbornSubHeader">50%</div>
-            <div className="Home__Discount_NewbornText">
-              avslag på nyfødtfotografering,<br /> etter ordinær gravidfotografering
+          <div className="Home__DiscountSection">
+            <div className="Home__Discount_NewbornSquare">
+              <img
+                className="Home__Discount_NewbornImg"
+                src={newbornDiscount}
+                alt="50% avslag på nyfødtfotografering"
+              ></img>
+              <div className="Home__Discount_NewbornTextBox">
+                <div className="Home__Discount_NewbornHeader">ALLTID</div>
+                <div className="Home__Discount_NewbornSubHeader">50%</div>
+                <div className="Home__Discount_NewbornText">
+                  avslag på nyfødtfotografering,
+                  <br /> etter ordinær gravidfotografering
+                </div>
+                <ActionButton to={ContactRoute}>Book her</ActionButton>
+              </div>
             </div>
-            <ActionButton to={ContactRoute}>Book her</ActionButton>
-          </div></div>
           </div>
-        
 
-        <div>
-      
-          <div className="Home__Discount_OneYearSquare">
-          <img
-            className="Home__Discount_OneYearImg"
-            src={OneYearDiscount}
-            alt="50% avslag på nyfødtfotografering"
-          ></img>
-          <div className="Home__Discount_OneYearTextBox">
-            <div className="Home__Discount_OneYearHeader">ALLTID</div>
-            <div className="Home__Discount_OneYearSubHeader">50%</div>
-            <div className="Home__Discount_OneYearText">
-            avslag på 1-års fotografering,<br />  etter nyfødtfotografering
+          <div>
+            <div className="Home__Discount_OneYearSquare">
+              <img
+                className="Home__Discount_OneYearImg"
+                src={OneYearDiscount}
+                alt="50% avslag på nyfødtfotografering"
+              ></img>
+              <div className="Home__Discount_OneYearTextBox">
+                <div className="Home__Discount_OneYearHeader">ALLTID</div>
+                <div className="Home__Discount_OneYearSubHeader">50%</div>
+                <div className="Home__Discount_OneYearText">
+                  avslag på 1-års fotografering,
+                  <br /> etter nyfødtfotografering
+                </div>
+                <ActionButton to={ContactRoute}>Book her</ActionButton>
+              </div>
             </div>
-            <ActionButton to={ContactRoute}>Book her</ActionButton>
-          </div></div>
           </div>
         </div>
 
-{/* 
+        {/* 
         <div className="newborn-discount-row">
           <img
             className="newborn-discount-img"
@@ -187,7 +192,6 @@ export function Home() {
             </div>
           </div>
         </div> */}
-       
       </PageSection>
 
       <PageSection>
@@ -195,7 +199,7 @@ export function Home() {
         <ImageSection
           images={presentables.photography}
           className="Home__PhotographyImageSection"
-          imageClassName="Home__PhotographyImageSection__Image"
+          imageClassName="Home__PhotographyImageSection__Image Home__ImageSectionImage"
         />
       </PageSection>
       <PageSection outerClassName="myquote-outer" innerClassName="myquote">
@@ -216,7 +220,7 @@ export function Home() {
         <h2 className="Home__Graphical">Grafisk Design</h2>
         <ImageSection
           images={presentables.graphicalDesign}
-          imageClassName="Home__GraphicalImageSection__Image"
+          imageClassName="Home__GraphicalImageSection__Image Home__ImageSectionImage"
         />
       </PageSection>
 

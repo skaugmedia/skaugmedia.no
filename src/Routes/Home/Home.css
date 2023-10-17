@@ -88,6 +88,10 @@
   margin-bottom: 10px;
 }
 
+.Home__ImageSectionImage:hover {
+  opacity: 0.9;
+}
+
 .newborn-discount-header {
   font-size: 2em;
   font-weight: 700;
@@ -110,9 +114,6 @@
   text-align: left;
   margin-top: 2px;
 }
-
-
-
 
 .section {
   display: flex;
