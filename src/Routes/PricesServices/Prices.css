@@ -1,27 +1,168 @@
-.div-with-arrow {
-  background-color: transparent;
-  cursor: pointer;
+.Prices__ButtonPricelistRow {
+  display: flex;
+  flex-flow: row;
+}
+
+.Prices__ButtonPricelist {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  gap: 5px;
+  justify-content: center;
+}
+.Prices__ServicesImg {
+  width: 50%;
+  margin-left: 10px;
+}
+.Prices__ServicesRow {
   position: relative;
-  width: 200px; /* Adjust the width to your desired size */
-  height: 50px; /* Adjust the height to your desired size */
-  transition: background-color 0.3s ease;
+}
+.container:focus-within,
+.container:focus {
+  opacity: 0;
+}
+.container:focus-within + .content,
+.container:focus + .content {
+  display: initial;
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  width: 500px;
+}
+.btn {
+  border: 1px #888;
+  border-radius: 4px;
+  background-color: #ddd;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+  font-family: oswald;
+  font-size: 1em;
+  color: inherit;
+  text-decoration: inherit;
+}
+.backdrop {
+  width: 20px;
+  max-width: calc(100% + 20px);
+  transition:
+    width 1s,
+    clip-path 0.5s ease-in-out;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  border-radius: 4px;
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 5px) 0%,
+    100% 50%,
+    calc(100% - 5px) 100%,
+    0% 100%
+  );
+}
+.color1 {
+  background-color: var(--dark-orange);
+}
+.color2 {
+  background-color: var(--green);
+}
+.color3 {
+  background-color: var(--blue);
+}
+.color4 {
+  background-color: var(--dark-pink);
+}
+.color5 {
+  background-color: var(--light-orange);
+}
+.color6 {
+  background-color: var(--light-pink);
+}
+.btn:hover .backdrop {
+  width: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+}
+.text {
+  position: relative;
+  z-index: 2;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Prices__TabsTitleKids {
+  color: var(--dark-orange);
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__TabsTitlePortrait {
+  color: var(--green);
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__Content {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
-.arrow {
-  display: inline-block;
-  transform: translateX(0);
-  transition: transform 0.3s ease;
+.Prices__TabsContentBox {
+  width: 60%;
+  padding: 20px;
 }
 
-.clicked {
-  background-color: #3498db; /* Change to your desired background color */
+.Prices__TabsContentImg {
+  width: 30%;
+  height: 70%;
+  margin: 20px;
 }
 
-.div-with-arrow:hover .arrow {
-  transform: translateX(-100%); /* Move the arrow 100% to the left */
+.Prices__Tabs {
+  width: 100%;
+}
+
+.Prices__TabsContentText {
+  font-family: nunito;
+}
+
+.Prices__TabsContentTextOffer {
+  font-weight: 700;
+}
+
+.Prices__TabsContentTextFees {
+  font-weight: 600;
+  font-size: 0.85em;
+}
+
+.ButtonText {
+  margin-left: 70px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+}
+
+.Prices__ButtonSubText {
+  font-size: 0.8em;
+  display: flex;
+  flex-flow: column;
+  font-family: nunito;
+  text-align: left;
+}
+
+.Prices__Tabs {
+  display: flex;
+  width: 100%;
 }
 
 .Prices__TopSection {
@@ -31,52 +172,11 @@
 
 .Prices__Header {
   font-size: 1.2em;
-  font-weight: 700;
-  color: var(--blue);
+  font-weight: 500;
+  color: black;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 13px;
-}
-
-.Prices__ServicesRow {
-  width: 100%;
-  
-  display: flex;
-  flex-flow: row;
-  
-}
-
-.Prices__CollapsibleBox {
-  width: 50%;
-  
-}
-
-.Prices__CollapsibleBoxRow {
-  background-color: #E1E1E1;
-  margin-bottom: 2px;
-}
-
-.Prices__CollapsibleBox_Text {
-  margin-left: 70px;
-  font-size: 1.1em;
-  text-transform: uppercase;
-  text-align: left;
-  display: flex;
-  flex-flow: column;
-}
-
-.Prices__CollapsibleBox_TextFromPrice {
-  font-size: 0.9em;
-  display: flex;
-  flex-flow: column;
-  font-family: nunito;
-  text-align: right;
-  margin-right: 30px;
-}
-
-.Prices__ServicesImg {
-  width: 50%;
-  margin-left: 10px;
 }
 
 .Prices__ProductsImg {

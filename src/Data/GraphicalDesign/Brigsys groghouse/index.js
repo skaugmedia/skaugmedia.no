@@ -15,10 +15,10 @@ import webpage1 from "./Images/webside_1.jpg";
 import sketch from "./Images/skisser.jpg";
 
 export default {
-  id: "pent-og-brukt-as",
-  title: "Pent og Brukt AS",
+  id: "brigsys-groghouse",
+  title: "Brigsys Groghouse",
   category: "Visuell identitet",
-  date: "2021-11-01",
+  date: "2021-02-01",
   ingress: oneLine`
     Pent og Brukt AS er en liten og søt bruktbutikk som ligger på Kløfta, i Ullensaker kommune. Jeg fikk i oppgave å lage et enkelt og tidløst design til deres bedrift.
     Da veggene ble malt i fargen "Minty Breeze" før jeg fikk dette oppdraget, inspirerte fargen meg til å bruke nettopp denne fargen i det helhetlige designet, for å knytte
