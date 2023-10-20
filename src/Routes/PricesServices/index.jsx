@@ -22,14 +22,27 @@ import ConfirmationImg from "/src/Images/Prices/confirmation_photography.jpg";
 import CoupleImg from "/src/Images/Prices/couple_photography.jpg";
 import FamilyImg from "/src/Images/Prices/family_photography.jpg";
 import Headshot1Img from "/src/Images/Prices/headshot_1.jpg";
-import Headshot2Img from "/src/Images/Prices/headshot_2.jpg";
 import NewbornImg from "/src/Images/Prices/newborn_photography.jpg";
 import PregnantImg from "/src/Images/Prices/pregnancy_photography.jpg";
 import WeddingImg from "/src/Images/Prices/wedding.jpg";
 import ServicesImg from "/src/Images/Prices/prices.jpg";
-import ProductImg from "/src/Images/Prices/photocopy.jpg";
+import PhotoProductImg from "/src/Images/Prices/photocopy.jpg";
 import OneYearImg from "/src/Images/Prices/oneyear_photography.jpg";
 import PortraitImg from "/src/Images/Prices/headshot_2.jpg";
+import SiblingImg from "/src/Images/Prices/sibling_photography.jpg";
+import MommyAndMeImg from "/src/Images/Prices/mommyandme_photography.jpg";
+import FoodImg from "/src/Images/Prices/food_photography.jpg";
+import ProductImg from "/src/Images/Prices/product_photography.jpg";
+import BusinessPortraitImg from "/src/Images/Prices/business_portrait_photography.jpg";
+import KindergardenImg from "/src/Images/Prices/kindergarten_photography.jpg";
+import BrandingImg from "/src/Images/Prices/branding.jpg";
+import UXDesignImg from "/src/Images/Prices/uxdesign.jpg";
+import LogoDesignImg from "/src/Images/Prices/logo_design.jpg";
+import AnnetDesignImg from "/src/Images/Prices/annet_design.jpg";
+import DigitalCopyImg from "/src/Images/Prices/digital_files.jpg";
+import WallPhotosImg from "/src/Images/Prices/canvas.jpg";
+import AlbumImg from "/src/Images/Prices/album.jpg";
+import PrintablesImg from "/src/Images/Prices/designpack.jpg";
 import { Tabs } from "../../Components/Tabs";
 
 export function PricesServices() {
@@ -108,6 +121,14 @@ export function PricesServices() {
             content: (
               <div className="Prices__Tabs">
                 <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Nyfødtfotografering
+                    </div>
+                    <div className="Prices__TabsContentPriceKidsCopies">
+                      Kr. 1700,-
+                    </div>
+                  </div>
                   <div className="Prices__TabsContentText">
                     Jeg anbefaler å ha nyfødtfotografering innen babyen har fylt
                     14 dager, men det går også fint etter dette om tiden ikke
@@ -151,6 +172,14 @@ export function PricesServices() {
             content: (
               <div className="Prices__Tabs">
                 <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      1-års fotografering
+                    </div>
+                    <div className="Prices__TabsContentPriceKidsCopies">
+                      Kr. 1700,-
+                    </div>
+                  </div>
                   <div className="Prices__TabsContentText">
                     En viktig milepæl i ditt barns liv nærmer seg, og det er på
                     tide å fange de uforglemmelige øyeblikkene som markerer det
@@ -196,6 +225,14 @@ export function PricesServices() {
             content: (
               <div className="Prices__Tabs">
                 <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Barnefotografering (fra 6 mnd)
+                    </div>
+                    <div className="Prices__TabsContentPriceKidsCopies">
+                      Kr. 1700,-
+                    </div>
+                  </div>
                   <div className="Prices__TabsContentText">
                     En spennende reise begynner fra tidlig barndom til ung
                     voksen alder, det er ideelt å fotografere barnet ditt
@@ -254,6 +291,14 @@ export function PricesServices() {
             content: (
               <div className="Prices__Tabs">
                 <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Portrettfotografering
+                    </div>
+                    <div className="Prices__TabsContentPricePortraitWallphotos">
+                      Kr. 1550,-
+                    </div>
+                  </div>
                   <div className="Prices__TabsContentText">
                     Uansett om du er i ungdommen, midten av livet eller i en
                     spesiell fase av livet, som for eksempel forlovelse eller
@@ -285,12 +330,12 @@ export function PricesServices() {
                       Helgetillegg: kr. 700,-
                     </p>
                   </div>
-                  <img
-                    className="Prices__TabsContentImg"
-                    src={PortraitImg}
-                    title="Portrett av en mann i naturen"
-                  />
                 </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={PortraitImg}
+                  title="Portrett av en mann i naturen"
+                />
               </div>
             ),
           },
@@ -299,6 +344,14 @@ export function PricesServices() {
             content: (
               <div className="Prices__Tabs">
                 <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Gravidfotografering
+                    </div>
+                    <div className="Prices__TabsContentPricePortraitWallphotos">
+                      Kr. 1550,-
+                    </div>
+                  </div>
                   <div className="Prices__TabsContentText">
                     Graviditeten er en reise fylt med spennende forandringer og
                     forventning, og fra uke 30 kommer den endelige etappen i
@@ -334,8 +387,8 @@ export function PricesServices() {
                 </div>
                 <img
                   className="Prices__TabsContentImg"
-                  src={OneYearImg}
-                  title="1-åring utendørs som koser seg med kake"
+                  src={PregnantImg}
+                  title="Gravid kvinne i en sofa"
                 />
               </div>
             ),
@@ -345,6 +398,14 @@ export function PricesServices() {
             content: (
               <div className="Prices__Tabs">
                 <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Konfirmantfotografering
+                    </div>
+                    <div className="Prices__TabsContentPricePortraitWallphotos">
+                      Kr. 1550,-
+                    </div>
+                  </div>
                   <div className="Prices__TabsContentText">
                     Konfirmantfotografering gir deg muligheten til å fange
                     øyeblikkene som definerer denne viktige tiden i livet ditt.
@@ -379,17 +440,25 @@ export function PricesServices() {
                 </div>
                 <img
                   className="Prices__TabsContentImg"
-                  src={BabyImg}
-                  title="Baby utendørs i blomstereng"
+                  src={ConfirmationImg}
+                  title="Konfirmant i bunad"
                 />
               </div>
             ),
           },
           {
-            title: "Headshots / CV-foto",
+            title: "Headshots / Profilbilde / CV-foto",
             content: (
               <div className="Prices__Tabs">
                 <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Headshots / Profilbilde / CV-foto
+                    </div>
+                    <div className="Prices__TabsContentPricePortraitWallphotos">
+                      Kr. 1000,-
+                    </div>
+                  </div>
                   <div className="Prices__TabsContentText">
                     Å søke etter jobber og karriereveier er en viktig reise, og
                     hvert øyeblikk på vei til din profesjonelle suksess har sin
@@ -424,8 +493,651 @@ export function PricesServices() {
                 </div>
                 <img
                   className="Prices__TabsContentImg"
-                  src={BabyImg}
-                  title="Baby utendørs i blomstereng"
+                  src={Headshot1Img}
+                  title="Portrett av en kvinne på Operataket"
+                />
+              </div>
+            ),
+          },
+        ]}
+        contentClassName=""
+      />
+    </div>
+  );
+
+  const familyServices = (
+    <div>
+      <div className="Prices__Content">
+        {serviceBackArrow}
+        <div className="Prices__TabsTitleFamily">Familie</div>
+      </div>
+      <Tabs
+        tabs={[
+          {
+            title: "Familiefotografering",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Familiefotografering
+                    </div>
+                    <div className="Prices__TabsContentPriceFamilyAlbum">
+                      Kr. 1700,-
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    Familien er hjertet av livet ditt, og hvert øyeblikk sammen
+                    utgjør en unik del av din reise. Familiefotografering gir
+                    deg muligheten til å fange disse øyeblikkene som definerer
+                    din families historie. Det handler om å formidle kjærlighet,
+                    samhørighet og øyeblikk som skaper de mest dyrebare minnene.
+                    Familiefotografering handler om å fange øyeblikkene som
+                    definerer din families historie, uansett om det er en
+                    spontan lek i parken, en hengivenhetserklæring eller en
+                    enkel sammenkomst. Gjennom vårt samarbeid vil vi skape
+                    minner som vil bli verdsatt i generasjoner fremover.
+                    <p className="Prices__TabsContentTextOffer">
+                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      rabatt på fotograferingen!
+                    </p>
+                    <p>
+                      Inkluderer:
+                      <br />- Samtale før fotografering for å avklare lokasjon
+                      og klær
+                      <br />- Opptil 1 time fotografering på lokasjon
+                      <br />- Digitalt bildegalleri hvor man velger bilder
+                      <br />- Ingen bilder er inkludert i prisen, se egne priser
+                      på bildeprodukter
+                      <br />- Mulighet for å booke time hos makeup-artist
+                      LashBrowser før fotograferingen
+                    </p>
+                    <p className="Prices__TabsContentTextFees">
+                      Kveldstillegg etter kl. 16.00: kr. 400,-
+                      <br />
+                      Helgetillegg: kr. 700,-
+                    </p>
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={FamilyImg}
+                  title="Far og sønn som leker i skogen"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "Søskenfotografering",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Søskenfotografering
+                    </div>
+                    <div className="Prices__TabsContentPriceFamilyAlbum">
+                      Kr. 1700,-
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    Søsken er de som deler din livsreise fra begynnelsen, og
+                    hvert øyeblikk sammen utgjør en helt spesiell del av deres
+                    historie. Søskenfotografering gir dere muligheten til å
+                    fange disse øyeblikkene som definerer båndet mellom søsken.
+                    Det handler om å formidle kjærlighet, lek og den unike
+                    forbindelsen som de deler. Uavhengig av om det er spontane
+                    leker i hagen, deling av hemmeligheter eller kos i sofaen,
+                    har hvert øyeblikk mellom søsken sin egen unike betydning.
+                    Søskenfotografering er en mulighet til å fange disse
+                    øyeblikkene som definerer deres relasjon, og som vil skape
+                    dyrebare minner for dere i årene som kommer.
+                    <p className="Prices__TabsContentTextOffer">
+                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      rabatt på fotograferingen!
+                    </p>
+                    <p>
+                      Inkluderer:
+                      <br />- Samtale før fotografering for å avklare lokasjon
+                      og klær
+                      <br />- Fotografering med 2 eller flere søsken
+                      <br />- Opptil 1 time fotografering på lokasjon
+                      <br />- Digitalt bildegalleri hvor man velger bilder
+                      <br />- Ingen bilder er inkludert i prisen, se egne priser
+                      på bildeprodukter
+                    </p>
+                    <p className="Prices__TabsContentTextFees">
+                      Kveldstillegg etter kl. 16.00: kr. 400,-
+                      <br />
+                      Helgetillegg: kr. 700,-
+                    </p>
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={SiblingImg}
+                  title="Brødre som leker sammen i skogen"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "Parfotografering",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Parfotografering
+                    </div>
+                    <div className="Prices__TabsContentPriceFamilyAlbum">
+                      Kr. 1700,-
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For par er kjærlighetshistorien deres en reise, og hvert
+                    øyeblikk sammen utgjør en viktig del av den.
+                    Parfotografering gir dere muligheten til å fange de
+                    hjertevarme øyeblikkene som definerer deres unike
+                    kjærlighetshistorie. Det handler om å formidle kjærlighet,
+                    samhørighet og øyeblikk som skaper de mest dyrebare minner.
+                    Uansett om det er en spontan klem i parken, et
+                    kjærlighetsblikk som sier mer enn tusen ord eller en enkel
+                    romantisk kveld sammen, har hvert øyeblikk i deres forhold
+                    sin egen unike betydning. Parfotografering handler om å
+                    fange disse øyeblikkene som definerer deres reise som et
+                    par.
+                    <p className="Prices__TabsContentTextOffer">
+                      Ved booking av Bryllupspakke 1 får dere 50% rabatt på
+                      forlovelsesfotografering. Ved booking av Bryllupspakke 2
+                      eller Bryllupspakke 3 får du forlovelsesfotograferingen
+                      inkludert i prisen.
+                    </p>
+                    <p>
+                      Inkluderer:
+                      <br />- Samtale før fotografering for å avklare lokasjon
+                      og klær
+                      <br />- Opptil 1 time fotografering på lokasjon
+                      <br />- Digitalt bildegalleri hvor man velger bilder
+                      <br />- Ingen bilder er inkludert i prisen, se egne priser
+                      på bildeprodukter (gjelder ikke ved Bryllupspakke 2 og 3)
+                      <br />- Mulighet for å booke time hos makeup-artist
+                      LashBrowser før fotograferingen
+                    </p>
+                    <p className="Prices__TabsContentTextFees">
+                      Kveldstillegg etter kl. 16.00: kr. 400,-
+                      <br />
+                      Helgetillegg: kr. 700,-
+                    </p>
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={CoupleImg}
+                  title="Par ute i snøen"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "Mommy & me / Daddy & me",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Mommy & me / Daddy & me
+                    </div>
+                    <div className="Prices__TabsContentPriceFamilyAlbum">
+                      Kr. 1700,-
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For foreldre er tiden sammen med barna deres en
+                    uforglemmelig reise, og hvert øyeblikk utgjør en dyrebar del
+                    av den historien. Mommy & Me og Daddy & Me fotografering gir
+                    dere muligheten til å fange de hjertevarme øyeblikkene som
+                    definerer båndet mellom dere og barna deres. Det handler om
+                    å formidle kjærlighet, samhørighet og øyeblikk som skaper
+                    uforglemmelige minner. Uansett om det er en spontan klem, et
+                    kjærlig smil som sier mer enn ord, eller en enkel lek
+                    sammen, har hvert øyeblikk i deres forhold sin egen
+                    spesielle betydning. Mommy & Me og Daddy & Me fotografering
+                    handler om å fange disse øyeblikkene som definerer båndet
+                    mellom forelder og barn.
+                    <p className="Prices__TabsContentTextOffer">
+                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      rabatt på fotograferingen!
+                    </p>
+                    <p>
+                      Inkluderer:
+                      <br />- Samtale før fotografering for å avklare lokasjon
+                      og klær
+                      <br />- Fotografering med 1 forelder med 1 eller flere
+                      barn
+                      <br />- Opptil 1 time fotografering på lokasjon
+                      <br />- Digitalt bildegalleri hvor man velger bilder
+                      <br />- 1 digital bildefil, levert i både farger og
+                      sorthvitt
+                      <br />- Mulighet for å booke time hos makeup-artist
+                      LashBrowser før fotograferingen
+                    </p>
+                    <p className="Prices__TabsContentTextFees">
+                      Kveldstillegg etter kl. 16.00: kr. 400,-
+                      <br />
+                      Helgetillegg: kr. 700,-
+                    </p>
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={MommyAndMeImg}
+                  title="Mor og datter ute i snøen"
+                />
+              </div>
+            ),
+          },
+        ]}
+        contentClassName=""
+      />
+    </div>
+  );
+
+  const businessServices = (
+    <div>
+      <div className="Prices__Content">
+        {serviceBackArrow}
+        <div className="Prices__TabsTitleBusiness">Bedrifter og næringsliv</div>
+      </div>
+      <Tabs
+        tabs={[
+          {
+            title: "Matfotografering",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Matfotografering
+                    </div>
+                    <div className="Prices__TabsContentPriceBusinessPrintables">
+                      Ta kontakt for pristilbud
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For bedrifter i matbransjen er presentasjonen av deres
+                    kulinariske mesterverk en del av deres unike reise, og hvert
+                    bilde utgjør en avgjørende del av deres historie.
+                    Matfotografering for bedrifter og næringsliv gir dere
+                    muligheten til å fange de hjertevarme øyeblikkene som
+                    formidler skjønnheten og smaken av deres kulinariske
+                    kreasjoner.
+                    <br />
+                    <br />
+                    Det handler om å formidle kvalitet, smak og øyeblikk som
+                    skaper en uimotståelig appell. Uansett om det er en
+                    velduftende tallerken som forfører sansene, en delikat
+                    presentasjon av deilige ingredienser eller en enkel detalj
+                    som setter prikken over i-en, har hvert bilde en egen
+                    betydning. Matfotografering for bedrifter og næringsliv
+                    handler om å fange disse øyeblikkene som formidler essensen
+                    av deres kulinariske kunstverk.
+                    <br />
+                    <br />
+                    Ta kontakt for å avklare hva din bedrift trenger, og pris.
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={FoodImg}
+                  title="Granola, gresk yoghurt, bringebær og pasjonsfrukt"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "Produktfotografering",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Produktfotografering
+                    </div>
+                    <div className="Prices__TabsContentPriceBusinessPrintables">
+                      Ta kontakt for pristilbud
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For bedrifter og næringsliv er presentasjonen av deres
+                    produkter en integrert del av deres reise, og hvert bilde
+                    utgjør en avgjørende del av deres historie.
+                    Produktfotografering for bedrifter og næringsliv gir dere
+                    muligheten til å fange de hjertevarme øyeblikkene som
+                    formidler skjønnheten og funksjonaliteten av deres
+                    produkter. Det handler om å formidle kvalitet,
+                    funksjonalitet og øyeblikk som skaper en uimotståelig appell
+                    til deres målgruppe.
+                    <br />
+                    <br />
+                    Uansett om det er et detaljert bilde som fremhever
+                    produktets unike egenskaper, en stilfull presentasjon som
+                    fanger oppmerksomheten, eller en enkel detalj som gir det
+                    ekstraordinære, har hvert bilde sin egen betydning.
+                    Produktfotografering for bedrifter og næringsliv handler om
+                    å fange disse øyeblikkene som formidler essensen av deres
+                    produkter og merkevare.
+                    <br />
+                    <br />
+                    Ta kontakt for å avklare hva din bedrift trenger, og pris.
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={ProductImg}
+                  title="Produkter stylet sammen med frukt"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "Portrettfotografering",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Portrettfotografering for bedrifter
+                    </div>
+                    <div className="Prices__TabsContentPriceBusinessPrintables">
+                      Ta kontakt for pristilbud
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For bedrifter og næringsliv er visningen av deres team en
+                    viktig del av deres reise, og hvert bilde utgjør en
+                    avgjørende del av deres historie. Portrettfotografering for
+                    bedrifter og næringsliv gir dere muligheten til å fange de
+                    hjertevarme øyeblikkene som formidler personlighet og
+                    profesjonalitet til deres team. Det handler om å formidle
+                    troverdighet, kompetanse og øyeblikk som skaper en
+                    uimotståelig appell til deres målgruppe.
+                    <br />
+                    <br />
+                    Uansett om det er et detaljert portrett som fremhever hver
+                    enkelt medarbeiders unike egenskaper, en profesjonell
+                    presentasjon som fanger oppmerksomheten, eller en enkel
+                    detalj som gir det ekstraordinære, har hvert bilde sin egen
+                    betydning. Portrettfotografering for bedrifter og næringsliv
+                    handler om å fange disse øyeblikkene som formidler essensen
+                    av deres team og merkevare.
+                    <br />
+                    <br />
+                    Ta kontakt for å avklare hva din bedrift trenger, og pris.
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={BusinessPortraitImg}
+                  title="Portrett av daglig leder i Pent og Brukt AS"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "Barnehagefotografering",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Barnehagefotografering
+                    </div>
+                    <div className="Prices__TabsContentPriceBusinessPrintables">
+                      Ta kontakt for pristilbud
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For barnehager er hvert bilde en del av den unike reisen
+                    dere deler med barna, og hvert bilde utgjør en viktig del av
+                    deres historie. Barnehagefotografering gir dere muligheten
+                    til å fange smilene og minnene som utgjør hverdagen i
+                    barnehagen. Det handler om å formidle glede, vennskap og
+                    øyeblikk som skaper uforglemmelige minner.
+                    <br />
+                    <br />
+                    Uansett om det er et gruppebilde som fremhever samhørigheten
+                    blant barna, portretter som fanger individuell personlighet,
+                    eller miljøbilder som gir liv til barnehagens atmosfære, har
+                    hvert bilde sin egen betydning. Barnehagefotografering
+                    handler om å fange disse øyeblikkene som formidler essensen
+                    av barnehagens fellesskap og identitet.
+                    <br />
+                    <br />
+                    Gjennom barnehagefotografering kan dere se tilbake på disse
+                    hjertevarme øyeblikkene som utgjør deres barnehages historie
+                    og fylle hjertene deres med glede og stolthet.
+                    <br />
+                    <br />
+                    Ta kontakt for å avklare hva din bedrift trenger, og pris.
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={KindergardenImg}
+                  title="Portrett av et barn på lekeplassen"
+                />
+              </div>
+            ),
+          },
+        ]}
+        contentClassName=""
+      />
+    </div>
+  );
+
+  const designServices = (
+    <div>
+      <div className="Prices__Content">
+        {serviceBackArrow}
+        <div className="Prices__TabsTitleDesign">Design</div>
+      </div>
+      <Tabs
+        tabs={[
+          {
+            title: "Visuell identitet / Branding",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Visuell identitet / Branding
+                    </div>
+                    <div className="Prices__TabsContentPriceDesign">
+                      Kr. 950,- per time
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For bedrifter er hvert designelement en del av den unike
+                    reisen dere deler med deres merkevare, og hvert
+                    designuttrykk utgjør en viktig del av deres historie.
+                    Grafisk design gir dere muligheten til å forme deres
+                    visuelle identitet og branding som uttrykker deres unike
+                    essens. Det handler om å formidle profesjonalitet,
+                    originalitet og øyeblikk som skaper en uimotståelig appell
+                    til deres målgruppe.
+                    <p>
+                      Uansett om det er et logo som fremhever deres bedrifts
+                      personlighet, en visuell identitet som fanger deres unike
+                      merkevare, eller en kampanje som gir liv til deres
+                      budskap, har hvert designelement sin egen betydning.
+                      Grafisk design handler om å fange disse øyeblikkene som
+                      formidler essensen av deres bedrifts visuelle identitet.
+                    </p>
+                    <p>
+                      Gjennom grafisk design kan dere forme deres bedrifts
+                      visuelle identitet og branding som utgjør en viktig del av
+                      deres historie og fylle deres merkevare med autentisitet
+                      og appell.
+                    </p>
+                    <p>
+                      Ta gjerne kontakt for å diskutere hvordan jeg kan hjelpe
+                      dere med å forme deres visuelle identitet og branding. La
+                      oss sammen skape en grafisk reise som vil bli verdsatt av
+                      deres bedrift og kunder.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={BrandingImg}
+                  title="Visittkort for LashBrowser"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "UX-design",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">UX-design</div>
+                    <div className="Prices__TabsContentPriceDesign">
+                      Kr. 950,- per time
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For bedrifter er hvert aspekt av brukeropplevelsen (UX) en
+                    del av den unike reisen dere deler med deres digitale
+                    plattformer, og hvert interaksjonsdesign utgjør en viktig
+                    del av deres digitale historie. UX-design gir dere
+                    muligheten til å forme brukeropplevelsen som uttrykker deres
+                    unike essens. Det handler om å formidle brukervennlighet,
+                    innovasjon og øyeblikk som skaper en uimotståelig appell til
+                    deres målgruppe.
+                    <p>
+                      Uansett om det er en intuitiv nettsidedesign som fremhever
+                      brukervennligheten, en app som fanger oppmerksomheten og
+                      forbedrer brukerengasjementet, eller et digitalt produkt
+                      som gir liv til deres digitale budskap, har hvert
+                      UX-designelement sin egen betydning. UX-design handler om
+                      å fange disse øyeblikkene som formidler essensen av en
+                      sømløs og tiltalende digital opplevelse.
+                    </p>
+                    <p>
+                      Gjennom UX-design kan dere forme en brukeropplevelse som
+                      utgjør en viktig del av deres digitale historie og fylle
+                      deres digitale plattformer med brukervennlighet og appell.
+                    </p>
+                    <p>
+                      Ta gjerne kontakt for å diskutere hvordan jeg kan hjelpe
+                      dere med å forme deres UX-design og skape en digital reise
+                      som vil bli verdsatt av deres brukere og kunder.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={UXDesignImg}
+                  title="Kiehls webside"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "Logo-design",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">Logo-design</div>
+                    <div className="Prices__TabsContentPriceDesign">
+                      Kr. 950,- per time
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For bedrifter som søker en umiddelbar visuell identitet, er
+                    en logo en viktig del av reisen dere deler med deres
+                    merkevare. Logo-design gir dere muligheten til å forme en
+                    enestående visuell representasjon som uttrykker deres unike
+                    essens. Det handler om å formidle gjenkjennelighet,
+                    originalitet og øyeblikk som skaper en uimotståelig appell
+                    til deres målgruppe.
+                    <p>
+                      Uansett om det er en logo som fremhever deres bedrifts
+                      personlighet, har hver logo sin egen unike betydning.
+                      Logo-design handler om å fange dette øyeblikket som
+                      formidler essensen av deres merkevare og gir dere en
+                      tydelig identitet.
+                    </p>
+                    <p>
+                      Dette er pakken for deg som trenger kun logo, og som ikke
+                      er interessert i en hel visuell identitet.
+                    </p>
+                    <p>
+                      Ta gjerne kontakt for å diskutere hvordan jeg kan hjelpe
+                      dere med å forme deres logo. La oss sammen skape en logo
+                      som vil bli verdsatt av deres bedrift og kunder.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={LogoDesignImg}
+                  title="Logo for den fiksjonelle bedriften Naturalis"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "Annet design",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">Annet design</div>
+                    <div className="Prices__TabsContentPriceDesign">
+                      Ta kontakt for pristilbud
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    For både bedrifter og privatpersoner er design en viktig del
+                    av den spennende reisen dere deler med deres merkevare eller
+                    personlig prosjekt. Kreativt design gir dere muligheten til
+                    å forme en rekke visuelle uttrykk som uttrykker deres unike
+                    essens. Det handler om å formidle kreativitet, originalitet
+                    og øyeblikk som skaper en uimotståelig appell til deres
+                    målgruppe eller personlige sirkel.
+                    <p>
+                      Uansett om det er trykksaker som gir deres budskap en
+                      fysisk tilstedeværelse, takkekort som formidler
+                      takknemlighet og glede, invitasjoner som skaper
+                      forventning, eller illustrasjoner som gir liv til deres
+                      kreative visjoner, har hvert designelement sin egen
+                      betydning. Kreativt design handler om å fange disse
+                      øyeblikkene som formidler essensen av deres visuelle
+                      uttrykk.
+                    </p>
+                    <p>
+                      Gjennom kreativt design kan dere forme en visuell reise
+                      som utgjør en viktig del av deres historie og fyller deres
+                      merkevare eller personlige prosjekt med autentisitet og
+                      appell gjennom en rekke kreative uttrykk.
+                    </p>
+                    <p>
+                      Ta gjerne kontakt for å diskutere hvordan jeg kan hjelpe
+                      dere med å forme deres kreative designprosjekter, enten
+                      det er for deres bedrift eller personlige prosjekt. La oss
+                      sammen skape en designreise som vil bli verdsatt av dere
+                      og deres målgruppe.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={AnnetDesignImg}
+                  title="Utdrag og forside på det fiksjonelle bakemagasinet Saftig"
                 />
               </div>
             ),
@@ -498,7 +1210,7 @@ export function PricesServices() {
     <div className="Prices__ButtonPricelistRow">
       <img
         className="Prices__ProductsImg"
-        src={ProductImg}
+        src={PhotoProductImg}
         alt="Bildekopi"
       ></img>
       <div className="Prices__ButtonPricelist">
@@ -547,21 +1259,431 @@ export function PricesServices() {
   const photocopiesProduct = (
     <div>
       {productBackArrow}
-      <div>photocopies</div>
+      <div className="Prices__TabsProducts">
+        <div className="Prices__TabsContentBoxProducts">
+          <div className="Prices__TabsContentHeaderBox">
+            <div className="Prices__TabsContentTitle">Bildekopier</div>
+          </div>
+
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={PhotoProductImg}
+            imgAlt="En bildekopi i ramme av en konfirmant"
+            text={
+              <div className="ProductPriceSection__Text">
+                Gi liv til de best dyrebare øyeblikkene med bildekopier av høy
+                kvalitet. Min leverandør trykker hver enkelt bilde med
+                presisjon, og kvalitetssjekker bildet før de sendes avgårde.
+                Disse løse bildene er perfekte å ramme inn å gi bort i gave til
+                den som har alt!
+              </div>
+            }
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                Bildekopi 15x20cm
+              </div>
+            }
+            price1={<div className="ProductPriceSection__Price">Kr. 500,-</div>}
+            priceText2={
+              <div className="ProductPriceSection__PriceText">
+                Bildekopi 20x30cm
+              </div>
+            }
+            price2={<div className="ProductPriceSection__Price">Kr. 800,-</div>}
+            priceText3={
+              <div className="ProductPriceSection__PriceText">
+                Bildekopi 30x40cm
+              </div>
+            }
+            price3={
+              <div className="ProductPriceSection__Price">Kr. 1200,-</div>
+            }
+            priceText4={
+              <div className="ProductPriceSection__PriceText">
+                Bildekopi 40x50cm
+              </div>
+            }
+            price4={
+              <div className="ProductPriceSection__Price"> Kr. 2000,-</div>
+            }
+            priceText5={false}
+            price5={false}
+          />
+
+          {/*  {/* {/* <div className="Prices__TabsContentText">
+            Gi liv til de best dyrebare øyeblikkene med bildekopier av høy
+            kvalitet. Min leverandør trykker hver enkelt bilde med presisjon, og
+            kvalitetssjekker bildet før de sendes avgårde. Disse løse bildene er
+            perfekte å ramme inn å gi bort i gave til den som har alt!
+          </div>
+          <div className="Prices__TabsContentProductPricelist">
+            <div className="Prices__TabsContentTextPricelist">
+              Bildekopi 15x20cm
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 500,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Bildekopi 20x30cm
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 800,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Bildekopi 30x40cm
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 1200,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Bildekopi 40x50cm
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 2000,-
+            </div> *
+          </div>  */}
+        </div>
+      </div>
     </div>
   );
 
   const wallPhotoProduct = (
     <div>
       {productBackArrow}
-      <div>wallphotos</div>
+      <div className="Prices__TabsProducts">
+        <div className="Prices__TabsContentBoxProducts">
+          <div className="Prices__TabsContentHeaderBox">
+            <div className="Prices__TabsContentTitle">Veggbilder</div>
+          </div>
+
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={WallPhotosImg}
+            imgAlt="Veggbilder av en mor og hennes barn"
+            text={
+              <div className="ProductPriceSection__Text">
+                Om du ønsker, kan du kjøpe digitale bildefiler i høy oppløsning.
+                Med disse filene kan du printe så mange ganger du ønsker, lagre
+                som backup eller bruke som ditt profilbilde på sosiale medier,
+                men husk å kreditere meg som fotograf under bildet.
+              </div>
+            }
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                Veggbilde 20x30cm
+              </div>
+            }
+            price1={
+              <div className="ProductPriceSection__Price">Kr. 2000,-</div>
+            }
+            priceText2={
+              <div className="ProductPriceSection__PriceText">
+                Veggbilde 30x40cm
+              </div>
+            }
+            price2={
+              <div className="ProductPriceSection__Price">Kr. 3500,-</div>
+            }
+            priceText3={
+              <div className="ProductPriceSection__PriceText">
+                Veggbilde 40x50cm
+              </div>
+            }
+            price3={
+              <div className="ProductPriceSection__Price">Kr. 4800,-</div>
+            }
+            priceText4={
+              <div className="ProductPriceSection__PriceText">
+                Veggbilde 50x70cm
+              </div>
+            }
+            price4={
+              <div className="ProductPriceSection__Price">Kr. 6700,-</div>
+            }
+            priceText5={false}
+            price5={false}
+          />
+
+          {/* <div className="Prices__TabsContentText">
+            For å skape et hjem er det for mange viktig å henge opp bilder på
+            veggene. Trykk på lerret og hard skumplate har samme pris, og de gir
+            begge et matt utrykk. Begge typene tar seg svært bra ut på veggen,
+            alene eller i klynger med flere bilder.
+          </div>
+          <div className="Prices__TabsContentProductPricelist">
+            <div className="Prices__TabsContentTextPricelist">
+              Veggbilde 20x30cm
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 2000,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Veggbilde 30x40cm
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 3500,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Veggbilde 40x50cm
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 4800,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Veggbilde 50x70cm
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 6700,-
+            </div>
+          </div> */}
+        </div>
+      </div>
     </div>
   );
 
   const albumProduct = (
     <div>
       {productBackArrow}
-      <div>album</div>
+      <div className="Prices__TabsProducts">
+        <div className="Prices__TabsContentBoxProducts">
+          <div className="Prices__TabsContentHeaderBox">
+            <div className="Prices__TabsContentTitle">Album</div>
+          </div>
+
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={AlbumImg}
+            imgAlt="Et bilde av en baby i en blomstereng"
+            text={
+              <div className="ProductPriceSection__Text">
+                Om du ønsker, kan du kjøpe digitale bildefiler i høy oppløsning.
+                Med disse filene kan du printe så mange ganger du ønsker, lagre
+                som backup eller bruke som ditt profilbilde på sosiale medier,
+                men husk å kreditere meg som fotograf under bildet.
+              </div>
+            }
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                panorama liten - 20 sider
+              </div>
+            }
+            price1={
+              <div className="ProductPriceSection__Price">Kr. 5000,-</div>
+            }
+            priceText2={
+              <div className="ProductPriceSection__PriceText">
+                kvadratisk 20x20 cm - 20 sider
+              </div>
+            }
+            price2={
+              <div className="ProductPriceSection__Price">Kr. 7000,-</div>
+            }
+            priceText3={
+              <div className="ProductPriceSection__PriceText">
+                kvadratisk 25x25 cm - 20 sider
+              </div>
+            }
+            price3={
+              <div className="ProductPriceSection__Price">Kr. 7700,-</div>
+            }
+            priceText4={
+              <div className="ProductPriceSection__PriceText">
+                kvadratisk 30x30 cm - 20 sider
+              </div>
+            }
+            price4={
+              <div className="ProductPriceSection__Price">Kr. 8500,-</div>
+            }
+            priceText5={
+              <div className="ProductPriceSection__PriceText">
+                panorama stor - 20 sider
+              </div>
+            }
+            price5={
+              <div className="ProductPriceSection__Price">Kr. 9000,-</div>
+            }
+          />
+
+          {/* <div className="Prices__TabsContentText">
+            Et album er en hyllest til de uforglemmelige øyeblikkene du vil se
+            igjen og igjen. Hver side er en vakker reise og en fortelling bare
+            albumet og dere som var til stede kan fortelle.
+          </div>
+          <div className="Prices__TabsContentProductPricelist">
+            <div className="Prices__TabsContentTextPricelist">
+              panorama liten - 20 sider
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 5000,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              kvadratisk 20x20 cm - 20 sider
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 7000,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              kvadratisk 25x25 cm - 20 sider
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 7700,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              kvadratisk 30x30 cm - 20 sider
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 8500,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              panorama stor - 20 sider
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 9000,-
+            </div>
+          </div> */}
+        </div>
+      </div>
+    </div>
+  );
+  const digitalCopiesProduct = (
+    <div>
+      {productBackArrow}
+      <div className="Prices__TabsProducts">
+        <div className="Prices__TabsContentBoxProducts">
+          <div className="Prices__TabsContentHeaderBox">
+            <div className="Prices__TabsContentTitle">Digitale bildefiler</div>
+          </div>
+
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={DigitalCopyImg}
+            imgAlt="Et forlovet par"
+            text={
+              <div className="ProductPriceSection__Text">
+                Om du ønsker, kan du kjøpe digitale bildefiler i høy oppløsning.
+                Med disse filene kan du printe så mange ganger du ønsker, lagre
+                som backup eller bruke som ditt profilbilde på sosiale medier,
+                men husk å kreditere meg som fotograf under bildet.
+              </div>
+            }
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                Minipakke med 3 digitale filer
+              </div>
+            }
+            price1={
+              <div className="ProductPriceSection__Price">Kr. 3600,-</div>
+            }
+            priceText2={
+              <div className="ProductPriceSection__PriceText">
+                Liten pakke med 5 digitale filer
+              </div>
+            }
+            price2={
+              <div className="ProductPriceSection__Price">Kr. 5500,-</div>
+            }
+            priceText3={
+              <div className="ProductPriceSection__PriceText">
+                Medium pakke med 10 digitale filer
+              </div>
+            }
+            price3={
+              <div className="ProductPriceSection__Price">Kr. 6800,-</div>
+            }
+            priceText4={
+              <div className="ProductPriceSection__PriceText">
+                Stor pakke med 15 digitale filer
+              </div>
+            }
+            price4={
+              <div className="ProductPriceSection__Price">Kr. 7700,-</div>
+            }
+            priceText5={
+              <div className="ProductPriceSection__PriceText">
+                Enkeltfiler i tillegg til pakke
+              </div>
+            }
+            price5={<div className="ProductPriceSection__Price">Kr. 650,-</div>}
+          />
+
+          {/* <div className="Prices__TabsContentText">
+            Om du ønsker, kan du kjøpe digitale bildefiler i høy oppløsning. Med
+            disse filene kan du printe så mange ganger du ønsker, lagre som
+            backup eller bruke som ditt profilbilde på sosiale medier, men husk
+            å kreditere meg som fotograf under bildet.
+          </div>
+          <div className="Prices__TabsContentProductPricelist">
+            <div className="Prices__TabsContentTextPricelist">
+              Minipakke med 3 digitale filer
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 3600,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Liten pakke med 5 digitale filer
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 5500,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Medium pakke med 10 digitale filer
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 6800,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Stor pakke med 15 digitale filer
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 7700,-
+            </div>
+            <div className="Prices__TabsContentTextPricelist">
+              Enkeltfiler i tillegg til pakke
+            </div>
+            <div className="Prices__TabsContentTextPricelistAmount">
+              Kr. 650,-
+            </div>
+          </div> */}
+        </div>
+      </div>
+    </div>
+  );
+  const printablesProduct = (
+    <div>
+      {productBackArrow}
+      <div className="Prices__TabsProducts">
+        <div className="Prices__TabsContentBoxProducts">
+          <div className="Prices__TabsContentHeaderBox">
+            <div className="Prices__TabsContentTitle">
+              Helhetlig pakke med trykksaker til bryllup
+            </div>
+          </div>
+          <div className="Prices__TabsContentPrintablesBox">
+            <div className="Prices__TabsContentTextPrintablesBox">
+              <p className="Prices__TabsContentTextPrintables">
+                Jeg designer gjerne en helhetlig pakke med trykksaker til deres
+                store dag, enten det er jubileum, bryllup eller noe annet! De
+                mest vanlige pakkene inkluderer invitasjoner, takkekort, menyer
+                og bordkort.
+              </p>
+              <p className="Prices__TabsContentTextPrintables">
+                Priser varierer utifra hva dere ønsker i deres pakke, hvor mange
+                dere ønsker av hver og om dere ønsker et spesielt materiale.Jeg
+                kan hjelpe dere med kun design, eller jeg kan levere en komplett
+                pakke med design og ferdig trykkede produkter.
+              </p>
+              <p className="Prices__TabsContentTextPrintables">
+                Ta kontakt i dag for en uforpliktende prat for å avdekke deres
+                ønsker, og eventuell pris.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 

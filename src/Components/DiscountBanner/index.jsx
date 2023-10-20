@@ -19,10 +19,8 @@ export function DiscountBanner({
   return (
     <div className="DiscountBanner">
       <div className="DiscountBanner__Title">{title}</div>
-      <div className="DiscountBanner__Price">{price}</div>
-      <div className="DiscountBanner__Text">
-        <div className="DiscountBanner__Description">{description}</div>
-      </div>
+
+      <div className="DiscountBanner__Text"></div>
 
       {!!link && (
         <MiniSessionButton

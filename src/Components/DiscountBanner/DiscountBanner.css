@@ -1,15 +1,16 @@
 .DiscountBanner {
-  background-color: var(--blue);
+  background-color: black;
   padding: 10px;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   align-items: center;
+  justify-content: center;
 }
 
 .DiscountBanner__Title {
   color: white;
-  font-size: 1.2em;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 400;
   text-align: center;
   height: auto;
   text-transform: uppercase;
@@ -19,25 +20,39 @@
   display: flex;
   flex-flow: row;
   justify-content: center;
-}
-
-.DiscountBanner__Price {
-  font-family: nunito;
-  font-weight: 700;
-
-  text-align: center;
-}
-
-.DiscountBanner__Description {
-  font-family: nunito;
-  font-weight: 200;
-  margin-bottom: 10px;
-  display: flex;
-  flex-flow: row;
-  text-align: center;
+  margin-right: 20px;
+  color: white;
 }
 
 .DiscountBanner__Button {
-  background-color: var(--lightgreen);
+  background-color: white;
+  display: inline-block !important;
+  color: black;
+  height: 25px;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+}
+
+.DiscountBanner__Button:hover {
+  background-color: var(--blue);
+  color: black;
+  height: 25px;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  display: inline-block !important;
+}
+
+.DiscountBanner__Button:active {
+  background-color: var(--blue);
+  color: black;
+  height: 25px;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
   display: inline-block !important;
 }

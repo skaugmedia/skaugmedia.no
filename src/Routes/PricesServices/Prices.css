@@ -96,7 +96,7 @@
 
 .Prices__TabsTitleKids {
   color: var(--dark-orange);
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-transform: uppercase;
   padding-left: 20px;
   font-weight: 500;
@@ -104,15 +104,80 @@
 
 .Prices__TabsTitlePortrait {
   color: var(--green);
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-transform: uppercase;
   padding-left: 20px;
   font-weight: 500;
 }
 
+.Prices__TabsTitleFamily {
+  color: var(--blue);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__TabsTitleBusiness {
+  color: var(--light-orange);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__TabsTitleDesign {
+  color: var(--light-pink);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__TabsContentHeaderBox {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+.Prices__TabsContentPriceKidsCopies {
+  text-align: right;
+
+  color: var(--dark-orange);
+}
+
+.Prices__TabsContentPricePortraitWallphotos {
+  text-align: right;
+
+  color: var(--green);
+}
+
+.Prices__TabsContentPriceFamilyAlbum {
+  text-align: right;
+
+  color: var(--blue);
+}
+
+.Prices__TabsContentPriceBusinessPrintables {
+  text-align: right;
+
+  color: var(--light-orange);
+}
+
+.Prices__TabsContentPriceDesign {
+  text-align: right;
+
+  color: var(--light-pink);
+}
+
 .Prices__Content {
   display: flex;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .Prices__TabsContentBox {
@@ -124,6 +189,36 @@
   width: 30%;
   height: 70%;
   margin: 20px;
+}
+
+.Prices__TabsContentBoxProducts {
+  width: 100%;
+  padding: 20px;
+}
+
+.Prices__TabsContentPrintables {
+  display: flex;
+  flex-flow: row;
+}
+
+.Prices__TabsContentTextPrintables {
+  width: 100%;
+  font-family: nunito;
+  display: flex;
+  flex-flow: row;
+}
+
+.Prices__TabsContentImgPrintables {
+}
+
+.Prices__TabsContentPrintablesBox {
+  display: flex;
+}
+
+.Prices__TabsContentImgPrintables {
+  margin-right: 0;
+  width: 110%;
+  height: 100%;
 }
 
 .Prices__Tabs {
@@ -141,6 +236,42 @@
 .Prices__TabsContentTextFees {
   font-weight: 600;
   font-size: 0.85em;
+}
+
+.Prices__TabsProducts {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.rices__TabsContentProductPricelist {
+  display: flex;
+  flex-flow: column;
+}
+
+.Prices__TabsContentTextPricelist {
+  text-align: left;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row;
+}
+
+.Prices__TabsContentTextPricelistAmount {
+  text-align: right;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: column;
+}
+
+.ProductPriceSection__Text {
+  margin-top: -10;
 }
 
 .ButtonText {

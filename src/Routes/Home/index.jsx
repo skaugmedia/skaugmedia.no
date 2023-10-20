@@ -137,42 +137,38 @@ export function Home() {
           ></img>
         </div>
 
-        <div>
-          <div className="Home__DiscountSection">
-            <div className="Home__Discount_NewbornSquare">
-              <img
-                className="Home__Discount_NewbornImg"
-                src={newbornDiscount}
-                alt="50% avslag på nyfødtfotografering"
-              ></img>
-              <div className="Home__Discount_NewbornTextBox">
-                <div className="Home__Discount_NewbornHeader">ALLTID</div>
-                <div className="Home__Discount_NewbornSubHeader">50%</div>
-                <div className="Home__Discount_NewbornText">
-                  avslag på nyfødtfotografering,
-                  <br /> etter ordinær gravidfotografering
-                </div>
-                <ActionButton to={ContactRoute}>Book her</ActionButton>
+        <div className="Home__DiscountSection">
+          <div className="Home__Discount_NewbornSquare">
+            <img
+              className="Home__Discount_NewbornImg"
+              src={newbornDiscount}
+              alt="50% avslag på nyfødtfotografering"
+            ></img>
+            <div className="Home__Discount_NewbornTextBox">
+              <div className="Home__Discount_NewbornHeader">ALLTID</div>
+              <div className="Home__Discount_NewbornSubHeader">50%</div>
+              <div className="Home__Discount_NewbornText">
+                avslag på nyfødtfotografering,
+                <br /> etter ordinær gravidfotografering
               </div>
+              <ActionButton to={ContactRoute}>Book her</ActionButton>
             </div>
           </div>
 
-          <div>
-            <div className="Home__Discount_OneYearSquare">
-              <img
-                className="Home__Discount_OneYearImg"
-                src={OneYearDiscount}
-                alt="50% avslag på nyfødtfotografering"
-              ></img>
-              <div className="Home__Discount_OneYearTextBox">
-                <div className="Home__Discount_OneYearHeader">ALLTID</div>
-                <div className="Home__Discount_OneYearSubHeader">50%</div>
-                <div className="Home__Discount_OneYearText">
-                  avslag på 1-års fotografering,
-                  <br /> etter nyfødtfotografering
-                </div>
-                <ActionButton to={ContactRoute}>Book her</ActionButton>
+          <div className="Home__Discount_OneYearSquare">
+            <img
+              className="Home__Discount_OneYearImg"
+              src={OneYearDiscount}
+              alt="50% avslag på nyfødtfotografering"
+            ></img>
+            <div className="Home__Discount_OneYearTextBox">
+              <div className="Home__Discount_OneYearHeader">ALLTID</div>
+              <div className="Home__Discount_OneYearSubHeader">50%</div>
+              <div className="Home__Discount_OneYearText">
+                avslag på 1-års fotografering,
+                <br /> etter nyfødtfotografering
               </div>
+              <ActionButton to={ContactRoute}>Book her</ActionButton>
             </div>
           </div>
         </div>

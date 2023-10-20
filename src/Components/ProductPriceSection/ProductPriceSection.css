@@ -27,6 +27,7 @@
 
 .ProductPriceSection__Textbox {
   width: 50%;
+  margin-top: -25px;
 }
 
 .ProductPriceSection__Header {
@@ -77,4 +78,12 @@
   font-family: oswald;
   gap: 3px;
   text-transform: uppercase;
+}
+
+.ProductPriceSection__PriceText {
+  width: 300px;
+}
+
+.ProductPriceSection__Price {
+  width: 170px;
 }

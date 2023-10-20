@@ -58,12 +58,13 @@ export function Discounts() {
             text={
               <>
                 <div className="Discounts__FreePregnancyNextDate">
-                  Neste ledige dato: 10.10.2023
+                  Neste ledige dato: 02.11.2023
                 </div>
                 <div className="Discounts__FreePregnancyText">
                   Hver måned har jeg en dato der jeg tilbyr GRATIS utendørs
                   minifotografering av gravide som er i uke 30-36 av
-                  svangerskapet. Begrenset kapasitet, så book tidlig! <br />
+                  svangerskapet. Fotograferingen vil foregå på Jessheim i
+                  Ullensaker. Begrenset kapasitet, så book tidlig! <br />
                   <br />
                   Dette inkluderer:
                   <IncludesList

@@ -36,6 +36,9 @@
 .photography-category-title {
   font-weight: 500;
   color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  margin-bottom: 7px;
 }
 
 .photography-category-link:hover {

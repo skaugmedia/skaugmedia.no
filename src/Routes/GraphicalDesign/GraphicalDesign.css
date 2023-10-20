@@ -21,9 +21,19 @@
   font-family: nunito;
 }
 
-.title {
-  font-weight: 500;
+.graphical-design-title {
   color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  font-size: 1em;
+}
+
+.title {
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  margin-bottom: 7px;
 }
 
 .design {

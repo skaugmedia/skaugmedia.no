@@ -2,7 +2,7 @@
   color: inherit;
   text-decoration: inherit;
 
-  font-weight: 500;
+  font-weight: 400;
   color: black;
 }
 
@@ -11,6 +11,9 @@
 }
 
 .title {
-  font-weight: 500;
+  font-weight: 100;
   color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  margin-bottom: 7px;
 }

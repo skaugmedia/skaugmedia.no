@@ -37,8 +37,6 @@ export function ProductPriceSection({
       </div>
 
       <div className="ProductPriceSection__Textbox">
-        <div className="ProductPriceSection__Header">{title}</div>
-
         {text}
 
         <div className="ProductPriceSection__ContentBox">

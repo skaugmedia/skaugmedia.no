@@ -2,24 +2,25 @@
   display: flex;
   flex-flow: row;
   width: 100%;
+  justify-content: space-between;
 }
 
 .Home__Discount_NewbornSquare {
   display: flex;
   flex-flow: column;
+  position: relative;
+  width: calc(50% - 5px);
 }
 
 .Home__Discount_NewbornImg {
-  width: 50%;
   object-fit: cover;
   opacity: 65%;
 }
 
 .Home__Discount_NewbornTextBox {
-  width: 50%;
   position: absolute;
-  margin-top: 150px;
-  margin-left: 35px;
+  top: 150px;
+  left: 35px;
 }
 
 .Home__Discount_NewbornHeader {
@@ -49,19 +50,19 @@
 .Home__Discount_OneYearSquare {
   display: flex;
   flex-flow: column;
+  position: relative;
+  width: calc(50% - 5px);
 }
 
 .Home__Discount_OneYearImg {
-  width: 50%;
   object-fit: cover;
   opacity: 65%;
 }
 
 .Home__Discount_OneYearTextBox {
-  width: 50%;
   position: absolute;
-  margin-top: 150px;
-  margin-left: 35px;
+  top: 150px;
+  left: 35px;
 }
 
 .Home__Discount_OneYearHeader {
@@ -264,7 +265,7 @@
 }
 
 .free-pregnancy-img {
-  width: 50%;
+  width: calc(50% - 5px);
   align-items: right;
 }
 

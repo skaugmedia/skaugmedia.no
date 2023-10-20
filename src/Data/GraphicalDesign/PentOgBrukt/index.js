@@ -92,7 +92,7 @@ export default {
   ],
 
   designElements: {
-    fonts: typography,
+    fonts: [],
     colorPalette: [
       {
         hex: "#ffffff",

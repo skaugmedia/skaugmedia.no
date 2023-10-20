@@ -25,7 +25,10 @@ export function GraphicalDesign() {
                 to={project.id}
                 key={project.id}
               >
-                <Project className="item" {...project}></Project>
+                <Project
+                  className="item graphical-design-title"
+                  {...project}
+                ></Project>
               </NavLink>
             ))}
           </div>
