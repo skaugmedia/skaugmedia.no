@@ -23,8 +23,8 @@ import PhotographyCategoryLoader from "./Routes/PhotographyCategory/Loader";
 import PhotographyCategoryRoute from "./Routes/PhotographyCategory/Route";
 import { PricesServices } from "./Routes/PricesServices";
 import PricesRoute from "./Routes/PricesServices/Route";
-import { PricesProducts } from "./Routes/PricesProducts";
-import PricesProductsRoute from "./Routes/PricesProducts/Route";
+import { PricesProducts } from "./Routes/Wedding";
+import PricesProductsRoute from "./Routes/Wedding/Route";
 import { Root } from "./Routes/Root";
 
 export const router = createBrowserRouter([

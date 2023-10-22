@@ -1,1 +1,1 @@
-export default "Priser tjenester";
+export default "Priser";

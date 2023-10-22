@@ -1,98 +1,26 @@
 import { oneLine } from "common-tags";
-import pentogbrukt_logo from "../../../Images/pentogbrukt_logo.jpg";
-import bussinesscardimg from "./Images/visittkort.jpg";
-import openinghoursimg from "./Images/openinghours.jpg";
-import poster1 from "./Images/plakat_1.jpg";
-import poster2 from "./Images/plakat_2.jpg";
-import signimg from "./Images/fasadeskilt.jpg";
-import sign1img from "./Images/fasadeskilt_1.jpg";
 
-import typography from "./Images/typografi.jpg";
-import logo from "./Images/logo.jpg";
-import logomockup from "./Images/logo_mockup.jpg";
-import webpage from "./Images/webside.jpg";
-import webpage1 from "./Images/webside_1.jpg";
-import sketch from "./Images/skisser.jpg";
+import BrigsysCoffeebeans from "./Images/brigsys_kaffebøner.jpg";
 
 export default {
   id: "brigsys-groghouse",
   title: "Brigsys Groghouse",
   category: "Visuell identitet",
-  date: "2021-02-01",
+  date: "2020-01-05",
   ingress: oneLine`
-    Pent og Brukt AS er en liten og søt bruktbutikk som ligger på Kløfta, i Ullensaker kommune. Jeg fikk i oppgave å lage et enkelt og tidløst design til deres bedrift.
-    Da veggene ble malt i fargen "Minty Breeze" før jeg fikk dette oppdraget, inspirerte fargen meg til å bruke nettopp denne fargen i det helhetlige designet, for å knytte
-    sammen alle grafiske elementer, sammen med butikkens innside.
+   
   `,
   body: oneLine`
-    Pent og Brukt AS sitt design har en enkel fargepallett, to fonter inkludert- der den ene kun brukes i logoen, mens den andre brukes i forskjellige fontstiler, for å skape
-    et typografisk hiearki. Designet inneholder også tre forskjellige logoer, som alle har flere av de samme elementene, men der de alle skiller seg litt fra hverandre.
+    
   `,
   cover: {
-    url: pentogbrukt_logo,
-    title: "Pent og Brukt logo",
+    url: BrigsysCoffeebeans,
+    title: "Brigsys Groghouse kaffebønner",
   },
-  images: [
-    {
-      url: logomockup,
-      title: "Logo",
-      width: 1000,
-      height: 669,
-    },
-    {
-      url: webpage,
-      title: "Webside",
-      width: 1000,
-      heigh: 743,
-    },
-    {
-      url: poster1,
-      title: "Åpen bruktbutikk skilt",
-      width: 1000,
-      height: 667,
-    },
-    {
-      url: poster2,
-      title: "Parkering bak butikken",
-      width: 1000,
-      height: 667,
-    },
-
-    {
-      url: bussinesscardimg,
-      title: "Visittkort",
-      height: 1000,
-      width: 1000,
-    },
-    {
-      url: openinghoursimg,
-      title: "Åpningstider",
-      width: 1000,
-      height: 667,
-    },
-
-    {
-      url: signimg,
-      title: "Fasadeskilt",
-      width: 1000,
-      height: 667,
-    },
-    {
-      url: webpage1,
-      title: "Webside",
-      width: 1000,
-      height: 722,
-    },
-    {
-      url: sign1img,
-      title: "Fasadeskilt",
-      width: 667,
-      height: 1000,
-    },
-  ],
+  images: [],
 
   designElements: {
-    fonts: typography,
+    fonts: [],
     colorPalette: [
       {
         hex: "#ffffff",
@@ -151,7 +79,5 @@ export default {
         },
       },
     ],
-    logo: logo,
-    sketches: sketch,
   },
 };

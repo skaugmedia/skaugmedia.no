@@ -17,6 +17,38 @@ import typography from "./Images/typografi.jpg";
 import cardbrown from "./Images/visittkort_brun.jpg";
 import cardgreen from "./Images/visittkort_gronn.jpg";
 
+import NaturalisFont1 from "./Fonts/font1.jpg";
+import NaturalisFont2 from "./Fonts/font2.jpg";
+
+import NaturalisIllustration1 from "./Illustrations/illustration1.jpg";
+import NaturalisIllustration2 from "./Illustrations/illustration2.jpg";
+import NaturalisIllustration3 from "./Illustrations/illustration3.jpg";
+import NaturalisIllustration4 from "./Illustrations/illustration4.jpg";
+import NaturalisIllustration5 from "./Illustrations/illustration5.jpg";
+import NaturalisIllustration6 from "./Illustrations/illustration6.jpg";
+
+import NaturalisLogo1 from "./Logo/logo_1.jpg";
+import NaturalisLogo2 from "./Logo/logo_2.jpg";
+import NaturalisLogo3 from "./Logo/logo_3.jpg";
+import NaturalisLogo4 from "./Logo/logo_4.jpg";
+import NaturalisLogo5 from "./Logo/logo_5.jpg";
+import NaturalisLogo6 from "./Logo/logo_6.jpg";
+import NaturalisLogo7 from "./Logo/logo_7.jpg";
+import NaturalisLogo8 from "./Logo/logo_8.jpg";
+import NaturalisLogo9 from "./Logo/logo_9.jpg";
+import NaturalisLogo10 from "./Logo/logo_10.jpg";
+import NaturalisLogo11 from "./Logo/logo_11.jpg";
+import NaturalisLogo12 from "./Logo/logo_12.jpg";
+
+import NaturalisSketch1 from "./Sketches/sketch1.jpg";
+import NaturalisSketch2 from "./Sketches/sketch2.jpg";
+import NaturalisSketch3 from "./Sketches/sketch3.jpg";
+import NaturalisSketch4 from "./Sketches/sketch4.jpg";
+import NaturalisSketch5 from "./Sketches/sketch5.jpg";
+import NaturalisSketch6 from "./Sketches/sketch6.jpg";
+import NaturalisSketch7 from "./Sketches/sketch7.jpg";
+import NaturalisSketch8 from "./Sketches/sketch8.jpg";
+
 export default {
   id: "naturalis",
   title: "Naturalis by Synne Wik",
@@ -33,8 +65,8 @@ export default {
     bedriften, er det også enkelt å forstå at dette er et design som er inspirert av og som fremmer naturen.
   `,
   cover: {
-    url: logomockup,
-    title: "Naturalis by Synne Wik",
+    url: box,
+    title: "Naturalis by Synne Wik esker",
   },
   images: [
     {
@@ -118,7 +150,20 @@ export default {
     },
   ],
   designElements: {
-    fonts: typography,
+    fonts: [
+      {
+        url: NaturalisFont1,
+        title: "Thasadith bold",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisFont2,
+        title: "Thasadith regular",
+        height: 250,
+        width: 250,
+      },
+    ],
     colorPalette: [
       {
         hex: "#ffffff",
@@ -170,15 +215,167 @@ export default {
       },
     ],
 
-    logo: logo,
-    sketches: sketch,
+    logo: [
+      {
+        url: NaturalisLogo1,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo2,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo3,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo4,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo5,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo6,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo7,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo8,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo9,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo10,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo11,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisLogo12,
+        title: "Naturalis logo",
+        height: 250,
+        width: 250,
+      },
+    ],
+    sketches: [
+      {
+        url: NaturalisSketch1,
+        title: "Naturalis skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisSketch2,
+        title: "Naturalis skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisSketch3,
+        title: "Naturalis skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisSketch4,
+        title: "Naturalis skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisSketch5,
+        title: "Naturalis skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisSketch6,
+        title: "Naturalis skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisSketch7,
+        title: "Naturalis skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: NaturalisSketch8,
+        title: "Naturalis skisser",
+        height: 250,
+        width: 250,
+      },
+    ],
   },
   graphicalElements: [
     {
-      url: illustration,
-      title: "Illustrasjoner",
-      height: 750,
-      width: 1000,
+      url: NaturalisIllustration1,
+      title: "Naturalis illustrasjon",
+      height: 250,
+      width: 250,
+    },
+    {
+      url: NaturalisIllustration2,
+      title: "Naturalis illustrasjon",
+      height: 250,
+      width: 250,
+    },
+    {
+      url: NaturalisIllustration3,
+      title: "Naturalis illustrasjon",
+      height: 250,
+      width: 250,
+    },
+    {
+      url: NaturalisIllustration4,
+      title: "Naturalis illustrasjon",
+      height: 250,
+      width: 250,
+    },
+    {
+      url: NaturalisIllustration5,
+      title: "Naturalis illustrasjon",
+      height: 250,
+      width: 250,
+    },
+    {
+      url: NaturalisIllustration6,
+      title: "Naturalis illustrasjon",
+      height: 250,
+      width: 250,
     },
   ],
 };

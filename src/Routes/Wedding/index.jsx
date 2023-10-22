@@ -3,21 +3,21 @@ import { PageSection } from "../../Components/PageSection";
 import { ProductPriceSection } from "../../Components/ProductPriceSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import pageName from "./PageName";
-import "./PricesProducts.css";
-import AlbumImg from "/src/Images/ProductPrices/album.jpg";
-import CanvasImg from "/src/Images/ProductPrices/canvas.jpg";
-import PrintPackImg from "/src/Images/ProductPrices/designpack.jpg";
-import DigitalImg from "/src/Images/ProductPrices/digital_files.jpg";
+import "./Wedding.css";
+import AlbumImg from "/src/Images/WeddingPrice/album.jpg";
+import CanvasImg from "/src/Images/WeddingPrice/canvas.jpg";
+import PrintPackImg from "/src/Images/WeddingPrice/designpack.jpg";
+import DigitalImg from "/src/Images/WeddingPrice/digital_files.jpg";
 import PhotocopyImg from "/src/Images/Prices/photocopy.jpg";
-import WeddingTextImg from "/src/Images/ProductPrices/wedding_text.jpg";
-import WeddingText1Img from "/src/Images/ProductPrices/wedding_text1.jpg";
-import WeddingText2Img from "/src/Images/ProductPrices/wedding_text2.jpg";
+import WeddingTextImg from "/src/Images/WeddingPrice/wedding_text.jpg";
+import WeddingText1Img from "/src/Images/WeddingPrice/wedding_text1.jpg";
+import WeddingText2Img from "/src/Images/WeddingPrice/wedding_text2.jpg";
 
 export function PricesProducts() {
   useDocumentTitle(pageName);
   return (
     <>
-      <PageSection innerClassName="pricesProducts">
+      <PageSection innerClassName="wedding">
         <div className="prices-content">
           <DesignHeading className="prices-heading">{pageName}</DesignHeading>
         </div>

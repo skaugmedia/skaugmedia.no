@@ -19,7 +19,7 @@ export function Discounts() {
           <DesignHeading>Tilbud</DesignHeading>
         </PageSection>
         <PageSection>
-          <DiscountAd
+          {/* <DiscountAd
             outerClassName="Discounts__ChristmasDiscountAd"
             imgSrc={ChristmasMinishoot}
             imgAlt="En familie på fem"
@@ -50,7 +50,7 @@ export function Discounts() {
               </>
             }
             link={ContactRoute}
-          />
+          /> */}
           <DiscountAd
             imgSrc={PregnancyFree}
             imgAlt="En gravid kvinne"

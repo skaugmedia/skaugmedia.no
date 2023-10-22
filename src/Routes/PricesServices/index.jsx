@@ -14,7 +14,7 @@ import { isWithinRange, localTime } from "../../utils";
 import { IncludesList } from "../../Components/IncludesList";
 import * as ids from "./Ids";
 import pageName from "./PageName";
-import PricesProductsRoute from "../PricesProducts/Route";
+import PricesProductsRoute from "../Wedding/Route";
 import "./Prices.css";
 import * as minishoot from "./minishoots";
 import BabyImg from "/src/Images/Prices/babyphotography.jpg";

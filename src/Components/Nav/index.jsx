@@ -13,8 +13,8 @@ import PhotographyPageName from "../../Routes/Photography/PageName";
 import PhotographyRoute from "../../Routes/Photography/Route";
 import PricesPageName from "../../Routes/PricesServices/PageName";
 import PricesRoute from "../../Routes/PricesServices/Route";
-import PricesProductsPageName from "../../Routes/PricesProducts/PageName";
-import PricesProductsRoute from "../../Routes/PricesProducts/Route";
+import PricesProductsPageName from "../../Routes/Wedding/PageName";
+import PricesProductsRoute from "../../Routes/Wedding/Route";
 
 export const Nav = ({ containerClassName, linkClassName }) => (
   <nav className={containerClassName}>
@@ -30,9 +30,7 @@ export const Nav = ({ containerClassName, linkClassName }) => (
     <NavLink className={linkClassName} to={PricesRoute}>
       {PricesPageName}
     </NavLink>
-    <NavLink className={linkClassName} to={PricesProductsRoute}>
-      {PricesProductsPageName}
-    </NavLink>
+
     <NavLink className={linkClassName} to={DiscountsRoute}>
       {DiscountsPageName}
     </NavLink>

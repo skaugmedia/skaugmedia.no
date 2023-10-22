@@ -6,6 +6,7 @@ import poster1 from "./Images/plakat_1.jpg";
 import poster2 from "./Images/plakat_2.jpg";
 import signimg from "./Images/fasadeskilt.jpg";
 import sign1img from "./Images/fasadeskilt_1.jpg";
+import giftcard from "./Images/gavekort.jpg";
 
 import typography from "./Images/typografi.jpg";
 import logo from "./Images/logo.jpg";
@@ -13,6 +14,24 @@ import logomockup from "./Images/logo_mockup.jpg";
 import webpage from "./Images/webside.jpg";
 import webpage1 from "./Images/webside_1.jpg";
 import sketch from "./Images/skisser.jpg";
+
+import PentogbruktFont1 from "./Fonts/clicker_script.jpg";
+import PentogbruktFont2 from "./Fonts/quicksand_bold.jpg";
+import PentogbruktFont3 from "./Fonts/quicksand_medium.jpg";
+import PentogbruktFont4 from "./Fonts/quicksand_regular.jpg";
+
+import PentogbruktLogo1 from "./Logo/logo_alternate.jpg";
+import PentogbruktLogo2 from "./Logo/logo_main.jpg";
+import PentogbruktLogo3 from "./Logo/logo_secondary.jpg";
+
+import PentogbruktSketch1 from "./Sketches/sketch1.jpg";
+import PentogbruktSketch2 from "./Sketches/sketch2.jpg";
+import PentogbruktSketch3 from "./Sketches/sketch3.jpg";
+import PentogbruktSketch4 from "./Sketches/sketch4.jpg";
+import PentogbruktSketch5 from "./Sketches/sketch5.jpg";
+import PentogbruktSketch6 from "./Sketches/sketch6.jpg";
+import PentogbruktSketch7 from "./Sketches/sketch7.jpg";
+import PentogbruktSketch8 from "./Sketches/sketch8.jpg";
 
 export default {
   id: "pent-og-brukt-as",
@@ -29,13 +48,19 @@ export default {
     et typografisk hiearki. Designet inneholder også tre forskjellige logoer, som alle har flere av de samme elementene, men der de alle skiller seg litt fra hverandre.
   `,
   cover: {
-    url: pentogbrukt_logo,
-    title: "Pent og Brukt logo",
+    url: poster1,
+    title: "Pent og Brukt stående skilt",
   },
   images: [
     {
       url: logomockup,
       title: "Logo",
+      width: 1000,
+      height: 669,
+    },
+    {
+      url: giftcard,
+      title: "Gavekort",
       width: 1000,
       height: 669,
     },
@@ -92,7 +117,32 @@ export default {
   ],
 
   designElements: {
-    fonts: [],
+    fonts: [
+      {
+        url: PentogbruktFont1,
+        title: "Pent og Brukt Clicker Script",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktFont2,
+        title: "Pent og Brukt Quicksand Bold",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktFont3,
+        title: "Pent og Brukt Quicksand Medium",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktFont4,
+        title: "Pent og Brukt Quicksand Regular",
+        height: 250,
+        width: 250,
+      },
+    ],
     colorPalette: [
       {
         hex: "#ffffff",
@@ -151,7 +201,75 @@ export default {
         },
       },
     ],
-    logo: logo,
-    sketches: sketch,
+    logo: [
+      {
+        url: PentogbruktLogo1,
+        title: "Pent og Brukt alternativ logo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktLogo2,
+        title: "Pent og Brukt hovedlogo",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktLogo3,
+        title: "Pent og Brukt ekstra logo",
+        height: 250,
+        width: 250,
+      },
+    ],
+    sketches: [
+      {
+        url: PentogbruktSketch1,
+        title: "Pent og Brukt skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktSketch2,
+        title: "Pent og Brukt skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktSketch3,
+        title: "Pent og Brukt skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktSketch4,
+        title: "Pent og Brukt skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktSketch5,
+        title: "Pent og Brukt skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktSketch6,
+        title: "Pent og Brukt skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktSketch7,
+        title: "Pent og Brukt skisser",
+        height: 250,
+        width: 250,
+      },
+      {
+        url: PentogbruktSketch8,
+        title: "Pent og Brukt skisser",
+        height: 250,
+        width: 250,
+      },
+    ],
   },
 };

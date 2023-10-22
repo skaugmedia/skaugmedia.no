@@ -1,1 +1,1 @@
-export default "priser-tjenester";
+export default "priser";
