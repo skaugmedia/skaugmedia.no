@@ -61,8 +61,10 @@ export default {
     dekor til bruk i hjemmet.
   `,
   body: oneLine`
-    Fargepaletten til Naturalis er i alle høyeste grad inspirert av naturen, og alle naturmaterialene vi kan finne utendørs i naturen. I form av de grafiske elementene og logoen til denne
-    bedriften, er det også enkelt å forstå at dette er et design som er inspirert av og som fremmer naturen.
+  Fargepaletten i dette designprosjektet er en hyllest til naturens mangfold, der hver nyanse er inspirert av de naturlige elementene som omgir oss. Grafiske elementer og logoen i 
+  designet er forankret i en dypt forankret forbindelse med naturen, noe som lett vises i hvert designelement. I tillegg til de varierte fargene, har vi innført en spesiell font med 
+  to unike stiler – én som utgjør selve logoen og den andre som er en nøkkelkomponent i det typografiske hierarkiet. Dette skaper et design som ikke bare feirer, men også aktivt 
+  fremmer den rike skjønnheten som naturen tilbyr.
   `,
   cover: {
     url: box,

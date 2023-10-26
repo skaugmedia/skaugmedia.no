@@ -9,6 +9,7 @@ import food from "./Food";
 import product from "./Product";
 import business from "./Business";
 import mommyandme from "./Mommyandme";
+import wedding from "./Wedding";
 
 export const categories = [
   newborn,
@@ -22,4 +23,5 @@ export const categories = [
   business,
   food,
   product,
+  wedding,
 ];

@@ -29,10 +29,16 @@ export default {
   category: "Trykksaker",
   date: "2020-10-01",
   ingress: oneLine`
-   
+  Dette skoleprosjektet ble realisert under min tid ved Fagskolen Kristiania. Oppgaven 
+  krevde utvikling av en helhetlig visuell identitet for et fiktivt magasin, som inkluderte 
+  designelementer, en reportasje, reklameinnslag, og en innholdsfortegnelse. Magasinet, kalt 
+  Saftig Bakemagasin, der jeg laget egne oppskriftssider, en reportasje om en hobbybaker. Gjennom 
+  dette prosjektet fikk jeg utforske kreativt innhold og formgi en unik visuell identitet for magasinet.
   `,
   body: oneLine`
-    
+    I dette prosjektet er kun sort og hvit som en del av fargepaletten, jeg har valgt å trekke ut farger 
+    fra ulike bilder for å skape en helhet, i stedet for å velge farger som skal gå igjen gjennom designet. 
+    Jeg har valgt å bruke fonten Dosis, men for å variere det typografiske hierakiet har jeg brukt ulike fontstiler.
   `,
   cover: {
     url: SaftigFrontpage,

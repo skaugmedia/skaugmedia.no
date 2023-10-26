@@ -11,6 +11,8 @@ import * as presentables from "/src/Data/presentables";
 import { ActionButton } from "../../Components/ActionButton";
 import ContactRoute from "/src/Routes/Contact/Route";
 
+import DiscountHeaderImg from "../../Images/Home/discount.png";
+
 import "./Home.css";
 import pageName from "./PageName";
 
@@ -20,57 +22,30 @@ export function Home() {
 
   return (
     <>
-      {/* <MiniSession
-        image={<MiniSessionImage src={siblingimg} alt="Søskenfotografering" />}
-        category="Minifotografering"
-        title="Søsken"
-        price={kr(1000)}
-        when="Kun fotograferinger i april."
-        link={`${PricesRoute}#${ids.miniSessionSiblings}`}
-        classNames={{
-          outer: classes.miniSessionSiblingOuter,
-          category: classes.miniSessionSiblingCategory,
-          price: classes.miniSessionSiblingPrice,
-          link: classes.miniSessionSiblingLink,
-        }}
-      />
-      <MiniSession
-        image={
-          <MiniSessionImage
-            src={confirmationimg}
-            alt="Konfirmantfotografering"
-          />
-        }
-        category="Minifotografering"
-        title="Konfirmant"
-        price={kr(1000)}
-        when="Kun fotograferinger 20. mai 2023."
-        link={`${PricesRoute}#${ids.miniSessionConfirmation}`}
-        classNames={{
-          outer: classes.miniSessionConfirmationOuter,
-          category: classes.miniSessionConfirmationCategory,
-          price: classes.miniSessionConfirmationPrice,
-          link: classes.miniSessionConfirmationLink,
-        }}/>*/}
-
-      {/* <PageSection outerClassName="minisession-confirmation-outer">
-        <div className="minisession-confirmation-whitebox">
+      <div className="Home__DiscountHeader">
+        <div className="Home__DiscountHeaderBackgroundImg">
           <img
-            className="minisession-img"
-            src={confirmationimg}
-            alt="Konfirmantfotografering"
+            className="Home__DiscountHeaderImg"
+            src={DiscountHeaderImg}
+            alt="Rabatt"
           ></img>
+        </div>
 
-          <div className="minisession-confirmation-minisessiontext">
-            Minifotografering
-          </div>
-          <div className="minisession-confirmation-heading">Konfirmant</div>
-          <div className="minisession-confirmation-price">Kr. 1000,-</div>
-          <div className="minisession-confirmation-when">
-            Kun fotograferinger 20. mai 2023
+        <div className="Home__DiscountHeaderBox">
+          <div className="Home__DiscountHeaderTextBox">
+            <div className="Home__DiscountHeaderHeader">Onsdagstilbud</div>
+            <div className="Home__DiscountHeaderSubHeader">
+              -30% rabatt på alle fotograferinger
+            </div>
+            <div className="Home__DiscountHeaderText">
+              Alle fotograferinger som bookes i dag, med dato i septemebr eller
+              oktober får -30% rabatt. Gjelder kun i dag, og gjelder ikke for
+              minifotograferinger eller bedrifter.
+            </div>
+            <button className="Home__DiscountHeaderButton">Book nå</button>
           </div>
         </div>
-      </PageSection> */}
+      </div>
 
       <div
         className="top-cover-img"
@@ -128,7 +103,7 @@ export function Home() {
               <br />
               Det er begrenset med kapasitet, så book tidlig!
             </div>
-            <ActionButton to={ContactRoute}>Book her</ActionButton>
+            <ActionButton to={ContactRoute}>Les mer her</ActionButton>
           </div>
           <img
             className="free-pregnancy-img"

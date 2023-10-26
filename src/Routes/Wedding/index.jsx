@@ -59,7 +59,7 @@ export function PricesProducts() {
             <div className="Wedding__PackageBoxText">3 timer fotografering</div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBoxText">
-              Ca. 70 stk. digitale bildefiler{" "}
+              Ca. 50 stk. digitale bildefiler{" "}
             </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBoxText">
@@ -127,7 +127,7 @@ export function PricesProducts() {
             </div>
 
             <div className="Wedding__PackageBoxDivider"></div>
-            <div className="Wedding__PackageBoxPrice">Kr. 30.000,-</div>
+            <div className="Wedding__PackageBoxPrice">Kr. 32.000,-</div>
           </div>
         </div>
       </PageSection>

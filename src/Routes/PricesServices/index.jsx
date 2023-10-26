@@ -126,17 +126,18 @@ export function PricesServices() {
                       Nyfødtfotografering
                     </div>
                     <div className="Prices__TabsContentPriceKidsCopies">
-                      Kr. 1700,-
+                      Kr. 4200,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
                     Jeg anbefaler å ha nyfødtfotografering innen babyen har fylt
                     14 dager, men det går også fint etter dette om tiden ikke
                     strekker til. Husk bare på at jo eldre babyen blir, jo mer
-                    våken blir den. Jeg har et lite utvalg av rekvisitter og
-                    klær som passer til nyfødtfotograferingen, lån av disse er
-                    inkludert i prisen. Denne fotograferingen inkluderer også
-                    bilder med foreldre og søsken.
+                    våken blir den. Jeg fotograferer naturlige nyfødtbilder, men
+                    har et lite utvalg av rekvisitter og klær som passer til
+                    nyfødtfotograferingen, lån av disse er inkludert i prisen.
+                    Denne fotograferingen inkluderer også bilder med foreldre og
+                    søsken.
                     <p className="Prices__TabsContentTextOffer">
                       Ved booking av nyfødtfotografering, får man 50% avslag på
                       1-års fotografering.
@@ -149,8 +150,8 @@ export function PricesServices() {
                       (jeg tar med enkel styling og lys)
                       <br />- Bilder sammen med foreldre og søsken
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- Ingen bilder er inkludert i prisen, se egne priser
-                      på bildeprodukter
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
                     </p>
                     <p className="Prices__TabsContentTextFees">
                       Kveldstillegg etter kl. 16.00: kr. 400,-
@@ -177,7 +178,7 @@ export function PricesServices() {
                       1-års fotografering
                     </div>
                     <div className="Prices__TabsContentPriceKidsCopies">
-                      Kr. 1700,-
+                      Kr. 4200,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -201,8 +202,8 @@ export function PricesServices() {
                       <br />- Mulighet for lån av klær
                       <br />- Opptil 1 time fotografering på lokasjon
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- Ingen bilder er inkludert i prisen, se egne priser
-                      på bildeprodukter
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
                       <br />- Valget om man ønsker cake-smash eller ikke
                     </p>
                     <p className="Prices__TabsContentTextFees">
@@ -230,7 +231,7 @@ export function PricesServices() {
                       Barnefotografering (fra 6 mnd)
                     </div>
                     <div className="Prices__TabsContentPriceKidsCopies">
-                      Kr. 1700,-
+                      Kr. 4200,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -254,8 +255,8 @@ export function PricesServices() {
                       <br />- Mulighet for lån av klær
                       <br />- Opptil 1 time fotografering på lokasjon
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- Ingen bilder er inkludert i prisen, se egne priser
-                      på bildeprodukter
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
                     </p>
                     <p className="Prices__TabsContentTextFees">
                       Kveldstillegg etter kl. 16.00: kr. 400,-
@@ -296,7 +297,7 @@ export function PricesServices() {
                       Portrettfotografering
                     </div>
                     <div className="Prices__TabsContentPricePortraitWallphotos">
-                      Kr. 1550,-
+                      Kr. 3900,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -319,10 +320,10 @@ export function PricesServices() {
                       og klær
                       <br />- Opptil 1 time fotografering på lokasjon
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- Ingen bilder er inkludert i prisen, se egne priser
-                      på bildeprodukter
                       <br />- Mulighet for å booke time hos makeup-artist
                       LashBrowser før fotograferingen
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
                     </p>
                     <p className="Prices__TabsContentTextFees">
                       Kveldstillegg etter kl. 16.00: kr. 400,-
@@ -349,7 +350,7 @@ export function PricesServices() {
                       Gravidfotografering
                     </div>
                     <div className="Prices__TabsContentPricePortraitWallphotos">
-                      Kr. 1550,-
+                      Kr. 3900,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -372,11 +373,11 @@ export function PricesServices() {
                       <br />- Mulighet for lån av gravidkjoler og hårtilbehør
                       <br />- Opptil 1 time fotografering på lokasjon
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- Ingen bilder er inkludert i prisen, se egne priser
-                      på bildeprodukter
-                      <br />- Bilder sammen med partner og barn
                       <br />- Mulighet for å booke time hos makeup-artist
                       LashBrowser før fotograferingen
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
+                      <br />- Bilder sammen med partner og barn
                     </p>
                     <p className="Prices__TabsContentTextFees">
                       Kveldstillegg etter kl. 16.00: kr. 400,-
@@ -403,7 +404,7 @@ export function PricesServices() {
                       Konfirmantfotografering
                     </div>
                     <div className="Prices__TabsContentPricePortraitWallphotos">
-                      Kr. 1550,-
+                      Kr. 3900,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -426,10 +427,10 @@ export function PricesServices() {
                       og klær
                       <br />- Opptil 1 time fotografering på lokasjon
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- Ingen bilder er inkludert i prisen, se egne priser
-                      på bildeprodukter
                       <br />- Mulighet for å booke time hos makeup-artist
                       LashBrowser før fotograferingen
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
                     </p>
                     <p className="Prices__TabsContentTextFees">
                       Kveldstillegg etter kl. 16.00: kr. 400,-
@@ -456,7 +457,7 @@ export function PricesServices() {
                       Headshots / Profilbilde / CV-foto
                     </div>
                     <div className="Prices__TabsContentPricePortraitWallphotos">
-                      Kr. 1000,-
+                      Kr. 1300,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -523,7 +524,7 @@ export function PricesServices() {
                       Familiefotografering
                     </div>
                     <div className="Prices__TabsContentPriceFamilyAlbum">
-                      Kr. 1700,-
+                      Kr. 4200,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -547,10 +548,12 @@ export function PricesServices() {
                       og klær
                       <br />- Opptil 1 time fotografering på lokasjon
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- Ingen bilder er inkludert i prisen, se egne priser
-                      på bildeprodukter
                       <br />- Mulighet for å booke time hos makeup-artist
                       LashBrowser før fotograferingen
+                      <br />- Ingen bilder er inkludert i prisen, se egne priser
+                      på bildeprodukter
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
                     </p>
                     <p className="Prices__TabsContentTextFees">
                       Kveldstillegg etter kl. 16.00: kr. 400,-
@@ -577,7 +580,7 @@ export function PricesServices() {
                       Søskenfotografering
                     </div>
                     <div className="Prices__TabsContentPriceFamilyAlbum">
-                      Kr. 1700,-
+                      Kr. 4200,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -603,8 +606,8 @@ export function PricesServices() {
                       <br />- Fotografering med 2 eller flere søsken
                       <br />- Opptil 1 time fotografering på lokasjon
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- Ingen bilder er inkludert i prisen, se egne priser
-                      på bildeprodukter
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
                     </p>
                     <p className="Prices__TabsContentTextFees">
                       Kveldstillegg etter kl. 16.00: kr. 400,-
@@ -631,7 +634,7 @@ export function PricesServices() {
                       Parfotografering
                     </div>
                     <div className="Prices__TabsContentPriceFamilyAlbum">
-                      Kr. 1700,-
+                      Kr. 4200,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -659,10 +662,10 @@ export function PricesServices() {
                       og klær
                       <br />- Opptil 1 time fotografering på lokasjon
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- Ingen bilder er inkludert i prisen, se egne priser
-                      på bildeprodukter (gjelder ikke ved Bryllupspakke 2 og 3)
                       <br />- Mulighet for å booke time hos makeup-artist
                       LashBrowser før fotograferingen
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
                     </p>
                     <p className="Prices__TabsContentTextFees">
                       Kveldstillegg etter kl. 16.00: kr. 400,-
@@ -689,7 +692,7 @@ export function PricesServices() {
                       Mommy & me / Daddy & me
                     </div>
                     <div className="Prices__TabsContentPriceFamilyAlbum">
-                      Kr. 1700,-
+                      Kr. 4200,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -717,10 +720,10 @@ export function PricesServices() {
                       barn
                       <br />- Opptil 1 time fotografering på lokasjon
                       <br />- Digitalt bildegalleri hvor man velger bilder
-                      <br />- 1 digital bildefil, levert i både farger og
-                      sorthvitt
                       <br />- Mulighet for å booke time hos makeup-artist
                       LashBrowser før fotograferingen
+                      <br />- 3 valgfrie digitale bildefiler inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
                     </p>
                     <p className="Prices__TabsContentTextFees">
                       Kveldstillegg etter kl. 16.00: kr. 400,-
@@ -1155,21 +1158,21 @@ export function PricesServices() {
           <div className="backdrop color1"></div>
           <div className="text">
             <div className="Prices__ButtonText">Barn</div>
-            <div className="Prices__ButtonSubText">fra kr. 1700,-</div>
+            <div className="Prices__ButtonSubText">fra kr. 4200,-</div>
           </div>
         </button>
         <button className="btn" onClick={() => setServiceState("portrait")}>
           <div className="backdrop color2"></div>
           <div className="text">
             <div className="Prices__ButtonText">Portrett</div>
-            <div className="Prices__ButtonSubText">fra kr. 1000,-</div>
+            <div className="Prices__ButtonSubText">fra kr. 1300,-</div>
           </div>
         </button>
         <button className="btn" onClick={() => setServiceState("family")}>
           <div className="backdrop color3"></div>
           <div className="text">
             <div className="Prices__ButtonText">Familie</div>
-            <div className="Prices__ButtonSubText">fra kr. 1700,-</div>
+            <div className="Prices__ButtonSubText">fra kr. 4200,-</div>
           </div>
         </button>
         <NavLink className="btn" to={`/${PricesProductsRoute}`}>
@@ -1305,7 +1308,7 @@ export function PricesServices() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price"> Kr. 2000,-</div>
+              <div className="ProductPriceSection__Price"> Kr. 1650,-</div>
             }
             priceText5={false}
             price5={false}
@@ -1758,13 +1761,23 @@ export function PricesServices() {
             className="Prices__TextIntroIncludes"
             items={[
               "Inkludert i alle mine fotograferinger er et digitalt bildegalleri hvor man selv kan velge bilder fra. (unntak ved bryllupsfotografering)",
-              "Ingen bilder er inkludert i prisen med mindre annet er spesifisert, se egne priser på produkter lenger ned på siden",
+              "I alle mine fotograferinger er det 3 valgfrie digitale bildefiler inkludert (unntak ved bryllupsfotografering og gratis gravidfotografering)",
               "Mulighet for å booke time hos makeup-artist LashBrowser før fotograferingen",
               "Opptil 1 time fotografering (unntak ved bryllup, nyfødt og minifotografering)",
               "Du vil motta en mail med informasjon om din fotografering på forhånd",
             ]}
           />
 
+          <div className="Prices__TextIntroHeader">
+            Ønsker du å booke en minifotografering?
+          </div>
+          <div className="Prices__TextIntro">
+            Du kan velge å booke en valgfri minifotografering, inkludert 3
+            digitale bildefiler. En slik minifotografering gjelder ikke for
+            nyfødfotografering hjemme hos dere, eller bryllupsfotografering. En
+            minifotografering har en fast pris på kr. 1600,- (Unntak ved
+            spesialtilbud)
+          </div>
           <div className="Prices__TextIntroHeader">
             Ønsker du fotografering etter kl. 16.00 på en hverdag?
           </div>

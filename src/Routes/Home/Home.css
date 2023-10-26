@@ -1,3 +1,71 @@
+.Home__DiscountHeader {
+  height: 400px;
+  width: 100%;
+}
+
+.Home__DiscountHeaderImg {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Rabatt {
+  height: 400px;
+  width: 600px;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--light-green);
+}
+
+.Home__DiscountHeaderBox {
+  height: 400px;
+  width: 1000px;
+  background-color: var(--light-green);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Home__DiscountHeaderTextBox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+}
+
+.Home__DiscountHeaderHeader {
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.Home__DiscountHeaderSubHeader {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Home__DiscountHeaderText {
+  font-family: nunito;
+  text-align: center;
+  font-size: 1em;
+}
+
+.Home__DiscountHeaderButton {
+  border-color: transparent;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  background-color: black;
+  color: white;
+  font-family: oswald;
+}
+
 .Home__DiscountSection {
   display: flex;
   flex-flow: row;
