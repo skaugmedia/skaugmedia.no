@@ -635,6 +635,107 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Prices__PriceText {
+    padding-bottom: 20px;
+  }
+
+  .Prices__ButtonPricelistRow {
+    flex-flow: column;
+    width: 100%;
+    max-width: var(--content-width);
+  }
+
+  .Prices__ButtonPricelist {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .Prices__ButtonText {
+    text-align: left;
+    margin-right: -20px;
+    font-size: 0.85em;
+  }
+
+  .Prices__ButtonSubText {
+    font-size: 0.7em;
+  }
+
+  .Prices__Tabs {
+    width: 100%;
+    max-width: var(--content-width);
+    display: flex;
+    flex-flow: column;
+  }
+
+  .Prices__TabsContentBox {
+    width: 85%;
+    max-width: var(--content-width);
+    padding: 20px;
+  }
+
+  .Prices__TabsContentHeaderBox {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .Prices__TabsContentPriceKidsCopies {
+    text-align: left;
+  }
+
+  .Prices__TabsContentPricePortraitWallphotos {
+    text-align: left;
+  }
+
+  .Prices__TabsContentPriceFamilyAlbum {
+    text-align: left;
+  }
+
+  .Prices__TabsContentPriceBusinessPrintables {
+    text-align: left;
+  }
+
+  .Prices__TabsContentPriceDesign {
+    text-align: left;
+  }
+
+  .Prices__TabsContentText {
+    width: 100%;
+    font-size: 0.95em;
+  }
+
+  .Prices__TabsContentTextOffer {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  .Prices__TabsContentTextFees {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  .Prices__TabsContentImg {
+    width: 85%;
+    margin-top: -15px;
+  }
+
+  .Prices__ServicesImg {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .Prices__ProductsImg {
+    width: 100%;
+    margin: 0;
+    padding-top: -20px;
+    padding-bottom: 10px;
+  }
+
+  .Prices__Content {
+    display: flex;
+    flex-flow: column;
+  }
+
   .Prices__TextIntroIncludes {
     padding-left: 18px;
     margin-top: 0px;

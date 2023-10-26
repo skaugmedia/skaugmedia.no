@@ -77,11 +77,46 @@ a.Footer__Social {
 }
 
 @media only screen and (max-width: 600px) {
+  .Footer {
+    max-width: var(--content-width);
+    width: 100%;
+    height: 250px;
+  }
+
+  .Footer__ContentBox {
+    max-width: var(--content-width);
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
   .Footer-Link {
     display: none;
   }
 
+  .Footer__RowTwo {
+    max-width: var(--content-width);
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 7px;
+  }
+
+  .Footer__RowLogo {
+    margin-top: 10px;
+  }
+
+  .Footer__SocialIcons {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 7px;
+    margin-bottom: 20px;
+  }
+
   .Footer__SocialImg {
     padding-top: 0px;
+    margin-right: 0px;
   }
 }

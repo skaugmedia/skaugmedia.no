@@ -19,3 +19,10 @@
   font-size: 0.8em;
   font-weight: 400;
 }
+
+@media only screen and (max-width: 1000px) {
+  .DiscountAd {
+    display: flex;
+    flex-flow:;
+  }
+}

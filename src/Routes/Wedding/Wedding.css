@@ -7,7 +7,7 @@
 }
 .Wedding__TopContentSubHeader {
   font-size: 1.5em;
-  margin-top: -12px;
+  margin-top: -5px;
   font-weight: 700;
   color: var(--green);
   text-align: left;
@@ -263,4 +263,21 @@
 .Wedding__ComparisonTable td {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Wedding__PackageBoxRow {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .Wedding__PackageBox1 {
+    width: 100%;
+  }
+  .Wedding__PackageBox2 {
+    width: 100%;
+  }
+  .Wedding__PackageBox3 {
+    width: 100%;
+  }
 }

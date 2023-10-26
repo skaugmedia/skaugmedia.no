@@ -592,6 +592,59 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Home__ImageSectionImage {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .free-pregnancy-row {
+    margin-top: -30px;
+  }
+
+  .Home__DiscountSection {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+
+  .Home__Discount_NewbornSquare {
+    width: 100%;
+  }
+
+  .Home__Discount_NewbornHeader {
+    font-size: 2em;
+    margin-top: -60px;
+  }
+
+  .Home__Discount_NewbornSubHeader {
+    font-size: 4em;
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
+
+  .Home__Discount_NewbornText {
+    font-size: 1em;
+  }
+
+  .Home__Discount_OneYearSquare {
+    width: 100%;
+  }
+
+  .Home__Discount_OneYearHeader {
+    font-size: 2em;
+    margin-top: -60px;
+  }
+
+  .Home__Discount_OneYearSubHeader {
+    font-size: 4em;
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
+
+  .Home__Discount_OneYearText {
+    font-size: 1em;
+  }
+
   .top-cover-img {
     height: 50%;
     width: 100%;

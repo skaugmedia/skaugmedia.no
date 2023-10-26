@@ -1,19 +1,19 @@
 export const priceList = {
-  mommyandme: "kr 1700,-",
-  newborn: "kr. 1700,-",
-  oneyearolds: "kr. 1700,-",
-  kids: "kr. 1700,-",
-  portraits: "kr. 1550,-",
-  pregnant: "kr. 1550,-",
-  confirmation: "kr. 1550,-",
-  headshots: "kr. 1000,-",
-  family: "kr. 1700,-",
-  siblings: "kr. 1700,-",
-  engagement: "kr. 1700,-",
+  mommyandme: "kr 4200,-",
+  newborn: "kr. 4200,-",
+  oneyearolds: "kr. 4200,-",
+  kids: "kr. 4200,-",
+  portraits: "kr. 3900,-",
+  pregnant: "kr. 3900,-",
+  confirmation: "kr. 3900,-",
+  headshots: "kr. 1300,-",
+  family: "kr. 4200,-",
+  siblings: "kr. 4200,-",
+  engagement: "kr. 4200,-",
   wedding1: "kr. 16.000,-",
   wedding2: "kr. 24.000,-",
+  wedding3: "kr. 32.000,-",
 
-  
   extraPictureAfter: "kr. 650,-",
   extraPicture3: "kr. 3600,-",
   extraPicture5: "kr. 5500,-",
@@ -25,5 +25,4 @@ export const priceList = {
   eveningSurcharge: "kr. 400,-",
   weekendSurcharge: "kr. 700,-",
   driveSurcharge: "kr. 10,- per km.",
-
 };

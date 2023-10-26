@@ -41,3 +41,16 @@
 .Tabs__Content--FirstActive {
   border-top-left-radius: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .Tabs__Bar {
+    width: 100%;
+    max-width: var(--content-width);
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+  }
+
+  .Tabs__Tab {
+  }
+}
