@@ -1,4 +1,6 @@
 import DesignHeading from "../../Components/Headings/DesignHeading";
+import { useState } from "react";
+import className from "classnames";
 import { PageSection } from "../../Components/PageSection";
 import { ProductPriceSection } from "../../Components/ProductPriceSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
@@ -15,6 +17,8 @@ import WeddingText2Img from "/src/Images/WeddingPrice/wedding_text2.jpg";
 
 export function PricesProducts() {
   useDocumentTitle(pageName);
+  const [showComparisonTable, setShowComparisonTable] = useState(false);
+  const Check = () => <>{"\u2713"}</>;
   return (
     <>
       <PageSection innerClassName="wedding">
@@ -372,9 +376,79 @@ export function PricesProducts() {
       </PageSection> */}
 
       <PageSection>
-        <button className="Wedding__PackageCompareButton">
+        <button
+          className="Wedding__PackageCompareButton"
+          onClick={() => setShowComparisonTable(!showComparisonTable)}
+        >
           Sammenlign bryllupspakkene her
         </button>
+        <h2
+          className={className("Wedding__ComparisonTableHeader", {
+            "Wedding__ComparisonTableHeader--Shown": showComparisonTable,
+          })}
+        >
+          Sammenlign de ulike bryllupspakkene
+        </h2>
+        <table
+          className={className("Wedding__ComparisonTable", {
+            "Wedding__ComparisonTable--Shown": showComparisonTable,
+          })}
+        >
+          <tbody>
+            <tr>
+              <td></td>
+              <td>Bryllupspakke 1</td>
+              <td>Bryllupspakke 2</td>
+              <td>Bryllupspakke 3</td>
+            </tr>
+            <tr>
+              <th>Planleggingsmøte i god tid før bryllupet</th>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>Fotografering av vielsen</th>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>Fotografering av portretter</th>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>Fotografering av forberedelser eller ankomst til festen</th>
+              <td></td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </PageSection>
       <PageSection>
         <div className="Wedding__TextSectionBox">

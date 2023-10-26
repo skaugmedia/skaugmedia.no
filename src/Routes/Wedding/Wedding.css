@@ -208,6 +208,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .Wedding__TextSectionBox {
@@ -225,4 +226,41 @@
   font-family: nunito;
   margin-top: 5px;
   width: 100%;
+}
+
+.Wedding__ComparisonTable {
+  --gap: 10px;
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Wedding__ComparisonTable--Shown {
+  display: table;
+}
+
+.Wedding__ComparisonTableHeader {
+  display: none;
+}
+.Wedding__ComparisonTableHeader--Shown {
+  display: initial;
+}
+.Wedding__ComparisonTable th {
+  text-align: left;
+  font-weight: 300;
+}
+.Wedding__ComparisonTable td {
+  text-align: center;
+}
+.Wedding__ComparisonTable tr {
+  border-bottom: 1px solid black;
+}
+.Wedding__ComparisonTable th:not(:last-child),
+.Wedding__ComparisonTable td:not(:last-child) {
+  padding-right: var(--gap);
+}
+.Wedding__ComparsionTable th,
+.Wedding__ComparisonTable td {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
