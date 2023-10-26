@@ -39,7 +39,7 @@ import PlantlifeIllustration19 from "./Illustrations/illustration19.jpg";
 import PlantlifeIllustration20 from "./Illustrations/illustration20.jpg";
 import PlantlifeIllustration21 from "./Illustrations/illustration21.jpg";
 
-import PlantlifeWireframes from "./Wireframes/wireframes.jpg";
+import PlantlifeWireframes from "./Wireframes/Wireframes.jpg";
 
 export default {
   id: "plantlife",
@@ -235,133 +235,133 @@ export default {
         height: 250,
       },
     ],
-    sketches: [
-      {
-        url: PlantlifeIllustration1,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration2,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration3,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration4,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration5,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration6,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration7,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration8,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration9,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration10,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration11,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration12,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration13,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration14,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration15,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration16,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration17,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration18,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration19,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration20,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-      {
-        url: PlantlifeIllustration21,
-        title: "Plantlife illustration icons",
-        width: 250,
-        height: 250,
-      },
-    ],
+    //    sketches: [
+    //      {
+    //        url: PlantlifeIllustration1,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration2,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration3,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration4,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration5,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration6,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration7,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration8,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration9,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration10,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration11,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration12,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration13,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration14,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration15,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration16,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration17,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration18,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration19,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration20,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //      {
+    //        url: PlantlifeIllustration21,
+    //        title: "Plantlife illustration icons",
+    //        width: 250,
+    //        height: 250,
+    //      },
+    //    ],
   },
 };

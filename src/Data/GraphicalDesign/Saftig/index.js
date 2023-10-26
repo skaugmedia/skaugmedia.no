@@ -1,5 +1,5 @@
 import { oneLine } from "common-tags";
-import SaftigLogoMockup from "./Images/Saftig_logo_mockup.jpg";
+import SaftigLogoMockup from "./Images/saftig_logo_mockup.jpg";
 import SaftigFrontpage from "./Images/saftig_1.jpg";
 import SaftigSpreadRecipes from "./Images/saftig_2.jpg";
 import SaftigStack from "./Images/saftig_3.jpg";

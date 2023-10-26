@@ -56,28 +56,24 @@ export default {
     },
   ],
 
-  designElements: {
-    colorPalette: [],
-
-    illustrations: [
-      {
-        url: Illustration1,
-        title: "Illustrasjon av ispinner",
-        height: 250,
-        width: 250,
-      },
-      {
-        url: Illustration2,
-        title: "Illustrasjon av en elefant",
-        height: 250,
-        width: 250,
-      },
-      {
-        url: Illustration3,
-        title: "Illustrasjon av giraff",
-        height: 250,
-        width: 250,
-      },
-    ],
-  },
+  graphicalElements: [
+    {
+      url: Illustration1,
+      title: "Illustrasjon av ispinner",
+      height: 250,
+      width: 250,
+    },
+    {
+      url: Illustration2,
+      title: "Illustrasjon av en elefant",
+      height: 250,
+      width: 250,
+    },
+    {
+      url: Illustration3,
+      title: "Illustrasjon av giraff",
+      height: 250,
+      width: 250,
+    },
+  ],
 };

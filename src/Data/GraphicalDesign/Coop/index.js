@@ -216,25 +216,25 @@ export default {
         width: 250,
       },
     ],
-    illustrations: [
-      {
-        url: CoopIllustration1,
-        title: "Coop cocatilbær illustrasjoner",
-        height: 250,
-        width: 250,
-      },
-      {
-        url: CoopIllustration2,
-        title: "Coop ananasringer illustrasjoner",
-        height: 250,
-        width: 250,
-      },
-      {
-        url: CoopIllustration3,
-        title: "Coop fersken illustrasjoner",
-        height: 250,
-        width: 250,
-      },
-    ],
   },
+  graphicalElements: [
+    {
+      url: CoopIllustration1,
+      title: "Coop cocatilbær illustrasjoner",
+      height: 250,
+      width: 250,
+    },
+    {
+      url: CoopIllustration2,
+      title: "Coop ananasringer illustrasjoner",
+      height: 250,
+      width: 250,
+    },
+    {
+      url: CoopIllustration3,
+      title: "Coop fersken illustrasjoner",
+      height: 250,
+      width: 250,
+    },
+  ],
 };

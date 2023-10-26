@@ -175,25 +175,25 @@ muligheten til å utforske digitalt design på en utfordrende og spennende måte
         width: 250,
       },
     ],
-    sketches: [
-      {
-        url: KiehlsSketch1,
-        title: "Kiehls skisser",
-        height: 250,
-        width: 250,
-      },
-      {
-        url: KiehlsSketch2,
-        title: "Kiehls skisser",
-        height: 250,
-        width: 250,
-      },
-      {
-        url: KiehlsSketch3,
-        title: "Kiehls skisser",
-        height: 250,
-        width: 250,
-      },
-    ],
+    //    sketches: [
+    //      {
+    //        url: KiehlsSketch1,
+    //        title: "Kiehls skisser",
+    //        height: 250,
+    //        width: 250,
+    //      },
+    //      {
+    //        url: KiehlsSketch2,
+    //        title: "Kiehls skisser",
+    //        height: 250,
+    //        width: 250,
+    //      },
+    //      {
+    //        url: KiehlsSketch3,
+    //        title: "Kiehls skisser",
+    //        height: 250,
+    //        width: 250,
+    //      },
+    //    ],
   },
 };
