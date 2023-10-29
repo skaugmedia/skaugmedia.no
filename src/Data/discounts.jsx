@@ -163,4 +163,20 @@ export const discounts = [
     validFrom: localTime("31-10-2023 00:00"),
     validTo: localTime("01-11-2023 00:00"),
   },
+  {
+    title: "Gavekort på kjøpet",
+    price: "Kr. 500,-",
+    description: (
+      <>
+        Alle som booker en ordinær fotografering i løpet av november, får et
+        gavekort på kr. 500,-
+        <br />
+        Dere mottar gavekortet når dere møter opp til deres avtalte
+        fotografering.
+      </>
+    ),
+
+    validFrom: localTime("01-11-2023 00:00"),
+    validTo: localTime("01-12-2023 00:00"),
+  },
 ];
