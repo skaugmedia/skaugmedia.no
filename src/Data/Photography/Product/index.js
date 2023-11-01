@@ -59,6 +59,13 @@ import product_wikwalsoe_1 from "../../../Images/Product/product_wikwalsoe_1.jpg
 import product_wikwalsoe_2 from "../../../Images/Product/product_wikwalsoe_2.jpg";
 import product_wikwalsoe_3 from "../../../Images/Product/product_wikwalsoe_3.jpg";
 
+import autumn_campaign_1 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_1.jpg";
+import autumn_campaign_2 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_2.jpg";
+import autumn_campaign_3 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_3.jpg";
+import autumn_campaign_4 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_4.jpg";
+import autumn_campaign_5 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_5.jpg";
+import autumn_campaign_6 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_6.jpg";
+
 import * as ids from "../../../Routes/PricesServices/Ids";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 
@@ -386,14 +393,14 @@ export default {
         {
           url: product_eva_solo_2,
           title: "Eva Solo trio servise",
-          width: 667,
-          height: 1000,
+          width: 1000,
+          height: 667,
         },
         {
           url: product_eva_solo_3,
           title: "Eva Solo trio servise",
-          width: 1000,
-          height: 667,
+          width: 667,
+          height: 1000,
         },
       ],
       date: "2016-05-26",
@@ -447,6 +454,50 @@ export default {
         },
       ],
       date: "2016-06-01",
+    },
+    {
+      description: "Pent og Brukt høst",
+      tags: ["produkt", "bedrift", "høst"],
+      images: [
+        {
+          url: autumn_campaign_2,
+          title: "Pent og Brukt høst",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: autumn_campaign_1,
+          title: "Pent og Brukt høst",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: autumn_campaign_3,
+          title: "Pent og Brukt høst",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: autumn_campaign_4,
+          title: "Pent og Brukt høst",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: autumn_campaign_5,
+          title: "Pent og Brukt høst",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: autumn_campaign_6,
+          title: "Pent og Brukt høst",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-07-18",
     },
   ],
 };

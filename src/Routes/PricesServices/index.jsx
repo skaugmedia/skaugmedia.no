@@ -4,6 +4,8 @@ import { Collapsible } from "../../Components/Collapsible";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { PriceSection } from "../../Components/PriceSection";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import { ProductPriceSection } from "../../Components/ProductPriceSection";
 import { Underline } from "../../Components/Underline";
@@ -50,12 +52,12 @@ export function PricesServices() {
   const location = useLocation();
   const refs = Object.entries(ids).reduce(
     (acc, [key, id]) => ({ ...acc, [key]: { ref: useRef(), id: id } }),
-    {}
+    {},
   );
   const [open, setOpen] = useState({});
   useEffect(() => {
     const entry = Object.entries(refs).find(
-      ([key, { id }]) => location.hash === `#${id}`
+      ([key, { id }]) => location.hash === `#${id}`,
     );
     if (entry) {
       const [key, { ref }] = entry;
@@ -105,9 +107,14 @@ export function PricesServices() {
     },
   ].filter((s) => isWithinRange(s.validFrom, now, s.validTo));
 
-  const serviceBackArrow = (
-    <button onClick={() => setServiceState(null)}>{"<-"}</button>
+  const BackArrow = ({ onClick }) => (
+    <FontAwesomeIcon
+      icon={faArrowLeft}
+      style={{ cursor: "pointer" }}
+      onClick={onClick}
+    />
   );
+  const serviceBackArrow = <BackArrow onClick={() => setServiceState(null)} />;
   const childServices = (
     <div>
       <div className="Prices__Content">
@@ -1206,9 +1213,7 @@ export function PricesServices() {
     </div>
   );
 
-  const productBackArrow = (
-    <button onClick={() => setProductState(null)}>{"<-"}</button>
-  );
+  const productBackArrow = <BackArrow onClick={() => setProductState(null)} />;
   const productMenu = (
     <div className="Prices__ButtonPricelistRow">
       <img

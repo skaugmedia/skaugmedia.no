@@ -1,32 +1,20 @@
 .Home__DiscountHeader {
-  height: 400px;
-  width: 100%;
-}
-
-.Home__DiscountHeaderImg {
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.Rabatt {
-  height: 400px;
-  width: 600px;
+  padding: 80px 0;
+  background-size: cover;
   display: flex;
-  flex-flow: column;
-  background-color: var(--light-green);
+  align-items: center;
+  justify-content: center;
 }
 
 .Home__DiscountHeaderBox {
-  height: 400px;
-  width: 1000px;
-  background-color: var(--light-green);
+  background-color: var(--lightgreen);
   align-items: center;
   text-align: center;
   display: flex;
   flex-flow: column;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 20px;
+  width: 640px;
+  max-width: calc(100% - 20px);
 }
 
 .Home__DiscountHeaderTextBox {
@@ -34,7 +22,6 @@
   flex-flow: column;
   align-items: center;
   text-align: center;
-  width: 600px;
 }
 
 .Home__DiscountHeaderHeader {
@@ -64,6 +51,9 @@
   background-color: black;
   color: white;
   font-family: oswald;
+  margin-top: 5px;
+  padding: 5px 15px;
+  text-decoration: none;
 }
 
 .Home__DiscountSection {

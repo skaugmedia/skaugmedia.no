@@ -58,18 +58,28 @@ export function Discounts() {
             text={
               <>
                 <div className="Discounts__FreePregnancyNextDate">
-                  Neste ledige dato: 02.11.2023
+                  Neste ledige dato: 30.11.2023
                 </div>
                 <div className="Discounts__FreePregnancyText">
-                  Hver måned har jeg en dato der jeg tilbyr GRATIS utendørs
-                  minifotografering av gravide som er i uke 30-36 av
-                  svangerskapet. Fotograferingen vil foregå på Jessheim i
-                  Ullensaker. Begrenset kapasitet, så book tidlig! <br />
-                  <br />
+                  <p>
+                    Hver måned har jeg en dato der jeg tilbyr GRATIS utendørs
+                    minifotografering av gravide som er i uke 30-36 av
+                    svangerskapet. Fotograferingen vil foregå på Jessheim i
+                    Ullensaker.
+                  </p>
+                  <p>
+                    Under gratis minifotografering av gravide er det dessverre
+                    ikke rom for å ha med partner eller tidligere barn på
+                    bildene. Lån av mine gravidkjoler er heller ikke inkludert,
+                    men det er mulighet for å leie en av dem for kr. 200,- om du
+                    ønsker.
+                  </p>
+                  <p>Begrenset kapasitet, så book tidlig!</p>
                   Dette inkluderer:
                   <IncludesList
                     items={[
                       "20 minutters fotografering utendørs",
+                      "Mulighet for å leie gravidkjole for kr. 200,-",
                       "Online bildegalleri hvor du velger dine bilder",
                       "1 digital bildefil i høy oppløsning",
                       "Mulighet for å kjøpe flere bilder, og bildeprodukter",

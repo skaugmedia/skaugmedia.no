@@ -14,12 +14,15 @@ import PhotocopyImg from "/src/Images/Prices/photocopy.jpg";
 import WeddingTextImg from "/src/Images/WeddingPrice/wedding_text.jpg";
 import WeddingText1Img from "/src/Images/WeddingPrice/wedding_text1.jpg";
 import WeddingText2Img from "/src/Images/WeddingPrice/wedding_text2.jpg";
+import { Checkmark } from "../../Components/Checkmark";
 
 export function PricesProducts() {
   useDocumentTitle(pageName);
   const [showComparisonTable, setShowComparisonTable] = useState(false);
   const [menu, setMenu] = useState(null);
-  const Check = () => <>{"\u2713"}</>;
+  const Check = () => (
+    <Checkmark color="#3AC1C1" style={{ height: "24px" }}></Checkmark>
+  );
 
   const mainMenu = (
     <PageSection>
@@ -45,7 +48,12 @@ export function PricesProducts() {
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxPrice">Kr. 16.000,-</div>
-          <button onClick={() => setMenu("b1")}>Les mer</button>
+          <button
+            onClick={() => setMenu("b1")}
+            className="Wedding__ReadMoreButton"
+          >
+            Les mer
+          </button>
         </div>
         <div className="Wedding__PackageBox2">
           <div className="Wedding__PackageBoxHeader">Bryllupspakke 2</div>
@@ -70,7 +78,12 @@ export function PricesProducts() {
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxPrice">Kr. 24.000,-</div>
-          <button onClick={() => setMenu("b2")}>Les mer</button>
+          <button
+            onClick={() => setMenu("b2")}
+            className="Wedding__ReadMoreButton"
+          >
+            Les mer
+          </button>
         </div>
         <div className="Wedding__PackageBox3">
           <div className="Wedding__PackageBoxHeader">Bryllupspakke 3</div>
@@ -108,7 +121,12 @@ export function PricesProducts() {
 
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxPrice">Kr. 32.000,-</div>
-          <button onClick={() => setMenu("b3")}>Les mer</button>
+          <button
+            onClick={() => setMenu("b3")}
+            className="Wedding__ReadMoreButton"
+          >
+            Les mer
+          </button>
         </div>
       </div>
     </PageSection>
@@ -159,7 +177,7 @@ export function PricesProducts() {
               </div>
               <div className="Wedding__PackageBoxDivider"></div>
               <div className="Wedding__PackageBigBoxListText">
-                Ca. 70 stk. digitale bildefiler
+                Ca. 50 stk. digitale bildefiler
               </div>
               <div className="Wedding__PackageBoxDivider"></div>
               <div className="Wedding__PackageBigBoxListText">
@@ -173,7 +191,12 @@ export function PricesProducts() {
               <div className="Wedding__PackageBigBoxListText">
                 50% rabatt på forlovelsesfotografering
               </div>
-              <button onClick={() => setMenu(null)}>Tilbake</button>
+              <button
+                onClick={() => setMenu(null)}
+                className="Wedding__ReadMoreButton"
+              >
+                Tilbake
+              </button>
             </div>
             <div className="Wedding__PackageBigBoxImgSection">
               <img
@@ -252,7 +275,12 @@ export function PricesProducts() {
                 Forlovelsesfotografering inkludert 5 stk. bilder i høy
                 oppløsning
               </div>
-              <button onClick={() => setMenu(null)}>Tilbake</button>
+              <button
+                onClick={() => setMenu(null)}
+                className="Wedding__ReadMoreButton"
+              >
+                Tilbake
+              </button>
             </div>
             <div className="Wedding__PackageBigBoxImgSection">
               <img
@@ -347,7 +375,12 @@ export function PricesProducts() {
               <div className="Wedding__PackageBigBoxListText">
                 Mulighet for å bestille flere trykksaker i samme design
               </div>
-              <button onClick={() => setMenu(null)}>Tilbake</button>
+              <button
+                onClick={() => setMenu(null)}
+                className="Wedding__ReadMoreButton"
+              >
+                Tilbake
+              </button>
             </div>
             <div className="Wedding__PackageBigBoxImgSection">
               <img
@@ -471,6 +504,76 @@ export function PricesProducts() {
               <td>
                 <Check />
               </td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>Antall timer med fotografering</th>
+              <td>3 timer fotografering</td>
+              <td>5 timer fotografering</td>
+              <td>5 timer fotografering</td>
+            </tr>
+            <tr>
+              <th>Antall bilder inkludert</th>
+              <td>Ca. 50 digitale bildefiler</td>
+              <td>Ca. 150 digitale bildefiler</td>
+              <td>Ca. 150 digitale bildefiler</td>
+            </tr>
+            <tr>
+              <th>Forlovelsesfotografering</th>
+              <td>50% rabatt på forlovelsesfotografering</td>
+              <td>Fotografering + 5 digitale bildefiler</td>
+              <td>Fotografering + 5 digitale bildefiler</td>
+            </tr>
+            <tr>
+              <th>Mulighet for å kjøpe bildeprodukter</th>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>Design av personlige bryllupsmateriale</th>
+              <td></td>
+              <td></td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>20 stk. doble invitasjoner (mulighet til å bestille fler)</th>
+              <td></td>
+              <td></td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>20 stk. doble takkekort (mulighet til å bestille fler)</th>
+              <td></td>
+              <td></td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>Mulighet til å bestille flere trykksaker i samme design</th>
+              <td></td>
+              <td></td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>Veiledningsmøter underveis i designprosessen</th>
+              <td></td>
+              <td></td>
               <td>
                 <Check />
               </td>

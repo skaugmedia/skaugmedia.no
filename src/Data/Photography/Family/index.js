@@ -19,6 +19,12 @@ import famL6 from "../../../Images/Family/fam_l_6.jpg";
 import famL7 from "../../../Images/Family/fam_l_7.jpg";
 import famL8 from "../../../Images/Family/fam_l_8.jpg";
 import famL9 from "../../../Images/Family/fam_l_9.jpg";
+import famH1 from "../../../Images/Family/fam_h_1.jpg";
+import famH2 from "../../../Images/Family/fam_h_2.jpg";
+import famH3 from "../../../Images/Family/fam_h_3.jpg";
+import famH4 from "../../../Images/Family/fam_h_4.jpg";
+import famH5 from "../../../Images/Family/fam_h_5.jpg";
+import famH6 from "../../../Images/Family/fam_h_6.jpg";
 import * as ids from "../../../Routes/PricesServices/Ids";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
@@ -41,6 +47,51 @@ export default {
     link: `/${PricesRoute}#${ids.family}`,
   },
   shoots: [
+    {
+      description: "Familien H",
+      tags: ["familie", "skog", "høst"],
+      images: [
+        {
+          url: famH3,
+          title: "Familien H",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famH1,
+          title: "Familien H",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famH2,
+          title: "Familien H",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: famH4,
+          title: "Familien H",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: famH5,
+          title: "Familien H",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famH6,
+          title: "Familien H",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-09-08",
+    },
     {
       description: "Familietid i skogen",
       tags: ["familie", "skog", "sommer"],

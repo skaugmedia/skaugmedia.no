@@ -635,6 +635,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Prices__Content {
+    display: flex;
+    flex-flow: row;
+  }
+
   .Prices__PriceText {
     padding-bottom: 20px;
   }

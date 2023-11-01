@@ -24,6 +24,13 @@ import business_pogb_sommer_22 from "../../../Images/Business/Pent_og_brukt/busi
 import business_pogb_sommer_23 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_23.jpg";
 import business_pogb_sommer_24 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_24.jpg";
 
+import autumn_campaign_1 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_1.jpg";
+import autumn_campaign_2 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_2.jpg";
+import autumn_campaign_3 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_3.jpg";
+import autumn_campaign_4 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_4.jpg";
+import autumn_campaign_5 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_5.jpg";
+import autumn_campaign_6 from "../../../Images/Business/Pent_og_brukt/autumn_campaign_6.jpg";
+
 import * as ids from "../../../Routes/PricesServices/Ids";
 import PricesServicesRoute from "../../../Routes/PricesServices/Route";
 
@@ -44,8 +51,53 @@ export default {
   },
   shoots: [
     {
+      description: "Pent og Brukt høst",
+      tags: ["produkt", "bedrift", "høst"],
+      images: [
+        {
+          url: autumn_campaign_2,
+          title: "Pent og Brukt høst",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: autumn_campaign_1,
+          title: "Pent og Brukt høst",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: autumn_campaign_3,
+          title: "Pent og Brukt høst",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: autumn_campaign_4,
+          title: "Pent og Brukt høst",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: autumn_campaign_5,
+          title: "Pent og Brukt høst",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: autumn_campaign_6,
+          title: "Pent og Brukt høst",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-09-18",
+    },
+
+    {
       description: "Pent og Brukt sommer",
-      tags: ["produkt", "bedrift"],
+      tags: ["produkt", "bedrift", "sommer"],
       images: [
         {
           url: business_pogb_sommer_01,

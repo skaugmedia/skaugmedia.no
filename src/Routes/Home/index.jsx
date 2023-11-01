@@ -10,7 +10,7 @@ import quotepng from "../../Images/quote_icon.png";
 import * as presentables from "/src/Data/presentables";
 import { ActionButton } from "../../Components/ActionButton";
 import ContactRoute from "/src/Routes/Contact/Route";
-
+import { NavLink } from "react-router-dom";
 import DiscountHeaderImg from "../../Images/Home/discount.png";
 
 import "./Home.css";
@@ -22,15 +22,10 @@ export function Home() {
 
   return (
     <>
-      <div className="Home__DiscountHeader">
-        <div className="Home__DiscountHeaderBackgroundImg">
-          <img
-            className="Home__DiscountHeaderImg"
-            src={DiscountHeaderImg}
-            alt="Rabatt"
-          ></img>
-        </div>
-
+      <div
+        className="Home__DiscountHeader"
+        style={{ backgroundImage: `url(${DiscountHeaderImg})` }}
+      >
         <div className="Home__DiscountHeaderBox">
           <div className="Home__DiscountHeaderTextBox">
             <div className="Home__DiscountHeaderHeader">Onsdagstilbud</div>
@@ -42,7 +37,12 @@ export function Home() {
               oktober får -30% rabatt. Gjelder kun i dag, og gjelder ikke for
               minifotograferinger eller bedrifter.
             </div>
-            <button className="Home__DiscountHeaderButton">Book nå</button>
+            <NavLink
+              to={`/${ContactRoute}`}
+              className="Home__DiscountHeaderButton"
+            >
+              Book nå
+            </NavLink>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@ export function Home() {
               GRATIS MINIFOTOGRAFERING AV GRAVIDE
             </div>
             <div className="free-pregnancy-next-date">
-              Neste ledige dato: 02.11.2023
+              Neste ledige dato: 30.11.2023
             </div>
             <div className="free-pregnancy-text">
               Hver måned setter jeg av en dato der jeg tilbyr GRATIS utendørs

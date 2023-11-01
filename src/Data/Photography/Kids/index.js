@@ -6,8 +6,10 @@ import EE3 from "../../../Images/Kids/EE_3.jpg";
 import EE4 from "../../../Images/Kids/EE_4.jpg";
 import EE5 from "../../../Images/Kids/EE_5.jpg";
 import EE6 from "../../../Images/Kids/EE_6.jpg";
+
 import EN_2 from "../../../Images/Kids/EN_2.jpg";
 import EN_3 from "../../../Images/Kids/EN_3.jpg";
+
 import LO_1 from "../../../Images/Kids/LO_1.jpg";
 import LO_2 from "../../../Images/Kids/LO_2.jpg";
 import LO_3 from "../../../Images/Kids/LO_3.jpg";
@@ -21,11 +23,30 @@ import LG3 from "../../../Images/Kids/LG_03.jpg";
 import LG4 from "../../../Images/Kids/LG_04.jpg";
 import LG5 from "../../../Images/Kids/LG_05.jpg";
 import LG6 from "../../../Images/Kids/LG_06.jpg";
+
 import ON2 from "../../../Images/Kids/ON_2.jpg";
 import ON3 from "../../../Images/Kids/ON_3.jpg";
+
 import SV1 from "../../../Images/Kids/SV_1.jpg";
 import SV2 from "../../../Images/Kids/SV_2.jpg";
 import SV3 from "../../../Images/Kids/SV_3.jpg";
+
+import LP1 from "../../../Images/Kids/LP_1.jpg";
+import LP2 from "../../../Images/Kids/LP_2.jpg";
+import LP3 from "../../../Images/Kids/LP_3.jpg";
+import LP4 from "../../../Images/Kids/LP_4.jpg";
+import LP5 from "../../../Images/Kids/LP_5.jpg";
+import LP6 from "../../../Images/Kids/LP_6.jpg";
+import LP7 from "../../../Images/Kids/LP_7.jpg";
+import LP8 from "../../../Images/Kids/LP_8.jpg";
+
+import H1 from "../../../Images/Kids/H_1.jpg";
+import H2 from "../../../Images/Kids/H_2.jpg";
+import H3 from "../../../Images/Kids/H_3.jpg";
+import H4 from "../../../Images/Kids/H_4.jpg";
+import H5 from "../../../Images/Kids/H_5.jpg";
+import H6 from "../../../Images/Kids/H_6.jpg";
+import H7 from "../../../Images/Kids/H_7.jpg";
 
 import * as ids from "../../../Routes/PricesServices/Ids";
 import PricesRoute from "../../../Routes/PricesServices/Route";
@@ -48,24 +69,111 @@ export default {
   },
   shoots: [
     {
-      description: "EN",
-      tags: ["gutt", "baby", "barn"],
+      description: "LP",
+      tags: ["gutt", "1-åring", "barn"],
       images: [
         {
-          url: EN_2,
-          title: "EN",
-          width: 1000,
-          height: 667,
+          url: LP1,
+          title: "LP",
+          width: 667,
+          height: 1000,
         },
         {
-          url: EN_3,
-          title: "EN",
+          url: LP2,
+          title: "LP",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LP3,
+          title: "LP",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LP4,
+          title: "LP",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LP5,
+          title: "LP",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LP6,
+          title: "LP",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LP7,
+          title: "LP",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LP8,
+          title: "LP",
           width: 667,
           height: 1000,
         },
       ],
-      date: "2021-12-13",
+      date: "2023-09-06",
     },
+
+    {
+      description: "H",
+      tags: ["jente", "1-åring", "barn"],
+      images: [
+        {
+          url: H1,
+          title: "H",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: H2,
+          title: "H",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: H3,
+          title: "H",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: H4,
+          title: "H",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: H5,
+          title: "H",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: H6,
+          title: "H",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: H7,
+          title: "H",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-09-07",
+    },
+
     {
       description: "LO",
       tags: ["gutt", "baby", "barn"],
@@ -159,25 +267,7 @@ export default {
       ],
       date: "2023-02-14",
     },
-    {
-      description: "ON",
-      tags: ["gutt", "baby", "barn"],
-      images: [
-        {
-          url: ON2,
-          title: "ON",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: ON3,
-          title: "ON",
-          width: 667,
-          height: 1000,
-        },
-      ],
-      date: "2020-07-26",
-    },
+
     {
       description: "SV",
       tags: ["jente", "barn"],
