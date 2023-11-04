@@ -126,7 +126,7 @@ export function Discounts() {
             <FixedDiscount
               imgSrc={TenPercent}
               imgAlt="Konfirmant i vårfarger"
-              discount="10%"
+              discount="20%"
               text={
                 <>
                   avslag på din neste fotografering <br />

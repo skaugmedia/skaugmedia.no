@@ -44,6 +44,7 @@ import AnnetDesignImg from "/src/Images/Prices/annet_design.jpg";
 import DigitalCopyImg from "/src/Images/Prices/digital_files.jpg";
 import WallPhotosImg from "/src/Images/Prices/canvas.jpg";
 import AlbumImg from "/src/Images/Prices/album.jpg";
+import FirstYearImg from "/src/Images/Prices/first_year.jpg";
 import PrintablesImg from "/src/Images/Prices/designpack.jpg";
 import { Tabs } from "../../Components/Tabs";
 
@@ -133,7 +134,7 @@ export function PricesServices() {
                       Nyfødtfotografering
                     </div>
                     <div className="Prices__TabsContentPriceKidsCopies">
-                      Kr. 4200,-
+                      Kr. 3700,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -185,7 +186,7 @@ export function PricesServices() {
                       1-års fotografering
                     </div>
                     <div className="Prices__TabsContentPriceKidsCopies">
-                      Kr. 4200,-
+                      Kr. 3700,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -199,7 +200,7 @@ export function PricesServices() {
                     vil være mulig å velge 1-års fotografering med eller uten
                     cake-smash.
                     <p className="Prices__TabsContentTextOffer">
-                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      Har du blitt fotografert av meg tidligere? Da får du 20%
                       rabatt på fotograferingen!
                     </p>
                     <p>
@@ -217,6 +218,8 @@ export function PricesServices() {
                       Kveldstillegg etter kl. 16.00: kr. 400,-
                       <br />
                       Helgetillegg: kr. 700,-
+                      <br />
+                      Kake til cake-smash: kr. 800,-
                     </p>
                   </div>
                 </div>
@@ -238,7 +241,7 @@ export function PricesServices() {
                       Barnefotografering (fra 6 mnd)
                     </div>
                     <div className="Prices__TabsContentPriceKidsCopies">
-                      Kr. 4200,-
+                      Kr. 3700,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -252,7 +255,7 @@ export function PricesServices() {
                     til å fange disse øyeblikkene på en måte som er autentisk og
                     meningsfull for deg.
                     <p className="Prices__TabsContentTextOffer">
-                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      Har du blitt fotografert av meg tidligere? Da får du 20%
                       rabatt på fotograferingen!
                     </p>
                     <p>
@@ -276,6 +279,71 @@ export function PricesServices() {
                   className="Prices__TabsContentImg"
                   src={BabyImg}
                   title="Baby utendørs i blomstereng"
+                />
+              </div>
+            ),
+          },
+          {
+            title: "Mitt første år",
+            content: (
+              <div className="Prices__Tabs">
+                <div className="Prices__TabsContentBox">
+                  <div className="Prices__TabsContentHeaderBox">
+                    <div className="Prices__TabsContentTitle">
+                      Mitt første år
+                    </div>
+                    <div className="Prices__TabsContentPriceKidsCopies">
+                      Kr. 7100,- (Verdi: Kr. 9600,-)
+                    </div>
+                  </div>
+                  <div className="Prices__TabsContentText">
+                    Et barns første år er en reise fylt med uforglemmelige
+                    øyeblikk, og hvert steg på veien utgjør en unik del av deres
+                    vekst. Mitt første år-pakken gir deg muligheten til å
+                    forevige disse spesielle øyeblikkene som definerer barnets
+                    utvikling. I denne pakken handler om å fange hvert stadium i
+                    barnets første år, nyfødtfotografering, fotografering ved 4
+                    måneders alder, 8 måneders alder og når barnet fyller 1år.
+                    <p className="Prices__TabsContentTextOffer">
+                      Fremfor å bestille 4 separate fotograferinger, sparer du
+                      kr. 2500,- på å booke denne pakken.
+                    </p>
+                    <p>
+                      Inkluderer:
+                      <br />- Samtale før fotograferingene for å avtale antrekk
+                      og lokasjon
+                      <br />- Naturlig nyfødtfotografering hjemme hos dere, i
+                      opptil 2-3 timer
+                      <br />- 4 måneders fotografering hjemme hos dere eller på
+                      lokasjon, opptil 1 time
+                      <br />- 8 måneders fotografering hjemme hos dere eller på
+                      lokasjon, opptil 1 time
+                      <br />- 1-års fotografering hjemme hos dere eller på
+                      lokasjon, opptil 1 time med mulighet for å bestille
+                      cake-smash
+                      <br />- Prisen gjelder kun for barnet, men det er mulighet
+                      for familie- og søskenbilder for kr. 500,- per
+                      fotografering
+                      <br />- Digitalt bildegalleri hvor man velger bilder
+                      <br />- 1 valgfri digital bildefil fra hver fotografering
+                      inkludert
+                      <br />- Mulighet for å kjøpe flere bildeprodukter
+                    </p>
+                    <p className="Prices__TabsContentTextFees">
+                      Kveldstillegg etter kl. 16.00: kr. 400,-
+                      <br />
+                      Helgetillegg: kr. 700,-
+                      <br />
+                      Familie- og søskenbilder: kr. 500,- per fotografering
+                      <br />
+                      Kake til cake-smash: kr. 800,-
+                    </p>
+                  </div>
+                </div>
+                <img
+                  className="Prices__TabsContentImg"
+                  src={FirstYearImg}
+                  title="Babyens første år"
                 />
               </div>
             ),
@@ -304,7 +372,7 @@ export function PricesServices() {
                       Portrettfotografering
                     </div>
                     <div className="Prices__TabsContentPricePortraitWallphotos">
-                      Kr. 3900,-
+                      Kr. 3500,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -318,7 +386,7 @@ export function PricesServices() {
                     øyeblikk jeg fanger, gir deg en mulighet til å se tilbake og
                     gjenoppleve disse viktige stadiene av livet ditt.
                     <p className="Prices__TabsContentTextOffer">
-                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      Har du blitt fotografert av meg tidligere? Da får du 20%
                       rabatt på fotograferingen!
                     </p>
                     <p>
@@ -357,7 +425,7 @@ export function PricesServices() {
                       Gravidfotografering
                     </div>
                     <div className="Prices__TabsContentPricePortraitWallphotos">
-                      Kr. 3900,-
+                      Kr. 3500,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -411,7 +479,7 @@ export function PricesServices() {
                       Konfirmantfotografering
                     </div>
                     <div className="Prices__TabsContentPricePortraitWallphotos">
-                      Kr. 3900,-
+                      Kr. 3500,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -425,7 +493,7 @@ export function PricesServices() {
                     se tilbake på denne spesielle tiden og gjenoppleve
                     øyeblikkene som markerer din reise mot selvstendighet.
                     <p className="Prices__TabsContentTextOffer">
-                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      Har du blitt fotografert av meg tidligere? Da får du 20%
                       rabatt på fotograferingen!
                     </p>
                     <p>
@@ -478,7 +546,7 @@ export function PricesServices() {
                     du kan velge det som passer best til din CV og profesjonelle
                     nettverk.
                     <p className="Prices__TabsContentTextOffer">
-                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      Har du blitt fotografert av meg tidligere? Da får du 20%
                       rabatt på fotograferingen!
                     </p>
                     <p>
@@ -531,7 +599,7 @@ export function PricesServices() {
                       Familiefotografering
                     </div>
                     <div className="Prices__TabsContentPriceFamilyAlbum">
-                      Kr. 4200,-
+                      Kr. 3700,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -546,7 +614,7 @@ export function PricesServices() {
                     enkel sammenkomst. Gjennom vårt samarbeid vil vi skape
                     minner som vil bli verdsatt i generasjoner fremover.
                     <p className="Prices__TabsContentTextOffer">
-                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      Har du blitt fotografert av meg tidligere? Da får du 20%
                       rabatt på fotograferingen!
                     </p>
                     <p>
@@ -587,7 +655,7 @@ export function PricesServices() {
                       Søskenfotografering
                     </div>
                     <div className="Prices__TabsContentPriceFamilyAlbum">
-                      Kr. 4200,-
+                      Kr. 3700,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -603,7 +671,7 @@ export function PricesServices() {
                     øyeblikkene som definerer deres relasjon, og som vil skape
                     dyrebare minner for dere i årene som kommer.
                     <p className="Prices__TabsContentTextOffer">
-                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      Har du blitt fotografert av meg tidligere? Da får du 20%
                       rabatt på fotograferingen!
                     </p>
                     <p>
@@ -641,7 +709,7 @@ export function PricesServices() {
                       Parfotografering
                     </div>
                     <div className="Prices__TabsContentPriceFamilyAlbum">
-                      Kr. 4200,-
+                      Kr. 3700,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -699,7 +767,7 @@ export function PricesServices() {
                       Mommy & me / Daddy & me
                     </div>
                     <div className="Prices__TabsContentPriceFamilyAlbum">
-                      Kr. 4200,-
+                      Kr. 3700,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
@@ -716,7 +784,7 @@ export function PricesServices() {
                     handler om å fange disse øyeblikkene som definerer båndet
                     mellom forelder og barn.
                     <p className="Prices__TabsContentTextOffer">
-                      Har du blitt fotografert av meg tidligere? Da får du 10%
+                      Har du blitt fotografert av meg tidligere? Da får du 20%
                       rabatt på fotograferingen!
                     </p>
                     <p>
@@ -1165,7 +1233,7 @@ export function PricesServices() {
           <div className="backdrop color1"></div>
           <div className="text">
             <div className="Prices__ButtonText">Barn</div>
-            <div className="Prices__ButtonSubText">fra kr. 4200,-</div>
+            <div className="Prices__ButtonSubText">fra kr. 3700,-</div>
           </div>
         </button>
         <button className="btn" onClick={() => setServiceState("portrait")}>
@@ -1179,7 +1247,7 @@ export function PricesServices() {
           <div className="backdrop color3"></div>
           <div className="text">
             <div className="Prices__ButtonText">Familie</div>
-            <div className="Prices__ButtonSubText">fra kr. 4200,-</div>
+            <div className="Prices__ButtonSubText">fra kr. 3700,-</div>
           </div>
         </button>
         <NavLink className="btn" to={`/${PricesProductsRoute}`}>
@@ -1233,14 +1301,14 @@ export function PricesServices() {
           <div className="backdrop color2"></div>
           <div className="text">
             <div className="Prices__ButtonText">Veggbilder</div>
-            <div className="Prices__ButtonSubText">fra kr. 2000,-</div>
+            <div className="Prices__ButtonSubText">fra kr. 1800,-</div>
           </div>
         </button>
         <button className="btn" onClick={() => setProductState("album")}>
           <div className="backdrop color3"></div>
           <div className="text">
             <div className="Prices__ButtonText">Album</div>
-            <div className="Prices__ButtonSubText">fra kr. 5000,-</div>
+            <div className="Prices__ButtonSubText">fra kr. 3500,-</div>
           </div>
         </button>
         <button
@@ -1298,14 +1366,14 @@ export function PricesServices() {
                 Bildekopi 20x30cm
               </div>
             }
-            price2={<div className="ProductPriceSection__Price">Kr. 800,-</div>}
+            price2={<div className="ProductPriceSection__Price">Kr. 700,-</div>}
             priceText3={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 30x40cm
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 1200,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1000,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -1313,7 +1381,7 @@ export function PricesServices() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price"> Kr. 1650,-</div>
+              <div className="ProductPriceSection__Price"> Kr. 1375,-</div>
             }
             priceText5={false}
             price5={false}
@@ -1372,10 +1440,13 @@ export function PricesServices() {
             imgAlt="Veggbilder av en mor og hennes barn"
             text={
               <div className="ProductPriceSection__Text">
-                Om du ønsker, kan du kjøpe digitale bildefiler i høy oppløsning.
-                Med disse filene kan du printe så mange ganger du ønsker, lagre
-                som backup eller bruke som ditt profilbilde på sosiale medier,
-                men husk å kreditere meg som fotograf under bildet.
+                Skap varige minner med våre førsteklasses vegg- og lerretsbilder
+                av høyeste kvalitet. Våre dedikerte leverandører printer hvert
+                bilde med presisjon og gjennomfører nøye kvalitetskontroller før
+                de leveres til deg. Uansett om du velger trykk på lerret eller
+                skumplate, tilbys begge alternativene til samme pris. Disse
+                kunstverkene er ideelle for innramming og utgjør den perfekte
+                gaven til dem som allerede har alt!
               </div>
             }
             priceText1={
@@ -1384,7 +1455,7 @@ export function PricesServices() {
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 2000,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1800,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
@@ -1392,7 +1463,7 @@ export function PricesServices() {
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 3500,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2900,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
@@ -1400,7 +1471,7 @@ export function PricesServices() {
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 4800,-</div>
+              <div className="ProductPriceSection__Price">Kr. 3500,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -1408,7 +1479,7 @@ export function PricesServices() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 6700,-</div>
+              <div className="ProductPriceSection__Price">Kr. 4000,-</div>
             }
             priceText5={false}
             price5={false}
@@ -1467,10 +1538,12 @@ export function PricesServices() {
             imgAlt="Et bilde av en baby i en blomstereng"
             text={
               <div className="ProductPriceSection__Text">
-                Om du ønsker, kan du kjøpe digitale bildefiler i høy oppløsning.
-                Med disse filene kan du printe så mange ganger du ønsker, lagre
-                som backup eller bruke som ditt profilbilde på sosiale medier,
-                men husk å kreditere meg som fotograf under bildet.
+                La de mest dyrebare øyeblikkene få evig liv med våre
+                førsteklasses trykkede fotoalbum. Vår pålitelige leverandør
+                håndterer hvert bilde med omhu og nøyaktighet, og hver side
+                gjennomgår en grundig kvalitetskontroll før den blir sendt til
+                deg. Disse fotoalbumene er enestående gaver å ramme inn og gi
+                til noen som setter pris på det mest verdifulle.
               </div>
             }
             priceText1={
@@ -1479,7 +1552,7 @@ export function PricesServices() {
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 5000,-</div>
+              <div className="ProductPriceSection__Price">Kr. 3500,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
@@ -1487,7 +1560,7 @@ export function PricesServices() {
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 7000,-</div>
+              <div className="ProductPriceSection__Price">Kr. 5000,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
@@ -1495,7 +1568,7 @@ export function PricesServices() {
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 7700,-</div>
+              <div className="ProductPriceSection__Price">Kr. 5500,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -1503,7 +1576,7 @@ export function PricesServices() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 8500,-</div>
+              <div className="ProductPriceSection__Price">Kr. 6000,-</div>
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
@@ -1511,7 +1584,7 @@ export function PricesServices() {
               </div>
             }
             price5={
-              <div className="ProductPriceSection__Price">Kr. 9000,-</div>
+              <div className="ProductPriceSection__Price">Kr. 6500,-</div>
             }
           />
 
@@ -1680,9 +1753,10 @@ export function PricesServices() {
               </p>
               <p className="Prices__TabsContentTextPrintables">
                 Priser varierer utifra hva dere ønsker i deres pakke, hvor mange
-                dere ønsker av hver og om dere ønsker et spesielt materiale.Jeg
-                kan hjelpe dere med kun design, eller jeg kan levere en komplett
-                pakke med design og ferdig trykkede produkter.
+                dere ønsker av hver og om dere ønsker det trykket på et spesielt
+                materiale. Jeg kan hjelpe dere med kun design, eller jeg kan
+                levere en komplett pakke med design og ferdig trykkede
+                produkter.
               </p>
               <p className="Prices__TabsContentTextPrintables">
                 Ta kontakt i dag for en uforpliktende prat for å avdekke deres
@@ -1766,7 +1840,7 @@ export function PricesServices() {
             className="Prices__TextIntroIncludes"
             items={[
               "Inkludert i alle mine fotograferinger er et digitalt bildegalleri hvor man selv kan velge bilder fra. (unntak ved bryllupsfotografering)",
-              "I alle mine fotograferinger er det 3 valgfrie digitale bildefiler inkludert (unntak ved bryllupsfotografering og gratis gravidfotografering)",
+              "I alle mine fotograferinger er det 3 valgfrie digitale bildefiler inkludert (unntak ved Mitt første år-fotografering, bryllupsfotografering og gratis gravidfotografering)",
               "Mulighet for å booke time hos makeup-artist LashBrowser før fotograferingen",
               "Opptil 1 time fotografering (unntak ved bryllup, nyfødt og minifotografering)",
               "Du vil motta en mail med informasjon om din fotografering på forhånd",
@@ -1780,7 +1854,7 @@ export function PricesServices() {
             Du kan velge å booke en valgfri minifotografering, inkludert 3
             digitale bildefiler. En slik minifotografering gjelder ikke for
             nyfødfotografering hjemme hos dere, eller bryllupsfotografering. En
-            minifotografering har en fast pris på kr. 1600,- (Unntak ved
+            minifotografering har en fast pris på kr. 1400,- (Unntak ved
             spesialtilbud)
           </div>
           <div className="Prices__TextIntroHeader">
@@ -1796,8 +1870,8 @@ export function PricesServices() {
           </div>
           <div className="Prices__TextIntro">
             Alle helger og helligdager vil det tilkomme et helgetillegg på kr.
-            700,- (unntak ved bryllupsfotografering og ved minifotograferinger i
-            helger)
+            700,- (unntak ved bryllupsfotografering og ved fastsatte
+            minifotograferinger med dato i helg)
           </div>
           <div className="Prices__TextIntroHeader">
             Ønsker du at jeg skal komme til deg?{" "}
@@ -1805,7 +1879,7 @@ export function PricesServices() {
           <div className="Prices__TextIntro">
             Jeg kommer gjerne til deg, men all kjøring utover 30km fra Jessheim,
             vil faktureres med kr. 10,- per km. I tillegg vil betalt parkering
-            under fotograferingen vil faktureres i sin helhet.{" "}
+            under fotograferingen faktureres i sin helhet.{" "}
           </div>
         </div>
 
