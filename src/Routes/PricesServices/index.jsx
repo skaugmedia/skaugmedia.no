@@ -46,7 +46,10 @@ import WallPhotosImg from "/src/Images/Prices/canvas.jpg";
 import AlbumImg from "/src/Images/Prices/album.jpg";
 import FirstYearImg from "/src/Images/Prices/first_year.jpg";
 import PrintablesImg from "/src/Images/Prices/designpack.jpg";
+import CardsImg from "/src/Images/Prices/takkekort.jpg";
+import BirthPosterImg from "/src/Images/Prices/birthposter.jpg";
 import { Tabs } from "../../Components/Tabs";
+import BusinessPricesRoute from "../BusinessPrices/Route";
 
 export function PricesServices() {
   useDocumentTitle(pageName);
@@ -1257,13 +1260,13 @@ export function PricesServices() {
             <div className="Prices__ButtonSubText">fra kr. 16.000,-</div>
           </div>
         </NavLink>
-        <button className="btn" onClick={() => setServiceState("businesses")}>
+        <NavLink className="btn" to={`/${BusinessPricesRoute}`}>
           <div className="backdrop color5"></div>
           <div className="text">
             <div className="Prices__ButtonText">Bedrifter og næringsliv</div>
             <div></div>
           </div>
-        </button>
+        </NavLink>
         <button className="btn" onClick={() => setServiceState("design")}>
           <div className="backdrop color6"></div>
           <div className="text">
@@ -1321,8 +1324,22 @@ export function PricesServices() {
             <div className="Prices__ButtonSubText">fra kr. 650,-</div>
           </div>
         </button>
-        <button className="btn" onClick={() => setProductState("printables")}>
+        <button className="btn" onClick={() => setProductState("cards")}>
           <div className="backdrop color5"></div>
+          <div className="text">
+            <div className="Prices__ButtonText">Takkekort</div>
+            <div className="Prices__ButtonSubText">fra kr. 750,-</div>
+          </div>
+        </button>
+        <button className="btn" onClick={() => setProductState("birthPoster")}>
+          <div className="backdrop color6"></div>
+          <div className="text">
+            <div className="Prices__ButtonText">Fødselsplakat</div>
+            <div className="Prices__ButtonSubText">fra kr. 650,-</div>
+          </div>
+        </button>
+        <button className="btn" onClick={() => setProductState("printables")}>
+          <div className="backdrop color7"></div>
           <div className="text">
             <div className="Prices__ButtonText">Pakke med trykksaker</div>
             <div></div>
@@ -1733,6 +1750,125 @@ export function PricesServices() {
       </div>
     </div>
   );
+  const cardsProduct = (
+    <div>
+      {productBackArrow}
+      <div className="Prices__TabsProducts">
+        <div className="Prices__TabsContentBoxProducts">
+          <div className="Prices__TabsContentHeaderBox">
+            <div className="Prices__TabsContentTitle">Takkekort</div>
+          </div>
+
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={CardsImg}
+            imgAlt="Takkekort fra en konfirmant"
+            text={
+              <div className="ProductPriceSection__Text">
+                Ensidige takkekort inkluderer ditt valgte bilde og en personlig
+                melding som gir en ekstra spesiell touch. Hvert kort leveres
+                sammen med hvite konvolutter og er den perfekte måten å vise
+                takknemlighet overfor alle som har deltatt i eller gitt gaver
+                ved en betydningsfull anledning.
+                <br />
+                Dere kan velge mellom et lite utvalg av design, kortene er nøye
+                utformet for å forevige minnene fra din spesielle begivenhet og
+                er trykket med høyeste kvalitet for å sikre at bildene kommer
+                til sin fulle rett. Gi en personlig takk som varer med våre
+                vakre ensidige takkekort.
+              </div>
+            }
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                20 stk. ensidige takkekort 10x12 cm
+              </div>
+            }
+            price1={<div className="ProductPriceSection__Price">Kr. 760,-</div>}
+            priceText2={
+              <div className="ProductPriceSection__PriceText">
+                20 stk. ensidige takkekort 10x18 cm
+              </div>
+            }
+            price2={<div className="ProductPriceSection__Price">Kr. 820,-</div>}
+            priceText3={
+              <div className="ProductPriceSection__PriceText">
+                20 stk. ensidige takkekort 16x16 cm
+              </div>
+            }
+            price3={<div className="ProductPriceSection__Price">Kr. 850,-</div>}
+            priceText4={
+              <p className="Prices__TabsContentTextFees">
+                Ekstra kort koster kr. 50,- per stk.
+                <br />
+                Ekstra bilde koster kr. 300,- per bilde på kortet
+              </p>
+            }
+            price4={false}
+            priceText5={false}
+            price5={false}
+          />
+        </div>
+      </div>
+    </div>
+  );
+  const birthPosterProduct = (
+    <div>
+      {productBackArrow}
+      <div className="Prices__TabsProducts">
+        <div className="Prices__TabsContentBoxProducts">
+          <div className="Prices__TabsContentHeaderBox">
+            <div className="Prices__TabsContentTitle">Fødselsplakat</div>
+          </div>
+
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={BirthPosterImg}
+            imgAlt="Fødselsplakat Isak Olstad"
+            text={
+              <div className="ProductPriceSection__Text">
+                Jeg tilbyr nå personlig fødselsplakat i to ulike størrelser,
+                hvor du velger om du ønsker å ha bilde på eller ikke. Du får
+                mulighet til å velge blandt et lite utvalg forhåndsdefinerte
+                design, og du velger selv hvilken informasjon du ønsker at skal
+                være på plakaten. Disse plakatene er perfekte som dekorasjon
+                under dåpsfesten eller til å henge på rommet til barnet.
+              </div>
+            }
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                Fødselsplakat uten bilde 20x30 cm
+              </div>
+            }
+            price1={<div className="ProductPriceSection__Price">Kr. 650,-</div>}
+            priceText2={
+              <div className="ProductPriceSection__PriceText">
+                Fødselsplakat med bilde 20x30 cm
+              </div>
+            }
+            price2={<div className="ProductPriceSection__Price">Kr. 800,-</div>}
+            priceText3={
+              <div className="ProductPriceSection__PriceText">
+                Fødselsplakat uten bilde 30x40 cm{" "}
+              </div>
+            }
+            price3={<div className="ProductPriceSection__Price">Kr. 850,-</div>}
+            priceText4={
+              <div className="ProductPriceSection__PriceText">
+                Fødselsplakat med bilde 30x40 cm{" "}
+              </div>
+            }
+            price4={
+              <div className="ProductPriceSection__Price">Kr. 1050,-</div>
+            }
+            priceText5={false}
+            price5={false}
+          />
+        </div>
+      </div>
+    </div>
+  );
   const printablesProduct = (
     <div>
       {productBackArrow}
@@ -1743,27 +1879,39 @@ export function PricesServices() {
               Helhetlig pakke med trykksaker til bryllup
             </div>
           </div>
-          <div className="Prices__TabsContentPrintablesBox">
-            <div className="Prices__TabsContentTextPrintablesBox">
-              <p className="Prices__TabsContentTextPrintables">
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={PrintablesImg}
+            imgAlt="Takkekort fra et brudepar"
+            text={
+              <div className="ProductPriceSection__Text">
                 Jeg designer gjerne en helhetlig pakke med trykksaker til deres
                 store dag, enten det er jubileum, bryllup eller noe annet! De
                 mest vanlige pakkene inkluderer invitasjoner, takkekort, menyer
                 og bordkort.
-              </p>
-              <p className="Prices__TabsContentTextPrintables">
+                <br />
                 Priser varierer utifra hva dere ønsker i deres pakke, hvor mange
                 dere ønsker av hver og om dere ønsker det trykket på et spesielt
                 materiale. Jeg kan hjelpe dere med kun design, eller jeg kan
                 levere en komplett pakke med design og ferdig trykkede
                 produkter.
-              </p>
-              <p className="Prices__TabsContentTextPrintables">
+                <br />
                 Ta kontakt i dag for en uforpliktende prat for å avdekke deres
                 ønsker, og eventuell pris.
-              </p>
-            </div>
-          </div>
+              </div>
+            }
+            priceText1={false}
+            price1={false}
+            priceText2={false}
+            price2={false}
+            priceText3={false}
+            price3={false}
+            priceText4={false}
+            price4={false}
+            priceText5={false}
+            price5={false}
+          />
         </div>
       </div>
     </div>
@@ -1822,6 +1970,10 @@ export function PricesServices() {
                 return albumProduct;
               case "digitalCopies":
                 return digitalCopiesProduct;
+              case "cards":
+                return cardsProduct;
+              case "birthPoster":
+                return birthPosterProduct;
               case "printables":
                 return printablesProduct;
               default:

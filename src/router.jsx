@@ -26,6 +26,8 @@ import PricesRoute from "./Routes/PricesServices/Route";
 import { PricesProducts } from "./Routes/Wedding";
 import PricesProductsRoute from "./Routes/Wedding/Route";
 import { Root } from "./Routes/Root";
+import BusinessPricesRoute from "./Routes/BusinessPrices/Route";
+import { BusinessPrices } from "./Routes/BusinessPrices";
 
 export const router = createBrowserRouter([
   {
@@ -62,6 +64,7 @@ export const router = createBrowserRouter([
           { path: PricesRoute, element: <PricesServices /> },
           { path: PricesProductsRoute, element: <PricesProducts /> },
           { path: DiscountsRoute, element: <Discounts /> },
+          { path: BusinessPricesRoute, element: <BusinessPrices /> },
         ],
       },
     ],

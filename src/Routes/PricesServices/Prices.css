@@ -81,6 +81,9 @@
 .color6 {
   background-color: var(--light-pink);
 }
+.color7 {
+  background-color: var(--lightblue);
+}
 .btn:hover .backdrop {
   width: 100%;
   clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
