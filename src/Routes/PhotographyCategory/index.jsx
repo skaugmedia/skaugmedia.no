@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import ImageGallery from "react-image-gallery";
 import PhotoAlbum from "react-photo-album";
 import { NavLink, useLoaderData } from "react-router-dom";
-import PhotographyHeading from "../../Components/Headings/FotografiHeading";
+import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { useNoIndex } from "../../Hooks/useNoIndex";
@@ -33,7 +33,7 @@ export function PhotographyCategory() {
 
   return (
     <PageSection>
-      <PhotographyHeading>{category.title}</PhotographyHeading>
+      <DesignHeading>{category.title}</DesignHeading>
       <div className={classes.description}>
         <p className={classes.bodyText}>{category.body}</p>
         <div className={classes.listing}>

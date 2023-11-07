@@ -12,6 +12,7 @@ import { ActionButton } from "../../Components/ActionButton";
 import ContactRoute from "/src/Routes/Contact/Route";
 import { NavLink } from "react-router-dom";
 import DiscountHeaderImg from "../../Images/Home/discount.png";
+import DiscountRoute from "/src/Routes/Discounts/Route";
 
 import "./Home.css";
 import pageName from "./PageName";
@@ -103,7 +104,7 @@ export function Home() {
               <br />
               Det er begrenset med kapasitet, så book tidlig!
             </div>
-            <ActionButton to={ContactRoute}>Les mer her</ActionButton>
+            <ActionButton to={DiscountRoute}>Les mer her</ActionButton>
           </div>
           <img
             className="free-pregnancy-img"

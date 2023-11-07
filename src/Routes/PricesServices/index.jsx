@@ -1328,7 +1328,7 @@ export function PricesServices() {
           <div className="backdrop color5"></div>
           <div className="text">
             <div className="Prices__ButtonText">Takkekort</div>
-            <div className="Prices__ButtonSubText">fra kr. 750,-</div>
+            <div className="Prices__ButtonSubText">fra kr. 760,-</div>
           </div>
         </button>
         <button className="btn" onClick={() => setProductState("birthPoster")}>
@@ -1674,7 +1674,7 @@ export function PricesServices() {
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 3600,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2500,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
@@ -1682,7 +1682,7 @@ export function PricesServices() {
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 5500,-</div>
+              <div className="ProductPriceSection__Price">Kr. 3650,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
@@ -1690,7 +1690,7 @@ export function PricesServices() {
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 6800,-</div>
+              <div className="ProductPriceSection__Price">Kr. 4975,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -1698,11 +1698,11 @@ export function PricesServices() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 7700,-</div>
+              <div className="ProductPriceSection__Price">Kr. 6750,-</div>
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
-                Enkeltfiler i tillegg til pakke
+                Digital bildefil per stk.
               </div>
             }
             price5={<div className="ProductPriceSection__Price">Kr. 650,-</div>}
