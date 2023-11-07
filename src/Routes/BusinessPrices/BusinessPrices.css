@@ -143,8 +143,9 @@
 }
 
 .BusinessPrices__ContentHeader {
-  font-weight: 500;
+  font-weight: 300;
   text-transform: uppercase;
+  font-size: 1.3em;
 }
 
 .BusinessPrices__Price {
@@ -277,4 +278,98 @@
 
 .BusinessPrices__PackageBigBoxDivider {
   width: 30%;
+}
+
+.BusinessPrices__ContentBoxList {
+  margin-top: 50px;
+}
+.BusinessPrices__ContentElements {
+  margin-bottom: 15px;
+ font-weight: 400;
+ font-family: nunito;
+
+}
+.BusinessPrices__ContentSubHeader {
+  font-weight: 500;
+  text-transform: uppercase;
+  
+}
+
+.BusinessPrices__ContentElementsText {
+  font-family: nunito;
+  margin-top: 0;
+
+}
+
+.BusinessPrices__ComparisonTable {
+  --gap: 10px;
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.BusinessPrices__ComparisonTable--Shown {
+  display: table;
+}
+
+.BusinessPrices__ComparisonTableHeader {
+  display: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.BusinessPrices__ComparisonTableHeader--Shown {
+  display: initial;
+}
+.BusinessPrices__ComparisonTable th {
+  text-align: left;
+  font-weight: 300;
+  font-family: nunito;
+}
+
+.BusinessPrices__PackageCompareButton {
+  background-color: var(--blue);
+  z-index: 2;
+  color: black;
+  grid-area: link;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border-color: transparent;
+  font-family: oswald;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.BusinessPrices__ComparisonTable tr:not(:first-child) td:not(:first-child) {
+  font-family: nunito;
+  font-size: 0.9em;
+}
+.BusinessPrices__ComparisonTable td {
+  text-align: center;
+}
+.BusinessPrices__ComparisonTable tr {
+  border-bottom: 1px solid black;
+}
+
+.BusinessPrices__ComparisonTable tr:first-child td {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.BusinessPrices__ComparisonTable th:not(:last-child),
+.BusinessPrices__ComparisonTable td:not(:last-child) {
+  padding-right: var(--gap);
+}
+.BusinessPrices__ComparsionTable th,
+.BusinessPrices__ComparisonTable td {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
