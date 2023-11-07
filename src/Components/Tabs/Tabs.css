@@ -1,6 +1,5 @@
 .Tabs {
   --background-color: #ddd;
-  --border-color: var(--dark-orange);
 }
 
 .Tabs__Bar {
@@ -9,31 +8,25 @@
 }
 
 .Tabs__Tab {
-  cursor: pointer;
+  background-color: #eee;
+  border-radius: 4px 4px 0 0;
   border: none;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  color: black;
-  text-transform: uppercase;
+  color: #444;
+  cursor: pointer;
   font-family: oswald;
   font-weight: 500;
-  z-index: 2;
-  padding: 4px;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 4px 8px;
+  text-transform: uppercase;
 }
 
 .Tabs__Tab--Active {
-  border-color: var(--border-color);
-  border-bottom-width: 0;
   background-color: var(--background-color);
+  color: #000;
 }
 
 .Tabs__Content {
-  margin-top: -1px;
-  z-index: 1;
-  border: 1px solid var(--border-color);
   border-radius: 4px;
   background-color: #ddd;
 }

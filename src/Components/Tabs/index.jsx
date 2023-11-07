@@ -1,13 +1,6 @@
 import classNames from "classnames";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import "./Tabs.css";
-
-const tabs = [
-  {
-    title: "Nyfødt",
-    content: <div></div>,
-  },
-];
 
 export const Tabs = ({
   outerClassName,
