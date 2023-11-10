@@ -5,6 +5,7 @@
   text-align: left;
   margin-top: -10px;
 }
+
 .Wedding__TopContentSubHeader {
   font-size: 1.5em;
   margin-top: -5px;
@@ -83,6 +84,7 @@
   background-color: #cbcbcb;
   width: 33%;
 }
+
 .Wedding__PackageBox3 {
   background-color: #ddd;
   width: 33%;
@@ -170,15 +172,16 @@
 
 .Wedding__PackageBigBoxImgSection {
   width: 50%;
-}
-
-.Wedding__PackageBigBoxImg {
-  width: 100%;
   height: 100%;
   display: flex;
   flex-flow: row;
   margin-left: auto;
   margin-right: auto;
+}
+
+.Wedding__PackageBigBoxImg {
+  width: 100%;
+  object-fit: cover;
 }
 
 .Wedding__PackageBigBoxText {
@@ -265,9 +268,11 @@
   text-transform: uppercase;
   font-weight: 500;
 }
+
 .Wedding__ComparisonTableHeader--Shown {
   display: initial;
 }
+
 .Wedding__ComparisonTable th {
   text-align: left;
   font-weight: 300;
@@ -278,9 +283,11 @@
   font-family: nunito;
   font-size: 0.9em;
 }
+
 .Wedding__ComparisonTable td {
   text-align: center;
 }
+
 .Wedding__ComparisonTable tr {
   border-bottom: 1px solid black;
 }
@@ -294,6 +301,7 @@
 .Wedding__ComparisonTable td:not(:last-child) {
   padding-right: var(--gap);
 }
+
 .Wedding__ComparsionTable th,
 .Wedding__ComparisonTable td {
   padding-top: 5px;
@@ -309,9 +317,11 @@
   .Wedding__PackageBox1 {
     width: 100%;
   }
+
   .Wedding__PackageBox2 {
     width: 100%;
   }
+
   .Wedding__PackageBox3 {
     width: 100%;
   }

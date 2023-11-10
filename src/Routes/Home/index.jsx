@@ -13,6 +13,7 @@ import ContactRoute from "/src/Routes/Contact/Route";
 import { NavLink } from "react-router-dom";
 import DiscountHeaderImg from "../../Images/Home/discount.png";
 import DiscountRoute from "/src/Routes/Discounts/Route";
+import Button from "../../Components/Button";
 
 import "./Home.css";
 import pageName from "./PageName";
@@ -72,6 +73,14 @@ export function Home() {
             src={quotepng}
             alt="Quote icon"
           ></img>
+        </div>
+      </PageSection>
+      <PageSection>
+        <div className="Home__IncludedSection">
+          <div className="Home__IncludesText">
+            Alle fotograferinger inkluderer 3 digitale bildefiler</div>
+          <div className="Home__IncludesSubtext">(med unntak av bryllupsfotografering, mitt første år-fotografering og gratis gravidfotografering)
+          </div>
         </div>
       </PageSection>
       <PageSection outerClassName="works-outer" innerClassName="works">
@@ -164,6 +173,29 @@ export function Home() {
             </div>
           </div>
         </div> */}
+      </PageSection>
+
+      <PageSection>
+        <div className="Home__NewsletterSection">
+          <div className="Home__NewsletterHeader">
+            Nyhetsbrev
+          </div>
+          <div className="Home__NewsletterText">
+            Meld deg på for informasjon om fotograferinger, kampanjer og konkurranser.
+          </div>
+          <div className="Home__NewsletterSignupBox"><form>
+            <label className="Home__NewsletterBoxHeader" for="Email">
+              E-postadresse
+            </label>
+            <input className="Home__NewsletterEmail" placeholder="ola.nordmann@example.com" name="Email">
+            </input></form>
+
+            <Button className="Home__NewsletterButton" type="submit">
+              Meld meg på
+            </Button></div>
+
+
+        </div>
       </PageSection>
 
       <PageSection>
