@@ -130,4 +130,20 @@ export const discounts = [
     validFrom: localTime("26-08-2023 00:00"),
     validTo: localTime("21-10-2023 00:00"),
   },
+  {
+    title: "BLACK WEEK",
+    price: "Få 20X30 cm bildekopi og gavekort på kr. 500,- på kjøpet",
+    description: (
+      <>
+        ved booking av ordinær fotografering med dato på nyåret, får du med en
+        bildekopi i størrelsen 20x30 cm.
+        <br />
+        Tilbudet gjelder til og med 26.11.23 *Gjelder ikke bedrifter eller
+        bryllupsfotografering
+      </>
+    ),
+
+    validFrom: localTime("15-11-2023 00:00"),
+    validTo: localTime("27-11-2023 00:00"),
+  },
 ];
