@@ -1,5 +1,7 @@
 .Tabs {
   --background-color: #ddd;
+  --active-color: #cbcbcb;
+  --inactive-color: #ddd;
 }
 
 .Tabs__Bar {
@@ -8,7 +10,7 @@
 }
 
 .Tabs__Tab {
-  background-color: #eee;
+  background-color: var(--inactive-color);
   border-radius: 4px 4px 0 0;
   border: none;
   color: #444;
@@ -22,13 +24,13 @@
 }
 
 .Tabs__Tab--Active {
-  background-color: var(--background-color);
+  background-color: var(--active-color);
   color: #000;
 }
 
 .Tabs__Content {
   border-radius: 4px;
-  background-color: #ddd;
+  background-color: var(--background-color);
 }
 
 .Tabs__Content--FirstActive {
