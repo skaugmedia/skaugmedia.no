@@ -1,55 +1,48 @@
-import { useEffect, useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
-import { Collapsible } from "../../Components/Collapsible";
-import DesignHeading from "../../Components/Headings/DesignHeading";
-import { PageSection } from "../../Components/PageSection";
-import { PriceSection } from "../../Components/PriceSection";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useRef, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import DesignHeading from "../../Components/Headings/DesignHeading";
+import { IncludesList } from "../../Components/IncludesList";
+import { PageSection } from "../../Components/PageSection";
 import { ProductPriceSection } from "../../Components/ProductPriceSection";
-import { Underline } from "../../Components/Underline";
-import { WeddingSection } from "../../Components/WeddingSection";
-import { priceList } from "../../Data/priceList";
+import { Tabs } from "../../Components/Tabs";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { isWithinRange, localTime } from "../../utils";
-import { IncludesList } from "../../Components/IncludesList";
+import BusinessPricesRoute from "../BusinessPrices/Route";
+import PricesProductsRoute from "../Wedding/Route";
 import * as ids from "./Ids";
 import pageName from "./PageName";
-import PricesProductsRoute from "../Wedding/Route";
 import "./Prices.css";
 import * as minishoot from "./minishoots";
+import AlbumImg from "/src/Images/Prices/album.jpg";
+import AnnetDesignImg from "/src/Images/Prices/annet_design.jpg";
 import BabyImg from "/src/Images/Prices/babyphotography.jpg";
+import BirthPosterImg from "/src/Images/Prices/birthposter.jpg";
+import BrandingImg from "/src/Images/Prices/branding.jpg";
+import BusinessPortraitImg from "/src/Images/Prices/business_portrait_photography.jpg";
+import WallPhotosImg from "/src/Images/Prices/canvas.jpg";
 import ConfirmationImg from "/src/Images/Prices/confirmation_photography.jpg";
 import CoupleImg from "/src/Images/Prices/couple_photography.jpg";
-import FamilyImg from "/src/Images/Prices/family_photography.jpg";
-import Headshot1Img from "/src/Images/Prices/headshot_1.jpg";
-import NewbornImg from "/src/Images/Prices/newborn_photography.jpg";
-import PregnantImg from "/src/Images/Prices/pregnancy_photography.jpg";
-import WeddingImg from "/src/Images/Prices/wedding.jpg";
-import ServicesImg from "/src/Images/Prices/prices.jpg";
-import PhotoProductImg from "/src/Images/Prices/photocopy.jpg";
-import OneYearImg from "/src/Images/Prices/oneyear_photography.jpg";
-import PortraitImg from "/src/Images/Prices/headshot_2.jpg";
-import SiblingImg from "/src/Images/Prices/sibling_photography.jpg";
-import MommyAndMeImg from "/src/Images/Prices/mommyandme_photography.jpg";
-import FoodImg from "/src/Images/Prices/food_photography.jpg";
-import ProductImg from "/src/Images/Prices/product_photography.jpg";
-import BusinessPortraitImg from "/src/Images/Prices/business_portrait_photography.jpg";
-import KindergardenImg from "/src/Images/Prices/kindergarten_photography.jpg";
-import BrandingImg from "/src/Images/Prices/branding.jpg";
-import UXDesignImg from "/src/Images/Prices/uxdesign.jpg";
-import LogoDesignImg from "/src/Images/Prices/logo_design.jpg";
-import AnnetDesignImg from "/src/Images/Prices/annet_design.jpg";
-import DigitalCopyImg from "/src/Images/Prices/digital_files.jpg";
-import WallPhotosImg from "/src/Images/Prices/canvas.jpg";
-import AlbumImg from "/src/Images/Prices/album.jpg";
-import FirstYearImg from "/src/Images/Prices/first_year.jpg";
 import PrintablesImg from "/src/Images/Prices/designpack.jpg";
+import DigitalCopyImg from "/src/Images/Prices/digital_files.jpg";
+import FamilyImg from "/src/Images/Prices/family_photography.jpg";
+import FirstYearImg from "/src/Images/Prices/first_year.jpg";
+import FoodImg from "/src/Images/Prices/food_photography.jpg";
+import Headshot1Img from "/src/Images/Prices/headshot_1.jpg";
+import PortraitImg from "/src/Images/Prices/headshot_2.jpg";
+import KindergardenImg from "/src/Images/Prices/kindergarten_photography.jpg";
+import LogoDesignImg from "/src/Images/Prices/logo_design.jpg";
+import MommyAndMeImg from "/src/Images/Prices/mommyandme_photography.jpg";
+import NewbornImg from "/src/Images/Prices/newborn_photography.jpg";
+import OneYearImg from "/src/Images/Prices/oneyear_photography.jpg";
+import PhotoProductImg from "/src/Images/Prices/photocopy.jpg";
+import PregnantImg from "/src/Images/Prices/pregnancy_photography.jpg";
+import ServicesImg from "/src/Images/Prices/prices.jpg";
+import ProductImg from "/src/Images/Prices/product_photography.jpg";
+import SiblingImg from "/src/Images/Prices/sibling_photography.jpg";
 import CardsImg from "/src/Images/Prices/takkekort.jpg";
-import BirthPosterImg from "/src/Images/Prices/birthposter.jpg";
-import { Tabs } from "../../Components/Tabs";
-import BusinessPricesRoute from "../BusinessPrices/Route";
+import UXDesignImg from "/src/Images/Prices/uxdesign.jpg";
 
 export function PricesServices() {
   useDocumentTitle(pageName);
@@ -1918,124 +1911,124 @@ export function PricesServices() {
   );
 
   return (
-    <PageSection innerClassName="prices">
-      <div className="prices-content">
+    <div className="prices-content">
+      <PageSection innerClassName="prices">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
-
-        <PageSection innerClassName="Prices__Section">
-          <div className="Prices__Header">Gavekort</div>
-          <div className="Prices__Text">
-            Hos meg kan du kjøpe gaven til den som har alt- nemlig et gavekort!
-            Perfekt for den kommende mammaen, besteforeldre som ønsker bilder av
-            hele familien og alle de andre som ønsker å stoppe tiden! Gavekortet
-            gjelder ikke for design-tjenestene mine.
-            <div className="Prices__TextAdditional">
-              *Minstepris ved kjøp av gavekort er kr. 100,-
-            </div>
-            <div className="Prices__PriceBox">
-              <div className="Prices__PriceText">Valgfri sum</div>
-            </div>
+      </PageSection>
+      <PageSection innerClassName="Prices__Section">
+        <div className="Prices__Header">Gavekort</div>
+        <div className="Prices__Text">
+          Hos meg kan du kjøpe gaven til den som har alt- nemlig et gavekort!
+          Perfekt for den kommende mammaen, besteforeldre som ønsker bilder av
+          hele familien og alle de andre som ønsker å stoppe tiden! Gavekortet
+          gjelder ikke for design-tjenestene mine.
+          <div className="Prices__TextAdditional">
+            *Minstepris ved kjøp av gavekort er kr. 100,-
           </div>
-        </PageSection>
-
-        <PageSection>
-          <div className="Prices__Header">Fotografering og design</div>
-          {(() => {
-            switch (serviceState) {
-              case "child":
-                return childServices;
-              case "portrait":
-                return portraitServices;
-              case "family":
-                return familyServices;
-              case "businesses":
-                return businessServices;
-              case "design":
-                return designServices;
-              default:
-                return servicesMenu;
-            }
-          })()}
-        </PageSection>
-
-        <PageSection>
-          <div className="Prices__Header">Bildeprodukter</div>
-          {(() => {
-            switch (productState) {
-              case "photocopies":
-                return photocopiesProduct;
-              case "wallphotos":
-                return wallPhotoProduct;
-              case "album":
-                return albumProduct;
-              case "digitalCopies":
-                return digitalCopiesProduct;
-              case "cards":
-                return cardsProduct;
-              case "birthPoster":
-                return birthPosterProduct;
-              case "printables":
-                return printablesProduct;
-              default:
-                return productMenu;
-            }
-          })()}
-        </PageSection>
-        <br />
-
-        <div className="Prices__TopSection">
-          <div className="Prices__TextIntroHeader">
-            Inkludert i alle mine fotograferinger:
-          </div>
-
-          <IncludesList
-            className="Prices__TextIntroIncludes"
-            items={[
-              "Inkludert i alle mine fotograferinger er et digitalt bildegalleri hvor man selv kan velge bilder fra. (unntak ved bryllupsfotografering)",
-              "I alle mine fotograferinger er det 3 valgfrie digitale bildefiler inkludert (unntak ved Mitt første år-fotografering, bryllupsfotografering og gratis gravidfotografering)",
-              "Mulighet for å booke time hos makeup-artist LashBrowser før fotograferingen",
-              "Opptil 1 time fotografering (unntak ved bryllup, nyfødt og minifotografering)",
-              "Du vil motta en mail med informasjon om din fotografering på forhånd",
-            ]}
-          />
-
-          <div className="Prices__TextIntroHeader">
-            Ønsker du å booke en minifotografering?
-          </div>
-          <div className="Prices__TextIntro">
-            Du kan velge å booke en valgfri minifotografering, inkludert 3
-            digitale bildefiler. En slik minifotografering gjelder ikke for
-            nyfødfotografering hjemme hos dere, eller bryllupsfotografering. En
-            minifotografering har en fast pris på kr. 1400,- (Unntak ved
-            spesialtilbud)
-          </div>
-          <div className="Prices__TextIntroHeader">
-            Ønsker du fotografering etter kl. 16.00 på en hverdag?
-          </div>
-          <div className="Prices__TextIntro">
-            Etter kl. 16.00 på en hverdag vil det alltid tilkomme et tillegg på
-            kr. 400,- for alle fotograferinger.
-          </div>
-
-          <div className="Prices__TextIntroHeader">
-            Ønsker du fotografering i en helg eller på en helligdag?
-          </div>
-          <div className="Prices__TextIntro">
-            Alle helger og helligdager vil det tilkomme et helgetillegg på kr.
-            700,- (unntak ved bryllupsfotografering og ved fastsatte
-            minifotograferinger med dato i helg)
-          </div>
-          <div className="Prices__TextIntroHeader">
-            Ønsker du at jeg skal komme til deg?{" "}
-          </div>
-          <div className="Prices__TextIntro">
-            Jeg kommer gjerne til deg, men all kjøring utover 30km fra Jessheim,
-            vil faktureres med kr. 10,- per km. I tillegg vil betalt parkering
-            under fotograferingen faktureres i sin helhet.{" "}
+          <div className="Prices__PriceBox">
+            <div className="Prices__PriceText">Valgfri sum</div>
           </div>
         </div>
+      </PageSection>
 
-        {/* <PageSection>
+      <PageSection>
+        <div className="Prices__Header">Fotografering og design</div>
+        {(() => {
+          switch (serviceState) {
+            case "child":
+              return childServices;
+            case "portrait":
+              return portraitServices;
+            case "family":
+              return familyServices;
+            case "businesses":
+              return businessServices;
+            case "design":
+              return designServices;
+            default:
+              return servicesMenu;
+          }
+        })()}
+      </PageSection>
+
+      <PageSection>
+        <div className="Prices__Header">Bildeprodukter</div>
+        {(() => {
+          switch (productState) {
+            case "photocopies":
+              return photocopiesProduct;
+            case "wallphotos":
+              return wallPhotoProduct;
+            case "album":
+              return albumProduct;
+            case "digitalCopies":
+              return digitalCopiesProduct;
+            case "cards":
+              return cardsProduct;
+            case "birthPoster":
+              return birthPosterProduct;
+            case "printables":
+              return printablesProduct;
+            default:
+              return productMenu;
+          }
+        })()}
+      </PageSection>
+      <br />
+
+      <div className="Prices__TopSection">
+        <div className="Prices__TextIntroHeader">
+          Inkludert i alle mine fotograferinger:
+        </div>
+
+        <IncludesList
+          className="Prices__TextIntroIncludes"
+          items={[
+            "Inkludert i alle mine fotograferinger er et digitalt bildegalleri hvor man selv kan velge bilder fra. (unntak ved bryllupsfotografering)",
+            "I alle mine fotograferinger er det 3 valgfrie digitale bildefiler inkludert (unntak ved Mitt første år-fotografering, bryllupsfotografering og gratis gravidfotografering)",
+            "Mulighet for å booke time hos makeup-artist LashBrowser før fotograferingen",
+            "Opptil 1 time fotografering (unntak ved bryllup, nyfødt og minifotografering)",
+            "Du vil motta en mail med informasjon om din fotografering på forhånd",
+          ]}
+        />
+
+        <div className="Prices__TextIntroHeader">
+          Ønsker du å booke en minifotografering?
+        </div>
+        <div className="Prices__TextIntro">
+          Du kan velge å booke en valgfri minifotografering, inkludert 3
+          digitale bildefiler. En slik minifotografering gjelder ikke for
+          nyfødfotografering hjemme hos dere, eller bryllupsfotografering. En
+          minifotografering har en fast pris på kr. 1400,- (Unntak ved
+          spesialtilbud)
+        </div>
+        <div className="Prices__TextIntroHeader">
+          Ønsker du fotografering etter kl. 16.00 på en hverdag?
+        </div>
+        <div className="Prices__TextIntro">
+          Etter kl. 16.00 på en hverdag vil det alltid tilkomme et tillegg på
+          kr. 400,- for alle fotograferinger.
+        </div>
+
+        <div className="Prices__TextIntroHeader">
+          Ønsker du fotografering i en helg eller på en helligdag?
+        </div>
+        <div className="Prices__TextIntro">
+          Alle helger og helligdager vil det tilkomme et helgetillegg på kr.
+          700,- (unntak ved bryllupsfotografering og ved fastsatte
+          minifotograferinger med dato i helg)
+        </div>
+        <div className="Prices__TextIntroHeader">
+          Ønsker du at jeg skal komme til deg?{" "}
+        </div>
+        <div className="Prices__TextIntro">
+          Jeg kommer gjerne til deg, men all kjøring utover 30km fra Jessheim,
+          vil faktureres med kr. 10,- per km. I tillegg vil betalt parkering
+          under fotograferingen faktureres i sin helhet.{" "}
+        </div>
+      </div>
+
+      {/* <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
             innerClassName="Prices__Inner"
@@ -2295,7 +2288,6 @@ export function PricesServices() {
             </div>
           </div>
         </PageSection> */}
-      </div>
-    </PageSection>
+    </div>
   );
 }
