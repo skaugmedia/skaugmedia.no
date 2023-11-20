@@ -74,4 +74,15 @@
     display: flex;
     flex-flow: column;
   }
+  .DiscountAd__Img {
+    width: 100%;
+  }
+
+  .DiscountAd__Textbox {
+    width: 100%;
+  }
+
+  .FixedDiscount {
+    width: 100%;
+  }
 }

@@ -25,4 +25,8 @@
     display: flex;
     flex-flow:;
   }
+
+  .Discounts__RegularDiscountsRow {
+    flex-flow: column;
+  }
 }

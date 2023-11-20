@@ -280,7 +280,6 @@
 .Home__IncludesSubtext {
   font-weight: 300;
   text-align: center;
-
 }
 
 .Home__WorksTitle {
@@ -655,7 +654,7 @@
     padding-bottom: 50px;
   }
 
-  .works-forside>* {
+  .works-forside > * {
     place-self: stretch;
   }
 
@@ -667,6 +666,18 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Home__IncludesText {
+    font-size: 1.3em;
+  }
+
+  .Home__IncludesSubText {
+    font-size: 0.9em;
+  }
+
+  .free-pregnancy-row {
+    margin-top: -50px;
+  }
+
   .Home__ImageSectionImage {
     display: flex;
     flex-flow: column;
@@ -684,6 +695,7 @@
 
   .Home__Discount_NewbornSquare {
     width: 100%;
+    margin-top: 10px;
   }
 
   .Home__Discount_NewbornHeader {
@@ -703,6 +715,8 @@
 
   .Home__Discount_OneYearSquare {
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   .Home__Discount_OneYearHeader {
@@ -771,6 +785,10 @@
     width: 100%;
   }
 
+  .free-pregnancy-header {
+    margin-top: -70px;
+  }
+
   .free-pregnancy-sub-header {
     font-size: 1.1em;
   }
@@ -783,12 +801,14 @@
     display: flex;
     flex-flow: column;
     width: 100%;
+    margin-top: -20px;
   }
 
   .newborn-discount-img {
     display: flex;
     flex-flow: column;
     width: 100%;
+    margin-top: 40px;
   }
 
   .newborn-discount-row {
@@ -935,7 +955,7 @@
     transform: rotate(calc(0deg - var(--rotation)));
   }
 
-  .intro .image-triangle>* {
+  .intro .image-triangle > * {
     transform: rotate(var(--rotation));
   }
 }

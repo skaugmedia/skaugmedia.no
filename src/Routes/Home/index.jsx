@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import { ActionButton } from "../../Components/ActionButton";
 import { ImageSection } from "../../Components/ImageSection";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
@@ -8,12 +9,8 @@ import freePregnancyShoot from "../../Images/free_pregnancy_shoot.jpg";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
 import * as presentables from "/src/Data/presentables";
-import { ActionButton } from "../../Components/ActionButton";
 import ContactRoute from "/src/Routes/Contact/Route";
-import { NavLink } from "react-router-dom";
-import DiscountHeaderImg from "../../Images/Home/discount.png";
 import DiscountRoute from "/src/Routes/Discounts/Route";
-import Button from "../../Components/Button";
 
 import "./Home.css";
 import pageName from "./PageName";
@@ -24,7 +21,7 @@ export function Home() {
 
   return (
     <>
-      <div
+      {/* <div
         className="Home__DiscountHeader"
         style={{ backgroundImage: `url(${DiscountHeaderImg})` }}
       >
@@ -47,7 +44,7 @@ export function Home() {
             </NavLink>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div
         className="top-cover-img"
@@ -78,8 +75,11 @@ export function Home() {
       <PageSection>
         <div className="Home__IncludedSection">
           <div className="Home__IncludesText">
-            Alle fotograferinger inkluderer 3 digitale bildefiler</div>
-          <div className="Home__IncludesSubtext">(med unntak av bryllupsfotografering, mitt første år-fotografering og gratis gravidfotografering)
+            Alle fotograferinger inkluderer 3 digitale bildefiler
+          </div>
+          <div className="Home__IncludesSubtext">
+            (med unntak av bryllupsfotografering, mitt første år-fotografering
+            og gratis gravidfotografering)
           </div>
         </div>
       </PageSection>
@@ -175,29 +175,32 @@ export function Home() {
         </div> */}
       </PageSection>
 
-      <PageSection>
+      {/* <PageSection>
         <div className="Home__NewsletterSection">
-          <div className="Home__NewsletterHeader">
-            Nyhetsbrev
-          </div>
+          <div className="Home__NewsletterHeader">Nyhetsbrev</div>
           <div className="Home__NewsletterText">
-            Meld deg på for informasjon om fotograferinger, kampanjer og konkurranser.
+            Meld deg på for informasjon om fotograferinger, kampanjer og
+            konkurranser.
           </div>
-          <div className="Home__NewsletterSignupBox"><form>
-            <label className="Home__NewsletterBoxHeader" for="Email">
-              E-postadresse
-            </label>
-            <input className="Home__NewsletterEmail" placeholder="ola.nordmann@example.com" name="Email">
-            </input></form>
+          <div className="Home__NewsletterSignupBox">
+            <form>
+              <label className="Home__NewsletterBoxHeader" for="Email">
+                E-postadresse
+              </label>
+              <input
+                className="Home__NewsletterEmail"
+                placeholder="ola.nordmann@example.com"
+                name="Email"
+              ></input>
+            </form>
 
             <Button className="Home__NewsletterButton" type="submit">
               Meld meg på
-            </Button></div>
-
-
+            </Button>
+          </div>
         </div>
       </PageSection>
-
+ */}
       <PageSection>
         <h2 className="Home__Photography">Fotografi</h2>
         <ImageSection

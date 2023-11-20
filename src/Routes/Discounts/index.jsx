@@ -1,14 +1,13 @@
 import { DiscountAd } from "../../Components/DiscountAd";
+import { FixedDiscount } from "../../Components/FixedDiscount";
 import DesignHeading from "../../Components/Headings/DesignHeading";
-import { PageSection } from "../../Components/PageSection";
 import { IncludesList } from "../../Components/IncludesList";
+import { PageSection } from "../../Components/PageSection";
 import "./Discounts.css";
 import OneYear from "/src/Images/1-year-photo.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
-import ChristmasMinishoot from "/src/Images/christmas_minishoot.jpg";
 import PregnancyFree from "/src/Images/free_pregnancy_shoot_offers.jpg";
 import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
-import { FixedDiscount } from "../../Components/FixedDiscount";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function Discounts() {
@@ -58,7 +57,7 @@ export function Discounts() {
             text={
               <>
                 <div className="Discounts__FreePregnancyNextDate">
-                  Neste ledige dato: 30.11.2023
+                  Neste ledige dato: 05.01.2024
                 </div>
                 <div className="Discounts__FreePregnancyText">
                   <p>

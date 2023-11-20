@@ -58,3 +58,15 @@
   background-color: var(--dark-pink);
   color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+  .Contact__RowBox {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .Contact__Img {
+    display: none;
+  }
+}
