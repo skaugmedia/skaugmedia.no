@@ -1974,60 +1974,60 @@ export function PricesServices() {
           }
         })()}
       </PageSection>
-      <br />
 
-      <div className="Prices__TopSection">
-        <div className="Prices__TextIntroHeader">
-          Inkludert i alle mine fotograferinger:
-        </div>
+      <PageSection>
+        <div className="Prices__TopSection">
+          <div className="Prices__TextIntroHeader">
+            Inkludert i alle mine fotograferinger:
+          </div>
 
-        <IncludesList
-          className="Prices__TextIntroIncludes"
-          items={[
-            "Inkludert i alle mine fotograferinger er et digitalt bildegalleri hvor man selv kan velge bilder fra. (unntak ved bryllupsfotografering)",
-            "I alle mine fotograferinger er det 3 valgfrie digitale bildefiler inkludert (unntak ved Mitt første år-fotografering, bryllupsfotografering og gratis gravidfotografering)",
-            "Mulighet for å booke time hos makeup-artist LashBrowser før fotograferingen",
-            "Opptil 1 time fotografering (unntak ved bryllup, nyfødt og minifotografering)",
-            "Du vil motta en mail med informasjon om din fotografering på forhånd",
-          ]}
-        />
+          <IncludesList
+            className="Prices__TextIntroIncludes"
+            items={[
+              "Inkludert i alle mine fotograferinger er et digitalt bildegalleri hvor man selv kan velge bilder fra. (unntak ved bryllupsfotografering)",
+              "I alle mine fotograferinger er det 3 valgfrie digitale bildefiler inkludert (unntak ved Mitt første år-fotografering, bryllupsfotografering og gratis gravidfotografering)",
+              "Mulighet for å booke time hos makeup-artist LashBrowser før fotograferingen",
+              "Opptil 1 time fotografering (unntak ved bryllup, nyfødt og minifotografering)",
+              "Du vil motta en mail med informasjon om din fotografering på forhånd",
+            ]}
+          />
 
-        <div className="Prices__TextIntroHeader">
-          Ønsker du å booke en minifotografering?
-        </div>
-        <div className="Prices__TextIntro">
-          Du kan velge å booke en valgfri minifotografering, inkludert 3
-          digitale bildefiler. En slik minifotografering gjelder ikke for
-          nyfødfotografering hjemme hos dere, eller bryllupsfotografering. En
-          minifotografering har en fast pris på kr. 1400,- (Unntak ved
-          spesialtilbud)
-        </div>
-        <div className="Prices__TextIntroHeader">
-          Ønsker du fotografering etter kl. 16.00 på en hverdag?
-        </div>
-        <div className="Prices__TextIntro">
-          Etter kl. 16.00 på en hverdag vil det alltid tilkomme et tillegg på
-          kr. 400,- for alle fotograferinger.
-        </div>
+          <div className="Prices__TextIntroHeader">
+            Ønsker du å booke en minifotografering?
+          </div>
+          <div className="Prices__TextIntro">
+            Du kan velge å booke en valgfri minifotografering, inkludert 3
+            digitale bildefiler. En slik minifotografering gjelder ikke for
+            nyfødfotografering hjemme hos dere, eller bryllupsfotografering. En
+            minifotografering har en fast pris på kr. 1400,- (Unntak ved
+            spesialtilbud)
+          </div>
+          <div className="Prices__TextIntroHeader">
+            Ønsker du fotografering etter kl. 16.00 på en hverdag?
+          </div>
+          <div className="Prices__TextIntro">
+            Etter kl. 16.00 på en hverdag vil det alltid tilkomme et tillegg på
+            kr. 400,- for alle fotograferinger.
+          </div>
 
-        <div className="Prices__TextIntroHeader">
-          Ønsker du fotografering i en helg eller på en helligdag?
+          <div className="Prices__TextIntroHeader">
+            Ønsker du fotografering i en helg eller på en helligdag?
+          </div>
+          <div className="Prices__TextIntro">
+            Alle helger og helligdager vil det tilkomme et helgetillegg på kr.
+            700,- (unntak ved bryllupsfotografering og ved fastsatte
+            minifotograferinger med dato i helg)
+          </div>
+          <div className="Prices__TextIntroHeader">
+            Ønsker du at jeg skal komme til deg?{" "}
+          </div>
+          <div className="Prices__TextIntro">
+            Jeg kommer gjerne til deg, men all kjøring utover 30km fra Jessheim,
+            vil faktureres med kr. 10,- per km. I tillegg vil betalt parkering
+            under fotograferingen faktureres i sin helhet.{" "}
+          </div>
         </div>
-        <div className="Prices__TextIntro">
-          Alle helger og helligdager vil det tilkomme et helgetillegg på kr.
-          700,- (unntak ved bryllupsfotografering og ved fastsatte
-          minifotograferinger med dato i helg)
-        </div>
-        <div className="Prices__TextIntroHeader">
-          Ønsker du at jeg skal komme til deg?{" "}
-        </div>
-        <div className="Prices__TextIntro">
-          Jeg kommer gjerne til deg, men all kjøring utover 30km fra Jessheim,
-          vil faktureres med kr. 10,- per km. I tillegg vil betalt parkering
-          under fotograferingen faktureres i sin helhet.{" "}
-        </div>
-      </div>
-
+      </PageSection>
       {/* <PageSection>
           <PriceSection
             outerClassName="Prices__Outer"
