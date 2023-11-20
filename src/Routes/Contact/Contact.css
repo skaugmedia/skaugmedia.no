@@ -60,6 +60,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Contact__FormBox {
+    width: 100%;
+  }
+
   .Contact__RowBox {
     width: 100%;
     display: inline-block;
