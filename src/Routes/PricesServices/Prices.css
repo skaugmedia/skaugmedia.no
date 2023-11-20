@@ -679,7 +679,7 @@
   }
 
   .Prices__TabsContentBox {
-    width: 85%;
+    width: 100%;
     max-width: var(--content-width);
     padding: 20px;
   }
@@ -725,8 +725,9 @@
   }
 
   .Prices__TabsContentImg {
-    width: 85%;
-    margin-top: -15px;
+    width: 100%;
+    margin: 0;
+    border-radius: 4px;
   }
 
   .Prices__ServicesImg {
@@ -765,6 +766,7 @@
     flex-flow: column;
     max-width: 100%;
     width: 100%;
+    margin-top: 20px;
   }
 
   .Prices__PriceBox {
@@ -864,5 +866,25 @@
 
   .prices-offers-next-free-date {
     font-size: 0.9em;
+  }
+
+  .ProductPriceSection__ImgSection {
+    width: 100%;
+  }
+  .ProductPriceSection__Textbox {
+    width: 100%;
+  }
+  .ProductPriceSection__ContentBox {
+    position: relative;
+  }
+  .ProductPriceSection__ContentText {
+    width: 50%;
+  }
+  .ProductPriceSection__ContentPrice {
+    text-align: right;
+    width: 50%;
+  }
+  .ProductPriceSection__Price {
+    width: auto;
   }
 }
