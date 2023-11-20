@@ -200,26 +200,5 @@ export const discounts = [
     validFrom: localTime("20-11-2023 00:00"),
     validTo: localTime("27-11-2023 00:00"),
   },
-  {
-    title: "CYBER MONDAY",
-    price: "-30% RABATT",
-    description: (
-      <>
-        på alle fotograferinger som bookes i løpet av denne dagen.
-        Fotograferingen må gjennomføres i januar, februar, mars eller april.
-        <br />
-        Før: KR. 900,-
-        <br />
-        Nå: KR. 1260,-
-        <br />
-        <br />
-        Tilbudet gjelder kun i dag
-        <br />
-        *Gjelder ikke bedrifter eller bryllupsfotografering
-      </>
-    ),
-
-    validFrom: localTime("27-11-2023 00:00"),
-    validTo: localTime("28-11-2023 00:00"),
-  },
+  
 ];
