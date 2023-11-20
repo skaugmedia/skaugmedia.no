@@ -1,21 +1,19 @@
-import HomeRoute from "/src/Routes/Home/Route";
-import { PlainLink } from "../PlainLink";
-import "./Header.css";
-import { Nav } from "../Nav";
-import { useState } from "react";
 import classNames from "classnames";
 import skaugmedia from "../../Images/skaugmedia_logo_only.png";
 import { Hamburger } from "../Hamburger";
+import { Nav } from "../Nav";
+import { PlainLink } from "../PlainLink";
+import "./Header.css";
+import HomeRoute from "/src/Routes/Home/Route";
 
-export const Header = ({ isMobile }) => {
-  const [showNav, setShowNav] = useState(false);
+export const Header = ({ isMobile, hamburgerToggled, hamburgerOnClick }) => {
   return (
     <header className="Header">
       <div className="Header__Inner">
         <Hamburger
           className={classNames("Header__Hamburger")}
-          toggled={showNav}
-          onClick={() => setShowNav(!showNav)}
+          toggled={hamburgerToggled}
+          onClick={hamburgerOnClick}
         />
 
         <Nav

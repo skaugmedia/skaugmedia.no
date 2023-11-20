@@ -14,7 +14,11 @@ export function Root() {
   return (
     <>
       <div className="Root">
-        <Header isMobile={isMobile} />
+        <Header
+          isMobile={isMobile}
+          hamburgerToggled={showNav}
+          hamburgerOnClick={() => setShowNav(!showNav)}
+        />
 
         {/* {discounts.map((discount) => (
           <DiscountBanner
