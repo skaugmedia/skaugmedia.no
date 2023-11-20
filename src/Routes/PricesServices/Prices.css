@@ -643,7 +643,8 @@
 @media only screen and (max-width: 600px) {
   .Prices__Content {
     display: flex;
-    flex-flow: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .Prices__PriceText {
@@ -741,11 +742,6 @@
     margin: 0;
     padding-top: -20px;
     padding-bottom: 10px;
-  }
-
-  .Prices__Content {
-    display: flex;
-    flex-flow: column;
   }
 
   .Prices__TextIntroIncludes {
