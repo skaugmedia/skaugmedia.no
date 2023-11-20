@@ -44,8 +44,14 @@
     display: flex;
     flex-flow: column;
     gap: 2px;
+    margin-bottom: 2px;
   }
 
   .Tabs__Tab {
+    border-radius: 4px;
+  }
+
+  .Tabs__Content {
+    border-radius: 4px;
   }
 }
