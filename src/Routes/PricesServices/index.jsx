@@ -1976,7 +1976,7 @@ export function PricesServices() {
       </PageSection>
 
       <PageSection>
-        <div className="Prices__TopSection">
+        <div className="Prices__BottomSection">
           <div className="Prices__TextIntroHeader">
             Inkludert i alle mine fotograferinger:
           </div>

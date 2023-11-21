@@ -6,6 +6,8 @@ import { PageSection } from "../../Components/PageSection";
 import "./Discounts.css";
 import OneYear from "/src/Images/1-year-photo.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
+import PregnantBabyModelcall from "/src/Images/Pregnant/preg_c_1.jpg";
+import WeddingDiscount from "/src/Images/Wedding/weddingRT_14.jpg";
 import PregnancyFree from "/src/Images/free_pregnancy_shoot_offers.jpg";
 import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
@@ -18,38 +20,62 @@ export function Discounts() {
           <DesignHeading>Tilbud</DesignHeading>
         </PageSection>
         <PageSection>
-          {/* <DiscountAd
-            outerClassName="Discounts__ChristmasDiscountAd"
-            imgSrc={ChristmasMinishoot}
-            imgAlt="En familie på fem"
-            title="Minifotografering jul"
+          <DiscountAd
+            imgSrc={WeddingDiscount}
+            imgAlt="En brud med hennes brudebukett"
+            title="30% rabatt på bryllupspakke 1 og 2"
             text={
               <>
-                <div className="Discounts__ChristmasNextDate">
-                  Neste ledige dato: 21.10.2023
-                </div>
-                <div className="Discounts__ChristmasText">
-                  Minifotografering julefotografering 21. oktober 2023. <br />
-                  <br />
-                  Dette inkluderer:
-                  <IncludesList
-                    items={[
-                      "20 minutters valgfri fotografering utendørs",
-                      "Online bildegalleri hvor du velger dine bilder",
-                      "2 stk. digitale bildefiler i høy oppløsning",
-                      "Mulighet for å kjøpe flere bilder, og bildeprodukter",
-                      "Mail med informasjon om lokasjon og tips til hva du kan ha på deg når det nærmer seg",
-                    ]}
-                  />
-                  <div className="Discounts__ChristmasTextImportant">
-                    Faktura sendes ut ved booking, og må betales før
-                    fotograferingen.
-                  </div>
+                <div className="Discounts__Text">
+                  <p>
+                    Til de 3 første brudeparene som booker bryllupspakke 1 eller
+                    2, med fotografering i 2023 eller 2024. (Når kontrakt er
+                    signert og reservasjonsbeløpet er betalt, er fotograferingen
+                    booket.)
+                  </p>
+                  <p>
+                    Jeg trenger mer erfaring med bryllupsfotografering, og
+                    ønsker derfor å fylle opp min portefølje med flere
+                    bryllupsbilder.
+                  </p>
+                  <p>Ta kontakt om dere lurer på noe!</p>
                 </div>
               </>
             }
-            link={ContactRoute}
-          /> */}
+            link={`/${ContactRoute}`}
+          />
+          <DiscountAd
+            imgSrc={PregnantBabyModelcall}
+            imgAlt="En brud med hennes brudebukett"
+            title="Modelcall gravid + baby"
+            text={
+              <>
+                <div className="Discounts__Text">
+                  <p>
+                    Jeg søker etter en gravid kvinne som har termin i januar
+                    eller februar, til gravidfotografering utendørs eller hjemme
+                    hos deg, samt at jeg ønsker å fotografere mor (gjerne med
+                    familien) og den nyfødte babyen med noen måneders mellomrom
+                    frem til babyen er 1 år gammel. Bildene må kunne brukes i
+                    markedsføring av Skaug Media.
+                  </p>
+                  <p>
+                    Alle fotograferingene vil være kostnadsfrie, og dere vil få
+                    3 stk. digitale bildefiler fra hver enkelt fotografering.
+                    Det vil også bli mulighet for å kjøpe flere bildeprodukter.
+                  </p>
+
+                  <p>
+                    Interessert eller har du spørsmål?{" "}
+                    <div className="Discounts__TextImportant">
+                      Send en mail til modell@skaugmedia.no
+                    </div>
+                  </p>
+                </div>
+              </>
+            }
+            link={`/${ContactRoute}`}
+          />
           <DiscountAd
             imgSrc={PregnancyFree}
             imgAlt="En gravid kvinne"
@@ -59,7 +85,7 @@ export function Discounts() {
                 <div className="Discounts__FreePregnancyNextDate">
                   Neste ledige dato: 05.01.2024
                 </div>
-                <div className="Discounts__FreePregnancyText">
+                <div className="Discounts__Text">
                   <p>
                     Hver måned har jeg en dato der jeg tilbyr GRATIS utendørs
                     minifotografering av gravide som er i uke 30-36 av
@@ -85,13 +111,13 @@ export function Discounts() {
                       "Rabattkupong som kan brukes på valgfri fotografering senere",
                     ]}
                   />
-                  <div className="Discounts__FreePregnancyTextImportant">
+                  <div className="Discounts__TextImportant">
                     Neste dato annonseres i slutten av måneden.
                   </div>
                 </div>
               </>
             }
-            link={ContactRoute}
+            link={`/${ContactRoute}`}
           />
         </PageSection>
         <PageSection>

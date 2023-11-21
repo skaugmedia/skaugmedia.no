@@ -33,7 +33,7 @@
   margin-top: 2px;
 }
 
-.Discounts__FreePregnancyText {
+.Discounts__Text {
   font-size: 1em;
   font-family: nunito;
   text-align: left;
@@ -41,15 +41,7 @@
   margin-bottom: 10px;
 }
 
-.Discounts__ChristmasNextDate {
-  font-size: 1.1em;
-  font-family: nunito;
-  font-weight: 700;
-  text-align: left;
-  margin-top: 2px;
-}
-
-.Discounts__ChristmasText {
+.Discounts__Text {
   font-size: 1em;
   font-family: nunito;
   text-align: left;
@@ -57,15 +49,11 @@
   margin-bottom: 10px;
 }
 
-.Discounts__ChristmasTextImportant {
-  font-weight: 700;
-}
-
-.Discounts__ChristmasDiscountAd {
+.Discounts__WeddingDiscountAd {
   flex-flow: row-reverse;
 }
 
-.Discounts__FreePregnancyTextImportant {
+.Discounts__TextImportant {
   font-weight: 700;
 }
 

@@ -151,32 +151,27 @@
 }
 .Prices__TabsContentPriceKidsCopies {
   text-align: right;
-
-  color: var(--dark-orange);
+  font-weight: 500;
 }
 
 .Prices__TabsContentPricePortraitWallphotos {
   text-align: right;
-
-  color: var(--green);
+  font-weight: 500;
 }
 
 .Prices__TabsContentPriceFamilyAlbum {
   text-align: right;
-
-  color: var(--blue);
+  font-weight: 500;
 }
 
 .Prices__TabsContentPriceBusinessPrintables {
   text-align: right;
-
-  color: var(--light-orange);
+  font-weight: 500;
 }
 
 .Prices__TabsContentPriceDesign {
   text-align: right;
-
-  color: var(--light-pink);
+  font-weight: 500;
 }
 
 .Prices__Content {
@@ -299,9 +294,10 @@
   width: 100%;
 }
 
-.Prices__TopSection {
+.Prices__BottomSection {
   align-items: left;
   text-align: left;
+  margin-top: 20px;
 }
 
 .Prices__Header {
