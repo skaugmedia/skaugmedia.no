@@ -191,6 +191,10 @@
   margin: 20px;
 }
 
+.ProductPriceSection__ImgSection {
+  margin-top:;
+}
+
 .Prices__TabsContentBoxProducts {
   width: 100%;
   padding: 20px;
@@ -269,7 +273,6 @@
 }
 
 .ProductPriceSection__Text {
-  margin-top: -10;
 }
 
 .ButtonText {

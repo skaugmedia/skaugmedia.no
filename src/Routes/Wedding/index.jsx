@@ -1,20 +1,14 @@
-import DesignHeading from "../../Components/Headings/DesignHeading";
-import { useState } from "react";
 import className from "classnames";
+import { useState } from "react";
+import { Checkmark } from "../../Components/Checkmark";
+import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import { ProductPriceSection } from "../../Components/ProductPriceSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import pageName from "./PageName";
 import "./Wedding.css";
-import AlbumImg from "/src/Images/WeddingPrice/album.jpg";
-import CanvasImg from "/src/Images/WeddingPrice/canvas.jpg";
-import PrintPackImg from "/src/Images/WeddingPrice/designpack.jpg";
-import DigitalImg from "/src/Images/WeddingPrice/digital_files.jpg";
-import PhotocopyImg from "/src/Images/Prices/photocopy.jpg";
 import WeddingTextImg from "/src/Images/WeddingPrice/wedding_text.jpg";
 import WeddingText1Img from "/src/Images/WeddingPrice/wedding_text1.jpg";
 import WeddingText2Img from "/src/Images/WeddingPrice/wedding_text2.jpg";
-import { Checkmark } from "../../Components/Checkmark";
 
 export function PricesProducts() {
   useDocumentTitle(pageName);
@@ -36,7 +30,10 @@ export function PricesProducts() {
             Fotografering av vielse, portretter av brudeparet
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
-
+          <div className="Wedding__PackageBoxText">
+            Sneak-peak etter ca. 1 uke
+          </div>
+          <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">3 timer fotografering</div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
@@ -65,7 +62,10 @@ export function PricesProducts() {
             portretter
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
-
+          <div className="Wedding__PackageBoxText">
+            Sneak-peak etter ca. 1 uke
+          </div>
+          <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">5 timer fotografering</div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
@@ -95,7 +95,10 @@ export function PricesProducts() {
             portretter
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
-
+          <div className="Wedding__PackageBoxText">
+            Sneak-peak etter ca. 1 uke
+          </div>
+          <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">5 timer fotografering</div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
@@ -108,12 +111,10 @@ export function PricesProducts() {
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
-            20 stk. doble invitasjoner (mulig å bestille flere)
+            20 stk. doble invitasjoner
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
-          <div className="Wedding__PackageBoxText">
-            20 stk. doble takkekort (mulig å bestille flere)
-          </div>
+          <div className="Wedding__PackageBoxText">20 stk. doble takkekort</div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
             Mulighet for å bestille flere trykksaker i samme stil
@@ -168,12 +169,20 @@ export function PricesProducts() {
               </div>
               <div className="Wedding__PackageBoxDivider"></div>
               <div className="Wedding__PackageBigBoxListText">
+                Kjøring til alle lokasjoner på Romerike
+              </div>
+              <div className="Wedding__PackageBoxDivider"></div>
+              <div className="Wedding__PackageBigBoxListText">
                 Fotografering av vielse, portretter av brudeparet
               </div>
               <div className="Wedding__PackageBoxDivider"></div>
 
               <div className="Wedding__PackageBigBoxListText">
                 3 timer fotografering
+              </div>
+              <div className="Wedding__PackageBoxDivider"></div>
+              <div className="Wedding__PackageBoxText">
+                Sneak-peak etter ca. 1 uke (5-10 redigerte bilder)
               </div>
               <div className="Wedding__PackageBoxDivider"></div>
               <div className="Wedding__PackageBigBoxListText">
@@ -250,6 +259,10 @@ export function PricesProducts() {
               </div>
               <div className="Wedding__PackageBoxDivider"></div>
               <div className="Wedding__PackageBigBoxListText">
+                Kjøring til alle lokasjoner på Romerike
+              </div>
+              <div className="Wedding__PackageBoxDivider"></div>
+              <div className="Wedding__PackageBigBoxListText">
                 Fotografering under vielsen, portrettfotografering og
                 fotografering av forberedelser eller når dere ankommer festen
               </div>
@@ -257,6 +270,10 @@ export function PricesProducts() {
 
               <div className="Wedding__PackageBigBoxListText">
                 5 timer fotografering
+              </div>
+              <div className="Wedding__PackageBoxDivider"></div>
+              <div className="Wedding__PackageBoxText">
+                Sneak-peak etter ca. 1 uke (5-10 redigerte bilder)
               </div>
               <div className="Wedding__PackageBoxDivider"></div>
               <div className="Wedding__PackageBigBoxListText">
@@ -308,7 +325,7 @@ export function PricesProducts() {
                 Halvdagsfotografering + trykksaker
               </div>
             </div>
-            <div className="Wedding__PackageBoxPriceBigBox">Kr. 24.000,-</div>
+            <div className="Wedding__PackageBoxPriceBigBox">Kr. 32.000,-</div>
           </div>
 
           <div className="Wedding__PackageBigBoxContent">
@@ -334,6 +351,10 @@ export function PricesProducts() {
               </div>
               <div className="Wedding__PackageBoxDivider"></div>
               <div className="Wedding__PackageBigBoxListText">
+                Kjøring til alle lokasjoner på Romerike
+              </div>
+              <div className="Wedding__PackageBoxDivider"></div>
+              <div className="Wedding__PackageBigBoxListText">
                 Fotografering under vielsen, portrettfotografering og
                 fotografering av forberedelser eller når dere ankommer festen
               </div>
@@ -341,6 +362,10 @@ export function PricesProducts() {
 
               <div className="Wedding__PackageBigBoxListText">
                 5 timer fotografering
+              </div>
+              <div className="Wedding__PackageBoxDivider"></div>
+              <div className="Wedding__PackageBoxText">
+                Sneak-peak etter ca. 1 uke (5-10 redigerte bilder)
               </div>
               <div className="Wedding__PackageBoxDivider"></div>
               <div className="Wedding__PackageBigBoxListText">
@@ -475,6 +500,24 @@ export function PricesProducts() {
               </td>
             </tr>
             <tr>
+              <th>Kjøring til alle lokasjoner på Romerike</th>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>Kjøring utover Romerike</th>
+              <td>Kr. 10,- per km</td>
+              <td>Kr. 10,- per km</td>
+              <td>Kr. 10,- per km</td>
+            </tr>
+            <tr>
               <th>Fotografering av vielsen</th>
               <td>
                 <Check />
@@ -513,6 +556,12 @@ export function PricesProducts() {
               <td>3 timer fotografering</td>
               <td>5 timer fotografering</td>
               <td>5 timer fotografering</td>
+            </tr>
+            <tr>
+              <th>Sneak-peak etter ca. 1 uke</th>
+              <td>5-10 redigerte bilder</td>
+              <td>5-10 redigerte bilder</td>
+              <td>5-10 redigerte bilder</td>
             </tr>
             <tr>
               <th>Antall bilder inkludert</th>
@@ -623,7 +672,7 @@ export function PricesProducts() {
               Når jeg har bekreftet tilgjengeligheten for deres bryllupsdato,
               går vi videre med en enkel og viktig prosess. Vi vil utarbeide en
               kontrakt for fotograferingen som alle parter må signere. Etter
-              kontrakten er signert, vil dere motta en faktura på 1/3 av den
+              kontrakten er signert, vil dere motta en faktura på 30% av den
               totale prisen som et reservasjonsgebyr. Dette sikrer at datoen
               deres er reservert og bookingen deres er gjennomført. Vær
               oppmerksom på at reservasjonsgebyret ikke refunderes dersom dere
@@ -631,10 +680,10 @@ export function PricesProducts() {
               mottatt.
             </p>
             <p className="Wedding__Text">
-              Etter din store dag vil du motta en ny faktura for den gjenværende
-              balansen, som må være betalt i sin helhet før jeg begynner med
-              etterarbeidet av deres bilder. Jeg ser frem til å være en del av
-              deres bryllupseventyr og hjelpe dere med å bevare deres viktigste
+              1 måned før din store dag vil du motta en ny faktura for den
+              gjenværende balansen, som må være betalt i sin helhet senest 1 uke
+              før bryllupsdagen. Jeg ser frem til å være en del av deres
+              bryllupseventyr og hjelpe dere med å bevare deres viktigste
               minner.
             </p>
 

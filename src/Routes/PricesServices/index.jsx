@@ -37,6 +37,7 @@ import MommyAndMeImg from "/src/Images/Prices/mommyandme_photography.jpg";
 import NewbornImg from "/src/Images/Prices/newborn_photography.jpg";
 import OneYearImg from "/src/Images/Prices/oneyear_photography.jpg";
 import PhotoProductImg from "/src/Images/Prices/photocopy.jpg";
+import PhotoCopy1Img from "/src/Images/Prices/photocopy1.jpg";
 import PregnantImg from "/src/Images/Prices/pregnancy_photography.jpg";
 import ServicesImg from "/src/Images/Prices/prices.jpg";
 import ProductImg from "/src/Images/Prices/product_photography.jpg";
@@ -1282,7 +1283,7 @@ export function PricesServices() {
     <div className="Prices__ButtonPricelistRow">
       <img
         className="Prices__ProductsImg"
-        src={PhotoProductImg}
+        src={PhotoCopy1Img}
         alt="Bildekopi"
       ></img>
       <div className="Prices__ButtonPricelist">
