@@ -96,7 +96,7 @@ export function Prices() {
             <div className="prices-offers-next-free-date-box">
               <div className="prices-offers-next-free-date">
                 {" "}
-                Neste ledige dato: 02.11.2023
+                Neste ledige dato: 30.11.2023
               </div>
             </div>
           </div>
