@@ -6,12 +6,10 @@ import { PageSection } from "../../Components/PageSection";
 import "./Discounts.css";
 import OneYear from "/src/Images/1-year-photo.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
-import PregnantBabyModelcall from "/src/Images/Pregnant/preg_c_1.jpg";
 import WeddingDiscount from "/src/Images/Wedding/weddingRT_14.jpg";
 import PregnancyFree from "/src/Images/free_pregnancy_shoot_offers.jpg";
 import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
-import WeddingImg from "/src/Images/Wedding/weddingRT_14.jpg";
 
 export function Discounts() {
   return (
@@ -45,7 +43,7 @@ export function Discounts() {
             }
             link={`/${ContactRoute}`}
           />
-          <DiscountAd
+          {/* <DiscountAd
             imgSrc={PregnantBabyModelcall}
             imgAlt="En brud med hennes brudebukett"
             title="Modelcall gravid + baby"
@@ -76,33 +74,32 @@ export function Discounts() {
               </>
             }
             link={`/${ContactRoute}`}
-          />
+          /> */}
+        </PageSection>
+        <PageSection>
           <DiscountAd
-            imgSrc={WeddingImg}
+            imgSrc={PregnancyFree}
             imgAlt="En gravid kvinne"
-            title="30% rabatt på bryllupspakke 1 og 2"
+            title="Gratis minifotografering av gravide - Hver måned"
             text={
               <>
                 <div className="Discounts__FreePregnancyNextDate">
-<<<<<<< Updated upstream
-                  Neste ledige dato: 05.01.2024
+                  Neste ledige dato: 30.11.2023
                 </div>
                 <div className="Discounts__Text">
-=======
-                  For de første 3 brudeparene som booker                </div>
-                <div className="Discounts__FreePregnancyText">
->>>>>>> Stashed changes
                   <p>
-                    Jeg ønsker å tilby 30% rabatt på bryllupsfotografering for de 3
-                    første brudeparene som booker bryllupspakke 1 og 2, da jeg trenger
-                    mer erfaring med bryllupsfotografering, samt at jeg ønsker flere
-                    bilder til min portefølje.
+                    Hver måned har jeg en dato der jeg tilbyr GRATIS utendørs
+                    minifotografering av gravide som er i uke 30-36 av
+                    svangerskapet. Fotograferingen vil foregå på Jessheim i
+                    Ullensaker.
                   </p>
                   <p>
-                    Krav for tilbudet: Bildene må kunne brukes i markedsføring av Skaug Media,
-                    og dere må være et av de 3 første brudeparene som booker.
+                    Under gratis minifotografering av gravide er det dessverre
+                    ikke rom for å ha med partner eller tidligere barn på
+                    bildene. Lån av mine gravidkjoler er heller ikke inkludert,
+                    men det er mulighet for å leie en av dem for kr. 200,- om du
+                    ønsker.
                   </p>
-<<<<<<< Updated upstream
                   <p>Begrenset kapasitet, så book tidlig!</p>
                   Dette inkluderer:
                   <IncludesList
@@ -115,63 +112,14 @@ export function Discounts() {
                       "Rabattkupong som kan brukes på valgfri fotografering senere",
                     ]}
                   />
-                  <div className="Discounts__TextImportant">
+                  <div className="Discounts__FreePregnancyTextImportant">
                     Neste dato annonseres i slutten av måneden.
                   </div>
-=======
-
-
->>>>>>> Stashed changes
                 </div>
               </>
             }
-            link={`/${ContactRoute}`}
+            link={ContactRoute}
           />
-        </PageSection>
-        <PageSection><DiscountAd
-          imgSrc={PregnancyFree}
-          imgAlt="En gravid kvinne"
-          title="Gratis minifotografering av gravide - Hver måned"
-
-          text={
-            <>
-              <div className="Discounts__FreePregnancyNextDate">
-                Neste ledige dato: 30.11.2023
-              </div>
-              <div className="Discounts__FreePregnancyText">
-                <p>
-                  Hver måned har jeg en dato der jeg tilbyr GRATIS utendørs
-                  minifotografering av gravide som er i uke 30-36 av
-                  svangerskapet. Fotograferingen vil foregå på Jessheim i
-                  Ullensaker.
-                </p>
-                <p>
-                  Under gratis minifotografering av gravide er det dessverre
-                  ikke rom for å ha med partner eller tidligere barn på
-                  bildene. Lån av mine gravidkjoler er heller ikke inkludert,
-                  men det er mulighet for å leie en av dem for kr. 200,- om du
-                  ønsker.
-                </p>
-                <p>Begrenset kapasitet, så book tidlig!</p>
-                Dette inkluderer:
-                <IncludesList
-                  items={[
-                    "20 minutters fotografering utendørs",
-                    "Mulighet for å leie gravidkjole for kr. 200,-",
-                    "Online bildegalleri hvor du velger dine bilder",
-                    "1 digital bildefil i høy oppløsning",
-                    "Mulighet for å kjøpe flere bilder, og bildeprodukter",
-                    "Rabattkupong som kan brukes på valgfri fotografering senere",
-                  ]}
-                />
-                <div className="Discounts__FreePregnancyTextImportant">
-                  Neste dato annonseres i slutten av måneden.
-                </div>
-              </div>
-            </>
-          }
-          link={ContactRoute}
-        />
         </PageSection>
         <PageSection>
           <div className="Discounts__RegularDiscounts">Faste rabatter</div>
