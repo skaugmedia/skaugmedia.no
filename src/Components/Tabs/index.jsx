@@ -25,11 +25,7 @@ export const Tabs = ({
           </button>
         ))}
       </div>
-      <div
-        className={classNames("Tabs__Content", contentClassName, {
-          "Tabs__Content--FirstActive": selectedTab == 0,
-        })}
-      >
+      <div className={classNames("Tabs__Content", contentClassName)}>
         {tabs[selectedTab].content}
       </div>
     </div>

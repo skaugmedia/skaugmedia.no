@@ -1,7 +1,9 @@
 .Tabs {
   --background-color: #ddd;
-  --active-color: #cbcbcb;
-  --inactive-color: #ddd;
+  --active-bg-color: var(--background-color);
+  --inactive-bg-color: #bebebe;
+  --inactive-text-color: #333;
+  --active-text-color: #000;
 }
 
 .Tabs__Bar {
@@ -10,10 +12,10 @@
 }
 
 .Tabs__Tab {
-  background-color: var(--inactive-color);
+  background-color: var(--inactive-bg-color);
   border-radius: 4px 4px 0 0;
   border: none;
-  color: #444;
+  color: var(--inactive-text-color);
   cursor: pointer;
   font-family: oswald;
   font-weight: 500;
@@ -24,17 +26,13 @@
 }
 
 .Tabs__Tab--Active {
-  background-color: var(--active-color);
-  color: #000;
+  background-color: var(--active-bg-color);
+  color: var(--active-text-color);
 }
 
 .Tabs__Content {
-  border-radius: 4px;
+  border-radius: 0 4px 4px 4px;
   background-color: var(--background-color);
-}
-
-.Tabs__Content--FirstActive {
-  border-top-left-radius: 0;
 }
 
 @media only screen and (max-width: 600px) {
