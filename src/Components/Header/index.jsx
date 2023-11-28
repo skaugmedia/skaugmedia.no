@@ -6,9 +6,14 @@ import { PlainLink } from "../PlainLink";
 import "./Header.css";
 import HomeRoute from "/src/Routes/Home/Route";
 
-export const Header = ({ isMobile, hamburgerToggled, hamburgerOnClick }) => {
+export const Header = ({
+  className,
+  isMobile,
+  hamburgerToggled,
+  hamburgerOnClick,
+}) => {
   return (
-    <header className="Header">
+    <header className={classNames("Header", className)}>
       <div className="Header__Inner">
         <Hamburger
           className={classNames("Header__Hamburger")}

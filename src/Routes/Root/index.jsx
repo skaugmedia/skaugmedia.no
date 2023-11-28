@@ -33,7 +33,12 @@ export function Root() {
 
         <Footer />
       </div>
-      <MobileNav show={showNav} onClick={() => setShowNav(false)} />
+      <MobileNav
+        show={showNav}
+        hamburgerToggled={showNav}
+        hamburgerOnClick={() => setShowNav(!showNav)}
+        onClick={() => setShowNav(false)}
+      />
     </>
   );
 }

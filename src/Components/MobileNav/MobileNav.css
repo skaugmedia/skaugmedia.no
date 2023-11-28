@@ -1,9 +1,9 @@
 .MobileNav {
   position: fixed;
-  top: var(--mobile-header-height);
+  top: 0;
   left: 0;
   width: 100vw;
-  height: calc(100vh - var(--mobile-header-height));
+  height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -18,7 +18,8 @@
 }
 
 .MobileNav--Hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .MobileNav__Links {
@@ -32,6 +33,15 @@
 .MobileNav__Link {
   color: black;
   text-decoration: none;
+}
+
+.MobileNav__Header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 @media only screen and (max-width: 1000px) {
