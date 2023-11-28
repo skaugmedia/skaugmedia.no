@@ -21,10 +21,12 @@ export function PricesProducts() {
   const mainMenu = (
     <PageSection>
       <div className="Wedding__PackageBoxRow">
-        <div className="Wedding__PackageBox1">
-          <div className="Wedding__PackageBoxHeader">Bryllupspakke 1</div>
-          <div className="Wedding__PackageBoxSubHeader">
-            Vielse + portretter
+        <div className="Wedding__PackageBox Wedding__PackageBox--Package1">
+          <div className="Wedding__PackageBoxHeader">
+            <div className="Wedding__PackageBoxHeading">Bryllupspakke 1</div>
+            <div className="Wedding__PackageBoxSubHeading">
+              Vielse + portretter
+            </div>
           </div>
           <div className="Wedding__PackageBoxText">
             Fotografering av vielse, portretter av brudeparet
@@ -52,10 +54,12 @@ export function PricesProducts() {
             Les mer
           </button>
         </div>
-        <div className="Wedding__PackageBox2">
-          <div className="Wedding__PackageBoxHeader">Bryllupspakke 2</div>
-          <div className="Wedding__PackageBoxSubHeader">
-            Halvdagsfotografering
+        <div className="Wedding__PackageBox Wedding__PackageBox--Package2">
+          <div className="Wedding__PackageBoxHeader">
+            <div className="Wedding__PackageBoxHeading">Bryllupspakke 2</div>
+            <div className="Wedding__PackageBoxSubHeading">
+              Halvdagsfotografering
+            </div>
           </div>
           <div className="Wedding__PackageBoxText">
             Fotografering av forberedelser eller ankomst til festen, vielse og
@@ -85,10 +89,12 @@ export function PricesProducts() {
             Les mer
           </button>
         </div>
-        <div className="Wedding__PackageBox3">
-          <div className="Wedding__PackageBoxHeader">Bryllupspakke 3</div>
-          <div className="Wedding__PackageBoxSubHeader">
-            Halvdagsfotografering + trykksaker
+        <div className="Wedding__PackageBox Wedding__PackageBox--Package3">
+          <div className="Wedding__PackageBoxHeader">
+            <div className="Wedding__PackageBoxHeading">Bryllupspakke 3</div>
+            <div className="Wedding__PackageBoxSubHeading">
+              Halvdagsfotografering + trykksaker
+            </div>
           </div>
           <div className="Wedding__PackageBoxText">
             Fotografering av forberedelser eller ankomst til festen, vielse og
@@ -136,84 +142,82 @@ export function PricesProducts() {
   const package1 = (
     <PageSection>
       <div className="Wedding__PackageBigBox">
-        <div className="Wedding__PackageBigBox1">
-          <div className="Wedding__PackageBigBoxHeaderText">
-            <div className="Wedding__PackageBigBoxHeader">
-              <div className="Wedding__PackageBoxHeaderBigBox">
-                Bryllupspakke 1
-              </div>
-              <div className="Wedding__PackageBoxSubHeaderBigBox">
-                Vielse + portretter
-              </div>
+        <div className="Wedding__PackageBigBoxHeaderText">
+          <div className="Wedding__PackageBigBoxHeader">
+            <div className="Wedding__PackageBoxHeaderBigBox">
+              Bryllupspakke 1
             </div>
-            <div className="Wedding__PackageBoxPriceBigBox">Kr. 16.000,-</div>
+            <div className="Wedding__PackageBoxSubHeaderBigBox">
+              Vielse + portretter
+            </div>
           </div>
+          <div className="Wedding__PackageBoxPriceBigBox">Kr. 16.000,-</div>
+        </div>
 
-          <div className="Wedding__PackageBigBoxContent">
-            <div className="Wedding__PackageBigBoxTextSection">
-              <p className="Wedding__PackageBigBoxText">
-                Dette er en ypperlig pakke for dere som kun ønsker fotografen
-                tilstede under vielsen og for å forevige portrettene deres. Jeg
-                er med dere på de viktigste øyeblikkene på deres store dag, og
-                fanger de magiske øyeblikkene når dere sier JA til hverandre.
-              </p>
-              <p className="Wedding__PackageBigBoxText">
-                Vi setter av tid til et planleggingsmøte i god tid før den store
-                dagen, der vi snakker om deres ønsker til bildene og for å bli
-                litt kjent med hverandre.
-              </p>
-              <p className="Wedding__PackageBigBoxListHeader">Inkluderer:</p>
+        <div className="Wedding__PackageBigBoxContent">
+          <div className="Wedding__PackageBigBoxTextSection">
+            <p className="Wedding__PackageBigBoxText">
+              Dette er en ypperlig pakke for dere som kun ønsker fotografen
+              tilstede under vielsen og for å forevige portrettene deres. Jeg er
+              med dere på de viktigste øyeblikkene på deres store dag, og fanger
+              de magiske øyeblikkene når dere sier JA til hverandre.
+            </p>
+            <p className="Wedding__PackageBigBoxText">
+              Vi setter av tid til et planleggingsmøte i god tid før den store
+              dagen, der vi snakker om deres ønsker til bildene og for å bli
+              litt kjent med hverandre.
+            </p>
+            <p className="Wedding__PackageBigBoxListHeader">Inkluderer:</p>
 
-              <div className="Wedding__PackageBigBoxListText">
-                Planleggingsmøte før den store dagen
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Kjøring til alle lokasjoner på Romerike
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Fotografering av vielse, portretter av brudeparet
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-
-              <div className="Wedding__PackageBigBoxListText">
-                3 timer fotografering
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBoxText">
-                Sneak-peak etter ca. 1 uke (5-10 redigerte bilder)
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Ca. 50 stk. digitale bildefiler
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Online bildegalleri hvor dere kan laste ned bildene
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Mulighet for å kjøpe bildeprodukter
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                50% rabatt på forlovelsesfotografering
-              </div>
-              <button
-                onClick={() => setMenu(null)}
-                className="Wedding__ReadMoreButton"
-              >
-                Tilbake
-              </button>
+            <div className="Wedding__PackageBigBoxListText">
+              Planleggingsmøte før den store dagen
             </div>
-            <div className="Wedding__PackageBigBoxImgSection">
-              <img
-                className="Wedding__PackageBigBoxImg"
-                src={WeddingText2Img}
-                title="Portrett av et brudepar"
-              />
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Kjøring til alle lokasjoner på Romerike
             </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Fotografering av vielse, portretter av brudeparet
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+
+            <div className="Wedding__PackageBigBoxListText">
+              3 timer fotografering
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBoxText">
+              Sneak-peak etter ca. 1 uke (5-10 redigerte bilder)
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Ca. 50 stk. digitale bildefiler
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Online bildegalleri hvor dere kan laste ned bildene
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Mulighet for å kjøpe bildeprodukter
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              50% rabatt på forlovelsesfotografering
+            </div>
+            <button
+              onClick={() => setMenu(null)}
+              className="Wedding__ReadMoreButton"
+            >
+              Tilbake
+            </button>
+          </div>
+          <div className="Wedding__PackageBigBoxImgSection">
+            <img
+              className="Wedding__PackageBigBoxImg"
+              src={WeddingText2Img}
+              title="Portrett av et brudepar"
+            />
           </div>
         </div>
       </div>
@@ -223,89 +227,86 @@ export function PricesProducts() {
   const package2 = (
     <PageSection>
       <div className="Wedding__PackageBigBox">
-        <div className="Wedding__PackageBigBox1">
-          <div className="Wedding__PackageBigBoxHeaderText">
-            <div className="Wedding__PackageBigBoxHeader">
-              <div className="Wedding__PackageBoxHeaderBigBox">
-                Bryllupspakke 2
-              </div>
-              <div className="Wedding__PackageBoxSubHeaderBigBox">
-                Halvdagsfotografering
-              </div>
+        <div className="Wedding__PackageBigBoxHeaderText">
+          <div className="Wedding__PackageBigBoxHeader">
+            <div className="Wedding__PackageBoxHeaderBigBox">
+              Bryllupspakke 2
             </div>
-            <div className="Wedding__PackageBoxPriceBigBox">Kr. 24.000,-</div>
+            <div className="Wedding__PackageBoxSubHeaderBigBox">
+              Halvdagsfotografering
+            </div>
           </div>
+          <div className="Wedding__PackageBoxPriceBigBox">Kr. 24.000,-</div>
+        </div>
 
-          <div className="Wedding__PackageBigBoxContent">
-            <div className="Wedding__PackageBigBoxTextSection">
-              <p className="Wedding__PackageBigBoxText">
-                Dette er pakken for dere som ønsker bilder fra litt mer enn bare
-                seremonien og bryllupsportrettene. Dere velger om jeg skal
-                fotografere dere under forberedelsene eller når dere ankommer
-                festen, i tillegg til at jeg fotograferer seremonien og
-                bryllupsportrettene før eller etter vielsen.
-              </p>
-              <p className="Wedding__PackageBigBoxText">
-                Vi setter av tid til et planleggingsmøte i god tid før den store
-                dagen, der vi snakker om deres ønsker til bildene og for å bli
-                litt kjent med hverandre. I denne pakken er også
-                forlovelsesfotografering inkludert, der dere får velge 5 stk.
-                bilder i høy oppløsning.
-              </p>
-              <p className="Wedding__PackageBigBoxListHeader">Inkluderer:</p>
+        <div className="Wedding__PackageBigBoxContent">
+          <div className="Wedding__PackageBigBoxTextSection">
+            <p className="Wedding__PackageBigBoxText">
+              Dette er pakken for dere som ønsker bilder fra litt mer enn bare
+              seremonien og bryllupsportrettene. Dere velger om jeg skal
+              fotografere dere under forberedelsene eller når dere ankommer
+              festen, i tillegg til at jeg fotograferer seremonien og
+              bryllupsportrettene før eller etter vielsen.
+            </p>
+            <p className="Wedding__PackageBigBoxText">
+              Vi setter av tid til et planleggingsmøte i god tid før den store
+              dagen, der vi snakker om deres ønsker til bildene og for å bli
+              litt kjent med hverandre. I denne pakken er også
+              forlovelsesfotografering inkludert, der dere får velge 5 stk.
+              bilder i høy oppløsning.
+            </p>
+            <p className="Wedding__PackageBigBoxListHeader">Inkluderer:</p>
 
-              <div className="Wedding__PackageBigBoxListText">
-                Planleggingsmøte før den store dagen
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Kjøring til alle lokasjoner på Romerike
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Fotografering under vielsen, portrettfotografering og
-                fotografering av forberedelser eller når dere ankommer festen
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-
-              <div className="Wedding__PackageBigBoxListText">
-                5 timer fotografering
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBoxText">
-                Sneak-peak etter ca. 1 uke (5-10 redigerte bilder)
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Ca. 150 stk. digitale bildefiler
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Online bildegalleri hvor dere kan laste ned bildene
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Mulighet for å kjøpe bildeprodukter
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Forlovelsesfotografering inkludert 5 stk. bilder i høy
-                oppløsning
-              </div>
-              <button
-                onClick={() => setMenu(null)}
-                className="Wedding__ReadMoreButton"
-              >
-                Tilbake
-              </button>
+            <div className="Wedding__PackageBigBoxListText">
+              Planleggingsmøte før den store dagen
             </div>
-            <div className="Wedding__PackageBigBoxImgSection">
-              <img
-                className="Wedding__PackageBigBoxImg"
-                src={WeddingText1Img}
-                title="Portrett av et brudepar"
-              />
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Kjøring til alle lokasjoner på Romerike
             </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Fotografering under vielsen, portrettfotografering og
+              fotografering av forberedelser eller når dere ankommer festen
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+
+            <div className="Wedding__PackageBigBoxListText">
+              5 timer fotografering
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBoxText">
+              Sneak-peak etter ca. 1 uke (5-10 redigerte bilder)
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Ca. 150 stk. digitale bildefiler
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Online bildegalleri hvor dere kan laste ned bildene
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Mulighet for å kjøpe bildeprodukter
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Forlovelsesfotografering inkludert 5 stk. bilder i høy oppløsning
+            </div>
+            <button
+              onClick={() => setMenu(null)}
+              className="Wedding__ReadMoreButton"
+            >
+              Tilbake
+            </button>
+          </div>
+          <div className="Wedding__PackageBigBoxImgSection">
+            <img
+              className="Wedding__PackageBigBoxImg"
+              src={WeddingText1Img}
+              title="Portrett av et brudepar"
+            />
           </div>
         </div>
       </div>
@@ -315,105 +316,101 @@ export function PricesProducts() {
   const package3 = (
     <PageSection>
       <div className="Wedding__PackageBigBox">
-        <div className="Wedding__PackageBigBox1">
-          <div className="Wedding__PackageBigBoxHeaderText">
-            <div className="Wedding__PackageBigBoxHeader">
-              <div className="Wedding__PackageBoxHeaderBigBox">
-                Bryllupspakke 3
-              </div>
-              <div className="Wedding__PackageBoxSubHeaderBigBox">
-                Halvdagsfotografering + trykksaker
-              </div>
+        <div className="Wedding__PackageBigBoxHeaderText">
+          <div className="Wedding__PackageBigBoxHeader">
+            <div className="Wedding__PackageBoxHeaderBigBox">
+              Bryllupspakke 3
             </div>
-            <div className="Wedding__PackageBoxPriceBigBox">Kr. 32.000,-</div>
+            <div className="Wedding__PackageBoxSubHeaderBigBox">
+              Halvdagsfotografering + trykksaker
+            </div>
           </div>
+          <div className="Wedding__PackageBoxPriceBigBox">Kr. 32.000,-</div>
+        </div>
 
-          <div className="Wedding__PackageBigBoxContent">
-            <div className="Wedding__PackageBigBoxTextSection">
-              <p className="Wedding__PackageBigBoxText">
-                Denne dagen er en milepæl i deres kjærlighetshistorie, og jeg
-                vil med veiledning fra dere legge min sjel i å hjelpe dere med å
-                lage deres drømmedag. Jeg designer deres invitasjoner, takkekort
-                og menyer før den store dagen, i tillegg til at jeg fotograferer
-                under vielsen, portretter og under forberedelsene eller når dere
-                ankommer festen.
-              </p>
-              <p className="Wedding__PackageBigBoxText">
-                Med denne pakken kan du nyte hvert øyeblikk av din store dag, og
-                vite at jeg vil fange de perfekte øyeblikkene og hjelpe dere med
-                å skape en minneverdig helhetsopplevelse for deg og dine
-                gjester.
-              </p>
-              <p className="Wedding__PackageBigBoxListHeader">Inkluderer:</p>
+        <div className="Wedding__PackageBigBoxContent">
+          <div className="Wedding__PackageBigBoxTextSection">
+            <p className="Wedding__PackageBigBoxText">
+              Denne dagen er en milepæl i deres kjærlighetshistorie, og jeg vil
+              med veiledning fra dere legge min sjel i å hjelpe dere med å lage
+              deres drømmedag. Jeg designer deres invitasjoner, takkekort og
+              menyer før den store dagen, i tillegg til at jeg fotograferer
+              under vielsen, portretter og under forberedelsene eller når dere
+              ankommer festen.
+            </p>
+            <p className="Wedding__PackageBigBoxText">
+              Med denne pakken kan du nyte hvert øyeblikk av din store dag, og
+              vite at jeg vil fange de perfekte øyeblikkene og hjelpe dere med å
+              skape en minneverdig helhetsopplevelse for deg og dine gjester.
+            </p>
+            <p className="Wedding__PackageBigBoxListHeader">Inkluderer:</p>
 
-              <div className="Wedding__PackageBigBoxListText">
-                Planleggingsmøte før den store dagen
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Kjøring til alle lokasjoner på Romerike
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Fotografering under vielsen, portrettfotografering og
-                fotografering av forberedelser eller når dere ankommer festen
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-
-              <div className="Wedding__PackageBigBoxListText">
-                5 timer fotografering
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBoxText">
-                Sneak-peak etter ca. 1 uke (5-10 redigerte bilder)
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Ca. 150 stk. digitale bildefiler
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Online bildegalleri hvor dere kan laste ned bildene
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Mulighet for å kjøpe bildeprodukter
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Forlovelsesfotografering inkludert 5 stk. bilder i høy
-                oppløsning
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Veiledningsmøter underveis i designprosessen
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                20 stk. doble invitasjoner (mulighet for å bestille flere)
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                20 stk. doble takkekort (mulighet for å bestille flere)
-              </div>
-              <div className="Wedding__PackageBoxDivider"></div>
-              <div className="Wedding__PackageBigBoxListText">
-                Mulighet for å bestille flere trykksaker i samme design
-              </div>
-              <button
-                onClick={() => setMenu(null)}
-                className="Wedding__ReadMoreButton"
-              >
-                Tilbake
-              </button>
+            <div className="Wedding__PackageBigBoxListText">
+              Planleggingsmøte før den store dagen
             </div>
-            <div className="Wedding__PackageBigBoxImgSection">
-              <img
-                className="Wedding__PackageBigBoxImg"
-                src={WeddingTextImg}
-                title="Portrett av et brudepar"
-              />
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Kjøring til alle lokasjoner på Romerike
             </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Fotografering under vielsen, portrettfotografering og
+              fotografering av forberedelser eller når dere ankommer festen
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+
+            <div className="Wedding__PackageBigBoxListText">
+              5 timer fotografering
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBoxText">
+              Sneak-peak etter ca. 1 uke (5-10 redigerte bilder)
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Ca. 150 stk. digitale bildefiler
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Online bildegalleri hvor dere kan laste ned bildene
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Mulighet for å kjøpe bildeprodukter
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Forlovelsesfotografering inkludert 5 stk. bilder i høy oppløsning
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Veiledningsmøter underveis i designprosessen
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              20 stk. doble invitasjoner (mulighet for å bestille flere)
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              20 stk. doble takkekort (mulighet for å bestille flere)
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBigBoxListText">
+              Mulighet for å bestille flere trykksaker i samme design
+            </div>
+            <button
+              onClick={() => setMenu(null)}
+              className="Wedding__ReadMoreButton"
+            >
+              Tilbake
+            </button>
+          </div>
+          <div className="Wedding__PackageBigBoxImgSection">
+            <img
+              className="Wedding__PackageBigBoxImg"
+              src={WeddingTextImg}
+              title="Portrett av et brudepar"
+            />
           </div>
         </div>
       </div>
@@ -424,7 +421,9 @@ export function PricesProducts() {
     <>
       <PageSection innerClassName="wedding">
         <div className="prices-content">
-          <DesignHeading className="prices-heading">{pageName}</DesignHeading>
+          <DesignHeading className="prices-heading Wedding__PageHeading">
+            {pageName}
+          </DesignHeading>
         </div>
       </PageSection>
       <PageSection>

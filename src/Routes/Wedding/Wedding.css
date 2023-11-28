@@ -1,9 +1,10 @@
+.Wedding__PageHeading {
+  margin-bottom: 0;
+}
 .Wedding__TopContentHeader {
   font-size: 3em;
   font-weight: 700;
   color: var(--blue);
-  text-align: left;
-  margin-top: -10px;
 }
 
 .Wedding__TopContentSubHeader {
@@ -11,7 +12,6 @@
   margin-top: -5px;
   font-weight: 700;
   color: var(--green);
-  text-align: left;
 }
 
 .Wedding__TopContentText {
@@ -19,15 +19,17 @@
 }
 
 .Wedding__PackageBoxHeader {
+}
+
+.Wedding__PackageBoxHeading {
   font-family: oswald;
   font-weight: 400;
   font-size: 1.2em;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 20px;
 }
 
-.Wedding__PackageBoxSubHeader {
+.Wedding__PackageBoxSubHeading {
   font-family: oswald;
   font-weight: 300;
   font-size: 1em;
@@ -39,23 +41,12 @@
   font-family: nunito;
   text-align: center;
   font-size: 0.9em;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .Wedding__PackageBoxDivider {
-  color: white;
-  height: 1px;
-  border-color: white;
-  border: 1px solid;
+  border: 1px solid white;
   width: 30%;
-  align-items: center;
-  margin-top: 9px;
-  margin-bottom: 9px;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 9px auto;
 }
 
 .Wedding__PackageBoxPrice {
@@ -73,21 +64,24 @@
   display: flex;
   flex-flow: row;
   gap: 10px;
+  justify-content: space-between;
 }
 
-.Wedding__PackageBox1 {
-  background-color: #ddd;
+.Wedding__PackageBox {
   width: 33%;
+  padding: 20px 30px;
 }
 
-.Wedding__PackageBox2 {
+.Wedding__PackageBox--Package1 {
+  background-color: #ddd;
+}
+
+.Wedding__PackageBox--Package2 {
   background-color: #cbcbcb;
-  width: 33%;
 }
 
-.Wedding__PackageBox3 {
+.Wedding__PackageBox--Package3 {
   background-color: #ddd;
-  width: 33%;
 }
 
 .Wedding__ReadMoreButton {
@@ -99,6 +93,7 @@
   text-align: center;
   padding: 3px 15px;
   font-size: 1em;
+  cursor: pointer;
   font-weight: 400;
   font-family: oswald;
   text-transform: uppercase;
@@ -110,20 +105,14 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
-
-.Wedding__PackageBigBox {
-  display: flex;
-  flex-flow: row;
+.Wedding__PackageBigBoxHeader {
 }
-
 .Wedding__PackageBoxHeaderBigBox {
   font-family: oswald;
   font-weight: 400;
   font-size: 1.2em;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 20px;
-  margin-left: 30px;
 }
 
 .Wedding__PackageBoxSubHeaderBigBox {
@@ -131,8 +120,6 @@
   font-weight: 300;
   font-size: 1em;
   text-align: left;
-  margin-bottom: 15px;
-  margin-left: 30px;
 }
 
 .Wedding__PackageBoxPriceBigBox {
@@ -141,29 +128,29 @@
   font-size: 1.2em;
   text-transform: uppercase;
   text-align: right;
-  margin-bottom: 20px;
-  margin-top: 20px;
   color: black;
-  margin-right: 30px;
 }
 
 .Wedding__PackageBigBoxHeaderText {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
 }
 
-.Wedding__PackageBigBox1 {
+.Wedding__PackageBigBox {
   background-color: #ddd;
 
   width: 100%;
-  padding: 20px;
+  padding: 20px 30px;
   text-align: left;
 }
 
 .Wedding__PackageBigBoxContent {
   display: flex;
   flex-flow: row;
+  gap: 15px;
 }
 
 .Wedding__PackageBigBoxTextSection {
@@ -175,8 +162,6 @@
   height: 100%;
   display: flex;
   flex-flow: row;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .Wedding__PackageBigBoxImg {
@@ -188,16 +173,14 @@
   font-family: nunito;
   text-align: left;
   font-size: 0.9em;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .Wedding__PackageBigBoxListText {
   font-family: nunito;
   text-align: center;
   font-size: 0.9em;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .Wedding__PackageBigBoxListHeader {
@@ -314,12 +297,12 @@
   }
 
   .Wedding__PackageBigBoxContent {
-    display: block;
+    flex-flow: column;
+    align-items: center;
   }
 
   .Wedding__PackageBigBoxText {
     width: 100%;
-    margin-right: 0;
   }
 
   .Wedding__PackageBoxRow {
@@ -327,31 +310,8 @@
     flex-flow: column;
   }
 
-  .Wedding__PackageBox1 {
-    width: 100%;
-    flex-flow: column;
-  }
-
-  .Wedding__PackageBox2 {
-    width: 100%;
-  }
-
-  .Wedding__PackageBox3 {
-    width: 100%;
-  }
-
   .Wedding__PackageBigBoxHeaderText {
     flex-flow: column;
-  }
-
-  .Wedding__PackageBoxSubHeaderBigBox {
-    margin-bottom: 0;
-  }
-
-  .Wedding__PackageBoxPriceBigBox {
-    margin-top: 0;
-    margin-right: 30px;
-    text-align: left;
   }
 
   .Wedding__PackageBoxHeaderBigBox {
@@ -360,5 +320,26 @@
 
   .Wedding__PackageCompareButton {
     display: none;
+  }
+
+  .Wedding__PackageBigBoxHeaderText {
+    align-items: initial;
+  }
+
+  .Wedding__PackageBoxPriceBigBox {
+    text-align: left;
+  }
+
+  .Wedding__PackageBigBoxImgSection,
+  .Wedding__PackageBigBoxTextSection {
+    width: 100%;
+  }
+
+  .Wedding__PackageBigBox {
+    padding: 20px;
+  }
+
+  .Wedding__PackageBox {
+    width: 100%;
   }
 }
