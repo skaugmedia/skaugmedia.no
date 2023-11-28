@@ -4,7 +4,6 @@
   width: 100%;
   max-width: var(--content-width);
   justify-content: space-between;
-  align-items: center;
   padding-bottom: 40px;
 }
 
@@ -26,7 +25,6 @@
 
 .ProductPriceSection__Textbox {
   width: 50%;
-  margin-top: -25px;
 }
 
 .ProductPriceSection__Header {
