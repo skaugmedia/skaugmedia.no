@@ -68,21 +68,6 @@ a.Footer__Social {
 
 @media only screen and (max-width: 1000px) {
   .Footer {
-    max-width: var(--content-width);
-  }
-
-  .Footer__Link {
-    display: none;
-  }
-
-  .Footer__SocialImg {
-    padding-top: 0px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .Footer {
-    max-width: var(--content-width);
     width: 100%;
     height: 250px;
   }
@@ -94,7 +79,7 @@ a.Footer__Social {
     flex-flow: column;
   }
 
-  .Footer-Link {
+  .Footer__Link {
     display: none;
   }
 
@@ -110,6 +95,12 @@ a.Footer__Social {
     margin-top: 10px;
   }
 
+  .Footer__Social {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+  }
+
   .Footer__SocialIcons {
     display: flex;
     flex-flow: row;
@@ -122,5 +113,6 @@ a.Footer__Social {
   .Footer__SocialImg {
     padding-top: 0px;
     margin-right: 0px;
+    margin: 0;
   }
 }

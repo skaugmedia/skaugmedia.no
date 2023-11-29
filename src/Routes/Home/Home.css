@@ -667,6 +667,7 @@
       justify-content: center;
     }
   }
+
   .Home__IncludesSubText {
     font-size: 0.9em;
   }
@@ -956,5 +957,38 @@
 
   .intro .image-triangle > * {
     transform: rotate(var(--rotation));
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .free-pregnancy-textbox {
+    padding-top: 0;
+  }
+  .free-pregnancy-img {
+    object-fit: cover;
+  }
+
+  .Home__Discount_NewbornTextBox,
+  .Home__Discount_OneYearTextBox {
+    top: unset;
+    left: 30px;
+    bottom: 30px;
+  }
+  .Home__Discount_NewbornTextBox,
+  .Home__Discount_OneYearTextBox {
+    font-size: 8px;
+  }
+  .Home__Discount_NewbornHeader,
+  .Home__Discount_OneYearHeader {
+    margin-bottom: -20px;
+  }
+  .Home__Discount_NewbornSubHeader,
+  .Home__Discount_OneYearSubHeader {
+    margin-top: 0;
+    margin-bottom: -15px;
+  }
+  .Home__Discount_NewbornText,
+  .Home__Discount_OneYearText {
+    font-size: 2em;
   }
 }
