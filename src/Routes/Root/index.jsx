@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 
 import { Footer } from "../../Components/Footer";
 import { Header } from "../../Components/Header";
@@ -39,6 +39,7 @@ export function Root() {
         hamburgerOnClick={() => setShowNav(!showNav)}
         onClick={() => setShowNav(false)}
       />
+      <ScrollRestoration />
     </>
   );
 }
