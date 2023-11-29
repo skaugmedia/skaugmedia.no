@@ -23,10 +23,13 @@
 @media only screen and (max-width: 1000px) {
   .DiscountAd {
     display: flex;
-    flex-flow:;
   }
 
   .Discounts__RegularDiscountsRow {
     flex-flow: column;
+  }
+
+  .FixedDiscount__Text {
+    margin-bottom: 20px;
   }
 }

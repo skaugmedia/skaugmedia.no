@@ -640,6 +640,14 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Prices__TextIntro {
+    font-size: 0.9em;
+  }
+
+  .Prices__TextIntroIncludes {
+    font-size: 0.9em;
+  }
+
   .Prices__Content {
     display: flex;
     justify-content: center;
@@ -756,6 +764,10 @@
     width: 100%;
   }
 
+  .ProductPriceSection {
+    gap: 20px;
+  }
+
   .Prices__Header {
     display: flex;
     flex-flow: column;
@@ -766,6 +778,14 @@
 
   .Prices__PriceBox {
     margin-top: 5px;
+  }
+
+  .ProductPriceSection__ContentText {
+    font-size: 0.8em;
+  }
+
+  .ProductPriceSection__Price {
+    font-size: 0.9em;
   }
 
   .Prices__Outer {

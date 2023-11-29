@@ -21,5 +21,6 @@
   .AboutMe__Img {
     height: auto;
     width: 100%;
+    margin-left: 0;
   }
 }

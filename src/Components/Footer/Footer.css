@@ -67,6 +67,11 @@ a.Footer__Social {
 }
 
 @media only screen and (max-width: 1000px) {
+  .Footer {
+    max-width: var(--content-width);
+    margin-left: 30px;
+  }
+
   .Footer__Link {
     display: none;
   }

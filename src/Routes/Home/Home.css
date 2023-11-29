@@ -615,61 +615,58 @@
   padding-bottom: 5px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .intro-outer {
-    max-width: var(--content-width);
-    width: 100%;
-  }
-
-  .image-container {
-    display: grid;
-  }
-
-  .skaugmedia-outer {
-    width: 100%;
-  }
-
-  .works-outer {
-    max-width: var(--content-width);
-    width: 100%;
-  }
-
-  .works-forside {
-    max-width: var(--content-width);
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .works-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .works-forside {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 50px;
-  }
-
-  .works-forside > * {
-    place-self: stretch;
-  }
-
-  .about-image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .Home__IncludesText {
     font-size: 1.3em;
   }
 
+  @media only screen and (max-width: 1000px) {
+    .intro-outer {
+      max-width: var(--content-width);
+      width: 100%;
+    }
+
+    .image-container {
+      display: grid;
+    }
+
+    .skaugmedia-outer {
+      width: 100%;
+    }
+
+    .works-outer {
+      max-width: var(--content-width);
+      width: 100%;
+    }
+
+    .works-forside {
+      max-width: var(--content-width);
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .works-img {
+      width: 100%;
+    }
+
+    .works-forside {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 50px;
+    }
+
+    .works-forside > * {
+      place-self: stretch;
+    }
+
+    .about-image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
   .Home__IncludesSubText {
     font-size: 0.9em;
   }
@@ -746,12 +743,14 @@
   .cover-headertext {
     font-size: 2em;
     margin-top: 100px;
+    margin-left: 30px;
   }
 
   .cover-text {
     font-size: 1.1em;
     margin-top: 10px;
     margin-bottom: 5px;
+    margin-left: 30px;
   }
 
   .quote-section {

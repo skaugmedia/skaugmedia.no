@@ -22,7 +22,7 @@ export function Discounts() {
           <DiscountAd
             imgSrc={WeddingDiscount}
             imgAlt="En brud med hennes brudebukett"
-            title="30% rabatt på bryllupspakke 1 og 2"
+            title="30% rabatt på bryllupspakker"
             text={
               <>
                 <div className="Discounts__Text">
@@ -118,7 +118,7 @@ export function Discounts() {
                 </div>
               </>
             }
-            link={ContactRoute}
+            link={`/${ContactRoute}`}
           />
         </PageSection>
         <PageSection>

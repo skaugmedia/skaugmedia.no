@@ -309,6 +309,19 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Wedding__TopContentHeader {
+    font-size: 2em;
+  }
+
+  .Wedding__PackageBigBoxContent {
+    display: block;
+  }
+
+  .Wedding__PackageBigBoxText {
+    width: 100%;
+    margin-right: 0;
+  }
+
   .Wedding__PackageBoxRow {
     display: flex;
     flex-flow: column;
@@ -316,6 +329,7 @@
 
   .Wedding__PackageBox1 {
     width: 100%;
+    flex-flow: column;
   }
 
   .Wedding__PackageBox2 {
@@ -324,5 +338,27 @@
 
   .Wedding__PackageBox3 {
     width: 100%;
+  }
+
+  .Wedding__PackageBigBoxHeaderText {
+    flex-flow: column;
+  }
+
+  .Wedding__PackageBoxSubHeaderBigBox {
+    margin-bottom: 0;
+  }
+
+  .Wedding__PackageBoxPriceBigBox {
+    margin-top: 0;
+    margin-right: 30px;
+    text-align: left;
+  }
+
+  .Wedding__PackageBoxHeaderBigBox {
+    font-size: 1.2em;
+  }
+
+  .Wedding__PackageCompareButton {
+    display: none;
   }
 }

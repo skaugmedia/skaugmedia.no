@@ -382,3 +382,72 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .BusinessPrices__TopContentHeader {
+    font-size: 2em;
+  }
+
+  .BusinessPrices__PackageBigBoxContent {
+    display: block;
+  }
+
+  .BusinessPrices__PackageBigBoxText {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .BusinessPrices__PackageBoxRow {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .BusinessPrices__PackageBox1 {
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .BusinessPrices__PackageBox2 {
+    width: 100%;
+  }
+
+  .BusinessPrices__PackageBox3 {
+    width: 100%;
+  }
+
+  .BusinessPrices__PackageBoxDiscountPriceBigBox {
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .BusinessPrices__PackageBoxPriceBigBox {
+    font-size: 0.9em;
+    text-align: left;
+    margin-left: 30px;
+    font-weight: 300;
+  }
+
+  .BusinessPrices__PackageBigBoxHeaderText {
+    flex-flow: column;
+  }
+
+  .BusinessPrices__PackageBoxSubHeaderBigBox {
+    margin-bottom: 0;
+  }
+
+  .BusinessPrices__PackageBoxPriceBigBox {
+    margin-top: 0;
+    margin-right: 30px;
+  }
+
+  .BusinessPrices__PackageBoxHeaderBigBox {
+    font-size: 1.2em;
+  }
+
+  .BusinessPrices__PackageCompareButton {
+    display: none;
+  }
+
+ 
+}
