@@ -191,10 +191,6 @@
   margin: 20px;
 }
 
-.ProductPriceSection__ImgSection {
-  margin-top:;
-}
-
 .Prices__TabsContentBoxProducts {
   width: 100%;
   padding: 20px;
@@ -901,5 +897,57 @@
   }
   .ProductPriceSection__Price {
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Prices__TabsContentImg {
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .Prices__TabsContentHeaderBox {
+    flex-flow: column;
+  }
+
+  .Prices__TabsContentPriceKidsCopies {
+    text-align: left;
+  }
+  .Prices__TabsContentPricePortraitWallphotos {
+    text-align: left;
+  }
+  .Prices__TabsContentPriceFamilyAlbum {
+    text-align: left;
+  }
+  .Prices__TabsContentPriceDesign {
+    text-align: left;
+  }
+
+  .Prices__TabsContentText {
+    width: 100%;
+  }
+
+  .Prices__TabsContentBox {
+    width: 100%;
+    flex-flow: column;
+    display: flex;
+  }
+
+  .ProductPriceSection__PriceText {
+    width: 50;
+  }
+
+  .ProductPriceSection__ImgSection {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .Prices__ServicesImg {
+    object-fit: cover;
+  }
+
+  .Prices__ProductsImg {
+    object-fit: cover;
   }
 }
