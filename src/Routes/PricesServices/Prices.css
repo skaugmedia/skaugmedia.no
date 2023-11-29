@@ -636,6 +636,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .ProductPriceSection--reverse {
+    margin-top: 20px;
+  }
   .Prices__TextIntro {
     font-size: 0.9em;
   }
@@ -729,15 +732,23 @@
   }
 
   .Prices__TabsContentImg {
-    width: 100%;
     margin: 0;
     border-radius: 4px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
   }
 
   .Prices__ServicesImg {
     width: 100%;
     margin: 0;
     padding-bottom: 20px;
+  }
+
+  .ProductPriceSection--reverse {
+    flex-flow: column-reverse;
   }
 
   .Prices__ProductsImg {
@@ -761,7 +772,6 @@
   }
 
   .ProductPriceSection {
-    gap: 20px;
   }
 
   .Prices__Header {
@@ -898,15 +908,33 @@
   .ProductPriceSection__Price {
     width: auto;
   }
+
+  .Prices__Tabs {
+    flex-flow: column;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
-  .Prices__TabsContentImg {
-    width: 30%;
-    margin-top: auto;
-    margin-bottom: auto;
+  .Prices__TabsContentBoxProducts {
+    display: flex;
+    flex-flow: column;
   }
 
+  .Prices__Tabs {
+    flex-flow: column;
+  }
+
+  .Prices__TabsContentImg {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .ProductPriceSection--reverse {
+    flex-flow: column-reverse;
+  }
   .Prices__TabsContentHeaderBox {
     flex-flow: column;
   }
@@ -924,7 +952,15 @@
     text-align: left;
   }
 
+  .ProductPriceSection__Img {
+    margin-top: -30px;
+  }
+
   .Prices__TabsContentText {
+    width: 100%;
+  }
+
+  .ProductPriceSection__Textbox {
     width: 100%;
   }
 
@@ -939,8 +975,6 @@
   }
 
   .ProductPriceSection__ImgSection {
-    margin-top: auto;
-    margin-bottom: auto;
   }
 
   .Prices__ServicesImg {

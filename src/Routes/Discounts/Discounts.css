@@ -26,10 +26,15 @@
   }
 
   .Discounts__RegularDiscountsRow {
-    flex-flow: column;
+    flex-flow: row;
   }
 
   .FixedDiscount__Text {
     margin-bottom: 20px;
+    font-size: 1em;
+  }
+
+  .FixedDiscount__Img {
+    width: 210px;
   }
 }

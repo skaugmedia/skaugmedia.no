@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { ActionButton } from "../../Components/ActionButton";
 import { ImageSection } from "../../Components/ImageSection";
 import { PageSection } from "../../Components/PageSection";
+import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
 import cover from "../../Images/coverphoto.jpg";
@@ -103,7 +104,7 @@ export function Home() {
               GRATIS MINIFOTOGRAFERING AV GRAVIDE
             </div>
             <div className="free-pregnancy-next-date">
-              Neste ledige dato: 30.11.2023
+              Neste ledige dato: {FreePregnancyDate}
             </div>
             <div className="free-pregnancy-text">
               Hver måned setter jeg av en dato der jeg tilbyr GRATIS utendørs

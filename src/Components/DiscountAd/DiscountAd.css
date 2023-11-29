@@ -75,3 +75,19 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .DiscountAd {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .DiscountAd__Img {
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  .DiscountAd__Textbox {
+    width: 100%;
+  }
+}

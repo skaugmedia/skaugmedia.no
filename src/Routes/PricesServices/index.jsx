@@ -1766,6 +1766,7 @@ export function PricesServices() {
                 takknemlighet overfor alle som har deltatt i eller gitt gaver
                 ved en betydningsfull anledning.
                 <br />
+                <br />
                 Dere kan velge mellom et lite utvalg av design, kortene er nøye
                 utformet for å forevige minnene fra din spesielle begivenhet og
                 er trykket med høyeste kvalitet for å sikre at bildene kommer
@@ -1832,25 +1833,25 @@ export function PricesServices() {
             }
             priceText1={
               <div className="ProductPriceSection__PriceText1">
-                Fødselsplakat uten bilde 20x30 cm
+                Fødselsplakat u/bilde 20x30 cm
               </div>
             }
             price1={<div className="ProductPriceSection__Price">Kr. 650,-</div>}
             priceText2={
               <div className="ProductPriceSection__PriceText">
-                Fødselsplakat med bilde 20x30 cm
+                Fødselsplakat m/bilde 20x30 cm
               </div>
             }
             price2={<div className="ProductPriceSection__Price">Kr. 800,-</div>}
             priceText3={
               <div className="ProductPriceSection__PriceText">
-                Fødselsplakat uten bilde 30x40 cm{" "}
+                Fødselsplakat u/bilde 30x40 cm{" "}
               </div>
             }
             price3={<div className="ProductPriceSection__Price">Kr. 850,-</div>}
             priceText4={
               <div className="ProductPriceSection__PriceText">
-                Fødselsplakat med bilde 30x40 cm{" "}
+                Fødselsplakat m/bilde 30x40 cm{" "}
               </div>
             }
             price4={
@@ -1885,11 +1886,13 @@ export function PricesServices() {
                 mest vanlige pakkene inkluderer invitasjoner, takkekort, menyer
                 og bordkort.
                 <br />
+                <br />
                 Priser varierer utifra hva dere ønsker i deres pakke, hvor mange
                 dere ønsker av hver og om dere ønsker det trykket på et spesielt
                 materiale. Jeg kan hjelpe dere med kun design, eller jeg kan
                 levere en komplett pakke med design og ferdig trykkede
                 produkter.
+                <br />
                 <br />
                 Ta kontakt i dag for en uforpliktende prat for å avdekke deres
                 ønsker, og eventuell pris.

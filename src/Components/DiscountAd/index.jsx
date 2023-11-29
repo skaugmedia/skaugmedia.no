@@ -12,12 +12,12 @@ export function DiscountAd({
 }) {
   return (
     <div className={classNames("DiscountAd", outerClassName)}>
-      <img className="DiscountAd__Img" src={imgSrc} alt={imgAlt}></img>
       <div className="DiscountAd__Textbox">
         <div className="DiscountAd__Header">{title}</div>
         {text}
         <ActionButton to={link}>Book her</ActionButton>
       </div>
+      <img className="DiscountAd__Img" src={imgSrc} alt={imgAlt}></img>
     </div>
   );
 }

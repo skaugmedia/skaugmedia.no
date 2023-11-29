@@ -3,6 +3,7 @@ import { FixedDiscount } from "../../Components/FixedDiscount";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { IncludesList } from "../../Components/IncludesList";
 import { PageSection } from "../../Components/PageSection";
+import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import "./Discounts.css";
 import OneYear from "/src/Images/1-year-photo.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
@@ -27,10 +28,10 @@ export function Discounts() {
               <>
                 <div className="Discounts__Text">
                   <p>
-                    Til de 3 første brudeparene som booker bryllupspakke 1 eller
-                    2, med fotografering i 2023 eller 2024. (Når kontrakt er
-                    signert og reservasjonsbeløpet er betalt, er fotograferingen
-                    booket.)
+                    De første 3 brudeparene som booker bryllupspakke 1 eller 2,
+                    med fotografering i 2023 eller 2024, får 30% rabatt på
+                    pakken. (Når kontrakt er signert og reservasjonsbeløpet er
+                    betalt, er fotograferingen booket.)
                   </p>
                   <p>
                     Jeg trenger mer erfaring med bryllupsfotografering, og
@@ -84,7 +85,7 @@ export function Discounts() {
             text={
               <>
                 <div className="Discounts__FreePregnancyNextDate">
-                  Neste ledige dato: 30.11.2023
+                  Neste ledige dato: {FreePregnancyDate}
                 </div>
                 <div className="Discounts__Text">
                   <p>

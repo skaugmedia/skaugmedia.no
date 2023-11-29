@@ -961,6 +961,14 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .cover-headertext {
+    margin-left: 30px;
+  }
+
+  .cover-text {
+    margin-left: 30px;
+  }
+
   .free-pregnancy-textbox {
     padding-top: 0;
   }
