@@ -7,6 +7,20 @@ import preg_p_4 from "../../../Images/Pregnant/preg_p_4.jpg";
 import preg_p_5 from "../../../Images/Pregnant/preg_p_5.jpg";
 import preg_p_6 from "../../../Images/Pregnant/preg_p_6.jpg";
 
+import preg_c_1 from "../../../Images/Pregnant/preg_c_1.jpg";
+import preg_c_10 from "../../../Images/Pregnant/preg_c_10.jpg";
+import preg_c_11 from "../../../Images/Pregnant/preg_c_11.jpg";
+import preg_c_12 from "../../../Images/Pregnant/preg_c_12.jpg";
+import preg_c_13 from "../../../Images/Pregnant/preg_c_13.jpg";
+import preg_c_2 from "../../../Images/Pregnant/preg_c_2.jpg";
+import preg_c_3 from "../../../Images/Pregnant/preg_c_3.jpg";
+import preg_c_4 from "../../../Images/Pregnant/preg_c_4.jpg";
+import preg_c_5 from "../../../Images/Pregnant/preg_c_5.jpg";
+import preg_c_6 from "../../../Images/Pregnant/preg_c_6.jpg";
+import preg_c_7 from "../../../Images/Pregnant/preg_c_7.jpg";
+import preg_c_8 from "../../../Images/Pregnant/preg_c_8.jpg";
+import preg_c_9 from "../../../Images/Pregnant/preg_c_9.jpg";
+
 import preg_l_1 from "../../../Images/Pregnant/preg_l_1.jpg";
 import preg_l_2 from "../../../Images/Pregnant/preg_l_2.jpg";
 import preg_l_3 from "../../../Images/Pregnant/preg_l_3.jpg";
@@ -367,6 +381,91 @@ export default {
         },
       ],
       date: "2023-05-22",
+    },
+    {
+      description: "Gravide C",
+      tags: ["gravid", "vinter", "høst", "nordbytjernet"],
+      images: [
+        {
+          url: preg_c_2,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_3,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_4,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_5,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_1,
+          title: "Gravide C",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: preg_c_6,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_7,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_8,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_9,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_10,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_11,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_12,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_c_13,
+          title: "Gravide C",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-11-16",
     },
   ],
 };

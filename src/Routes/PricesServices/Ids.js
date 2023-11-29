@@ -16,3 +16,4 @@ export const mommyandme = "mommyandme";
 export const miniSessionSunflower = "minifotografering-solsikke";
 export const miniSessionChristmas = "minifotografering-jul";
 export const brigsysGroghouse = "brigsys-groghouse";
+export const realestate = "eiendom";
