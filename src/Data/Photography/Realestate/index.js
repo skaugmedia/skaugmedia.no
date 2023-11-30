@@ -1,6 +1,4 @@
 import { oneLine } from "common-tags";
-import * as ids from "../../../Routes/PricesServices/Ids";
-import PricesServicesRoute from "../../../Routes/PricesServices/Route";
 
 import realestate_AV_1 from "../../../Images/Realestate/AV_1.jpg";
 import realestate_AV_10 from "../../../Images/Realestate/AV_10.jpg";
@@ -60,7 +58,6 @@ export default {
   listing: {
     title: "Eiendomsfotografering",
     price: "Ta kontakt med EFKT for booking",
-    link: `/${PricesServicesRoute}#${ids.realestate}`,
   },
   shoots: [
     {
