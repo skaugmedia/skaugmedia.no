@@ -651,6 +651,11 @@ export function PricesProducts() {
               minnene fra denne spesielle dagen, så ta deg tid til å velge
               riktig fotograf som forstår dine ønsker og behov.
             </p>
+            <p className="Wedding__Text">
+              Jeg forbeholder meg retten til å bruke bildene fra deres bryllup
+              til promotering av min bedrift på min nettside, i sosiale medier,
+              i konkurranser og på trykkede flater.
+            </p>
             <div className="Wedding__TextSectionHeader">
               Hvordan booker dere meg?
             </div>
