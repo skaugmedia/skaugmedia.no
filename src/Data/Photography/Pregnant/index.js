@@ -66,8 +66,6 @@ import preg_JA_2 from "../../../Images/Pregnant/preg_JA_2.jpg";
 import preg_JA_3 from "../../../Images/Pregnant/preg_JA_3.jpg";
 import preg_JA_4 from "../../../Images/Pregnant/preg_JA_4.jpg";
 
-import j_gravid_01_thumbnail from "../../../Images/j_gravid_01.jpg?width=200&height=200";
-import m_gravid_03_thumbnail from "../../../Images/m_gravid_03.jpg?width=200&height=200";
 import { priceList } from "/src/Data/priceList";
 
 import * as ids from "../../../Routes/PricesServices/Ids";
@@ -278,7 +276,7 @@ export default {
     {
       description: "Gravide J",
       tags: ["gravid", "innendørs"],
-      thumbnail: j_gravid_01_thumbnail,
+
       images: [
         {
           url: preg_j_1,
@@ -334,7 +332,7 @@ export default {
     {
       description: "Gravide M",
       tags: ["gravid", "utendørs", "sorthvitt", "farger"],
-      thumbnail: m_gravid_03_thumbnail,
+
       images: [
         {
           url: preg_m_1,

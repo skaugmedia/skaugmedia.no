@@ -312,6 +312,7 @@
 
   .Wedding__PackageBigBoxHeaderText {
     flex-flow: column;
+    align-items: initial;
   }
 
   .Wedding__PackageBoxHeaderBigBox {
@@ -320,10 +321,6 @@
 
   .Wedding__PackageCompareButton {
     display: none;
-  }
-
-  .Wedding__PackageBigBoxHeaderText {
-    align-items: initial;
   }
 
   .Wedding__PackageBoxPriceBigBox {
