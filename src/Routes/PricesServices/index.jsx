@@ -290,7 +290,7 @@ export function PricesServices() {
                       Mitt første år
                     </div>
                     <div className="Prices__TabsContentPriceKidsCopies">
-                      Kr. 7100,- (Verdi: Kr. 9600,-)
+                      Kr. 6200,-
                     </div>
                   </div>
                   <div className="Prices__TabsContentText">
