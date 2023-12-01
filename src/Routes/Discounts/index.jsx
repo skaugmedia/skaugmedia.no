@@ -31,7 +31,8 @@ export function Discounts() {
                     De første 3 brudeparene som booker bryllupspakke 1 eller 2,
                     med fotografering i 2023 eller 2024, får 30% rabatt på
                     pakken. (Når kontrakt er signert og reservasjonsbeløpet er
-                    betalt, er fotograferingen booket.)
+                    betalt, er fotograferingen booket.) Tilbudet gjelder ikke om
+                    dere har en kontrakt med en annen fotograf.
                   </p>
                   <p>
                     Jeg trenger mer erfaring med bryllupsfotografering, og

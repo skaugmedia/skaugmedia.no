@@ -1,10 +1,11 @@
-import { useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import { ActionButton } from "../../Components/ActionButton";
 import { ImageSection } from "../../Components/ImageSection";
 import { PageSection } from "../../Components/PageSection";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
+import DiscountHeaderImg from "../../Images/Discounts/discount.png";
 import cover from "../../Images/coverphoto.jpg";
 import freePregnancyShoot from "../../Images/free_pregnancy_shoot.jpg";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
@@ -22,20 +23,26 @@ export function Home() {
 
   return (
     <>
-      {/* <div
+      <div
         className="Home__DiscountHeader"
         style={{ backgroundImage: `url(${DiscountHeaderImg})` }}
       >
         <div className="Home__DiscountHeaderBox">
           <div className="Home__DiscountHeaderTextBox">
-            <div className="Home__DiscountHeaderHeader">Onsdagstilbud</div>
+            <div className="Home__DiscountHeaderHeader">-30% rabatt</div>
             <div className="Home__DiscountHeaderSubHeader">
-              -30% rabatt på alle fotograferinger
+              på bryllupspakke 1 og 2 for de første 3 brudeparene som booker
             </div>
             <div className="Home__DiscountHeaderText">
-              Alle fotograferinger som bookes i dag, med dato i septemebr eller
-              oktober får -30% rabatt. Gjelder kun i dag, og gjelder ikke for
-              minifotograferinger eller bedrifter.
+              Dette gjelder bryllup i 2023 og 2024, og gjelder ikke om du har en
+              kontrakt med en annen fotograf. (Kontrakt må være signert og
+              reservasjonsbeløpet må være betalt for at bookingen skal være i
+              orden.)
+              <br />
+              <br />
+              Jeg trenger mer erfaring med bryllupsfotografering, og ønsker
+              derfor å fylle opp min portefølje med flere bryllupsbilder. Det
+              lurt å ta kontakt tidlig, da dette er et godt tilbud.
             </div>
             <NavLink
               to={`/${ContactRoute}`}
@@ -45,7 +52,7 @@ export function Home() {
             </NavLink>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div
         className="top-cover-img"
