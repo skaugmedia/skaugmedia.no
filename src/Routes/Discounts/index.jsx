@@ -5,10 +5,10 @@ import { IncludesList } from "../../Components/IncludesList";
 import { PageSection } from "../../Components/PageSection";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import "./Discounts.css";
-import OneYear from "/src/Images/1-year-photo.jpg";
+import OneYear from "/src/Images/Discounts/1-year-photo.jpg";
+import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
 import WeddingDiscount from "/src/Images/Wedding/weddingRT_14.jpg";
-import PregnancyFree from "/src/Images/free_pregnancy_shoot_offers.jpg";
 import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 
@@ -97,9 +97,13 @@ export function Discounts() {
                   <p>
                     Under gratis minifotografering av gravide er det dessverre
                     ikke rom for å ha med partner eller tidligere barn på
-                    bildene. Lån av mine gravidkjoler er heller ikke inkludert,
-                    men det er mulighet for å leie en av dem for kr. 200,- om du
+                    bildene. Lån av gravidkjole er heller ikke inkludert, men
+                    det er mulighet for å leie en av dem for kr. 200,- om du
                     ønsker.
+                  </p>
+                  <p>
+                    Sett deg gjerne på liste, for senere datoer ved å sende en
+                    melding via kontaktskjema der du skriver når du har termin.
                   </p>
                   <p>Begrenset kapasitet, så book tidlig!</p>
                   Dette inkluderer:
@@ -113,7 +117,7 @@ export function Discounts() {
                       "Rabattkupong som kan brukes på valgfri fotografering senere",
                     ]}
                   />
-                  <div className="Discounts__FreePregnancyTextImportant">
+                  <div className="Discounts__DiscountTextImportant">
                     Neste dato annonseres i slutten av måneden.
                   </div>
                 </div>

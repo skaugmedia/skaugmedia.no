@@ -61,6 +61,11 @@ import preg_a_2 from "../../../Images/Pregnant/preg_a_2.jpg";
 import preg_a_3 from "../../../Images/Pregnant/preg_a_3.jpg";
 import preg_a_4 from "../../../Images/Pregnant/preg_a_4.jpg";
 
+import preg_JA_1 from "../../../Images/Pregnant/preg_JA_1.jpg";
+import preg_JA_2 from "../../../Images/Pregnant/preg_JA_2.jpg";
+import preg_JA_3 from "../../../Images/Pregnant/preg_JA_3.jpg";
+import preg_JA_4 from "../../../Images/Pregnant/preg_JA_4.jpg";
+
 import j_gravid_01_thumbnail from "../../../Images/j_gravid_01.jpg?width=200&height=200";
 import m_gravid_03_thumbnail from "../../../Images/m_gravid_03.jpg?width=200&height=200";
 import { priceList } from "/src/Data/priceList";
@@ -78,8 +83,8 @@ export default {
     fordi det er noe helt eget som du ønsker å kunne se tilbake på etter at babyen er ute.
   `,
   cover: {
-    url: preg_k_7,
-    title: "Gravide P",
+    url: preg_JA_1,
+    title: "Gravide J",
   },
   listing: {
     title: "Portrettfotografering: gravid",
@@ -466,6 +471,37 @@ export default {
         },
       ],
       date: "2023-11-16",
+    },
+    {
+      description: "Gravide J",
+      tags: ["gravid", "vinter", "nordbytjernet"],
+      images: [
+        {
+          url: preg_JA_1,
+          title: "Gravide J",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: preg_JA_2,
+          title: "Gravide J",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_JA_3,
+          title: "Gravide J",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: preg_JA_4,
+          title: "Gravide J",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-11-02",
     },
   ],
 };

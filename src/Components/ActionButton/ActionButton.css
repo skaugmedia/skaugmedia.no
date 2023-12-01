@@ -25,3 +25,17 @@
 .ActionButton:visited {
   color: white;
 }
+
+@media only screen and (max-width: 1000px) {
+  .ActionButton {
+    font-size: 18px;
+  }
+  .free-pregnancy-sub-header {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ActionButton {
+    font-size: 15px;
+  }
+}

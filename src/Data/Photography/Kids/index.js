@@ -7,9 +7,6 @@ import EE4 from "../../../Images/Kids/EE_4.jpg";
 import EE5 from "../../../Images/Kids/EE_5.jpg";
 import EE6 from "../../../Images/Kids/EE_6.jpg";
 
-import EN_2 from "../../../Images/Kids/EN_2.jpg";
-import EN_3 from "../../../Images/Kids/EN_3.jpg";
-
 import LO_1 from "../../../Images/Kids/LO_1.jpg";
 import LO_2 from "../../../Images/Kids/LO_2.jpg";
 import LO_3 from "../../../Images/Kids/LO_3.jpg";
@@ -24,12 +21,13 @@ import LG4 from "../../../Images/Kids/LG_04.jpg";
 import LG5 from "../../../Images/Kids/LG_05.jpg";
 import LG6 from "../../../Images/Kids/LG_06.jpg";
 
-import ON2 from "../../../Images/Kids/ON_2.jpg";
-import ON3 from "../../../Images/Kids/ON_3.jpg";
-
 import SV1 from "../../../Images/Kids/SV_1.jpg";
 import SV2 from "../../../Images/Kids/SV_2.jpg";
 import SV3 from "../../../Images/Kids/SV_3.jpg";
+
+import LBK1 from "../../../Images/Kids/LBK_1.jpg";
+import LBK2 from "../../../Images/Kids/LBK_2.jpg";
+import LBK3 from "../../../Images/Kids/LBK_3.jpg";
 
 import LP1 from "../../../Images/Kids/LP_1.jpg";
 import LP2 from "../../../Images/Kids/LP_2.jpg";
@@ -335,6 +333,31 @@ export default {
         },
       ],
       date: "2023-08-18",
+    },
+    {
+      description: "LBK",
+      tags: ["gutt", "barn", "jul"],
+      images: [
+        {
+          url: LBK1,
+          title: "L",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: LBK2,
+          title: "L",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LBK3,
+          title: "L",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-11-13",
     },
   ],
 };

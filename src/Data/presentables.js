@@ -1,12 +1,12 @@
 import { shuffle } from "fast-shuffle";
-import LashBrowser from "./GraphicalDesign/LashBrowser";
-import Naturalis from "./GraphicalDesign/Naturalis";
 import Coop from "./GraphicalDesign/Coop";
 import Illustrasjoner from "./GraphicalDesign/Illustrasjoner";
-import Saftig from "./GraphicalDesign/Saftig";
 import Kiehls from "./GraphicalDesign/Kiehls";
-import Plantlife from "./GraphicalDesign/Plantlife";
+import LashBrowser from "./GraphicalDesign/LashBrowser";
+import Naturalis from "./GraphicalDesign/Naturalis";
 import PentOgBrukt from "./GraphicalDesign/PentOgBrukt";
+import Plantlife from "./GraphicalDesign/Plantlife";
+import Saftig from "./GraphicalDesign/Saftig";
 import Confirmation from "./Photography/Confirmation";
 import Engagement from "./Photography/Engagement";
 import Family from "./Photography/Family";
@@ -17,6 +17,7 @@ import Newborn from "./Photography/Newborn";
 import Portrait from "./Photography/Portrait";
 import Pregnant from "./Photography/Pregnant";
 import Product from "./Photography/Product";
+import Realestate from "./Photography/Realestate";
 import Wedding from "./Photography/Wedding";
 import GraphicalDesignRoute from "/src/Routes/GraphicalDesign/Route";
 import PhotographyRoute from "/src/Routes/Photography/Route";
@@ -142,6 +143,10 @@ const rawPhotography = [
     image: Kids.shoots[6].images[1],
     category: Kids,
   },
+  {
+    image: Kids.shoots[7].images[0],
+    category: Kids,
+  },
 
   {
     image: Mommyandme.shoots[0].images[0],
@@ -225,6 +230,22 @@ const rawPhotography = [
     image: Pregnant.shoots[6].images[4],
     category: Pregnant,
   },
+  {
+    image: Pregnant.shoots[7].images[0],
+    category: Pregnant,
+  },
+  {
+    image: Pregnant.shoots[7].images[6],
+    category: Pregnant,
+  },
+  {
+    image: Pregnant.shoots[7].images[11],
+    category: Pregnant,
+  },
+  {
+    image: Pregnant.shoots[8].images[3],
+    category: Pregnant,
+  },
 
   {
     image: Wedding.shoots[0].images[1],
@@ -275,6 +296,35 @@ const rawPhotography = [
   {
     image: Product.shoots[9].images[4],
     category: Product,
+  },
+  {
+    image: Product.shoots[10].images[5],
+    category: Product,
+  },
+  {
+    image: Product.shoots[10].images[4],
+    category: Product,
+  },
+  {
+    image: Product.shoots[10].images[8],
+    category: Product,
+  },
+
+  {
+    image: Realestate.shoots[0].images[1],
+    category: Realestate,
+  },
+  {
+    image: Realestate.shoots[1].images[0],
+    category: Realestate,
+  },
+  {
+    image: Realestate.shoots[2].images[1],
+    category: Realestate,
+  },
+  {
+    image: Realestate.shoots[3].images[2],
+    category: Realestate,
   },
 ].map(({ image, category }) => ({
   title: category.title,

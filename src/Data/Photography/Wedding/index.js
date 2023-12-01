@@ -18,11 +18,11 @@ import Weddingrt8 from "../../../Images/Wedding/weddingRT_8.jpg";
 import Weddingrt9 from "../../../Images/Wedding/weddingRT_9.jpg";
 
 import * as ids from "../../../Routes/PricesServices/Ids";
-import PricesServicesRoute from "../../../Routes/PricesServices/Route";
+import WeddingRoute from "../../../Routes/Wedding/Route";
 
 export default {
   id: "wedding",
-  title: "Wedding",
+  title: "Bryllup",
   body: oneLine`
     Bryllupsfotografering for par som ønsker fotografering av portretter og vielse, eller halvdagsfotografering. Jeg fanger de store øyeblikkene på deres store dag!
   `,
@@ -33,7 +33,7 @@ export default {
   listing: {
     title: "Bryllupsfotografering",
     price: "Fra kr. 16.000,-",
-    link: `/${PricesServicesRoute}#${ids.wedding}`,
+    link: `/${WeddingRoute}#${ids.wedding}`,
   },
   shoots: [
     {

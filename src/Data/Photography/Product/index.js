@@ -24,6 +24,19 @@ import business_pogb_sommer_22 from "../../../Images/Business/Pent_og_brukt/busi
 import business_pogb_sommer_23 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_23.jpg";
 import business_pogb_sommer_24 from "../../../Images/Business/Pent_og_brukt/business_pogb_sommer_24.jpg";
 
+import christmas_campaign_1 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_1.jpg";
+import christmas_campaign_10 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_10.jpg";
+import christmas_campaign_11 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_11.jpg";
+import christmas_campaign_12 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_12.jpg";
+import christmas_campaign_2 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_2.jpg";
+import christmas_campaign_3 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_3.jpg";
+import christmas_campaign_4 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_4.jpg";
+import christmas_campaign_5 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_5.jpg";
+import christmas_campaign_6 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_6.jpg";
+import christmas_campaign_7 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_7.jpg";
+import christmas_campaign_8 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_8.jpg";
+import christmas_campaign_9 from "../../../Images/Business/Pent_og_brukt/christmas_campaign_9.jpg";
+
 import product_aida_1 from "../../../Images/Product/product_aida_1.jpg";
 import product_aida_2 from "../../../Images/Product/product_aida_2.jpg";
 import product_aida_3 from "../../../Images/Product/product_aida_3.jpg";
@@ -498,6 +511,89 @@ export default {
         },
       ],
       date: "2023-07-18",
+    },
+    {
+      description: "Pent og Brukt jul",
+      tags: ["produkt", "bedrift", "jul"],
+      images: [
+        {
+          url: christmas_campaign_1,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: christmas_campaign_2,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: christmas_campaign_3,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: christmas_campaign_4,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: christmas_campaign_5,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: christmas_campaign_6,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: christmas_campaign_7,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: christmas_campaign_8,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: christmas_campaign_9,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: christmas_campaign_10,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: christmas_campaign_11,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: christmas_campaign_12,
+          title: "Pent og Brukt jul",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-10-10",
     },
   ],
 };
