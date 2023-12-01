@@ -2006,6 +2006,12 @@ export function PricesServices() {
             minifotografering har en fast pris på kr. 1400,- (Unntak ved
             spesialtilbud)
           </div>
+          <div className="Prices__TextIntroHeader">Ønsker du delbetaling?</div>
+          <div className="Prices__TextIntro">
+            Du kan nå velge å delbetale om du ønsker dette, men ingen
+            bildeprodukter vil bli utlevert før siste faktura er betalt. Si ifra
+            når du legger inn booking, hvis du ønsker dette.
+          </div>
           <div className="Prices__TextIntroHeader">
             Ønsker du fotografering etter kl. 16.00 på en hverdag?
           </div>
