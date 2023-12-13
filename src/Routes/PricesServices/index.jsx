@@ -1668,7 +1668,7 @@ export function PricesServices() {
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 2500,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1900,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
@@ -1676,7 +1676,7 @@ export function PricesServices() {
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 3650,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2950,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
@@ -1684,7 +1684,7 @@ export function PricesServices() {
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 4975,-</div>
+              <div className="ProductPriceSection__Price">Kr. 5150,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -1692,7 +1692,7 @@ export function PricesServices() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 6750,-</div>
+              <div className="ProductPriceSection__Price">Kr. 7300,-</div>
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
