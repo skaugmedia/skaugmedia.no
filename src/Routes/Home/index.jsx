@@ -29,6 +29,36 @@ export function Home() {
       >
         <div className="Home__DiscountHeaderBox">
           <div className="Home__DiscountHeaderTextBox">
+            <div className="Home__DiscountHeaderHeader">-35% rabatt</div>
+            <div className="Home__DiscountHeaderSubHeader">
+              ved bestilling av valgfri fotografering
+            </div>
+            <div className="Home__DiscountHeaderText">
+              Bestill valgfri fotografering, med dato i januar-april 2024, og få
+              35% rabatt på fotograferingspakken. Rabatten gjelder ikke på
+              bildeprodukter (utenom de inkluderte bildefilene i
+              fotograferingen)
+              <br />
+              <br />
+              Tilbudet gjelder 17.12.2023 - 31.12.2023
+              <br />
+              *Gjelder ikke for bedrifter
+            </div>
+            <NavLink
+              to={`/${ContactRoute}`}
+              className="Home__DiscountHeaderButton"
+            >
+              Book nå
+            </NavLink>
+          </div>
+        </div>
+      </div>
+      {/* <div
+        className="Home__DiscountHeader"
+        style={{ backgroundImage: `url(${DiscountHeaderImg})` }}
+      >
+        <div className="Home__DiscountHeaderBox">
+          <div className="Home__DiscountHeaderTextBox">
             <div className="Home__DiscountHeaderHeader">-30% rabatt</div>
             <div className="Home__DiscountHeaderSubHeader">
               på bryllupspakke 1 og 2 for de første 3 brudeparene som booker
@@ -52,7 +82,7 @@ export function Home() {
             </NavLink>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div
         className="top-cover-img"
