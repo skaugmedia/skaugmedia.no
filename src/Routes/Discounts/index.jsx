@@ -8,6 +8,7 @@ import "./Discounts.css";
 import OneYear from "/src/Images/Discounts/1-year-photo.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
+import ChristmasDiscount from "/src/Images/Kids/LG_01.jpg";
 import WeddingDiscount from "/src/Images/Wedding/weddingRT_14.jpg";
 import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
@@ -21,30 +22,52 @@ export function Discounts() {
         </PageSection>
         <PageSection>
           <DiscountAd
-            imgSrc={WeddingDiscount}
-            imgAlt="En brud med hennes brudebukett"
-            title="30% rabatt på bryllupspakker"
+            imgSrc={ChristmasDiscount}
+            imgAlt="En baby i blomstereng"
+            title="35% rabatt på valgfri fotografering"
             text={
               <>
                 <div className="Discounts__Text">
                   <p>
-                    De første 3 brudeparene som booker bryllupspakke 1 eller 2,
-                    med fotografering i 2023 eller 2024, får 30% rabatt på
-                    pakken. (Når kontrakt er signert og reservasjonsbeløpet er
-                    betalt, er fotograferingen booket.) Tilbudet gjelder ikke om
-                    dere har en kontrakt med en annen fotograf.
+                    Bestill valgfri fotografering, med dato i januar-april 2024,
+                    og få 35% rabatt på fotograferingspakken. Rabatten gjelder
+                    ikke på bildeprodukter (utenom de inkluderte bildefilene i
+                    fotograferingen du har valgt)
                   </p>
-                  <p>
-                    Jeg trenger mer erfaring med bryllupsfotografering, og
-                    ønsker derfor å fylle opp min portefølje med flere
-                    bryllupsbilder.
-                  </p>
-                  <p>Ta kontakt om dere lurer på noe!</p>
+                  <p>Tilbudet gjelder 17.12.2023 - 31.12.2023</p>
+                  <p>*Gjelder ikke for bedrifter</p>
                 </div>
               </>
             }
             link={`/${ContactRoute}`}
           />
+          <PageSection>
+            <DiscountAd
+              imgSrc={WeddingDiscount}
+              imgAlt="En brud med hennes brudebukett"
+              title="30% rabatt på bryllupspakker"
+              text={
+                <>
+                  <div className="Discounts__Text">
+                    <p>
+                      De første 3 brudeparene som booker bryllupspakke 1 eller
+                      2, med fotografering i 2023 eller 2024, får 30% rabatt på
+                      pakken. (Når kontrakt er signert og reservasjonsbeløpet er
+                      betalt, er fotograferingen booket.) Tilbudet gjelder ikke
+                      om dere har en kontrakt med en annen fotograf.
+                    </p>
+                    <p>
+                      Jeg trenger mer erfaring med bryllupsfotografering, og
+                      ønsker derfor å fylle opp min portefølje med flere
+                      bryllupsbilder.
+                    </p>
+                    <p>Ta kontakt om dere lurer på noe!</p>
+                  </div>
+                </>
+              }
+              link={`/${ContactRoute}`}
+            />
+          </PageSection>
           {/* <DiscountAd
             imgSrc={PregnantBabyModelcall}
             imgAlt="En brud med hennes brudebukett"
