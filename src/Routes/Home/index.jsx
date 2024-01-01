@@ -33,16 +33,18 @@ export function Home() {
             <div className="Home__DiscountHeaderSubHeader">
               ved bestilling av valgfri fotografering
             </div>
+
             <div className="Home__DiscountHeaderText">
-              Bestill valgfri fotografering, med dato i januar-april 2024, og få
-              35% rabatt på fotograferingspakken. Rabatten gjelder ikke på
-              bildeprodukter (utenom de inkluderte bildefilene i
-              fotograferingen)
+              Alle ordinære barnefotograferinger som booked med dato i januar
+              2024. får 40% avslag i prisen. Tilbudet gjelder for
+              nyfødtfotografering, 1-årsfotografering og barnefotografering (fra
+              6mnd)
               <br />
               <br />
-              Tilbudet gjelder 17.12.2023 - 31.12.2023
+              Tilbudet gjelder til og med 15.01.2024
               <br />
-              *Gjelder ikke for bedrifter
+              *Det er ingen rabatter på tilleggspriser. Kveldstillegg,
+              helgetillegg og kjøretillegg kommer utenom.
             </div>
             <NavLink
               to={`/${ContactRoute}`}

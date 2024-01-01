@@ -24,18 +24,21 @@ export function Discounts() {
           <DiscountAd
             imgSrc={ChristmasDiscount}
             imgAlt="En baby i blomstereng"
-            title="35% rabatt på valgfri fotografering"
+            title="40% rabatt på alle barnefotograferinger"
             text={
               <>
                 <div className="Discounts__Text">
                   <p>
-                    Bestill valgfri fotografering, med dato i januar-april 2024,
-                    og få 35% rabatt på fotograferingspakken. Rabatten gjelder
-                    ikke på bildeprodukter (utenom de inkluderte bildefilene i
-                    fotograferingen du har valgt)
+                    Alle ordinære barnefotograferinger som booked med dato i
+                    januar 2024. får 40% avslag i prisen. Tilbudet gjelder for
+                    nyfødtfotografering, 1-årsfotografering og
+                    barnefotografering (fra 6mnd)
                   </p>
-                  <p>Tilbudet gjelder 17.12.2023 - 31.12.2023</p>
-                  <p>*Gjelder ikke for bedrifter</p>
+                  <p>Tilbudet gjelder til og med 15.01.2024</p>
+                  <p>
+                    *Det er ingen rabatter på tilleggspriser. Kveldstillegg,
+                    helgetillegg og kjøretillegg kommer utenom.
+                  </p>
                 </div>
               </>
             }
