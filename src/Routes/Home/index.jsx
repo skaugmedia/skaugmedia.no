@@ -29,14 +29,14 @@ export function Home() {
       >
         <div className="Home__DiscountHeaderBox">
           <div className="Home__DiscountHeaderTextBox">
-            <div className="Home__DiscountHeaderHeader">-35% rabatt</div>
+            <div className="Home__DiscountHeaderHeader">-40% rabatt</div>
             <div className="Home__DiscountHeaderSubHeader">
-              ved bestilling av valgfri fotografering
+              på alle barnefotograferinger
             </div>
 
             <div className="Home__DiscountHeaderText">
-              Alle ordinære barnefotograferinger som booked med dato i januar
-              2024. får 40% avslag i prisen. Tilbudet gjelder for
+              Alle ordinære barnefotograferinger som bookes med dato i januar
+              2024, får 40% avslag i prisen. Tilbudet gjelder for
               nyfødtfotografering, 1-årsfotografering og barnefotografering (fra
               6mnd)
               <br />

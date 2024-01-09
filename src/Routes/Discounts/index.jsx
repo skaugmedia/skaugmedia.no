@@ -29,8 +29,8 @@ export function Discounts() {
               <>
                 <div className="Discounts__Text">
                   <p>
-                    Alle ordinære barnefotograferinger som booked med dato i
-                    januar 2024. får 40% avslag i prisen. Tilbudet gjelder for
+                    Alle ordinære barnefotograferinger som bookes med dato i
+                    januar 2024, får 40% avslag i prisen. Tilbudet gjelder for
                     nyfødtfotografering, 1-årsfotografering og
                     barnefotografering (fra 6mnd)
                   </p>

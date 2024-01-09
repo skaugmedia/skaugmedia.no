@@ -1,1 +1,1 @@
-export const FreePregnancyDate = "05.01.2024";
+export const FreePregnancyDate = "07.02.2024";
