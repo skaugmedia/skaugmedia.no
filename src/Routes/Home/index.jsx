@@ -29,22 +29,23 @@ export function Home() {
       >
         <div className="Home__DiscountHeaderBox">
           <div className="Home__DiscountHeaderTextBox">
-            <div className="Home__DiscountHeaderHeader">-40% rabatt</div>
+            <div className="Home__DiscountHeaderHeader">-30% rabatt</div>
             <div className="Home__DiscountHeaderSubHeader">
-              på alle barnefotograferinger
+              på bryllupspakke 1 og 2
             </div>
 
             <div className="Home__DiscountHeaderText">
-              Alle ordinære barnefotograferinger som bookes med dato i januar
-              2024, får 40% avslag i prisen. Tilbudet gjelder for
-              nyfødtfotografering, 1-årsfotografering og barnefotografering (fra
-              6mnd)
+              De første 3 brudeparene som booker bryllupspakke 1 eller 2, med
+              fotografering i 2023 eller 2024, får 30% rabatt på pakken. (Når
+              kontrakt er signert og reservasjonsbeløpet er betalt, er
+              fotograferingen booket.) Tilbudet gjelder ikke om dere har en
+              kontrakt med en annen fotograf.
               <br />
               <br />
-              Tilbudet gjelder til og med 15.01.2024
+              Jeg trenger mer erfaring med bryllupsfotografering, og ønsker
+              derfor å fylle opp min portefølje med flere bryllupsbilder.
               <br />
-              *Det er ingen rabatter på tilleggspriser. Kveldstillegg,
-              helgetillegg og kjøretillegg kommer utenom.
+              Ta kontakt om dere lurer på noe!
             </div>
             <NavLink
               to={`/${ContactRoute}`}
