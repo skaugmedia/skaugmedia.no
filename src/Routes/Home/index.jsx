@@ -116,11 +116,16 @@ export function Home() {
       <PageSection>
         <div className="Home__IncludedSection">
           <div className="Home__IncludesText">
-            Alle fotograferinger inkluderer 3 digitale bildefiler
+            Alle fotograferinger inkluderer 10 digitale bildefiler
           </div>
           <div className="Home__IncludesSubtext">
             (med unntak av bryllupsfotografering, mitt første år-fotografering
             og gratis gravidfotografering)
+          </div>
+          <div className="Home__IncludesExtraText">
+            Om du ikke ønsker 10 digitale bilder inkludert, kan du velge å
+            betale for kun fotograferingen eller du kan bytte til en annen
+            bildepakke.
           </div>
         </div>
       </PageSection>

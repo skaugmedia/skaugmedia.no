@@ -672,6 +672,12 @@
     font-size: 0.9em;
   }
 
+  .Home__IncludesExtraText {
+    font-size: 1em;
+    font-weight: 300;
+    font-family: nunito;
+  }
+
   .free-pregnancy-row {
     margin-top: -50px;
   }
