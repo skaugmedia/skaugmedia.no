@@ -23,7 +23,7 @@ export function PricesProducts() {
       <div className="Wedding__PackageBoxRow">
         <div className="Wedding__PackageBox Wedding__PackageBox--Package1">
           <div className="Wedding__PackageBoxHeader">
-            <div className="Wedding__PackageBoxHeading">Bryllupspakke 1</div>
+            <div className="Wedding__PackageBoxHeading">Luminary</div>
             <div className="Wedding__PackageBoxSubHeading">
               Vielse + portretter
             </div>
@@ -56,7 +56,7 @@ export function PricesProducts() {
         </div>
         <div className="Wedding__PackageBox Wedding__PackageBox--Package2">
           <div className="Wedding__PackageBoxHeader">
-            <div className="Wedding__PackageBoxHeading">Bryllupspakke 2</div>
+            <div className="Wedding__PackageBoxHeading">Celestial</div>
             <div className="Wedding__PackageBoxSubHeading">
               Halvdagsfotografering
             </div>
@@ -91,7 +91,7 @@ export function PricesProducts() {
         </div>
         <div className="Wedding__PackageBox Wedding__PackageBox--Package3">
           <div className="Wedding__PackageBoxHeader">
-            <div className="Wedding__PackageBoxHeading">Bryllupspakke 3</div>
+            <div className="Wedding__PackageBoxHeading">Gallactic</div>
             <div className="Wedding__PackageBoxSubHeading">
               Halvdagsfotografering + trykksaker
             </div>
@@ -105,10 +105,10 @@ export function PricesProducts() {
             Sneak-peak etter ca. 1 uke
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
-          <div className="Wedding__PackageBoxText">5 timer fotografering</div>
+          <div className="Wedding__PackageBoxText">6 timer fotografering</div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
-            Ca. 150 stk. digitale bildefiler{" "}
+            Ca. 170 stk. digitale bildefiler{" "}
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
@@ -144,9 +144,7 @@ export function PricesProducts() {
       <div className="Wedding__PackageBigBox">
         <div className="Wedding__PackageBigBoxHeaderText">
           <div className="Wedding__PackageBigBoxHeader">
-            <div className="Wedding__PackageBoxHeaderBigBox">
-              Bryllupspakke 1
-            </div>
+            <div className="Wedding__PackageBoxHeaderBigBox">Luminary</div>
             <div className="Wedding__PackageBoxSubHeaderBigBox">
               Vielse + portretter
             </div>
@@ -229,9 +227,7 @@ export function PricesProducts() {
       <div className="Wedding__PackageBigBox">
         <div className="Wedding__PackageBigBoxHeaderText">
           <div className="Wedding__PackageBigBoxHeader">
-            <div className="Wedding__PackageBoxHeaderBigBox">
-              Bryllupspakke 2
-            </div>
+            <div className="Wedding__PackageBoxHeaderBigBox">Celestial</div>
             <div className="Wedding__PackageBoxSubHeaderBigBox">
               Halvdagsfotografering
             </div>
@@ -318,9 +314,7 @@ export function PricesProducts() {
       <div className="Wedding__PackageBigBox">
         <div className="Wedding__PackageBigBoxHeaderText">
           <div className="Wedding__PackageBigBoxHeader">
-            <div className="Wedding__PackageBoxHeaderBigBox">
-              Bryllupspakke 3
-            </div>
+            <div className="Wedding__PackageBoxHeaderBigBox">Gallactic</div>
             <div className="Wedding__PackageBoxSubHeaderBigBox">
               Halvdagsfotografering + trykksaker
             </div>
@@ -360,7 +354,7 @@ export function PricesProducts() {
             <div className="Wedding__PackageBoxDivider"></div>
 
             <div className="Wedding__PackageBigBoxListText">
-              5 timer fotografering
+              6 timer fotografering
             </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBoxText">
@@ -368,7 +362,7 @@ export function PricesProducts() {
             </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
-              Ca. 150 stk. digitale bildefiler
+              Ca. 170 stk. digitale bildefiler
             </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
@@ -482,9 +476,9 @@ export function PricesProducts() {
           <tbody>
             <tr>
               <td></td>
-              <td>Bryllupspakke 1</td>
-              <td>Bryllupspakke 2</td>
-              <td>Bryllupspakke 3</td>
+              <td>Luminary</td>
+              <td>Celestial</td>
+              <td>Gallactic</td>
             </tr>
             <tr>
               <th>Planleggingsmøte i god tid før bryllupet</th>
@@ -554,7 +548,7 @@ export function PricesProducts() {
               <th>Antall timer med fotografering</th>
               <td>3 timer fotografering</td>
               <td>5 timer fotografering</td>
-              <td>5 timer fotografering</td>
+              <td>6 timer fotografering</td>
             </tr>
             <tr>
               <th>Sneak-peak etter ca. 1 uke</th>
@@ -566,7 +560,7 @@ export function PricesProducts() {
               <th>Antall bilder inkludert</th>
               <td>Ca. 50 digitale bildefiler</td>
               <td>Ca. 150 digitale bildefiler</td>
-              <td>Ca. 150 digitale bildefiler</td>
+              <td>Ca. 170 digitale bildefiler</td>
             </tr>
             <tr>
               <th>Forlovelsesfotografering</th>
