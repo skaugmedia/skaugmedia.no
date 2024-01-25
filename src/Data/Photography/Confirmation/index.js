@@ -27,7 +27,7 @@ import conf_sv_4 from "../../../Images/Confirmation/conf_SV_4.jpg";
 import conf_sv_5 from "../../../Images/Confirmation/conf_SV_5.jpg";
 import conf_sv_6 from "../../../Images/Confirmation/conf_SV_6.jpg";
 import conf_sv_7 from "../../../Images/Confirmation/conf_SV_7.jpg";
-import * as ids from "../../../Routes/PricesServices/Ids";
+import ConfirmationRoute from "../../../Routes/Confirmation/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
@@ -43,9 +43,9 @@ export default {
     title: "Konfirmanten L",
   },
   listing: {
-    title: "Portrettforografering: konfirmant",
+    title: "Konfirmantfotografering",
     price: priceList.confirmation,
-    link: `/${PricesRoute}#${ids.confirmation}`,
+    link: `/${PricesRoute}/${ConfirmationRoute}`,
   },
   shoots: [
     {

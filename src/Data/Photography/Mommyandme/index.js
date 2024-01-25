@@ -19,7 +19,7 @@ import dad_VL_7 from "../../../Images/Mommy&me/dad_VL_7.jpg";
 
 import { priceList } from "/src/Data/priceList";
 
-import * as ids from "../../../Routes/PricesServices/Ids";
+import FamilyRoute from "../../../Routes/Family/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 
 export default {
@@ -34,9 +34,9 @@ export default {
     title: "Mommy and me",
   },
   listing: {
-    title: "Gruppefotografering: mommy & me",
+    title: "Mommy & me-fotografering",
     price: priceList.mommyandme,
-    link: `/${PricesRoute}#${ids.mommyandme}`,
+    link: `/${PricesRoute}/${FamilyRoute}`,
   },
   shoots: [
     {

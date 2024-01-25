@@ -46,7 +46,7 @@ import H5 from "../../../Images/Kids/H_5.jpg";
 import H6 from "../../../Images/Kids/H_6.jpg";
 import H7 from "../../../Images/Kids/H_7.jpg";
 
-import * as ids from "../../../Routes/PricesServices/Ids";
+import ChildrenRoute from "../../../Routes/Children/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
@@ -63,7 +63,7 @@ export default {
   listing: {
     title: "Barnefotografering",
     price: priceList.kids,
-    link: `/${PricesRoute}#${ids.kids}`,
+    link: `/${PricesRoute}/${ChildrenRoute}`,
   },
   shoots: [
     {

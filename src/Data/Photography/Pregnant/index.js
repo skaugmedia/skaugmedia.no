@@ -68,7 +68,7 @@ import preg_JA_4 from "../../../Images/Pregnant/preg_JA_4.jpg";
 
 import { priceList } from "/src/Data/priceList";
 
-import * as ids from "../../../Routes/PricesServices/Ids";
+import MaternityRoute from "../../../Routes/Maternity/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 
 export default {
@@ -85,9 +85,9 @@ export default {
     title: "Gravide J",
   },
   listing: {
-    title: "Portrettfotografering: gravid",
+    title: "Gravidfotografering",
     price: priceList.pregnant,
-    link: `/${PricesRoute}#${ids.pregnant}`,
+    link: `/${PricesRoute}/${MaternityRoute}`,
   },
   shoots: [
     {

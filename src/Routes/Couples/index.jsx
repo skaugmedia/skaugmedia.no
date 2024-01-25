@@ -1,45 +1,40 @@
-import NewbornImg from "../../Images/Newborn/newborn_LO_5.jpg";
+import ConfirmationImg from "../../Images/Confirmation/conf_SV_4.jpg";
 
 import { NavLink } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import "./Newborn.css";
+import "./Couples.css";
 import ContactRoute from "/src/Routes/Contact/Route";
 
-export function Newborn() {
+export function Couples() {
   return (
     <>
-      <div className="Newborn">
+      <div className="Couples">
         <PageSection>
-          <DesignHeading>Nyfødtfotografering</DesignHeading>
+          <DesignHeading>Parfotografering</DesignHeading>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">
-            Den første tiden er magisk,
+            Konfirmasjon opplever man bare en gang,
           </div>
           <div className="PhotoPrice__TopContentSubHeader">
-            ikke glem å forevige den!
+            det er viktig med bilder for å huske denne dagen!
           </div>
 
           <p className="PhotoPrice__TopContentText">
-            Jeg anbefaler å ha nyfødtfotografering innen babyen har fylt 14
-            dager, men det går også fint etter dette om tiden ikke strekker til.
-            Husk bare på at jo eldre babyen blir, jo mer våken blir den. Jeg
-            fotograferer naturlige nyfødtbilder, men har et lite utvalg av
-            rekvisitter og klær som passer til nyfødtfotograferingen, lån av
-            disse er inkludert i prisen. Denne fotograferingen inkluderer også
-            bilder med foreldre og søsken.
-          </p>
-
-          <p className="PhotoPrice__TopContentText">
-            Nyfødtfotografering gjennomføres hverdager mellom kl. 09.00 - 15.00.
-            Alle som har hatt nyfødtfotografering hos meg, får tilbud om en
-            gratis minifotografering av barnet ved 6-9 mnd alder.
+            Konfirmantfotografering gir deg muligheten til å fange øyeblikkene
+            som definerer denne viktige tiden i livet ditt. Uavhengig av om det
+            er en tid preget av refleksjon, spenning eller feiring, har hvert
+            øyeblikk sin egen spesielle betydning. Jeg er dedikert til å hjelpe
+            deg med å bevare denne overgangen til ung voksen alder på en måte
+            som er autentisk og meningsfull for deg. Gjennom mine bilder kan du
+            se tilbake på denne spesielle tiden og gjenoppleve øyeblikkene som
+            markerer din reise mot selvstendighet.
           </p>
 
           <img
             className="PhotoPrice__Img"
-            src={NewbornImg}
+            src={ConfirmationImg}
             alt="Våken liten nyfødt"
           ></img>
         </PageSection>
@@ -50,14 +45,25 @@ export function Newborn() {
           <div className="PhotoPrice__PackageBoxRowShoot">
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
-                NYFØDTFOTOGRAFERING
+                KONFIRMANTFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                opptil 3 timer fotografering, med 10% rabatt på alle
+                opptil 1 time fotografering, med 10% rabatt på alle
                 bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 1899,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>
+            </div>
+            <div className="PhotoPrice__ShootDivider"></div>
+            <div className="PhotoPrice__PackageBoxShoot">
+              <div className="PhotoPrice__PackageBoxHeading">
+                MINIFOTOGRAFERING
+              </div>
+              <div className="PhotoPrice__PackageBoxSubHeading">
+                20 minutter fotografering, med 3 digitale bildefiler inkludert
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1400,-</div>
             </div>
           </div>
           <div className="PhotoPrice__Choice">
@@ -74,13 +80,9 @@ export function Newborn() {
                 </div>
               </div>
               <div className="PhotoPrice__PackageBoxText">
-                2-3 timer fotografering hjemme hos dere eller på valgfri
-                lokasjon{" "}
+                1 time portrettfotografering på valgfri lokasjon
               </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Fotografering med søsken og foreldre{" "}
-              </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder{" "}
@@ -94,7 +96,7 @@ export function Newborn() {
                 15% ekstra rabatt på bildeprodukter{" "}
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 4699,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 4299,-</div>
             </div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package2">
               <div className="PhotoPrice__PackageBoxHeader">
@@ -104,31 +106,23 @@ export function Newborn() {
                 </div>
               </div>
               <div className="PhotoPrice__PackageBoxText">
-                2-3 timer fotografering hjemme hos dere eller på valgfri
-                lokasjon{" "}
+                1 time portrettfotografering på valgfri lokasjon
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Fotografering med søsken og foreldre{" "}
-              </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
+
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder{" "}
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Lerretsbilde 40x50 cm
-              </div>
+              <div className="PhotoPrice__PackageBoxText">Lerret 20x30 cm</div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Lerretsbilde 20x30 cm
-              </div>
+              <div className="PhotoPrice__PackageBoxText">Lerret 40x50 cm</div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 6199,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 5899,-</div>
             </div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
               <div className="PhotoPrice__PackageBoxHeader">
@@ -138,35 +132,29 @@ export function Newborn() {
                 </div>
               </div>
               <div className="PhotoPrice__PackageBoxText">
-                2-3 timer fotografering hjemme hos dere eller på valgfri
-                lokasjon{" "}
+                1 time portrettfotografering på valgfri lokasjon
               </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Fotografering med søsken og foreldre{" "}
-              </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder{" "}
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                10 høyoppløselige bildefiler
+                10 digitale bildefiler
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Album 30x30 cm med 10 stk. bilder
+                Album 20x20 cm med 10 stk. bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Laminert fotografi i ramme 30x40 cm
-              </div>
+              <div className="PhotoPrice__PackageBoxText">Lerret 20x30 cm</div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 7499,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 7099,-</div>
             </div>
           </div>
         </PageSection>
@@ -204,10 +192,11 @@ export function Newborn() {
             </div>
           </div>
         </PageSection>
+
         <PageSection>
           <div className="PhotoPrice__BottomDivider"></div>
           <div className="PhotoPrice__BookingText">
-            Ønsker du å booke nyfødtfotografering?
+            Ønsker du å booke konfirmantfotografering?
           </div>
           <NavLink
             to={`/${ContactRoute}`}

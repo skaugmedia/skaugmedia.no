@@ -9,6 +9,8 @@ import { Confirmation } from "./Routes/Confirmation";
 import ConfirmationRoute from "./Routes/Confirmation/Route";
 import { Contact } from "./Routes/Contact";
 import ContactRoute from "./Routes/Contact/Route";
+import { Couples } from "./Routes/Couples";
+import CouplesRoute from "./Routes/Couples/Route";
 import { Discounts } from "./Routes/Discounts";
 import DiscountsRoute from "./Routes/Discounts/Route";
 import { ErrorHandler } from "./Routes/ErrorHandler";
@@ -94,6 +96,7 @@ export const router = createBrowserRouter([
           },
           { path: `${PricesRoute}/${HeadshotsRoute}`, element: <Headshots /> },
           { path: `${PricesRoute}/${FamilyRoute}`, element: <Family /> },
+          { path: `${PricesRoute}/${CouplesRoute}`, element: <Couples /> },
           {
             path: `${PricesRoute}/${PhotoProductsRoute}`,
             element: <PhotoProducts />,

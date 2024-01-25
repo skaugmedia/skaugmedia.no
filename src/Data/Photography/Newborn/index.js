@@ -15,7 +15,7 @@ import LO5 from "../../../Images/Newborn/newborn_LO_5.jpg";
 import LO6 from "../../../Images/Newborn/newborn_LO_6.jpg";
 import LO7 from "../../../Images/Newborn/newborn_LO_7.jpg";
 
-import * as ids from "../../../Routes/PricesServices/Ids";
+import NewbornRoute from "../../../Routes/Newborn/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "../../priceList";
 
@@ -35,7 +35,7 @@ export default {
   listing: {
     title: "Nyfødtfotografering",
     price: priceList.newborn,
-    link: `/${PricesRoute}#${ids.newborn}`,
+    link: `/${PricesRoute}/${NewbornRoute}`,
   },
   shoots: [
     {

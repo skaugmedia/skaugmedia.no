@@ -41,7 +41,7 @@ import port_T_04 from "../../../Images/Portrait/port_T_04.jpg";
 import port_T_05 from "../../../Images/Portrait/port_T_05.jpg";
 import port_T_06 from "../../../Images/Portrait/port_T_06.jpg";
 
-import * as ids from "../../../Routes/PricesServices/Ids";
+import HeadshotsRoute from "../../../Routes/Headshots/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
@@ -56,9 +56,9 @@ export default {
     title: "Portrett",
   },
   listing: {
-    title: "Portrettfotografering",
+    title: "Portrettfotografering / Headshots",
     price: priceList.portraits,
-    link: `/${PricesRoute}#${ids.portrait}`,
+    link: `/${PricesRoute}/${HeadshotsRoute}`,
   },
   shoots: [
     {

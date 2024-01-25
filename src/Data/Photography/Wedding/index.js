@@ -17,7 +17,7 @@ import Weddingrt7 from "../../../Images/Wedding/weddingRT_7.jpg";
 import Weddingrt8 from "../../../Images/Wedding/weddingRT_8.jpg";
 import Weddingrt9 from "../../../Images/Wedding/weddingRT_9.jpg";
 
-import * as ids from "../../../Routes/PricesServices/Ids";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 import WeddingRoute from "../../../Routes/Wedding/Route";
 
 export default {
@@ -33,7 +33,7 @@ export default {
   listing: {
     title: "Bryllupsfotografering",
     price: "Fra kr. 16.000,-",
-    link: `/${WeddingRoute}#${ids.wedding}`,
+    link: `/${PricesRoute}/${WeddingRoute}`,
   },
   shoots: [
     {

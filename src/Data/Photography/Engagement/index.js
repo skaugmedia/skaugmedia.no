@@ -18,13 +18,13 @@ import coup_LO_6 from "../../../Images/Couple/coup_LO_6.jpg";
 import coup_LO_7 from "../../../Images/Couple/coup_LO_7.jpg";
 import coup_LO_8 from "../../../Images/Couple/coup_LO_8.jpg";
 import coup_LO_9 from "../../../Images/Couple/coup_LO_9.jpg";
-import * as ids from "../../../Routes/PricesServices/Ids";
+import CouplesRoute from "../../../Routes/Couples/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
 export default {
-  id: "kjaereste-og-forlovelse",
-  title: "Kjæreste og forlovelse",
+  id: "parfotografering",
+  title: "Parfotografering",
 
   body: oneLine`
     Det er så hyggelig å ha bilder som viser den ekte kjærligheten mellom et par, minner å
@@ -33,12 +33,12 @@ export default {
   `,
   cover: {
     url: coup_LO_5,
-    title: "Kjæreste og forlovelse",
+    title: "Parfotografering",
   },
   listing: {
-    title: "Gruppefotografering: forlovelse",
+    title: "Parfotografering",
     price: priceList.engagement,
-    link: `/${PricesRoute}#${ids.engagement}`,
+    link: `/${PricesRoute}/${CouplesRoute}`,
   },
   shoots: [
     {
