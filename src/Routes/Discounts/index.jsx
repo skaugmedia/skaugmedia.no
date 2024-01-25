@@ -159,11 +159,12 @@ export function Discounts() {
             <FixedDiscount
               imgSrc={NewbornDiscount}
               imgAlt="Våken nyfødt baby"
-              discount="50%"
+              discount="GRATIS"
               text={
                 <>
-                  avslag på nyfødtfotografering, <br />
-                  etter ordinær gravidfotografering
+                  minifotografering ved 6-9 mnd,
+                  <br />
+                  etter nyfødtfotografering
                 </>
               }
             />

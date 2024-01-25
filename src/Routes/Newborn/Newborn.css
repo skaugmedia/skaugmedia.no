@@ -1,0 +1,131 @@
+.PhotoPrice__PageHeading {
+  margin-bottom: 0;
+}
+.PhotoPrice__TopContentHeader {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.PhotoPrice__TopContentSubHeader {
+  font-size: 1.5em;
+  margin-top: -5px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.PhotoPrice__TopContentText {
+  font-family: nunito;
+}
+
+.PhotoPrice__Img {
+  width: 100%;
+}
+
+.PhotoPrice__Choice {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: var(--blue);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.PhotoPrice__PackageBoxHeading {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.PhotoPrice__PackageBoxSubHeading {
+  font-family: oswald;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.PhotoPrice__PackageBoxText {
+  font-family: nunito;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.PhotoPrice__PackageBoxDivider {
+  border: 1px solid lightgrey;
+  width: 15%;
+  margin: 9px auto;
+}
+
+.PhotoPrice__PackageBoxPrice {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-top: 0px;
+  color: black;
+}
+
+.PhotoPrice__PackageBoxRow {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.PhotoPrice__PackageBox {
+  width: 33%;
+  padding: 20px 30px;
+}
+
+.PhotoPrice__PackageBox--Package1 {
+}
+
+.PhotoPrice__PackageBox--Package2 {
+}
+
+.PhotoPrice__PackageBox--Package3 {
+}
+
+.PhotoPrice__BottomDivider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid lightgrey;
+  width: 30%;
+  margin: 9px auto;
+}
+
+.PhotoPrice__BookingText {
+  text-align: center;
+  margin-top: 25px;
+  font-family: nunito;
+  font-size: 1.2em;
+}
+
+.PhotoPrice__BookingButton {
+  border-color: transparent;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  background-color: black;
+  color: white;
+  font-family: oswald;
+  margin-top: 5px;
+  padding: 5px 15px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .PhotoPrice__TopContentHeader {
+    font-size: 1em;
+  }
+}

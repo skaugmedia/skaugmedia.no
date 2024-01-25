@@ -66,17 +66,14 @@
 }
 
 .BusinessPrices__PackageBox1 {
-  background-color: #ddd;
   width: 33%;
 }
 
 .BusinessPrices__PackageBox2 {
-  background-color: #cbcbcb;
   width: 33%;
 }
 
 .BusinessPrices__PackageBox3 {
-  background-color: #ddd;
   width: 33%;
 }
 
@@ -99,6 +96,11 @@
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+.BusinessPrices__ReadMoreButton:hover {
+  background-color: var(--blue);
+  color: black;
 }
 
 .BusinessPrices__TopContentText {
@@ -217,8 +219,6 @@
 }
 
 .BusinessPrices__PackageBigBox1 {
-  background-color: #ddd;
-
   width: 100%;
   padding: 20px;
   text-align: left;
@@ -320,6 +320,11 @@
   text-align: left;
   font-weight: 300;
   font-family: nunito;
+}
+
+.BusinessPrices__PackageCompareButton:hover {
+  color: var(--blue);
+  background-color: black;
 }
 
 .BusinessPrices__PackageCompareButton {

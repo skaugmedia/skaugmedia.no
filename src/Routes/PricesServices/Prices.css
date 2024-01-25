@@ -1,3 +1,103 @@
+.Prices__PriceText {
+  margin-bottom: 10px;
+}
+
+.Prices__CategoryNav {
+}
+.Prices__CategoryNav:hover {
+  opacity: 98%;
+}
+
+.Prices__CategorySection1 {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.Prices__CategorySection2 {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.Prices__CategorySection3 {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.Prices__CategorySection4 {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.Prices__CategorySection5 {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Prices__Category_PriceSquare {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 325px;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: none;
+  margin-bottom: 13px;
+}
+
+.Prices__Category_PriceSquare:hover {
+  opacity: 60%;
+}
+
+.Prices__Category_PriceImg {
+  object-fit: cover;
+  opacity: 80%;
+  color: white;
+}
+
+.Prices__Category_PriceImg:hover {
+}
+
+.Prices__Category_PriceTextBox {
+  position: absolute;
+}
+
+.Prices__Category_PriceHeader {
+  font-size: 2em;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin-top: 260px;
+
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+.Prices__Category_PriceHeader {
+}
+
+/*.Prices__Category_PriceSubHeader {
+  font-size: 7em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.Prices__Category_PriceText {
+  font-size: 1.7em;
+  text-align: left;
+  margin-top: 2px;
+  line-height: 130%;
+  margin-bottom: 10px;
+} */
+
 .Prices__ButtonPricelistRow {
   display: flex;
   flex-flow: row;
@@ -327,6 +427,7 @@
 .Prices__PricesText {
   display: flex;
   text-align: right;
+  margin-bottom: 10px;
 }
 
 .Prices__TextIntroHeader {
@@ -342,15 +443,13 @@
   margin-bottom: 5px;
   font-family: nunito;
 }
-
-.Prices__WeddingPackageSection {
-  display: flex;
-  align-items: flex-start;
-}
-
 .Prices__TextIntro {
   font-family: nunito;
   margin-bottom: 5px;
+}
+.Prices__WeddingPackageSection {
+  display: flex;
+  align-items: flex-start;
 }
 
 .Prices__Text {

@@ -35,25 +35,27 @@ export function ProductPriceSection({
           alt={imgAlt}
         ></img>
       </div>
+      <div className="ProductPriceSection__TextSection">
+        <div className="ProductPriceSection__Header">{title}</div>
+        <div className="ProductPriceSection__Textbox">
+          {text}
 
-      <div className="ProductPriceSection__Textbox">
-        {text}
+          <div className="ProductPriceSection__ContentBox">
+            <div className="ProductPriceSection__ContentText">
+              <div className="ProductPriceSection__PriceText">{priceText1}</div>
+              <div className="ProductPriceSection__PriceText">{priceText2}</div>
+              <div className="ProductPriceSection__PriceText">{priceText3}</div>
+              <div className="ProductPriceSection__PriceText">{priceText4}</div>
+              <div className="ProductPriceSection__PriceText">{priceText5}</div>
+            </div>
 
-        <div className="ProductPriceSection__ContentBox">
-          <div className="ProductPriceSection__ContentText">
-            <div className="ProductPriceSection__PriceText">{priceText1}</div>
-            <div className="ProductPriceSection__PriceText">{priceText2}</div>
-            <div className="ProductPriceSection__PriceText">{priceText3}</div>
-            <div className="ProductPriceSection__PriceText">{priceText4}</div>
-            <div className="ProductPriceSection__PriceText">{priceText5}</div>
-          </div>
-
-          <div className="ProductPriceSection__ContentPrice">
-            <div className="ProductPriceSection__Price">{price1}</div>
-            <div className="ProductPriceSection__Price">{price2}</div>
-            <div className="ProductPriceSection__Price">{price3}</div>
-            <div className="ProductPriceSection__Price">{price4}</div>
-            <div className="ProductPriceSection__Price">{price5}</div>
+            <div className="ProductPriceSection__ContentPrice">
+              <div className="ProductPriceSection__Price">{price1}</div>
+              <div className="ProductPriceSection__Price">{price2}</div>
+              <div className="ProductPriceSection__Price">{price3}</div>
+              <div className="ProductPriceSection__Price">{price4}</div>
+              <div className="ProductPriceSection__Price">{price5}</div>
+            </div>
           </div>
         </div>
       </div>

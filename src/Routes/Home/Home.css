@@ -56,6 +56,24 @@
   text-decoration: none;
 }
 
+.Home__PhotographerSection {
+  display: flex;
+  flex-flow: row;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.Home__PhotographerImg {
+  width: 350px;
+}
+
+.Home__PhotographerTextSection {
+  font-family: nunito;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .Home__DiscountSection {
   display: flex;
   flex-flow: row;
@@ -82,15 +100,22 @@
 }
 
 .Home__Discount_NewbornHeader {
-  font-size: 3em;
+  font-size: 5em;
   font-weight: 700;
   color: black;
   text-align: left;
-  margin-bottom: -40px;
+  margin-bottom: -25px;
 }
 
 .Home__Discount_NewbornSubHeader {
-  font-size: 7em;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.Home__Discount_NewbornSubHeaderText {
+  font-size: 3em;
   font-weight: 700;
   color: black;
   text-align: left;
@@ -147,7 +172,29 @@
   margin-bottom: 10px;
 }
 
-.Home__ImageSectionImage:hover {
+.Home__NewsletterBackground {
+  background-color: var(--blue);
+}
+
+.Home__PortfolioRow {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.Home__PortfolioImgSection:hover {
+  opacity: 60%;
+}
+
+.Home__PortfolioImg {
+  width: 240px;
+}
+
+.Home__PortfolioTitle {
+}
+
+.Home__PortfolioImg .Home__ImageSectionImage:hover {
   opacity: 0.9;
 }
 

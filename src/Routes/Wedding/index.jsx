@@ -6,11 +6,12 @@ import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import pageName from "./PageName";
 import "./Wedding.css";
+import WeddingImg from "/src/Images/Wedding/weddingRT_14.jpg";
 import WeddingTextImg from "/src/Images/WeddingPrice/wedding_text.jpg";
 import WeddingText1Img from "/src/Images/WeddingPrice/wedding_text1.jpg";
 import WeddingText2Img from "/src/Images/WeddingPrice/wedding_text2.jpg";
 
-export function PricesProducts() {
+export function Wedding() {
   useDocumentTitle(pageName);
   const [showComparisonTable, setShowComparisonTable] = useState(false);
   const [menu, setMenu] = useState(null);
@@ -441,6 +442,11 @@ export function PricesProducts() {
           unike behov og budsjett, slik at jeg kan fange din store dag på den
           mest minneverdige måten.
         </p>
+        <img
+          className="PhotoPrice__Img"
+          src={WeddingImg}
+          alt="Våken liten nyfødt"
+        ></img>
       </PageSection>
       {(() => {
         switch (menu) {

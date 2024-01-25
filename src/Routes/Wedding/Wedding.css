@@ -73,15 +73,17 @@
 }
 
 .Wedding__PackageBox--Package1 {
-  background-color: #ddd;
 }
 
 .Wedding__PackageBox--Package2 {
-  background-color: #cbcbcb;
 }
 
 .Wedding__PackageBox--Package3 {
-  background-color: #ddd;
+}
+
+.Wedding__ReadMoreButton:hover {
+  background-color: var(--blue);
+  color: black;
 }
 
 .Wedding__ReadMoreButton {
@@ -140,8 +142,6 @@
 }
 
 .Wedding__PackageBigBox {
-  background-color: #ddd;
-
   width: 100%;
   padding: 20px 30px;
   text-align: left;
@@ -194,6 +194,11 @@
 
 .Wedding__PackageBigBoxDivider {
   width: 30%;
+}
+
+.Wedding__PackageCompareButton:hover {
+  color: var(--blue);
+  background-color: black;
 }
 
 .Wedding__PackageCompareButton {

@@ -33,7 +33,7 @@ export default {
     title: "LO",
   },
   listing: {
-    title: "Barnefotografering: nyfødt",
+    title: "Nyfødtfotografering",
     price: priceList.newborn,
     link: `/${PricesRoute}#${ids.newborn}`,
   },

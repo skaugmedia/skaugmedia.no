@@ -1,10 +1,18 @@
+.ProductPriceSection__BottomDivider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid lightgrey;
+  width: 30%;
+  margin: 9px auto;
+}
 .ProductPriceSection {
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   gap: 40px;
   width: 100%;
   max-width: var(--content-width);
   justify-content: space-between;
-  padding-bottom: 40px;
 }
 
 .ProductPriceSection--reverse {
@@ -14,7 +22,7 @@
 .ProductPriceSection__ImgSection {
   display: flex;
 
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 
@@ -23,14 +31,20 @@
   height: 100%;
 }
 
+.ProductPriceSection__TextSection {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .ProductPriceSection__Textbox {
-  width: 50%;
+  width: 100%;
 }
 
 .ProductPriceSection__Header {
   font-size: 1.2em;
-  font-weight: 700;
-  color: var(--blue);
+  font-weight: 300;
+  color: black;
   text-align: left;
   text-transform: uppercase;
 }

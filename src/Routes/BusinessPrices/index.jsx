@@ -53,6 +53,10 @@ export function BusinessPrices() {
           <div className="BusinessPrices__PackageBoxText">1 video/reels</div>
           <div className="BusinessPrices__PackageBoxDivider"></div>
           <div className="BusinessPrices__PackageBoxText">
+            40% rabatt første måned
+          </div>
+          <div className="BusinessPrices__PackageBoxDivider"></div>
+          <div className="BusinessPrices__PackageBoxText">
             Ingen bindingstid
           </div>
           <div className="BusinessPrices__PackageBoxDivider"></div>
@@ -109,6 +113,10 @@ export function BusinessPrices() {
           <div className="BusinessPrices__PackageBoxText">2 video/reels</div>
           <div className="BusinessPrices__PackageBoxDivider"></div>
           <div className="BusinessPrices__PackageBoxText">
+            40% rabatt første måned
+          </div>
+          <div className="BusinessPrices__PackageBoxDivider"></div>
+          <div className="BusinessPrices__PackageBoxText">
             Ingen bindingstid
           </div>
           <div className="BusinessPrices__PackageBoxDivider"></div>
@@ -160,6 +168,10 @@ export function BusinessPrices() {
           <div className="BusinessPrices__PackageBoxText">17 stories</div>
           <div className="BusinessPrices__PackageBoxDivider"></div>
           <div className="BusinessPrices__PackageBoxText">3 video/reels</div>
+          <div className="BusinessPrices__PackageBoxDivider"></div>
+          <div className="BusinessPrices__PackageBoxText">
+            40% rabatt første måned
+          </div>
           <div className="BusinessPrices__PackageBoxDivider"></div>
           <div className="BusinessPrices__PackageBoxText">
             Ingen bindingstid
@@ -255,6 +267,11 @@ export function BusinessPrices() {
               <div className="BusinessPrices__PackageBigBoxListText">
                 5 stories
               </div>
+              <div className="BusinessPrices__PackageBoxDivider"></div>
+              <div className="BusinessPrices__PackageBigBoxListText">
+                40% rabatt første måned
+              </div>
+
               <div className="BusinessPrices__PackageBoxDivider"></div>
               <div className="BusinessPrices__PackageBigBoxListText">
                 Ingen bindingstid{" "}
@@ -368,6 +385,11 @@ export function BusinessPrices() {
               </div>
               <div className="BusinessPrices__PackageBoxDivider"></div>
               <div className="BusinessPrices__PackageBigBoxListText">
+                40% rabatt første måned
+              </div>
+
+              <div className="BusinessPrices__PackageBoxDivider"></div>
+              <div className="BusinessPrices__PackageBigBoxListText">
                 Ingen bindingstid{" "}
               </div>
               <button
@@ -476,6 +498,11 @@ export function BusinessPrices() {
               <div className="BusinessPrices__PackageBigBoxListText">
                 17 stories
               </div>
+              <div className="BusinessPrices__PackageBoxDivider"></div>
+              <div className="BusinessPrices__PackageBigBoxListText">
+                40% rabatt første måned
+              </div>
+
               <div className="BusinessPrices__PackageBoxDivider"></div>
               <div className="BusinessPrices__PackageBigBoxListText">
                 Ingen bindingstid{" "}

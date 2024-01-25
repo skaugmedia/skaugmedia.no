@@ -3,14 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
-import { IncludesList } from "../../Components/IncludesList";
 import { PageSection } from "../../Components/PageSection";
 import { ProductPriceSection } from "../../Components/ProductPriceSection";
 import { Tabs } from "../../Components/Tabs";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { isWithinRange, localTime } from "../../utils";
 import BusinessPricesRoute from "../BusinessPrices/Route";
-import PricesProductsRoute from "../Wedding/Route";
+import WeddingRoute from "../Wedding/Route";
 import * as ids from "./Ids";
 import pageName from "./PageName";
 import "./Prices.css";
@@ -44,6 +43,33 @@ import ProductImg from "/src/Images/Prices/product_photography.jpg";
 import SiblingImg from "/src/Images/Prices/sibling_photography.jpg";
 import CardsImg from "/src/Images/Prices/takkekort.jpg";
 import UXDesignImg from "/src/Images/Prices/uxdesign.jpg";
+import ChildrenPageName from "/src/Routes/Children/PageName";
+import ChildrenRoute from "/src/Routes/Children/Route";
+import ConfirmationPageName from "/src/Routes/Confirmation/PageName";
+import ConfirmationRoute from "/src/Routes/Confirmation/Route";
+import FamilyPageName from "/src/Routes/Family/PageName";
+import FamilyRoute from "/src/Routes/Family/Route";
+import FirstYearPageName from "/src/Routes/FirstYear/PageName";
+import FirstYearRoute from "/src/Routes/FirstYear/Route";
+import HeadshotsPageName from "/src/Routes/Headshots/PageName";
+import HeadshotsRoute from "/src/Routes/Headshots/Route";
+import MaternityPageName from "/src/Routes/Maternity/PageName";
+import MaternityRoute from "/src/Routes/Maternity/Route";
+import NewbornPageName from "/src/Routes/Newborn/PageName";
+import NewbornRoute from "/src/Routes/Newborn/Route";
+import PhotoProductsPageName from "/src/Routes/PhotoProducts/PageName";
+import PhotoProductsRoute from "/src/Routes/PhotoProducts/Route";
+import WeddingPageName from "/src/Routes/Wedding/PageName";
+
+import ChildrenButton from "/src/Images/Prices/children_button.jpg";
+import ConfirmationButton from "/src/Images/Prices/confirmation_button.jpg";
+import FamilyButton from "/src/Images/Prices/family_button.jpg";
+import FirstYearButton from "/src/Images/Prices/firstyear_button.jpg";
+import HeadshotsButton from "/src/Images/Prices/headshots_button.jpg";
+import MaternityButton from "/src/Images/Prices/maternity_button.jpg";
+import NewbornButton from "/src/Images/Prices/newborn_button.jpg";
+import PhotoProductsButton from "/src/Images/Prices/photoproducts_button.jpg";
+import WeddingButton from "/src/Images/Prices/wedding_button.jpg";
 
 export function PricesServices() {
   useDocumentTitle(pageName);
@@ -142,10 +168,11 @@ export function PricesServices() {
                     har et lite utvalg av rekvisitter og klær som passer til
                     nyfødtfotograferingen, lån av disse er inkludert i prisen.
                     Denne fotograferingen inkluderer også bilder med foreldre og
-                    søsken.
+                    søsken. Nyfødtfotografering gjennomføres hverdager mellom
+                    09.00 og 15.00.
                     <p className="Prices__TabsContentTextOffer">
-                      Ved booking av nyfødtfotografering, får man 50% avslag på
-                      1-års fotografering.
+                      Ved booking av nyfødtfotografering, får man tilbud om en
+                      gratis minifotografering av babyen i alderen 6-9 mnd.
                     </p>
                     <p>
                       Inkluderer:
@@ -1267,7 +1294,7 @@ export function PricesServices() {
             <div className="Prices__ButtonSubText">fra kr. 1499,-</div>
           </div>
         </button>
-        <NavLink className="btn" to={`/${PricesProductsRoute}`}>
+        <NavLink className="btn" to={`/${WeddingRoute}`}>
           <div className="backdrop color4"></div>
           <div className="text">
             <div className="Prices__ButtonText">Bryllup</div>
@@ -1417,39 +1444,6 @@ export function PricesServices() {
             priceText5={false}
             price5={false}
           />
-
-          {/*  {/* {/* <div className="Prices__TabsContentText">
-            Gi liv til de best dyrebare øyeblikkene med bildekopier av høy
-            kvalitet. Min leverandør trykker hver enkelt bilde med presisjon, og
-            kvalitetssjekker bildet før de sendes avgårde. Disse løse bildene er
-            perfekte å ramme inn å gi bort i gave til den som har alt!
-          </div>
-          <div className="Prices__TabsContentProductPricelist">
-            <div className="Prices__TabsContentTextPricelist">
-              Bildekopi 15x20cm
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 500,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Bildekopi 20x30cm
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 800,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Bildekopi 30x40cm
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 1200,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Bildekopi 40x50cm
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 2000,-
-            </div> *
-          </div>  */}
         </div>
       </div>
     </div>
@@ -1515,39 +1509,6 @@ export function PricesServices() {
             priceText5={false}
             price5={false}
           />
-
-          {/* <div className="Prices__TabsContentText">
-            For å skape et hjem er det for mange viktig å henge opp bilder på
-            veggene. Trykk på lerret og hard skumplate har samme pris, og de gir
-            begge et matt utrykk. Begge typene tar seg svært bra ut på veggen,
-            alene eller i klynger med flere bilder.
-          </div>
-          <div className="Prices__TabsContentProductPricelist">
-            <div className="Prices__TabsContentTextPricelist">
-              Veggbilde 20x30cm
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 2000,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Veggbilde 30x40cm
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 3500,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Veggbilde 40x50cm
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 4800,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Veggbilde 50x70cm
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 6700,-
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
@@ -1618,44 +1579,6 @@ export function PricesServices() {
               <div className="ProductPriceSection__Price">Kr. 6500,-</div>
             }
           />
-
-          {/* <div className="Prices__TabsContentText">
-            Et album er en hyllest til de uforglemmelige øyeblikkene du vil se
-            igjen og igjen. Hver side er en vakker reise og en fortelling bare
-            albumet og dere som var til stede kan fortelle.
-          </div>
-          <div className="Prices__TabsContentProductPricelist">
-            <div className="Prices__TabsContentTextPricelist">
-              panorama liten - 20 sider
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 5000,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              kvadratisk 20x20 cm - 20 sider
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 7000,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              kvadratisk 25x25 cm - 20 sider
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 7700,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              kvadratisk 30x30 cm - 20 sider
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 8500,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              panorama stor - 20 sider
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 9000,-
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
@@ -1721,45 +1644,6 @@ export function PricesServices() {
             }
             price5={<div className="ProductPriceSection__Price">Kr. 650,-</div>}
           />
-
-          {/* <div className="Prices__TabsContentText">
-            Om du ønsker, kan du kjøpe digitale bildefiler i høy oppløsning. Med
-            disse filene kan du printe så mange ganger du ønsker, lagre som
-            backup eller bruke som ditt profilbilde på sosiale medier, men husk
-            å kreditere meg som fotograf under bildet.
-          </div>
-          <div className="Prices__TabsContentProductPricelist">
-            <div className="Prices__TabsContentTextPricelist">
-              Minipakke med 3 digitale filer
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 3600,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Liten pakke med 5 digitale filer
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 5500,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Medium pakke med 10 digitale filer
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 6800,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Stor pakke med 15 digitale filer
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 7700,-
-            </div>
-            <div className="Prices__TabsContentTextPricelist">
-              Enkeltfiler i tillegg til pakke
-            </div>
-            <div className="Prices__TabsContentTextPricelistAmount">
-              Kr. 650,-
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
@@ -1939,6 +1823,7 @@ export function PricesServices() {
       <PageSection innerClassName="prices">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
       </PageSection>
+
       <PageSection innerClassName="Prices__Section">
         <div className="Prices__Header">Gavekort</div>
         <div className="Prices__Text">
@@ -1954,8 +1839,143 @@ export function PricesServices() {
           </div>
         </div>
       </PageSection>
-
       <PageSection>
+        <div className="Prices__CategorySection1">
+          <NavLink to={MaternityRoute} className="Prices__CategoryNav">
+            <div className="Prices__Category_PriceSquare">
+              <img
+                className="Prices__Category_PriceImg"
+                src={MaternityButton}
+                title="Baby utendørs i blomstereng"
+              />
+              <div className="Prices__Category_PriceTextBox">
+                <div className="Prices__Category_PriceHeader">
+                  {MaternityPageName}
+                </div>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to={FamilyRoute} className="Prices__CategoryNav">
+            <div className="Prices__Category_PriceSquare">
+              <img
+                className="Prices__Category_PriceImg"
+                src={FamilyButton}
+                title="Baby utendørs i blomstereng"
+              />
+              <div className="Prices__Category_PriceTextBox">
+                <div className="Prices__Category_PriceHeader">
+                  {FamilyPageName}
+                </div>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to={NewbornRoute} className="Prices__CategoryNav">
+            <div className="Prices__Category_PriceSquare">
+              <img
+                className="Prices__Category_PriceImg"
+                src={NewbornButton}
+                title="Baby utendørs i blomstereng"
+              />
+              <div className="Prices__Category_PriceTextBox">
+                <div className="Prices__Category_PriceHeader">
+                  {NewbornPageName}
+                </div>
+              </div>
+            </div>
+          </NavLink>
+        </div>
+
+        <div className="Prices__CategorySection2">
+          <NavLink to={ChildrenRoute} className="Prices__CategoryNav">
+            <div className="Prices__Category_PriceSquare">
+              <img
+                className="Prices__Category_PriceImg"
+                src={ChildrenButton}
+                title="Baby utendørs i blomstereng"
+              />
+              <div className="Prices__Category_PriceTextBox">
+                <div className="Prices__Category_PriceHeader">
+                  {ChildrenPageName}
+                </div>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to={ConfirmationRoute} className="Prices__CategoryNav">
+            <div className="Prices__Category_PriceSquare">
+              <img
+                className="Prices__Category_PriceImg"
+                src={ConfirmationButton}
+                title="Baby utendørs i blomstereng"
+              />
+              <div className="Prices__Category_PriceTextBox">
+                <div className="Prices__Category_PriceHeader">
+                  {ConfirmationPageName}
+                </div>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to={WeddingRoute} className="Prices__CategoryNav">
+            <div className="Prices__Category_PriceSquare">
+              <img
+                className="Prices__Category_PriceImg"
+                src={WeddingButton}
+                title="Baby utendørs i blomstereng"
+              />
+              <div className="Prices__Category_PriceTextBox">
+                <div className="Prices__Category_PriceHeader">
+                  {WeddingPageName}
+                </div>
+              </div>
+            </div>
+          </NavLink>
+        </div>
+        <div className="Prices__CategorySection3">
+          <NavLink to={FirstYearRoute} className="Prices__CategoryNav">
+            <div className="Prices__Category_PriceSquare">
+              <img
+                className="Prices__Category_PriceImg"
+                src={FirstYearButton}
+                title="Baby utendørs i blomstereng"
+              />
+              <div className="Prices__Category_PriceTextBox">
+                <div className="Prices__Category_PriceHeader">
+                  {FirstYearPageName}
+                </div>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to={HeadshotsRoute} className="Prices__CategoryNav">
+            <div className="Prices__Category_PriceSquare">
+              <img
+                className="Prices__Category_PriceImg"
+                src={HeadshotsButton}
+                title="Baby utendørs i blomstereng"
+              />
+              <div className="Prices__Category_PriceTextBox">
+                <div className="Prices__Category_PriceHeader">
+                  {HeadshotsPageName}
+                </div>
+              </div>
+            </div>
+          </NavLink>
+          <NavLink to={PhotoProductsRoute} className="Prices__CategoryNav">
+            <div className="Prices__Category_PriceSquare">
+              <img
+                className="Prices__Category_PriceImg"
+                src={PhotoProductsButton}
+                title="Baby utendørs i blomstereng"
+              />
+              <div className="Prices__Category_PriceTextBox">
+                <div className="Prices__Category_PriceHeader">
+                  {PhotoProductsPageName}
+                </div>
+              </div>
+            </div>
+          </NavLink>
+        </div>
+      </PageSection>
+
+      {/* <PageSection>
         <div className="Prices__Header">Fotografering og design</div>
         {(() => {
           switch (serviceState) {
@@ -1997,31 +2017,16 @@ export function PricesServices() {
               return productMenu;
           }
         })()}
-      </PageSection>
+      </PageSection> */}
 
       <PageSection>
         <div className="Prices__BottomSection">
           <div className="Prices__TextIntroHeader">
-            Inkludert i alle mine fotograferinger:
-          </div>
-
-          <IncludesList
-            className="Prices__TextIntroIncludes"
-            items={[
-              "Inkludert i alle mine fotograferinger er et digitalt bildegalleri hvor man selv kan velge bilder fra. (unntak ved bryllupsfotografering)",
-              "I alle mine fotograferinger er det 10 stk. valgfrie digitale bildefiler inkludert (unntak ved Mitt første år-fotografering, bryllupsfotografering og gratis gravidfotografering)",
-
-              "Mulighet for å booke time hos makeup-artist LashBrowser før fotograferingen",
-              "Opptil 1 time fotografering (unntak ved bryllup, nyfødt og minifotografering)",
-              "Du vil motta en mail med informasjon om din fotografering på forhånd",
-            ]}
-          />
-          <div className="Prices__TextIntroHeader">
-            Ønsker du ikke 10 digitale bildefiler inkludert?
+            Ønsker du kun å booke fotografering?
           </div>
           <div className="Prices__TextIntro">
-            Du kan booke kun fotografering og kjøpe bildefiler ved siden av,
-            eller du kan velge deg en annen bildepakke om du ønsker.
+            Du kan velge å booke kun fotografering, eller du kan velge en
+            pakkepris med fotografering og bildeprodukter inkludert.
           </div>
           <div className="Prices__TextIntroHeader">
             Ønsker du å booke en minifotografering?
@@ -2065,266 +2070,6 @@ export function PricesServices() {
           </div>
         </div>
       </PageSection>
-      {/* <PageSection>
-          <PriceSection
-            outerClassName="Prices__Outer"
-            innerClassName="Prices__Inner"
-            imgSrc1={NewbornImg}
-            imgAlt1="En nyfødt baby"
-            imgSrc2={BabyImg}
-            imgAlt2="En baby"
-            title={<div className="PriceSection__Header">Barn</div>}
-            price={<div className="PriceSection__PriceBox">Kr. 1700,-</div>}
-            text={
-              <div className="PriceSection__Text">
-                Å fange øyeblikkene av de minste er så koselig, og hos meg
-                handler det ikke bare om å fotografere. For meg handler det om å
-                skape kunstverk som vil verdsettes i generasjoner fremover. Jeg
-                fotograferer nyfødte, babyer fra 6mnd og helt opp til barna blir
-                voksne, i tillegg til barnehagefotografering.
-              </div>
-            }
-            link="http://localhost:5173/kontakt"
-          />
-
-          <PriceSection
-            outerClassName="Prices__Outer"
-            innerClassName="Prices__Inner"
-            imgSrc1={PregnantImg}
-            imgAlt1="En gravid kvinne"
-            imgSrc2={ConfirmationImg}
-            imgAlt2="En flott konfirmant"
-            title={<div className="PriceSection__Header">Portrett</div>}
-            price={<div className="PriceSection__PriceBox">Kr. 1550,-</div>}
-            reverse={true}
-            text={
-              <div className="PriceSection__Text">
-                Mitt mål er å fange essensen av hver unike person gjennom
-                bilder, og jeg ønsker å skape bilder som reflekterer din
-                personlighet. Jeg er opptatt av at du skal føle deg fin og
-                komfortabel foran kamera. Under portrettfotografering finner du
-                gravidfotografering, konfirmantfotografering og andre
-                portrettfotograferinger.
-              </div>
-            }
-            link="http://localhost:5173/kontakt"
-          />
-
-          <PriceSection
-            outerClassName="Prices__Outer"
-            innerClassName="Prices__Inner"
-            imgSrc1={FamilyImg}
-            imgAlt1="En herlig gutt som leker med sin far"
-            imgSrc2={CoupleImg}
-            imgAlt2="Et nydelig par"
-            title={<div className="PriceSection__Header">Familie og par</div>}
-            price={<div className="PriceSection__PriceBox">Kr. 1700,-</div>}
-            text={
-              <div className="PriceSection__Text">
-                Jeg er opptatt av å fange spennende øyeblikk under en
-                familiefotografering, og de romantiske øyeblikkene under en
-                parfotografering. En familiefotografering kan være med den
-                nærmeste familien, eller den kan bli enda mer spesiell med
-                besteforeldre og resten av familien.
-              </div>
-            }
-            link="http://localhost:5173/kontakt"
-          />
-
-          <PriceSection
-            outerClassName="Prices__Outer"
-            innerClassName="Prices__Inner"
-            imgSrc1={Headshot1Img}
-            imgAlt1="Et profesjonelt portrett av en kvinne"
-            imgSrc2={Headshot2Img}
-            imgAlt2="Et profesjonelt portrett av en mann"
-            title={
-              <div className="PriceSection__Header">
-                Profesjonelle portretter
-              </div>
-            }
-            price={<div className="PriceSection__PriceBox">Kr. 1000,-</div>}
-            reverse={true}
-            text={
-              <div className="PriceSection__Text">
-                Fotograferingen som passer deg som trenger nytt profilbilde til
-                sosiale medier eller til din CV. Jeg holder av 20 minutter til
-                fotograferingen, som gjennomføres ute på lokasjon. Inkludert i
-                denne fotograferingen er 1 digital bildefil, levert i både
-                farger og sorthvitt.
-              </div>
-            }
-            link="http://localhost:5173/kontakt"
-          />
-
-          <div className="Prices__WeddingPackageSection">
-            <WeddingSection
-              outerClassName="Prices__Outer"
-              innerClassName="Prices__Inner"
-              title1={
-                <div className="WeddingSection__Header">Bryllupspakke 1</div>
-              }
-              price1={
-                <div className="WeddingSection__PriceBox">Kr. 16.000,-</div>
-              }
-              text1={
-                <div className="WeddingSection__Text">
-                  Dette er en ypperlig pakke for dere som kun ønsker fotografen
-                  tilstede under vielsen og for å forevige portrettene deres.
-                  Jeg er med dere på de viktigste øyeblikkene på deres store
-                  dag, og fanger de magiske øyeblikkene når dere sier JA til
-                  hverandre.
-                  <p /> Vi setter av tid til et planleggingsmøte i god tid før
-                  den store dagen, der vi snakker om deres ønsker til bildene og
-                  for å bli litt kjent med hverandre.
-                  <p />
-                  Inkluderer:
-                  <IncludesList
-                    items={[
-                      "Planleggingsmøte i god tid før den store dagen",
-                      "3 timer fotografering",
-                      "Fotografering under vielsen og portrettfotografering før eller etter vielsen",
-                      "Ca. 70 stk. digitale bildefiler i høy oppløsning",
-                      "Online bildegalleri hvor dere kan laste ned bildene",
-                      "Mulighet for å kjøpe bildeprodukter",
-                      "50% rabatt på forlovelsesfotografering i forkant av bryllupet",
-                    ]}
-                  />
-                </div>
-              }
-              title2={
-                <div className="WeddingSection__Header">Bryllupspakke 2</div>
-              }
-              price2={
-                <div className="WeddingSection__PriceBox">Kr. 24.000,-</div>
-              }
-              text2={
-                <div className="WeddingSection__Text">
-                  Dette er pakken for dere som ønsker bilder fra litt mer enn
-                  bare seremonien og bryllupsportrettene. Dere velger om jeg
-                  skal fotografere dere under forberedelsene eller når dere
-                  ankommer festen, i tillegg til at jeg fotograferer seremonien
-                  og bryllupsportrettene før eller etter vielsen. <p />
-                  Vi setter av tid til et planleggingsmøte i god tid før den
-                  store dagen, der vi snakker om deres ønsker til bildene og for
-                  å bli litt kjent med hverandre. I denne pakken er også
-                  forlovelsesfotografering inkludert, der dere får velge 5 stk.
-                  bilder i høy oppløsning.
-                  <p />
-                  Inkluderer:
-                  <IncludesList
-                    items={[
-                      "Planleggingsmøte i god tid før den store dagen",
-                      "5 timer fotografering",
-                      "Fotografering under vielsen, portrettfotografering og fotografering av forberedelser eller når dere ankommer festen",
-                      "Ca. 150 stk. digitale bildefiler i høy oppløsning",
-                      "Online bildegalleri hvor dere kan laste ned bildene",
-                      "Mulighet for å kjøpe bildeprodukter",
-                      "Forlovelsesfotografering inkludert 5 stk. bilder i høy oppløsning",
-                    ]}
-                  />
-                </div>
-              }
-            />
-          </div>
-          <ProductPriceSection
-            outerClassName="Prices__Outer"
-            innerClassName="Prices__Inner"
-            imgSrc={WeddingImg}
-            imgAlt="Brudepar på vei ut av kirken"
-            reverse={true}
-            title={
-              <div className="ProductPriceSection__Header">Bryllupspakke 3</div>
-            }
-            text={
-              <div className="ProductPriceSection__Text">
-                Denne dagen er en milepæl i deres kjærlighetshistorie, og jeg
-                vil med veiledning fra dere legge min sjel i å hjelpe dere med å
-                lage deres drømmedag. Jeg designer deres invitasjoner, takkekort
-                og menyer før den store dagen, i tillegg til at jeg fotograferer
-                under vielsen, portretter og under forberedelsene eller når dere
-                ankommer festen. <p />
-                Med denne pakken kan du nyte hvert øyeblikk av din store dag, og
-                vite at jeg vil fange de perfekte øyeblikkene og hjelpe dere med
-                å skape en minneverdig helhetsopplevelse for deg og dine
-                gjester.
-                <p />
-                Inkluderer:
-                <IncludesList
-                  items={[
-                    "Veiledningsmøter underveis i designprosessen",
-                    "20 stk. doble invitasjoner (mulighet for å bestille fler)",
-                    "20 stk. doble takkekort (mulighet for bestille fler)",
-                    "Mulighet for å bestille flere trykksaker i samme design",
-                    "Planleggingsmøte i god tid før den store dagen",
-                    "5 timer fotografering",
-                    "Fotografering under vielsen, portrettfotografering og fotografering av forberedelser eller når dere ankommer festen",
-                    "Ca. 150 stk. digitale bildefiler i høy oppløsning",
-                    "Online bildegalleri hvor dere kan laste ned bildene",
-                    "Mulighet for å kjøpe bildeprodukter",
-                    "Forlovelsesfotografering inkludert 5 stk. bilder i høy oppløsning",
-                  ]}
-                />
-              </div>
-            }
-            priceText1={false}
-            price1={false}
-            priceText2={false}
-            price2={false}
-            priceText3={false}
-            price3={false}
-            priceText4={false}
-            price4={false}
-            priceText5={false}
-          />
-
-          <div className="CompanyPrice__Section">
-            <div className="CompanyPrice__Header">
-              For bedrifter og næringsliv
-            </div>
-            <div className="CompanyPrice__Textbox">
-              <div className="CompanyPrice__Text">
-                Jeg tilbyr en rekke ulike tjenester for bedrifter og næringsliv,
-                både innen foto og design.
-                <p />
-                Blandt annet har jeg spesialisert meg på matfotografering og
-                produktfotografering, og har tidligere jobbet som assistent for
-                matfotograf Synøve Dreyer. Om din bedrift trenger bilder av
-                produkter eller mat, ta gjerne kontakt. Og om dere trenger
-                portrettbilder av deres ansatte, kan jeg tilby dere gunstige
-                pakkepriser på portretter.
-                <p />
-                Jobber du i barnehage, er det bare å ta kontakt om du ønsker at
-                jeg skal fotografere deres barnehage. Ta kontakt, så tar vi en
-                uforpliktende prat! I 2023 har jeg fotografert gruppebilder,
-                søskenbilder og portretter i en rekke barnehager i Ullensaker.
-                <p />
-                Driver du en bedrift, vet du sikkert at det er viktig med en
-                helhetlig visuell profil eller et veletablert brand. Dette er en
-                av design-tjenestene jeg tilbyr, jeg kan sette sammen en
-                komplett visuell identitet som er skreddersydd for akkurat din
-                bedrift- og du velger helt selv hvor mange elementer og hva
-                slags elementer profilen skal bestå av. Jeg veileder dere og
-                kommer gjerne med tips til hva slags elementer dere burde
-                inkludere, men valget er deres!
-                <p />
-                Jeg kan tilby ulike tjenester, alt etter hva dere har behov for.
-                Ta kontakt, så tar vi en uforpliktende prat om hva dere trenger
-                og et prisestimat på et slikt oppdrag.
-              </div>
-            </div>
-            <div className="CompanyPrice__Info">
-              <div>Produktfotografering</div>
-              <div>Portrettfotografering</div>
-              <div>Matfotografering</div>
-              <div>Barnehagefotografering</div>
-              <div>Visuell identitet / Branding</div>
-              <div>Logo-design</div>
-              <div>UX-design</div>
-              <div>Annet design</div>
-            </div>
-          </div>
-        </PageSection> */}
     </div>
   );
 }

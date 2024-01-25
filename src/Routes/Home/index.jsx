@@ -1,16 +1,27 @@
 import { NavLink, useLoaderData } from "react-router-dom";
 import { ActionButton } from "../../Components/ActionButton";
-import { ImageSection } from "../../Components/ImageSection";
 import { PageSection } from "../../Components/PageSection";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
 import DiscountHeaderImg from "../../Images/Discounts/discount.png";
+import PhotographerImg from "../../Images/Home/ninaskaug.jpg";
+import BusinessPortfolioImg from "../../Images/Home/portfolio_business.jpg";
+import ConfirmationPortfolioImg from "../../Images/Home/portfolio_conf.jpg";
+import CouplePortfolioImg from "../../Images/Home/portfolio_couple.jpg";
+import FamilyPortfolioImg from "../../Images/Home/portfolio_family.jpg";
+import KidsPortfolioImg from "../../Images/Home/portfolio_kids.jpg";
+import MommyMePortfolioImg from "../../Images/Home/portfolio_mom.jpg";
+import NewbornPortfolioImg from "../../Images/Home/portfolio_newborn.jpg";
+import PortraitPortfolioImg from "../../Images/Home/portfolio_portrait.jpg";
+import PregPortfolioImg from "../../Images/Home/portfolio_preg.jpg";
+import RealestatePortfolioImg from "../../Images/Home/portfolio_realestate.jpg";
+import WeddingPortfolioImg from "../../Images/Home/portfolio_wed.jpg";
+import freePregnancyShoot from "../../Images/Prices/free_pregnant_shoot.jpg";
 import cover from "../../Images/coverphoto.jpg";
-import freePregnancyShoot from "../../Images/free_pregnancy_shoot.jpg";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
-import * as presentables from "/src/Data/presentables";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
@@ -99,44 +110,49 @@ export function Home() {
           </div>
         </div>
       </div>
-      <PageSection outerClassName="myquote-outer" innerClassName="myquote">
-        <div className="quote-section">
-          <img className="quote-left-png" src={quotepng} alt="Quote icon"></img>
-          <div className="quote-text">
-            Jeg fokuserer på å få frem de magiske øyeblikkene og jeg er opptatt
-            av at alle skal ha en fin opplevelse foran kamera.
+      <PageSection>
+        <div className="Home__PhotographerSection">
+          <div className="Home__PhotographerImgSection">
+            <img
+              className="Home__PhotographerImg"
+              src={PhotographerImg}
+              alt="Gratis minifotografering av gravide"
+            ></img>
           </div>
-          <img
-            className="quote-right-png"
-            src={quotepng}
-            alt="Quote icon"
-          ></img>
+          <div className="Home__PhotographerTextSection">
+            Hei,
+            <br />
+            jeg heter Nina Merethe Skaug og er fotograf og designer, som jobber
+            med privatpersoner og næringsliv. Jeg tilbyr ikke fotografering i
+            studio, og jeg jobber aller helst utendørs, men kommer også gjerne
+            hjem til dere for fotografering. De fleste som booker meg som sin
+            fotograf booker gravidfotografering, barnefotografering og
+            konfirmantfotografering. <br />
+            <br />
+            Jeg gleder meg til å høre fra deg!
+          </div>
         </div>
       </PageSection>
       <PageSection>
         <div className="Home__IncludedSection">
           <div className="Home__IncludesText">
-            Alle fotograferinger inkluderer 10 digitale bildefiler
+            Du kan booke kun fotografering, eller velge en pakkepris med
+            bildeprodukter inkludert{" "}
           </div>
           <div className="Home__IncludesSubtext">
-            (med unntak av bryllupsfotografering, mitt første år-fotografering
-            og gratis gravidfotografering)
-          </div>
-          <div className="Home__IncludesExtraText">
-            Om du ikke ønsker 10 digitale bilder inkludert, kan du velge å
-            betale for kun fotograferingen eller du kan bytte til en annen
-            bildepakke.
+            (unntak er bryllupsfotografering, mitt første år-fotografering og
+            gratis gravidfotografering)
           </div>
         </div>
       </PageSection>
-      <PageSection outerClassName="works-outer" innerClassName="works">
+      {/* <PageSection outerClassName="works-outer" innerClassName="works">
         <div className="Home__WorksTitle">Nylige arbeider</div>
 
         <ImageSection
           images={recentWorks}
           imageClassName="Home__ImageSectionImage"
         />
-      </PageSection>
+      </PageSection> */}
 
       <PageSection
         outerClassName="regular-discounts-outer"
@@ -176,11 +192,13 @@ export function Home() {
               alt="50% avslag på nyfødtfotografering"
             ></img>
             <div className="Home__Discount_NewbornTextBox">
-              <div className="Home__Discount_NewbornHeader">ALLTID</div>
-              <div className="Home__Discount_NewbornSubHeader">50%</div>
+              <div className="Home__Discount_NewbornHeader">GRATIS</div>
+              <div className="Home__Discount_NewbornSubHeader">
+                babyfotografering
+              </div>
               <div className="Home__Discount_NewbornText">
-                avslag på nyfødtfotografering,
-                <br /> etter ordinær gravidfotografering
+                når babyen er 6-9 mnd,
+                <br /> etter nyfødtfotografering
               </div>
               <ActionButton to={ContactRoute}>Book her</ActionButton>
             </div>
@@ -203,8 +221,20 @@ export function Home() {
             </div>
           </div>
         </div>
-
-        {/* 
+      </PageSection>
+      <div className="Home__NewsletterSection">
+        <div className="Home__NewsletterBackground">
+          <PageSection>
+            <div className="Home__NewsletterHeader">NYHETSBREV</div>
+            <div className="Home__NewsletterText">
+              Du vil få informasjon om fotograferinger, kampanjer og
+              konkurranser. Fyll inn e-postadressen din under for å melde deg på
+              Skaug Medias nyhetsbrev.
+            </div>
+          </PageSection>
+        </div>
+      </div>
+      {/* 
         <div className="newborn-discount-row">
           <img
             className="newborn-discount-img"
@@ -219,7 +249,6 @@ export function Home() {
             </div>
           </div>
         </div> */}
-      </PageSection>
 
       {/* <PageSection>
         <div className="Home__NewsletterSection">
@@ -247,20 +276,143 @@ export function Home() {
         </div>
       </PageSection>
  */}
-      <PageSection>
+      {/* <PageSection>
         <h2 className="Home__Photography">Fotografi</h2>
         <ImageSection
           images={presentables.photography}
           className="Home__PhotographyImageSection"
           imageClassName="Home__PhotographyImageSection__Image Home__ImageSectionImage"
         />
+      </PageSection> */}
+
+      {/* <PageSection>
+        <h2 className="Home__Graphical">Grafisk Design</h2>
+        <ImageSection
+          images={presentables.graphicalDesign}
+          imageClassName="Home__GraphicalImageSection__Image Home__ImageSectionImage"
+        />
+      </PageSection> */}
+
+      <PageSection>
+        <div className="Home__PortfolioSection">
+          <div className="Home__PortfolioHeader">Min portefølje</div>
+          <div className="Home__PortfolioRow">
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={PregPortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Gravid</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={NewbornPortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Nyfødt</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={KidsPortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Barn</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={FamilyPortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Familie</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+          </div>
+          <div className="Home__PortfolioRow">
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={ConfirmationPortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Konfirmant</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={WeddingPortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Bryllup</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={MommyMePortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">
+                Mommy & me / daddy & me
+              </div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={PortraitPortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Portrett</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+          </div>
+          <div className="Home__PortfolioRow">
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={CouplePortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Par</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={RealestatePortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Eiendom</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+            <div className="Home__PortfolioImgSection">
+              <img
+                className="Home__PortfolioImg"
+                src={BusinessPortfolioImg}
+                alt="Nydelig gravid"
+              ></img>
+              <div className="Home__PortfolioTitle">Bedrift</div>
+              <div className="Home__PortfolioArrow"></div>
+            </div>
+          </div>
+        </div>
       </PageSection>
       <PageSection outerClassName="myquote-outer" innerClassName="myquote">
         <div className="quote-section">
           <img className="quote-left-png" src={quotepng} alt="Quote icon"></img>
           <div className="quote-text">
-            Som designer er jeg leken og eksperimentell, samtidig som jeg
-            foretrekker rette linjer og et stramt gridsystem.
+            Jeg fokuserer på å få frem de magiske øyeblikkene og jeg er opptatt
+            av at alle skal ha en fin opplevelse foran kamera. Som designer er
+            jeg leken og eksperimentell, samtidig som jeg foretrekker rette
+            linjer og et stramt gridsystem.
           </div>
           <img
             className="quote-right-png"
@@ -269,14 +421,6 @@ export function Home() {
           ></img>
         </div>
       </PageSection>
-      <PageSection>
-        <h2 className="Home__Graphical">Grafisk Design</h2>
-        <ImageSection
-          images={presentables.graphicalDesign}
-          imageClassName="Home__GraphicalImageSection__Image Home__ImageSectionImage"
-        />
-      </PageSection>
-
       {/* <PageSection
         outerClassName="skaugmedia-outer"
         innerClassName="skaugmedia"
