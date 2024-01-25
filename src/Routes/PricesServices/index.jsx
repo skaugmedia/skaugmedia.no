@@ -1840,7 +1840,7 @@ export function PricesServices() {
         </div>
       </PageSection>
       <PageSection>
-        <div className="Prices__CategorySection1">
+        <div className="Prices__CategorySection">
           <NavLink to={MaternityRoute} className="Prices__CategoryNav">
             <div className="Prices__Category_PriceSquare">
               <img
@@ -1885,7 +1885,7 @@ export function PricesServices() {
           </NavLink>
         </div>
 
-        <div className="Prices__CategorySection2">
+        <div className="Prices__CategorySection">
           <NavLink to={ChildrenRoute} className="Prices__CategoryNav">
             <div className="Prices__Category_PriceSquare">
               <img
@@ -1929,7 +1929,7 @@ export function PricesServices() {
             </div>
           </NavLink>
         </div>
-        <div className="Prices__CategorySection3">
+        <div className="Prices__CategorySection">
           <NavLink to={FirstYearRoute} className="Prices__CategoryNav">
             <div className="Prices__Category_PriceSquare">
               <img
