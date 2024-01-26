@@ -15,21 +15,23 @@ export function Couples() {
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">
-            Konfirmasjon opplever man bare en gang,
+            I kjærlighetens navn,
           </div>
           <div className="PhotoPrice__TopContentSubHeader">
-            det er viktig med bilder for å huske denne dagen!
+            skap minner som varer livet ut!
           </div>
 
           <p className="PhotoPrice__TopContentText">
-            Konfirmantfotografering gir deg muligheten til å fange øyeblikkene
-            som definerer denne viktige tiden i livet ditt. Uavhengig av om det
-            er en tid preget av refleksjon, spenning eller feiring, har hvert
-            øyeblikk sin egen spesielle betydning. Jeg er dedikert til å hjelpe
-            deg med å bevare denne overgangen til ung voksen alder på en måte
-            som er autentisk og meningsfull for deg. Gjennom mine bilder kan du
-            se tilbake på denne spesielle tiden og gjenoppleve øyeblikkene som
-            markerer din reise mot selvstendighet.
+            For par er kjærlighetshistorien deres en reise, og hvert øyeblikk
+            sammen utgjør en viktig del av den. Parfotografering gir dere
+            muligheten til å fange de hjertevarme øyeblikkene som definerer
+            deres unike kjærlighetshistorie. Det handler om å formidle
+            kjærlighet, samhørighet og øyeblikk som skaper de mest dyrebare
+            minner. Uansett om det er en spontan klem i parken, et
+            kjærlighetsblikk som sier mer enn tusen ord eller en enkel romantisk
+            kveld sammen, har hvert øyeblikk i deres forhold sin egen unike
+            betydning. Parfotografering handler om å fange disse øyeblikkene som
+            definerer deres reise som et par.
           </p>
 
           <img
@@ -45,7 +47,7 @@ export function Couples() {
           <div className="PhotoPrice__PackageBoxRowShoot">
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
-                KONFIRMANTFOTOGRAFERING
+                PARFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
                 opptil 1 time fotografering, med 10% rabatt på alle
@@ -80,7 +82,7 @@ export function Couples() {
                 </div>
               </div>
               <div className="PhotoPrice__PackageBoxText">
-                1 time portrettfotografering på valgfri lokasjon
+                1 time parfotografering på valgfri lokasjon
               </div>
 
               <div className="PhotoPrice__PackageBoxDivider"></div>
@@ -106,7 +108,7 @@ export function Couples() {
                 </div>
               </div>
               <div className="PhotoPrice__PackageBoxText">
-                1 time portrettfotografering på valgfri lokasjon
+                1 time parfotografering på valgfri lokasjon
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
@@ -132,7 +134,7 @@ export function Couples() {
                 </div>
               </div>
               <div className="PhotoPrice__PackageBoxText">
-                1 time portrettfotografering på valgfri lokasjon
+                1 time parfotografering på valgfri lokasjon
               </div>
 
               <div className="PhotoPrice__PackageBoxDivider"></div>
@@ -196,7 +198,7 @@ export function Couples() {
         <PageSection>
           <div className="PhotoPrice__BottomDivider"></div>
           <div className="PhotoPrice__BookingText">
-            Ønsker du å booke konfirmantfotografering?
+            Ønsker du å booke parfotografering?
           </div>
           <NavLink
             to={`/${ContactRoute}`}

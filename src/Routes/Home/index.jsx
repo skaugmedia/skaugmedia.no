@@ -222,18 +222,16 @@ export function Home() {
           </div>
         </div>
       </PageSection>
-      <div className="Home__NewsletterSection">
-        <div className="Home__NewsletterBackground">
-          <PageSection>
-            <div className="Home__NewsletterHeader">NYHETSBREV</div>
-            <div className="Home__NewsletterText">
-              Du vil få informasjon om fotograferinger, kampanjer og
-              konkurranser. Fyll inn e-postadressen din under for å melde deg på
-              Skaug Medias nyhetsbrev.
-            </div>
-          </PageSection>
+      <PageSection outerClassName="Home__NewsletterBackground">
+        <div className="Home__NewsletterSection">
+          <div className="Home__NewsletterHeader">NYHETSBREV</div>
+          <div className="Home__NewsletterText">
+            Du vil få informasjon om fotograferinger, kampanjer og konkurranser.
+            Fyll inn e-postadressen din under for å melde deg på Skaug Medias
+            nyhetsbrev.
+          </div>
         </div>
-      </div>
+      </PageSection>
       {/* 
         <div className="newborn-discount-row">
           <img

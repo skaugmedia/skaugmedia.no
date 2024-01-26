@@ -11,7 +11,9 @@ export function Headshots() {
     <>
       <div className="Headshots">
         <PageSection>
-          <DesignHeading>Headshots / CV-foto / Profilbilde</DesignHeading>
+          <DesignHeading>
+            Portretter / Headshots / CV-foto / Profilbilde{" "}
+          </DesignHeading>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">
@@ -23,14 +25,14 @@ export function Headshots() {
           </div>
 
           <p className="PhotoPrice__TopContentText">
-            Konfirmantfotografering gir deg muligheten til å fange øyeblikkene
-            som definerer denne viktige tiden i livet ditt. Uavhengig av om det
-            er en tid preget av refleksjon, spenning eller feiring, har hvert
-            øyeblikk sin egen spesielle betydning. Jeg er dedikert til å hjelpe
-            deg med å bevare denne overgangen til ung voksen alder på en måte
-            som er autentisk og meningsfull for deg. Gjennom mine bilder kan du
-            se tilbake på denne spesielle tiden og gjenoppleve øyeblikkene som
-            markerer din reise mot selvstendighet.
+            Å søke etter jobber og karriereveier er en viktig reise, og hvert
+            øyeblikk på vei til din profesjonelle suksess har sin egen unike
+            betydning. CV-fotografering gir deg muligheten til å fange bildet
+            som representerer deg på din aller beste måte. Min CV-fotografering
+            inkluderer en 30-minutters økt, hvor vi tar oss tid til å fange det
+            beste av deg. Du vil motta et digitalt bilde i både farger og
+            sorthvitt, slik at du kan velge det som passer best til din CV og
+            profesjonelle nettverk.
           </p>
 
           <img
@@ -40,6 +42,9 @@ export function Headshots() {
           ></img>
         </PageSection>
         <PageSection>
+          <div className="PhotoPrice__Choice">
+            Du kan velge mellom å booke en av disse fotograferingene
+          </div>
           <div className="PhotoPrice__PackageBoxRowShoot">
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
@@ -74,8 +79,24 @@ export function Headshots() {
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1300,-</div>
             </div>{" "}
+            <div className="PhotoPrice__ShootDivider"></div>
+          </div>
+          <div className="PhotoPrice__PackageBoxShoot">
+            <div className="PhotoPrice__PackageBoxHeading">
+              PORTRETTFOTOGRAFERING
+            </div>
+            <div className="PhotoPrice__PackageBoxSubHeading">
+              opptil 1 time fotografering, med 10% rabatt på alle bildeprodukter
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>
+          </div>
+
+          <div className="PhotoPrice__Choice">
+            eller jeg kan skreddersy en pakkepris for deg
           </div>
         </PageSection>
+
         <PageSection>
           <div className="Prices__BottomSection">
             <div className="Prices__TextInfoHeader">Ønsker du delbetaling?</div>

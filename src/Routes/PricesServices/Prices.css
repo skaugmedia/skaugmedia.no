@@ -44,11 +44,11 @@
 }
 
 .Prices__Category_PriceHeader {
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 2.2em;
+  font-weight: 400;
   color: black;
   text-align: center;
-  margin-top: 260px;
+  margin-top: 250px;
 
   justify-content: space-between;
   margin-left: 40px;
