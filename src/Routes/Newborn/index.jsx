@@ -96,6 +96,7 @@ export function Newborn() {
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 4699,-</div>
             </div>
+            <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package2">
               <div className="PhotoPrice__PackageBoxHeader">
                 <div className="PhotoPrice__PackageBoxHeading">Pakke 2</div>
@@ -130,6 +131,7 @@ export function Newborn() {
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 6199,-</div>
             </div>
+            <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
               <div className="PhotoPrice__PackageBoxHeader">
                 <div className="PhotoPrice__PackageBoxHeading">Pakke 3</div>

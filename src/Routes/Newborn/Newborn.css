@@ -3,15 +3,16 @@
 }
 .PhotoPrice__TopContentHeader {
   font-size: 3em;
-  font-weight: 700;
-  color: var(--blue);
+  font-weight: 300;
+  color: black;
 }
 
 .PhotoPrice__TopContentSubHeader {
   font-size: 1.5em;
   margin-top: -5px;
-  font-weight: 700;
-  color: var(--green);
+  font-weight: 500;
+  color: var(--blue);
+  font-family: nunito;
 }
 
 .PhotoPrice__TopContentText {
@@ -83,6 +84,9 @@
   padding: 20px 30px;
 }
 
+.PhotoPrice__ResponsiveDivider {
+}
+
 .PhotoPrice__PackageBox--Package1 {
 }
 
@@ -128,6 +132,33 @@
 
 @media only screen and (max-width: 600px) {
   .PhotoPrice__TopContentHeader {
+    font-size: 1.1em;
+  }
+
+  .PhotoPrice__TopContentSubHeader {
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 0.1px;
+  }
+
+  .PhotoPrice__ResponsiveDivider {
+    border: 1px solid lightgrey;
+    opacity: 65%;
+    width: 30%;
+    margin: 9px auto;
+  }
+
+  .PhotoPrice__PackageBoxRow {
+    display: flex;
+    flex-flow: column;
+    gap: 0;
+  }
+
+  .PhotoPrice__PackageBox {
+    width: 100%;
+  }
+
+  .PhotoPrice__BookingText {
     font-size: 1em;
   }
 }

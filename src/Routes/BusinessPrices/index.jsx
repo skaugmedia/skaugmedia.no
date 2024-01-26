@@ -74,6 +74,7 @@ export function BusinessPrices() {
             Les mer
           </button>
         </div>
+        <div className="PhotoPrice__ResponsiveDivider"></div>
         <div className="BusinessPrices__PackageBox2">
           <div className="BusinessPrices__PackageBoxHeader">
             Strategy-pakken
@@ -133,6 +134,7 @@ export function BusinessPrices() {
             Les mer
           </button>
         </div>
+        <div className="PhotoPrice__ResponsiveDivider"></div>
         <div className="BusinessPrices__PackageBox3">
           <div className="BusinessPrices__PackageBoxHeader">Impact-pakken</div>
           <div className="BusinessPrices__PackageBoxSubHeader">

@@ -90,7 +90,7 @@ export function PhotoProducts() {
         <PageSection>
           <ProductPriceSection
             outerClassName="Prices__Outer"
-            reverse={false}
+            reverse={true}
             imgSrc={WallImageImg}
             imgAlt="En bildekopi i ramme av en konfirmant"
             title="Veggbilder"
@@ -209,7 +209,7 @@ export function PhotoProducts() {
         <PageSection>
           <ProductPriceSection
             outerClassName="Prices__Outer"
-            reverse={false}
+            reverse={true}
             imgSrc={DigitalImageImg}
             imgAlt="En bildekopi i ramme av en konfirmant"
             title="Digitale bildefiler"
@@ -323,7 +323,7 @@ export function PhotoProducts() {
         <PageSection>
           <ProductPriceSection
             outerClassName="Prices__Outer"
-            reverse={false}
+            reverse={true}
             imgSrc={BirthposterImg}
             imgAlt="En bildekopi i ramme av en konfirmant"
             title="Fødselsplakat"

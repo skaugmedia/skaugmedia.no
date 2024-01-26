@@ -55,6 +55,7 @@ export function Wedding() {
             Les mer
           </button>
         </div>
+        <div className="PhotoPrice__ResponsiveDivider"></div>
         <div className="Wedding__PackageBox Wedding__PackageBox--Package2">
           <div className="Wedding__PackageBoxHeader">
             <div className="Wedding__PackageBoxHeading">Celestial</div>
@@ -90,6 +91,7 @@ export function Wedding() {
             Les mer
           </button>
         </div>
+        <div className="PhotoPrice__ResponsiveDivider"></div>
         <div className="Wedding__PackageBox Wedding__PackageBox--Package3">
           <div className="Wedding__PackageBoxHeader">
             <div className="Wedding__PackageBoxHeading">Gallactic</div>
@@ -422,8 +424,10 @@ export function Wedding() {
         </div>
       </PageSection>
       <PageSection>
-        <div className="Wedding__TopContentHeader">Det er deres store dag,</div>
-        <div className="Wedding__TopContentSubHeader">
+        <div className="PhotoPrice__TopContentHeader">
+          Det er deres store dag,
+        </div>
+        <div className="PhotoPrice__TopContentSubHeader">
           og dere fortjener å skinne!
         </div>
 

@@ -177,6 +177,8 @@
 }
 
 .Home__NewsletterSection {
+  display: flex;
+  flex-flow: column;
 }
 
 .Home__PortfolioHeader {
@@ -184,6 +186,10 @@
   font-weight: 400;
   text-transform: uppercase;
   font-size: 1.3em;
+}
+
+.Home__PortfolioLink {
+  text-decoration: none;
 }
 
 .Home__PortfolioRow {
@@ -205,7 +211,11 @@
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+  text-decoration-style: none;
 }
 
 .Home__PortfolioImg .Home__ImageSectionImage:hover {
@@ -682,6 +692,12 @@
     font-size: 1.3em;
   }
 
+  .Home__PhotographerSection {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
   @media only screen and (max-width: 1000px) {
     .intro-outer {
       max-width: var(--content-width);
@@ -730,8 +746,13 @@
     }
   }
 
-  .Home__IncludesSubText {
-    font-size: 0.9em;
+  .Home__IncludesText {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  .Home__IncludesSubtext {
+    font-size: 0.89em;
   }
 
   .Home__IncludesExtraText {
