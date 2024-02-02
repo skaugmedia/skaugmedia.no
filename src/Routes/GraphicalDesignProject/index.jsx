@@ -1,12 +1,11 @@
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { useLoaderData } from "react-router-dom";
-import "./GraphicalDesignProject.css";
 import GraphicalDesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { useNoIndex } from "../../Hooks/useNoIndex";
-import { Image } from "/src/Components/Image";
+import "./GraphicalDesignProject.css";
 
 export function GraphicalDesignProject() {
   const { project } = useLoaderData();
@@ -24,7 +23,7 @@ export function GraphicalDesignProject() {
       <div className="GraphicalDesignProject__ColorPalette">
         {images.map((img) => (
           <img
-            key={img.title}
+            key={img.url}
             className="GraphicalDesignProject__Font"
             src={img.url}
             alt={img.title}

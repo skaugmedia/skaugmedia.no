@@ -60,12 +60,12 @@ export const router = createBrowserRouter([
           { path: AboutRoute, element: <About /> },
           { path: ContactRoute, element: <Contact /> },
           {
-            path: GraphicalDesignRoute,
+            path: `${BusinessPricesRoute}/${GraphicalDesignRoute}`,
             loader: GraphicalDesignLoader,
             element: <GraphicalDesign />,
           },
           {
-            path: GraphicalDesignProjectRoute,
+            path: `${BusinessPricesRoute}/${GraphicalDesignProjectRoute}`,
             loader: GraphicalDesignProjectLoader,
             element: <GraphicalDesignProject />,
           },
@@ -76,13 +76,18 @@ export const router = createBrowserRouter([
           },
           {
             path: PhotographyCategoryRoute,
-            loader: PhotographyCategoryLoader,
+            loader: PhotographyCategoryLoader(false),
             element: <PhotographyCategory />,
           },
           { path: PricesRoute, element: <PricesServices /> },
           {
             path: `${PricesRoute}/${WeddingRoute}`,
             element: <Wedding />,
+          },
+          {
+            path: `${BusinessPricesRoute}/:categoryId`,
+            loader: PhotographyCategoryLoader(true),
+            element: <PhotographyCategory />,
           },
           { path: DiscountsRoute, element: <Discounts /> },
           { path: BusinessPricesRoute, element: <BusinessPrices /> },

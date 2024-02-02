@@ -4,6 +4,7 @@ import { PageSection } from "../../Components/PageSection";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 
+import Realestate from "../../Data/Business/Galleries/Realestate";
 import Confirmation from "../../Data/Photography/Confirmation";
 import Engagement from "../../Data/Photography/Engagement";
 import Family from "../../Data/Photography/Family";
@@ -12,7 +13,6 @@ import Mommyandme from "../../Data/Photography/Mommyandme";
 import Newborn from "../../Data/Photography/Newborn";
 import Portrait from "../../Data/Photography/Portrait";
 import Pregnant from "../../Data/Photography/Pregnant";
-import Realestate from "../../Data/Photography/Realestate";
 import Wedding from "../../Data/Photography/Wedding";
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
 import DiscountHeaderImg from "../../Images/Discounts/discount.png";
@@ -244,7 +244,7 @@ export function Home() {
           </div>
         </div>
       </PageSection>
-      {/* 
+      {/*
         <div className="newborn-discount-row">
           <img
             className="newborn-discount-img"

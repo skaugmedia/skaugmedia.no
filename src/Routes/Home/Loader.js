@@ -1,6 +1,6 @@
 import designRoute from "../GraphicalDesign/Route";
 import photoRoute from "../Photography/Route";
-import { projects } from "/src/Data/GraphicalDesign";
+import { projects } from "/src/Data/Business/GraphicalDesign";
 import { categories } from "/src/Data/Photography";
 import { byDate } from "/src/utils";
 
@@ -15,7 +15,7 @@ export default function Loader() {
       title: shoot.description,
       category: category.title,
       hideFromRecentWorks: shoot.hideFromRecentWorks,
-    }))
+    })),
   );
 
   const projs = projects.map((project) => ({

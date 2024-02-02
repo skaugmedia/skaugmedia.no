@@ -2,14 +2,18 @@ import className from "classnames";
 import { useState } from "react";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { projects } from "../../Data/Business/GraphicalDesign";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import GraphicalDesignRoute from "../GraphicalDesign/Route";
 import "./BusinessPrices.css";
 import pageName from "./PageName";
+import { galleries as plainGalleries } from "/src/Data/Business/Galleries";
 import BusinessPricesText1Img from "/src/Images/Business/Pent_og_brukt/autumn_campaign_2.jpg";
 import BusinessPricesText2Img from "/src/Images/Business/Pent_og_brukt/business_pogb_sommer_05.jpg";
 import BusinessPricesText3Img from "/src/Images/Business/Pent_og_brukt/business_pogb_sommer_20.jpg";
 
 import { Checkmark } from "../../Components/Checkmark";
+import { GalleryBrowser } from "../../Components/GalleryBrowser";
 
 export function BusinessPrices() {
   useDocumentTitle(pageName);
@@ -17,11 +21,17 @@ export function BusinessPrices() {
   const Check = () => (
     <Checkmark color="#3AC1C1" style={{ height: "24px" }}></Checkmark>
   );
-  const [menu, setMenu] = useState(0);
-  const mainMenuCase = 0;
+  const [menu, setMenu] = useState(null);
   const package1Case = 1;
   const package2Case = 2;
   const package3Case = 3;
+  const galleries = plainGalleries.concat([
+    {
+      ...projects[0],
+      title: "Grafisk design",
+      id: GraphicalDesignRoute,
+    },
+  ]);
 
   const mainMenu = (
     <PageSection>
@@ -939,6 +949,11 @@ export function BusinessPrices() {
           />
         </div>
       </PageSection> */}
+      <GalleryBrowser
+        title="Gallerier"
+        hideNumImages={true}
+        galleries={galleries}
+      />
     </>
   );
 }
