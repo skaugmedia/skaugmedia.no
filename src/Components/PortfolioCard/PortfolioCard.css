@@ -1,0 +1,32 @@
+.PortfolioCard {
+  text-decoration: none;
+  display: flex;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.PortfolioCard__Image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 100%;
+  transition: opacity 0.1s;
+}
+
+.PortfolioCard__Title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 140%;
+  transition: text-shadow 0.1s;
+  position: relative;
+}
+
+.PortfolioCard:hover .PortfolioCard__Image {
+  opacity: 0.8;
+}
+
+.PortfolioCard:hover .PortfolioCard__Title {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}

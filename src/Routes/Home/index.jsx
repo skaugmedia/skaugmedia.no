@@ -1,46 +1,27 @@
-import { NavLink, useLoaderData } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ActionButton } from "../../Components/ActionButton";
 import { PageSection } from "../../Components/PageSection";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 
-import Confirmation from "../../Data/Photography/Confirmation";
-import Engagement from "../../Data/Photography/Engagement";
-import Family from "../../Data/Photography/Family";
-import Kids from "../../Data/Photography/Kids";
-import Mommyandme from "../../Data/Photography/Mommyandme";
-import Newborn from "../../Data/Photography/Newborn";
-import Portrait from "../../Data/Photography/Portrait";
-import Pregnant from "../../Data/Photography/Pregnant";
-import Wedding from "../../Data/Photography/Wedding";
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
 import DiscountHeaderImg from "../../Images/Discounts/discount.png";
 import PhotographerImg from "../../Images/Home/ninaskaug.jpg";
-import BusinessPortfolioImg from "../../Images/Home/portfolio_business.jpg";
-import ConfirmationPortfolioImg from "../../Images/Home/portfolio_conf.jpg";
-import CouplePortfolioImg from "../../Images/Home/portfolio_couple.jpg";
-import FamilyPortfolioImg from "../../Images/Home/portfolio_family.jpg";
-import KidsPortfolioImg from "../../Images/Home/portfolio_kids.jpg";
-import MommyMePortfolioImg from "../../Images/Home/portfolio_mom.jpg";
-import NewbornPortfolioImg from "../../Images/Home/portfolio_newborn.jpg";
-import PortraitPortfolioImg from "../../Images/Home/portfolio_portrait.jpg";
-import PregPortfolioImg from "../../Images/Home/portfolio_preg.jpg";
-import WeddingPortfolioImg from "../../Images/Home/portfolio_wed.jpg";
 import freePregnancyShoot from "../../Images/Prices/free_pregnant_shoot.jpg";
 import cover from "../../Images/coverphoto.jpg";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
-import PhotographyRoute from "../../Routes/Photography/Route";
-import BusinessPricesRoute from "/src/Routes/BusinessPrices/Route";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
+import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
+import { PortfolioCard } from "../../Components/PortfolioCard";
 import "./Home.css";
 import pageName from "./PageName";
+import { portfolio } from "./portfolio";
 
 export function Home() {
   useDocumentTitle(pageName);
-  const { recentWorks } = useLoaderData();
 
   return (
     <>
@@ -319,156 +300,11 @@ export function Home() {
       <PageSection>
         <div className="Home__PortfolioSection">
           <div className="Home__PortfolioHeader">Min portefølje</div>
-          <div className="Home__PortfolioRow">
-            <NavLink
-              to={`/${PhotographyRoute}/${Pregnant.id}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={PregPortfolioImg}
-                  alt="Nydelig gravid"
-                ></img>
-                <div className="Home__PortfolioTitle">Gravid</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-            <NavLink
-              to={`/${PhotographyRoute}/${Newborn.id}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={NewbornPortfolioImg}
-                  alt="Nyfødt baby"
-                ></img>
-                <div className="Home__PortfolioTitle">Nyfødt</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-            <NavLink
-              to={`/${PhotographyRoute}/${Kids.id}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={KidsPortfolioImg}
-                  alt="1-åring"
-                ></img>
-                <div className="Home__PortfolioTitle">Barn</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-            <NavLink
-              to={`/${PhotographyRoute}/${Family.id}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={FamilyPortfolioImg}
-                  alt="Familie"
-                ></img>
-                <div className="Home__PortfolioTitle">Familie</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-          </div>
-          <div className="Home__PortfolioRow">
-            <NavLink
-              to={`/${PhotographyRoute}/${Confirmation.id}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={ConfirmationPortfolioImg}
-                  alt="Konfirmant"
-                ></img>
-                <div className="Home__PortfolioTitle">Konfirmant</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-            <NavLink
-              to={`/${PhotographyRoute}/${Wedding.id}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={WeddingPortfolioImg}
-                  alt="Brudepar"
-                ></img>
-                <div className="Home__PortfolioTitle">Bryllup</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-            <NavLink
-              to={`/${PhotographyRoute}/${Mommyandme.id}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={MommyMePortfolioImg}
-                  alt="Mor og barn"
-                ></img>
-                <div className="Home__PortfolioTitle">
-                  Mommy & me / daddy & me
-                </div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-            <NavLink
-              to={`/${PhotographyRoute}/${Portrait.id}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={PortraitPortfolioImg}
-                  alt="Portrett"
-                ></img>
-                <div className="Home__PortfolioTitle">Portrett</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-          </div>
-          <div className="Home__PortfolioRow">
-            <NavLink
-              to={`/${PhotographyRoute}/${Engagement.id}`}
-              className="Home__PortfolioLink"
-            >
-              {" "}
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={CouplePortfolioImg}
-                  alt="Et forlovet par"
-                ></img>
-                <div className="Home__PortfolioTitle">Par</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-
-            <NavLink
-              to={`/${BusinessPricesRoute}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={BusinessPortfolioImg}
-                  alt="Innholdsproduksjon for bedrift"
-                ></img>
-                <div className="Home__PortfolioTitle">Bedrift</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
-          </div>
+          <PortfolioBrowser>
+            {portfolio.map((p) => (
+              <PortfolioCard key={p.link} {...p} />
+            ))}
+          </PortfolioBrowser>
         </div>
       </PageSection>
       <PageSection outerClassName="myquote-outer" innerClassName="myquote">

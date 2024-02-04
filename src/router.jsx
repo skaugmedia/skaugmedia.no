@@ -27,7 +27,6 @@ import GraphicalDesignProjectRoute from "./Routes/GraphicalDesignProject/Route";
 import { Headshots } from "./Routes/Headshots";
 import HeadshotsRoute from "./Routes/Headshots/Route";
 import { Home } from "./Routes/Home";
-import HomeLoader from "./Routes/Home/Loader";
 import HomeRoute from "./Routes/Home/Route";
 import { Maternity } from "./Routes/Maternity";
 import MaternityRoute from "./Routes/Maternity/Route";
@@ -55,7 +54,7 @@ export const router = createBrowserRouter([
     children: [
       {
         children: [
-          { index: true, loader: HomeLoader, element: <Home /> },
+          { index: true, element: <Home /> },
           { path: HomeRoute, element: <Home /> },
           { path: AboutRoute, element: <About /> },
           { path: ContactRoute, element: <Contact /> },

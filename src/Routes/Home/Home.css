@@ -196,47 +196,8 @@
 
 .Home__PortfolioHeader {
   margin-top: 30px;
-  font-weight: 400;
   text-transform: uppercase;
   font-size: 1.3em;
-}
-
-.Home__PortfolioLink {
-  text-decoration: none;
-}
-
-.Home__PortfolioRow {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.Home__PortfolioImgSection:hover {
-  opacity: 60%;
-}
-
-.Home__PortfolioImg {
-  width: 240px;
-}
-
-.Home__PortfolioTitle {
-  text-transform: uppercase;
-  font-weight: 400;
-  text-align: center;
-  font-size: 1.3em;
-  text-decoration: none;
-  color: black;
-  margin-bottom: 20px;
-  text-decoration-style: none;
-}
-
-.Home__PortfolioTitle:hover {
-  color: grey;
-}
-
-.Home__PortfolioImg .Home__ImageSectionImage:hover {
-  opacity: 0.9;
 }
 
 .newborn-discount-header {
