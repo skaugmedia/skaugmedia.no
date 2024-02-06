@@ -48,8 +48,8 @@ import BusinessPricesRoute from "../../../../Routes/BusinessPrices/Route";
 import * as ids from "../../../../Routes/PricesServices/Ids";
 
 export default {
-  id: "bedrift",
-  title: "Bedrift",
+  id: "innholdsproduksjon",
+  title: "Innholdsproduksjon",
   body: oneLine`
     Fotografering for bedrifter. Noen ønsker kun portretter, noen bedrifter ønsker å vise frem produkter, kontorene sine eller samholdet mellom sine ansatte.
   `,

@@ -35,7 +35,7 @@ export function Confirmation() {
           <img
             className="PhotoPrice__Img"
             src={ConfirmationImg}
-            alt="Våken liten nyfødt"
+            alt="Konfirmant i festdrakt"
           ></img>
         </PageSection>
         <PageSection>

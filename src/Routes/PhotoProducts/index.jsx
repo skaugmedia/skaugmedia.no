@@ -92,7 +92,7 @@ export function PhotoProducts() {
             outerClassName="Prices__Outer"
             reverse={true}
             imgSrc={WallImageImg}
-            imgAlt="En bildekopi i ramme av en konfirmant"
+            imgAlt="Lerretsbilder med mor og datter"
             title="Veggbilder"
             text={
               <div className="ProductPriceSection__Text">
@@ -149,7 +149,7 @@ export function PhotoProducts() {
             outerClassName="Prices__Outer"
             reverse={true}
             imgSrc={AlbumImg}
-            imgAlt="En bildekopi i ramme av en konfirmant"
+            imgAlt="En gravid kvinne i snøvær"
             title="Album"
             text={
               <div className="ProductPriceSection__Text">
@@ -211,7 +211,7 @@ export function PhotoProducts() {
             outerClassName="Prices__Outer"
             reverse={true}
             imgSrc={DigitalImageImg}
-            imgAlt="En bildekopi i ramme av en konfirmant"
+            imgAlt="Familie med mor og to barn"
             title="Digitale bildefiler"
             text={
               <div className="ProductPriceSection__Text">
@@ -269,7 +269,7 @@ export function PhotoProducts() {
             outerClassName="Prices__Outer"
             reverse={true}
             imgSrc={CardsImg}
-            imgAlt="En bildekopi i ramme av en konfirmant"
+            imgAlt="Takkekort med ulike design"
             title="Takkekort"
             text={
               <div className="ProductPriceSection__Text">
@@ -325,7 +325,7 @@ export function PhotoProducts() {
             outerClassName="Prices__Outer"
             reverse={true}
             imgSrc={BirthposterImg}
-            imgAlt="En bildekopi i ramme av en konfirmant"
+            imgAlt="Fødselsplakat med en herlig nyfødt"
             title="Fødselsplakat"
             text={
               <div className="ProductPriceSection__Text">

@@ -449,7 +449,7 @@ export function Wedding() {
         <img
           className="PhotoPrice__Img"
           src={WeddingImg}
-          alt="Våken liten nyfødt"
+          alt="Nygift brudepar på vei ut av kirken"
         ></img>
       </PageSection>
       {(() => {

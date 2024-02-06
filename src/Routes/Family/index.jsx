@@ -41,7 +41,7 @@ export function Family() {
           <img
             className="PhotoPrice__Img"
             src={FamilyImg}
-            alt="Våken liten nyfødt"
+            alt="En herlig liten familie ute i skogen"
           ></img>
         </PageSection>
         <PageSection>

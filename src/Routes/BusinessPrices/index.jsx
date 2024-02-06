@@ -679,6 +679,13 @@ export function BusinessPrices() {
           </div>
         </div>
       </PageSection>
+
+      <GalleryBrowser
+        title="Gallerier"
+        hideNumImages={true}
+        galleries={galleries}
+      />
+      <div className="PhotoPrice__BottomDivider"></div>
       {packages}
       <PageSection>
         <button
@@ -949,11 +956,6 @@ export function BusinessPrices() {
           />
         </div>
       </PageSection> */}
-      <GalleryBrowser
-        title="Gallerier"
-        hideNumImages={true}
-        galleries={galleries}
-      />
     </>
   );
 }

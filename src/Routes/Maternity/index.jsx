@@ -30,7 +30,7 @@ export function Maternity() {
           <img
             className="PhotoPrice__Img"
             src={MaternityImg}
-            alt="Våken liten nyfødt"
+            alt="To forventningsfylte som snart blir foreldre"
           ></img>
         </PageSection>
         <PageSection>

@@ -4,7 +4,6 @@ import { PageSection } from "../../Components/PageSection";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 
-import Realestate from "../../Data/Business/Galleries/Realestate";
 import Confirmation from "../../Data/Photography/Confirmation";
 import Engagement from "../../Data/Photography/Engagement";
 import Family from "../../Data/Photography/Family";
@@ -26,7 +25,6 @@ import MommyMePortfolioImg from "../../Images/Home/portfolio_mom.jpg";
 import NewbornPortfolioImg from "../../Images/Home/portfolio_newborn.jpg";
 import PortraitPortfolioImg from "../../Images/Home/portfolio_portrait.jpg";
 import PregPortfolioImg from "../../Images/Home/portfolio_preg.jpg";
-import RealestatePortfolioImg from "../../Images/Home/portfolio_realestate.jpg";
 import WeddingPortfolioImg from "../../Images/Home/portfolio_wed.jpg";
 import freePregnancyShoot from "../../Images/Prices/free_pregnant_shoot.jpg";
 import cover from "../../Images/coverphoto.jpg";
@@ -128,7 +126,7 @@ export function Home() {
             <img
               className="Home__PhotographerImg"
               src={PhotographerImg}
-              alt="Gratis minifotografering av gravide"
+              alt="Portrett av en fotograf"
             ></img>
           </div>
           <div className="Home__PhotographerTextSection">
@@ -201,7 +199,7 @@ export function Home() {
             <img
               className="Home__Discount_NewbornImg"
               src={newbornDiscount}
-              alt="50% avslag på nyfødtfotografering"
+              alt="Nyfødt baby"
             ></img>
             <div className="Home__Discount_NewbornTextBox">
               <div className="Home__Discount_NewbornHeader">GRATIS</div>
@@ -220,7 +218,7 @@ export function Home() {
             <img
               className="Home__Discount_OneYearImg"
               src={OneYearDiscount}
-              alt="50% avslag på nyfødtfotografering"
+              alt="1-åring"
             ></img>
             <div className="Home__Discount_OneYearTextBox">
               <div className="Home__Discount_OneYearHeader">ALLTID</div>
@@ -236,11 +234,26 @@ export function Home() {
       </PageSection>
       <PageSection outerClassName="Home__NewsletterBackground">
         <div className="Home__NewsletterSection">
-          <div className="Home__NewsletterHeader">NYHETSBREV</div>
-          <div className="Home__NewsletterText">
-            Du vil få informasjon om fotograferinger, kampanjer og konkurranser.
-            Fyll inn e-postadressen din under for å melde deg på Skaug Medias
-            nyhetsbrev.
+          <div className="Home__NewsletterTextBox">
+            <div className="Home__NewsletterHeader">NYHETSBREV</div>
+            <div className="Home__NewsletterText">
+              Du vil få informasjon om fotograferinger, kampanjer og
+              konkurranser. Fyll inn e-postadressen din under for å melde deg på
+              Skaug Medias nyhetsbrev.
+            </div>
+          </div>
+          <div className="Home__NewsletterSignupBox">
+            <form>
+              <label className="Home__NewsletterBoxHeader" for="Email">
+                E-postadresse
+              </label>
+              <input
+                className="Home__NewsletterEmail"
+                placeholder="ola.nordmann@example.com"
+                name="Email"
+              ></input>
+            </form>
+            <ActionButton to={ContactRoute}>Meld meg på</ActionButton>
           </div>
         </div>
       </PageSection>
@@ -329,7 +342,7 @@ export function Home() {
                 <img
                   className="Home__PortfolioImg"
                   src={NewbornPortfolioImg}
-                  alt="Nydelig gravid"
+                  alt="Nyfødt baby"
                 ></img>
                 <div className="Home__PortfolioTitle">Nyfødt</div>
                 <div className="Home__PortfolioArrow"></div>
@@ -343,7 +356,7 @@ export function Home() {
                 <img
                   className="Home__PortfolioImg"
                   src={KidsPortfolioImg}
-                  alt="Nydelig gravid"
+                  alt="1-åring"
                 ></img>
                 <div className="Home__PortfolioTitle">Barn</div>
                 <div className="Home__PortfolioArrow"></div>
@@ -357,7 +370,7 @@ export function Home() {
                 <img
                   className="Home__PortfolioImg"
                   src={FamilyPortfolioImg}
-                  alt="Nydelig gravid"
+                  alt="Familie"
                 ></img>
                 <div className="Home__PortfolioTitle">Familie</div>
                 <div className="Home__PortfolioArrow"></div>
@@ -373,7 +386,7 @@ export function Home() {
                 <img
                   className="Home__PortfolioImg"
                   src={ConfirmationPortfolioImg}
-                  alt="Nydelig gravid"
+                  alt="Konfirmant"
                 ></img>
                 <div className="Home__PortfolioTitle">Konfirmant</div>
                 <div className="Home__PortfolioArrow"></div>
@@ -387,7 +400,7 @@ export function Home() {
                 <img
                   className="Home__PortfolioImg"
                   src={WeddingPortfolioImg}
-                  alt="Nydelig gravid"
+                  alt="Brudepar"
                 ></img>
                 <div className="Home__PortfolioTitle">Bryllup</div>
                 <div className="Home__PortfolioArrow"></div>
@@ -401,7 +414,7 @@ export function Home() {
                 <img
                   className="Home__PortfolioImg"
                   src={MommyMePortfolioImg}
-                  alt="Nydelig gravid"
+                  alt="Mor og barn"
                 ></img>
                 <div className="Home__PortfolioTitle">
                   Mommy & me / daddy & me
@@ -417,7 +430,7 @@ export function Home() {
                 <img
                   className="Home__PortfolioImg"
                   src={PortraitPortfolioImg}
-                  alt="Nydelig gravid"
+                  alt="Portrett"
                 ></img>
                 <div className="Home__PortfolioTitle">Portrett</div>
                 <div className="Home__PortfolioArrow"></div>
@@ -434,26 +447,13 @@ export function Home() {
                 <img
                   className="Home__PortfolioImg"
                   src={CouplePortfolioImg}
-                  alt="Nydelig gravid"
+                  alt="Et forlovet par"
                 ></img>
                 <div className="Home__PortfolioTitle">Par</div>
                 <div className="Home__PortfolioArrow"></div>
               </div>
             </NavLink>
-            <NavLink
-              to={`/${PhotographyRoute}/${Realestate.id}`}
-              className="Home__PortfolioLink"
-            >
-              <div className="Home__PortfolioImgSection">
-                <img
-                  className="Home__PortfolioImg"
-                  src={RealestatePortfolioImg}
-                  alt="Nydelig gravid"
-                ></img>
-                <div className="Home__PortfolioTitle">Eiendom</div>
-                <div className="Home__PortfolioArrow"></div>
-              </div>
-            </NavLink>
+
             <NavLink
               to={`/${BusinessPricesRoute}`}
               className="Home__PortfolioLink"
@@ -462,7 +462,7 @@ export function Home() {
                 <img
                   className="Home__PortfolioImg"
                   src={BusinessPortfolioImg}
-                  alt="Nydelig gravid"
+                  alt="Innholdsproduksjon for bedrift"
                 ></img>
                 <div className="Home__PortfolioTitle">Bedrift</div>
                 <div className="Home__PortfolioArrow"></div>

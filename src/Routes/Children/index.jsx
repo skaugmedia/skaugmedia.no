@@ -48,7 +48,7 @@ export function Children() {
           <img
             className="PhotoPrice__Img"
             src={ChildrenImg}
-            alt="Våken liten nyfødt"
+            alt="Herlig baby i blomstereng"
           ></img>
         </PageSection>
         <PageSection>

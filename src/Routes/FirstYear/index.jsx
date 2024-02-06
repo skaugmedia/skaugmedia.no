@@ -43,7 +43,7 @@ export function FirstYear() {
           <img
             className="PhotoPrice__Img"
             src={FirstYearImg}
-            alt="Våken liten nyfødt"
+            alt="4 ulike bilder av samme barn i løpet av det første året"
           ></img>
         </PageSection>
         <PageSection>

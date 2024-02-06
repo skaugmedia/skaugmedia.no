@@ -38,7 +38,7 @@ export function Headshots() {
           <img
             className="PhotoPrice__Img"
             src={HeadshotsImg}
-            alt="Våken liten nyfødt"
+            alt="Vakker kvinne ved vannet"
           ></img>
         </PageSection>
         <PageSection>

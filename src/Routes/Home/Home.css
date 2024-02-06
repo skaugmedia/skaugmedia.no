@@ -60,12 +60,13 @@
   display: flex;
   flex-flow: row;
   margin-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   gap: 30px;
 }
 
 .Home__PhotographerImg {
   width: 350px;
+  border-radius: 100%;
 }
 
 .Home__PhotographerTextSection {
@@ -86,6 +87,7 @@
   flex-flow: column;
   position: relative;
   width: calc(50% - 5px);
+  margin-bottom: 40px;
 }
 
 .Home__Discount_NewbornImg {
@@ -180,6 +182,17 @@
   display: flex;
   flex-flow: column;
 }
+.Home__NewsletterTextBox {
+  text-align: left;
+}
+
+.Home__NewsletterHeader {
+  text-align: left;
+}
+
+.Home__NewsletterText {
+  text-align: left;
+}
 
 .Home__PortfolioHeader {
   margin-top: 30px;
@@ -216,6 +229,10 @@
   color: black;
   margin-bottom: 20px;
   text-decoration-style: none;
+}
+
+.Home__PortfolioTitle:hover {
+  color: grey;
 }
 
 .Home__PortfolioImg .Home__ImageSectionImage:hover {
@@ -512,6 +529,8 @@
   flex-flow: row;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: flex;
+  flex-flow: column;
 }
 
 .Home__NewsletterHeader {
@@ -526,19 +545,22 @@
   font-family: nunito;
   font-weight: 300;
   color: white;
-  margin-left: 40px;
-  margin-right: 40px;
+}
+
+.Home__NewsletterBox {
+  text-align: left;
 }
 
 .Home__NewsletterSignupBox {
   display: flex;
   flex-flow: column;
+  margin-top: 5px;
 }
 
 .Home__NewsletterBoxHeader {
-  font-weight: 400;
-  text-transform: uppercase;
-  color: white;
+  font-weight: 300;
+
+  color: black;
   text-align: left;
   font-size: 1em;
 }

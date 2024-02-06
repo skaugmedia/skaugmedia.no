@@ -3,9 +3,10 @@
 }
 
 .Prices__CategoryNav {
+  text-decoration: none;
 }
 .Prices__CategoryNav:hover {
-  opacity: 98%;
+  opacity: 80%;
 }
 
 .Prices__CategorySection {
@@ -23,7 +24,8 @@
   justify-content: space-between;
   gap: 10px;
   margin-right: none;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .Prices__Category_PriceSquare:hover {
@@ -32,7 +34,7 @@
 
 .Prices__Category_PriceImg {
   object-fit: cover;
-  opacity: 80%;
+
   color: white;
 }
 
@@ -40,22 +42,23 @@
 }
 
 .Prices__Category_PriceTextBox {
-  position: absolute;
 }
 
 .Prices__Category_PriceHeader {
-  font-size: 2.2em;
+  font-size: 1.5em;
   font-weight: 400;
   color: black;
   text-align: center;
-  margin-top: 250px;
+  margin-bottom: 20px;
 
   justify-content: space-between;
   margin-left: 40px;
   margin-right: 40px;
   text-transform: uppercase;
+  text-decoration: none;
 }
-.Prices__Category_PriceHeader {
+.Prices__Category_PriceHeader:hover {
+  color: grey;
 }
 
 /*.Prices__Category_PriceSubHeader {

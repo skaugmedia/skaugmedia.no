@@ -1846,12 +1846,12 @@ export function PricesServices() {
               <img
                 className="Prices__Category_PriceImg"
                 src={MaternityButton}
-                title="Baby utendørs i blomstereng"
+                title="En vakker gravid kvinne"
               />
-              <div className="Prices__Category_PriceTextBox">
-                <div className="Prices__Category_PriceHeader">
-                  {MaternityPageName}
-                </div>
+            </div>
+            <div className="Prices__Category_PriceTextBox">
+              <div className="Prices__Category_PriceHeader">
+                {MaternityPageName}
               </div>
             </div>
           </NavLink>
@@ -1860,12 +1860,12 @@ export function PricesServices() {
               <img
                 className="Prices__Category_PriceImg"
                 src={FamilyButton}
-                title="Baby utendørs i blomstereng"
+                title="Familie som holder hender"
               />
-              <div className="Prices__Category_PriceTextBox">
-                <div className="Prices__Category_PriceHeader">
-                  {FamilyPageName}
-                </div>
+            </div>
+            <div className="Prices__Category_PriceTextBox">
+              <div className="Prices__Category_PriceHeader">
+                {FamilyPageName}
               </div>
             </div>
           </NavLink>
@@ -1874,12 +1874,12 @@ export function PricesServices() {
               <img
                 className="Prices__Category_PriceImg"
                 src={NewbornButton}
-                title="Baby utendørs i blomstereng"
+                title="En herlig nyfødt baby"
               />
-              <div className="Prices__Category_PriceTextBox">
-                <div className="Prices__Category_PriceHeader">
-                  {NewbornPageName}
-                </div>
+            </div>
+            <div className="Prices__Category_PriceTextBox">
+              <div className="Prices__Category_PriceHeader">
+                {NewbornPageName}
               </div>
             </div>
           </NavLink>
@@ -1891,12 +1891,12 @@ export function PricesServices() {
               <img
                 className="Prices__Category_PriceImg"
                 src={ChildrenButton}
-                title="Baby utendørs i blomstereng"
+                title="1-åring sammen med foreldrene"
               />
-              <div className="Prices__Category_PriceTextBox">
-                <div className="Prices__Category_PriceHeader">
-                  {ChildrenPageName}
-                </div>
+            </div>
+            <div className="Prices__Category_PriceTextBox">
+              <div className="Prices__Category_PriceHeader">
+                {ChildrenPageName}
               </div>
             </div>
           </NavLink>
@@ -1905,12 +1905,12 @@ export function PricesServices() {
               <img
                 className="Prices__Category_PriceImg"
                 src={ConfirmationButton}
-                title="Baby utendørs i blomstereng"
+                title="Konfirmant utendørs i grønne omgivelser"
               />
-              <div className="Prices__Category_PriceTextBox">
-                <div className="Prices__Category_PriceHeader">
-                  {ConfirmationPageName}
-                </div>
+            </div>
+            <div className="Prices__Category_PriceTextBox">
+              <div className="Prices__Category_PriceHeader">
+                {ConfirmationPageName}
               </div>
             </div>
           </NavLink>
@@ -1919,12 +1919,12 @@ export function PricesServices() {
               <img
                 className="Prices__Category_PriceImg"
                 src={WeddingButton}
-                title="Baby utendørs i blomstereng"
+                title="Brudepar i helfigur"
               />
-              <div className="Prices__Category_PriceTextBox">
-                <div className="Prices__Category_PriceHeader">
-                  {WeddingPageName}
-                </div>
+            </div>
+            <div className="Prices__Category_PriceTextBox">
+              <div className="Prices__Category_PriceHeader">
+                {WeddingPageName}
               </div>
             </div>
           </NavLink>
@@ -1935,12 +1935,12 @@ export function PricesServices() {
               <img
                 className="Prices__Category_PriceImg"
                 src={FirstYearButton}
-                title="Baby utendørs i blomstereng"
+                title="4 ulike bilder av samme barn i løpet av det første året"
               />
-              <div className="Prices__Category_PriceTextBox">
-                <div className="Prices__Category_PriceHeader">
-                  {FirstYearPageName}
-                </div>
+            </div>
+            <div className="Prices__Category_PriceTextBox">
+              <div className="Prices__Category_PriceHeader">
+                {FirstYearPageName}
               </div>
             </div>
           </NavLink>
@@ -1949,12 +1949,12 @@ export function PricesServices() {
               <img
                 className="Prices__Category_PriceImg"
                 src={HeadshotsButton}
-                title="Baby utendørs i blomstereng"
+                title="Portrett av en rocket dame"
               />
-              <div className="Prices__Category_PriceTextBox">
-                <div className="Prices__Category_PriceHeader">
-                  {HeadshotsPageName}
-                </div>
+            </div>
+            <div className="Prices__Category_PriceTextBox">
+              <div className="Prices__Category_PriceHeader">
+                {HeadshotsPageName}
               </div>
             </div>
           </NavLink>
@@ -1963,14 +1963,14 @@ export function PricesServices() {
               <img
                 className="Prices__Category_PriceImg"
                 src={PhotoProductsButton}
-                title="Baby utendørs i blomstereng"
+                title="Et innrammet bilde av en gravid kvinne"
               />
-              <div className="Prices__Category_PriceTextBox">
-                <div className="Prices__Category_PriceHeader">
-                  {PhotoProductsPageName}
-                </div>
-              </div>
             </div>
+            <div className="Prices__Category_PriceTextBox">
+              <div className="Prices__Category_PriceHeader">
+                {PhotoProductsPageName}
+              </div>{" "}
+            </div>{" "}
           </NavLink>
         </div>
       </PageSection>
