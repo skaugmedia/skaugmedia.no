@@ -31,29 +31,25 @@ export function Home() {
       >
         <div className="Home__DiscountHeaderBox">
           <div className="Home__DiscountHeaderTextBox">
-            <div className="Home__DiscountHeaderHeader">-30% rabatt</div>
+            <div className="Home__DiscountHeaderHeader">MORSDAGSTILBUD</div>
             <div className="Home__DiscountHeaderSubHeader">
-              på bryllupspakke 1 og 2
+              Minifotografering - mommy & me
             </div>
 
             <div className="Home__DiscountHeaderText">
-              De første 3 brudeparene som booker bryllupspakke 1 eller 2, med
-              fotografering i 2023 eller 2024, får 30% rabatt på pakken. (Når
-              kontrakt er signert og reservasjonsbeløpet er betalt, er
-              fotograferingen booket.) Tilbudet gjelder ikke om dere har en
-              kontrakt med en annen fotograf.
+              Den perfekte morsdagsgave til alle mammaer i alle aldre! <br />
+              Gi det til din kjære fra barna deres, eller gi det til din 90 år
+              gamle mamma - og ta henne med på fotografering.
               <br />
               <br />
-              Jeg trenger mer erfaring med bryllupsfotografering, og ønsker
-              derfor å fylle opp min portefølje med flere bryllupsbilder.
+              <div className="Home__DiscountPrice">KUN KR. 1350,-</div>
               <br />
-              Ta kontakt om dere lurer på noe!
             </div>
             <NavLink
-              to={`/${ContactRoute}`}
+              to={`/${DiscountRoute}`}
               className="Home__DiscountHeaderButton"
             >
-              Book nå
+              Les mer
             </NavLink>
           </div>
         </div>
