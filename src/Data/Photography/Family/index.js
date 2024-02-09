@@ -34,8 +34,7 @@ export default {
   title: "Familie",
 
   body: oneLine`
-    Familiebilder er så koselig å ha for å se tilbake på når barna har vokst opp, og flyttet ut,
-    eller når de vi er så glade i, ikke lenger er her med oss!
+  Bli med oss og la øyeblikkene bli til varige minner gjennom en familiefotografering som er perfekt for å fange deres unike bånd og kjærlighet. Ved å kombinere naturlig lys, autentiske øyeblikk og enkle retninger, skaper vi varige minner fylt med latter, nærhet og kjærlighet. La oss fange deres unike historie gjennom bilder som vil bli verdsatt i generasjoner fremover.
   `,
   cover: {
     url: famE1,

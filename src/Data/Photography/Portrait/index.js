@@ -49,7 +49,7 @@ export default {
   id: "portrett",
   title: "Portrett",
   body: oneLine`
-    Portretter er noe de fleste trenger en gang eller to i løpet av livet. Enten det er i jobbsammenheng, eller man bare ønsker noen flotte bilder av seg selv!
+  Opplev kraften av et godt portrett gjennom en profesjonell fotografering som setter deg i det beste lyset, enten det er for profesjonelle formål eller til dine kanaler i sosiale medier. Enten du trenger imponerende profilbilder for profesjonelle nettverk eller ønsker å forsterke ditt nærvær på sosiale medier, vil jeg skape bilder som formidler din autentiske identitet og styrker din visuelle appell. La oss sammen skape portretter som ikke bare ser fantastiske ut, men som også kommuniserer din profesjonelle dyktighet og personlige sjarm til verden.
   `,
   cover: {
     url: port_T_01,

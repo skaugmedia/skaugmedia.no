@@ -86,6 +86,11 @@ export function FirstYear() {
                 digitale bildefiler
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
+
+              <div className="PhotoPrice__PackageBoxText">
+                Fødselsplakat 20x30 cm med bilde
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>

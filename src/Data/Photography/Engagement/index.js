@@ -27,9 +27,7 @@ export default {
   title: "Parfotografering",
 
   body: oneLine`
-    Det er så hyggelig å ha bilder som viser den ekte kjærligheten mellom et par, minner å
-    se tilbake på, og ikke bilder som kan brukes i forbindelse med invitasjoner og bryllupsdekorasjoner,
-    eller rett og slett bare til å henge opp på veggen!
+  Utforsk kjærlighetens magi gjennom en parfotografering som fanger øyeblikkene av intimitet, glede og forbindelse mellom dere. Med en unik blanding av profesjonell veiledning og autentiske øyeblikk, skaper vi tidløse bilder som feirer deres kjærlighetshistorie. Enten det er på en naturlig utendørslokasjon, i et romantisk bymiljø eller i komforten av deres eget hjem, vil jeg fange de spesielle øyeblikkene som definerer deres forhold. La oss sammen skape bilder som ikke bare fanger øyeblikket, men som også formidler den dype forbindelsen og kjærligheten dere deler.
   `,
   cover: {
     url: coup_LO_5,

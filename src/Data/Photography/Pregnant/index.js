@@ -85,10 +85,7 @@ export default {
   id: "gravid",
   title: "Gravid",
   body: oneLine`
-    Det er veldig mange som tenker at de ikke trenger gravidbilder, og ikke vil bruke penger på dette. Veldig
-    mange angrer seg i ettertid, fordi de ikke kan huske hvor flotte de så ut med den fine kula og hvor helt
-    spesielt fantastisk det er å kunne få bære frem et helt nytt menneske! Jeg anbefaler alle gravide å ta gravidbilder,
-    fordi det er noe helt eget som du ønsker å kunne se tilbake på etter at babyen er ute.
+    Det er så viktig å fange noen bilder av magen mens den stråler som mest, plutselig er den borte! Med det vakre utendørslandskapet som bakgrunn, fanger vi de naturlige lyset og omgivelsene for å skape bilder som stråler av forventning, kjærlighet og forundring. Enten det er i en skog, på en strand, eller på et annet sted som betyr noe for dere, bringer jeg min ekspertise og lidenskap for å fange disse spesielle øyeblikkene.
   `,
   cover: {
     url: preg_JA_1,

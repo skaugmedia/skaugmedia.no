@@ -66,8 +66,7 @@ export default {
   id: "mat",
   title: "Mat",
   body: oneLine`
-    Fotografering av mat er en helt egen kunst, som jeg har jobbet mye med å presisere og lære. Det er viktig
-    at maten alltid ser innbydende ut.
+  La oss gjøre maten deres til stjernen på tallerkenen med profesjonell matfotografering som får vannet i munnen til å løpe for deres kunder. Ved å fange de delikate detaljene, de fristende fargene og den appetittvekkende presentasjonen av deres kulinariske mesterverk, vil jeg skape bilder som ikke bare ser deilige ut, men som også forteller historien om deres unike merkevare. Enten det er for restauranter, kafeer, matleveringstjenester eller matvarebedrifter, vil jeg jobbe tett med dere for å forstå deres visjon og formidle den gjennom bilder som vil få kundene deres til å løpe inn dørene. La oss sammen bringe matopplevelsen til liv og inspirere appetitten til deres publikum gjennom levende og fristende bilder.
   `,
   cover: {
     url: food_lunch_1,

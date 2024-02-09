@@ -187,21 +187,22 @@ export function Discounts() {
                     Ullensaker.
                   </p>
                   <p>
-                    Under gratis minifotografering av gravide er det dessverre
-                    ikke rom for å ha med partner eller tidligere barn på
-                    bildene. Lån av gravidkjole er heller ikke inkludert, men
-                    det er mulighet for å leie en av dem for kr. 200,- om du
-                    ønsker.
+                    Det vil fra og med nå bli rom for å ha med partner og
+                    tidligere barn på gratis minifotografering av gravide. Lån
+                    av gravidkjoler er ikke inkludert i fotograferingen, men du
+                    har mulighet til å leie en gravidkjole for kr. 200,- om du
+                    ønsker dette.
                   </p>
                   <p>
-                    Sett deg gjerne på liste, for senere datoer ved å sende en
-                    melding via kontaktskjema der du skriver når du har termin.
+                    Om du vet at du ønsker å delta på dette når det nærmer seg
+                    din termin, ta kontakt via kontaktskjema og fortell meg når
+                    du har termin- så setter jeg deg på en prioritert liste.
                   </p>
-                  <p>Begrenset kapasitet, så book tidlig!</p>
                   Dette inkluderer:
                   <IncludesList
                     items={[
                       "20 minutters fotografering utendørs",
+                      "Fotografering med partner og tidligere barn",
                       "Mulighet for å leie gravidkjole for kr. 200,-",
                       "Online bildegalleri hvor du velger dine bilder",
                       "1 digital bildefil i høy oppløsning",

@@ -35,8 +35,7 @@ export default {
   id: "konfirmant",
   title: "Konfirmant",
   body: oneLine`
-    Både for foreldre og konfirmanten selv, er det viktig med gode bilder for å forevige den store konfirmasjonsdagen.
-    Det er også fint å ha gode bilder som kan brukes til takkekort og å kunne henge på veggen i etterkant av konfirmasjonen.
+  Feir denne spesielle milepælen i livet med en konfirmantfotografering som fanger øyeblikket og personligheten til konfirmanten. Enten det er i en vakker utendørssetting, i deres hjem eller et annet sted med personlig betydning, skaper jeg minneverdige bilder som vil vare livet ut. Med en blanding av profesjonell veiledning og autentiske øyeblikk, vil vi sammen fange den unike stilen og essensen til konfirmanten. 
   `,
   cover: {
     url: conf_l_3,

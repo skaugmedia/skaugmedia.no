@@ -86,7 +86,7 @@ export default {
   id: "produkt",
   title: "Produkt",
   body: oneLine`
-    Produktbilder kan enten tas i studio, eller i et flott miljø sammen med andre produkter.
+  La produktene deres skinne gjennom profesjonell produktfotografering som fanger oppmerksomheten til kundene og gir dem et uimotståelig førsteinntrykk. Med nøye belysning, komposisjon og retning, vil jeg skape bilder som fremhever kvaliteten, funksjonaliteten og unikheten til deres produkter. Enten det er for nettbutikker, kataloger, annonser eller sosiale medieplattformer, vil jeg jobbe tett med dere for å forstå deres merkevareidentitet og mål, og skape bilder som resonnerer med deres målgruppe. La oss sammen skape visuelt slående bilder som ikke bare selger produkter, men som også styrker deres merkevare og øker salget.
   `,
   cover: {
     url: product_eva_solo_1,

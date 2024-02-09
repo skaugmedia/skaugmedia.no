@@ -23,10 +23,7 @@ export default {
   id: "nyfodt",
   title: "Nyfødt",
   body: oneLine`
-    Det er noe helt spesielt med nyfødtfotografering. Den helt ferske, nydelige, lille babyen din
-    sover mesteparten av tiden, men kan også være våken i korte perioder. De små ser så fredfulle og
-    avslappede ut, mens de ligger der og sover mens man kan flytte rundt på dem og plassere dem
-    akkurat slik man ønsker.
+  Opplev øyeblikket med naturlige nyfødtbilder, skapt i trygge og kjente omgivelser for både foreldre og barn. Med fokus på å fange den autentiske kjærligheten og intimiteten mellom familien, bringer jeg studioet til dere, slik at dere kan slappe av i komforten av deres eget hjem. 
   `,
   cover: {
     url: LO1,

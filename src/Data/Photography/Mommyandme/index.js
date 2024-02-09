@@ -26,8 +26,7 @@ export default {
   id: "mommyandme",
   title: "Mommy & me / Daddy & me",
   body: oneLine`
-    Det er så hyggelig å ha bilder sammen med barna sine. Enten mommy & me bilder eller daddy & me, helt ettersom hva dere ønsker. Slike bilder er så koselige å henge
-    opp på veggen og å se tilbake på om mange år.
+  Bli med på en hjertevarm reise gjennom mommy&Me-fotografering, en spesiell fotografering som hyller båndet mellom mor og barn eller far og barn. I en intim og kjærlighetsfylt setting, fanger vi øyeblikkene av ømhet, latter og uendelig kjærlighet som dere deler. Enten det er i hjemmets varme, i en frodig park eller et annet sted som betyr noe for dere, vil jeg fange de unike båndene og den spesielle dynamikken mellom forelder og barn.
   `,
   cover: {
     url: mom_IL_4,

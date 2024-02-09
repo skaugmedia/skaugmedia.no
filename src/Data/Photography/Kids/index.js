@@ -54,7 +54,7 @@ export default {
   id: "barn-og-baby",
   title: "Barn og baby",
   body: oneLine`
-    Portretter av barn i alle aldre mellom 2 måneder og konfirmasjonstid. Disse bildene er så koselig å henge opp på veggen eller å gi bort innrammet i gave.
+  Utforsk magien av barndommens oppdagelser med skreddersydde fotograferinger for barn mellom 6 måneder og konfirmantalder. Sammen skaper vi minneverdige øyeblikk, fylt med latter, lek og kjærlighet. La oss fange de spontane smilene, den nysgjerrige utforskningen og den genuine gleden av barndommens eventyr, som vil bli skattert for alltid.
   `,
   cover: {
     url: LG1,

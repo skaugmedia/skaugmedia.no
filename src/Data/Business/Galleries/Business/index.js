@@ -51,7 +51,7 @@ export default {
   id: "Innholdsproduksjon",
   title: "Innholdsproduksjon",
   body: oneLine`
-    Fotografering for bedrifter. Noen ønsker kun portretter, noen bedrifter ønsker å vise frem produkter, kontorene sine eller samholdet mellom sine ansatte.
+  Skap en varig innvirkning og nå ditt publikum på en meningsfull måte gjennom strategisk innholdsproduksjon for din bedrift. Med en skreddersydd tilnærming som tar hensyn til din merkevares identitet, mål og publikumsbehov, vil jeg hjelpe deg med å produsere innhold som skiller seg ut og engasjerer. Fra blogginnlegg og artikler til videoer, sosiale medier-innlegg og grafikk, vil jeg jobbe tett med deg for å utvikle en helhetlig innholdsstrategi som driver trafikk, bygger merkevarebevissthet og skaper lojale kunder. La oss sammen bringe din bedrifts historie til liv og skape innhold som resonnerer med ditt publikum på en dypere nivå.
   `,
   cover: {
     url: business_pogb_sommer_19,

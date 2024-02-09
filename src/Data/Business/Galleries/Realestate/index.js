@@ -48,7 +48,7 @@ export default {
   id: "realestate",
   title: "Eiendom",
   body: oneLine`
-    Jeg fotograferer leiligheter, hybler, eneboliger og andre eiendommer for EFKT. Ønsker du å booke eiendomsfotografering, må du selv ta kontakt med EFKT.
+    Jeg fotograferer leiligheter, hybler, eneboliger og andre eiendommer for EFKT. La oss sammen bringe din eiendoms historie til liv gjennom bilder som skiller seg ut og tiltrekker seg oppmerksomhet. Ønsker du å booke eiendomsfotografering, må du selv ta kontakt med EFKT.
   `,
   cover: {
     url: realestate_AV_6,
