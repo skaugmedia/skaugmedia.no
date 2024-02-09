@@ -8,6 +8,8 @@ import "./Discounts.css";
 import OneYear from "/src/Images/Discounts/1-year-photo.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
+import MiniShootMothersday from "/src/Images/Mommy&me/mom_IL_4.jpg";
+import MiniShootWinter from "/src/Images/Pregnant/preg_JA_1.jpg";
 import WeddingDiscount from "/src/Images/Wedding/weddingRT_14.jpg";
 import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
@@ -43,6 +45,70 @@ export function Discounts() {
             }
             link={`/${ContactRoute}`}
           /> */}
+        <PageSection>
+          <DiscountAd
+            imgSrc={MiniShootMothersday}
+            imgAlt="En mamma med hennes sønn i en solsikkeåker"
+            title="MORSDAGSTILBUD"
+            text={
+              <>
+                <div className="Discounts__FreePregnancyNextDate">
+                  Minifotografering - Mommy & me
+                </div>
+                <div className="Discounts__Text">
+                  Den perfekte morsdagsgave til alle mammaer i alle aldre!{" "}
+                  <br />
+                  Gi det til din kjære fra barna deres, eller gi det til din 90
+                  år gamle mamma - og ta henne med på fotografering.
+                  <br />
+                  <br />
+                  Hva får du ut av det? <br />
+                  ❤ Kvalitetstid mellom mor og barn <br />
+                  ❤ 20 minutter mommy & me fotografering <br />
+                  ❤ Online bildegallei hvor du velger bilder fra <br />
+                  ❤ 5 valgfrie digitale bildefiler <br />
+                  ❤ Fotografering på Jessheim i Ullensaker <br />
+                  ❤ Rabattkupong du kan bruke på neste fotografering
+                  <br />
+                  ❤ Verdens mest verdifulle morsdagsgave
+                  <br />
+                  <br /> Tilbudet gjelder for booking på hverdager i uke 8 og 9.
+                  <br />
+                  <br />
+                  <div className="Discounts__DiscountTextImportant">
+                    KUN KR. 1350,-
+                  </div>
+                </div>
+              </>
+            }
+            link={`/${ContactRoute}`}
+          />
+        </PageSection>
+
+        <PageSection>
+          <DiscountAd
+            imgSrc={MiniShootWinter}
+            imgAlt="En gravid kvinne ute i snøstorm"
+            title="Minifotografering på Jessheim i vinterferien"
+            text={
+              <>
+                <div className="Discounts__Text">
+                  ❤ 20 minutter valgfri fotografering
+                  <br />
+                  ❤ Online bildegalleri hvor du velger bilder <br />
+                  ❤ 5 valgfrie digitale bildefiler
+                  <br />
+                  <br />
+                  Ta kontakt for mer informasjon og booking.
+                  <br />
+                  kontakt@skaugmedia.no
+                </div>
+              </>
+            }
+            link={`/${ContactRoute}`}
+          />
+        </PageSection>
+
         <PageSection>
           <DiscountAd
             imgSrc={WeddingDiscount}
@@ -121,22 +187,21 @@ export function Discounts() {
                     Ullensaker.
                   </p>
                   <p>
-                    Under gratis minifotografering av gravide er det nå også
-                    mulighet for å ha med partner eller tidligere barn på
-                    bildene. Lån av gravidkjole er ikke inkludert, men det er
-                    mulighet for å leie en gravidkjole til fotograferingen for
-                    kr. 200,- om du ønsker.
+                    Under gratis minifotografering av gravide er det dessverre
+                    ikke rom for å ha med partner eller tidligere barn på
+                    bildene. Lån av gravidkjole er heller ikke inkludert, men
+                    det er mulighet for å leie en av dem for kr. 200,- om du
+                    ønsker.
                   </p>
                   <p>
-                    Sett deg gjerne på liste for senere datoer ved å sende en
+                    Sett deg gjerne på liste, for senere datoer ved å sende en
                     melding via kontaktskjema der du skriver når du har termin.
                   </p>
-                  <p>Begrenset kapasitet.</p>
+                  <p>Begrenset kapasitet, så book tidlig!</p>
                   Dette inkluderer:
                   <IncludesList
                     items={[
                       "20 minutters fotografering utendørs",
-                      "Mulighet for å ha med partner og tidligere barn på fotografering",
                       "Mulighet for å leie gravidkjole for kr. 200,-",
                       "Online bildegalleri hvor du velger dine bilder",
                       "1 digital bildefil i høy oppløsning",
