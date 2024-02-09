@@ -39,14 +39,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   :root {
-    --content-width: 900px;
+    --content-width: 80vw;
   }
 }
 
 @media only screen and (max-width: 600px) {
   :root {
-    --content-width: 600px;
+    --content-width: 90vw;
   }
 }

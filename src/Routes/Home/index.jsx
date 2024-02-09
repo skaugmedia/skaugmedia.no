@@ -213,7 +213,7 @@ export function Home() {
           </div>
         </div>
       </PageSection>
-      <PageSection outerClassName="Home__NewsletterBackground">
+      {/* <PageSection outerClassName="Home__NewsletterBackground">
         <div className="Home__NewsletterSection">
           <div className="Home__NewsletterTextBox">
             <div className="Home__NewsletterHeader">NYHETSBREV</div>
@@ -237,7 +237,7 @@ export function Home() {
             <ActionButton to={ContactRoute}>Meld meg på</ActionButton>
           </div>
         </div>
-      </PageSection>
+      </PageSection> */}
       {/*
         <div className="newborn-discount-row">
           <img
