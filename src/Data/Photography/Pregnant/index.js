@@ -1,5 +1,15 @@
 import { oneLine } from "common-tags";
 
+import preg_i_1 from "../../../Images/Pregnant/preg_i_1.jpg";
+import preg_i_2 from "../../../Images/Pregnant/preg_i_2.jpg";
+import preg_i_3 from "../../../Images/Pregnant/preg_i_3.jpg";
+import preg_i_4 from "../../../Images/Pregnant/preg_i_4.jpg";
+import preg_i_5 from "../../../Images/Pregnant/preg_i_5.jpg";
+import preg_i_6 from "../../../Images/Pregnant/preg_i_6.jpg";
+import preg_i_7 from "../../../Images/Pregnant/preg_i_7.jpg";
+import preg_i_8 from "../../../Images/Pregnant/preg_i_8.jpg";
+import preg_i_9 from "../../../Images/Pregnant/preg_i_9.jpg";
+
 import preg_p_1 from "../../../Images/Pregnant/preg_p_1.jpg";
 import preg_p_2 from "../../../Images/Pregnant/preg_p_2.jpg";
 import preg_p_3 from "../../../Images/Pregnant/preg_p_3.jpg";
@@ -500,6 +510,69 @@ export default {
         },
       ],
       date: "2023-11-02",
+    },
+    {
+      description: "Gravide I",
+      tags: ["gravid", "vinter", "nordbytjernet"],
+      images: [
+        {
+          url: preg_i_9,
+          title: "Gravide I",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_i_1,
+          title: "Gravide I",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_i_8,
+          title: "Gravide I",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: preg_i_2,
+          title: "Gravide I",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: preg_i_4,
+          title: "Gravide I",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_i_7,
+          title: "Gravide I",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: preg_i_5,
+          title: "Gravide I",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_i_3,
+          title: "Gravide I",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_i_6,
+          title: "Gravide I",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-11-30",
     },
   ],
 };
