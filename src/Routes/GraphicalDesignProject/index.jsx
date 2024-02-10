@@ -4,13 +4,11 @@ import { useLoaderData } from "react-router-dom";
 import GraphicalDesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import { useNoIndex } from "../../Hooks/useNoIndex";
 import "./GraphicalDesignProject.css";
 
 export function GraphicalDesignProject() {
   const { project } = useLoaderData();
   useDocumentTitle(project.title);
-  useNoIndex();
   const images = project.images.map((img) => ({
     original: img.url,
     originalWidth: img.width,
