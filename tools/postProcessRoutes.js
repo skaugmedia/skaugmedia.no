@@ -1,13 +1,20 @@
 import * as fs from "node:fs";
+import * as path from "node:path";
 import { cwd } from "node:process";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import * as path from "node:path";
+import BusinessRoute from "../src/Routes/BusinessPrices/Route.js";
+import GraphicalDesignRoute from "../src/Routes/GraphicalDesign/Route.js";
 
 const routeDir = `${cwd()}/src/Routes`;
+const businessGalleriesDir = `${cwd()}/src/Data/Business/Galleries`;
+const businessGraphicalDesignDir = `${cwd()}/src/Data/Business/GraphicalDesign`;
 const photoDir = `${cwd()}/src/Data/Photography`;
-const designDir = `${cwd()}/src/Data/GraphicalDesign`;
 
-const complexRoutes = ["GraphicalDesignProject", "PhotographyCategory"];
+const skippedRoutes = [
+  "GraphicalDesign",
+  "GraphicalDesignProject",
+  "PhotographyCategory",
+];
 
 const routePriorities = {
   "": 1.0,
@@ -50,7 +57,7 @@ const getRoutes = async (subPageMap) =>
   Promise.all(
     fs
       .readdirSync(routeDir, { withFileTypes: true })
-      .filter((f) => f.isDirectory() && !complexRoutes.includes(f.name))
+      .filter((f) => f.isDirectory() && !skippedRoutes.includes(f.name))
       .flatMap((f) => {
         const routeFile = `${routeDir}/${f.name}/Route.js`;
         if (fs.existsSync(routeFile)) {
@@ -62,7 +69,7 @@ const getRoutes = async (subPageMap) =>
           }
         }
         return [];
-      })
+      }),
   ).then((xs) =>
     xs
       .map((r) => ({ route: r.default, priority: routePriorities[r.default] }))
@@ -75,7 +82,7 @@ const getRoutes = async (subPageMap) =>
             priority: 0.1,
           })) ?? []),
         ];
-      })
+      }),
   );
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -88,10 +95,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
   const { updateApacheWhitelist } = await import(whitelistFile);
 
   const photoPages = getSubPages(photoDir);
-  const designPages = getSubPages(designDir);
+  const businessGalleryPages = getSubPages(businessGalleriesDir);
+  const businessGraphicalDesignPages = getSubPages(businessGraphicalDesignDir);
   const subPageMap = {
     fotografi: photoPages,
-    grafiskdesign: designPages,
+    [BusinessRoute]: businessGalleryPages,
+    [`${BusinessRoute}/${GraphicalDesignRoute}`]: businessGraphicalDesignPages,
   };
   const routes = await getRoutes(subPageMap);
 
