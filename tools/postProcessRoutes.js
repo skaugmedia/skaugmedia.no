@@ -2,19 +2,16 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { cwd } from "node:process";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import BusinessRoute from "../src/Routes/BusinessPrices/Route.js";
-import GraphicalDesignRoute from "../src/Routes/GraphicalDesign/Route.js";
 
 const routeDir = `${cwd()}/src/Routes`;
 const businessGalleriesDir = `${cwd()}/src/Data/Business/Galleries`;
 const businessGraphicalDesignDir = `${cwd()}/src/Data/Business/GraphicalDesign`;
 const photoDir = `${cwd()}/src/Data/Photography`;
 
-const skippedRoutes = [
-  "GraphicalDesign",
-  "GraphicalDesignProject",
-  "PhotographyCategory",
-];
+const skippedRoutes = ["GraphicalDesignProject", "PhotographyCategory"];
+const pathOverride = {
+  grafiskdesign: "bedrift-og-naeringsliv/grafiskdesign",
+};
 
 const routePriorities = {
   "": 1.0,
@@ -74,6 +71,7 @@ const getRoutes = async (subPageMap) =>
     xs
       .map((r) => ({ route: r.default, priority: routePriorities[r.default] }))
       .flatMap((r) => {
+        r.route = pathOverride[r.route] ?? r.route;
         const subs = subPageMap[r.route];
         return [
           r,
@@ -99,8 +97,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
   const businessGraphicalDesignPages = getSubPages(businessGraphicalDesignDir);
   const subPageMap = {
     fotografi: photoPages,
-    [BusinessRoute]: businessGalleryPages,
-    [`${BusinessRoute}/${GraphicalDesignRoute}`]: businessGraphicalDesignPages,
+    "bedrift-og-naeringsliv": businessGalleryPages,
+    "bedrift-og-naeringsliv/grafiskdesign": businessGraphicalDesignPages,
   };
   const routes = await getRoutes(subPageMap);
 
