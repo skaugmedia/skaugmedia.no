@@ -45,7 +45,6 @@ const indent = (c, s) =>
     .join("\n");
 
 export const updateApacheWhitelist = (routes) => {
-  console.log(routes);
   const entries = mkEntries(routes);
   const middle = indent("\t", `${pre}\n${entries}\n${denyOthers}`);
   const newFile = `${preamble}\n${middle}\n${postamble}`;
