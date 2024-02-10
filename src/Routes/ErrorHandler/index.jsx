@@ -1,7 +1,8 @@
 import { NavLink, useRouteError } from "react-router-dom";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import { PageSection } from "/src/Components/PageSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import { mkTitle } from "../../utils";
 import { NotFound } from "./NotFound";
+import { PageSection } from "/src/Components/PageSection";
 
 export function ErrorHandler() {
   const error = useRouteError();
@@ -9,9 +10,9 @@ export function ErrorHandler() {
     return <NotFound />;
   }
 
-  useDocumentTitle("Ukjent feil");
   return (
     <PageSection>
+      <SkaugHelmet title={mkTitle("Ukjent feil")} canonical="/feil" />
       <meta name="robots" content="noindex" />
       <h1>En ukjent feil oppstod!</h1>
       <p>En ukjent feil har oppstått.</p>

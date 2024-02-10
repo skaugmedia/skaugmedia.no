@@ -1,9 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { ActionButton } from "../../Components/ActionButton";
 import { PageSection } from "../../Components/PageSection";
+import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
+import { PortfolioCard } from "../../Components/PortfolioCard";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
 import DiscountHeaderImg from "../../Images/Discounts/discount.png";
 import PhotographerImg from "../../Images/Home/ninaskaug.jpg";
@@ -11,20 +12,17 @@ import freePregnancyShoot from "../../Images/Prices/free_pregnant_shoot.jpg";
 import cover from "../../Images/coverphoto.jpg";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
-import ContactRoute from "/src/Routes/Contact/Route";
-import DiscountRoute from "/src/Routes/Discounts/Route";
-
-import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
-import { PortfolioCard } from "../../Components/PortfolioCard";
 import "./Home.css";
 import pageName from "./PageName";
 import { portfolio } from "./portfolio";
+import ContactRoute from "/src/Routes/Contact/Route";
+import DiscountRoute from "/src/Routes/Discounts/Route";
 
 export function Home() {
-  useDocumentTitle(pageName);
-
+  const location = useLocation();
   return (
     <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div
         className="Home__DiscountHeader"
         style={{ backgroundImage: `url(${DiscountHeaderImg})` }}

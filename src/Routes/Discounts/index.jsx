@@ -1,10 +1,13 @@
+import { useLocation } from "react-router-dom";
 import { DiscountAd } from "../../Components/DiscountAd";
 import { FixedDiscount } from "../../Components/FixedDiscount";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { IncludesList } from "../../Components/IncludesList";
 import { PageSection } from "../../Components/PageSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import "./Discounts.css";
+import pageName from "./PageName";
 import OneYear from "/src/Images/Discounts/1-year-photo.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
@@ -15,8 +18,10 @@ import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function Discounts() {
+  const location = useLocation();
   return (
     <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="Discounts">
         <PageSection>
           <DesignHeading>Tilbud</DesignHeading>

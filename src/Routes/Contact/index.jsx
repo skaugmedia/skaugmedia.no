@@ -1,17 +1,17 @@
-import { useEffect, useRef } from "react";
 import classNames from "classnames";
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import Button from "../../Components/Button";
 import DesignHeading from "../../Components/Headings/DesignHeading";
+import { Input } from "../../Components/Input";
 import { PageSection } from "../../Components/PageSection";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import Contact_Img from "../../Images/Contact/LO_2.jpg";
 import "./Contact.css";
 import pageName from "./PageName";
 
-import Contact_Img from "../../Images/Contact/LO_2.jpg";
-import { Input } from "../../Components/Input";
-
 export function Contact() {
-  useDocumentTitle(pageName);
+  const location = useLocation();
   const queries = new URLSearchParams(window.location.search);
   const isSent = queries.has("sent");
   const isErr = queries.has("err");
@@ -66,6 +66,7 @@ export function Contact() {
 
   return (
     <PageSection>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="Contact__RowBox">
         <div className="Contact__ImgBox">
           <img

@@ -56,7 +56,7 @@ export const localTime = (s) => {
     Number(month) - 1,
     Number(day),
     Number(hour),
-    Number(minute)
+    Number(minute),
   );
 };
 

@@ -1,9 +1,10 @@
 import className from "classnames";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Checkmark } from "../../Components/Checkmark";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import pageName from "./PageName";
 import "./Wedding.css";
 import WeddingImg from "/src/Images/Wedding/weddingRT_14.jpg";
@@ -12,7 +13,7 @@ import WeddingText1Img from "/src/Images/WeddingPrice/wedding_text1.jpg";
 import WeddingText2Img from "/src/Images/WeddingPrice/wedding_text2.jpg";
 
 export function Wedding() {
-  useDocumentTitle(pageName);
+  const location = useLocation();
   const [showComparisonTable, setShowComparisonTable] = useState(false);
   const [menu, setMenu] = useState(null);
   const Check = () => (
@@ -21,6 +22,7 @@ export function Wedding() {
 
   const mainMenu = (
     <PageSection>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="Wedding__PackageBoxRow">
         <div className="Wedding__PackageBox Wedding__PackageBox--Package1">
           <div className="Wedding__PackageBoxHeader">

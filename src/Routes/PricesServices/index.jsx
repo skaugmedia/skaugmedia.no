@@ -2,11 +2,22 @@ import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
+import { PortfolioCard } from "../../Components/PortfolioCard";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import WeddingRoute from "../Wedding/Route";
 import * as ids from "./Ids";
 import pageName from "./PageName";
 import "./Prices.css";
+import ChildrenButton from "/src/Images/Prices/children_button.jpg";
+import ConfirmationButton from "/src/Images/Prices/confirmation_button.jpg";
+import FamilyButton from "/src/Images/Prices/family_button.jpg";
+import FirstYearButton from "/src/Images/Prices/firstyear_button.jpg";
+import HeadshotsButton from "/src/Images/Prices/headshots_button.jpg";
+import MaternityButton from "/src/Images/Prices/maternity_button.jpg";
+import NewbornButton from "/src/Images/Prices/newborn_button.jpg";
+import PhotoProductsButton from "/src/Images/Prices/photoproducts_button.jpg";
+import WeddingButton from "/src/Images/Prices/wedding_button.jpg";
 import ChildrenPageName from "/src/Routes/Children/PageName";
 import ChildrenRoute from "/src/Routes/Children/Route";
 import ConfirmationPageName from "/src/Routes/Confirmation/PageName";
@@ -25,20 +36,7 @@ import PhotoProductsPageName from "/src/Routes/PhotoProducts/PageName";
 import PhotoProductsRoute from "/src/Routes/PhotoProducts/Route";
 import WeddingPageName from "/src/Routes/Wedding/PageName";
 
-import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
-import { PortfolioCard } from "../../Components/PortfolioCard";
-import ChildrenButton from "/src/Images/Prices/children_button.jpg";
-import ConfirmationButton from "/src/Images/Prices/confirmation_button.jpg";
-import FamilyButton from "/src/Images/Prices/family_button.jpg";
-import FirstYearButton from "/src/Images/Prices/firstyear_button.jpg";
-import HeadshotsButton from "/src/Images/Prices/headshots_button.jpg";
-import MaternityButton from "/src/Images/Prices/maternity_button.jpg";
-import NewbornButton from "/src/Images/Prices/newborn_button.jpg";
-import PhotoProductsButton from "/src/Images/Prices/photoproducts_button.jpg";
-import WeddingButton from "/src/Images/Prices/wedding_button.jpg";
-
 export function PricesServices() {
-  useDocumentTitle(pageName);
   const location = useLocation();
   const refs = Object.entries(ids).reduce(
     (acc, [key, id]) => ({ ...acc, [key]: { ref: useRef(), id: id } }),
@@ -117,6 +115,7 @@ export function PricesServices() {
 
   return (
     <div className="prices-content">
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <PageSection innerClassName="prices">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
       </PageSection>

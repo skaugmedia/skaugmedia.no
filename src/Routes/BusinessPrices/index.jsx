@@ -1,9 +1,12 @@
 import className from "classnames";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import { Checkmark } from "../../Components/Checkmark";
+import { GalleryBrowser } from "../../Components/GalleryBrowser";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import { projects } from "../../Data/Business/GraphicalDesign";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import GraphicalDesignRoute from "../GraphicalDesign/Route";
 import "./BusinessPrices.css";
 import pageName from "./PageName";
@@ -12,11 +15,8 @@ import BusinessPricesText1Img from "/src/Images/Business/Pent_og_brukt/autumn_ca
 import BusinessPricesText2Img from "/src/Images/Business/Pent_og_brukt/business_pogb_sommer_05.jpg";
 import BusinessPricesText3Img from "/src/Images/Business/Pent_og_brukt/business_pogb_sommer_20.jpg";
 
-import { Checkmark } from "../../Components/Checkmark";
-import { GalleryBrowser } from "../../Components/GalleryBrowser";
-
 export function BusinessPrices() {
-  useDocumentTitle(pageName);
+  const location = useLocation();
   const [showComparisonTable, setShowComparisonTable] = useState(false);
   const Check = () => (
     <Checkmark color="#3AC1C1" style={{ height: "24px" }}></Checkmark>
@@ -35,6 +35,7 @@ export function BusinessPrices() {
 
   const mainMenu = (
     <PageSection>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="BusinessPrices__PackageBoxRow">
         <div className="BusinessPrices__PackageBox1">
           <div className="BusinessPrices__PackageBoxHeader">Social-pakken</div>

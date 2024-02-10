@@ -4,8 +4,8 @@ import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { PriceSection } from "../../Components/PriceSection";
 import { ProductPriceSection } from "../../Components/ProductPriceSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import { WeddingSection } from "../../Components/WeddingSection";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { isWithinRange, localTime } from "../../utils";
 import { IncludesList } from "./Components/IncludesList";
 import * as ids from "./Ids";
@@ -23,16 +23,15 @@ import PregnantImg from "/src/Images/Prices/pregnancy_photography.jpg";
 import WeddingImg from "/src/Images/Prices/wedding.jpg";
 
 export function Prices() {
-  useDocumentTitle(pageName);
   const location = useLocation();
   const refs = Object.entries(ids).reduce(
     (acc, [key, id]) => ({ ...acc, [key]: { ref: useRef(), id: id } }),
-    {}
+    {},
   );
   const [open, setOpen] = useState({});
   useEffect(() => {
     const entry = Object.entries(refs).find(
-      ([key, { id }]) => location.hash === `#${id}`
+      ([key, { id }]) => location.hash === `#${id}`,
     );
     if (entry) {
       const [key, { ref }] = entry;
@@ -90,6 +89,7 @@ export function Prices() {
 
   return (
     <PageSection innerClassName="prices">
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="prices-content">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 

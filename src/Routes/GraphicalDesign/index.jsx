@@ -1,21 +1,24 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation } from "react-router-dom";
 import { GalleryBrowser } from "../../Components/GalleryBrowser";
 import { Project } from "../../Components/Project";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import "./GraphicalDesign.css";
 import pageName from "./PageName";
 
 export function GraphicalDesign() {
-  useDocumentTitle(pageName);
+  const location = useLocation();
   const { projects } = useLoaderData();
 
   return (
-    <GalleryBrowser
-      title={pageName}
-      galleries={projects}
-      viewItem={(p) => (
-        <Project className="item graphical-design-title" {...p} />
-      )}
-    />
+    <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <GalleryBrowser
+        title={pageName}
+        galleries={projects}
+        viewItem={(p) => (
+          <Project className="item graphical-design-title" {...p} />
+        )}
+      />
+    </>
   );
 }

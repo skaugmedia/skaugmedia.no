@@ -1,14 +1,16 @@
 import { NavLink } from "react-router-dom";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
-import { useNoIndex } from "../../Hooks/useNoIndex";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import { mkTitle } from "../../utils";
 import { PageSection } from "/src/Components/PageSection";
 
 export function NotFound() {
-  useDocumentTitle("Ukjent side");
-  useNoIndex();
-
   return (
     <PageSection>
+      <SkaugHelmet
+        title={mkTitle("Ukjent side")}
+        canonical="/404"
+        noIndex={true}
+      />
       <meta name="robots" content="noindex" />
       <h1>404 - Fant ikke siden!</h1>
       <p>Siden du prøver å se finnes ikke.</p>

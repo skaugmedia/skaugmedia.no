@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Outlet, ScrollRestoration } from "react-router-dom";
 
+import { HelmetProvider } from "react-helmet-async";
 import { Footer } from "../../Components/Footer";
 import { Header } from "../../Components/Header";
 import { MobileNav } from "../../Components/MobileNav";
@@ -12,7 +13,7 @@ export function Root() {
   const isMobile = useMediaQuery({ maxWidth: 1000 });
 
   return (
-    <>
+    <HelmetProvider>
       <div className="Root">
         <Header
           isMobile={isMobile}
@@ -40,6 +41,6 @@ export function Root() {
         onClick={() => setShowNav(false)}
       />
       <ScrollRestoration />
-    </>
+    </HelmetProvider>
   );
 }

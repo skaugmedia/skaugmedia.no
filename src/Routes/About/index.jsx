@@ -1,13 +1,16 @@
+import { useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import AboutMe from "../../Images/meg.jpg";
 import "./About.css";
 import pageName from "./PageName";
+
 export function About() {
-  useDocumentTitle(pageName);
+  const location = useLocation();
   return (
     <div className="AboutMe">
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <PageSection
         outerClassName="AboutMe__Outer"
         innerClassName="AboutMe__Inner"

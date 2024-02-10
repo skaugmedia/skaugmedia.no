@@ -1,14 +1,17 @@
-import NewbornImg from "../../Images/Newborn/newborn_LO_5.jpg";
-
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import NewbornImg from "../../Images/Newborn/newborn_LO_5.jpg";
 import "./Newborn.css";
+import pageName from "./PageName";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function Newborn() {
+  const location = useLocation();
   return (
     <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="Newborn">
         <PageSection>
           <DesignHeading>Nyfødtfotografering</DesignHeading>

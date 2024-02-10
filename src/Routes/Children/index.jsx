@@ -1,14 +1,17 @@
-import ChildrenImg from "../../Images/Kids/LG_01.jpg";
-
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import ChildrenImg from "../../Images/Kids/LG_01.jpg";
 import "./Children.css";
+import pageName from "./PageName";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function Children() {
+  const location = useLocation();
   return (
     <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="Children">
         <PageSection>
           <DesignHeading>Barnefotografering</DesignHeading>

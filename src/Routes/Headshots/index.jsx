@@ -1,14 +1,17 @@
-import HeadshotsImg from "../../Images/Portrait/port_T_01.jpg";
-
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import HeadshotsImg from "../../Images/Portrait/port_T_01.jpg";
 import "./Headshots.css";
+import pageName from "./PageName";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function Headshots() {
+  const location = useLocation();
   return (
     <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="Headshots">
         <PageSection>
           <DesignHeading>

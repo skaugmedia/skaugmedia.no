@@ -1,14 +1,14 @@
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation } from "react-router-dom";
 import GraphicalDesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import "./GraphicalDesignProject.css";
 
 export function GraphicalDesignProject() {
   const { project } = useLoaderData();
-  useDocumentTitle(project.title);
+  const location = useLocation();
   const images = project.images.map((img) => ({
     original: img.url,
     originalWidth: img.width,
@@ -35,6 +35,7 @@ export function GraphicalDesignProject() {
 
   return (
     <PageSection className="GraphicalDesignProject__Container">
+      <SkaugHelmet title={project.title} canonical={location.pathname} />
       <GraphicalDesignHeading>{project.title}</GraphicalDesignHeading>
       <ImageGallery
         items={images}

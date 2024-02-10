@@ -1,14 +1,17 @@
-import ConfirmationImg from "../../Images/Confirmation/conf_SV_4.jpg";
-
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import ConfirmationImg from "../../Images/Confirmation/conf_SV_4.jpg";
 import "./Confirmation.css";
+import pageName from "./PageName";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function Confirmation() {
+  const location = useLocation();
   return (
     <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="Confirmation">
         <PageSection>
           <DesignHeading>Konfirmantfotografering</DesignHeading>

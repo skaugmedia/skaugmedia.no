@@ -1,13 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import MaternityImg from "../../Images/Pregnant/preg_p_5.jpg";
 import "./Maternity.css";
+import pageName from "./PageName";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function Maternity() {
+  const location = useLocation();
   return (
     <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="Maternity">
         <PageSection>
           <DesignHeading>Gravidfotografering</DesignHeading>

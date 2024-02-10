@@ -1,6 +1,9 @@
+import { useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { ProductPriceSection } from "../../Components/ProductPriceSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import pageName from "./PageName";
 import "./PhotoProducts.css";
 import DigitalImageImg from "/src/Images/Family/fam_l_10.jpg";
 import AlbumImg from "/src/Images/Pregnant/preg_JA_1.jpg";
@@ -11,8 +14,10 @@ import PhotoProductImg from "/src/Images/Prices/photocopy1.jpg";
 import CardsImg from "/src/Images/Prices/takkekort.jpg";
 
 export function PhotoProducts() {
+  const location = useLocation();
   return (
     <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="PhotoProducts">
         <PageSection>
           <DesignHeading>Prisliste bildeprodukter</DesignHeading>

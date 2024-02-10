@@ -1,16 +1,16 @@
 import { useRef, useState } from "react";
 import ImageGallery from "react-image-gallery";
 import PhotoAlbum from "react-photo-album";
-import { NavLink, useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import classes from "./PhotographyCategory.module.css";
 import { byDate } from "/src/utils";
 
 export function PhotographyCategory() {
   const { category } = useLoaderData();
-  useDocumentTitle(category.title);
+  const location = useLocation();
   const [index, setIndex] = useState(-1);
   const gallery = useRef(null);
 
@@ -31,6 +31,7 @@ export function PhotographyCategory() {
 
   return (
     <PageSection>
+      <SkaugHelmet title={category.title} canonical={location.pathname} />
       <DesignHeading>{category.title}</DesignHeading>
       <div className={classes.description}>
         <p className={classes.bodyText}>{category.body}</p>

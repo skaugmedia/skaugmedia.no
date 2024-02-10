@@ -1,14 +1,17 @@
-import FirstYearImg from "../../Images/Kids/firstyear.jpg";
-
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
+import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import FirstYearImg from "../../Images/Kids/firstyear.jpg";
 import "./FirstYear.css";
+import pageName from "./PageName";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function FirstYear() {
+  const location = useLocation();
   return (
     <>
+      <SkaugHelmet title={pageName} canonical={location.pathname} />
       <div className="FirstYear">
         <PageSection>
           <DesignHeading>Mitt første år fotografering</DesignHeading>
