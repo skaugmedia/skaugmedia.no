@@ -54,36 +54,6 @@ export function Home() {
           </div>
         </div>
       </div>
-      {/* <div
-        className="Home__DiscountHeader"
-        style={{ backgroundImage: `url(${DiscountHeaderImg})` }}
-      >
-        <div className="Home__DiscountHeaderBox">
-          <div className="Home__DiscountHeaderTextBox">
-            <div className="Home__DiscountHeaderHeader">-30% rabatt</div>
-            <div className="Home__DiscountHeaderSubHeader">
-              på bryllupspakke 1 og 2 for de første 3 brudeparene som booker
-            </div>
-            <div className="Home__DiscountHeaderText">
-              Dette gjelder bryllup i 2023 og 2024, og gjelder ikke om du har en
-              kontrakt med en annen fotograf. (Kontrakt må være signert og
-              reservasjonsbeløpet må være betalt for at bookingen skal være i
-              orden.)
-              <br />
-              <br />
-              Jeg trenger mer erfaring med bryllupsfotografering, og ønsker
-              derfor å fylle opp min portefølje med flere bryllupsbilder. Det
-              lurt å ta kontakt tidlig, da dette er et godt tilbud.
-            </div>
-            <NavLink
-              to={`/${ContactRoute}`}
-              className="Home__DiscountHeaderButton"
-            >
-              Book nå
-            </NavLink>
-          </div>
-        </div>
-      </div> */}
 
       <div
         className="top-cover-img"
@@ -132,14 +102,6 @@ export function Home() {
           </div>
         </div>
       </PageSection>
-      {/* <PageSection outerClassName="works-outer" innerClassName="works">
-        <div className="Home__WorksTitle">Nylige arbeider</div>
-
-        <ImageSection
-          images={recentWorks}
-          imageClassName="Home__ImageSectionImage"
-        />
-      </PageSection> */}
 
       <PageSection
         outerClassName="regular-discounts-outer"
@@ -209,89 +171,6 @@ export function Home() {
           </div>
         </div>
       </PageSection>
-      {/* <PageSection outerClassName="Home__NewsletterBackground">
-        <div className="Home__NewsletterSection">
-          <div className="Home__NewsletterTextBox">
-            <div className="Home__NewsletterHeader">NYHETSBREV</div>
-            <div className="Home__NewsletterText">
-              Du vil få informasjon om fotograferinger, kampanjer og
-              konkurranser. Fyll inn e-postadressen din under for å melde deg på
-              Skaug Medias nyhetsbrev.
-            </div>
-          </div>
-          <div className="Home__NewsletterSignupBox">
-            <form>
-              <label className="Home__NewsletterBoxHeader" for="Email">
-                E-postadresse
-              </label>
-              <input
-                className="Home__NewsletterEmail"
-                placeholder="ola.nordmann@example.com"
-                name="Email"
-              ></input>
-            </form>
-            <ActionButton to={ContactRoute}>Meld meg på</ActionButton>
-          </div>
-        </div>
-      </PageSection> */}
-      {/*
-        <div className="newborn-discount-row">
-          <img
-            className="newborn-discount-img"
-            src={newbornDiscount}
-            alt="50% avslag på nyfødtfotografering"
-          ></img>
-          <div className="newborn-discount-textbox">
-            <div className="newborn-discount-header">ALLTID</div>
-            <div className="newborn-discount-sub-header">50%</div>
-            <div className="newborn-discount-text">
-              avslag på nyfødtfotografering, etter ordinær gravidfotografering
-            </div>
-          </div>
-        </div> */}
-
-      {/* <PageSection>
-        <div className="Home__NewsletterSection">
-          <div className="Home__NewsletterHeader">Nyhetsbrev</div>
-          <div className="Home__NewsletterText">
-            Meld deg på for informasjon om fotograferinger, kampanjer og
-            konkurranser.
-          </div>
-          <div className="Home__NewsletterSignupBox">
-            <form>
-              <label className="Home__NewsletterBoxHeader" for="Email">
-                E-postadresse
-              </label>
-              <input
-                className="Home__NewsletterEmail"
-                placeholder="ola.nordmann@example.com"
-                name="Email"
-              ></input>
-            </form>
-
-            <Button className="Home__NewsletterButton" type="submit">
-              Meld meg på
-            </Button>
-          </div>
-        </div>
-      </PageSection>
- */}
-      {/* <PageSection>
-        <h2 className="Home__Photography">Fotografi</h2>
-        <ImageSection
-          images={presentables.photography}
-          className="Home__PhotographyImageSection"
-          imageClassName="Home__PhotographyImageSection__Image Home__ImageSectionImage"
-        />
-      </PageSection> */}
-
-      {/* <PageSection>
-        <h2 className="Home__Graphical">Grafisk Design</h2>
-        <ImageSection
-          images={presentables.graphicalDesign}
-          imageClassName="Home__GraphicalImageSection__Image Home__ImageSectionImage"
-        />
-      </PageSection> */}
 
       <PageSection>
         <div className="Home__PortfolioSection">
@@ -319,33 +198,6 @@ export function Home() {
           ></img>
         </div>
       </PageSection>
-      {/* <PageSection
-        outerClassName="skaugmedia-outer"
-        innerClassName="skaugmedia"
-      >
-        <div className="flex-container">
-          <div className="flex-child about-image-container">
-            <img
-              className="round-nina"
-              src={ninaforside}
-              alt="Nina Merethe Skaug"
-            ></img>
-          </div>
-          <div className="flex-child text-container">
-            <div className="skaugmedia-overskrift">Skaug Media</div>
-            <div className="nina-text">
-              Jeg heter Nina Merethe Skaug, er mamma, fotograf og grafisk
-              designer. Jeg elsker å være kreativ, og brenner for å skape flotte
-              bilder og design, både til privat og bedrifter. Jeg holder til på
-              Jessheim i Ullensaker kommune, men fotograferer over hele Oslo,
-              Romerike og omegn.
-            </div>
-            <ButtonLink to={AboutRoute} className="lesmer-button">
-              Les mer
-            </ButtonLink>
-          </div>
-        </div>
-      </PageSection>*/}
     </>
   );
 }
