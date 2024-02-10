@@ -1,6 +1,6 @@
 import ContactRoute from "../Routes/Contact/Route";
-import * as ids from "../Routes/Prices/Ids";
-import PricesRoute from "../Routes/Prices/Route";
+import * as ids from "../Routes/PricesServices/Ids";
+import PricesRoute from "../Routes/PricesServices/Route";
 import { kr, localTime } from "../utils";
 
 export const discounts = [
@@ -130,75 +130,20 @@ export const discounts = [
     validFrom: localTime("26-08-2023 00:00"),
     validTo: localTime("21-10-2023 00:00"),
   },
-
-  {
-    title: "HELGETILBUD",
-    price: "-40% på fotograferinger",
-    description: (
-      <>
-        -40% på alle fotograferinger som gjennomføres i oktober, november eller
-        desember, fotograferingen må bookes i løpet av helgen.
-        <br />
-        Tilbudet gjelder kun denne helgen, 12.10.23 - 15.10.23 <br />
-        *Gjelder ikke bedrifter eller minifotograferinger
-      </>
-    ),
-
-    validFrom: localTime("12-10-2023 00:00"),
-    validTo: localTime("16-10-2023 00:00"),
-  },
-  {
-    title: "HALLOWEENTILBUD",
-    price: "-50% på fotograferinger",
-    description: (
-      <>
-        -50% rabatt på alle fotograferinger som bookes i løpet av denne dagen.
-        Fotograferingen må gjennomføres på et senere tidspunkt.
-        <br />
-        Tilbudet gjelder kun i dag, 31.10.2023 <br />
-        *Gjelder ikke bedrifter eller minifotograferinger
-      </>
-    ),
-
-    validFrom: localTime("31-10-2023 00:00"),
-    validTo: localTime("01-11-2023 00:00"),
-  },
-  {
-    title: "Gavekort på kjøpet",
-    price: "Kr. 500,-",
-    description: (
-      <>
-        Alle som booker en ordinær fotografering i løpet av november, får et
-        gavekort på kr. 500,-
-        <br />
-        Dere mottar gavekortet når dere møter opp til deres avtalte
-        fotografering.
-      </>
-    ),
-
-    validFrom: localTime("01-11-2023 00:00"),
-    validTo: localTime("20-11-2023 00:00"),
-  },
   {
     title: "BLACK WEEK",
-    price: "Få en 20x30 cm bildekopi og gavekort på kr. 500,- på kjøpet",
+    price: "Få 20X30 cm bildekopi og gavekort på kr. 500,- på kjøpet",
     description: (
       <>
         ved booking av ordinær fotografering med dato på nyåret, får du med en
         bildekopi i størrelsen 20x30 cm.
         <br />
-        Før: KR. 800,-
-        <br />
-        Nå: gratis
-        <br />
-        <br />
-        Tilbudet gjelder til og med 26.11.23 <br />
-        *Gjelder ikke bedrifter eller bryllupsfotografering
+        Tilbudet gjelder til og med 26.11.23 *Gjelder ikke bedrifter eller
+        bryllupsfotografering
       </>
     ),
 
-    validFrom: localTime("20-11-2023 00:00"),
+    validFrom: localTime("15-11-2023 00:00"),
     validTo: localTime("27-11-2023 00:00"),
   },
-  
 ];

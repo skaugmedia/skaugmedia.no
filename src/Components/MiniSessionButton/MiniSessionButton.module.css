@@ -2,13 +2,14 @@
 .link:visited,
 .link:active {
   z-index: 2;
-  color: inherit;
+  color: black;
   grid-area: link;
   display: block;
   text-decoration: none;
   text-align: center;
   padding: 8px 40px;
-  font-size: 16px;
+  font-size: 1em;
   text-transform: uppercase;
   border-radius: 9999px;
+  background-color: white;
 }

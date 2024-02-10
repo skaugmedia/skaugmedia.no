@@ -1,0 +1,55 @@
+.Tabs {
+  --background-color: #ddd;
+  --active-bg-color: var(--background-color);
+  --inactive-bg-color: #bebebe;
+  --inactive-text-color: #333;
+  --active-text-color: #000;
+}
+
+.Tabs__Bar {
+  display: flex;
+  gap: 10px;
+}
+
+.Tabs__Tab {
+  background-color: var(--inactive-bg-color);
+  border-radius: 4px 4px 0 0;
+  border: none;
+  color: var(--inactive-text-color);
+  cursor: pointer;
+  font-family: oswald;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+
+.Tabs__Tab--Active {
+  background-color: var(--active-bg-color);
+  color: var(--active-text-color);
+}
+
+.Tabs__Content {
+  border-radius: 0 4px 4px 4px;
+  background-color: var(--background-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .Tabs__Bar {
+    width: 100%;
+    max-width: var(--content-width);
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+    margin-bottom: 2px;
+  }
+
+  .Tabs__Tab {
+    border-radius: 4px;
+  }
+
+  .Tabs__Content {
+    border-radius: 4px;
+  }
+}

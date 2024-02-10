@@ -1,0 +1,50 @@
+.PortfolioCard {
+  text-decoration: none;
+  display: flex;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .PortfolioCard__ImageBox {
+  position: relative;
+}
+
+.PortfolioCard__ImageArrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 4em;
+  color: var(--blue);
+}
+
+.PortfolioCard:hover .PortfolioCard__ImageArrow {
+  display: inline-block;
+} */
+
+.PortfolioCard__Image {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 100%;
+  transition: opacity 0.1s;
+}
+
+.PortfolioCard__Title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 140%;
+  transition: text-shadow 0.1s;
+  position: relative;
+}
+
+.PortfolioCard:hover .PortfolioCard__Image {
+  opacity: 0.8;
+}
+
+.PortfolioCard:hover .PortfolioCard__Title {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}

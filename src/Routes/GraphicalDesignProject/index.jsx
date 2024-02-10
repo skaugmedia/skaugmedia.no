@@ -5,8 +5,7 @@ import GraphicalDesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { useDocumentTitle } from "../../Hooks/useDocumentTitle";
 import { useNoIndex } from "../../Hooks/useNoIndex";
-import classes from "./GraphicalDesignProject.module.css";
-import { Image } from "/src/Components/Image";
+import "./GraphicalDesignProject.css";
 
 export function GraphicalDesignProject() {
   const { project } = useLoaderData();
@@ -18,27 +17,26 @@ export function GraphicalDesignProject() {
     originalHeight: img.height,
   }));
 
-  const elements = [
-    {
-      title: "Typografi",
-      src: project.designElements.fonts,
-    },
-    {
-      title: "Logo",
-      src: project.designElements.logo,
-    },
-    {
-      title: "Skisser",
-      src: project.designElements.sketches,
-    },
-    ...(project.graphicalElements?.map((g) => ({
-      title: g.title,
-      src: g.url,
-    })) ?? []),
-  ];
+  const Images = ({ images, title }) => (
+    <>
+      <div className="GraphicalDesignProject__ElementHeading">{title}</div>
+      <div className="GraphicalDesignProject__ColorPalette">
+        {images.map((img) => (
+          <img
+            key={img.url}
+            className="GraphicalDesignProject__Font"
+            src={img.url}
+            alt={img.title}
+            width={img.width}
+            height={img.height}
+          />
+        ))}
+      </div>
+    </>
+  );
 
   return (
-    <PageSection className={classes.container}>
+    <PageSection className="GraphicalDesignProject__Container">
       <GraphicalDesignHeading>{project.title}</GraphicalDesignHeading>
       <ImageGallery
         items={images}
@@ -47,39 +45,47 @@ export function GraphicalDesignProject() {
         showBullets={true}
         showFullscreenButton={false}
       />
-      <p className={classes.ingress}>{project.ingress}</p>
-      <div className={classes.elementHeading}>Fargepalett</div>
-      <div className={classes.colorPalette}>
-        {project.designElements.colorPalette.map((color) => (
-          <div
-            key={color.hex}
-            className={classes.colorCard}
-            style={{ backgroundColor: color.hex }}
-          >
-            <ul className={classes.colorDetails}>
-              <li>Hex: {color.hex}</li>
-              <li>
-                RGB: {color.rgb.r} {color.rgb.g} {color.rgb.b}
-              </li>
-            </ul>
+      <p className="GraphicalDesignProject__Ingress">{project.ingress}</p>
+      {project.designElements?.colorPalette?.length > 0 && (
+        <>
+          <div className="GraphicalDesignProject__ElementHeading">
+            Fargepalett
           </div>
-        ))}
-      </div>
-      <p className={classes.body}>{project.body}</p>
-      <div className={classes.elements}>
-        {elements &&
-          elements.map((element) => (
-            <div key={element.src} className={classes.element}>
-              <div className={classes.elementHeading}>{element.title}</div>
-              <Image
-                className={classes.elementImage}
-                fit="contain"
-                src={element.src}
-                alt={element.title}
-              />
-            </div>
-          ))}
-      </div>
+          <div className="GraphicalDesignProject__ColorPalette">
+            {project.designElements.colorPalette.map((color) => (
+              <div
+                key={color.hex}
+                className="GraphicalDesignProject__ColorCard"
+                style={{ backgroundColor: color.hex }}
+              >
+                <ul className="GraphicalDesignProject__ColorDetails">
+                  <li>Hex: {color.hex}</li>
+                  <li>
+                    RGB: {color.rgb.r} {color.rgb.g} {color.rgb.b}
+                  </li>
+                </ul>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+      <p className="GraphicalDesignProject__Body">{project.body}</p>
+      {project.designElements?.fonts?.length > 0 && (
+        <Images title="Typografi" images={project.designElements.fonts} />
+      )}
+      {project.designElements?.logo?.length > 0 && (
+        <Images title="Logo" images={project.designElements.logo} />
+      )}
+      {project.graphicalElements?.length > 0 && (
+        <Images title="Illustrasjoner" images={project.graphicalElements} />
+      )}
+      {project.designElements?.sketches?.length > 0 && (
+        <Images
+          title="Skisser"
+          flex={true}
+          images={project.designElements.sketches}
+        />
+      )}
     </PageSection>
   );
 }

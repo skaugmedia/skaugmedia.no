@@ -1,7 +1,242 @@
+.Home__DiscountHeader {
+  padding: 80px 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home__DiscountHeaderBox {
+  background-color: var(--lightgreen);
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  width: 640px;
+  max-width: calc(100% - 20px);
+}
+
+.Home__DiscountHeaderTextBox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Home__DiscountHeaderHeader {
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.Home__DiscountHeaderSubHeader {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Home__DiscountHeaderText {
+  font-family: nunito;
+  text-align: center;
+  font-size: 1em;
+}
+
+.Home__DiscountPrice {
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: oswald;
+}
+
+.Home__DiscountHeaderButton {
+  border-color: transparent;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  background-color: black;
+  color: white;
+  font-family: oswald;
+  margin-top: 5px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.Home__PhotographerSection {
+  display: flex;
+  flex-flow: row;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  gap: 30px;
+}
+
+.Home__PhotographerImg {
+  width: 350px;
+  border-radius: 100%;
+}
+
+.Home__PhotographerTextSection {
+  font-family: nunito;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Home__DiscountSection {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Home__Discount_NewbornSquare {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: calc(50% - 5px);
+  margin-bottom: 40px;
+}
+
+.Home__Discount_NewbornImg {
+  object-fit: cover;
+  opacity: 65%;
+}
+
+.Home__Discount_NewbornTextBox {
+  position: absolute;
+  top: 150px;
+  left: 35px;
+}
+
+.Home__Discount_NewbornHeader {
+  font-size: 5em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -25px;
+}
+
+.Home__Discount_NewbornSubHeader {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  margin-bottom: 0px;
+}
+.Home__Discount_NewbornSubHeaderText {
+  font-size: 3em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.Home__Discount_NewbornText {
+  font-size: 1.7em;
+  text-align: left;
+  margin-top: 2px;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.Home__Discount_OneYearSquare {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: calc(50% - 5px);
+}
+
+.Home__Discount_OneYearImg {
+  object-fit: cover;
+  opacity: 65%;
+}
+
+.Home__Discount_OneYearTextBox {
+  position: absolute;
+  top: 150px;
+  left: 35px;
+}
+
+.Home__Discount_OneYearHeader {
+  font-size: 3em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -40px;
+}
+
+.Home__Discount_OneYearSubHeader {
+  font-size: 7em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.Home__Discount_OneYearText {
+  font-size: 1.7em;
+  text-align: left;
+  margin-top: 2px;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.Home__NewsletterBackground {
+  background-color: var(--blue);
+}
+
+.Home__NewsletterSection {
+  display: flex;
+  flex-flow: column;
+}
+.Home__NewsletterTextBox {
+  text-align: left;
+}
+
+.Home__NewsletterHeader {
+  text-align: left;
+}
+
+.Home__NewsletterText {
+  text-align: left;
+}
+
+.Home__PortfolioHeader {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.newborn-discount-header {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--green);
+  text-align: left;
+  margin-bottom: -40px;
+}
+
+.newborn-discount-sub-header {
+  font-size: 10em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.newborn-discount-text {
+  font-size: 2em;
+
+  text-align: left;
+  margin-top: 2px;
+}
+
 .section {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+}
+
+.home-container {
   width: 100%;
 }
 
@@ -13,53 +248,344 @@
   justify-content: space-between;
 }
 
-.flex-child:not(:last-child) {
-  margin-right: 0px;
+.top-cover-img {
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
 }
 
-.intro-tekst {
-  color: var(--lightblue);
+.top-cover-text-box {
+  max-width: var(--content-width);
+  width: 100%;
+}
+
+.cover-headertext {
+  font-size: 6em;
+  font-weight: 700;
+  color: white;
+  opacity: 80%;
+  text-align: left;
+  max-width: var(--content-width);
+  justify-content: left;
+
+  margin-bottom: -20px;
+}
+
+.cover-text {
+  font-size: 2em;
+  font-family: nunito;
+  color: white;
+  text-align: left;
+  max-width: var(--content-width);
+  justify-content: left;
+
+  margin-bottom: 30px;
+}
+
+.quote-section {
+  max-width: var(--content-width);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: row;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.quote-left-png {
+  width: 90px;
+}
+
+.quote-right-png {
+  width: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
+  transform: scaleX(-1);
+}
+
+.quote-text {
+  font-family: nunito;
+  font-size: 1.2em;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.Home__IncludedSection {
+  display: flex;
+  flex-flow: column;
+}
+
+.Home__IncludesText {
   font-weight: 300;
-  text-align: right;
-  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.7em;
+  color: var(--blue);
+}
+
+.Home__IncludesSubtext {
+  font-weight: 300;
+  text-align: center;
   font-family: nunito;
 }
 
-.uthevet-intro-tekst {
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
+.Home__WorksTitle {
+  font-family: oswald;
+  font-size: 1.3em;
   font-weight: 700;
-  text-align: right;
+  color: var(--blue);
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 5px;
 }
 
-.foto-header {
-  width: 31.5%;
-  border-radius: 100%;
-  flex-shrink: 1;
-  flex-grow: 0;
-}
-
-.intro .text-container {
+.free-pregnancy-row {
   display: flex;
-  align-items: flex-end;
-  flex-flow: column;
-  justify-self: end;
-  align-self: center;
-}
-
-.intro .image-container {
-  display: flex;
+  margin-top: 40px;
+  gap: 40px;
   width: 100%;
+  max-width: var(--content-width);
   justify-content: space-between;
+
+  padding-bottom: 20px;
 }
 
-.intro-outer {
-  background-color: var(--blue);
+.free-pregnancy-textbox {
+  width: 50%;
+
+  padding-top: 150px;
 }
-.intro {
-  padding-top: 85px;
-  padding-bottom: 85px;
+
+.free-pregnancy-header {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+}
+
+.free-pregnancy-sub-header {
+  font-size: 1.5em;
+  margin-top: -12px;
+  font-weight: 700;
+  color: var(--green);
+  text-align: left;
+}
+
+.free-pregnancy-next-date {
+  font-size: 1.1em;
+  font-family: nunito;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.free-pregnancy-text {
+  font-size: 1em;
+  font-family: nunito;
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.free-pregnancy-img {
+  width: calc(50% - 5px);
+  align-items: right;
+}
+
+.newborn-discount-row {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.newborn-discount-textbox {
+  width: 50%;
+
+  padding-top: 70px;
+}
+
+.newborn-discount-header {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--green);
+  text-align: left;
+  margin-bottom: -40px;
+}
+
+.newborn-discount-sub-header {
+  font-size: 10em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.newborn-discount-text {
+  font-size: 2em;
+
+  text-align: left;
+  margin-top: 2px;
+}
+
+.newborn-discount-img {
+  width: 50%;
+}
+
+.one-discount-row {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.one-discount-textbox {
+  width: 50%;
+  align-items: right;
+  padding-top: 70px;
+}
+
+.one-discount-header {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  margin-bottom: -40px;
+}
+
+.one-discount-sub-header {
+  font-size: 10em;
+  font-weight: 700;
+  color: var(--green);
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.one-discount-text {
+  font-size: 2em;
+
+  text-align: left;
+  margin-top: 2px;
+}
+
+.one-discount-img {
+  width: 50%;
+  align-items: right;
+}
+
+.Home__NewsletterSection {
+  background-color: var(--blue);
+  display: flex;
+  flex-flow: row;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-flow: column;
+}
+
+.Home__NewsletterHeader {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.Home__NewsletterText {
+  font-family: nunito;
+  font-weight: 300;
+  color: white;
+}
+
+.Home__NewsletterBox {
+  text-align: left;
+}
+
+.Home__NewsletterSignupBox {
+  display: flex;
+  flex-flow: column;
+  margin-top: 5px;
+}
+
+.Home__NewsletterBoxHeader {
+  font-weight: 300;
+
+  color: black;
+  text-align: left;
+  font-size: 1em;
+}
+
+.Home__NewsletterEmail {
+  border-color: black;
+
+  max-width: 1000px;
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  margin-top: 3px;
+  border-style: solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-width: 1px;
+  font-family: nunito;
+  font-weight: 400;
+
+  margin-right: 40px;
+}
+
+.Home__NewsletterButton {
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+}
+
+.Home__Photography {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 1.3em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.Home__PhotographyImageSection__Image {
+  aspect-ratio: 2/3;
+}
+
+.Home__Graphical {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 1.3em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.Home__GraphicalImageSection__Image {
+  aspect-ratio: 3/2;
+}
+
+.flex-child:not(:last-child) {
+  margin-right: 0px;
 }
 
 .homecontactbutton {
@@ -95,6 +621,7 @@
   padding-left: 30px;
   padding-top: 40px;
 }
+
 .skaugmedia .image-container {
   justify-self: end;
 }
@@ -105,6 +632,7 @@
 }
 
 .works-forside {
+  max-width: var(--content-width);
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 50px;
@@ -113,13 +641,12 @@
 }
 
 .works-img {
-  width: 200px;
-  height: 200px;
-}
-
-.works-title {
-  text-transform: uppercase;
-  font-weight: 700;
+  width: 325px;
+  height: 325px;
+  display: flex;
+  justify-content: cent;
+  align-items: center;
+  flex-flow: column;
 }
 
 .works-category {
@@ -127,27 +654,16 @@
   font-family: nunito;
 }
 
-.works-outer {
-  background-color: var(--lightgreen);
-}
-
 .works {
   padding-top: 50px;
 }
 
-.works-text-box {
-  background-color: var(--lightblue);
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .flex-child.latest:hover {
-  opacity: 90%;
-  color: var(--blue);
+  opacity: 80%;
 }
 
 .works-forside {
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 10px 10px 10px 10px;
   grid-template-rows: auto auto;
 }
 
@@ -159,89 +675,285 @@
   font-size: 1.4em;
   padding-bottom: 5px;
 }
-@media only screen and (max-width: 1000px) {
-  .intro-outer {
-    max-width: var(--content-width);
-    width: 100%;
-  }
-
-  .image-container {
-    display: grid;
-  }
-
-  .skaugmedia-outer {
-    width: 100%;
-  }
-
-  .works-outer {
-    max-width: var(--content-width);
-    width: 100%;
-  }
-  .works-forside {
-    max-width: var(--content-width);
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .works-img {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .works-forside {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 50px;
-  }
-
-  .works-forside > * {
-    place-self: stretch;
-  }
-
-  .about-image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .intro .image-triangle {
-    width: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "second second"
-      "first third";
-    column-gap: 16px;
-  }
-
-  .intro .image-triangle > * {
-    place-self: stretch;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-  }
-
-  .intro .image-triangle > *:nth-child(1) {
-    grid-area: first;
-  }
-
-  .intro .image-triangle > *:nth-child(2) {
-    grid-area: second;
-    place-self: center;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .intro .image-triangle > *:nth-child(3) {
-    grid-area: third;
-  }
-}
 
 @media only screen and (max-width: 600px) {
+  .Home__IncludesText {
+    font-size: 1.3em;
+  }
+
+  .Home__PhotographerSection {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .intro-outer {
+      max-width: var(--content-width);
+      width: 100%;
+    }
+
+    .image-container {
+      display: grid;
+    }
+
+    .skaugmedia-outer {
+      width: 100%;
+    }
+
+    .works-outer {
+      max-width: var(--content-width);
+      width: 100%;
+    }
+
+    .works-forside {
+      max-width: var(--content-width);
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .works-img {
+      width: 100%;
+    }
+
+    .works-forside {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 50px;
+    }
+
+    .works-forside > * {
+      place-self: stretch;
+    }
+
+    .about-image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .Home__IncludesText {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+
+  .Home__IncludesSubtext {
+    font-size: 0.89em;
+  }
+
+  .Home__IncludesExtraText {
+    font-size: 1em;
+    font-weight: 300;
+    font-family: nunito;
+  }
+
+  .free-pregnancy-row {
+    margin-top: -50px;
+  }
+
+  .Home__ImageSectionImage {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .free-pregnancy-row {
+    margin-top: -30px;
+  }
+
+  .Home__DiscountSection {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+
+  .Home__Discount_NewbornSquare {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .Home__Discount_NewbornHeader {
+    font-size: 2em;
+    margin-top: -60px;
+  }
+
+  .Home__Discount_NewbornSubHeader {
+    font-size: 4em;
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
+
+  .Home__Discount_NewbornText {
+    font-size: 1em;
+  }
+
+  .Home__Discount_OneYearSquare {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .Home__Discount_OneYearHeader {
+    font-size: 2em;
+    margin-top: -60px;
+  }
+
+  .Home__Discount_OneYearSubHeader {
+    font-size: 4em;
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
+
+  .Home__Discount_OneYearText {
+    font-size: 1em;
+  }
+
+  .top-cover-img {
+    height: 50%;
+    width: 100%;
+  }
+
+  .top-cover-text-box {
+    width: var(--max-width);
+  }
+
+  .cover-headertext {
+    font-size: 2em;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+
+  .cover-text {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .quote-section {
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .quote-left-png {
+    justify-content: space-between;
+    width: 30px;
+  }
+
+  .quote-right-png {
+    width: 30px;
+  }
+
+  .quote-text {
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .free-pregnancy-row {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .free-pregnancy-textbox {
+    width: 100%;
+  }
+
+  .free-pregnancy-header {
+    margin-top: 70px;
+  }
+
+  .free-pregnancy-sub-header {
+    font-size: 1.1em;
+  }
+
+  .free-pregnancy-next-date {
+    font-size: 1em;
+  }
+
+  .free-pregnancy-img {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  .newborn-discount-img {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .newborn-discount-row {
+    display: flex;
+    flex-flow: column-reverse;
+    width: 100%;
+    gap: 0;
+    margin-top: 0;
+  }
+
+  .newborn-discount-textbox {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .newborn-discount-header {
+    text-align: left;
+  }
+
+  .newborn-discount-sub-header {
+    font-size: 8em;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .newborn-discount-text {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .one-discount-row {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    gap: 0;
+    margin-top: 0;
+  }
+
+  .one-discount-textbox {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .one-discount-header {
+    text-align: left;
+  }
+
+  .one-discount-sub-header {
+    font-size: 8em;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .one-discount-text {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .one-discount-img {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+
   .flex-container {
     display: flex;
     flex-flow: column;
@@ -270,6 +982,7 @@
   .skaugmedia-outer {
     width: 100%;
   }
+
   .round-nina {
     width: 250px;
   }
@@ -277,6 +990,7 @@
   .skaugmedia .text-container {
     padding-top: 0px;
   }
+
   .skaugmedia {
     justify-content: center;
     max-width: var(--content-width);
@@ -289,9 +1003,11 @@
     display: flex;
     flex-flow: column;
   }
+
   .works-outer {
     width: 100%;
   }
+
   .works-forside {
     justify-content: center;
     max-width: var(--content-width);
@@ -320,5 +1036,46 @@
 
   .intro .image-triangle > * {
     transform: rotate(var(--rotation));
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cover-headertext {
+    margin-left: 30px;
+  }
+
+  .cover-text {
+    margin-left: 30px;
+  }
+
+  .free-pregnancy-textbox {
+    padding-top: 0;
+  }
+  .free-pregnancy-img {
+    object-fit: cover;
+  }
+
+  .Home__Discount_NewbornTextBox,
+  .Home__Discount_OneYearTextBox {
+    top: unset;
+    left: 30px;
+    bottom: 30px;
+  }
+  .Home__Discount_NewbornTextBox,
+  .Home__Discount_OneYearTextBox {
+    font-size: 8px;
+  }
+  .Home__Discount_NewbornHeader,
+  .Home__Discount_OneYearHeader {
+    margin-bottom: -20px;
+  }
+  .Home__Discount_NewbornSubHeader,
+  .Home__Discount_OneYearSubHeader {
+    margin-top: 0;
+    margin-bottom: -15px;
+  }
+  .Home__Discount_NewbornText,
+  .Home__Discount_OneYearText {
+    font-size: 2em;
   }
 }

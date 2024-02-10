@@ -1,72 +1,229 @@
 import { oneLine } from "common-tags";
-import madeleine1 from "../../../Images/madeleine_1.jpg";
-import madeleine2 from "../../../Images/madeleine_2.jpg";
-import marianne1 from "../../../Images/marianne_1.jpg";
-import marianne2 from "../../../Images/marianne_2.jpg";
-import ninahelene1 from "../../../Images/nina_helene_1.jpg";
-import ninahelene2 from "../../../Images/nina_helene_2.jpg";
-import ninahelene3 from "../../../Images/nina_helene_3.jpg";
-import ninahelene4 from "../../../Images/nina_helene_4.jpg";
-import ninahelene5 from "../../../Images/nina_helene_5.jpg";
-import portrait_cover from "../../../Images/portrett_cover.jpg";
-import sigurd1 from "../../../Images/sigurd_portrett_1.jpg";
-import sigurd2 from "../../../Images/sigurd_portrett_2.jpg";
-import sigurd3 from "../../../Images/sigurd_portrett_3.jpg";
-import victor1 from "../../../Images/victor_1.jpg";
-import victor2 from "../../../Images/victor_2.jpg";
-import victoria1 from "../../../Images/victoria_1.jpg";
-import victoria2 from "../../../Images/victoria_2.jpg";
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import port_M_01 from "../../../Images/Portrait/port_M_01.jpg";
+import port_M_02 from "../../../Images/Portrait/port_M_02.jpg";
+
+import port_MB_01 from "../../../Images/Portrait/port_MB_01.jpg";
+import port_MB_02 from "../../../Images/Portrait/port_MB_02.jpg";
+
+import port_NH_01 from "../../../Images/Portrait/port_NH_01.jpg";
+import port_NH_02 from "../../../Images/Portrait/port_NH_02.jpg";
+import port_NH_03 from "../../../Images/Portrait/port_NH_03.jpg";
+import port_NH_04 from "../../../Images/Portrait/port_NH_04.jpg";
+
+import port_S_01 from "../../../Images/Portrait/port_S_01.jpg";
+import port_S_02 from "../../../Images/Portrait/port_S_02.jpg";
+
+import port_VNB_01 from "../../../Images/Portrait/port_VNB_01.jpg";
+import port_VNB_02 from "../../../Images/Portrait/port_VNB_02.jpg";
+
+import port_VJ_01 from "../../../Images/Portrait/port_VJ_01.jpg";
+import port_VJ_02 from "../../../Images/Portrait/port_VJ_02.jpg";
+
+import port_IM_01 from "../../../Images/Portrait/port_IM_01.jpg";
+import port_IM_02 from "../../../Images/Portrait/port_IM_02.jpg";
+
+import port_ST_01 from "../../../Images/Portrait/port_ST_01.jpg";
+import port_ST_02 from "../../../Images/Portrait/port_ST_02.jpg";
+import port_ST_03 from "../../../Images/Portrait/port_ST_03.jpg";
+
+import port_SV_01 from "../../../Images/Portrait/port_SV_01.jpg";
+import port_SV_02 from "../../../Images/Portrait/port_SV_02.jpg";
+import port_SV_03 from "../../../Images/Portrait/port_SV_03.jpg";
+import port_SV_04 from "../../../Images/Portrait/port_SV_04.jpg";
+import port_SV_05 from "../../../Images/Portrait/port_SV_05.jpg";
+import port_SV_06 from "../../../Images/Portrait/port_SV_06.jpg";
+import port_SV_07 from "../../../Images/Portrait/port_SV_07.jpg";
+
+import port_T_01 from "../../../Images/Portrait/port_T_01.jpg";
+import port_T_02 from "../../../Images/Portrait/port_T_02.jpg";
+import port_T_03 from "../../../Images/Portrait/port_T_03.jpg";
+import port_T_04 from "../../../Images/Portrait/port_T_04.jpg";
+import port_T_05 from "../../../Images/Portrait/port_T_05.jpg";
+import port_T_06 from "../../../Images/Portrait/port_T_06.jpg";
+
+import HeadshotsRoute from "../../../Routes/Headshots/Route";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
 export default {
   id: "portrett",
   title: "Portrett",
   body: oneLine`
-    Portretter er noe de fleste trenger en gang eller to i løpet av livet. Enten det er i jobbsammenheng, eller man bare ønsker noen flotte bilder av seg selv!
+  Opplev kraften av et godt portrett gjennom en profesjonell fotografering som setter deg i det beste lyset, enten det er for profesjonelle formål eller til dine kanaler i sosiale medier. Enten du trenger imponerende profilbilder for profesjonelle nettverk eller ønsker å forsterke ditt nærvær på sosiale medier, vil jeg skape bilder som formidler din autentiske identitet og styrker din visuelle appell. La oss sammen skape portretter som ikke bare ser fantastiske ut, men som også kommuniserer din profesjonelle dyktighet og personlige sjarm til verden.
   `,
   cover: {
-    url: portrait_cover,
-    title: "Victor",
+    url: port_T_01,
+    title: "Portrett",
   },
   listing: {
-    title: "Portrettfotografering",
+    title: "Portrettfotografering / Headshots",
     price: priceList.portraits,
-    link: `/${PricesRoute}#${ids.portrait}`,
+    link: `/${PricesRoute}/${HeadshotsRoute}`,
   },
   shoots: [
     {
-      description: "Nina Helene",
+      description: "IM",
+      tags: ["portrett", "dame", "natur", "frodig", "sommer", "solsikke"],
+      images: [
+        {
+          url: port_IM_01,
+          title: "IM",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_IM_02,
+          title: "IM",
+          height: 1000,
+          width: 667,
+        },
+      ],
+      date: "2023-08-22",
+    },
+    {
+      description: "T",
+      tags: ["portrett", "dame", "natur", "frodig", "sommer", "nordbytjernet"],
+      images: [
+        {
+          url: port_T_01,
+          title: "T",
+          height: 667,
+          width: 1000,
+        },
+        {
+          url: port_T_02,
+          title: "T",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_T_03,
+          title: "T",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_T_04,
+          title: "T",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_T_05,
+          title: "T",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_T_06,
+          title: "T",
+          height: 1000,
+          width: 667,
+        },
+      ],
+      date: "2023-08-10",
+    },
+    {
+      description: "SV",
+      tags: ["portrett", "jente", "natur", "frodig", "sommer"],
+      images: [
+        {
+          url: port_SV_01,
+          title: "SV",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_SV_02,
+          title: "SV",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_SV_03,
+          title: "SV",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_SV_04,
+          title: "SV",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_SV_05,
+          title: "SV",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_SV_06,
+          title: "SV",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_SV_07,
+          title: "SV",
+          height: 1000,
+          width: 667,
+        },
+      ],
+      date: "2023-08-11",
+    },
+
+    {
+      description: "Stranger AS",
+      tags: ["portrett", "dame", "headshot", "vinter"],
+      images: [
+        {
+          url: port_ST_01,
+          title: "Stranger",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_ST_02,
+          title: "Stranger",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_ST_03,
+          title: "Stranger",
+          height: 1000,
+          width: 667,
+        },
+      ],
+      date: "2023-03-02",
+    },
+
+    {
+      description: "NH",
       tags: ["portrett", "dame", "urban", "frodig"],
       images: [
         {
-          url: ninahelene1,
-          title: "Nina Helene",
+          url: port_NH_01,
+          title: "NH",
           height: 1000,
           width: 667,
         },
         {
-          url: ninahelene2,
-          title: "Nina Helene",
+          url: port_NH_02,
+          title: "NH",
           height: 1000,
           width: 667,
         },
         {
-          url: ninahelene3,
-          title: "Nina Helene",
+          url: port_NH_03,
+          title: "NH",
           height: 1000,
           width: 667,
         },
         {
-          url: ninahelene4,
-          title: "Nina Helene",
-          height: 1000,
-          width: 667,
-        },
-        {
-          url: ninahelene5,
-          title: "Nina Helene",
+          url: port_NH_04,
+          title: "NH",
           height: 1000,
           width: 667,
         },
@@ -75,24 +232,18 @@ export default {
     },
 
     {
-      description: "Sigurd",
+      description: "S",
       tags: ["portrett", "mann", "urban", "skog"],
       images: [
         {
-          url: sigurd3,
-          title: "Sigurd",
+          url: port_S_01,
+          title: "S",
           height: 1000,
           width: 667,
         },
         {
-          url: sigurd1,
-          title: "Sigurd",
-          height: 1000,
-          width: 667,
-        },
-        {
-          url: sigurd2,
-          title: "Sigurd",
+          url: port_S_02,
+          title: "S",
           height: 1000,
           width: 667,
         },
@@ -100,18 +251,18 @@ export default {
       date: "2023-03-29",
     },
     {
-      description: "Madeleine",
+      description: "M",
       tags: ["portrett", "dame", "urban"],
       images: [
         {
-          url: madeleine1,
-          title: "Madeleine",
+          url: port_M_01,
+          title: "M",
           height: 1000,
           width: 667,
         },
         {
-          url: madeleine2,
-          title: "Madeleine",
+          url: port_M_02,
+          title: "M",
           height: 1000,
           width: 667,
         },
@@ -119,18 +270,18 @@ export default {
       date: "2014-12-13",
     },
     {
-      description: "Marianne",
+      description: "MB",
       tags: ["portrett", "dame", "urban"],
       images: [
         {
-          url: marianne1,
-          title: "Marianne",
+          url: port_MB_01,
+          title: "MB",
           height: 1000,
           width: 667,
         },
         {
-          url: marianne2,
-          title: "Marianne",
+          url: port_MB_02,
+          title: "MB",
           height: 1000,
           width: 667,
         },
@@ -138,18 +289,18 @@ export default {
       date: "2014-11-19",
     },
     {
-      description: "Victoria",
+      description: "V",
       tags: ["portrett", "dame"],
       images: [
         {
-          url: victoria1,
-          title: "Victoria",
+          url: port_VJ_01,
+          title: "V",
           height: 1000,
           width: 667,
         },
         {
-          url: victoria2,
-          title: "Victoria",
+          url: port_VJ_02,
+          title: "V",
           height: 1000,
           width: 667,
         },
@@ -157,18 +308,18 @@ export default {
       date: "2014-10-27",
     },
     {
-      description: "Victor",
+      description: "VN",
       tags: ["portrett", "mann"],
       images: [
         {
-          url: victor1,
-          title: "Victor",
+          url: port_VNB_01,
+          title: "VN",
           height: 1000,
           width: 667,
         },
         {
-          url: victor2,
-          title: "Victor",
+          url: port_VNB_02,
+          title: "VN",
           height: 1000,
           width: 667,
         },

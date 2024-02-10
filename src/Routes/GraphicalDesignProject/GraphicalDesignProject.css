@@ -1,0 +1,133 @@
+.image-gallery-image {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.image-gallery-icon:hover {
+  color: var(--blue);
+}
+
+.image-gallery-icon .image-gallery-svg {
+  transition: transform 0.2s;
+}
+
+.image-gallery-bullets .image-gallery-bullet:hover {
+  background-color: var(--lightblue);
+  border-color: var(--lightblue);
+}
+
+.image-gallery-bullets .image-gallery-bullet.active:hover {
+  background-color: var(--lightblue);
+}
+
+@media only screen and (min-width: 600px) {
+  .image-gallery-image {
+    height: 600px;
+  }
+}
+
+.GraphicalDesignProject__ColorPalette {
+  font-family: nunito;
+  font-weight: 500;
+}
+
+.GraphicalDesignProject__Body {
+  font-family: nunito;
+}
+
+.GraphicalDesignProject__Ingress {
+  font-family: nunito;
+}
+
+.GraphicalDesignProject__Container {
+  text-align: left;
+}
+
+.GraphicalDesignProject__Ingress {
+  font-weight: 300;
+}
+
+.GraphicalDesignProject__GraphicalElements {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+  flex-flow: row wrap;
+}
+
+.GraphicalDesignProject__ElementHeading {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.GraphicalDesignProject__ColorPalette {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.GraphicalDesignProject__Font {
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.GraphicalDesignProject__ColorCard {
+  padding-top: 150px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.GraphicalDesignProject__ColorDetails {
+  background-color: #fff;
+  outline-style: solid;
+  outline-color: rgb(209, 209, 209);
+  outline-width: 1px;
+  border-radius: 10px;
+  margin: 0;
+  list-style: none;
+  padding: 20px;
+}
+
+.GraphicalDesignProject__Body {
+  font-weight: 300;
+}
+
+.GraphicalDesignProject__Elements {
+  display: grid;
+  grid-auto-rows: 380px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.GraphicalDesignProject__Element {
+  display: grid;
+  grid-template-rows: 66px auto;
+  height: 100%;
+  width: 100%;
+}
+
+.GraphicalDesignProject__ElementImage {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.18);
+  height: 100%;
+  max-height: 314px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .GraphicalDesignProject__Elements {
+    grid-template-columns: 1fr;
+  }
+}

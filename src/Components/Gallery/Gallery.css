@@ -1,0 +1,19 @@
+.Gallery__Image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Gallery__Title {
+  color: black;
+  font-family: oswald;
+  font-weight: 500;
+  margin-bottom: 7px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.Gallery__Count {
+  text-align: left;
+  font-weight: 200;
+}

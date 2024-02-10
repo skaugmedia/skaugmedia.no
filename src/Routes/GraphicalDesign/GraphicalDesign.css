@@ -21,6 +21,21 @@
   font-family: nunito;
 }
 
+.graphical-design-title {
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  font-size: 1em;
+}
+
+.title {
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
 .design {
   display: flex;
   align-items: center;

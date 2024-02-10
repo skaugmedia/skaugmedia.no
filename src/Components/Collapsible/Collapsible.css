@@ -1,0 +1,93 @@
+.Collapsible {
+  width: 100%;
+}
+
+.Collapsible--Opened {
+  margin-bottom: 10px;
+}
+
+.Collapsible__Button {
+  background-color: transparent;
+  width: 100%;
+  border-color: transparent;
+  justify-content: left;
+  text-align: left;
+  padding: 0 20px;
+  font-family: Oswald;
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.Collapsible__Line {
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+
+.Collapsible__TextBox {
+  height: auto;
+  padding: 15px 20px;
+  overflow: hidden;
+}
+
+.Collapsible__Text {
+  color: black;
+  font-family: nunito;
+  text-align: left;
+  font-weight: 400;
+}
+
+.Collapsible__TriggerButton {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+.Collapsible__Price {
+  color: var(--green);
+  font-weight: 600;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.Collapsible__TriggerButtonText {
+  color: var(--green);
+  font-weight: 600;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.Collapsible__Name {
+  display: inline-block;
+}
+
+.Collapsible__Chevron {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  color: var(--blue);
+  transition: transform 0.2s;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.Collapsible__Chevron--Open {
+  transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .Collapsible__Name {
+    font-size: 0.85em;
+  }
+
+  .Collapsible__Price {
+    font-size: 0.85em;
+  }
+
+  .Collapsible__Button {
+    padding: 0;
+  }
+}

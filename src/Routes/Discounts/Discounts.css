@@ -1,0 +1,48 @@
+.Discounts__RegularDiscounts {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 1.3em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.Discounts__RegularDiscountsRow {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.Discounts__RegularDiscountsTenPercentTextImportant {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.Discounts__DiscountTextImportant {
+  font-weight: 600;
+}
+@media only screen and (max-width: 1000px) {
+  .DiscountAd {
+    display: flex;
+  }
+
+  .Discounts__RegularDiscountsRow {
+    flex-flow: row;
+  }
+
+  .FixedDiscount__Text {
+    margin-bottom: 20px;
+    font-size: 1em;
+  }
+
+  .FixedDiscount__Img {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Discounts__RegularDiscountsRow {
+    flex-flow: column;
+  }
+}

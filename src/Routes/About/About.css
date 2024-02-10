@@ -1,0 +1,26 @@
+.AboutMe__Text {
+  font-family: nunito;
+  text-align: left;
+}
+
+.AboutMe__Img {
+  margin-left: 20px;
+  height: 550px;
+}
+.AboutMe__Box {
+  display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+  .AboutMe__Box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .AboutMe__Img {
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+}

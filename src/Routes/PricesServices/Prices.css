@@ -1,0 +1,1065 @@
+.Prices__PriceText {
+  margin-bottom: 10px;
+}
+
+.Prices__CategoryNav {
+  text-decoration: none;
+}
+.Prices__CategoryNav:hover {
+  opacity: 80%;
+}
+
+.Prices__CategorySection {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Prices__Category_PriceSquare {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 325px;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: none;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.Prices__Category_PriceSquare:hover {
+  opacity: 60%;
+}
+
+.Prices__Category_PriceImg {
+  object-fit: cover;
+
+  color: white;
+}
+
+.Prices__Category_PriceImg:hover {
+}
+
+.Prices__Category_PriceTextBox {
+}
+
+.Prices__Category_PriceHeader {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.Prices__Category_PriceHeader:hover {
+  color: grey;
+}
+
+/*.Prices__Category_PriceSubHeader {
+  font-size: 7em;
+  font-weight: 700;
+  color: black;
+  text-align: left;
+  margin-bottom: -20px;
+}
+
+.Prices__Category_PriceText {
+  font-size: 1.7em;
+  text-align: left;
+  margin-top: 2px;
+  line-height: 130%;
+  margin-bottom: 10px;
+} */
+
+.Prices__ButtonPricelistRow {
+  display: flex;
+  flex-flow: row;
+}
+
+.Prices__ButtonPricelist {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  gap: 5px;
+  justify-content: center;
+}
+.Prices__ServicesImg {
+  width: 50%;
+  margin-left: 10px;
+}
+.Prices__ServicesRow {
+  position: relative;
+}
+.container:focus-within,
+.container:focus {
+  opacity: 0;
+}
+.container:focus-within + .content,
+.container:focus + .content {
+  display: initial;
+}
+.container {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  width: 500px;
+}
+.btn {
+  border: 1px #888;
+  border-radius: 4px;
+  background-color: #ddd;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+  font-family: oswald;
+  font-size: 1em;
+  color: inherit;
+  text-decoration: inherit;
+}
+.backdrop {
+  width: 20px;
+  max-width: calc(100% + 20px);
+  transition:
+    width 1s,
+    clip-path 0.5s ease-in-out;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  border-radius: 4px;
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 5px) 0%,
+    100% 50%,
+    calc(100% - 5px) 100%,
+    0% 100%
+  );
+}
+.color1 {
+  background-color: var(--dark-orange);
+}
+.color2 {
+  background-color: var(--green);
+}
+.color3 {
+  background-color: var(--blue);
+}
+.color4 {
+  background-color: var(--dark-pink);
+}
+.color5 {
+  background-color: var(--light-orange);
+}
+.color6 {
+  background-color: var(--light-pink);
+}
+.color7 {
+  background-color: var(--lightblue);
+}
+.btn:hover .backdrop {
+  width: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+}
+.text {
+  position: relative;
+  z-index: 2;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Prices__TabsTitleKids {
+  color: var(--dark-orange);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__TabsTitlePortrait {
+  color: var(--green);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__TabsTitleFamily {
+  color: var(--blue);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__TabsTitleBusiness {
+  color: var(--light-orange);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__TabsTitleDesign {
+  color: var(--light-pink);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.Prices__TabsContentHeaderBox {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+
+.Prices__TabsProducts {
+}
+.Prices__TabsContentPriceKidsCopies {
+  text-align: right;
+  font-weight: 500;
+}
+
+.Prices__TabsContentPricePortraitWallphotos {
+  text-align: right;
+  font-weight: 500;
+}
+
+.Prices__TabsContentPriceFamilyAlbum {
+  text-align: right;
+  font-weight: 500;
+}
+
+.Prices__TabsContentPriceBusinessPrintables {
+  text-align: right;
+  font-weight: 500;
+}
+
+.Prices__TabsContentPriceDesign {
+  text-align: right;
+  font-weight: 500;
+}
+
+.Prices__Content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.Prices__TabsContentBox {
+  width: 60%;
+  padding: 20px;
+}
+
+.Prices__TabsContentImg {
+  width: 30%;
+  height: 70%;
+  margin: 20px;
+}
+
+.Prices__TabsContentBoxProducts {
+  width: 100%;
+  padding: 20px;
+}
+
+.Prices__TabsContentPrintables {
+  display: flex;
+  flex-flow: row;
+}
+
+.Prices__TabsContentTextPrintables {
+  width: 100%;
+  font-family: nunito;
+  display: flex;
+  flex-flow: row;
+}
+
+.Prices__TabsContentPrintablesBox {
+  display: flex;
+}
+
+.Prices__TabsContentImgPrintables {
+  margin-right: 0;
+  width: 110%;
+  height: 100%;
+}
+
+.Prices__Tabs {
+  width: 100%;
+}
+
+.Prices__TabsContentText {
+  font-family: nunito;
+}
+
+.Prices__TabsContentTextOffer {
+  font-weight: 700;
+}
+
+.Prices__TabsContentTextFees {
+  font-weight: 600;
+  font-size: 0.85em;
+}
+
+.Prices__TabsProducts {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.rices__TabsContentProductPricelist {
+  display: flex;
+  flex-flow: column;
+}
+
+.Prices__TabsContentTextPricelist {
+  text-align: left;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row;
+}
+
+.Prices__TabsContentTextPricelistAmount {
+  text-align: right;
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: column;
+}
+
+.ProductPriceSection__Text {
+}
+
+.ButtonText {
+  margin-left: 70px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-align: left;
+  display: flex;
+  flex-flow: column;
+}
+
+.Prices__ButtonSubText {
+  font-size: 0.8em;
+  display: flex;
+  flex-flow: column;
+  font-family: nunito;
+  text-align: left;
+}
+
+.Prices__Tabs {
+  display: flex;
+  width: 100%;
+}
+
+.Prices__BottomSection {
+  align-items: left;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.Prices__Header {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.Prices__ProductsImg {
+  margin-right: 10px;
+  width: 50%;
+}
+
+.Prices__PriceBox {
+  align-items: right;
+  text-align: right;
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--blue);
+  margin-top: -10px;
+  font-family: oswald;
+  text-transform: uppercase;
+}
+
+.Prices__PricesText {
+  display: flex;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.Prices__TextIntroHeader {
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+  align-items: left;
+  font-weight: 500;
+}
+
+.Prices__TextIntroIncludes {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: nunito;
+}
+.Prices__TextIntro {
+  font-family: nunito;
+  margin-bottom: 5px;
+}
+.Prices__WeddingPackageSection {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Prices__Text {
+  font-family: nunito;
+  text-align: left;
+  margin-top: -15px;
+}
+
+.Prices__TextAdditional {
+  font-family: nunito;
+  text-align: left;
+  font-size: 0.8em;
+  align-items: left;
+  justify-content: left;
+}
+
+.CompanyPrice__Section {
+  display: flex;
+
+  width: 100%;
+  max-width: var(--content-width);
+  justify-content: space-between;
+  align-items: left;
+  display: flex;
+  flex-flow: column;
+}
+
+.CompanyPrice__Header {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.CompanyPrice__Textbox {
+  width: 100%;
+}
+
+.CompanyPrice__Text {
+  font-family: nunito;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.CompanyPrice__Info {
+  font-family: nunito;
+  font-weight: 700;
+  color: var(--blue);
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.CompanyPrice__Info > * {
+  justify-self: start;
+}
+
+.discount-offer-box-title {
+  padding-left: 60px;
+  text-align: left;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.prices-offers-next-free-date-title {
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: left;
+  color: var(--blue);
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.prices-offers-next-free-date-row {
+  text-align: left;
+}
+
+.prices-offers-next-free-date-box {
+  background-color: var(--blue);
+  color: #e7e7e7;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: inline-flex;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+  align-items: center;
+}
+
+.prices-offers-next-free-date {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.discount-offer-box {
+  display: flex;
+  padding-top: 10px;
+  width: 100vw;
+  max-width: var(--content-width);
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 20px;
+  background-color: var(--lightgreen);
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.pregnancy-discount-offer,
+.oneyear-discount_offer,
+.always-discount-offer {
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.discount-offer-special {
+  font-size: 0.8em;
+}
+
+.discount-offer-img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.discount-offer-title {
+  font-size: 1.2em;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.prices-content {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.prices-offers-box {
+  background-color: var(--lightgreen);
+  width: 100%;
+
+  padding-top: 50px;
+}
+
+.category-title-offers {
+  padding-left: 60px;
+  text-align: left;
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.prices-heading {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.prices-time {
+  font-weight: 600;
+}
+
+.additional-prices {
+  font-weight: 400;
+  color: grey;
+}
+
+.prices-offers {
+  color: black;
+  text-align: left;
+  font-weight: 500;
+  font-family: nunito;
+  font-size: 1.2em;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 5px;
+}
+
+.category-title {
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 1.3em;
+  width: 100%;
+}
+
+.category-under-title {
+  color: var(--green);
+  text-transform: uppercase;
+
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.price-category {
+  color: var(--blue);
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+}
+
+.price-category-price {
+  color: var(--blue);
+  font-weight: 700;
+  text-align: left;
+}
+
+.category-price {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.line-between {
+  height: 1px;
+  width: 100%;
+  background-color: var(--green);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.category-image {
+  min-height: 400px;
+}
+
+.section-text {
+  height: auto;
+}
+
+.section-category {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0.5rem;
+  width: 100%;
+}
+
+.price-info {
+  font-weight: 200;
+  text-align: left;
+}
+
+.discount-price {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.includes-list {
+  list-style-type: circle;
+}
+
+.section-divider {
+  height: 2px;
+  width: 80%;
+  max-width: calc(0.8 * var(--content-width));
+  background-color: var(--lightgreen);
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.giftcard-img {
+  min-height: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+  .ProductPriceSection--reverse {
+    margin-top: 20px;
+  }
+  .Prices__TextIntro {
+    font-size: 0.9em;
+  }
+
+  .Prices__TextIntroIncludes {
+    font-size: 0.9em;
+  }
+
+  .Prices__Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Prices__PriceText {
+    padding-bottom: 20px;
+  }
+
+  .Prices__ButtonPricelistRow {
+    flex-flow: column;
+    width: 100%;
+    max-width: var(--content-width);
+  }
+
+  .Prices__ButtonPricelist {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .Prices__ButtonText {
+    text-align: left;
+    margin-right: -20px;
+    font-size: 0.85em;
+  }
+
+  .Prices__ButtonSubText {
+    font-size: 0.7em;
+  }
+
+  .Prices__Tabs {
+    width: 100%;
+    max-width: var(--content-width);
+    display: flex;
+    flex-flow: column;
+  }
+
+  .Prices__TabsContentBox {
+    width: 100%;
+    max-width: var(--content-width);
+    padding: 20px;
+  }
+
+  .Prices__TabsContentHeaderBox {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .Prices__TabsContentPriceKidsCopies {
+    text-align: left;
+  }
+
+  .Prices__TabsContentPricePortraitWallphotos {
+    text-align: left;
+  }
+
+  .Prices__TabsContentPriceFamilyAlbum {
+    text-align: left;
+  }
+
+  .Prices__TabsContentPriceBusinessPrintables {
+    text-align: left;
+  }
+
+  .Prices__TabsContentPriceDesign {
+    text-align: left;
+  }
+
+  .Prices__TabsContentText {
+    width: 100%;
+    font-size: 0.95em;
+  }
+
+  .Prices__TabsContentTextOffer {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  .Prices__TabsContentTextFees {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  .Prices__TabsContentImg {
+    margin: 0;
+    border-radius: 4px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .Prices__ServicesImg {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .ProductPriceSection--reverse {
+    flex-flow: column-reverse;
+  }
+
+  .Prices__ProductsImg {
+    width: 100%;
+    margin: 0;
+    padding-top: -20px;
+    padding-bottom: 10px;
+  }
+
+  .Prices__TextIntroIncludes {
+    padding-left: 18px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .Prices__Section {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .ProductPriceSection {
+  }
+
+  .Prices__Header {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .Prices__PriceBox {
+    margin-top: 5px;
+  }
+
+  .ProductPriceSection__ContentText {
+    font-size: 0.8em;
+  }
+
+  .ProductPriceSection__Price {
+    font-size: 0.9em;
+  }
+
+  .Prices__Outer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Prices__Inner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .prices {
+    flex-flow: column;
+    width: 100%;
+    width: var(--content-width);
+    max-width: 80%;
+  }
+
+  .prices-content {
+    width: 100%;
+  }
+
+  .section-category {
+    display: flex;
+    flex-flow: column-reverse;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content;
+    grid-gap: none;
+    width: 100%;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .prices-offers {
+    font-size: 0.9em;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    text-align: left;
+  }
+
+  .pregnancy-discount-offer,
+  .oneyear-discount_offer,
+  .always-discount-offer {
+    width: calc(100% - 60px);
+    max-width: initial;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .discount-offer-box {
+    flex-flow: column;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    width: 100%;
+    align-self: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .discount-offer-img {
+    max-width: initial;
+    width: calc(100% - 30px);
+  }
+
+  .discount-offer-box-title {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .category-title-offers {
+    font-size: 1.25em;
+    text-align: left;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .prices-offers-next-free-date-box {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .prices-offers-next-free-date {
+    font-size: 0.9em;
+  }
+
+  .ProductPriceSection__ImgSection {
+    width: 100%;
+  }
+  .ProductPriceSection__Textbox {
+    width: 100%;
+  }
+  .ProductPriceSection__ContentBox {
+    position: relative;
+  }
+  .ProductPriceSection__ContentText {
+    width: 50%;
+  }
+  .ProductPriceSection__ContentPrice {
+    text-align: right;
+    width: 50%;
+  }
+  .ProductPriceSection__Price {
+    width: auto;
+  }
+
+  .Prices__Tabs {
+    flex-flow: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Prices__TabsContentBoxProducts {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .Prices__Tabs {
+    flex-flow: column;
+  }
+
+  .Prices__TabsContentImg {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .ProductPriceSection--reverse {
+    flex-flow: column-reverse;
+  }
+  .Prices__TabsContentHeaderBox {
+    flex-flow: column;
+  }
+
+  .Prices__TabsContentPriceKidsCopies {
+    text-align: left;
+  }
+  .Prices__TabsContentPricePortraitWallphotos {
+    text-align: left;
+  }
+  .Prices__TabsContentPriceFamilyAlbum {
+    text-align: left;
+  }
+  .Prices__TabsContentPriceDesign {
+    text-align: left;
+  }
+
+  .ProductPriceSection__Img {
+    margin-top: -30px;
+  }
+
+  .Prices__TabsContentText {
+    width: 100%;
+  }
+
+  .ProductPriceSection__Textbox {
+    width: 100%;
+  }
+
+  .Prices__TabsContentBox {
+    width: 100%;
+    flex-flow: column;
+    display: flex;
+  }
+
+  .ProductPriceSection__PriceText {
+    width: 50;
+  }
+
+  .ProductPriceSection__ImgSection {
+  }
+
+  .Prices__ServicesImg {
+    object-fit: cover;
+  }
+
+  .Prices__ProductsImg {
+    object-fit: cover;
+  }
+}

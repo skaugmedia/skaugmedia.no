@@ -1,104 +1,102 @@
 import { oneLine } from "common-tags";
-import forlovelse1 from "../../../Images/forlovelse_1.jpg";
-import forlovelse2 from "../../../Images/forlovelse_2.jpg";
-import forlovelse3 from "../../../Images/forlovelse_3.jpg";
-import forlovelse4 from "../../../Images/forlovelse_4.jpg";
-import forlovelse5 from "../../../Images/forlovelse_5.jpg";
-import forlovelse6 from "../../../Images/forlovelse_6.jpg";
-import forlovelse7 from "../../../Images/forlovelse_7.jpg";
-import forlovelse8 from "../../../Images/forlovelse_8.jpg";
-import forlovelse9 from "../../../Images/forlovelse_9.jpg";
-import forlovelsecover from "../../../Images/forlovelse_cover.jpg";
-import luciaole1 from "../../../Images/lucia_ole_1.jpg";
-import luciaole2 from "../../../Images/lucia_ole_2.jpg";
-import luciaole3 from "../../../Images/lucia_ole_3.jpg";
-import luciaole4 from "../../../Images/lucia_ole_4.jpg";
-import luciaole5 from "../../../Images/lucia_ole_5.jpg";
-import luciaole6 from "../../../Images/lucia_ole_6.jpg";
-import luciaole7 from "../../../Images/lucia_ole_7.jpg";
-import luciaole8 from "../../../Images/lucia_ole_8.jpg";
-import luciaole9 from "../../../Images/lucia_ole_9.jpg";
-import * as ids from "../../../Routes/Prices/Ids";
-import PricesRoute from "../../../Routes/Prices/Route";
+import coup_JL_1 from "../../../Images/Couple/coup_JL_1.jpg";
+import coup_JL_2 from "../../../Images/Couple/coup_JL_2.jpg";
+import coup_JL_3 from "../../../Images/Couple/coup_JL_3.jpg";
+import coup_JL_4 from "../../../Images/Couple/coup_JL_4.jpg";
+import coup_JL_5 from "../../../Images/Couple/coup_JL_5.jpg";
+import coup_JL_6 from "../../../Images/Couple/coup_JL_6.jpg";
+import coup_JL_7 from "../../../Images/Couple/coup_JL_7.jpg";
+import coup_JL_8 from "../../../Images/Couple/coup_JL_8.jpg";
+import coup_JL_9 from "../../../Images/Couple/coup_JL_9.jpg";
+
+import coup_LO_1 from "../../../Images/Couple/coup_LO_1.jpg";
+import coup_LO_2 from "../../../Images/Couple/coup_LO_2.jpg";
+import coup_LO_3 from "../../../Images/Couple/coup_LO_3.jpg";
+import coup_LO_4 from "../../../Images/Couple/coup_LO_4.jpg";
+import coup_LO_5 from "../../../Images/Couple/coup_LO_5.jpg";
+import coup_LO_6 from "../../../Images/Couple/coup_LO_6.jpg";
+import coup_LO_7 from "../../../Images/Couple/coup_LO_7.jpg";
+import coup_LO_8 from "../../../Images/Couple/coup_LO_8.jpg";
+import coup_LO_9 from "../../../Images/Couple/coup_LO_9.jpg";
+import CouplesRoute from "../../../Routes/Couples/Route";
+import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
 
 export default {
-  id: "kjaereste-og-forlovelse",
-  title: "Kjæreste og forlovelse",
+  id: "parfotografering",
+  title: "Parfotografering",
 
   body: oneLine`
-    Det er så hyggelig å ha bilder som viser den ekte kjærligheten mellom et par, minner å 
-    se tilbake på, og ikke bilder som kan brukes i forbindelse med invitasjoner og bryllupsdekorasjoner, 
-    eller rett og slett bare til å henge opp på veggen!
+  Utforsk kjærlighetens magi gjennom en parfotografering som fanger øyeblikkene av intimitet, glede og forbindelse mellom dere. Med en unik blanding av profesjonell veiledning og autentiske øyeblikk, skaper vi tidløse bilder som feirer deres kjærlighetshistorie. Enten det er på en naturlig utendørslokasjon, i et romantisk bymiljø eller i komforten av deres eget hjem, vil jeg fange de spesielle øyeblikkene som definerer deres forhold. La oss sammen skape bilder som ikke bare fanger øyeblikket, men som også formidler den dype forbindelsen og kjærligheten dere deler.
   `,
   cover: {
-    url: forlovelsecover,
-    title: "Jan og Linn",
+    url: coup_LO_5,
+    title: "Parfotografering",
   },
   listing: {
-    title: "Gruppefotografering: forlovelse",
+    title: "Parfotografering",
     price: priceList.engagement,
-    link: `/${PricesRoute}#${ids.engagement}`,
+    link: `/${PricesRoute}/${CouplesRoute}`,
   },
   shoots: [
     {
-      description: "Jan og Linn",
+      description: "Forlovelse J + L",
       tags: ["forlovelse", "kjæreste"],
       images: [
         {
-          url: forlovelse1,
-          title: "Jan og Linn",
+          url: coup_JL_1,
+          title: "Forlovelse J + L",
           width: 667,
           height: 1000,
         },
         {
-          url: forlovelse6,
-          title: "Jan og Linn",
-          width: 667,
-          height: 1000,
-        },
-
-        {
-          url: forlovelse3,
-          title: "Jan og Linn",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: forlovelse2,
-          title: "Jan og Linn",
+          url: coup_JL_2,
+          title: "Forlovelse J + L",
           width: 667,
           height: 1000,
         },
 
         {
-          url: forlovelse4,
-          title: "Jan og Linn",
+          url: coup_JL_3,
+          title: "Forlovelse J + L",
           width: 667,
           height: 1000,
         },
         {
-          url: forlovelse7,
-          title: "Jan og Linn",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: forlovelse5,
-          title: "Jan og Linn",
+          url: coup_JL_4,
+          title: "Forlovelse J + L",
           width: 667,
           height: 1000,
         },
 
         {
-          url: forlovelse8,
-          title: "Jan og Linn",
+          url: coup_JL_5,
+          title: "Forlovelse J + L",
           width: 667,
           height: 1000,
         },
         {
-          url: forlovelse9,
-          title: "Jan og Linn",
+          url: coup_JL_6,
+          title: "Forlovelse J + L",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: coup_JL_7,
+          title: "Forlovelse J + L",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: coup_JL_8,
+          title: "Forlovelse J + L",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: coup_JL_9,
+          title: "Forlovelse J + L",
           width: 667,
           height: 1000,
         },
@@ -106,63 +104,63 @@ export default {
       date: "2023-02-19",
     },
     {
-      description: "Lucia og Ole",
+      description: "Forlovelse L + O",
       tags: ["hund", "kjæreste"],
       images: [
         {
-          url: luciaole1,
-          title: "Lucia og Ole",
+          url: coup_LO_1,
+          title: "Forlovelse L + O",
           width: 667,
           height: 1000,
         },
         {
-          url: luciaole6,
-          title: "Lucia og Ole",
-          width: 667,
-          height: 1000,
-        },
-
-        {
-          url: luciaole3,
-          title: "Lucia og Ole",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: luciaole2,
-          title: "Lucia og Ole",
+          url: coup_LO_2,
+          title: "Forlovelse L + O",
           width: 667,
           height: 1000,
         },
 
         {
-          url: luciaole4,
-          title: "Lucia og Ole",
+          url: coup_LO_3,
+          title: "Forlovelse L + O",
           width: 667,
           height: 1000,
         },
         {
-          url: luciaole7,
-          title: "Lucia og Ole",
+          url: coup_LO_4,
+          title: "Forlovelse L + O",
           width: 667,
           height: 1000,
         },
+
         {
-          url: luciaole5,
-          title: "Lucia og Ole",
+          url: coup_LO_5,
+          title: "Forlovelse L + O",
           width: 1000,
           height: 667,
         },
-
         {
-          url: luciaole8,
-          title: "Lucia og Ole",
+          url: coup_LO_6,
+          title: "Forlovelse L + O",
           width: 667,
           height: 1000,
         },
         {
-          url: luciaole9,
-          title: "Lucia og Ole",
+          url: coup_LO_7,
+          title: "Forlovelse L + O",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: coup_LO_8,
+          title: "Forlovelse L + O",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: coup_LO_9,
+          title: "Forlovelse L + O",
           width: 1000,
           height: 667,
         },

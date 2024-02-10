@@ -5,11 +5,12 @@
 }
 
 .title {
-  color: var(--blue);
   text-align: left;
-  font-weight: 700;
+
   margin-top: 3px;
   margin-bottom: 5px;
+  font-weight: 500;
+  color: black;
 }
 
 .count {

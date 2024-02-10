@@ -35,8 +35,8 @@ export const mkSiteMap = (routes) =>
     parser: "html",
   });
 
-export const updateSiteMap = (routes) => {
-  const sitemap = mkSiteMap(routes);
+export const updateSiteMap = async (routes) => {
+  const sitemap = await mkSiteMap(routes);
   fs.writeFileSync(outPath, sitemap);
   console.log("Sitemap generated");
 };

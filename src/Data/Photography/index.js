@@ -1,14 +1,12 @@
-import newborn from "./Newborn";
-import kids from "./Kids";
-import family from "./Family";
 import confirmation from "./Confirmation";
-import pregnant from "./Pregnant";
-import portrait from "./Portrait";
 import engagement from "./Engagement";
-import food from "./Food";
-import product from "./Product";
-import business from "./Business";
+import family from "./Family";
+import kids from "./Kids";
 import mommyandme from "./Mommyandme";
+import newborn from "./Newborn";
+import portrait from "./Portrait";
+import pregnant from "./Pregnant";
+import wedding from "./Wedding";
 
 export const categories = [
   newborn,
@@ -16,10 +14,8 @@ export const categories = [
   family,
   confirmation,
   pregnant,
+  wedding,
   mommyandme,
   portrait,
   engagement,
-  business,
-  food,
-  product,
 ];

@@ -3,7 +3,7 @@ import { useState } from "react";
 import ReactCollapsible from "react-collapsible";
 import { DottedLine } from "../DottedLine";
 import chevron from "./chevron-right-solid.svg";
-import classes from "./Collapsible.module.css";
+import "./Collapsible.css";
 
 export function Collapsible({
   id,
@@ -21,38 +21,43 @@ export function Collapsible({
       trigger={
         <>
           <TriggerButton open={isOpen} name={title} price={price} />
-          <DottedLine className={classes.line} />
+          <DottedLine className="Collapsible__Line" />
         </>
       }
       containerElementProps={{ id, ref: outerRef }}
-      className={classes.outer}
-      openedClassName={classNames(classes.outer, classes.outerOpened)}
-      triggerClassName={classes.button}
-      triggerOpenedClassName={classes.button}
+      className="Collapsible"
+      openedClassName={classNames("Collapsible", "Collapsible--Opened")}
+      triggerClassName="Collapsible__Button"
+      triggerOpenedClassName="Collapsible__Button"
       triggerTagName="div"
       open={open}
       onOpening={() => setOpen(true)}
       onClosing={() => setOpen(false)}
       transitionTime={200}
       easing="ease-in-out"
-      contentInnerClassName={classNames(classes.textBox, textClassName)}
+      contentInnerClassName={classNames("Collapsible__TextBox", textClassName)}
     >
-      <div className={classes.text}>{children}</div>
+      <div className="Collapsible__Text">{children}</div>
     </ReactCollapsible>
   );
 }
 
 export function TriggerButton({ className, name, price, open, ...props }) {
   return (
-    <div className={classNames(classes.triggerButton, className)} {...props}>
-      <div className={classes.triggerButtonText}>
+    <div
+      className={classNames("Collapsible__TriggerButton", className)}
+      {...props}
+    >
+      <div className={"Collapsible__TriggerButtonText"}>
         <img
           src={chevron}
-          className={classNames(classes.chevron, { [classes.open]: open })}
+          className={classNames("Collapsible__Chevron", {
+            "Collapsible__Chevron--Open": open,
+          })}
         />
-        <div className={classNames(classes.name)}>{name}</div>
+        <div className={classNames("Collapsible__Name")}>{name}</div>
       </div>
-      <div className={classes.price}>{price}</div>
+      <div className="Collapsible__Price">{price}</div>
     </div>
   );
 }

@@ -19,15 +19,19 @@
 }
 
 .listingTitle {
-  color: var(--blue);
-  font-size: 1.1em;
+  color: black;
+  font-size: 1.2em;
+  font-family: oswald;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .listingPrice {
-  color: var(--green);
+  color: var(--blue);
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 5px;
+  font-family: oswald;
 }
 
 .listingLink,
@@ -36,8 +40,10 @@
   color: #fff;
   text-decoration: none;
   border-radius: 9999px;
-  background-color: var(--blue);
+  background-color: black;
   padding: 3px 20px;
+  font-family: oswald;
+  text-transform: uppercase;
 }
 
 .bodyText {

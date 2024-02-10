@@ -1,0 +1,456 @@
+.BusinessPrices__PackageBoxHeader {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.BusinessPrices__PackageBoxSubHeader {
+  font-family: oswald;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.BusinessPrices__PackageBoxText {
+  font-family: nunito;
+  text-align: center;
+  font-size: 0.9em;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.BusinessPrices__PackageBoxDivider {
+  color: white;
+  height: 1px;
+  border-color: white;
+  border: 1px solid;
+  width: 30%;
+  align-items: center;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.BusinessPrices__PackageBoxDiscountPrice {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--blue);
+}
+
+.BusinessPrices__PackageBoxPrice {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-top: 7px;
+  color: black;
+}
+
+.BusinessPrices__PackageBoxRow {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+}
+
+.BusinessPrices__PackageBox1 {
+  width: 33%;
+}
+
+.BusinessPrices__PackageBox2 {
+  width: 33%;
+}
+
+.BusinessPrices__PackageBox3 {
+  width: 33%;
+}
+
+.BusinessPrices__ReadMoreButton {
+  z-index: 2;
+  color: white;
+  grid-area: link;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 3px 15px;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: oswald;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  background-color: black;
+  border-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.BusinessPrices__ReadMoreButton:hover {
+  background-color: var(--blue);
+  color: black;
+}
+
+.BusinessPrices__TopContentText {
+  font-family: nunito;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.BusinessPrices__ContentBox {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.BusinessPrices__ContentText {
+  font-family: nunito;
+  font-weight: 400;
+}
+
+.BusinessPrices__ContentTextBox {
+  display: flex;
+  flex-flow: column;
+}
+
+.BusinessPrices__ContentSubHeaderText {
+  font-family: oswald;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.BusinessPrices__ContentHeaderBox {
+  display: flex;
+  flex-flow: row;
+}
+
+.BusinessPrices__ContentHeader {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.BusinessPrices__Price {
+  display: flex;
+  flex-flow: row;
+  justify-content: right;
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--blue);
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.BusinessPrices__ContentImgProduct {
+  background-position: 30% 60%;
+}
+
+.BusinessPrices__ContentImgBusiness {
+  background-position: 30% 15%;
+}
+
+.BusinessPrices__PackageBoxHeaderBigBox {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.BusinessPrices__PackageBoxSubHeaderBigBox {
+  font-family: oswald;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.BusinessPrices__PackageBoxPriceSectionBox {
+  display: flex;
+  flex-flow: column;
+}
+
+.BusinessPrices__PackageBoxPriceBigBox {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 20px;
+
+  color: black;
+  margin-right: 30px;
+}
+
+.BusinessPrices__PackageBoxDiscountPriceBigBox {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: right;
+
+  margin-top: 20px;
+  color: var(--blue);
+  margin-right: 30px;
+}
+
+.BusinessPrices__PackageBigBoxHeaderText {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.BusinessPrices__PackageBigBox1 {
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+}
+
+.BusinessPrices__PackageBigBoxContent {
+  display: flex;
+  flex-flow: row;
+}
+
+.BusinessPrices__PackageBigBoxTextSection {
+  width: 50%;
+}
+
+.BusinessPrices__PackageBigBoxImgSection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.BusinessPrices__PackageBigBoxImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.BusinessPrices__PackageBigBoxText {
+  font-family: nunito;
+  text-align: left;
+  font-size: 0.9em;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.BusinessPrices__PackageBigBoxListText {
+  font-family: nunito;
+  text-align: center;
+  font-size: 0.9em;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.BusinessPrices__PackageBigBoxListHeader {
+  font-family: nunito;
+  text-align: center;
+  font-size: 0.9em;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: 600;
+}
+
+.BusinessPrices__PackageBigBoxDivider {
+  width: 30%;
+}
+
+.BusinessPrices__ContentBoxList {
+}
+
+.BusinessPrices__ContentElements {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-family: nunito;
+}
+
+.BusinessPrices__ContentSubHeader {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.BusinessPrices__ContentElementsText {
+  font-family: nunito;
+  margin-top: 0;
+}
+
+.BusinessPrices__ComparisonTable {
+  --gap: 10px;
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.BusinessPrices__ComparisonTable--Shown {
+  display: table;
+}
+
+.BusinessPrices__ComparisonTableHeader {
+  display: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.BusinessPrices__ComparisonTableHeader--Shown {
+  display: initial;
+}
+
+.BusinessPrices__ComparisonTable th {
+  text-align: left;
+  font-weight: 300;
+  font-family: nunito;
+}
+
+.BusinessPrices__PackageCompareButton:hover {
+  color: var(--blue);
+  background-color: black;
+}
+
+.BusinessPrices__PackageCompareButton {
+  background-color: var(--blue);
+  z-index: 2;
+  color: black;
+  grid-area: link;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border-color: transparent;
+  font-family: oswald;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.BusinessPrices__ComparisonTable tr:not(:first-child) td:not(:first-child) {
+  font-family: nunito;
+  font-size: 0.9em;
+}
+
+.BusinessPrices__ComparisonTable td {
+  text-align: center;
+}
+
+.BusinessPrices__ComparisonTable tr {
+  border-bottom: 1px solid black;
+}
+
+.BusinessPrices__ComparisonTable tr:first-child td {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.BusinessPrices__ComparisonTable th:not(:last-child),
+.BusinessPrices__ComparisonTable td:not(:last-child) {
+  padding-right: var(--gap);
+}
+
+.BusinessPrices__ComparsionTable th,
+.BusinessPrices__ComparisonTable td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .BusinessPrices__TopContentHeader {
+    font-size: 2em;
+  }
+
+  .BusinessPrices__PackageBigBoxContent {
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .BusinessPrices__PackageBigBoxText {
+    width: 100%;
+    margin: 0;
+  }
+
+  .BusinessPrices__PackageBoxRow {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .BusinessPrices__PackageBox1 {
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .BusinessPrices__PackageBox2 {
+    width: 100%;
+  }
+
+  .BusinessPrices__PackageBox3 {
+    width: 100%;
+  }
+
+  .BusinessPrices__PackageBoxDiscountPriceBigBox {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .BusinessPrices__PackageBoxPriceBigBox {
+    font-size: 0.9em;
+    text-align: left;
+
+    font-weight: 300;
+  }
+
+  .BusinessPrices__PackageBigBoxText {
+    text-align: left;
+  }
+
+  .BusinessPrices__PackageBigBoxHeaderText {
+    flex-flow: column;
+  }
+
+  .BusinessPrices__PackageBoxSubHeaderBigBox {
+    margin: 0;
+  }
+
+  .BusinessPrices__PackageBoxPriceBigBox {
+    margin-top: 0;
+  }
+
+  .BusinessPrices__PackageBoxHeaderBigBox {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .BusinessPrices__PackageCompareButton {
+    display: none;
+  }
+
+  .BusinessPrices__PackageBigBoxImgSection,
+  .BusinessPrices__PackageBigBoxTextSection {
+    width: 100%;
+  }
+}
