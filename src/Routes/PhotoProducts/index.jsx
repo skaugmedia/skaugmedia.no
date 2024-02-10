@@ -219,6 +219,10 @@ export function PhotoProducts() {
                 Med disse filene kan du printe så mange ganger du ønsker, lagre
                 som backup eller bruke som ditt profilbilde på sosiale medier,
                 men husk å kreditere meg som fotograf under bildet.
+                <br />
+                Det minste antallet digitale bildefiler du kan bestille er:
+                minipakken med 3 digitiale bildefiler. Etter kjøp av en
+                bildepakke kan du kjøpe enkeltbilder for kr. 650,- per stk.
               </div>
             }
             priceText1={
@@ -255,7 +259,7 @@ export function PhotoProducts() {
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
-                Digital bildefil per stk.
+                Digital bildefil per stk. etter pakke
               </div>
             }
             price5={<div className="ProductPriceSection__Price">Kr. 650,-</div>}

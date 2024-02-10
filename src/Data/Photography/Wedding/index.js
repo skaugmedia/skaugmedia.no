@@ -17,6 +17,17 @@ import Weddingrt7 from "../../../Images/Wedding/weddingRT_7.jpg";
 import Weddingrt8 from "../../../Images/Wedding/weddingRT_8.jpg";
 import Weddingrt9 from "../../../Images/Wedding/weddingRT_9.jpg";
 
+import Weddingrt18 from "../../../Images/Wedding/weddingRT_18.jpg";
+import Weddingrt19 from "../../../Images/Wedding/weddingRT_19.jpg";
+import Weddingrt20 from "../../../Images/Wedding/weddingRT_20.jpg";
+import Weddingrt21 from "../../../Images/Wedding/weddingRT_21.jpg";
+import Weddingrt22 from "../../../Images/Wedding/weddingRT_22.jpg";
+import Weddingrt23 from "../../../Images/Wedding/weddingRT_23.jpg";
+import Weddingrt24 from "../../../Images/Wedding/weddingRT_24.jpg";
+import Weddingrt25 from "../../../Images/Wedding/weddingRT_25.jpg";
+import Weddingrt26 from "../../../Images/Wedding/weddingRT_26.jpg";
+import Weddingrt27 from "../../../Images/Wedding/weddingRT_27.jpg";
+
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import WeddingRoute from "../../../Routes/Wedding/Route";
 
@@ -40,12 +51,6 @@ export default {
       description: "Bryllupsfotografering R + T",
       tags: ["bryllup", "seremoni", "bryllupsseremoni", "sommer"],
       images: [
-        {
-          url: Weddingrt8,
-          title: "Brudepar",
-          width: 667,
-          height: 1000,
-        },
         {
           url: Weddingrt2,
           title: "Brudepar",
@@ -85,6 +90,12 @@ export default {
         {
           url: Weddingrt1,
           title: "Brudebukett",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt8,
+          title: "Brudepar",
           width: 667,
           height: 1000,
         },
@@ -138,7 +149,68 @@ export default {
         },
         {
           url: Weddingrt17,
-          title: "Tom kirke",
+          title: "Kirken",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt18,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt19,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt20,
+          title: "Brudeparet",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt21,
+          title: "Brudeparet",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt22,
+          title: "Ringene og brudebuketten",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt23,
+          title: "Brudeparet",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt24,
+          title: "Brudeparet",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: Weddingrt26,
+          title: "Brudeparet",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt25,
+          title: "Ringene og brudebuketten",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingrt27,
+          title: "Brudeparet",
           width: 667,
           height: 1000,
         },
