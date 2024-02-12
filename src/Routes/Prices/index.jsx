@@ -89,7 +89,11 @@ export function Prices() {
 
   return (
     <PageSection innerClassName="prices">
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Oversikt over priser og tjenester"
+        canonical={location.pathname}
+      />
       <div className="prices-content">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
 

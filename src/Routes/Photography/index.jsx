@@ -8,7 +8,11 @@ export function Photography() {
   const { categories } = useLoaderData();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Oversikt over kategorier med fotografi"
+        canonical={location.pathname}
+      />
       <GalleryBrowser title={pageName} galleries={categories} />
     </>
   );

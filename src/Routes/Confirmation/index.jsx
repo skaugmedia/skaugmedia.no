@@ -11,7 +11,11 @@ export function Confirmation() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester relatert til fotografi av konfirmanter og konfirmasjoner"
+        canonical={location.pathname}
+      />
       <div className="Confirmation">
         <PageSection>
           <DesignHeading>Konfirmantfotografering</DesignHeading>

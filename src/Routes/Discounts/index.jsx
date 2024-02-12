@@ -21,7 +21,11 @@ export function Discounts() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Oversikt over pågående tilbud og rabatter."
+        canonical={location.pathname}
+      />
       <div className="Discounts">
         <PageSection>
           <DesignHeading>Tilbud</DesignHeading>

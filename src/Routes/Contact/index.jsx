@@ -66,7 +66,11 @@ export function Contact() {
 
   return (
     <PageSection>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Kontaktskjema for å komme i kontakt med Skaug Media"
+        canonical={location.pathname}
+      />
       <div className="Contact__RowBox">
         <div className="Contact__ImgBox">
           <img

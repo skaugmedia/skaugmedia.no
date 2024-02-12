@@ -35,7 +35,11 @@ export function BusinessPrices() {
 
   const mainMenu = (
     <PageSection>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester for bedrifter og næringsliv"
+        canonical={location.pathname}
+      />
       <div className="BusinessPrices__PackageBoxRow">
         <div className="BusinessPrices__PackageBox1">
           <div className="BusinessPrices__PackageBoxHeader">Social-pakken</div>

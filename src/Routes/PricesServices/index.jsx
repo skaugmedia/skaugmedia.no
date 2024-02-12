@@ -115,7 +115,11 @@ export function PricesServices() {
 
   return (
     <div className="prices-content">
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Prisliste for fotografitjenester"
+        canonical={location.pathname}
+      />
       <PageSection innerClassName="prices">
         <DesignHeading className="prices-heading">{pageName}</DesignHeading>
       </PageSection>

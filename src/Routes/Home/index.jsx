@@ -22,7 +22,11 @@ export function Home() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Skaug Media, foto og grafisk design"
+        canonical={location.pathname}
+      />
       <div
         className="Home__DiscountHeader"
         style={{ backgroundImage: `url(${DiscountHeaderImg})` }}

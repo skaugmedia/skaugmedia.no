@@ -11,7 +11,11 @@ export function Newborn() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester relatert til fotografi av nyfødte barn."
+        canonical={location.pathname}
+      />
       <div className="Newborn">
         <PageSection>
           <DesignHeading>Nyfødtfotografering</DesignHeading>

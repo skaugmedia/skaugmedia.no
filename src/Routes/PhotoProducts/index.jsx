@@ -17,7 +17,11 @@ export function PhotoProducts() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Prisliste for bildeprodukter som kan bestilles ved fotografi"
+        canonical={location.pathname}
+      />
       <div className="PhotoProducts">
         <PageSection>
           <DesignHeading>Prisliste bildeprodukter</DesignHeading>

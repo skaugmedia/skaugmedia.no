@@ -11,7 +11,11 @@ export function Family() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester relatert til fotografi av familier."
+        canonical={location.pathname}
+      />
       <div className="Family">
         <PageSection>
           <DesignHeading>Familiefotografering</DesignHeading>

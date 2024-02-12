@@ -11,11 +11,15 @@ export function Headshots() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester relatert til portrettfotografi, profilbilder, CV-foto og headshots"
+        canonical={location.pathname}
+      />
       <div className="Headshots">
         <PageSection>
           <DesignHeading>
-            Portretter / Headshots / CV-foto / Profilbilde{" "}
+            Portretter / Headshots / CV-foto / Profilbilde
           </DesignHeading>
         </PageSection>
         <PageSection>

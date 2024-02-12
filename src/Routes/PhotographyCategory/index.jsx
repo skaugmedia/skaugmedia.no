@@ -31,7 +31,11 @@ export function PhotographyCategory() {
 
   return (
     <PageSection>
-      <SkaugHelmet title={category.title} canonical={location.pathname} />
+      <SkaugHelmet
+        title={category.title}
+        description={`Samling av ${category.title.toLowerCase()} bilder`}
+        canonical={location.pathname}
+      />
       <DesignHeading>{category.title}</DesignHeading>
       <div className={classes.description}>
         <p className={classes.bodyText}>{category.body}</p>

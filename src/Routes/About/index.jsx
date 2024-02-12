@@ -10,7 +10,11 @@ export function About() {
   const location = useLocation();
   return (
     <div className="AboutMe">
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Beskrivelse av meg som fotograf og hvilke kvaliteter jeg verdsetter ved arbeidet mitt."
+        canonical={location.pathname}
+      />
       <PageSection
         outerClassName="AboutMe__Outer"
         innerClassName="AboutMe__Inner"

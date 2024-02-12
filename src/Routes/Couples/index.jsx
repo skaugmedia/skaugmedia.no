@@ -11,7 +11,11 @@ export function Couples() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester relatert til fotografi av kjærestepar, samboere eller ektepar. Alle former for par er velkomne."
+        canonical={location.pathname}
+      />
       <div className="Couples">
         <PageSection>
           <DesignHeading>Parfotografering</DesignHeading>

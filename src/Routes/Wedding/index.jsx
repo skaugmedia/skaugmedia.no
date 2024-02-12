@@ -22,7 +22,11 @@ export function Wedding() {
 
   const mainMenu = (
     <PageSection>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester relatert til bryllupsfotografi"
+        canonical={location.pathname}
+      />
       <div className="Wedding__PackageBoxRow">
         <div className="Wedding__PackageBox Wedding__PackageBox--Package1">
           <div className="Wedding__PackageBoxHeader">

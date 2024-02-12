@@ -11,7 +11,11 @@ export function Maternity() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester relatert til gravidfotografering"
+        canonical={location.pathname}
+      />
       <div className="Maternity">
         <PageSection>
           <DesignHeading>Gravidfotografering</DesignHeading>

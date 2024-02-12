@@ -35,7 +35,11 @@ export function GraphicalDesignProject() {
 
   return (
     <PageSection className="GraphicalDesignProject__Container">
-      <SkaugHelmet title={project.title} canonical={location.pathname} />
+      <SkaugHelmet
+        title={project.title}
+        description={`Grafisk design utført for ${project.title}`}
+        canonical={location.pathname}
+      />
       <GraphicalDesignHeading>{project.title}</GraphicalDesignHeading>
       <ImageGallery
         items={images}

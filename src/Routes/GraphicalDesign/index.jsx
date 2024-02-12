@@ -11,7 +11,11 @@ export function GraphicalDesign() {
 
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Grafiske designprosjekter"
+        canonical={location.pathname}
+      />
       <GalleryBrowser
         title={pageName}
         galleries={projects}

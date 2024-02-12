@@ -11,7 +11,11 @@ export function FirstYear() {
   const location = useLocation();
   return (
     <>
-      <SkaugHelmet title={pageName} canonical={location.pathname} />
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester relatert til fotografi av et barns første leveår"
+        canonical={location.pathname}
+      />
       <div className="FirstYear">
         <PageSection>
           <DesignHeading>Mitt første år fotografering</DesignHeading>
