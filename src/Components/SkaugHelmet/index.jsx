@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { mkTitle } from "../../utils";
 
 export function SkaugHelmet({ title, description, canonical, noIndex }) {
   const canonicalLink = canonical && (
@@ -11,9 +10,14 @@ export function SkaugHelmet({ title, description, canonical, noIndex }) {
   const desc = description && <meta name="description" content={description} />;
 
   return (
-    <Helmet>
+    <Helmet
+      prioritizeSeoTags
+      titleTemplate="%s - Skaug Media"
+      defaultTitle="Skaug Media"
+    >
+      <html lang="no" />
       {desc}
-      <title>{mkTitle(title)}</title>
+      <title>{title}</title>
       {canonicalLink}
       {noIndexEl}
     </Helmet>
