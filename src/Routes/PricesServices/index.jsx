@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
@@ -9,6 +9,7 @@ import WeddingRoute from "../Wedding/Route";
 import * as ids from "./Ids";
 import pageName from "./PageName";
 import "./Prices.css";
+import Route from "./Route";
 import ChildrenButton from "/src/Images/Prices/children_button.jpg";
 import ConfirmationButton from "/src/Images/Prices/confirmation_button.jpg";
 import FamilyButton from "/src/Images/Prices/family_button.jpg";
@@ -38,6 +39,11 @@ import WeddingPageName from "/src/Routes/Wedding/PageName";
 
 export function PricesServices() {
   const location = useLocation();
+
+  if (!location.pathname.endsWith(Route)) {
+    return <Outlet />;
+  }
+
   const refs = Object.entries(ids).reduce(
     (acc, [key, id]) => ({ ...acc, [key]: { ref: useRef(), id: id } }),
     {},

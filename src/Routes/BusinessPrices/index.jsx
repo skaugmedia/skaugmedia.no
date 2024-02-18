@@ -1,6 +1,6 @@
 import className from "classnames";
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { Checkmark } from "../../Components/Checkmark";
 import { GalleryBrowser } from "../../Components/GalleryBrowser";
 import DesignHeading from "../../Components/Headings/DesignHeading";
@@ -10,6 +10,7 @@ import { projects } from "../../Data/Business/GraphicalDesign";
 import GraphicalDesignRoute from "../GraphicalDesign/Route";
 import "./BusinessPrices.css";
 import pageName from "./PageName";
+import Route from "./Route";
 import { galleries as plainGalleries } from "/src/Data/Business/Galleries";
 import BusinessPricesText1Img from "/src/Images/Business/Pent_og_brukt/autumn_campaign_2.jpg";
 import BusinessPricesText2Img from "/src/Images/Business/Pent_og_brukt/business_pogb_sommer_05.jpg";
@@ -17,6 +18,11 @@ import BusinessPricesText3Img from "/src/Images/Business/Pent_og_brukt/business_
 
 export function BusinessPrices() {
   const location = useLocation();
+
+  if (!location.pathname.endsWith(Route)) {
+    return <Outlet />;
+  }
+
   const [showComparisonTable, setShowComparisonTable] = useState(false);
   const Check = () => (
     <Checkmark color="#3AC1C1" style={{ height: "24px" }}></Checkmark>

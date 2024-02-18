@@ -33,7 +33,6 @@ import GraphicalDesignPageName from "./Routes/GraphicalDesign/PageName";
 import GraphicalDesignRoute from "./Routes/GraphicalDesign/Route";
 import { GraphicalDesignProject } from "./Routes/GraphicalDesignProject";
 import GraphicalDesignProjectLoader from "./Routes/GraphicalDesignProject/Loader";
-import GraphicalDesignProjectRoute from "./Routes/GraphicalDesignProject/Route";
 import { Headshots } from "./Routes/Headshots";
 import HeadshotsPageName from "./Routes/Headshots/PageName";
 import HeadshotsRoute from "./Routes/Headshots/Route";
@@ -55,7 +54,6 @@ import PhotographyPageName from "./Routes/Photography/PageName";
 import PhotographyRoute from "./Routes/Photography/Route";
 import { PhotographyCategory } from "./Routes/PhotographyCategory";
 import PhotographyCategoryLoader from "./Routes/PhotographyCategory/Loader";
-import PhotographyCategoryRoute from "./Routes/PhotographyCategory/Route";
 import { PricesServices } from "./Routes/PricesServices";
 import PricesPageName from "./Routes/PricesServices/PageName";
 import PricesRoute from "./Routes/PricesServices/Route";
@@ -69,7 +67,6 @@ export const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     errorElement: <ErrorHandler />,
-    handle: {},
     children: [
       {
         children: [
@@ -94,99 +91,107 @@ export const router = createBrowserRouter([
             handle: { pageName: ContactPageName },
           },
           {
-            path: `${BusinessPricesRoute}/${GraphicalDesignRoute}`,
-            loader: GraphicalDesignLoader,
-            element: <GraphicalDesign />,
-            handle: { pageName: GraphicalDesignPageName },
-          },
-          {
-            path: `${BusinessPricesRoute}/${GraphicalDesignProjectRoute}`,
-            loader: GraphicalDesignProjectLoader,
-            element: <GraphicalDesignProject />,
-            handle: { pageName: (data) => data.title },
+            path: BusinessPricesRoute,
+            element: <BusinessPrices />,
+            handle: { pageName: BusinessPricesPageName },
+            children: [
+              {
+                path: GraphicalDesignRoute,
+                loader: GraphicalDesignLoader,
+                element: <GraphicalDesign />,
+                handle: { pageName: GraphicalDesignPageName },
+                children: [
+                  {
+                    path: ":projectId",
+                    loader: GraphicalDesignProjectLoader,
+                    element: <GraphicalDesignProject />,
+                    handle: { pageName: (data) => data.title },
+                  },
+                ],
+              },
+              {
+                path: ":categoryId",
+                loader: PhotographyCategoryLoader(true),
+                element: <PhotographyCategory />,
+                handle: { pageName: (data) => data.title },
+              },
+            ],
           },
           {
             path: PhotographyRoute,
             loader: PhotographyLoader,
             element: <Photography />,
             handle: { pageName: PhotographyPageName },
-          },
-          {
-            path: PhotographyCategoryRoute,
-            loader: PhotographyCategoryLoader(false),
-            element: <PhotographyCategory />,
-            handle: { pageName: (data) => data.title },
+            children: [
+              {
+                path: ":categoryId",
+                loader: PhotographyCategoryLoader(false),
+                element: <PhotographyCategory />,
+                handle: { pageName: (data) => data.title },
+              },
+            ],
           },
           {
             path: PricesRoute,
             element: <PricesServices />,
             handle: { pageName: PricesPageName },
-          },
-          {
-            path: `${PricesRoute}/${WeddingRoute}`,
-            element: <Wedding />,
-            handle: { pageName: WeddingPageName },
-          },
-          {
-            path: `${BusinessPricesRoute}/:categoryId`,
-            loader: PhotographyCategoryLoader(true),
-            element: <PhotographyCategory />,
-            handle: { pageName: (data) => data.title },
+            children: [
+              {
+                path: WeddingRoute,
+                element: <Wedding />,
+                handle: { pageName: WeddingPageName },
+              },
+              {
+                path: NewbornRoute,
+                element: <Newborn />,
+                handle: { pageName: NewbornPageName },
+              },
+              {
+                path: MaternityRoute,
+                element: <Maternity />,
+                handle: { pageName: MaternityPageName },
+              },
+              {
+                path: ChildrenRoute,
+                element: <Children />,
+                handle: { pageName: ChildrenPageName },
+              },
+              {
+                path: FirstYearRoute,
+                element: <FirstYear />,
+                handle: { pageName: FirstYearPageName },
+              },
+              {
+                path: ConfirmationRoute,
+                element: <Confirmation />,
+                handle: { pageName: ConfirmationPageName },
+              },
+              {
+                path: HeadshotsRoute,
+                element: <Headshots />,
+                handle: { pageName: HeadshotsPageName },
+              },
+              {
+                path: FamilyRoute,
+                element: <Family />,
+                handle: { pageName: FamilyPageName },
+              },
+              {
+                path: CouplesRoute,
+                element: <Couples />,
+                handle: { pageName: CouplesPageName },
+              },
+              {
+                path: PhotoProductsRoute,
+                element: <PhotoProducts />,
+                handle: { pageName: PhotoProductsPageName },
+              },
+            ],
           },
           {
             path: DiscountsRoute,
             element: <Discounts />,
             handle: { pageName: DiscountsPageName },
-          },
-          {
-            path: BusinessPricesRoute,
-            element: <BusinessPrices />,
-            handle: { pageName: BusinessPricesPageName },
-          },
-          {
-            path: `${PricesRoute}/${NewbornRoute}`,
-            element: <Newborn />,
-            handle: { pageName: NewbornPageName },
-          },
-          {
-            path: `${PricesRoute}/${MaternityRoute}`,
-            element: <Maternity />,
-            handle: { pageName: MaternityPageName },
-          },
-          {
-            path: `${PricesRoute}/${ChildrenRoute}`,
-            element: <Children />,
-            handle: { pageName: ChildrenPageName },
-          },
-          {
-            path: `${PricesRoute}/${FirstYearRoute}`,
-            element: <FirstYear />,
-            handle: { pageName: FirstYearPageName },
-          },
-          {
-            path: `${PricesRoute}/${ConfirmationRoute}`,
-            element: <Confirmation />,
-            handle: { pageName: ConfirmationPageName },
-          },
-          {
-            path: `${PricesRoute}/${HeadshotsRoute}`,
-            element: <Headshots />,
-            handle: { pageName: HeadshotsPageName },
-          },
-          {
-            path: `${PricesRoute}/${FamilyRoute}`,
-            element: <Family />,
-            handle: { pageName: FamilyPageName },
-          },
-          {
-            path: `${PricesRoute}/${CouplesRoute}`,
-            element: <Couples />,
-            handle: { pageName: CouplesPageName },
-          },
-          {
-            path: `${PricesRoute}/${PhotoProductsRoute}`,
-            element: <PhotoProducts />,
-            handle: { pageName: PhotoProductsPageName },
           },
         ],
       },
