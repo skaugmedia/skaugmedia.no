@@ -95,15 +95,15 @@ export function Maternity() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Online bildegalleri hvor dere velger bilder{" "}
+                Online bildegalleri hvor dere velger bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                10 høyoppløselige bildefiler{" "}
+                10 høyoppløselige bildefiler
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                15% ekstra rabatt på bildeprodukter{" "}
+                15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 4299,-</div>
@@ -129,7 +129,7 @@ export function Maternity() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Online bildegalleri hvor dere velger bilder{" "}
+                Online bildegalleri hvor dere velger bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -169,7 +169,7 @@ export function Maternity() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Online bildegalleri hvor dere velger bilder{" "}
+                Online bildegalleri hvor dere velger bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -216,12 +216,12 @@ export function Maternity() {
               minifotograferinger med dato i helg)
             </div>
             <div className="Prices__TextInfoHeader">
-              Ønsker du at jeg skal komme til deg?{" "}
+              Ønsker du at jeg skal komme til deg?
             </div>
             <div className="Prices__TextInfo">
               Jeg kommer gjerne til deg, men all kjøring utover 30km fra
               Jessheim, vil faktureres med kr. 10,- per km. I tillegg vil betalt
-              parkering under fotograferingen faktureres i sin helhet.{" "}
+              parkering under fotograferingen faktureres i sin helhet.
             </div>
           </div>
         </PageSection>

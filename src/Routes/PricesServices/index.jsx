@@ -189,12 +189,12 @@ export function PricesServices() {
             minifotograferinger med dato i helg)
           </div>
           <div className="Prices__TextIntroHeader">
-            Ønsker du at jeg skal komme til deg?{" "}
+            Ønsker du at jeg skal komme til deg?
           </div>
           <div className="Prices__TextIntro">
             Jeg kommer gjerne til deg, men all kjøring utover 30km fra Jessheim,
             vil faktureres med kr. 10,- per km. I tillegg vil betalt parkering
-            under fotograferingen faktureres i sin helhet.{" "}
+            under fotograferingen faktureres i sin helhet.
           </div>
         </div>
       </PageSection>

@@ -65,7 +65,7 @@ export function Discounts() {
                   Minifotografering - Mommy & me
                 </div>
                 <div className="Discounts__Text">
-                  Den perfekte morsdagsgave til alle mammaer i alle aldre!{" "}
+                  Den perfekte morsdagsgave til alle mammaer i alle aldre!
                   <br />
                   Gi det til din kjære fra barna deres, eller gi det til din 90
                   år gamle mamma - og ta henne med på fotografering.
@@ -167,7 +167,7 @@ export function Discounts() {
                   </p>
 
                   <p>
-                    Interessert eller har du spørsmål?{" "}
+                    Interessert eller har du spørsmål?
                     <div className="Discounts__TextImportant">
                       Send en mail til modell@skaugmedia.no
                     </div>

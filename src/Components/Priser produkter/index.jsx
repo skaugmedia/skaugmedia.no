@@ -183,31 +183,31 @@ export function Wedding() {
           }
           priceText1={
             <div className="ProductPriceSection__PriceText1">
-              panorama liten - 20 sider{" "}
+              panorama liten - 20 sider
             </div>
           }
           price1={<div className="ProductPriceSection__Price">Kr. 5000,-</div>}
           priceText2={
             <div className="ProductPriceSection__PriceText">
-              kvadratisk 20x20 cm - 20 sider{" "}
+              kvadratisk 20x20 cm - 20 sider
             </div>
           }
           price2={<div className="ProductPriceSection__Price">Kr. 7000,-</div>}
           priceText3={
             <div className="ProductPriceSection__PriceText">
-              kvadratisk 25x25 cm - 20 sider{" "}
+              kvadratisk 25x25 cm - 20 sider
             </div>
           }
           price3={<div className="ProductPriceSection__Price">Kr. 7700,-</div>}
           priceText4={
             <div className="ProductPriceSection__PriceText">
-              kvadratisk 30x30 cm - 20 sider{" "}
+              kvadratisk 30x30 cm - 20 sider
             </div>
           }
           price4={<div className="ProductPriceSection__Price">Kr. 8500,-</div>}
           priceText5={
             <div className="ProductPriceSection__PriceText">
-              panorama stor - 20 sider{" "}
+              panorama stor - 20 sider
             </div>
           }
           price5={<div className="ProductPriceSection__Price">Kr. 9000,-</div>}

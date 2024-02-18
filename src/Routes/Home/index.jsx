@@ -96,7 +96,7 @@ export function Home() {
         <div className="Home__IncludedSection">
           <div className="Home__IncludesText">
             Du kan booke kun fotografering, eller velge en pakkepris med
-            bildeprodukter inkludert{" "}
+            bildeprodukter inkludert
           </div>
           <div className="Home__IncludesSubtext">
             (unntak er bryllupsfotografering, mitt første år-fotografering og

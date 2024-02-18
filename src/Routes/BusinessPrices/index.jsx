@@ -291,7 +291,7 @@ export function BusinessPrices() {
 
               <div className="BusinessPrices__PackageBoxDivider"></div>
               <div className="BusinessPrices__PackageBigBoxListText">
-                Ingen bindingstid{" "}
+                Ingen bindingstid
               </div>
               <button
                 onClick={() => setMenu(null)}
@@ -407,7 +407,7 @@ export function BusinessPrices() {
 
               <div className="BusinessPrices__PackageBoxDivider"></div>
               <div className="BusinessPrices__PackageBigBoxListText">
-                Ingen bindingstid{" "}
+                Ingen bindingstid
               </div>
               <button
                 onClick={() => setMenu(null)}
@@ -509,7 +509,7 @@ export function BusinessPrices() {
 
               <div className="BusinessPrices__PackageBoxDivider"></div>
               <div className="BusinessPrices__PackageBigBoxListText">
-                35-50 bilder{" "}
+                35-50 bilder
               </div>
               <div className="BusinessPrices__PackageBoxDivider"></div>
               <div className="BusinessPrices__PackageBigBoxListText">
@@ -522,7 +522,7 @@ export function BusinessPrices() {
 
               <div className="BusinessPrices__PackageBoxDivider"></div>
               <div className="BusinessPrices__PackageBigBoxListText">
-                Ingen bindingstid{" "}
+                Ingen bindingstid
               </div>
               <button
                 onClick={() => setMenu(null)}

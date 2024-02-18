@@ -364,13 +364,13 @@ export function PhotoProducts() {
             price2={<div className="ProductPriceSection__Price">Kr. 800,-</div>}
             priceText3={
               <div className="ProductPriceSection__PriceText">
-                Fødselsplakat u/bilde 30x40 cm{" "}
+                Fødselsplakat u/bilde 30x40 cm
               </div>
             }
             price3={<div className="ProductPriceSection__Price">Kr. 850,-</div>}
             priceText4={
               <div className="ProductPriceSection__PriceText">
-                Fødselsplakat m/bilde 30x40 cm{" "}
+                Fødselsplakat m/bilde 30x40 cm
               </div>
             }
             price4={

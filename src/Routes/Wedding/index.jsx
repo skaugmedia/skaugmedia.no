@@ -46,11 +46,11 @@ export function Wedding() {
           <div className="Wedding__PackageBoxText">3 timer fotografering</div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
-            Ca. 50 stk. digitale bildefiler{" "}
+            Ca. 50 stk. digitale bildefiler
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
-            50% rabatt på forlovelsesfotografering{" "}
+            50% rabatt på forlovelsesfotografering
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxPrice">Kr. 16.000,-</div>
@@ -81,7 +81,7 @@ export function Wedding() {
           <div className="Wedding__PackageBoxText">5 timer fotografering</div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
-            Ca. 150 stk. digitale bildefiler{" "}
+            Ca. 150 stk. digitale bildefiler
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
@@ -117,7 +117,7 @@ export function Wedding() {
           <div className="Wedding__PackageBoxText">6 timer fotografering</div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
-            Ca. 170 stk. digitale bildefiler{" "}
+            Ca. 170 stk. digitale bildefiler
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">

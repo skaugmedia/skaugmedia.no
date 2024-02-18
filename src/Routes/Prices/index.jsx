@@ -105,7 +105,7 @@ export function Prices() {
           <div className="prices-offers-next-free-date-row">
             <div className="prices-offers-next-free-date-box">
               <div className="prices-offers-next-free-date">
-                {" "}
+                
                 Neste ledige dato: 30.11.2023
               </div>
             </div>
@@ -227,12 +227,12 @@ export function Prices() {
             helger)
           </div>
           <div className="Prices__TextIntroHeader">
-            Ønsker du at jeg skal komme til deg?{" "}
+            Ønsker du at jeg skal komme til deg?
           </div>
           <div className="Prices__TextIntro">
             Jeg kommer gjerne til deg, men all kjøring utover 30km fra Jessheim,
             vil faktureres med kr. 10,- per km. I tillegg vil betalt parkering
-            under fotograferingen vil faktureres i sin helhet.{" "}
+            under fotograferingen vil faktureres i sin helhet.
           </div>
         </div>
         {/* {miniSessionElements.length > 0 && (

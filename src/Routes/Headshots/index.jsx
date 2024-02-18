@@ -68,7 +68,7 @@ export function Headshots() {
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
               <div className="PhotoPrice__PackageBoxText">
-                Online bildegalleri hvor dere velger bilder{" "}
+                Online bildegalleri hvor dere velger bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -85,7 +85,7 @@ export function Headshots() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1300,-</div>
-            </div>{" "}
+            </div>
             <div className="PhotoPrice__ShootDivider"></div>
           </div>
           <div className="PhotoPrice__PackageBoxShoot">
@@ -130,12 +130,12 @@ export function Headshots() {
               minifotograferinger med dato i helg)
             </div>
             <div className="Prices__TextInfoHeader">
-              Ønsker du at jeg skal komme til deg?{" "}
+              Ønsker du at jeg skal komme til deg?
             </div>
             <div className="Prices__TextInfo">
               Jeg kommer gjerne til deg, men all kjøring utover 30km fra
               Jessheim, vil faktureres med kr. 10,- per km. I tillegg vil betalt
-              parkering under fotograferingen faktureres i sin helhet.{" "}
+              parkering under fotograferingen faktureres i sin helhet.
             </div>
           </div>
         </PageSection>
