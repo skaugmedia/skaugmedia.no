@@ -11,7 +11,6 @@ import pageName from "./PageName";
 import OneYear from "/src/Images/Discounts/1-year-photo.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
-import MiniShootMothersday from "/src/Images/Mommy&me/mom_IL_4.jpg";
 import MiniShootWinter from "/src/Images/Pregnant/preg_JA_1.jpg";
 import WeddingDiscount from "/src/Images/Wedding/weddingRT_14.jpg";
 import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
@@ -54,45 +53,45 @@ export function Discounts() {
             }
             link={`/${ContactRoute}`}
           /> */}
-        <PageSection>
-          <DiscountAd
-            imgSrc={MiniShootMothersday}
-            imgAlt="En mamma med hennes sønn i en solsikkeåker"
-            title="MORSDAGSTILBUD"
-            text={
-              <>
-                <div className="Discounts__FreePregnancyNextDate">
-                  Minifotografering - Mommy & me
-                </div>
-                <div className="Discounts__Text">
-                  Den perfekte morsdagsgave til alle mammaer i alle aldre!
-                  <br />
-                  Gi det til din kjære fra barna deres, eller gi det til din 90
-                  år gamle mamma - og ta henne med på fotografering.
-                  <br />
-                  <br />
-                  Hva får du ut av det? <br />
-                  ❤ Kvalitetstid mellom mor og barn <br />
-                  ❤ 20 minutter mommy & me fotografering <br />
-                  ❤ Online bildegallei hvor du velger bilder fra <br />
-                  ❤ 5 valgfrie digitale bildefiler <br />
-                  ❤ Fotografering på Jessheim i Ullensaker <br />
-                  ❤ Rabattkupong du kan bruke på neste fotografering
-                  <br />
-                  ❤ Verdens mest verdifulle morsdagsgave
-                  <br />
-                  <br /> Tilbudet gjelder for booking på hverdager i uke 8 og 9.
-                  <br />
-                  <br />
-                  <div className="Discounts__DiscountTextImportant">
-                    KUN KR. 1350,-
-                  </div>
-                </div>
-              </>
-            }
-            link={`/${ContactRoute}`}
-          />
-        </PageSection>
+        {/* <PageSection> */}
+        {/*   <DiscountAd */}
+        {/*     imgSrc={MiniShootMothersday} */}
+        {/*     imgAlt="En mamma med hennes sønn i en solsikkeåker" */}
+        {/*     title="MORSDAGSTILBUD" */}
+        {/*     text={ */}
+        {/*       <> */}
+        {/*         <div className="Discounts__FreePregnancyNextDate"> */}
+        {/*           Minifotografering - Mommy & me */}
+        {/*         </div> */}
+        {/*         <div className="Discounts__Text"> */}
+        {/*           Den perfekte morsdagsgave til alle mammaer i alle aldre! */}
+        {/*           <br /> */}
+        {/*           Gi det til din kjære fra barna deres, eller gi det til din 90 */}
+        {/*           år gamle mamma - og ta henne med på fotografering. */}
+        {/*           <br /> */}
+        {/*           <br /> */}
+        {/*           Hva får du ut av det? <br /> */}
+        {/*           ❤ Kvalitetstid mellom mor og barn <br /> */}
+        {/*           ❤ 20 minutter mommy & me fotografering <br /> */}
+        {/*           ❤ Online bildegallei hvor du velger bilder fra <br /> */}
+        {/*           ❤ 5 valgfrie digitale bildefiler <br /> */}
+        {/*           ❤ Fotografering på Jessheim i Ullensaker <br /> */}
+        {/*           ❤ Rabattkupong du kan bruke på neste fotografering */}
+        {/*           <br /> */}
+        {/*           ❤ Verdens mest verdifulle morsdagsgave */}
+        {/*           <br /> */}
+        {/*           <br /> Tilbudet gjelder for booking på hverdager i uke 8 og 9. */}
+        {/*           <br /> */}
+        {/*           <br /> */}
+        {/*           <div className="Discounts__DiscountTextImportant"> */}
+        {/*             KUN KR. 1350,- */}
+        {/*           </div> */}
+        {/*         </div> */}
+        {/*       </> */}
+        {/*     } */}
+        {/*     link={`/${ContactRoute}`} */}
+        {/*   /> */}
+        {/* </PageSection> */}
 
         <PageSection>
           <DiscountAd
