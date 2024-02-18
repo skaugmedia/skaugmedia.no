@@ -33,7 +33,7 @@ export function PhotographyCategory() {
     <PageSection>
       <SkaugHelmet
         title={category.title}
-        description={`Samling av ${category.title.toLowerCase()} bilder`}
+        description={`Samling av ${category.title?.toLowerCase()} bilder`}
         canonical={location.pathname}
       />
       <DesignHeading>{category.title}</DesignHeading>
