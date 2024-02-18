@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { ActionButton } from "../../Components/ActionButton";
 import { PageSection } from "../../Components/PageSection";
 import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
@@ -6,7 +6,6 @@ import { PortfolioCard } from "../../Components/PortfolioCard";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
-import DiscountHeaderImg from "../../Images/Discounts/discount.png";
 import PhotographerImg from "../../Images/Home/ninaskaug.jpg";
 import freePregnancyShoot from "../../Images/Prices/free_pregnant_shoot.jpg";
 import cover from "../../Images/coverphoto.jpg";
@@ -27,35 +26,35 @@ export function Home() {
         description="Skaug Media, foto og grafisk design"
         canonical={location.pathname}
       />
-      <div
-        className="Home__DiscountHeader"
-        style={{ backgroundImage: `url(${DiscountHeaderImg})` }}
-      >
-        <div className="Home__DiscountHeaderBox">
-          <div className="Home__DiscountHeaderTextBox">
-            <div className="Home__DiscountHeaderHeader">MORSDAGSTILBUD</div>
-            <div className="Home__DiscountHeaderSubHeader">
-              Minifotografering - mommy & me
-            </div>
-
-            <div className="Home__DiscountHeaderText">
-              Den perfekte morsdagsgave til alle mammaer i alle aldre! <br />
-              Gi det til din kjære fra barna deres, eller gi det til din 90 år
-              gamle mamma - og ta henne med på fotografering.
-              <br />
-              <br />
-              <div className="Home__DiscountPrice">KUN KR. 1350,-</div>
-              <br />
-            </div>
-            <NavLink
-              to={`/${DiscountRoute}`}
-              className="Home__DiscountHeaderButton"
-            >
-              Les mer
-            </NavLink>
-          </div>
-        </div>
-      </div>
+      {/* <div */}
+      {/*   className="Home__DiscountHeader" */}
+      {/*   style={{ backgroundImage: `url(${DiscountHeaderImg})` }} */}
+      {/* > */}
+      {/*   <div className="Home__DiscountHeaderBox"> */}
+      {/*     <div className="Home__DiscountHeaderTextBox"> */}
+      {/*       <div className="Home__DiscountHeaderHeader">MORSDAGSTILBUD</div> */}
+      {/*       <div className="Home__DiscountHeaderSubHeader"> */}
+      {/*         Minifotografering - mommy & me */}
+      {/*       </div> */}
+      {/**/}
+      {/*       <div className="Home__DiscountHeaderText"> */}
+      {/*         Den perfekte morsdagsgave til alle mammaer i alle aldre! <br /> */}
+      {/*         Gi det til din kjære fra barna deres, eller gi det til din 90 år */}
+      {/*         gamle mamma - og ta henne med på fotografering. */}
+      {/*         <br /> */}
+      {/*         <br /> */}
+      {/*         <div className="Home__DiscountPrice">KUN KR. 1350,-</div> */}
+      {/*         <br /> */}
+      {/*       </div> */}
+      {/*       <NavLink */}
+      {/*         to={`/${DiscountRoute}`} */}
+      {/*         className="Home__DiscountHeaderButton" */}
+      {/*       > */}
+      {/*         Les mer */}
+      {/*       </NavLink> */}
+      {/*     </div> */}
+      {/*   </div> */}
+      {/* </div> */}
 
       <div
         className="top-cover-img"
