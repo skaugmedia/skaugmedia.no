@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Button from "../../Components/Button";
 import DesignHeading from "../../Components/Headings/DesignHeading";
@@ -19,10 +18,6 @@ export function Contact() {
   const isInvalidPhone = queries.has("invalid:phone");
   const isInvalidEmail = queries.has("invalid:email");
   const isInvalidMessage = queries.has("invalid:message");
-  const isInvalidToken = queries.has("invaid:token");
-  const isTokenExpiredOrDuplicate = queries.has(
-    "invalid:token-expired-or-duplicate",
-  );
   const resultMessage = (() => {
     switch (true) {
       case isSent:
@@ -35,22 +30,11 @@ export function Contact() {
         return "Ugyldig e-postadresse.";
       case isErr && isInvalidMessage:
         return "Ugyldig meldingstekst.";
-      case isErr && isInvalidToken:
-        return "Ugyldig ReCaptcha. Vennligst gjennomfør ReCaptcha.";
-      case isErr && isTokenExpiredOrDuplicate:
-        return "ReCaptcha utløp, eller har allerede blitt brukt. Vennligst gjennomfør ReCaptcha på nytt.";
       default:
         return "En ukjent feil oppstod. Meldingen ble ikke sendt.";
     }
   })();
   const showResults = isSent || isErr;
-
-  const reCaptcha = useRef();
-  useEffect(() => {
-    try {
-      window.grecaptcha.render(reCaptcha.current);
-    } catch (e) {}
-  });
 
   const results = showResults ? (
     <div
@@ -127,12 +111,6 @@ export function Contact() {
               area={true}
               minLength={3}
               required
-            />
-
-            <div
-              ref={reCaptcha}
-              className="g-recaptcha"
-              data-sitekey={import.meta.env.VITE_RECAPTCHA_KEY}
             />
 
             <input

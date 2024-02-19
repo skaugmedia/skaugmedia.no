@@ -1,14 +1,9 @@
 <?php
 
-// Should contain the secret "RECAPTCHA_KEY", which is the server-side ReCaptcha
-// secret used to verify the ReCaptcha token passed from the frontend.
-require_once 'secrets.php';
-
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-$token = $_POST['g-recaptcha-response'];
 $callback = $_POST['callback'];
 
 $method = 'POST';
@@ -79,46 +74,6 @@ function isInvalidInputResponse($codes) {
 	return hasCode('invalid-input-response', $codes);
 }
 
-function verifyToken($RECAPTCHA_KEY, $ip, $token) {
-	$body = http_build_query([
-		'secret' => $RECAPTCHA_KEY,
-		'response' => $token,
-		'remoteip' => $ip,
-	]);
-	$headers = [
-		'Content-Type' => 'application/x-www-form-urlencoded',
-		'Content-Length' => strlen($body),
-	];
-	$result = request(
-		'GET',
-		'https://www.google.com/recaptcha/api/siteverify',
-		$headers,
-		$body
-	);
-	if (!is_string($result) || $result === '') {
-		throw new CodedError('internal:token-verification:request-failed', 'Request failed when verifying token');
-	}
-	$response = json_decode($result, true);
-
-	if (!$response['success']) {
-		$errorCodes = $response['error-codes'];
-		if (isInvalidInputResponse($errorCodes)) {
-			throw new CodedError('invalid:token', 'ReCaptcha token is invalid');
-		}
-		if (isTimeoutOrDuplicate($errorCodes)) {
-			throw new CodedError('invalid:token-expired-or-duplicate', 'ReCaptcha token has expired or is a duplicate');
-		}
-		$codes = implode(", ", $response['error-codes']);
-		throw new CodedError('internal:token-verification:unknown', "Token verification failed: $codes");
-	}
-
-	if (!str_ends_with($response['hostname'], 'skaugmedia.no')) {
-		throw new CodedError('invalid:token-for-different-domain', "Token meant for different domain: {$response['hostname']}");
-	}
-
-	return $response;
-}
-
 function sendMail($vars) {
 	$name = $vars['name'];
 	$email = $vars['email'];
@@ -143,7 +98,6 @@ try {
 	assertValidName($name);
 	assertValidPhone($phone);
 	assertValidMessage($message);
-	verifyToken($RECAPTCHA_KEY, $_SERVER['REMOTE_ADDR'], $token);
 	sendMail([
 		"name" => $name,
 		"phone" => $phone,
