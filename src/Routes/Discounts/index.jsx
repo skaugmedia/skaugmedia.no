@@ -8,6 +8,7 @@ import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import "./Discounts.css";
 import pageName from "./PageName";
+import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
 import OneYear from "/src/Images/Discounts/1-year-photo.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
@@ -91,29 +92,47 @@ export function Discounts() {
         {/*   /> */}
         {/* </PageSection> */}
 
-        {/* <PageSection>
+        <PageSection>
           <DiscountAd
-            imgSrc={MiniShootWinter}
-            imgAlt="En gravid kvinne ute i snøstorm"
-            title="Minifotografering på Jessheim i vinterferien"
+            imgSrc={MinishootConfirmation}
+            imgAlt="En nydelig konfirmant utendørs i regnet med paraply"
+            title="Minifotografering av konfirmanter"
             text={
               <>
+                <div className="Discounts__FreePregnancyNextDate">
+                  Fredag 03. mai 2024
+                </div>
                 <div className="Discounts__Text">
-                  ❤ 20 minutter valgfri fotografering
+                  Nå går det fort frem til vår og konfirmasjonstid! Jeg ønsker å
+                  sette opp en dato for minifotografering av konfirmanter.
                   <br />
-                  ❤ Online bildegalleri hvor du velger bilder <br />
-                  ❤ 5 valgfrie digitale bildefiler
+                  Om det er mange som booker, og det er interesse for en ekstra
+                  dag, setter jeg opp en dag til.
                   <br />
                   <br />
-                  Ta kontakt for mer informasjon og booking.
+                  <div className="Discounts__DiscountTextImportant">
+                    Hva inkluderer det?
+                  </div>
+                  -20 minutter konfirmant-fotografering, med mulighet for noen
+                  familiebilder
                   <br />
-                  kontakt@skaugmedia.no
+                  - 5 valgfrie digitale bildefiler
+                  <br />
+                  - Fotografering utendørs på Jessheim <br />
+                  - Online bildegalleri hvor du velger bilder <br />
+                  - Rabattkupong til bruk på neste fotografering
+                  <br />
+                  <br />
+                  <div className="Discounts__DiscountTextImportant">
+                    Kun kr. 1499,-
+                    <br />
+                  </div>
                 </div>
               </>
             }
             link={`/${ContactRoute}`}
           />
-        </PageSection> */}
+        </PageSection>
 
         {/* <PageSection> */}
         {/*   <DiscountAd */}
