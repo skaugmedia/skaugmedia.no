@@ -11,7 +11,6 @@ import pageName from "./PageName";
 import OneYear from "/src/Images/Discounts/1-year-photo.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import NewbornDiscount from "/src/Images/FastRabattNewborn.jpg";
-import MiniShootWinter from "/src/Images/Pregnant/preg_JA_1.jpg";
 import TenPercent from "/src/Images/konfirmant_silje_forside.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 
@@ -92,7 +91,7 @@ export function Discounts() {
         {/*   /> */}
         {/* </PageSection> */}
 
-        <PageSection>
+        {/* <PageSection>
           <DiscountAd
             imgSrc={MiniShootWinter}
             imgAlt="En gravid kvinne ute i snøstorm"
@@ -114,7 +113,7 @@ export function Discounts() {
             }
             link={`/${ContactRoute}`}
           />
-        </PageSection>
+        </PageSection> */}
 
         {/* <PageSection> */}
         {/*   <DiscountAd */}
@@ -211,6 +210,7 @@ export function Discounts() {
                       "20 minutters fotografering utendørs",
                       "Fotografering med partner og tidligere barn",
                       "Mulighet for å leie gravidkjole for kr. 200,-",
+
                       "Online bildegalleri hvor du velger dine bilder",
                       "1 digital bildefil i høy oppløsning",
                       "Mulighet for å kjøpe flere bilder, og bildeprodukter",
