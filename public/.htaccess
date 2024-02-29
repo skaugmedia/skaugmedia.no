@@ -11,3 +11,52 @@
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule . /index.html [L]
 </IfModule>
+
+
+<IfModule mod_headers.c>
+	# Force HTTPS
+	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+	# Allow the browser to only load resources from the same origin
+	Header always set Content-Security-Policy "default-src 'self'; font-src *;img-src * data:; script-src *; style-src *;"
+
+	# Prevent XSS attacks
+	Header always set X-XSS-Protection "1; mode=block"
+
+	# Prevent Clickjacking
+	Header always set X-Frame-Options "SAMEORIGIN"
+
+	# Prevent MIME type sniffing
+	Header always set X-Content-Type-Options "nosniff"
+
+	# Prevent the browser from sending referrer information
+	Header always set Referrer-Policy "strict-origin"
+
+	# Set required permissions policy
+	Header always set Permissions-Policy "geolocation=(),midi=(),sync-xhr=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()"
+</IfModule>
+
+<IfModule mod_expires.c>
+	# enable the directives - assuming they're not enabled globally
+	ExpiresActive on
+	ExpiresDefault "access plus 1 month"
+
+	# send an Expires: header for each of these mimetypes (as defined by server)
+	ExpiresByType image/svg+xml "access plus 1 month"
+	ExpiresByType image/png "access plus 1 month"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+
+	# css may change a bit sometimes, so define shorter expiration
+	ExpiresByType text/css "access plus 7 days"
+	ExpiresByType application/javascript "access plus 7 days"
+
+	AddType image/webp .webp
+	ExpiresByType image/webp "access plus 1 month"
+
+	# special MIME type for icons - see http://www.iana.org/assignments/media-types/image/vnd.microsoft.icon
+	AddType image/vnd.microsoft.icon .ico
+	# now we have icon MIME type, we can use it
+	# my favicon doesn't change much
+	ExpiresByType image/vnd.microsoft.icon "access plus 3 months"
+</IfModule>
