@@ -113,11 +113,7 @@ export function Contact() {
               required
             />
 
-            <input
-              type="hidden"
-              name="callback"
-              value="https://www.skaugmedia.no/kontakt"
-            />
+            <input type="hidden" name="callback" value="/kontakt" />
 
             <Button className="Contact__SubmitButton" type="submit">
               Send
