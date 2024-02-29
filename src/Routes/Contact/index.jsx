@@ -116,7 +116,7 @@ export function Contact() {
             <input
               type="hidden"
               name="callback"
-              value="https://www.ninaskaug.no/kontakt"
+              value="https://www.skaugmedia.no/kontakt"
             />
 
             <Button className="Contact__SubmitButton" type="submit">
