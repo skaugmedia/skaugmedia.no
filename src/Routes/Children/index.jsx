@@ -18,7 +18,7 @@ export function Children() {
       />
       <div className="Children">
         <PageSection>
-          <DesignHeading>Barnefotografering</DesignHeading>
+          <DesignHeading h1>Barnefotografering</DesignHeading>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">

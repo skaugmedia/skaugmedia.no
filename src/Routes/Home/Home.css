@@ -273,8 +273,9 @@
   text-align: left;
   max-width: var(--content-width);
   justify-content: left;
-
+  margin-top: 0;
   margin-bottom: -20px;
+  text-transform: uppercase;
 }
 
 .cover-text {

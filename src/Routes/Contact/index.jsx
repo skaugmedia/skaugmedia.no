@@ -65,7 +65,7 @@ export function Contact() {
         </div>
         <div className="Contact__FormBox">
           <form className="Contact__Form" action="/send_mail.php" method="POST">
-            <DesignHeading className="Contact__Heading">
+            <DesignHeading h1 className="Contact__Heading">
               {pageName}
             </DesignHeading>
             <div className="Contact__Text">

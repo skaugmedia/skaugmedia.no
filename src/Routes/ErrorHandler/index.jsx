@@ -11,8 +11,7 @@ export function ErrorHandler() {
 
   return (
     <PageSection>
-      <SkaugHelmet title="Ukjent feil" canonical="/feil" />
-      <meta name="robots" content="noindex" />
+      <SkaugHelmet title="Ukjent feil" canonical="/feil" noIndex />
       <h1>En ukjent feil oppstod!</h1>
       <p>En ukjent feil har oppstått.</p>
       <NavLink to="/">Gå tilbake</NavLink>

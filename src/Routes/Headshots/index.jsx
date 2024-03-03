@@ -18,7 +18,7 @@ export function Headshots() {
       />
       <div className="Headshots">
         <PageSection>
-          <DesignHeading>
+          <DesignHeading h1>
             Portretter / Headshots / CV-foto / Profilbilde
           </DesignHeading>
         </PageSection>

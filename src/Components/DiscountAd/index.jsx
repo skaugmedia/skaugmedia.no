@@ -13,7 +13,7 @@ export function DiscountAd({
   return (
     <div className={classNames("DiscountAd", outerClassName)}>
       <div className="DiscountAd__Textbox">
-        <div className="DiscountAd__Header">{title}</div>
+        <h2 className="DiscountAd__Header">{title}</h2>
         {text}
         <ActionButton to={link}>Book her</ActionButton>
       </div>

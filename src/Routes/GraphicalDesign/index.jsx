@@ -21,6 +21,7 @@ export function GraphicalDesign() {
         canonical={location.pathname}
       />
       <GalleryBrowser
+        h1
         title={pageName}
         galleries={projects}
         viewItem={(p) => (

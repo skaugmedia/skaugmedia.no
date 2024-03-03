@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import React from "react";
 import "./Gallery.css";
 
 export function Gallery({
@@ -7,6 +8,7 @@ export function Gallery({
   hideNumImages,
   className,
   title,
+  h3,
 }) {
   const count = (() => {
     if (hideNumImages) {
@@ -23,7 +25,11 @@ export function Gallery({
   return (
     <div className={classNames("Gallery", className)}>
       <img className="Gallery__Image" src={img.url} alt={img.title}></img>
-      <h3 className="Gallery__Title">{title}</h3>
+      {React.createElement(
+        h3 ? "h3" : "h2",
+        { className: "Gallery__Title" },
+        title,
+      )}
       {count}
     </div>
   );

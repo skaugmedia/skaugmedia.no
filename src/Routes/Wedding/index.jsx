@@ -22,11 +22,6 @@ export function Wedding() {
 
   const mainMenu = (
     <PageSection>
-      <SkaugHelmet
-        title={pageName}
-        description="Produkter og tjenester relatert til bryllupsfotografi"
-        canonical={location.pathname}
-      />
       <div className="Wedding__PackageBoxRow">
         <div className="Wedding__PackageBox Wedding__PackageBox--Package1">
           <div className="Wedding__PackageBoxHeader">
@@ -422,9 +417,14 @@ export function Wedding() {
 
   return (
     <>
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester relatert til bryllupsfotografi"
+        canonical={location.pathname}
+      />
       <PageSection innerClassName="wedding">
         <div className="prices-content">
-          <DesignHeading className="prices-heading Wedding__PageHeading">
+          <DesignHeading h1 className="prices-heading Wedding__PageHeading">
             {pageName}
           </DesignHeading>
         </div>

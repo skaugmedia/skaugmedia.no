@@ -18,7 +18,7 @@ export function Confirmation() {
       />
       <div className="Confirmation">
         <PageSection>
-          <DesignHeading>Konfirmantfotografering</DesignHeading>
+          <DesignHeading h1>Konfirmantfotografering</DesignHeading>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">

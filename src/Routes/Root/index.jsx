@@ -27,7 +27,6 @@ export function Root() {
   return (
     <HelmetProvider>
       <Helmet>
-        prettier-ignore
         <script type="application/ld+json">
           {`{
             "@context": "https://schema.org",

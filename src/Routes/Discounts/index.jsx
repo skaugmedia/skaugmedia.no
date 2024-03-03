@@ -26,7 +26,7 @@ export function Discounts() {
       />
       <div className="Discounts">
         <PageSection>
-          <DesignHeading>Tilbud</DesignHeading>
+          <DesignHeading h1>Tilbud</DesignHeading>
         </PageSection>
         {/* <PageSection>
           <DiscountAd
@@ -246,7 +246,7 @@ export function Discounts() {
           />
         </PageSection>
         <PageSection>
-          <div className="Discounts__RegularDiscounts">Faste rabatter</div>
+          <h2 className="Discounts__RegularDiscounts">Faste rabatter</h2>
 
           <div className="Discounts__RegularDiscountsRow">
             <FixedDiscount

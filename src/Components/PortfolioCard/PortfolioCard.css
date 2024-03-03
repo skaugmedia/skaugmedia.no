@@ -39,6 +39,8 @@
   font-size: 140%;
   transition: text-shadow 0.1s;
   position: relative;
+  margin: 0;
+  font-weight: normal;
 }
 
 .PortfolioCard:hover .PortfolioCard__Image {

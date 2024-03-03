@@ -288,6 +288,7 @@
 .BusinessPrices__ContentSubHeader {
   font-weight: 500;
   text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .BusinessPrices__ContentElementsText {

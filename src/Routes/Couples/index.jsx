@@ -18,7 +18,7 @@ export function Couples() {
       />
       <div className="Couples">
         <PageSection>
-          <DesignHeading>Parfotografering</DesignHeading>
+          <DesignHeading h1>Parfotografering</DesignHeading>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">

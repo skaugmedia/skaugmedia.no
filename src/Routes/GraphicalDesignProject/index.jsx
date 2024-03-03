@@ -40,7 +40,7 @@ export function GraphicalDesignProject() {
         description={`Grafisk design utført for ${project.title}`}
         canonical={location.pathname}
       />
-      <GraphicalDesignHeading>{project.title}</GraphicalDesignHeading>
+      <GraphicalDesignHeading h1>{project.title}</GraphicalDesignHeading>
       <ImageGallery
         items={images}
         showThumbnails={false}

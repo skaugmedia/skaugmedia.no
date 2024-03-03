@@ -19,7 +19,7 @@ export function About() {
         outerClassName="AboutMe__Outer"
         innerClassName="AboutMe__Inner"
       >
-        <DesignHeading>Om meg</DesignHeading>
+        <DesignHeading h1>Om meg</DesignHeading>
         <div className="AboutMe__Box">
           <div className="AboutMe__Text">
             <p>

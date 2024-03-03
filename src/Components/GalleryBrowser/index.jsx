@@ -4,16 +4,22 @@ import DesignHeading from "../Headings/DesignHeading";
 import { PageSection } from "../PageSection";
 import "./GalleryBrowser.css";
 
-export function GalleryBrowser({ title, galleries, hideNumImages, viewItem }) {
+export function GalleryBrowser({
+  title,
+  h1,
+  galleries,
+  hideNumImages,
+  viewItem,
+}) {
   const ItemViewer = (() => {
     if (viewItem) {
       return viewItem;
     }
-    return (props) => <Gallery hideNumImages={hideNumImages} {...props} />;
+    return (props) => <Gallery h3 hideNumImages={hideNumImages} {...props} />;
   })();
   return (
     <PageSection className="GalleryBrowser">
-      <DesignHeading>{title}</DesignHeading>
+      <DesignHeading h1={h1}>{title}</DesignHeading>
       <div className="GalleryBrowser__Galleries">
         {galleries.map((gallery) => (
           <NavLink
@@ -21,7 +27,7 @@ export function GalleryBrowser({ title, galleries, hideNumImages, viewItem }) {
             to={gallery.id}
             key={gallery.id}
           >
-            <ItemViewer {...gallery} />
+            <ItemViewer h3={!h1} {...gallery} />
           </NavLink>
         ))}
       </div>

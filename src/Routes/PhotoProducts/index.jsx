@@ -24,7 +24,7 @@ export function PhotoProducts() {
       />
       <div className="PhotoProducts">
         <PageSection>
-          <DesignHeading>Prisliste bildeprodukter</DesignHeading>
+          <DesignHeading h1>Prisliste bildeprodukter</DesignHeading>
         </PageSection>
         <PageSection>
           <p className="PhotoPrice__TopContentText">

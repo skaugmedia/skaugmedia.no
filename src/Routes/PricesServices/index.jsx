@@ -127,11 +127,13 @@ export function PricesServices() {
         canonical={location.pathname}
       />
       <PageSection innerClassName="prices">
-        <DesignHeading className="prices-heading">{pageName}</DesignHeading>
+        <DesignHeading h1 className="prices-heading">
+          {pageName}
+        </DesignHeading>
       </PageSection>
 
       <PageSection innerClassName="Prices__Section">
-        <div className="Prices__Header">Gavekort</div>
+        <h2 className="Prices__Header">Gavekort</h2>
         <div className="Prices__Text">
           Hos meg kan du kjøpe gaven til den som har alt- nemlig et gavekort!
           Perfekt for den kommende mammaen, besteforeldre som ønsker bilder av

@@ -17,7 +17,7 @@ export function Photography() {
         description="Oversikt over kategorier med fotografi"
         canonical={location.pathname}
       />
-      <GalleryBrowser title={pageName} galleries={categories} />
+      <GalleryBrowser h1 title={pageName} galleries={categories} />
     </>
   );
 }

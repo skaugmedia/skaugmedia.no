@@ -36,7 +36,7 @@ export function PhotographyCategory() {
         description={`Samling av ${category.title?.toLowerCase()} bilder`}
         canonical={location.pathname}
       />
-      <DesignHeading>{category.title}</DesignHeading>
+      <DesignHeading h1>{category.title}</DesignHeading>
       <div className={classes.description}>
         <p className={classes.bodyText}>{category.body}</p>
         <div className={classes.listing}>

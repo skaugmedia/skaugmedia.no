@@ -18,7 +18,7 @@ export function Newborn() {
       />
       <div className="Newborn">
         <PageSection>
-          <DesignHeading>Nyfødtfotografering</DesignHeading>
+          <DesignHeading h1>Nyfødtfotografering</DesignHeading>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">

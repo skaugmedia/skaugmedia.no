@@ -41,11 +41,6 @@ export function BusinessPrices() {
 
   const mainMenu = (
     <PageSection>
-      <SkaugHelmet
-        title={pageName}
-        description="Produkter og tjenester for bedrifter og næringsliv"
-        canonical={location.pathname}
-      />
       <div className="BusinessPrices__PackageBoxRow">
         <div className="BusinessPrices__PackageBox1">
           <div className="BusinessPrices__PackageBoxHeader">Social-pakken</div>
@@ -564,11 +559,16 @@ export function BusinessPrices() {
   })();
   return (
     <>
+      <SkaugHelmet
+        title={pageName}
+        description="Produkter og tjenester for bedrifter og næringsliv"
+        canonical={location.pathname}
+      />
       <PageSection
         outerClassName="BusinessPrices__Outer"
         innerClassName="BusinessPrices__Inner"
       >
-        <DesignHeading>Bedrifter og næringsliv</DesignHeading>
+        <DesignHeading h1>Bedrifter og næringsliv</DesignHeading>
       </PageSection>
       <PageSection>
         <p className="BusinessPrices__TopContentText">
@@ -592,9 +592,9 @@ export function BusinessPrices() {
         <div className="BusinessPrices__ContentBoxList">
           <div className="BusinessPrices__ContentHeaderListBox">
             <div className="BusinessPrices__ContentElementsBox">
-              <div className="BusinessPrices__ContentSubHeader">
+              <h2 className="BusinessPrices__ContentSubHeader">
                 Sosiale medier veiledning
-              </div>
+              </h2>
               <p className="BusinessPrices__ContentElementsText">
                 Jeg tilbyr skreddersydde veiledningstjenester for bedrifter som
                 ønsker å utnytte sosiale medier for økt vekst og
@@ -606,9 +606,9 @@ export function BusinessPrices() {
                 Kontakt meg i dag for å lære mer!
               </p>
 
-              <div className="BusinessPrices__ContentSubHeader">
+              <h2 className="BusinessPrices__ContentSubHeader">
                 Utvikling av en visuell identitet
-              </div>
+              </h2>
               <p className="BusinessPrices__ContentElementsText">
                 Grafisk design er avgjørende for å formidle profesjonalitet,
                 originalitet og uimotståelig appell for bedrifter. Hvert
@@ -619,9 +619,7 @@ export function BusinessPrices() {
                 branding og visuell identitet. Sammen kan vi skape en grafisk
                 reise som beriker deres merkevare.
               </p>
-              <div className="BusinessPrices__ContentSubHeader">
-                Logo-design
-              </div>
+              <h2 className="BusinessPrices__ContentSubHeader">Logo-design</h2>
               <p className="BusinessPrices__ContentElementsText">
                 For bedrifter som søker en rask etablering av en visuell
                 identitet, spiller logoen en sentral rolle i den unike reisen
@@ -635,7 +633,7 @@ export function BusinessPrices() {
                 fange dette øyeblikket som formidler essensen av deres merkevare
                 og gir dere en tydelig identitet.
               </p>
-              <div className="BusinessPrices__ContentSubHeader">UX-design</div>
+              <h2 className="BusinessPrices__ContentSubHeader">UX-design</h2>
               <p className="BusinessPrices__ContentElementsText">
                 UX-design gir bedrifter muligheten til å forme en uimotståelig
                 brukeropplevelse som uttrykker deres essens. Enten det er
@@ -646,9 +644,9 @@ export function BusinessPrices() {
                 reise. Sammen kan vi berike deres digitale plattformer med
                 brukervennlighet og appell.
               </p>
-              <div className="BusinessPrices__ContentSubHeader">
+              <h2 className="BusinessPrices__ContentSubHeader">
                 Produktfotografering
-              </div>
+              </h2>
               <p className="BusinessPrices__ContentElementsText">
                 Produktfotografering for bedrifter og næringsliv er avgjørende
                 for å formidle skjønnheten og funksjonaliteten av produkter,
@@ -656,18 +654,18 @@ export function BusinessPrices() {
                 definerer produktene og merkevaren, enten det er detaljer, stil
                 eller unike egenskaper.
               </p>
-              <div className="BusinessPrices__ContentSubHeader">
+              <h2 className="BusinessPrices__ContentSubHeader">
                 Matfotografering
-              </div>
+              </h2>
               <p className="BusinessPrices__ContentElementsText">
                 Matfotografering for bedrifter i matbransjen handler om å fange
                 hjertevarme øyeblikk som formidler skjønnheten og smaken av
                 kulinariske kreasjoner, med mål om å formidle kvalitet og
                 uimotståelig appell i hvert bilde.
               </p>
-              <div className="BusinessPrices__ContentSubHeader">
+              <h2 className="BusinessPrices__ContentSubHeader">
                 Barnehagefotografering
-              </div>
+              </h2>
               <p className="BusinessPrices__ContentElementsText">
                 Barnehagefotografering fanger smilene og minnene som utgjør
                 barnehagens hverdag, formidler glede, vennskap og uforglemmelige
@@ -675,9 +673,9 @@ export function BusinessPrices() {
                 miljøbilder, hvert bilde har sin egen betydning og formidler
                 barnehagens fellesskap og identitet.
               </p>
-              <div className="BusinessPrices__ContentSubHeader">
+              <h2 className="BusinessPrices__ContentSubHeader">
                 Bedriftsportretter
-              </div>
+              </h2>
               <p className="BusinessPrices__ContentElementsText">
                 Portrettfotografering for bedrifter og næringsliv er avgjørende
                 for å formidle personlighet og profesjonalitet i teamet, skape

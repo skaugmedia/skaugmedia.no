@@ -18,7 +18,7 @@ export function FirstYear() {
       />
       <div className="FirstYear">
         <PageSection>
-          <DesignHeading>Mitt første år fotografering</DesignHeading>
+          <DesignHeading h1>Mitt første år fotografering</DesignHeading>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">

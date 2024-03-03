@@ -18,7 +18,7 @@ export function Maternity() {
       />
       <div className="Maternity">
         <PageSection>
-          <DesignHeading>Gravidfotografering</DesignHeading>
+          <DesignHeading h1>Gravidfotografering</DesignHeading>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">

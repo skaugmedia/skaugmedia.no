@@ -95,7 +95,9 @@ export function Prices() {
         canonical={location.pathname}
       />
       <div className="prices-content">
-        <DesignHeading className="prices-heading">{pageName}</DesignHeading>
+        <DesignHeading h1 className="prices-heading">
+          {pageName}
+        </DesignHeading>
 
         {/* /* <div className="prices-offers-box">
           <div className="category-title-offers">
@@ -105,7 +107,7 @@ export function Prices() {
           <div className="prices-offers-next-free-date-row">
             <div className="prices-offers-next-free-date-box">
               <div className="prices-offers-next-free-date">
-                
+
                 Neste ledige dato: 30.11.2023
               </div>
             </div>

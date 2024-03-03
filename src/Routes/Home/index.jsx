@@ -62,7 +62,7 @@ export function Home() {
         alt="Familiefotografering"
       >
         <div className="top-cover-text-box">
-          <div className="cover-headertext">SKAUG MEDIA</div>
+          <h1 className="cover-headertext">Skaug Media</h1>
           <div className="cover-text">
             Fotograf og grafisk designer på Jessheim
           </div>
