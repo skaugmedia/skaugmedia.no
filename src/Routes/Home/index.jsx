@@ -1,10 +1,9 @@
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { ActionButton } from "../../Components/ActionButton";
 import { PageSection } from "../../Components/PageSection";
 import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
 import { PortfolioCard } from "../../Components/PortfolioCard";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
-import { FreePregnancyDate } from "../../Data/FreePregnancyDate";
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
 import PhotographerImg from "../../Images/Home/ninaskaug.jpg";
 import freePregnancyShoot from "../../Images/Prices/free_pregnant_shoot.jpg";
@@ -14,11 +13,49 @@ import quotepng from "../../Images/quote_icon.png";
 import "./Home.css";
 import pageName from "./PageName";
 import { portfolio } from "./portfolio";
+import { freePregnancyDate } from "/src/Data/FreePregnancyDate";
+import { discountPosts } from "/src/Data/discountPosts";
+import DiscountHeaderImg from "/src/Images/Discounts/discount.png";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 export function Home() {
   const location = useLocation();
+
+  const discountWithBanner = discountPosts.filter((d) => d.banner)[0];
+  const discountEl = (
+    <div
+      className="Home__DiscountHeader"
+      style={{ backgroundImage: `url(${DiscountHeaderImg})` }}
+    >
+      <div className="Home__DiscountHeaderBox">
+        {((discount) => {
+          const linkId = discount.banner.button.linkId
+            ? `#${discount.banner.button.linkId}`
+            : "";
+          const link = `${discount.banner.button.link}${linkId}`;
+          return (
+            <div
+              className="Home__DiscountHeaderTextBox"
+              key={`${discount.title}${discount.button.link}`}
+            >
+              <div className="Home__DiscountHeaderHeader">{discount.title}</div>
+              <div className="Home__DiscountHeaderSubHeader">
+                {discount.banner.subTitle}
+              </div>
+
+              <div className="Home__DiscountHeaderText">
+                {discount.banner.description}
+              </div>
+              <NavLink to={link} className="Home__DiscountHeaderButton">
+                {discount.banner.button.text ?? "Les mer"}
+              </NavLink>
+            </div>
+          );
+        })(discountWithBanner)}
+      </div>
+    </div>
+  );
   return (
     <>
       <SkaugHelmet
@@ -26,36 +63,7 @@ export function Home() {
         description="Skaug Media, foto og grafisk design"
         canonical={location.pathname}
       />
-      {/* <div */}
-      {/*   className="Home__DiscountHeader" */}
-      {/*   style={{ backgroundImage: `url(${DiscountHeaderImg})` }} */}
-      {/* > */}
-      {/*   <div className="Home__DiscountHeaderBox"> */}
-      {/*     <div className="Home__DiscountHeaderTextBox"> */}
-      {/*       <div className="Home__DiscountHeaderHeader">MORSDAGSTILBUD</div> */}
-      {/*       <div className="Home__DiscountHeaderSubHeader"> */}
-      {/*         Minifotografering - mommy & me */}
-      {/*       </div> */}
-      {/**/}
-      {/*       <div className="Home__DiscountHeaderText"> */}
-      {/*         Den perfekte morsdagsgave til alle mammaer i alle aldre! <br /> */}
-      {/*         Gi det til din kjære fra barna deres, eller gi det til din 90 år */}
-      {/*         gamle mamma - og ta henne med på fotografering. */}
-      {/*         <br /> */}
-      {/*         <br /> */}
-      {/*         <div className="Home__DiscountPrice">KUN KR. 1350,-</div> */}
-      {/*         <br /> */}
-      {/*       </div> */}
-      {/*       <NavLink */}
-      {/*         to={`/${DiscountRoute}`} */}
-      {/*         className="Home__DiscountHeaderButton" */}
-      {/*       > */}
-      {/*         Les mer */}
-      {/*       </NavLink> */}
-      {/*     </div> */}
-      {/*   </div> */}
-      {/* </div> */}
-
+      {discountWithBanner && discountEl}
       <div
         className="top-cover-img"
         style={{ backgroundImage: `url(${cover})` }}
@@ -115,7 +123,7 @@ export function Home() {
               GRATIS MINIFOTOGRAFERING AV GRAVIDE
             </div>
             <div className="free-pregnancy-next-date">
-              Neste ledige dato: {FreePregnancyDate}
+              Neste ledige dato: {freePregnancyDate.nextDate}
             </div>
             <div className="free-pregnancy-text">
               Hver måned setter jeg av en dato der jeg tilbyr GRATIS utendørs
