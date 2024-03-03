@@ -61,7 +61,7 @@ export function Home() {
     <>
       <SkaugHelmet
         title={pageName}
-        description="Skaug Media, foto og grafisk design"
+        description="Skaug Media, fotograf og grafisk designer på Jessheim og omegn"
         canonical={location.pathname}
       />
       {discountWithBanner && discountEl}
