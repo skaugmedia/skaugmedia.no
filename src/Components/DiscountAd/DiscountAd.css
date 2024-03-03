@@ -10,7 +10,7 @@
 
 .DiscountAd__Img {
   width: 50%;
-  height: 100%;
+  align-self: stretch;
 }
 
 .DiscountAd__Textbox {

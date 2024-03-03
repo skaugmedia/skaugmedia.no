@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { ActionButton } from "../ActionButton";
+import { Image } from "../Image";
 import "./DiscountAd.css";
 
 export function DiscountAd({
@@ -17,7 +18,7 @@ export function DiscountAd({
         {text}
         <ActionButton to={link}>Book her</ActionButton>
       </div>
-      <img className="DiscountAd__Img" src={imgSrc} alt={imgAlt}></img>
+      <Image className="DiscountAd__Img" src={imgSrc} alt={imgAlt} />
     </div>
   );
 }
