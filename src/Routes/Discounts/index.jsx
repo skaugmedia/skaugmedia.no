@@ -28,7 +28,7 @@ export function Discounts() {
           {discountPosts.map((discount) => (
             <DiscountAd
               key={`${discount.title}${discount.button.link}`}
-              id={discount.banner?.button.linkId}
+              id={discount.id}
               imgSrc={discount.img.src}
               imgAlt={discount.img.alt}
               title={discount.title}

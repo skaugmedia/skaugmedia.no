@@ -6,6 +6,8 @@ import { isWithinRange, localTime, maxDateMs } from "/src/utils";
 const dates = ["06.03.2024", "10.04.2024", "30.04.2024"];
 // --------------------------
 
+export const freePregnancyId = "gratis-gravidfotografering";
+
 const rawDates = dates.sort(
   (a, b) =>
     localTime(`${a} 00:00`).valueOf() - localTime(`${b} 00:00`).valueOf(),

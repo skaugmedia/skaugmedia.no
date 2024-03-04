@@ -1,15 +1,15 @@
 import { localTime } from "../utils";
-import { freePregnancyDate } from "./FreePregnancyDate";
+import { freePregnancyDate, freePregnancyId } from "./FreePregnancyDate";
 import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
-import MiniShootMothersday from "/src/Images/Prices/mommyandme_photography.jpg";
 import ChristmasDiscount from "/src/Images/christmas_minishoot.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
   {
+    id: "konfirmant",
     title: "Minifotografering av konfirmanter",
     img: {
       src: MinishootConfirmation,
@@ -28,7 +28,6 @@ const rawDiscountPosts = [
       ),
       button: {
         link: `/${DiscountRoute}`,
-        linkId: "konfirmant",
       },
     },
     description: (
@@ -69,68 +68,6 @@ const rawDiscountPosts = [
     },
   },
   {
-    title: "MORSDAGSTILBUD",
-    banner: {
-      subTitle: "Minifotografering - mommy & me",
-      description: (
-        <>
-          Den perfekte morsdagsgave til alle mammaer i alle aldre! <br />
-          Gi det til din kjære fra barna deres, eller gi det til din 90 år gamle
-          mamma - og ta henne med på fotografering.
-          <br />
-          <br />
-          <div className="Home__DiscountPrice">KUN KR. 1350,-</div>
-          <br />
-        </>
-      ),
-      button: {
-        text: "Les mer",
-        link: `/${DiscountRoute}`,
-        linkId: "morsdagstilbud",
-      },
-    },
-    img: {
-      src: MiniShootMothersday,
-      alt: "En mamma med hennes sønn i en solsikkeåker",
-    },
-    description: (
-      <>
-        <div className="Discounts__FreePregnancyNextDate">
-          Minifotografering - Mommy & me
-        </div>
-        <div className="Discounts__Text">
-          Den perfekte morsdagsgave til alle mammaer i alle aldre!
-          <br />
-          Gi det til din kjære fra barna deres, eller gi det til din 90 år gamle
-          mamma - og ta henne med på fotografering.
-          <br />
-          <br />
-          Hva får du ut av det? <br />
-          ❤ Kvalitetstid mellom mor og barn <br />
-          ❤ 20 minutter mommy & me fotografering <br />
-          ❤ Online bildegallei hvor du velger bilder fra <br />
-          ❤ 5 valgfrie digitale bildefiler <br />
-          ❤ Fotografering på Jessheim i Ullensaker <br />
-          ❤ Rabattkupong du kan bruke på neste fotografering
-          <br />
-          ❤ Verdens mest verdifulle morsdagsgave
-          <br />
-          <br /> Tilbudet gjelder for booking på hverdager i uke 8 og 9.
-          <br />
-          <br />
-          <div className="Discounts__DiscountTextImportant">KUN KR. 1350,-</div>
-        </div>
-      </>
-    ),
-    valid: {
-      to: localTime("03.03.2024 00:00"),
-    },
-    button: {
-      text: "Book her",
-      link: `/${ContactRoute}`,
-    },
-  },
-  {
     img: {
       src: ChristmasDiscount,
       alt: "En baby i blomstereng",
@@ -162,53 +99,12 @@ const rawDiscountPosts = [
     },
   },
   {
-    img: {
-      src: MiniShootMothersday,
-      alt: "En mamma med hennes sønn i en solsikkeåker",
-    },
-    title: "MORSDAGSTILBUD",
-    description: (
-      <>
-        <div className="Discounts__FreePregnancyNextDate">
-          Minifotografering - Mommy & me
-        </div>
-        <div className="Discounts__Text">
-          Den perfekte morsdagsgave til alle mammaer i alle aldre!
-          <br />
-          Gi det til din kjære fra barna deres, eller gi det til din 90 år gamle
-          mamma - og ta henne med på fotografering.
-          <br />
-          <br />
-          Hva får du ut av det? <br />
-          ❤ Kvalitetstid mellom mor og barn <br />
-          ❤ 20 minutter mommy & me fotografering <br />
-          ❤ Online bildegallei hvor du velger bilder fra <br />
-          ❤ 5 valgfrie digitale bildefiler <br />
-          ❤ Fotografering på Jessheim i Ullensaker <br />
-          ❤ Rabattkupong du kan bruke på neste fotografering
-          <br />
-          ❤ Verdens mest verdifulle morsdagsgave
-          <br />
-          <br /> Tilbudet gjelder for booking på hverdager i uke 8 og 9.
-          <br />
-          <br />
-          <div className="Discounts__DiscountTextImportant">KUN KR. 1350,-</div>
-        </div>
-      </>
-    ),
-    valid: {
-      to: localTime("03.03.2024 00:00"),
-    },
-    button: {
-      link: `/${ContactRoute}`,
-    },
-  },
-  {
+    id: freePregnancyId,
+    title: "Gratis minifotografering av gravide - Hver måned",
     img: {
       src: PregnancyFree,
       alt: "En gravid kvinne",
     },
-    title: "Gratis minifotografering av gravide - Hver måned",
     description: (
       <>
         <div className="Discounts__FreePregnancyNextDate">

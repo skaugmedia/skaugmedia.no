@@ -13,7 +13,10 @@ import quotepng from "../../Images/quote_icon.png";
 import "./Home.css";
 import pageName from "./PageName";
 import { portfolio } from "./portfolio";
-import { freePregnancyDate } from "/src/Data/FreePregnancyDate";
+import {
+  freePregnancyDate,
+  freePregnancyId,
+} from "/src/Data/FreePregnancyDate";
 import { discountPosts } from "/src/Data/discountPosts";
 import DiscountHeaderImg from "/src/Images/Discounts/discount.png";
 import ContactRoute from "/src/Routes/Contact/Route";
@@ -30,9 +33,7 @@ export function Home() {
     >
       <div className="Home__DiscountHeaderBox">
         {((discount) => {
-          const linkId = discount.banner.button.linkId
-            ? `#${discount.banner.button.linkId}`
-            : "";
+          const linkId = discount.id ? `#${discount.id}` : "";
           const link = `${discount.banner.button.link}${linkId}`;
           return (
             <div
@@ -133,7 +134,9 @@ export function Home() {
               <br />
               Det er begrenset med kapasitet, så book tidlig!
             </div>
-            <ActionButton to={DiscountRoute}>Les mer her</ActionButton>
+            <ActionButton to={`${DiscountRoute}#${freePregnancyId}`}>
+              Les mer her
+            </ActionButton>
           </div>
           <img
             className="free-pregnancy-img"
