@@ -3,11 +3,58 @@ import { freePregnancyDate, freePregnancyId } from "./FreePregnancyDate";
 import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
+import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
 import ChristmasDiscount from "/src/Images/christmas_minishoot.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
+  {
+    id: "vaartilbud",
+    title: "Vårtilbud",
+    img: {
+      src: SpringDiscount,
+      alt: "Nydelig bukett med tulipaner",
+    },
+    banner: {
+      subTitle: "20% rabatt på alle ordinære fotograferinger",
+      description: (
+        <>
+          Det er endelig vår i luften, og jeg vil feire det med et vårtilbud!
+          20% rabatt på alle ordinære fotograferinger.
+          <br />
+          <br />
+          *Tilbudet gjelder bookinger innen 24.03.2024.
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          Det er endelig vår i luften, og jeg vil feire det med et vårtilbud!
+          20% rabatt på alle ordinære fotograferinger. Ja, du leste riktig,
+          tilbudet gjelder også bryllupsfotograferinger.
+          <br />
+          <br />
+          *Tilbudet gjelder ikke minifotograferinger eller pakkepriser, kun
+          ordinær fotografering. Gjelder datoer innen utgangen av april. Må
+          bookes innen 24.03.2024.
+          <br />
+          <br />
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("09.03.2024 00:00"),
+      to: localTime("25.03.2024 00:00"),
+    },
+    button: {
+      link: `/${ContactRoute}`,
+    },
+  },
   {
     id: "konfirmant",
     title: "Minifotografering av konfirmanter",
