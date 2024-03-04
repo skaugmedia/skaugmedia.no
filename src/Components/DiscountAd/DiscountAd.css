@@ -67,6 +67,7 @@
   .DiscountAd__Img {
     width: 100%;
     margin-top: -20px;
+    min-height: 400px;
   }
 
   .DiscountAd__Textbox {
