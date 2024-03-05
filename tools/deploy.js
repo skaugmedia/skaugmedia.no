@@ -1,7 +1,7 @@
 import * as ftp from "basic-ftp";
 import dotenv from "dotenv";
 import { readdir, stat } from "fs/promises";
-import { stdin as input, stdout as output, cwd } from "node:process";
+import { cwd, stdin as input, stdout as output } from "node:process";
 import * as readline from "node:readline/promises";
 import { basename, join } from "path";
 
@@ -94,7 +94,7 @@ const colorReset = "\u001b[0m";
       const wasUploaded = await uploadIfNotMatched(
         client,
         `${sourceDir}/assets/${fileName}`,
-        remoteFiles
+        remoteFiles,
       );
       if (wasUploaded) {
         assetsCount += 1;
@@ -116,6 +116,7 @@ const colorReset = "\u001b[0m";
   } catch (e) {
     console.error(`\n${colorRed}❌ Failed${colorReset}`);
     console.error(e);
+    throw e;
   } finally {
     client.close();
     rl.close();
