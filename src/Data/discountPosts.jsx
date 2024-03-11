@@ -52,7 +52,7 @@ const rawDiscountPosts = [
       to: localTime("25.03.2024 00:00"),
     },
     button: {
-      link: `/${ContactRoute}`,
+      link: `${ContactRoute}`,
     },
   },
   {
@@ -111,7 +111,7 @@ const rawDiscountPosts = [
       to: localTime("04.05.2024 00:00"),
     },
     button: {
-      link: `/${ContactRoute}`,
+      link: `https://skaugmedia.pixieset.com/booking/minifotografering-av-konfirmanter`,
     },
   },
   {
