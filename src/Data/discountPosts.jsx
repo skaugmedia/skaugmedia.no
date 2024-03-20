@@ -52,7 +52,7 @@ const rawDiscountPosts = [
       to: localTime("25.03.2024 00:00"),
     },
     button: {
-      link: `${ContactRoute}`,
+      link: `/${ContactRoute}`,
     },
   },
   {
