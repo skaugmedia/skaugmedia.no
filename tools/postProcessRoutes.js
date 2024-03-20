@@ -95,10 +95,22 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
   const photoPages = getSubPages(photoDir);
   const businessGalleryPages = getSubPages(businessGalleriesDir);
   const businessGraphicalDesignPages = getSubPages(businessGraphicalDesignDir);
+  const pricePages = [
+    "bryllup",
+    "nyfodt",
+    "gravid",
+    "barn",
+    "forstear",
+    "headshots",
+    "konfirmant",
+    "bildeprodukter",
+    "familie",
+  ];
   const subPageMap = {
     fotografi: photoPages,
     "bedrift-og-naeringsliv": businessGalleryPages,
     "bedrift-og-naeringsliv/grafiskdesign": businessGraphicalDesignPages,
+    priser: pricePages,
   };
   const routes = await getRoutes(subPageMap);
 

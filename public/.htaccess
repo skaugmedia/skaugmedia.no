@@ -5,8 +5,7 @@
 	RewriteEngine On
 	RewriteBase /
 	RewriteRule ^index\.html$ - [L]
-	# START-OF-WHITELIST
-	# END-OF-WHITELIST
+	# WHITELIST-HERE
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule . /index.html [L]

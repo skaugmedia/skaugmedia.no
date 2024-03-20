@@ -3,24 +3,8 @@ import * as fs from "fs";
 import { cwd } from "node:process";
 
 const outDir = `${cwd()}/dist`;
+const sourceFile = `${cwd()}/public/.htaccess`;
 const htaccess = `${outDir}/.htaccess`;
-
-const preamble = `
-<IfModule mod_negotiation.c>
-  Options -MultiViews
-</IfModule>
-<IfModule mod_rewrite.c>
-	RewriteEngine On
-	RewriteBase /
-	RewriteRule ^index\.html$ - [L]
-`;
-
-const postamble = `
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule . /index.html [L]
-</IfModule>
-`;
 
 const pre = stripIndent`
     # ignore actual files and directories
@@ -44,10 +28,13 @@ const indent = (c, s) =>
     .map((s) => `${c}${s}`)
     .join("\n");
 
+const source = fs.readFileSync(sourceFile, "utf8");
+
 export const updateApacheWhitelist = (routes) => {
   const entries = mkEntries(routes);
   const middle = indent("\t", `${pre}\n${entries}\n${denyOthers}`);
-  const newFile = `${preamble}\n${middle}\n${postamble}`;
+
+  const newFile = source.replace(/# WHITELIST-HERE/, middle);
   fs.writeFileSync(htaccess, newFile);
   console.log("Whitelist generated");
 };
