@@ -1,5 +1,5 @@
 <IfModule mod_negotiation.c>
-  Options -MultiViews
+	Options -MultiViews
 </IfModule>
 <IfModule mod_rewrite.c>
 	RewriteEngine On
@@ -17,7 +17,7 @@
 	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 
 	# Allow the browser to only load resources from the same origin
-	Header always set Content-Security-Policy "default-src 'self'; font-src *;img-src * data:; script-src *; style-src *;"
+	Header always set Content-Security-Policy "default-src 'self'; font-src *;img-src * data:; script-src * 'unsafe-inline'; style-src *;"
 
 	# Prevent XSS attacks
 	Header always set X-XSS-Protection "1; mode=block"
