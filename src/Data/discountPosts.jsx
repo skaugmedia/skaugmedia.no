@@ -4,11 +4,76 @@ import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
+import SpringMinisession from "/src/Images/Discounts/valgfri_minifotografering.jpg";
 import ChristmasDiscount from "/src/Images/christmas_minishoot.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
+  {
+    id: "valgfri-minifotografering-20-04-24",
+    title: "Valgfri minifotografering",
+    img: {
+      src: SpringMinisession,
+      alt: "Mor som holder hvitveis mot gravidmagen sin",
+    },
+    banner: {
+      subTitle: "20. april 2024",
+      description: (
+        <>
+          Våren nærmer seg med stormskritt, og hva er vel en bedre måte å ønske
+          den velkommen på enn med en herlig utendørs minifotografering?
+          <br />
+          <br />
+          Du velger selv hva slags fotografering du ønsker å booke, enten det er
+          familiefotografering eller parfotografering.
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          Våren nærmer seg med stormskritt, og hva er vel en bedre måte å ønske
+          den velkommen på enn med en herlig utendørs minifotografering? Lørdag
+          20. april arrangerer jeg minifotograferinger, og jeg kunne ikke vært
+          mer begeistret for å fange de spesielle øyeblikkene dine i det vakre
+          vårværet!
+          <br />
+          <br />
+          Enten du drømmer om nyfødtbilder utendørs, gravidfotografering,
+          familiefotografering, 1-års fotografering, mommy & me-fotografering,
+          konfirmantfotografering, parfotografering, portretter av deg selv
+          eller en kombinasjon, så er dette en perfekt mulighet!
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">
+            Hva inkluderer det?
+          </div>
+          -20 minutter valgfri fotografering
+          <br />
+          - 5 valgfrie digitale bildefiler
+          <br />
+          - Fotografering utendørs på Jessheim <br />
+          - Online bildegalleri hvor du velger bilder <br />
+          - Rabattkupong til bruk på neste fotografering
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">Kun kr. 1499,-</div>
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("04.04.2024 00:00"),
+      to: localTime("21.04.2024 00:00"),
+    },
+    button: {
+      link: `https://skaugmedia.pixieset.com/booking/valgfri-minifotografering-20-april-2024`,
+    },
+  },
+
   {
     id: "vaartilbud",
     title: "Vårtilbud",
