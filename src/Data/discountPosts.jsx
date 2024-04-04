@@ -2,6 +2,7 @@ import { localTime } from "../utils";
 import { freePregnancyDate, freePregnancyId } from "./FreePregnancyDate";
 import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
+import BirthdayDiscount from "/src/Images/Discounts/bursdagstilbud.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
 import SpringMinisession from "/src/Images/Discounts/valgfri_minifotografering.jpg";
@@ -10,6 +11,66 @@ import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
+  {
+    id: "bursdagstilbud",
+    title: "BURSDAGSTILBUD",
+    img: {
+      src: BirthdayDiscount,
+      alt: "Ballonger",
+    },
+    banner: {
+      subTitle: "Eksklusiv rabatt ved booking",
+      description: (
+        <>
+          Denne helgen har jeg bursdag, jeg ønsker derfor å gi dere et supert
+          bursdagstilbud! Selv om jeg har bedt mine nærmeste om å ikke gi meg
+          gaver i år, vil jeg at du skal vite at jeg har en gave til deg: et
+          eksklusivt tilbud på ordinære fotograferinger!
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          Denne helgen har jeg bursdag, jeg ønsker derfor å gi dere et supert
+          bursdagstilbud! Selv om jeg har bedt mine nærmeste om å ikke gi meg
+          gaver i år, vil jeg at du skal vite at jeg har en gave til deg: et
+          eksklusivt tilbud på ordinære fotograferinger!
+          <br />
+          <br />
+          Enten du drømmer om å fange spesielle øyeblikk med en
+          familiefotografering, portrett, konfirmantfotografering eller et annet
+          minneverdig øyeblikk, er dette den perfekte muligheten til å gjøre det
+          til virkelighet!
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">
+            Alle som booker en ordinær foografering disse dagene vil få alle de
+            følgende fordelene:
+          </div>
+          - 15% rabatt på alle ordinære fotograferinger
+          <br />
+          - 10% rabatt på alle bildeprodukter i etterkant av fotograferingen
+          <br />
+          - 1 stk. bildetrykk på fotopapir i størrelsen 20x30cm <br />
+          <br />
+          *Tilbudet gjelder ikke minifotograferinger eller pakkepriser, kun
+          ordinære fotograferinger. Gjelder t.o.m 16. april 2024
+          <br />
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("12.04.2024 00:00"),
+      to: localTime("17.04.2024 00:00"),
+    },
+    button: {
+      link: `/${ContactRoute}`,
+    },
+  },
   {
     id: "valgfri-minifotografering-20-04-24",
     title: "Valgfri minifotografering",
