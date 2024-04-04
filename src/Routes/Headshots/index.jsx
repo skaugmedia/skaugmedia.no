@@ -66,6 +66,10 @@ export function Headshots() {
               </div>
 
               <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningtime 1-3 uker etter fotografering, om du ønsker dette
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
 
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -93,7 +97,8 @@ export function Headshots() {
               PORTRETTFOTOGRAFERING
             </div>
             <div className="PhotoPrice__PackageBoxSubHeading">
-              opptil 1 time fotografering, med 10% rabatt på alle bildeprodukter
+              opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+              etter fotograferingen
             </div>
             <div className="PhotoPrice__PackageBoxDivider"></div>
             <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>

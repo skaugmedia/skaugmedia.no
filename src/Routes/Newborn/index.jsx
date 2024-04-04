@@ -60,8 +60,8 @@ export function Newborn() {
                 NYFØDTFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                opptil 3 timer fotografering, med 10% rabatt på alle
-                bildeprodukter
+                opptil 3 timer fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1899,-</div>
@@ -83,6 +83,10 @@ export function Newborn() {
               <div className="PhotoPrice__PackageBoxText">
                 2-3 timer fotografering hjemme hos dere eller på valgfri
                 lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -114,6 +118,10 @@ export function Newborn() {
               <div className="PhotoPrice__PackageBoxText">
                 2-3 timer fotografering hjemme hos dere eller på valgfri
                 lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -153,6 +161,10 @@ export function Newborn() {
               <div className="PhotoPrice__PackageBoxText">
                 2-3 timer fotografering hjemme hos dere eller på valgfri
                 lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">

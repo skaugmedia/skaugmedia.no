@@ -195,6 +195,10 @@ export function Wedding() {
             <div className="Wedding__PackageBigBoxListText">
               Ca. 50 stk. digitale bildefiler
             </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              Visningstime 1-3 uker etter levering av bildene
+            </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
               Online bildegalleri hvor dere kan laste ned bildene
@@ -282,6 +286,10 @@ export function Wedding() {
             <div className="Wedding__PackageBigBoxListText">
               Ca. 150 stk. digitale bildefiler
             </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              Visningstime 1-3 uker etter levering av bildene
+            </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
               Online bildegalleri hvor dere kan laste ned bildene
@@ -367,6 +375,10 @@ export function Wedding() {
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
               Ca. 170 stk. digitale bildefiler
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              Visningstime 1-3 uker etter levering av bildene
             </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
@@ -583,6 +595,18 @@ export function Wedding() {
               <td>50% rabatt på forlovelsesfotografering</td>
               <td>Fotografering + 5 digitale bildefiler</td>
               <td>Fotografering + 5 digitale bildefiler</td>
+            </tr>
+            <tr>
+              <th>Visningstime etter levering av bildene</th>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
             </tr>
             <tr>
               <th>Mulighet for å kjøpe bildeprodukter</th>

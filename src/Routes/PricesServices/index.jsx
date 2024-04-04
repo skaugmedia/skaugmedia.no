@@ -161,8 +161,9 @@ export function PricesServices() {
             Ønsker du kun å booke fotografering?
           </div>
           <div className="Prices__TextIntro">
-            Du kan velge å booke kun fotografering, eller du kan velge en
-            pakkepris med fotografering og bildeprodukter inkludert.
+            Du kan velge å booke kun fotografering inkludert en visningstime i
+            etterkant av fotograferingen, eller du kan velge en pakkepris med
+            fotografering og bildeprodukter inkludert.
           </div>
           <div className="Prices__TextIntroHeader">
             Ønsker du å booke en minifotografering?

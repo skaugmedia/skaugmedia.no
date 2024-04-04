@@ -55,8 +55,8 @@ export function Confirmation() {
                 KONFIRMANTFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                opptil 1 time fotografering, med 10% rabatt på alle
-                bildeprodukter
+                opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>
@@ -89,7 +89,10 @@ export function Confirmation() {
               <div className="PhotoPrice__PackageBoxText">
                 1 time portrettfotografering på valgfri lokasjon
               </div>
-
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -115,6 +118,10 @@ export function Confirmation() {
               </div>
               <div className="PhotoPrice__PackageBoxText">
                 1 time portrettfotografering på valgfri lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
@@ -143,7 +150,10 @@ export function Confirmation() {
               <div className="PhotoPrice__PackageBoxText">
                 1 time portrettfotografering på valgfri lokasjon
               </div>
-
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder

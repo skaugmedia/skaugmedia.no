@@ -17,6 +17,14 @@ export function ProductPriceSection({
   price4,
   priceText5,
   price5,
+  priceText6,
+  price6,
+  priceText7,
+  price7,
+  priceText8,
+  price8,
+  priceText9,
+  price9,
   reverse,
 
   outerClassName,
@@ -47,6 +55,10 @@ export function ProductPriceSection({
               <div className="ProductPriceSection__PriceText">{priceText3}</div>
               <div className="ProductPriceSection__PriceText">{priceText4}</div>
               <div className="ProductPriceSection__PriceText">{priceText5}</div>
+              <div className="ProductPriceSection__PriceText">{priceText6}</div>
+              <div className="ProductPriceSection__PriceText">{priceText7}</div>
+              <div className="ProductPriceSection__PriceText">{priceText8}</div>
+              <div className="ProductPriceSection__PriceText">{priceText9}</div>
             </div>
 
             <div className="ProductPriceSection__ContentPrice">
@@ -55,6 +67,10 @@ export function ProductPriceSection({
               <div className="ProductPriceSection__Price">{price3}</div>
               <div className="ProductPriceSection__Price">{price4}</div>
               <div className="ProductPriceSection__Price">{price5}</div>
+              <div className="ProductPriceSection__Price">{price6}</div>
+              <div className="ProductPriceSection__Price">{price7}</div>
+              <div className="ProductPriceSection__Price">{price8}</div>
+              <div className="ProductPriceSection__Price">{price9}</div>
             </div>
           </div>
         </div>

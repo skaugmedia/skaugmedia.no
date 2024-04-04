@@ -51,46 +51,170 @@ export function PhotoProducts() {
             reverse={true}
             imgSrc={PhotoProductImg}
             imgAlt="En bildekopi i ramme av en konfirmant"
-            title="Bildekopier"
+            title="Bildekopi på fotopapir"
             text={
               <div className="ProductPriceSection__Text">
                 Gi liv til de best dyrebare øyeblikkene med bildekopier av høy
                 kvalitet. Min leverandør trykker hver enkelt bilde med
-                presisjon, og kvalitetssjekker bildet før de sendes avgårde.
-                Disse løse bildene er perfekte å ramme inn å gi bort i gave til
-                den som har alt!
+                presisjon, og kvalitetssjekker bildet før de sendes avgårde til
+                meg, før jeg igjen sjekker at alt ser riktig ut. Disse løse
+                bildene er perfekte å ramme inn å gi bort i gave til den som har
+                alt!
               </div>
             }
             priceText1={
               <div className="ProductPriceSection__PriceText1">
+                Bildekopi 14x18cm
+              </div>
+            }
+            price1={
+              <div className="ProductPriceSection__Price">fra Kr. 299,-</div>
+            }
+            priceText2={
+              <div className="ProductPriceSection__PriceText1">
                 Bildekopi 15x20cm
               </div>
             }
-            price1={<div className="ProductPriceSection__Price">Kr. 500,-</div>}
-            priceText2={
+            price2={
+              <div className="ProductPriceSection__Price">fra Kr. 389,-</div>
+            }
+            priceText3={
+              <div className="ProductPriceSection__PriceText1">
+                Bildekopi 20x20cm
+              </div>
+            }
+            price3={
+              <div className="ProductPriceSection__Price">fra Kr. 489,-</div>
+            }
+            priceText4={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 20x30cm
               </div>
             }
-            price2={<div className="ProductPriceSection__Price">Kr. 700,-</div>}
-            priceText3={
+            price4={
+              <div className="ProductPriceSection__Price">fra Kr. 599,-</div>
+            }
+            priceText5={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 30x40cm
               </div>
             }
-            price3={
-              <div className="ProductPriceSection__Price">Kr. 1000,-</div>
+            price5={
+              <div className="ProductPriceSection__Price">fra Kr. 939,-</div>
             }
-            priceText4={
+            priceText6={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 40x50cm
               </div>
             }
-            price4={
-              <div className="ProductPriceSection__Price"> Kr. 1375,-</div>
+            price6={
+              <div className="ProductPriceSection__Price">fra Kr. 1379,-</div>
             }
-            priceText5={false}
-            price5={false}
+            priceText7={
+              <div className="ProductPriceSection__PriceText">
+                Bildekopi 40x80cm
+              </div>
+            }
+            price7={
+              <div className="ProductPriceSection__Price">fra Kr. 1859,-</div>
+            }
+            priceText8={
+              <div className="ProductPriceSection__PriceText">
+                Bildekopi 50x70cm
+              </div>
+            }
+            price8={
+              <div className="ProductPriceSection__Price">fra Kr. 2049,-</div>
+            }
+            priceText9={false}
+            price9={false}
+          />
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__BottomDivider"></div>
+        </PageSection>
+        <PageSection>
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={PhotoProductImg}
+            imgAlt="En bildekopi i ramme av en konfirmant"
+            title="Trykk på skumplate"
+            text={
+              <div className="ProductPriceSection__Text">
+                Ta godt vare på bildene dine ved å bestille spesialtilpassede
+                laminerte fotopapirtrykk montert på kapa-plate. Du kan enkelt
+                velge de mest minneverdige øyeblikkene og omgjøre dem til vakre
+                veggbilder som vil pryde ditt hjem med personlig stil. Uansett
+                om det er hjertelige familieportretter, romantiske øyeblikk
+                eller naturlige skjønnheter, vil vårt høykvalitetsprodukt og
+                omhyggelig håndverk gjøre hvert bilde til enestående kunstverk.
+              </div>
+            }
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                Skumplate 14x18cm
+              </div>
+            }
+            price1={<div className="ProductPriceSection__Price">Kr. 829,-</div>}
+            priceText2={
+              <div className="ProductPriceSection__PriceText1">
+                Skumplate 15x20cm
+              </div>
+            }
+            price2={
+              <div className="ProductPriceSection__Price">Kr. 1089,-</div>
+            }
+            priceText3={
+              <div className="ProductPriceSection__PriceText1">
+                Skumplate 20x20cm
+              </div>
+            }
+            price3={
+              <div className="ProductPriceSection__Price">Kr. 1259,-</div>
+            }
+            priceText4={
+              <div className="ProductPriceSection__PriceText">
+                Skumplate 20x30cm
+              </div>
+            }
+            price4={
+              <div className="ProductPriceSection__Price">Kr. 1579,-</div>
+            }
+            priceText5={
+              <div className="ProductPriceSection__PriceText">
+                Skumplate 30x40cm
+              </div>
+            }
+            price5={
+              <div className="ProductPriceSection__Price">Kr. 1959,-</div>
+            }
+            priceText6={
+              <div className="ProductPriceSection__PriceText">
+                Skumplate 40x50cm
+              </div>
+            }
+            price6={
+              <div className="ProductPriceSection__Price">Kr. 2479,-</div>
+            }
+            priceText7={
+              <div className="ProductPriceSection__PriceText">
+                Skumplate 40x80cm
+              </div>
+            }
+            price7={
+              <div className="ProductPriceSection__Price">Kr. 2799,-</div>
+            }
+            priceText8={
+              <div className="ProductPriceSection__PriceText">
+                Skumplate 50x70cm
+              </div>
+            }
+            price8={
+              <div className="ProductPriceSection__Price">Kr. 2949,-</div>
+            }
+            priceText9={false}
+            price9={false}
           />
         </PageSection>
         <PageSection>
@@ -102,52 +226,87 @@ export function PhotoProducts() {
             reverse={true}
             imgSrc={WallImageImg}
             imgAlt="Lerretsbilder med mor og datter"
-            title="Veggbilder"
+            title="Trykk på lerret"
             text={
               <div className="ProductPriceSection__Text">
-                Skap varige minner med våre førsteklasses vegg- og lerretsbilder
-                av høyeste kvalitet. Våre dedikerte leverandører printer hvert
+                Skap varige minner med våre førsteklasses lerretsbilder av
+                høyeste kvalitet. Våre dedikerte leverandører printer hvert
                 bilde med presisjon og gjennomfører nøye kvalitetskontroller før
-                de leveres til deg. Uansett om du velger trykk på lerret eller
-                skumplate, tilbys begge alternativene til samme pris. Disse
-                kunstverkene er ideelle for innramming og utgjør den perfekte
-                gaven til dem som allerede har alt!
+                de leveres til deg.
               </div>
             }
             priceText1={
               <div className="ProductPriceSection__PriceText1">
-                Veggbilde 20x30cm
+                Lerret 20x25cm
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 1800,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 1579,-</div>
             }
             priceText2={
-              <div className="ProductPriceSection__PriceText">
-                Veggbilde 30x40cm
+              <div className="ProductPriceSection__PriceText1">
+                Lerret 20x30cm
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 2900,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 1799,-</div>
             }
             priceText3={
-              <div className="ProductPriceSection__PriceText">
-                Veggbilde 40x50cm
+              <div className="ProductPriceSection__PriceText1">
+                Lerret 30x40cm
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 3500,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 2699,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
-                Veggbilde 50x70cm
+                Lerret 40x40cm
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 4000,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 3289,-</div>
             }
-            priceText5={false}
-            price5={false}
+            priceText5={
+              <div className="ProductPriceSection__PriceText">
+                Lerret 40x50cm
+              </div>
+            }
+            price5={
+              <div className="ProductPriceSection__Price">fra Kr. 3499,-</div>
+            }
+            priceText6={
+              <div className="ProductPriceSection__PriceText">
+                Lerret 40x80cm
+              </div>
+            }
+            price6={
+              <div className="ProductPriceSection__Price">fra Kr. 4189,-</div>
+            }
+            priceText7={
+              <div className="ProductPriceSection__PriceText">
+                Lerret 50x70cm
+              </div>
+            }
+            price7={
+              <div className="ProductPriceSection__Price">fra Kr. 4359,-</div>
+            }
+            priceText8={
+              <div className="ProductPriceSection__PriceText">
+                Lerret 60x60cm
+              </div>
+            }
+            price8={
+              <div className="ProductPriceSection__Price">fra Kr. 5749,-</div>
+            }
+            priceText9={
+              <div className="ProductPriceSection__PriceText">
+                Lerret 60x80cm
+              </div>
+            }
+            price9={
+              <div className="ProductPriceSection__Price">fra Kr. 5999,-</div>
+            }
           />
         </PageSection>
         <PageSection>
@@ -172,44 +331,58 @@ export function PhotoProducts() {
             }
             priceText1={
               <div className="ProductPriceSection__PriceText1">
-                panorama liten - 20 sider
+                S album 15x15cm
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 3500,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 2999,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
-                kvadratisk 20x20 cm - 20 sider
+                S album liggende 16x12cm
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 5000,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 3199,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
-                kvadratisk 25x25 cm - 20 sider
+                M album 20x20cm
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 5500,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 4399,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
-                kvadratisk 30x30 cm - 20 sider
+                L album 25x25 cm
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 6000,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 6499,-</div>
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
-                panorama stor - 20 sider
+                XL album 30x30 cm{" "}
               </div>
             }
             price5={
-              <div className="ProductPriceSection__Price">Kr. 6500,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 8399,-</div>
             }
+            priceText6={
+              <div className="ProductPriceSection__PriceText">
+                XL album liggende 30x22 cm{" "}
+              </div>
+            }
+            price6={
+              <div className="ProductPriceSection__Price">fra Kr. 8699,-</div>
+            }
+            priceText7={false}
+            price7={false}
+            priceText8={false}
+            price8={false}
+            priceText9={false}
+            price9={false}
           />
         </PageSection>
         <PageSection>
@@ -230,48 +403,68 @@ export function PhotoProducts() {
                 men husk å kreditere meg som fotograf under bildet.
                 <br />
                 Det minste antallet digitale bildefiler du kan bestille er:
-                minipakken med 3 digitiale bildefiler. Etter kjøp av en
-                bildepakke kan du kjøpe enkeltbilder for kr. 650,- per stk.
+                pakken med 3 digitiale bildefiler. Etter kjøp av en bildepakke
+                kan du kjøpe enkeltbilder for kr. 650,- per stk.
               </div>
             }
             priceText1={
               <div className="ProductPriceSection__PriceText1">
-                Minipakke med 3 digitale filer
+                3 digitale filer
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 1900,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2299,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
-                Liten pakke med 5 digitale filer
+                6 digitale filer
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 2950,-</div>
+              <div className="ProductPriceSection__Price">Kr. 3799,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
-                Medium pakke med 10 digitale filer
+                10 digitale filer
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 5150,-</div>
+              <div className="ProductPriceSection__Price">Kr. 5299,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
-                Stor pakke med 15 digitale filer
+                15 digitale filer
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 7300,-</div>
+              <div className="ProductPriceSection__Price">Kr. 7199,-</div>
             }
             priceText5={
+              <div className="ProductPriceSection__PriceText">
+                20 digitale filer
+              </div>
+            }
+            price5={
+              <div className="ProductPriceSection__Price">Kr. 7799,-</div>
+            }
+            priceText6={
+              <div className="ProductPriceSection__PriceText">
+                25 digitale filer
+              </div>
+            }
+            price6={
+              <div className="ProductPriceSection__Price">Kr. 8899,-</div>
+            }
+            priceText7={
               <div className="ProductPriceSection__PriceText">
                 Digital bildefil per stk. etter pakke
               </div>
             }
-            price5={<div className="ProductPriceSection__Price">Kr. 650,-</div>}
+            price7={<div className="ProductPriceSection__Price">Kr. 650,-</div>}
+            priceText8={false}
+            price8={false}
+            priceText9={false}
+            price9={false}
           />
         </PageSection>
         <PageSection>
@@ -305,19 +498,19 @@ export function PhotoProducts() {
                 20 stk. ensidige takkekort 10x12 cm
               </div>
             }
-            price1={<div className="ProductPriceSection__Price">Kr. 760,-</div>}
+            price1={<div className="ProductPriceSection__Price">Kr. 759,-</div>}
             priceText2={
               <div className="ProductPriceSection__PriceText">
                 20 stk. ensidige takkekort 10x18 cm
               </div>
             }
-            price2={<div className="ProductPriceSection__Price">Kr. 820,-</div>}
+            price2={<div className="ProductPriceSection__Price">Kr. 819,-</div>}
             priceText3={
               <div className="ProductPriceSection__PriceText">
                 20 stk. ensidige takkekort 16x16 cm
               </div>
             }
-            price3={<div className="ProductPriceSection__Price">Kr. 850,-</div>}
+            price3={<div className="ProductPriceSection__Price">Kr. 849,-</div>}
             priceText4={
               <p className="Prices__TabsContentTextFees">
                 Ekstra kort koster kr. 50,- per stk.
@@ -355,29 +548,37 @@ export function PhotoProducts() {
                 Fødselsplakat u/bilde 20x30 cm
               </div>
             }
-            price1={<div className="ProductPriceSection__Price">Kr. 650,-</div>}
+            price1={<div className="ProductPriceSection__Price">Kr. 549,-</div>}
             priceText2={
               <div className="ProductPriceSection__PriceText">
                 Fødselsplakat m/bilde 20x30 cm
               </div>
             }
-            price2={<div className="ProductPriceSection__Price">Kr. 800,-</div>}
+            price2={<div className="ProductPriceSection__Price">Kr. 799,-</div>}
             priceText3={
               <div className="ProductPriceSection__PriceText">
                 Fødselsplakat u/bilde 30x40 cm
               </div>
             }
-            price3={<div className="ProductPriceSection__Price">Kr. 850,-</div>}
+            price3={<div className="ProductPriceSection__Price">Kr. 849,-</div>}
             priceText4={
               <div className="ProductPriceSection__PriceText">
                 Fødselsplakat m/bilde 30x40 cm
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 1050,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1049,-</div>
             }
             priceText5={false}
             price5={false}
+            priceText6={false}
+            price6={false}
+            priceText7={false}
+            price7={false}
+            priceText8={false}
+            price8={false}
+            priceText9={false}
+            price9={false}
           />
         </PageSection>
         <PageSection>
