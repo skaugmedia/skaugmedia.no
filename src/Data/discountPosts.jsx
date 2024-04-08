@@ -131,7 +131,7 @@ const rawDiscountPosts = [
       to: localTime("21.04.2024 00:00"),
     },
     button: {
-      link: `https://skaugmedia.pixieset.com/booking/valgfri-minifotografering-20-april-2024`,
+      link: `/${ContactRoute}`,
     },
   },
 
