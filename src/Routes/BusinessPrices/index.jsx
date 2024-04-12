@@ -1,12 +1,14 @@
 import className from "classnames";
 import { useState } from "react";
-import { Outlet, useLocation } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { Checkmark } from "../../Components/Checkmark";
 import { GalleryBrowser } from "../../Components/GalleryBrowser";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import { projects } from "../../Data/Business/GraphicalDesign";
+import BottomImg from "../../Images/Business/bottom_img.jpg";
+import TopImg from "../../Images/Business/cover_img.jpg";
 import GraphicalDesignRoute from "../GraphicalDesign/Route";
 import "./BusinessPrices.css";
 import pageName from "./PageName";
@@ -567,18 +569,26 @@ export function BusinessPrices() {
       <PageSection
         outerClassName="BusinessPrices__Outer"
         innerClassName="BusinessPrices__Inner"
-      >
-        <DesignHeading h1>Bedrifter og næringsliv</DesignHeading>
-      </PageSection>
+      ></PageSection>
       <PageSection>
-        <p className="BusinessPrices__TopContentText">
-          På jakt etter skreddersydde løsninger for din bedrift? Jeg tilbyr tre
-          ulike bedriftsabonnement tilpasset ulike prisklasser og behov for
-          næringslivet. Mine tjenester spenner fra portretter av ansatte til en
-          komplett pakke med innholdsproduksjon, sosiale medier og
-          designtjenester, og jeg tilbyr en løsning som passer perfekt for din
-          virksomhet.
-        </p>
+        <div className="BusinessPrices__TopSection">
+          <div className="BusinessPrices__TopSectionTextBox">
+            <DesignHeading h1>Bedrifter og næringsliv</DesignHeading>
+            <p className="BusinessPrices__TopContentText">
+              På jakt etter skreddersydde løsninger for din bedrift? Jeg tilbyr
+              tre ulike bedriftsabonnement tilpasset ulike prisklasser og behov
+              for næringslivet. Mine tjenester spenner fra portretter av ansatte
+              til en komplett pakke med innholdsproduksjon, sosiale medier og
+              designtjenester, og jeg tilbyr en løsning som passer perfekt for
+              din virksomhet.
+            </p>
+          </div>
+          <img
+            className="BusinessPrices__TopImg"
+            src={TopImg}
+            alt="Fotografi av et tastatur"
+          ></img>
+        </div>
         <p className="BusinessPrices__TopContentText">
           Mine pakker kan skreddersys nøyaktig etter din bedrifts behov. Uansett
           om du er ute etter en pakkeløsning på innholdsproduksjon eller design,
@@ -593,8 +603,81 @@ export function BusinessPrices() {
           <div className="BusinessPrices__ContentHeaderListBox">
             <div className="BusinessPrices__ContentElementsBox">
               <h2 className="BusinessPrices__ContentSubHeader">
-                Sosiale medier veiledning
+                Hvilken tjeneste trenger din bedrift?
               </h2>
+              <div className="BusinessPrices__ContentCategory">
+                <div className="BusinessPrices__ContentCategoryBox">
+                  <h3 className="BusinessPrices__ContentCategoryHeader">
+                    Fotografering
+                  </h3>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Produktfotografering
+                  </NavLink>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Matfotografering
+                  </NavLink>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Barnehagefotografering
+                  </NavLink>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Bedriftsportretter
+                  </NavLink>
+                </div>
+                <div className="BusinessPrices__ContentCategoryBox">
+                  <h3 className="BusinessPrices__ContentCategoryHeader">
+                    Design
+                  </h3>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Utvikling av en visuell identitet
+                  </NavLink>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Logo-design
+                  </NavLink>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    UX-design
+                  </NavLink>
+                </div>
+                <div className="BusinessPrices__ContentCategoryBox">
+                  <h3 className="BusinessPrices__ContentCategoryHeader">
+                    Sosiale medier
+                  </h3>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Veiledning i sosiale medier
+                  </NavLink>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Innholdsproduksjon
+                  </NavLink>
+                </div>
+                <div className="BusinessPrices__ContentCategoryBox">
+                  <h3 className="BusinessPrices__ContentCategoryHeader">
+                    Kunstig intellegens / AI
+                  </h3>
+
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Spesialtilpasset AI-kunst
+                  </NavLink>
+                  <NavLink className="BusinessPrices__CategoryButton">
+                    Kurs i bruk av ChatGPT
+                  </NavLink>
+                </div>
+              </div>
+
+              <PageSection>
+                <div className="BusinessPrice__BottomSection">
+                  <img
+                    className="BusinessPrices__BottomImg"
+                    src={BottomImg}
+                    alt="Fotografi av en laptop som blir brukt"
+                  ></img>
+                  <div className="PhotoPrice__BookingText">
+                    Ønsker du å booke barnefotografering?
+                  </div>
+                  <NavLink className="PhotoPrice__BookingButton">
+                    Trykk her for å booke
+                  </NavLink>
+                </div>
+              </PageSection>
+
               <p className="BusinessPrices__ContentElementsText">
                 Jeg tilbyr skreddersydde veiledningstjenester for bedrifter som
                 ønsker å utnytte sosiale medier for økt vekst og

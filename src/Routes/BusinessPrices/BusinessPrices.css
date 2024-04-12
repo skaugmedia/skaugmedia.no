@@ -1,3 +1,59 @@
+.BusinessPrices__TopSection {
+  display: flex;
+  flex-flow: row;
+}
+
+.BusinessPrices__TopSectionTextBox {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.BusinessPrices__TopImg {
+  width: 30%;
+  gap: 10px;
+  border-radius: 100%;
+}
+
+.BusinessPrices__ContentCategory {
+  display: flex;
+  flex-flow: row;
+  gap: 30px;
+}
+
+.BusinessPrices__ContentCategoryBox {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.BusinessPrices__ContentCategoryHeader {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.BusinessPrices__CategoryButton {
+  width: auto;
+  background-color: lightgray;
+  border-radius: 50px;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.BusinessPrice__BottomSection {
+  display: flex;
+}
+
+.BusinessPrices__BottomImg {
+  width: 100%;
+}
+
 .BusinessPrices__PackageBoxHeader {
   font-family: oswald;
   font-weight: 400;
