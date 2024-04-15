@@ -664,17 +664,20 @@ export function BusinessPrices() {
 
               <PageSection>
                 <div className="BusinessPrice__BottomSection">
-                  <img
-                    className="BusinessPrices__BottomImg"
-                    src={BottomImg}
-                    alt="Fotografi av en laptop som blir brukt"
-                  ></img>
-                  <div className="PhotoPrice__BookingText">
-                    Ønsker du å booke barnefotografering?
+                  <div>
+                    <img
+                      className="BusinessPrices__BottomImg"
+                      src={BottomImg}
+                      alt="Fotografi av en laptop som blir brukt"
+                    ></img>
+                    <div className="PhotoPrice__BookingText">
+                      Ønsker du en prat for å kartlegge hva jeg kan hjelpe din
+                      bedrift med?
+                    </div>
+                    <NavLink className="PhotoPrice__BookingButton">
+                      Trykk her for å booke
+                    </NavLink>
                   </div>
-                  <NavLink className="PhotoPrice__BookingButton">
-                    Trykk her for å booke
-                  </NavLink>
                 </div>
               </PageSection>
 

@@ -7,7 +7,7 @@ import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import pageName from "./PageName";
 import "./Wedding.css";
-import WeddingImg from "/src/Images/Wedding/weddingRT_14.jpg";
+import WeddingImg from "/src/Images/Wedding/weddingAH_1.jpg";
 import WeddingTextImg from "/src/Images/WeddingPrice/wedding_text.jpg";
 import WeddingText1Img from "/src/Images/WeddingPrice/wedding_text1.jpg";
 import WeddingText2Img from "/src/Images/WeddingPrice/wedding_text2.jpg";
@@ -84,6 +84,10 @@ export function Wedding() {
             prisen
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
+          <div className="Wedding__PackageBoxText">
+            15x15cm album med 20 bilder
+          </div>
+          <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxPrice">Kr. 24.000,-</div>
           <button
             onClick={() => setMenu("b2")}
@@ -118,6 +122,11 @@ export function Wedding() {
           <div className="Wedding__PackageBoxText">
             Forlovelsesfotografering inkludert 5 digitale bildefiler inkludert I
             prisen
+          </div>
+
+          <div className="Wedding__PackageBoxDivider"></div>
+          <div className="Wedding__PackageBoxText">
+            15x15cm album med 20 bilder
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
@@ -286,7 +295,12 @@ export function Wedding() {
             <div className="Wedding__PackageBigBoxListText">
               Ca. 150 stk. digitale bildefiler
             </div>
+
             <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBoxText">
+              15x15cm album med 20 bilder
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
             <div className="PhotoPrice__PackageBoxText">
               Visningstime 1-3 uker etter levering av bildene
             </div>
@@ -377,6 +391,10 @@ export function Wedding() {
               Ca. 170 stk. digitale bildefiler
             </div>
             <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBoxText">
+              15x15cm album med 20 bilder
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
             <div className="PhotoPrice__PackageBoxText">
               Visningstime 1-3 uker etter levering av bildene
             </div>
@@ -601,6 +619,16 @@ export function Wedding() {
               <td>
                 <Check />
               </td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>15x15cm album med 20 bilder</th>
+              <td></td>
               <td>
                 <Check />
               </td>

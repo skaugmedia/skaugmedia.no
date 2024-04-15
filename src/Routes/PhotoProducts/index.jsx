@@ -59,7 +59,8 @@ export function PhotoProducts() {
                 presisjon, og kvalitetssjekker bildet før de sendes avgårde til
                 meg, før jeg igjen sjekker at alt ser riktig ut. Disse løse
                 bildene er perfekte å ramme inn å gi bort i gave til den som har
-                alt!
+                alt! Ønsker du en annen størrelse, er det mulighet for at
+                trykkeriet kan trykke din størrelse.
               </div>
             }
             priceText1={
@@ -79,53 +80,118 @@ export function PhotoProducts() {
               <div className="ProductPriceSection__Price">fra Kr. 389,-</div>
             }
             priceText3={
-              <div className="ProductPriceSection__PriceText1">
-                Bildekopi 20x20cm
-              </div>
-            }
-            price3={
-              <div className="ProductPriceSection__Price">fra Kr. 489,-</div>
-            }
-            priceText4={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 20x30cm
               </div>
             }
-            price4={
+            price3={
               <div className="ProductPriceSection__Price">fra Kr. 599,-</div>
             }
-            priceText5={
+            priceText4={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 30x40cm
               </div>
             }
-            price5={
+            price4={
               <div className="ProductPriceSection__Price">fra Kr. 939,-</div>
             }
-            priceText6={
+            priceText5={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 40x50cm
               </div>
             }
-            price6={
+            price5={
               <div className="ProductPriceSection__Price">fra Kr. 1379,-</div>
             }
-            priceText7={
-              <div className="ProductPriceSection__PriceText">
-                Bildekopi 40x80cm
-              </div>
-            }
-            price7={
-              <div className="ProductPriceSection__Price">fra Kr. 1859,-</div>
-            }
-            priceText8={
+            priceText6={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 50x70cm
               </div>
             }
-            price8={
+            price6={
               <div className="ProductPriceSection__Price">fra Kr. 2049,-</div>
             }
+            priceText7={false}
+            price7={false}
+            priceText8={false}
+            price8={false}
+            priceText9={false}
+            price9={false}
+          />
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__BottomDivider"></div>
+        </PageSection>
+        <PageSection>
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={PhotoProductImg}
+            imgAlt="En bildekopi i ramme av en konfirmant"
+            title="Laminerte forstørrelser"
+            text={
+              <div className="ProductPriceSection__Text">
+                Utforsk utvalget av laminerte forstørrelser, som gir deg
+                muligheten til å nyte dine favorittbilder uten forstyrrende
+                refleksjoner fra glass. Forstørrelsene er trykket med presisjon
+                og deretter laminert for å beskytte bildet samtidig som det
+                fremhever fargene og detaljene. Denne unike kombinasjonen av
+                kvalitetstrykk og laminering gir et sluttresultat som er både
+                holdbart og visuelt imponerende. Med våre laminerte
+                forstørrelser kan du enkelt ramme inn dine minner og glede deg
+                over dem uten avbrytelser, samtidig som de er godt beskyttet for
+                å vare i mange år fremover. Hos meg kan du også bestille
+                passende rammer til dine forstørrelser. Ønsker du en annen
+                størrelse, er det mulighet for at trykkeriet kan trykke din
+                størrelse.
+              </div>
+            }
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                Laminert forstørrelse 14x18cm
+              </div>
+            }
+            price1={
+              <div className="ProductPriceSection__Price">fra Kr. 399,-</div>
+            }
+            priceText2={
+              <div className="ProductPriceSection__PriceText1">
+                Laminert forstørrelse 15x20cm
+              </div>
+            }
+            price2={
+              <div className="ProductPriceSection__Price">fra Kr. 479,-</div>
+            }
+            priceText3={
+              <div className="ProductPriceSection__PriceText">
+                Laminert forstørrelse 20x30cm
+              </div>
+            }
+            price3={
+              <div className="ProductPriceSection__Price">fra Kr. 699,-</div>
+            }
+            priceText4={
+              <div className="ProductPriceSection__PriceText">
+                Laminert forstørrelse 30x40cm
+              </div>
+            }
+            price4={
+              <div className="ProductPriceSection__Price">fra Kr. 1299,-</div>
+            }
+            priceText5={
+              <div className="ProductPriceSection__PriceText">
+                Laminert forstørrelse 40x50cm
+              </div>
+            }
+            price5={
+              <div className="ProductPriceSection__Price">fra Kr. 1599,-</div>
+            }
+            priceText6={false}
+            price6={false}
+            priceText7={false}
+            price7={false}
+            priceText8={false}
+            price8={false}
             priceText9={false}
             price9={false}
           />
@@ -156,63 +222,47 @@ export function PhotoProducts() {
                 Skumplate 14x18cm
               </div>
             }
-            price1={<div className="ProductPriceSection__Price">Kr. 829,-</div>}
+            price1={
+              <div className="ProductPriceSection__Price">fra Kr. 829,-</div>
+            }
             priceText2={
               <div className="ProductPriceSection__PriceText1">
                 Skumplate 15x20cm
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 1089,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 1089,-</div>
             }
             priceText3={
-              <div className="ProductPriceSection__PriceText1">
-                Skumplate 20x20cm
-              </div>
-            }
-            price3={
-              <div className="ProductPriceSection__Price">Kr. 1259,-</div>
-            }
-            priceText4={
               <div className="ProductPriceSection__PriceText">
                 Skumplate 20x30cm
               </div>
             }
-            price4={
-              <div className="ProductPriceSection__Price">Kr. 1579,-</div>
+            price3={
+              <div className="ProductPriceSection__Price">fra Kr. 1579,-</div>
             }
-            priceText5={
+            priceText4={
               <div className="ProductPriceSection__PriceText">
                 Skumplate 30x40cm
               </div>
             }
-            price5={
-              <div className="ProductPriceSection__Price">Kr. 1959,-</div>
+            price4={
+              <div className="ProductPriceSection__Price">fra Kr. 1959,-</div>
             }
-            priceText6={
+            priceText5={
               <div className="ProductPriceSection__PriceText">
                 Skumplate 40x50cm
               </div>
             }
-            price6={
-              <div className="ProductPriceSection__Price">Kr. 2479,-</div>
+            price5={
+              <div className="ProductPriceSection__Price">fra Kr. 2479,-</div>
             }
-            priceText7={
-              <div className="ProductPriceSection__PriceText">
-                Skumplate 40x80cm
-              </div>
-            }
-            price7={
-              <div className="ProductPriceSection__Price">Kr. 2799,-</div>
-            }
-            priceText8={
-              <div className="ProductPriceSection__PriceText">
-                Skumplate 50x70cm
-              </div>
-            }
-            price8={
-              <div className="ProductPriceSection__Price">Kr. 2949,-</div>
-            }
+            priceText6={false}
+            price6={false}
+            priceText7={false}
+            price7={false}
+            priceText8={false}
+            price8={false}
             priceText9={false}
             price9={false}
           />
@@ -244,7 +294,7 @@ export function PhotoProducts() {
               <div className="ProductPriceSection__Price">fra Kr. 1579,-</div>
             }
             priceText2={
-              <div className="ProductPriceSection__PriceText1">
+              <div className="ProductPriceSection__PriceText">
                 Lerret 20x30cm
               </div>
             }
@@ -252,7 +302,7 @@ export function PhotoProducts() {
               <div className="ProductPriceSection__Price">fra Kr. 1799,-</div>
             }
             priceText3={
-              <div className="ProductPriceSection__PriceText1">
+              <div className="ProductPriceSection__PriceText">
                 Lerret 30x40cm
               </div>
             }
@@ -261,52 +311,22 @@ export function PhotoProducts() {
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
-                Lerret 40x40cm
-              </div>
-            }
-            price4={
-              <div className="ProductPriceSection__Price">fra Kr. 3289,-</div>
-            }
-            priceText5={
-              <div className="ProductPriceSection__PriceText">
                 Lerret 40x50cm
               </div>
             }
-            price5={
+            price4={
               <div className="ProductPriceSection__Price">fra Kr. 3499,-</div>
             }
-            priceText6={
-              <div className="ProductPriceSection__PriceText">
-                Lerret 40x80cm
-              </div>
-            }
-            price6={
-              <div className="ProductPriceSection__Price">fra Kr. 4189,-</div>
-            }
-            priceText7={
-              <div className="ProductPriceSection__PriceText">
-                Lerret 50x70cm
-              </div>
-            }
-            price7={
-              <div className="ProductPriceSection__Price">fra Kr. 4359,-</div>
-            }
-            priceText8={
-              <div className="ProductPriceSection__PriceText">
-                Lerret 60x60cm
-              </div>
-            }
-            price8={
-              <div className="ProductPriceSection__Price">fra Kr. 5749,-</div>
-            }
-            priceText9={
-              <div className="ProductPriceSection__PriceText">
-                Lerret 60x80cm
-              </div>
-            }
-            price9={
-              <div className="ProductPriceSection__Price">fra Kr. 5999,-</div>
-            }
+            priceText5={false}
+            price5={false}
+            priceText6={false}
+            price6={false}
+            priceText7={false}
+            price7={false}
+            priceText8={false}
+            price8={false}
+            priceText9={false}
+            price9={false}
           />
         </PageSection>
         <PageSection>
@@ -331,7 +351,7 @@ export function PhotoProducts() {
             }
             priceText1={
               <div className="ProductPriceSection__PriceText1">
-                S album 15x15cm
+                Album 15x15cm
               </div>
             }
             price1={
@@ -339,7 +359,7 @@ export function PhotoProducts() {
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
-                S album liggende 16x12cm
+                Album 16x12cm
               </div>
             }
             price2={
@@ -347,7 +367,7 @@ export function PhotoProducts() {
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
-                M album 20x20cm
+                Album 20x20cm
               </div>
             }
             price3={
@@ -355,7 +375,7 @@ export function PhotoProducts() {
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
-                L album 25x25 cm
+                Album 25x25 cm
               </div>
             }
             price4={
@@ -363,7 +383,7 @@ export function PhotoProducts() {
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
-                XL album 30x30 cm{" "}
+                Album 30x30 cm{" "}
               </div>
             }
             price5={
@@ -371,7 +391,7 @@ export function PhotoProducts() {
             }
             priceText6={
               <div className="ProductPriceSection__PriceText">
-                XL album liggende 30x22 cm{" "}
+                Album 30x22 cm{" "}
               </div>
             }
             price6={
