@@ -8,12 +8,13 @@ export function SkaugHelmet({ title, description, canonical, noIndex }) {
     <meta name="robots" content="noindex, nofollow" />
   );
   const desc = description && <meta name="description" content={description} />;
+  const baseTitle = "Skaug Media | Fotografi, design og innholdsproduksjon | Jessheim"
 
   return (
     <Helmet
       prioritizeSeoTags
-      titleTemplate="%s - Skaug Media"
-      defaultTitle="Skaug Media"
+      titleTemplate={ `%s - ${baseTitle}` }
+      defaultTitle={baseTitle}
     >
       <html lang="no" />
       {desc}
