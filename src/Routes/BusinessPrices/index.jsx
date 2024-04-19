@@ -8,7 +8,6 @@ import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import { projects } from "../../Data/Business/GraphicalDesign";
 import BottomImg from "../../Images/Business/bottom_img.jpg";
-import TopImg from "../../Images/Business/cover_img.jpg";
 import GraphicalDesignRoute from "../GraphicalDesign/Route";
 import "./BusinessPrices.css";
 import pageName from "./PageName";
@@ -17,6 +16,14 @@ import { galleries as plainGalleries } from "/src/Data/Business/Galleries";
 import BusinessPricesText1Img from "/src/Images/Business/Pent_og_brukt/autumn_campaign_2.jpg";
 import BusinessPricesText2Img from "/src/Images/Business/Pent_og_brukt/business_pogb_sommer_05.jpg";
 import BusinessPricesText3Img from "/src/Images/Business/Pent_og_brukt/business_pogb_sommer_20.jpg";
+import AIRoute from "/src/Routes/AI/Route";
+import BusinessPortraitsRoute from "/src/Routes/BusinessPortraits/Route";
+import BusinessPricesRoute from "/src/Routes/BusinessPrices/Route";
+import DesignInfoRoute from "/src/Routes/DesignInfo/Route";
+import FoodPhotographyRoute from "/src/Routes/FoodPhotography/Route";
+import KindergartenPhotographyRoute from "/src/Routes/KindergartenPhotography/Route";
+import ProductPhotographyRoute from "/src/Routes/ProductPhotography/Route";
+import SocialMediaRoute from "/src/Routes/SocialMedia/Route";
 
 export function BusinessPrices() {
   const location = useLocation();
@@ -583,11 +590,6 @@ export function BusinessPrices() {
               din virksomhet.
             </p>
           </div>
-          <img
-            className="BusinessPrices__TopImg"
-            src={TopImg}
-            alt="Fotografi av et tastatur"
-          ></img>
         </div>
         <p className="BusinessPrices__TopContentText">
           Mine pakker kan skreddersys nøyaktig etter din bedrifts behov. Uansett
@@ -610,16 +612,28 @@ export function BusinessPrices() {
                   <h3 className="BusinessPrices__ContentCategoryHeader">
                     Fotografering
                   </h3>
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${ProductPhotographyRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     Produktfotografering
                   </NavLink>
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${FoodPhotographyRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     Matfotografering
                   </NavLink>
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${KindergartenPhotographyRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     Barnehagefotografering
                   </NavLink>
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${BusinessPortraitsRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     Bedriftsportretter
                   </NavLink>
                 </div>
@@ -627,13 +641,22 @@ export function BusinessPrices() {
                   <h3 className="BusinessPrices__ContentCategoryHeader">
                     Design
                   </h3>
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${DesignInfoRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     Utvikling av en visuell identitet
                   </NavLink>
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${DesignInfoRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     Logo-design
                   </NavLink>
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${DesignInfoRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     UX-design
                   </NavLink>
                 </div>
@@ -641,10 +664,16 @@ export function BusinessPrices() {
                   <h3 className="BusinessPrices__ContentCategoryHeader">
                     Sosiale medier
                   </h3>
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${SocialMediaRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     Veiledning i sosiale medier
                   </NavLink>
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${SocialMediaRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     Innholdsproduksjon
                   </NavLink>
                 </div>
@@ -653,11 +682,17 @@ export function BusinessPrices() {
                     Kunstig intellegens / AI
                   </h3>
 
-                  <NavLink className="BusinessPrices__CategoryButton">
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${AIRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
                     Spesialtilpasset AI-kunst
                   </NavLink>
-                  <NavLink className="BusinessPrices__CategoryButton">
-                    Kurs i bruk av ChatGPT
+                  <NavLink
+                    to={`/${BusinessPricesRoute}/${AIRoute}`}
+                    className="BusinessPrices__CategoryButton"
+                  >
+                    ChatGPT-kurs
                   </NavLink>
                 </div>
               </div>
@@ -680,96 +715,6 @@ export function BusinessPrices() {
                   </div>
                 </div>
               </PageSection>
-
-              <p className="BusinessPrices__ContentElementsText">
-                Jeg tilbyr skreddersydde veiledningstjenester for bedrifter som
-                ønsker å utnytte sosiale medier for økt vekst og
-                merkevarebevissthet. Med fokus på Facebook og Instagram, hjelper
-                jeg deg med å engasjere målgruppen og optimalisere
-                innholdsproduksjon ved å bruke ChatGPT, en kraftig AI-modell.
-                Sammen skaper vi en strategi som kombinerer menneskelig
-                kreativitet med AI-teknologi for å oppnå de beste resultatene.
-                Kontakt meg i dag for å lære mer!
-              </p>
-
-              <h2 className="BusinessPrices__ContentSubHeader">
-                Utvikling av en visuell identitet
-              </h2>
-              <p className="BusinessPrices__ContentElementsText">
-                Grafisk design er avgjørende for å formidle profesjonalitet,
-                originalitet og uimotståelig appell for bedrifter. Hvert
-                designelement, enten det er logo, visuell identitet eller
-                kampanje, har sin egen betydning og hjelper med å formidle
-                essensen av bedriftens visuelle identitet. Kontakt meg for å
-                diskutere hvordan jeg kan hjelpe dere med å forme deres unike
-                branding og visuell identitet. Sammen kan vi skape en grafisk
-                reise som beriker deres merkevare.
-              </p>
-              <h2 className="BusinessPrices__ContentSubHeader">Logo-design</h2>
-              <p className="BusinessPrices__ContentElementsText">
-                For bedrifter som søker en rask etablering av en visuell
-                identitet, spiller logoen en sentral rolle i den unike reisen
-                dere deler med deres merkevare. Logo-design gir dere muligheten
-                til å forme en fremtredende visuell representasjon som uttrykker
-                deres særegne essens. Det handler om å formidle
-                gjenkjennelighet, originalitet og øyeblikk som skaper en
-                uimotståelig tiltrekningskraft for deres målgruppe. Uansett om
-                det er en logo som fremhever deres bedrifts personlighet, har
-                hver logo sin egen unike betydning. Logo-design handler om å
-                fange dette øyeblikket som formidler essensen av deres merkevare
-                og gir dere en tydelig identitet.
-              </p>
-              <h2 className="BusinessPrices__ContentSubHeader">UX-design</h2>
-              <p className="BusinessPrices__ContentElementsText">
-                UX-design gir bedrifter muligheten til å forme en uimotståelig
-                brukeropplevelse som uttrykker deres essens. Enten det er
-                nettsidedesign, app eller digitalt produkt, hvert
-                UX-designelement har sin egen betydning i å formidle
-                brukervennlighet og innovasjon. Kontakt meg for å diskutere
-                hvordan jeg kan hjelpe dere med å skape en tiltalende digital
-                reise. Sammen kan vi berike deres digitale plattformer med
-                brukervennlighet og appell.
-              </p>
-              <h2 className="BusinessPrices__ContentSubHeader">
-                Produktfotografering
-              </h2>
-              <p className="BusinessPrices__ContentElementsText">
-                Produktfotografering for bedrifter og næringsliv er avgjørende
-                for å formidle skjønnheten og funksjonaliteten av produkter,
-                samt skape uimotståelig appell. Hvert bilde fanger øyeblikk som
-                definerer produktene og merkevaren, enten det er detaljer, stil
-                eller unike egenskaper.
-              </p>
-              <h2 className="BusinessPrices__ContentSubHeader">
-                Matfotografering
-              </h2>
-              <p className="BusinessPrices__ContentElementsText">
-                Matfotografering for bedrifter i matbransjen handler om å fange
-                hjertevarme øyeblikk som formidler skjønnheten og smaken av
-                kulinariske kreasjoner, med mål om å formidle kvalitet og
-                uimotståelig appell i hvert bilde.
-              </p>
-              <h2 className="BusinessPrices__ContentSubHeader">
-                Barnehagefotografering
-              </h2>
-              <p className="BusinessPrices__ContentElementsText">
-                Barnehagefotografering fanger smilene og minnene som utgjør
-                barnehagens hverdag, formidler glede, vennskap og uforglemmelige
-                øyeblikk. Uansett om det er gruppebilder, portretter eller
-                miljøbilder, hvert bilde har sin egen betydning og formidler
-                barnehagens fellesskap og identitet.
-              </p>
-              <h2 className="BusinessPrices__ContentSubHeader">
-                Bedriftsportretter
-              </h2>
-              <p className="BusinessPrices__ContentElementsText">
-                Portrettfotografering for bedrifter og næringsliv er avgjørende
-                for å formidle personlighet og profesjonalitet i teamet, skape
-                troverdighet og kompetanse, og appellere til målgruppen. Hvert
-                bilde fanger øyeblikk som definerer teamet og merkevaren, enten
-                det er detaljerte portretter, profesjonelle presentasjoner eller
-                subtile detaljer som gir ekstraordinær betydning.
-              </p>
             </div>
           </div>
         </div>

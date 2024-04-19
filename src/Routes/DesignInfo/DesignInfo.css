@@ -1,0 +1,9 @@
+.BusinessCategory__MiddleSectionHeader {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.BusinessCategory__MiddleContentText {
+  font-family: nunito;
+  margin-top: 1%;
+}

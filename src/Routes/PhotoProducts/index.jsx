@@ -5,13 +5,15 @@ import { ProductPriceSection } from "../../Components/ProductPriceSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import pageName from "./PageName";
 import "./PhotoProducts.css";
-import DigitalImageImg from "/src/Images/Family/fam_l_10.jpg";
+import DigitalImageImg from "/src/Images/Portrait/port_T_01.jpg";
 import AlbumImg from "/src/Images/Pregnant/preg_JA_1.jpg";
 import BirthposterImg from "/src/Images/Prices/birthposter.jpg";
 import WallImageImg from "/src/Images/Prices/canvas.jpg";
 import PrintablesImg from "/src/Images/Prices/designpack.jpg";
 import PhotoProductImg from "/src/Images/Prices/photocopy1.jpg";
 import CardsImg from "/src/Images/Prices/takkekort.jpg";
+import LaminatedFrameImg from "/src/Images/WeddingPrice/laminert.jpg";
+import KapaImg from "/src/Images/WeddingPrice/skumplate.jpg";
 
 export function PhotoProducts() {
   const location = useLocation();
@@ -126,7 +128,7 @@ export function PhotoProducts() {
           <ProductPriceSection
             outerClassName="Prices__Outer"
             reverse={true}
-            imgSrc={PhotoProductImg}
+            imgSrc={LaminatedFrameImg}
             imgAlt="En bildekopi i ramme av en konfirmant"
             title="Laminerte forstørrelser"
             text={
@@ -203,7 +205,7 @@ export function PhotoProducts() {
           <ProductPriceSection
             outerClassName="Prices__Outer"
             reverse={true}
-            imgSrc={PhotoProductImg}
+            imgSrc={KapaImg}
             imgAlt="En bildekopi i ramme av en konfirmant"
             title="Trykk på skumplate"
             text={
