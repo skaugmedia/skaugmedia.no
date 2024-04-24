@@ -3,8 +3,16 @@ import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import "./AI.css";
 import pageName from "./PageName";
+import { FeaturedGallery } from "/src/Components/FeaturedGallery";
+import category from "/src/Data/Business/Galleries/AI";
+import { byDate } from "/src/utils";
 
 export function AI() {
+  const images = category.shoots
+    .sort(byDate)
+    .flatMap((x) => x.images)
+    .map((x) => ({ ...x, src: x.url }));
+
   return (
     <>
       <SkaugHelmet
@@ -20,7 +28,7 @@ export function AI() {
       <PageSection>
         <div className="BusinessCategory__TopSection">
           <div className="BusinessCategory__TopSectionTextBox">
-            <DesignHeading h1>Sosiale Medier</DesignHeading>
+            <DesignHeading h1>AI / Kunstig Intelligens</DesignHeading>
           </div>
         </div>
       </PageSection>
@@ -64,6 +72,7 @@ export function AI() {
             </p>
           </div>
         </div>
+        <FeaturedGallery images={images} />
       </PageSection>
     </>
   );

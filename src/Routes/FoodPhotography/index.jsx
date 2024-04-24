@@ -3,8 +3,15 @@ import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import "./FoodPhotography.css";
 import pageName from "./PageName";
+import { FeaturedGallery } from "/src/Components/FeaturedGallery";
+import category from "/src/Data/Business/Galleries/Food";
+import { byDate } from "/src/utils";
 
 export function FoodPhotography() {
+  const images = category.shoots
+    .sort(byDate)
+    .flatMap((x) => x.images)
+    .map((x) => ({ ...x, src: x.url }));
   return (
     <>
       <SkaugHelmet
@@ -29,6 +36,7 @@ export function FoodPhotography() {
             </p>
           </div>
         </div>
+        <FeaturedGallery images={images} />
       </PageSection>
     </>
   );

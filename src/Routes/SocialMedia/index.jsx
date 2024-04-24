@@ -1,10 +1,20 @@
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import { Packages } from "./Components/Packages";
 import pageName from "./PageName";
 import "./SocialMedia.css";
+import { FeaturedGallery } from "/src/Components/FeaturedGallery";
+import { VerticalDivider } from "/src/Components/VerticalDivider";
+import category from "/src/Data/Business/Galleries/SocialMedia";
+import { byDate } from "/src/utils";
 
 export function SocialMedia() {
+  const images = category.shoots
+    .sort(byDate)
+    .flatMap((x) => x.images)
+    .map((x) => ({ ...x, src: x.url }));
+
   return (
     <>
       <SkaugHelmet
@@ -65,6 +75,9 @@ export function SocialMedia() {
             </p>
           </div>
         </div>
+        <FeaturedGallery images={images} />
+        <VerticalDivider />
+        <Packages />
       </PageSection>
     </>
   );

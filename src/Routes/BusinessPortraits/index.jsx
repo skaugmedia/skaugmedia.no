@@ -3,8 +3,16 @@ import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import "./BusinessPortraits.css";
 import pageName from "./PageName";
+import { FeaturedGallery } from "/src/Components/FeaturedGallery";
+import category from "/src/Data/Business/Galleries/Portrait";
+import { byDate } from "/src/utils";
 
 export function BusinessPortraits() {
+  const images = category.shoots
+    .sort(byDate)
+    .flatMap((x) => x.images)
+    .map((x) => ({ ...x, src: x.url }));
+
   return (
     <>
       <SkaugHelmet
@@ -31,6 +39,7 @@ export function BusinessPortraits() {
             </p>
           </div>
         </div>
+        <FeaturedGallery images={images} />
       </PageSection>
     </>
   );

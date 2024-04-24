@@ -1,0 +1,26 @@
+.Packages__MainMenu {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+}
+
+.Packages__PackageOverview {
+  width: 33%;
+}
+
+.Packages__Divider {
+}
+
+@media only screen and (max-width: 600px) {
+  .Packages__MainMenu {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .Packages__Divider {
+    border: 1px solid lightgrey;
+    opacity: 65%;
+    width: 30%;
+    margin: 9px auto;
+  }
+}

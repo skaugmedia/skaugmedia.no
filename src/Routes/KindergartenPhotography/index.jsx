@@ -3,8 +3,16 @@ import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import "./KindergartenPhotography.css";
 import pageName from "./PageName";
+import { FeaturedGallery } from "/src/Components/FeaturedGallery";
+import category from "/src/Data/Business/Galleries/Kindergarten";
+import { byDate } from "/src/utils";
 
 export function KindergartenPhotography() {
+  const images = category.shoots
+    .sort(byDate)
+    .flatMap((x) => x.images)
+    .map((x) => ({ ...x, src: x.url }));
+
   return (
     <>
       <SkaugHelmet
@@ -30,6 +38,7 @@ export function KindergartenPhotography() {
             </p>
           </div>
         </div>
+        <FeaturedGallery images={images} />
       </PageSection>
     </>
   );

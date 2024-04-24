@@ -1,10 +1,15 @@
+import { useLoaderData } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import "./DesignInfo.css";
 import pageName from "./PageName";
+import { GalleryBrowser } from "/src/Components/GalleryBrowser";
+import { Project } from "/src/Components/Project";
 
 export function DesignInfo() {
+  const { projects } = useLoaderData();
+
   return (
     <>
       <SkaugHelmet
@@ -79,6 +84,13 @@ export function DesignInfo() {
             </p>
           </div>
         </div>
+        <GalleryBrowser
+          h1
+          galleries={projects}
+          viewItem={(p) => (
+            <Project className="item graphical-design-title" {...p} />
+          )}
+        />
       </PageSection>
     </>
   );

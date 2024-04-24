@@ -17,9 +17,15 @@ export function GalleryBrowser({
     }
     return (props) => <Gallery h3 hideNumImages={hideNumImages} {...props} />;
   })();
+  const heading = (() => {
+    if (title) {
+      return <DesignHeading h1={h1}>{title}</DesignHeading>;
+    }
+    return null;
+  })();
   return (
     <PageSection className="GalleryBrowser">
-      <DesignHeading h1={h1}>{title}</DesignHeading>
+      {heading}
       <div className="GalleryBrowser__Galleries">
         {galleries.map((gallery) => (
           <NavLink

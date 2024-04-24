@@ -24,6 +24,7 @@ import { Couples } from "./Routes/Couples";
 import CouplesPageName from "./Routes/Couples/PageName";
 import CouplesRoute from "./Routes/Couples/Route";
 import { DesignInfo } from "./Routes/DesignInfo";
+import DesignInfoLoader from './Routes/DesignInfo/Loader'
 import DesignInfoPageName from "./Routes/DesignInfo/PageName";
 import DesignInfoRoute from "./Routes/DesignInfo/Route";
 import { Discounts } from "./Routes/Discounts";
@@ -139,6 +140,7 @@ export const router = createBrowserRouter([
               {
                 path: DesignInfoRoute,
                 element: <DesignInfo />,
+                loader: DesignInfoLoader,
                 handle: { pageName: DesignInfoPageName },
               },
               {
