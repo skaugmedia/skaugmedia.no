@@ -8,17 +8,9 @@ import Weddingrt14 from "../../../Images/Wedding/weddingRT_14.jpg";
 import Weddingrt15 from "../../../Images/Wedding/weddingRT_15.jpg";
 import Weddingrt16 from "../../../Images/Wedding/weddingRT_16.jpg";
 import Weddingrt17 from "../../../Images/Wedding/weddingRT_17.jpg";
-import Weddingrt2 from "../../../Images/Wedding/weddingRT_2.jpg";
-import Weddingrt3 from "../../../Images/Wedding/weddingRT_3.jpg";
-import Weddingrt4 from "../../../Images/Wedding/weddingRT_4.jpg";
-import Weddingrt5 from "../../../Images/Wedding/weddingRT_5.jpg";
-import Weddingrt6 from "../../../Images/Wedding/weddingRT_6.jpg";
-import Weddingrt7 from "../../../Images/Wedding/weddingRT_7.jpg";
-import Weddingrt8 from "../../../Images/Wedding/weddingRT_8.jpg";
-import Weddingrt9 from "../../../Images/Wedding/weddingRT_9.jpg";
-
 import Weddingrt18 from "../../../Images/Wedding/weddingRT_18.jpg";
 import Weddingrt19 from "../../../Images/Wedding/weddingRT_19.jpg";
+import Weddingrt2 from "../../../Images/Wedding/weddingRT_2.jpg";
 import Weddingrt20 from "../../../Images/Wedding/weddingRT_20.jpg";
 import Weddingrt21 from "../../../Images/Wedding/weddingRT_21.jpg";
 import Weddingrt22 from "../../../Images/Wedding/weddingRT_22.jpg";
@@ -27,6 +19,36 @@ import Weddingrt24 from "../../../Images/Wedding/weddingRT_24.jpg";
 import Weddingrt25 from "../../../Images/Wedding/weddingRT_25.jpg";
 import Weddingrt26 from "../../../Images/Wedding/weddingRT_26.jpg";
 import Weddingrt27 from "../../../Images/Wedding/weddingRT_27.jpg";
+import Weddingrt3 from "../../../Images/Wedding/weddingRT_3.jpg";
+import Weddingrt4 from "../../../Images/Wedding/weddingRT_4.jpg";
+import Weddingrt5 from "../../../Images/Wedding/weddingRT_5.jpg";
+import Weddingrt6 from "../../../Images/Wedding/weddingRT_6.jpg";
+import Weddingrt7 from "../../../Images/Wedding/weddingRT_7.jpg";
+import Weddingrt8 from "../../../Images/Wedding/weddingRT_8.jpg";
+import Weddingrt9 from "../../../Images/Wedding/weddingRT_9.jpg";
+
+import Weddingah1 from "/src/Images/Wedding/weddingAH_(1).jpg";
+import Weddingah10 from "/src/Images/Wedding/weddingAH_(10).jpg";
+import Weddingah11 from "/src/Images/Wedding/weddingAH_(11).jpg";
+import Weddingah12 from "/src/Images/Wedding/weddingAH_(12).jpg";
+import Weddingah13 from "/src/Images/Wedding/weddingAH_(13).jpg";
+import Weddingah14 from "/src/Images/Wedding/weddingAH_(14).jpg";
+import Weddingah15 from "/src/Images/Wedding/weddingAH_(15).jpg";
+import Weddingah16 from "/src/Images/Wedding/weddingAH_(16).jpg";
+import Weddingah17 from "/src/Images/Wedding/weddingAH_(17).jpg";
+import Weddingah18 from "/src/Images/Wedding/weddingAH_(18).jpg";
+import Weddingah19 from "/src/Images/Wedding/weddingAH_(19).jpg";
+import Weddingah2 from "/src/Images/Wedding/weddingAH_(2).jpg";
+import Weddingah20 from "/src/Images/Wedding/weddingAH_(20).jpg";
+import Weddingah21 from "/src/Images/Wedding/weddingAH_(21).jpg";
+import Weddingah22 from "/src/Images/Wedding/weddingAH_(22).jpg";
+import Weddingah3 from "/src/Images/Wedding/weddingAH_(3).jpg";
+import Weddingah4 from "/src/Images/Wedding/weddingAH_(4).jpg";
+import Weddingah5 from "/src/Images/Wedding/weddingAH_(5).jpg";
+import Weddingah6 from "/src/Images/Wedding/weddingAH_(6).jpg";
+import Weddingah7 from "/src/Images/Wedding/weddingAH_(7).jpg";
+import Weddingah8 from "/src/Images/Wedding/weddingAH_(8).jpg";
+import Weddingah9 from "/src/Images/Wedding/weddingAH_(9).jpg";
 
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import WeddingRoute from "../../../Routes/Wedding/Route";
@@ -47,6 +69,145 @@ export default {
     link: `/${PricesRoute}/${WeddingRoute}`,
   },
   shoots: [
+    {
+      description: "Bryllupsfotografering A + H",
+      tags: ["bryllup", "seremoni", "bryllupsseremoni", "vinter"],
+      images: [
+        {
+          url: Weddingah6,
+          title: "Brudepar",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: Weddingah7,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah8,
+          title: "Brudepar",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: Weddingah9,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah10,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah11,
+          title: "Brudepar",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: Weddingah12,
+          title: "Brudepar",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: Weddingah1,
+          title: "Brudepar",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: Weddingah2,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah3,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah4,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah5,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah13,
+          title: "Brudepar",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: Weddingah14,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah15,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah16,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah17,
+          title: "Brudepar",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: Weddingah18,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah19,
+          title: "Brudepar",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: Weddingah20,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah21,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: Weddingah22,
+          title: "Brudepar",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-15-03",
+    },
     {
       description: "Bryllupsfotografering R + T",
       tags: ["bryllup", "seremoni", "bryllupsseremoni", "sommer"],

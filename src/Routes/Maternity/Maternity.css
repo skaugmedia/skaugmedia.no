@@ -164,6 +164,25 @@
   width: auto;
 }
 
+.PhotoPrice__GalleryText {
+  text-align: center;
+  margin-top: 25px;
+  font-family: nunito;
+  font-size: 1em;
+}
+
+.PhotoPrice__GalleryImageBox {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 2%;
+}
+
+.PhotoPrice__GalleryImage {
+  width: 49%;
+}
+
 @media only screen and (max-width: 600px) {
   .PhotoPrice__TopContentHeader {
     font-size: 1em;

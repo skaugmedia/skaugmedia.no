@@ -13,7 +13,6 @@ import Route from "./Route";
 import ChildrenButton from "/src/Images/Prices/children_button.jpg";
 import ConfirmationButton from "/src/Images/Prices/confirmation_button.jpg";
 import FamilyButton from "/src/Images/Prices/family_button.jpg";
-import FirstYearButton from "/src/Images/Prices/firstyear_button.jpg";
 import HeadshotsButton from "/src/Images/Prices/headshots_button.jpg";
 import MaternityButton from "/src/Images/Prices/maternity_button.jpg";
 import NewbornButton from "/src/Images/Prices/newborn_button.jpg";
@@ -25,8 +24,6 @@ import ConfirmationPageName from "/src/Routes/Confirmation/PageName";
 import ConfirmationRoute from "/src/Routes/Confirmation/Route";
 import FamilyPageName from "/src/Routes/Family/PageName";
 import FamilyRoute from "/src/Routes/Family/Route";
-import FirstYearPageName from "/src/Routes/FirstYear/PageName";
-import FirstYearRoute from "/src/Routes/FirstYear/Route";
 import HeadshotsPageName from "/src/Routes/Headshots/PageName";
 import HeadshotsRoute from "/src/Routes/Headshots/Route";
 import MaternityPageName from "/src/Routes/Maternity/PageName";
@@ -99,12 +96,7 @@ export function PricesServices() {
       title: WeddingPageName,
       imgAlt: WeddingPageName,
     },
-    {
-      link: FirstYearRoute,
-      imgSrc: FirstYearButton,
-      title: FirstYearPageName,
-      imgAlt: FirstYearPageName,
-    },
+
     {
       link: HeadshotsRoute,
       imgSrc: HeadshotsButton,

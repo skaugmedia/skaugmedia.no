@@ -2,10 +2,14 @@ import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import NewbornImg1 from "../../Images/Newborn/l_newborn_2.jpg";
+import NewbornImg2 from "../../Images/Newborn/newborn_LO_4.jpg";
 import NewbornImg from "../../Images/Newborn/newborn_LO_5.jpg";
 import "./Newborn.css";
 import pageName from "./PageName";
+import Gallery from "/src/Data/Photography/Newborn";
 import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Newborn() {
   const location = useLocation();
@@ -49,6 +53,17 @@ export function Newborn() {
             src={NewbornImg}
             alt="Våken liten nyfødt"
           ></img>
+        </PageSection>
+        <PageSection>
+          <div>
+            <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+            <NavLink
+              to={`/${PhotographyRoute}/${Gallery.id}`}
+              className="PhotoPrice__BookingButton"
+            >
+              Galleri
+            </NavLink>
+          </div>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__Choice">
@@ -240,6 +255,20 @@ export function Newborn() {
           >
             Trykk her for å booke
           </NavLink>
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__GalleryImageBox">
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={NewbornImg1}
+              alt="En nydelig liten baby som har på seg lue med ører, i sorthvitt."
+            ></img>
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={NewbornImg2}
+              alt="En liten nyfødt baby"
+            ></img>
+          </div>
         </PageSection>
       </div>
     </>

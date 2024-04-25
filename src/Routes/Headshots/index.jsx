@@ -2,10 +2,14 @@ import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import HeadshotsImg2 from "../../Images/Portrait/port_IM_02.jpg";
+import HeadshotsImg1 from "../../Images/Portrait/port_SV_02.jpg";
 import HeadshotsImg from "../../Images/Portrait/port_T_01.jpg";
 import "./Headshots.css";
 import pageName from "./PageName";
+import Gallery from "/src/Data/Photography/Portrait";
 import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Headshots() {
   const location = useLocation();
@@ -47,6 +51,17 @@ export function Headshots() {
             src={HeadshotsImg}
             alt="Vakker kvinne ved vannet"
           ></img>
+        </PageSection>
+        <PageSection>
+          <div>
+            <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+            <NavLink
+              to={`/${PhotographyRoute}/${Gallery.id}`}
+              className="PhotoPrice__BookingButton"
+            >
+              Galleri
+            </NavLink>
+          </div>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__Choice">
@@ -155,6 +170,20 @@ export function Headshots() {
           >
             Trykk her for å booke
           </NavLink>
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__GalleryImageBox">
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={HeadshotsImg1}
+              alt="En liten gutt som studerer epler utendørs."
+            ></img>
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={HeadshotsImg2}
+              alt="En herlig jente som er veldig blid og fornøyd."
+            ></img>
+          </div>
         </PageSection>
       </div>
     </>

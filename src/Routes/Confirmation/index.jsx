@@ -2,10 +2,14 @@ import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import ConfirmationImg1 from "../../Images/Confirmation/conf_K_5.jpg";
+import ConfirmationImg2 from "../../Images/Confirmation/conf_L_4.jpg";
 import ConfirmationImg from "../../Images/Confirmation/conf_SV_4.jpg";
 import "./Confirmation.css";
 import pageName from "./PageName";
+import Gallery from "/src/Data/Photography/Confirmation";
 import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Confirmation() {
   const location = useLocation();
@@ -44,6 +48,17 @@ export function Confirmation() {
             src={ConfirmationImg}
             alt="Konfirmant i festdrakt"
           ></img>
+        </PageSection>
+        <PageSection>
+          <div>
+            <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+            <NavLink
+              to={`/${PhotographyRoute}/${Gallery.id}`}
+              className="PhotoPrice__BookingButton"
+            >
+              Galleri
+            </NavLink>
+          </div>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__Choice">
@@ -223,6 +238,20 @@ export function Confirmation() {
           >
             Trykk her for å booke
           </NavLink>
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__GalleryImageBox">
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={ConfirmationImg1}
+              alt="Herlig konfirmant i bunad på en benk i en park."
+            ></img>
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={ConfirmationImg2}
+              alt="En herlig konfirmant i lys kjole ute i skogen, med en paraply."
+            ></img>
+          </div>
         </PageSection>
       </div>
     </>

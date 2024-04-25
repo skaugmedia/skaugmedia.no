@@ -1,16 +1,19 @@
 import className from "classnames";
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Checkmark } from "../../Components/Checkmark";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import pageName from "./PageName";
 import "./Wedding.css";
+import Gallery from "/src/Data/Photography/Wedding";
 import WeddingImg from "/src/Images/Wedding/weddingAH_1.jpg";
 import WeddingTextImg from "/src/Images/WeddingPrice/wedding_text.jpg";
 import WeddingText1Img from "/src/Images/WeddingPrice/wedding_text1.jpg";
 import WeddingText2Img from "/src/Images/WeddingPrice/wedding_text2.jpg";
+import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Wedding() {
   const location = useLocation();
@@ -488,6 +491,17 @@ export function Wedding() {
           alt="Nygift brudepar på vei ut av kirken"
         ></img>
       </PageSection>
+      <PageSection>
+        <div>
+          <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+          <NavLink
+            to={`/${PhotographyRoute}/${Gallery.id}`}
+            className="PhotoPrice__BookingButton"
+          >
+            Galleri
+          </NavLink>
+        </div>
+      </PageSection>
       {(() => {
         switch (menu) {
           case "b1":
@@ -771,6 +785,15 @@ export function Wedding() {
             </p>
           </div>
         </div>
+      </PageSection>
+      <PageSection>
+        <div className="PhotoPrice__BottomDivider"></div>
+        <div className="PhotoPrice__BookingText">
+          Ønsker dere å booke bryllupsfotografering?
+        </div>
+        <NavLink to={`/${ContactRoute}`} className="PhotoPrice__BookingButton">
+          Trykk her for å booke
+        </NavLink>
       </PageSection>
     </>
   );
