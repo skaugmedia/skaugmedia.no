@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
@@ -6,6 +6,7 @@ import "./DesignInfo.css";
 import pageName from "./PageName";
 import { GalleryBrowser } from "/src/Components/GalleryBrowser";
 import { Project } from "/src/Components/Project";
+import ContactRoute from "/src/Routes/Contact/Route";
 
 export function DesignInfo() {
   const { projects } = useLoaderData();
@@ -91,6 +92,15 @@ export function DesignInfo() {
             <Project className="item graphical-design-title" {...p} />
           )}
         />
+      </PageSection>
+      <PageSection>
+        <div className="PhotoPrice__BottomDivider"></div>
+        <div className="PhotoPrice__BookingText">
+          Ønsker du en uforpliktende prat?
+        </div>
+        <NavLink to={`/${ContactRoute}`} className="PhotoPrice__BookingButton">
+          Ta kontakt her
+        </NavLink>
       </PageSection>
     </>
   );

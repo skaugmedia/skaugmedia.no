@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
@@ -5,6 +6,7 @@ import "./BusinessPortraits.css";
 import pageName from "./PageName";
 import { FeaturedGallery } from "/src/Components/FeaturedGallery";
 import category from "/src/Data/Business/Galleries/Portrait";
+import ContactRoute from "/src/Routes/Contact/Route";
 import { byDate } from "/src/utils";
 
 export function BusinessPortraits() {
@@ -40,6 +42,15 @@ export function BusinessPortraits() {
           </div>
         </div>
         <FeaturedGallery images={images} />
+      </PageSection>
+      <PageSection>
+        <div className="PhotoPrice__BottomDivider"></div>
+        <div className="PhotoPrice__BookingText">
+          Ønsker du en uforpliktende prat?
+        </div>
+        <NavLink to={`/${ContactRoute}`} className="PhotoPrice__BookingButton">
+          Ta kontakt her
+        </NavLink>
       </PageSection>
     </>
   );

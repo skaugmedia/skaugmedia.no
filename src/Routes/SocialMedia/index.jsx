@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
@@ -7,6 +8,7 @@ import "./SocialMedia.css";
 import { FeaturedGallery } from "/src/Components/FeaturedGallery";
 import { VerticalDivider } from "/src/Components/VerticalDivider";
 import category from "/src/Data/Business/Galleries/SocialMedia";
+import ContactRoute from "/src/Routes/Contact/Route";
 import { byDate } from "/src/utils";
 
 export function SocialMedia() {
@@ -78,6 +80,15 @@ export function SocialMedia() {
         <FeaturedGallery images={images} />
         <VerticalDivider />
         <Packages />
+      </PageSection>
+      <PageSection>
+        <div className="PhotoPrice__BottomDivider"></div>
+        <div className="PhotoPrice__BookingText">
+          Ønsker du en uforpliktende prat?
+        </div>
+        <NavLink to={`/${ContactRoute}`} className="PhotoPrice__BookingButton">
+          Ta kontakt her
+        </NavLink>
       </PageSection>
     </>
   );
