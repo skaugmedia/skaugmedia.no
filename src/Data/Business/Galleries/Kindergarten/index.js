@@ -1,36 +1,65 @@
-import business_pogb_sommer_01 from "../../../../Images/Business/Pent_og_brukt/business_pogb_sommer_01.jpg";
-import business_pogb_sommer_02 from "../../../../Images/Business/Pent_og_brukt/business_pogb_sommer_02.jpg";
-import business_pogb_sommer_03 from "../../../../Images/Business/Pent_og_brukt/business_pogb_sommer_03.jpg";
+import kindergarten_L_1 from "../../../../Images/Kindergarten/kindergarten_L_1.jpg";
+import kindergarten_L_2 from "../../../../Images/Kindergarten/kindergarten_L_2.jpg";
+import kindergarten_L_3 from "../../../../Images/Kindergarten/kindergarten_L_3.jpg";
+import kindergarten_S_1 from "../../../../Images/Kindergarten/kindergarten_S_1.jpg";
+import kindergarten_S_2 from "../../../../Images/Kindergarten/kindergarten_S_2.jpg";
+import kindergarten_S_3 from "../../../../Images/Kindergarten/kindergarten_S_3.jpg";
 
 export default {
   id: "barnehage",
-  title: "Barnehage",
+  title: "Barnehagefotografering",
   shoots: [
     {
-      description: "Pent og Brukt sommer",
-      tags: ["produkt", "bedrift"],
+      description: "Barnehagefotografering S",
+      tags: ["barnehage", "jente"],
       hideFromRecentWorks: true,
       images: [
         {
-          url: business_pogb_sommer_01,
-          title: "Pent og Brukt sommerstemning",
-          width: 1000,
-          height: 667,
-        },
-        {
-          url: business_pogb_sommer_02,
-          title: "Pent og Brukt sommerstemning",
+          url: kindergarten_S_1,
+          title: "Barnehagefotografering S",
           width: 667,
           height: 1000,
         },
         {
-          url: business_pogb_sommer_03,
-          title: "Pent og Brukt sommerstemning",
+          url: kindergarten_S_2,
+          title: "Barnehagefotografering S",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: kindergarten_S_3,
+          title: "Barnehagefotografering S",
           width: 667,
           height: 1000,
         },
       ],
-      date: "2023-06-12",
+      date: "2022-06-12",
+    },
+    {
+      description: "Barnehagefotografering L",
+      tags: ["barnehage", "gutt"],
+      hideFromRecentWorks: true,
+      images: [
+        {
+          url: kindergarten_L_3,
+          title: "Barnehagefotografering L",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: kindergarten_L_2,
+          title: "Barnehagefotografering L",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: kindergarten_L_1,
+          title: "Barnehagefotografering L",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2023-10-12",
     },
   ],
 };

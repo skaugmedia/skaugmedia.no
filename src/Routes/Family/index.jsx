@@ -89,7 +89,8 @@ export function Family() {
                 MINIFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                20 minutter fotografering, med 3 digitale bildefiler inkludert
+                20 minutter utendørs fotografering på Jessheim, med 3 digitale
+                bildefiler inkludert
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1400,-</div>

@@ -78,6 +78,12 @@ import preg_MR_3 from "../../../Images/Pregnant/preg_mr_3.jpg";
 
 import preg_JT_1 from "../../../Images/Pregnant/preg_jt_1.jpg";
 
+import preg_AG_1 from "../../../Images/Pregnant/preg_ag_1.jpg";
+
+import preg_kl_1 from "../../../Images/Pregnant/preg_kl_1.jpg";
+import preg_kl_2 from "../../../Images/Pregnant/preg_kl_2.jpg";
+import preg_kl_3 from "../../../Images/Pregnant/preg_kl_3.jpg";
+
 import { priceList } from "/src/Data/priceList";
 
 import MaternityRoute from "../../../Routes/Maternity/Route";
@@ -90,8 +96,8 @@ export default {
     Det er så viktig å fange noen bilder av magen mens den stråler som mest, plutselig er den borte! Med det vakre utendørslandskapet som bakgrunn, fanger vi de naturlige lyset og omgivelsene for å skape bilder som stråler av forventning, kjærlighet og forundring. Enten det er i en skog, på en strand, eller på et annet sted som betyr noe for dere, bringer jeg min ekspertise og lidenskap for å fange disse spesielle øyeblikkene.
   `,
   cover: {
-    url: preg_JA_1,
-    title: "Gravide J",
+    url: preg_i_8,
+    title: "En gravid kvinne som ser utover vannet",
   },
   listing: {
     title: "Gravidfotografering",
@@ -586,6 +592,44 @@ export default {
         },
       ],
       date: "2024-03-06",
+    },
+    {
+      description: "Gravide AG",
+      tags: ["gravid", "vinter", "Nordbytjernet"],
+      images: [
+        {
+          url: preg_AG_1,
+          title: "Gravide AG",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-04-10",
+    },
+    {
+      description: "Gravide KL",
+      tags: ["gravid", "vinter", "Nordbytjernet"],
+      images: [
+        {
+          url: preg_kl_1,
+          title: "Gravide kl",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_kl_2,
+          title: "Gravide kl",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_kl_3,
+          title: "Gravide kl",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-04-11",
     },
   ],
 };

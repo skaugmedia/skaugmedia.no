@@ -1,36 +1,57 @@
-import business_pogb_sommer_01 from "../../../../Images/Business/Pent_og_brukt/business_pogb_sommer_01.jpg";
-import business_pogb_sommer_02 from "../../../../Images/Business/Pent_og_brukt/business_pogb_sommer_02.jpg";
-import business_pogb_sommer_03 from "../../../../Images/Business/Pent_og_brukt/business_pogb_sommer_03.jpg";
+import ai_elephant from "../../../../Images/AI/ai_elephant.jpg";
+import ai_flamingo from "../../../../Images/AI/ai_flamingo.jpg";
+import ai_fox from "../../../../Images/AI/ai_fox.jpg";
+import ai_surreal from "../../../../Images/AI/ai_surreal.jpg";
+import ai_woman from "../../../../Images/AI/ai_woman.jpg";
+import ai_yellow from "../../../../Images/AI/ai_yellow.jpg";
 
 export default {
   id: "ai",
   title: "AI / Kunstig Intelligens",
   shoots: [
     {
-      description: "Pent og Brukt sommer",
-      tags: ["produkt", "bedrift"],
+      description: "AI-genererte bilder",
+      tags: ["ai", "ai-genererte bilder"],
       hideFromRecentWorks: true,
       images: [
         {
-          url: business_pogb_sommer_01,
-          title: "Pent og Brukt sommerstemning",
+          url: ai_elephant,
+          title: "AI generert bilde av en elefant med blomster",
           width: 1000,
-          height: 667,
-        },
-        {
-          url: business_pogb_sommer_02,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
           height: 1000,
         },
         {
-          url: business_pogb_sommer_03,
-          title: "Pent og Brukt sommerstemning",
-          width: 667,
+          url: ai_flamingo,
+          title: "AI generert bilde av en flamingo med blomster",
+          width: 1000,
+          height: 1000,
+        },
+        {
+          url: ai_fox,
+          title: "AI generert bilde av en rev med blomster",
+          width: 1000,
+          height: 1000,
+        },
+        {
+          url: ai_surreal,
+          title: "AI generert surrealistisk bilde",
+          width: 1000,
+          height: 1000,
+        },
+        {
+          url: ai_woman,
+          title: "AI generert bilde av en nydelig dame med blomster",
+          width: 1000,
+          height: 1000,
+        },
+        {
+          url: ai_yellow,
+          title: "AI generert bilde av en naken dame og grønne blader",
+          width: 1000,
           height: 1000,
         },
       ],
-      date: "2023-06-12",
+      date: "2024-02-12",
     },
   ],
 };

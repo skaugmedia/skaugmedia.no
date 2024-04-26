@@ -60,8 +60,8 @@ export default {
   La oss fange hvert øyeblikk av deres unike kjærlighetshistorie gjennom en bryllupsfotografering som er skreddersydd for akkurat dere. Fra de intime blikkene under vielsen til de hjertelige omfavnelsene på dansegulvet, vil jeg være der for å fange øyeblikkene med autentisk lidenskap og kreativitet. Med en blanding av naturlig lys og artistisk retning, skaper jeg tidløse bilder som reflekterer deres personlighet og den dype forbindelsen dere deler.
   `,
   cover: {
-    url: Weddingrt14,
-    title: "Brudepar på vei ut av kirken",
+    url: Weddingah12,
+    title: "Brudepar ute i snøen",
   },
   listing: {
     title: "Bryllupsfotografering",

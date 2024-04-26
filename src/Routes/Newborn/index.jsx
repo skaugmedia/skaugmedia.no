@@ -79,7 +79,19 @@ export function Newborn() {
                 etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 1899,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1599,-</div>
+            </div>
+            <div className="PhotoPrice__ShootDivider"></div>
+            <div className="PhotoPrice__PackageBoxShoot">
+              <div className="PhotoPrice__PackageBoxHeading">
+                MINIFOTOGRAFERING
+              </div>
+              <div className="PhotoPrice__PackageBoxSubHeading">
+                20 minutter utendørs fotografering på Jessheim, med 3 digitale
+                bildefiler inkludert
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1400,-</div>
             </div>
           </div>
           <div className="PhotoPrice__Choice">
