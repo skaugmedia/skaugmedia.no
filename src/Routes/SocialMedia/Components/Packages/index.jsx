@@ -31,7 +31,7 @@ export function Packages() {
           ]}
           discountPrice="Kr. 8399,- første måned"
           fullPrice="Kr. 13.999,- per mnd. etter første måned"
-          onReadMore={() => setMenu(package3Case)}
+          onReadMore={() => setMenu(package1Case)}
         />
         <div className="Packages__Divider"></div>
         <Package
