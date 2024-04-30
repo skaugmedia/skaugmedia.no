@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import { ComparisonTable } from "./Components/ComparisonTable";
 import { Packages } from "./Components/Packages";
 import pageName from "./PageName";
 import "./SocialMedia.css";
@@ -80,7 +81,9 @@ export function SocialMedia() {
         <FeaturedGallery images={images} />
         <VerticalDivider />
         <Packages />
+        <ComparisonTable />
       </PageSection>
+
       <PageSection>
         <div className="PhotoPrice__BottomDivider"></div>
         <div className="PhotoPrice__BookingText">
