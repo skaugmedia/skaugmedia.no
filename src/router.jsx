@@ -24,7 +24,7 @@ import { Couples } from "./Routes/Couples";
 import CouplesPageName from "./Routes/Couples/PageName";
 import CouplesRoute from "./Routes/Couples/Route";
 import { DesignInfo } from "./Routes/DesignInfo";
-import DesignInfoLoader from './Routes/DesignInfo/Loader'
+import DesignInfoLoader from "./Routes/DesignInfo/Loader";
 import DesignInfoPageName from "./Routes/DesignInfo/PageName";
 import DesignInfoRoute from "./Routes/DesignInfo/Route";
 import { Discounts } from "./Routes/Discounts";
@@ -142,6 +142,14 @@ export const router = createBrowserRouter([
                 element: <DesignInfo />,
                 loader: DesignInfoLoader,
                 handle: { pageName: DesignInfoPageName },
+                children: [
+                  {
+                    path: ":projectId",
+                    loader: GraphicalDesignProjectLoader,
+                    element: <GraphicalDesignProject />,
+                    handle: { pageName: (data) => data.project.title },
+                  },
+                ],
               },
               {
                 path: SocialMediaRoute,

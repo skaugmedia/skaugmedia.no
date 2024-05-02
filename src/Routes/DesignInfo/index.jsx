@@ -1,15 +1,20 @@
-import { NavLink, useLoaderData } from "react-router-dom";
+import { NavLink, Outlet, useLoaderData } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import "./DesignInfo.css";
 import pageName from "./PageName";
+import Route from "./Route";
 import { GalleryBrowser } from "/src/Components/GalleryBrowser";
 import { Project } from "/src/Components/Project";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function DesignInfo() {
   const { projects } = useLoaderData();
+
+  if (!location.pathname.endsWith(Route)) {
+    return <Outlet />;
+  }
 
   return (
     <>
