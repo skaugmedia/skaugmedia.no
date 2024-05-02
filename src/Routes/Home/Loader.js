@@ -1,4 +1,5 @@
-import designRoute from "../GraphicalDesign/Route";
+import businessPricesRoute from "../BusinessPrices/Route";
+import designRoute from "../DesignInfo/Route";
 import photoRoute from "../Photography/Route";
 import { projects } from "/src/Data/Business/GraphicalDesign";
 import { categories } from "/src/Data/Photography";
@@ -20,7 +21,7 @@ export default function Loader() {
 
   const projs = projects.map((project) => ({
     date: project.date,
-    url: `${designRoute}/${project.id}`,
+    url: `${businessPricesRoute}/${designRoute}/${project.id}`,
     thumbnail: project.thumbnail,
     img: project.cover,
     title: project.title,
