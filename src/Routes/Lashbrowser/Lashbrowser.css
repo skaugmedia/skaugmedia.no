@@ -1,0 +1,90 @@
+.LashBrowser_TopCoverImg {
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
+}
+
+.LashBrowser__Text {
+  font-family: nunito;
+}
+
+.LashBrowser__DisplayBox1 {
+  display: flex;
+  flex-flow: row;
+  max-width: var(max-width);
+  gap: 10px;
+}
+
+.LashBrowser__DisplayImage1 {
+  width: 35%;
+}
+
+.LashBrowser__DisplayImage2 {
+  width: 65%;
+}
+
+.LashBrowser__ColorDisplayRow {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.LashBrowser__ColorDisplay1 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 2px;
+}
+.LashBrowser__ColorDisplay2 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #becec8;
+}
+.LashBrowser__ColorDisplay3 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #9ecca9;
+}
+.LashBrowser__ColorDisplay4 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #55ceab;
+}
+.LashBrowser__ColorDisplay5 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #2e7f66;
+}
+.LashBrowser__ColorDisplay6 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #969448;
+}
+.LashBrowser__ColorDisplay7 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #000000;
+}
+
+.LashBrowser__DisplayImage4 {
+  margin-top: 20px;
+}

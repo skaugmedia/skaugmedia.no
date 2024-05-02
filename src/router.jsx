@@ -55,6 +55,9 @@ import HomeRoute from "./Routes/Home/Route";
 import { KindergartenPhotography } from "./Routes/KindergartenPhotography";
 import KindergartenPhotographyPageName from "./Routes/KindergartenPhotography/PageName";
 import KindergartenPhotographyRoute from "./Routes/KindergartenPhotography/Route";
+import { Lashbrowser } from "./Routes/Lashbrowser";
+import LashbrowserPageName from "./Routes/Lashbrowser/PageName";
+import LashbrowserRoute from "./Routes/Lashbrowser/Route";
 import { Maternity } from "./Routes/Maternity";
 import MaternityPageName from "./Routes/Maternity/PageName";
 import MaternityRoute from "./Routes/Maternity/Route";
@@ -143,6 +146,11 @@ export const router = createBrowserRouter([
                 loader: DesignInfoLoader,
                 handle: { pageName: DesignInfoPageName },
                 children: [
+                  {
+                    path: LashbrowserRoute,
+                    element: <Lashbrowser />,
+                    handle: { pageName: LashbrowserPageName },
+                  },
                   {
                     path: ":projectId",
                     loader: GraphicalDesignProjectLoader,
