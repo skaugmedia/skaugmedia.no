@@ -107,8 +107,7 @@ export function Home() {
             bildeprodukter inkludert
           </div>
           <div className="Home__IncludesSubtext">
-            (unntak er bryllupsfotografering, mitt første år-fotografering og
-            gratis gravidfotografering)
+            (unntak er bryllupsfotografering og gratis gravidfotografering)
           </div>
         </div>
       </PageSection>
