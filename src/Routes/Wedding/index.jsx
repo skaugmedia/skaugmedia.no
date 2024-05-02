@@ -1,16 +1,19 @@
 import className from "classnames";
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Checkmark } from "../../Components/Checkmark";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import pageName from "./PageName";
 import "./Wedding.css";
-import WeddingImg from "/src/Images/Wedding/weddingRT_14.jpg";
+import Gallery from "/src/Data/Photography/Wedding";
+import WeddingImg from "/src/Images/Wedding/weddingAH_1.jpg";
 import WeddingTextImg from "/src/Images/WeddingPrice/wedding_text.jpg";
 import WeddingText1Img from "/src/Images/WeddingPrice/wedding_text1.jpg";
 import WeddingText2Img from "/src/Images/WeddingPrice/wedding_text2.jpg";
+import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Wedding() {
   const location = useLocation();
@@ -84,6 +87,10 @@ export function Wedding() {
             prisen
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
+          <div className="Wedding__PackageBoxText">
+            15x15cm album med 20 bilder
+          </div>
+          <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxPrice">Kr. 24.000,-</div>
           <button
             onClick={() => setMenu("b2")}
@@ -118,6 +125,11 @@ export function Wedding() {
           <div className="Wedding__PackageBoxText">
             Forlovelsesfotografering inkludert 5 digitale bildefiler inkludert I
             prisen
+          </div>
+
+          <div className="Wedding__PackageBoxDivider"></div>
+          <div className="Wedding__PackageBoxText">
+            15x15cm album med 20 bilder
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
@@ -194,6 +206,10 @@ export function Wedding() {
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
               Ca. 50 stk. digitale bildefiler
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              Visningstime 1-3 uker etter levering av bildene
             </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
@@ -282,6 +298,15 @@ export function Wedding() {
             <div className="Wedding__PackageBigBoxListText">
               Ca. 150 stk. digitale bildefiler
             </div>
+
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBoxText">
+              15x15cm album med 20 bilder
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              Visningstime 1-3 uker etter levering av bildene
+            </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
               Online bildegalleri hvor dere kan laste ned bildene
@@ -367,6 +392,14 @@ export function Wedding() {
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
               Ca. 170 stk. digitale bildefiler
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="Wedding__PackageBoxText">
+              15x15cm album med 20 bilder
+            </div>
+            <div className="Wedding__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              Visningstime 1-3 uker etter levering av bildene
             </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="Wedding__PackageBigBoxListText">
@@ -457,6 +490,17 @@ export function Wedding() {
           src={WeddingImg}
           alt="Nygift brudepar på vei ut av kirken"
         ></img>
+      </PageSection>
+      <PageSection>
+        <div>
+          <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+          <NavLink
+            to={`/${PhotographyRoute}/${Gallery.id}`}
+            className="PhotoPrice__BookingButton"
+          >
+            Galleri
+          </NavLink>
+        </div>
       </PageSection>
       {(() => {
         switch (menu) {
@@ -583,6 +627,28 @@ export function Wedding() {
               <td>50% rabatt på forlovelsesfotografering</td>
               <td>Fotografering + 5 digitale bildefiler</td>
               <td>Fotografering + 5 digitale bildefiler</td>
+            </tr>
+            <tr>
+              <th>Visningstime etter levering av bildene</th>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
+            </tr>
+            <tr>
+              <th>15x15cm album med 20 bilder</th>
+              <td></td>
+              <td>
+                <Check />
+              </td>
+              <td>
+                <Check />
+              </td>
             </tr>
             <tr>
               <th>Mulighet for å kjøpe bildeprodukter</th>
@@ -719,6 +785,15 @@ export function Wedding() {
             </p>
           </div>
         </div>
+      </PageSection>
+      <PageSection>
+        <div className="PhotoPrice__BottomDivider"></div>
+        <div className="PhotoPrice__BookingText">
+          Ønsker dere å booke bryllupsfotografering?
+        </div>
+        <NavLink to={`/${ContactRoute}`} className="PhotoPrice__BookingButton">
+          Trykk her for å booke
+        </NavLink>
       </PageSection>
     </>
   );

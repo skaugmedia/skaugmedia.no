@@ -1,0 +1,88 @@
+.ComparisonTable__ToggleButton {
+  background-color: var(--blue);
+  z-index: 2;
+  color: black;
+  grid-area: link;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  border-color: transparent;
+  font-family: oswald;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.ComparisonTable__ToggleButton:hover {
+  color: var(--blue);
+  background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .ComparisonTable__ToggleButton {
+    display: none;
+  }
+}
+
+.ComparisonTable__Heading {
+  display: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.ComparisonTable__Heading--Shown {
+  display: initial;
+}
+
+.ComparisonTable__Table {
+  --gap: 10px;
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ComparisonTable__Table th {
+  text-align: left;
+  font-weight: 300;
+  font-family: nunito;
+}
+
+.ComparisonTable__Table--Shown {
+  display: table;
+}
+
+.ComparisonTable__Table tr:not(:first-child) td:not(:first-child) {
+  font-family: nunito;
+  font-size: 0.9em;
+}
+
+.ComparisonTable__Table td {
+  text-align: center;
+}
+
+.ComparisonTable__Table tr {
+  border-bottom: 1px solid black;
+}
+
+.ComparisonTable__Table tr:first-child td {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.ComparisonTable__Table th:not(:last-child),
+.ComparisonTable__Table td:not(:last-child) {
+  padding-right: var(--gap);
+}
+
+.ComparisonTable__Table th,
+.ComparisonTable__Table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

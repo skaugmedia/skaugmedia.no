@@ -83,6 +83,10 @@ export function FirstYear() {
                 opptil 1 time med mulighet for cakesmash
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter levering av hvert bildegalleri
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
 
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder

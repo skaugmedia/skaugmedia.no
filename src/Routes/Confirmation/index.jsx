@@ -2,10 +2,14 @@ import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import ConfirmationImg1 from "../../Images/Confirmation/conf_K_5.jpg";
+import ConfirmationImg2 from "../../Images/Confirmation/conf_L_4.jpg";
 import ConfirmationImg from "../../Images/Confirmation/conf_SV_4.jpg";
 import "./Confirmation.css";
 import pageName from "./PageName";
+import Gallery from "/src/Data/Photography/Confirmation";
 import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Confirmation() {
   const location = useLocation();
@@ -46,6 +50,17 @@ export function Confirmation() {
           ></img>
         </PageSection>
         <PageSection>
+          <div>
+            <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+            <NavLink
+              to={`/${PhotographyRoute}/${Gallery.id}`}
+              className="PhotoPrice__BookingButton"
+            >
+              Galleri
+            </NavLink>
+          </div>
+        </PageSection>
+        <PageSection>
           <div className="PhotoPrice__Choice">
             Du kan velge mellom å booke kun fotografering
           </div>
@@ -55,8 +70,8 @@ export function Confirmation() {
                 KONFIRMANTFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                opptil 1 time fotografering, med 10% rabatt på alle
-                bildeprodukter
+                opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>
@@ -67,7 +82,8 @@ export function Confirmation() {
                 MINIFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                20 minutter fotografering, med 3 digitale bildefiler inkludert
+                20 minutter utendørs fotografering på Jessheim, med 3 digitale
+                bildefiler inkludert
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1400,-</div>
@@ -89,7 +105,10 @@ export function Confirmation() {
               <div className="PhotoPrice__PackageBoxText">
                 1 time portrettfotografering på valgfri lokasjon
               </div>
-
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -103,7 +122,7 @@ export function Confirmation() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 4299,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 4999,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package2">
@@ -115,6 +134,10 @@ export function Confirmation() {
               </div>
               <div className="PhotoPrice__PackageBoxText">
                 1 time portrettfotografering på valgfri lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
@@ -143,7 +166,10 @@ export function Confirmation() {
               <div className="PhotoPrice__PackageBoxText">
                 1 time portrettfotografering på valgfri lokasjon
               </div>
-
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -154,7 +180,7 @@ export function Confirmation() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Album 20x20 cm med 10 stk. bilder
+                Album 15x15 cm med 10 stk. bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">Lerret 20x30 cm</div>
@@ -163,7 +189,7 @@ export function Confirmation() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 7099,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 10.799,-</div>
             </div>
           </div>
         </PageSection>
@@ -213,6 +239,20 @@ export function Confirmation() {
           >
             Trykk her for å booke
           </NavLink>
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__GalleryImageBox">
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={ConfirmationImg1}
+              alt="Herlig konfirmant i bunad på en benk i en park."
+            ></img>
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={ConfirmationImg2}
+              alt="En herlig konfirmant i lys kjole ute i skogen, med en paraply."
+            ></img>
+          </div>
         </PageSection>
       </div>
     </>

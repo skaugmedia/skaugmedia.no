@@ -2,10 +2,14 @@ import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import MaternityImg2 from "../../Images/Pregnant/preg_j_4.jpg";
+import MaternityImg1 from "../../Images/Pregnant/preg_k_4.jpg";
 import MaternityImg from "../../Images/Pregnant/preg_p_5.jpg";
 import "./Maternity.css";
 import pageName from "./PageName";
+import Gallery from "/src/Data/Photography/Pregnant";
 import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Maternity() {
   const location = useLocation();
@@ -42,6 +46,17 @@ export function Maternity() {
           ></img>
         </PageSection>
         <PageSection>
+          <div>
+            <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+            <NavLink
+              to={`/${PhotographyRoute}/${Gallery.id}`}
+              className="PhotoPrice__BookingButton"
+            >
+              Galleri
+            </NavLink>
+          </div>
+        </PageSection>
+        <PageSection>
           <div className="PhotoPrice__Choice">
             Du kan velge mellom å booke kun fotografering
           </div>
@@ -51,8 +66,8 @@ export function Maternity() {
                 GRAVIDFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                opptil 1 time fotografering, med 10% rabatt på alle
-                bildeprodukter
+                opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>
@@ -63,7 +78,8 @@ export function Maternity() {
                 MINIFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                20 minutter fotografering, med 3 digitale bildefiler inkludert
+                20 minutter utendørs fotografering på Jessheim, med 3 digitale
+                bildefiler inkludert
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1400,-</div>
@@ -87,6 +103,10 @@ export function Maternity() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
                 Fotografering sammen med partner og barn
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
@@ -106,7 +126,7 @@ export function Maternity() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 4299,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 4999,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package2">
@@ -118,6 +138,10 @@ export function Maternity() {
               </div>
               <div className="PhotoPrice__PackageBoxText">
                 1 time fotografering på valgfri lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -146,7 +170,7 @@ export function Maternity() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 5699,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 5799,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
@@ -158,6 +182,10 @@ export function Maternity() {
               </div>
               <div className="PhotoPrice__PackageBoxText">
                 1 time fotografering på valgfri lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -177,7 +205,7 @@ export function Maternity() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Album 20x20 cm med 10 stk. bilder
+                Album 15x15 cm med 10 stk. bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">Lerret 20x30 cm</div>
@@ -186,7 +214,7 @@ export function Maternity() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 7099,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 10.499,-</div>
             </div>
           </div>
         </PageSection>
@@ -236,6 +264,20 @@ export function Maternity() {
           >
             Trykk her for å booke
           </NavLink>
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__GalleryImageBox">
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={MaternityImg1}
+              alt="En gravid dame i blomstereng"
+            ></img>
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={MaternityImg2}
+              alt="En gravid dame hjemme i sin egen sofa."
+            ></img>
+          </div>
         </PageSection>
       </div>
     </>

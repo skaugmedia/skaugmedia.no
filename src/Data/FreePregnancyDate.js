@@ -3,7 +3,14 @@ import { isWithinRange, localTime, maxDateMs } from "/src/utils";
 // --------------------------
 // Til Nina:
 // Legg inn nye datoer her
-const dates = ["06.03.2024", "10.04.2024", "30.04.2024"];
+const dates = [
+  "06.03.2024",
+  "10.04.2024",
+  "30.04.2024",
+  "24.05.2024",
+  "12.06.2024",
+  "24.07.2024",
+];
 // --------------------------
 
 export const freePregnancyId = "gratis-gravidfotografering";

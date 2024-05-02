@@ -17,6 +17,10 @@ import dad_VL_5 from "../../../Images/Mommy&me/dad_VL_5.jpg";
 import dad_VL_6 from "../../../Images/Mommy&me/dad_VL_6.jpg";
 import dad_VL_7 from "../../../Images/Mommy&me/dad_VL_7.jpg";
 
+import mom_RL_1 from "../../../Images/Mommy&me/mom_RL_1.jpg";
+import mom_RL_2 from "../../../Images/Mommy&me/mom_RL_2.jpg";
+import mom_RL_3 from "../../../Images/Mommy&me/mom_RL_3.jpg";
+
 import { priceList } from "/src/Data/priceList";
 
 import FamilyRoute from "../../../Routes/Family/Route";
@@ -159,6 +163,32 @@ export default {
         },
       ],
       date: "2023-05-07",
+    },
+    {
+      description: "Mamma og meg",
+      tags: ["mommy&me", "barn", "mamma", "familie"],
+
+      images: [
+        {
+          url: mom_RL_1,
+          title: "Mamma og meg i snøen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: mom_RL_2,
+          title: "Mamma og meg i snøen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: mom_RL_3,
+          title: "Mamma og meg i snøen",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-02-21",
     },
   ],
 };

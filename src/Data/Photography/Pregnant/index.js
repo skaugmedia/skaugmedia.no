@@ -31,12 +31,9 @@ import preg_c_7 from "../../../Images/Pregnant/preg_c_7.jpg";
 import preg_c_8 from "../../../Images/Pregnant/preg_c_8.jpg";
 import preg_c_9 from "../../../Images/Pregnant/preg_c_9.jpg";
 
-import preg_l_1 from "../../../Images/Pregnant/preg_l_1.jpg";
-import preg_l_2 from "../../../Images/Pregnant/preg_l_2.jpg";
 import preg_l_3 from "../../../Images/Pregnant/preg_l_3.jpg";
 import preg_l_4 from "../../../Images/Pregnant/preg_l_4.jpg";
 import preg_l_5 from "../../../Images/Pregnant/preg_l_5.jpg";
-import preg_l_6 from "../../../Images/Pregnant/preg_l_6.jpg";
 
 import preg_j_1 from "../../../Images/Pregnant/preg_j_1.jpg";
 import preg_j_2 from "../../../Images/Pregnant/preg_j_2.jpg";
@@ -66,7 +63,6 @@ import preg_m_8 from "../../../Images/Pregnant/preg_m_8.jpg";
 
 import preg_kr_1 from "../../../Images/Pregnant/preg_kr_1.jpg";
 
-import preg_a_1 from "../../../Images/Pregnant/preg_a_1.jpg";
 import preg_a_2 from "../../../Images/Pregnant/preg_a_2.jpg";
 import preg_a_3 from "../../../Images/Pregnant/preg_a_3.jpg";
 import preg_a_4 from "../../../Images/Pregnant/preg_a_4.jpg";
@@ -75,6 +71,18 @@ import preg_JA_1 from "../../../Images/Pregnant/preg_JA_1.jpg";
 import preg_JA_2 from "../../../Images/Pregnant/preg_JA_2.jpg";
 import preg_JA_3 from "../../../Images/Pregnant/preg_JA_3.jpg";
 import preg_JA_4 from "../../../Images/Pregnant/preg_JA_4.jpg";
+
+import preg_MR_1 from "../../../Images/Pregnant/preg_mr_1.jpg";
+import preg_MR_2 from "../../../Images/Pregnant/preg_mr_2.jpg";
+import preg_MR_3 from "../../../Images/Pregnant/preg_mr_3.jpg";
+
+import preg_JT_1 from "../../../Images/Pregnant/preg_jt_1.jpg";
+
+import preg_AG_1 from "../../../Images/Pregnant/preg_ag_1.jpg";
+
+import preg_kl_1 from "../../../Images/Pregnant/preg_kl_1.jpg";
+import preg_kl_2 from "../../../Images/Pregnant/preg_kl_2.jpg";
+import preg_kl_3 from "../../../Images/Pregnant/preg_kl_3.jpg";
 
 import { priceList } from "/src/Data/priceList";
 
@@ -88,8 +96,8 @@ export default {
     Det er så viktig å fange noen bilder av magen mens den stråler som mest, plutselig er den borte! Med det vakre utendørslandskapet som bakgrunn, fanger vi de naturlige lyset og omgivelsene for å skape bilder som stråler av forventning, kjærlighet og forundring. Enten det er i en skog, på en strand, eller på et annet sted som betyr noe for dere, bringer jeg min ekspertise og lidenskap for å fange disse spesielle øyeblikkene.
   `,
   cover: {
-    url: preg_JA_1,
-    title: "Gravide J",
+    url: preg_i_8,
+    title: "En gravid kvinne som ser utover vannet",
   },
   listing: {
     title: "Gravidfotografering",
@@ -101,12 +109,6 @@ export default {
       description: "Gravide A",
       tags: ["gravid", "sommer", "skog"],
       images: [
-        {
-          url: preg_a_1,
-          title: "Gravide A",
-          width: 667,
-          height: 1000,
-        },
         {
           url: preg_a_2,
           title: "Gravide A",
@@ -196,18 +198,6 @@ export default {
       tags: ["gravid", "sommer"],
       images: [
         {
-          url: preg_l_1,
-          title: "Gravide L",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: preg_l_2,
-          title: "Gravide L",
-          width: 667,
-          height: 1000,
-        },
-        {
           url: preg_l_3,
           title: "Gravide L",
           width: 667,
@@ -222,12 +212,6 @@ export default {
 
         {
           url: preg_l_5,
-          title: "Gravide L",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: preg_l_6,
           title: "Gravide L",
           width: 667,
           height: 1000,
@@ -570,6 +554,82 @@ export default {
         },
       ],
       date: "2023-11-30",
+    },
+    {
+      description: "Gravide M",
+      tags: ["gravid", "vinter", "skog", "Nordbytjernet"],
+      images: [
+        {
+          url: preg_MR_1,
+          title: "Gravide M",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_MR_2,
+          title: "Gravide M",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_MR_3,
+          title: "Gravide M",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-03-06",
+    },
+    {
+      description: "Gravide M",
+      tags: ["gravid", "vinter", "skog", "Nordbytjernet"],
+      images: [
+        {
+          url: preg_JT_1,
+          title: "Gravide J",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-03-06",
+    },
+    {
+      description: "Gravide AG",
+      tags: ["gravid", "vinter", "Nordbytjernet"],
+      images: [
+        {
+          url: preg_AG_1,
+          title: "Gravide AG",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-04-10",
+    },
+    {
+      description: "Gravide KL",
+      tags: ["gravid", "vinter", "Nordbytjernet"],
+      images: [
+        {
+          url: preg_kl_1,
+          title: "Gravide kl",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_kl_2,
+          title: "Gravide kl",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_kl_3,
+          title: "Gravide kl",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-04-11",
     },
   ],
 };

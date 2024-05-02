@@ -28,6 +28,7 @@
     "build:postProcess": "node tools/postProcessRoutes.js"
   },
   "devDependencies": {
+    "@fsouza/prettierd": "^0.25.3",
     "@vitejs/plugin-react": "^4.2.0",
     "basic-ftp": "^5.0.2",
     "common-tags": "^1.8.2",

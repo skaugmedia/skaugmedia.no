@@ -2,10 +2,14 @@ import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import FamilyImg1 from "../../Images/Family/fam_e_3.jpg";
 import FamilyImg from "../../Images/Family/fam_h_3.jpg";
+import FamilyImg2 from "../../Images/Family/fam_h_6.jpg";
 import "./Family.css";
 import pageName from "./PageName";
+import Gallery from "/src/Data/Photography/Family";
 import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Family() {
   const location = useLocation();
@@ -44,12 +48,27 @@ export function Family() {
             fanger jeg så mange øyeblikk jeg kan, hele familien samlet, mor og
             far, søsken sammen, far og barn sammen og mor og barn sammen.
           </p>
+          <p className="PhotoPrice__TopContentText">
+            Består familien av fler enn 6 personer, kommer det et tillegg på kr.
+            250,- per person utover dette.
+          </p>
 
           <img
             className="PhotoPrice__Img"
             src={FamilyImg}
             alt="En herlig liten familie ute i skogen"
           ></img>
+        </PageSection>
+        <PageSection>
+          <div>
+            <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+            <NavLink
+              to={`/${PhotographyRoute}/${Gallery.id}`}
+              className="PhotoPrice__BookingButton"
+            >
+              Galleri
+            </NavLink>
+          </div>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__Choice">
@@ -61,8 +80,8 @@ export function Family() {
                 FAMILIEFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                opptil 1 time fotografering, med 10% rabatt på alle
-                bildeprodukter
+                opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>
@@ -74,7 +93,8 @@ export function Family() {
                 MINIFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                20 minutter fotografering, med 3 digitale bildefiler inkludert
+                20 minutter utendørs fotografering på Jessheim, med 3 digitale
+                bildefiler inkludert
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1400,-</div>
@@ -96,7 +116,10 @@ export function Family() {
               <div className="PhotoPrice__PackageBoxText">
                 1 time fotografering på valgfri lokasjon
               </div>
-
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -110,7 +133,7 @@ export function Family() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 4299,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 4999,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package2">
@@ -122,6 +145,10 @@ export function Family() {
               </div>
               <div className="PhotoPrice__PackageBoxText">
                 1 time fotografering på valgfri lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
@@ -150,7 +177,10 @@ export function Family() {
               <div className="PhotoPrice__PackageBoxText">
                 1 time fotografering på valgfri lokasjon
               </div>
-
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -161,7 +191,7 @@ export function Family() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Album 20x20 cm med 10 stk. bilder
+                Album 15x15 cm med 10 stk. bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">Lerret 20x30 cm</div>
@@ -170,7 +200,7 @@ export function Family() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 7099,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 10.799,-</div>
             </div>
           </div>
         </PageSection>
@@ -219,6 +249,20 @@ export function Family() {
           >
             Trykk her for å booke
           </NavLink>
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__GalleryImageBox">
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={FamilyImg1}
+              alt="Far og sønn som har det gøy i skogen"
+            ></img>
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={FamilyImg2}
+              alt="Mor, far og datter som går vekk fra kameraet i skogen."
+            ></img>
+          </div>
         </PageSection>
       </div>
     </>

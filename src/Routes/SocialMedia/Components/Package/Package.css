@@ -1,0 +1,84 @@
+.Package {
+  width: 33%;
+}
+
+.Package__Heading {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.Package__SubHeading {
+  font-family: oswald;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.Package__Paragraph {
+  font-family: nunito;
+  font-size: 0.9em;
+  margin: 0 30px;
+  text-align: center;
+}
+
+.Package__ParagraphDivider {
+  height: 1px;
+  margin-bottom: 9px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9px;
+  width: 30%;
+}
+
+.Package__DiscountPrice {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--blue);
+}
+
+.Package__FullPrice {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-top: 7px;
+  color: black;
+}
+
+.Package__ReadMoreButton {
+  background-color: black;
+  border-color: transparent;
+  border-radius: 9999px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: oswald;
+  font-size: 1em;
+  font-weight: 400;
+  grid-area: link;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 3px 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.Package__ReadMoreButton:hover {
+  background-color: var(--blue);
+  color: black;
+}

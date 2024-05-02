@@ -2,10 +2,14 @@ import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import HeadshotsImg2 from "../../Images/Portrait/port_IM_02.jpg";
+import HeadshotsImg1 from "../../Images/Portrait/port_SV_02.jpg";
 import HeadshotsImg from "../../Images/Portrait/port_T_01.jpg";
 import "./Headshots.css";
 import pageName from "./PageName";
+import Gallery from "/src/Data/Photography/Portrait";
 import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Headshots() {
   const location = useLocation();
@@ -49,6 +53,17 @@ export function Headshots() {
           ></img>
         </PageSection>
         <PageSection>
+          <div>
+            <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+            <NavLink
+              to={`/${PhotographyRoute}/${Gallery.id}`}
+              className="PhotoPrice__BookingButton"
+            >
+              Galleri
+            </NavLink>
+          </div>
+        </PageSection>
+        <PageSection>
           <div className="PhotoPrice__Choice">
             Du kan velge mellom å booke en av disse fotograferingene
           </div>
@@ -65,6 +80,10 @@ export function Headshots() {
                 Opptil 30 minutter fotografering på valgfri lokasjon
               </div>
 
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningtime 1-3 uker etter fotografering, om du ønsker dette
+              </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
               <div className="PhotoPrice__PackageBoxText">
@@ -93,7 +112,8 @@ export function Headshots() {
               PORTRETTFOTOGRAFERING
             </div>
             <div className="PhotoPrice__PackageBoxSubHeading">
-              opptil 1 time fotografering, med 10% rabatt på alle bildeprodukter
+              opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+              etter fotograferingen
             </div>
             <div className="PhotoPrice__PackageBoxDivider"></div>
             <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>
@@ -150,6 +170,20 @@ export function Headshots() {
           >
             Trykk her for å booke
           </NavLink>
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__GalleryImageBox">
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={HeadshotsImg1}
+              alt="En liten gutt som studerer epler utendørs."
+            ></img>
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={HeadshotsImg2}
+              alt="En herlig jente som er veldig blid og fornøyd."
+            ></img>
+          </div>
         </PageSection>
       </div>
     </>

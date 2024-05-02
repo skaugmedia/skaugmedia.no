@@ -2,10 +2,14 @@ import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import ChildrenImg2 from "../../Images/Kids/H_6.jpg";
 import ChildrenImg from "../../Images/Kids/LG_01.jpg";
+import ChildrenImg1 from "../../Images/Kids/LP_7.jpg";
 import "./Children.css";
 import pageName from "./PageName";
+import Gallery from "/src/Data/Photography/Kids";
 import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Children() {
   const location = useLocation();
@@ -59,6 +63,17 @@ export function Children() {
           ></img>
         </PageSection>
         <PageSection>
+          <div>
+            <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+            <NavLink
+              to={`/${PhotographyRoute}/${Gallery.id}`}
+              className="PhotoPrice__BookingButton"
+            >
+              Galleri
+            </NavLink>
+          </div>
+        </PageSection>
+        <PageSection>
           <div className="PhotoPrice__Choice">
             Du kan velge mellom å booke kun fotografering
           </div>
@@ -68,8 +83,8 @@ export function Children() {
                 BARNEFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                opptil 1 time fotografering, med 10% rabatt på alle
-                bildeprodukter
+                opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>
@@ -80,7 +95,8 @@ export function Children() {
                 MINIFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                20 minutter fotografering, med 3 digitale bildefiler inkludert
+                20 minutter utendørs fotografering på Jessheim, med 3 digitale
+                bildefiler inkludert
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1400,-</div>
@@ -104,6 +120,10 @@ export function Children() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
                 Lån av klær er inkludert i prisen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
@@ -119,7 +139,7 @@ export function Children() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 4299,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 4999,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package2">
@@ -131,6 +151,10 @@ export function Children() {
               </div>
               <div className="PhotoPrice__PackageBoxText">
                 1 time fotografering på valgfri lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -155,7 +179,7 @@ export function Children() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 5699,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 5799,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
@@ -167,6 +191,10 @@ export function Children() {
               </div>
               <div className="PhotoPrice__PackageBoxText">
                 1 time fotografering på valgfri lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -182,7 +210,7 @@ export function Children() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Album 20x20 cm med 10 stk. bilder
+                Album 15x15 cm med 10 stk. bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">Lerret 20x30 cm</div>
@@ -191,7 +219,7 @@ export function Children() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 7099,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 10.799,-</div>
             </div>
           </div>
         </PageSection>
@@ -245,6 +273,20 @@ export function Children() {
           >
             Trykk her for å booke
           </NavLink>
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__GalleryImageBox">
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={ChildrenImg1}
+              alt="En liten gutt som studerer epler utendørs."
+            ></img>
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={ChildrenImg2}
+              alt="En herlig jente som er veldig blid og fornøyd."
+            ></img>
+          </div>
         </PageSection>
       </div>
     </>

@@ -2,10 +2,14 @@ import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import NewbornImg1 from "../../Images/Newborn/l_newborn_2.jpg";
+import NewbornImg2 from "../../Images/Newborn/newborn_LO_4.jpg";
 import NewbornImg from "../../Images/Newborn/newborn_LO_5.jpg";
 import "./Newborn.css";
 import pageName from "./PageName";
+import Gallery from "/src/Data/Photography/Newborn";
 import ContactRoute from "/src/Routes/Contact/Route";
+import PhotographyRoute from "/src/Routes/Photography/Route";
 
 export function Newborn() {
   const location = useLocation();
@@ -51,6 +55,17 @@ export function Newborn() {
           ></img>
         </PageSection>
         <PageSection>
+          <div>
+            <div className="PhotoPrice__GalleryText">Gå til galleriet her:</div>
+            <NavLink
+              to={`/${PhotographyRoute}/${Gallery.id}`}
+              className="PhotoPrice__BookingButton"
+            >
+              Galleri
+            </NavLink>
+          </div>
+        </PageSection>
+        <PageSection>
           <div className="PhotoPrice__Choice">
             Du kan velge mellom å booke kun fotografering
           </div>
@@ -60,11 +75,23 @@ export function Newborn() {
                 NYFØDTFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                opptil 3 timer fotografering, med 10% rabatt på alle
-                bildeprodukter
+                opptil 3 timer fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 1899,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1699,-</div>
+            </div>
+            <div className="PhotoPrice__ShootDivider"></div>
+            <div className="PhotoPrice__PackageBoxShoot">
+              <div className="PhotoPrice__PackageBoxHeading">
+                MINIFOTOGRAFERING
+              </div>
+              <div className="PhotoPrice__PackageBoxSubHeading">
+                20 minutter utendørs fotografering på Jessheim, med 3 digitale
+                bildefiler inkludert
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1400,-</div>
             </div>
           </div>
           <div className="PhotoPrice__Choice">
@@ -86,6 +113,10 @@ export function Newborn() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
                 Fotografering med søsken og foreldre
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
@@ -101,7 +132,7 @@ export function Newborn() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 4699,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 4999,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package2">
@@ -114,6 +145,10 @@ export function Newborn() {
               <div className="PhotoPrice__PackageBoxText">
                 2-3 timer fotografering hjemme hos dere eller på valgfri
                 lokasjon
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -140,7 +175,7 @@ export function Newborn() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 6199,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 6899,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
@@ -156,6 +191,10 @@ export function Newborn() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
+                Visningstime 1-3 uker etter fotograferingen
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
                 Fotografering med søsken og foreldre
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
@@ -168,7 +207,7 @@ export function Newborn() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Album 30x30 cm med 10 stk. bilder
+                Album 15x15 cm med 10 stk. bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -179,7 +218,7 @@ export function Newborn() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 7499,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 10.599,-</div>
             </div>
           </div>
         </PageSection>
@@ -228,6 +267,20 @@ export function Newborn() {
           >
             Trykk her for å booke
           </NavLink>
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__GalleryImageBox">
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={NewbornImg1}
+              alt="En nydelig liten baby som har på seg lue med ører, i sorthvitt."
+            ></img>
+            <img
+              className="PhotoPrice__GalleryImage"
+              src={NewbornImg2}
+              alt="En liten nyfødt baby"
+            ></img>
+          </div>
         </PageSection>
       </div>
     </>

@@ -1,0 +1,7 @@
+.VerticalDivider {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid lightgrey;
+  width: 30%;
+  margin: 9px auto;
+}

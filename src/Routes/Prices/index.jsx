@@ -213,6 +213,10 @@ export function Prices() {
           />
 
           <div className="Prices__TextIntroHeader">
+            Alle fotograferinger inkluderer 1 visningstime 1-3 uker etter
+            fotograferingen er gjennomført.
+          </div>
+          <div className="Prices__TextIntroHeader">
             Ønsker du fotografering etter kl. 16.00 på en hverdag?
           </div>
           <div className="Prices__TextIntro">
