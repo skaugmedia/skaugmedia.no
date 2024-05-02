@@ -12,21 +12,21 @@ export function ComparisonTable() {
   return (
     <>
       <button
-        className="BusinessPrices__PackageCompareButton"
+        className="ComparisonTable__ToggleButton"
         onClick={() => setShowComparisonTable(!showComparisonTable)}
       >
         Sammenlign bedriftsabonnementer
       </button>
       <h2
-        className={className("BusinessPrices__ComparisonTableHeader", {
-          "BusinessPrices__ComparisonTableHeader--Shown": showComparisonTable,
+        className={className("ComparisonTable__Heading", {
+          "ComparisonTable__Heading--Shown": showComparisonTable,
         })}
       >
         Sammenlign de ulike bedriftsabonnementene her
       </h2>
       <table
-        className={className("BusinessPrices__ComparisonTable", {
-          "BusinessPrices__ComparisonTable--Shown": showComparisonTable,
+        className={className("ComparisonTable__Table", {
+          "ComparisonTable__Table--Shown": showComparisonTable,
         })}
       >
         <tbody>
