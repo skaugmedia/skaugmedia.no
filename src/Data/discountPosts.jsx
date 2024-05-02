@@ -4,29 +4,29 @@ import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
-import SpringMinisession from "/src/Images/Discounts/valgfri_minifotografering.jpg";
+import KidsMinisession from "/src/Images/Kids/LP_2.jpg";
 import ChristmasDiscount from "/src/Images/christmas_minishoot.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
   {
-    id: "valgfri-minifotografering-20-04-24",
-    title: "Valgfri minifotografering",
+    id: "barn-soskenfotografering",
+    title: "Søsken og barnefotografering",
     img: {
-      src: SpringMinisession,
-      alt: "Mor som holder hvitveis mot gravidmagen sin",
+      src: KidsMinisession,
+      alt: "En gutt ute i grønne omgivelser",
     },
     banner: {
-      subTitle: "20. april 2024",
+      subTitle: "Onsdag 5. juni 2024 og lørdag 8. juni 2024",
       description: (
         <>
-          Våren nærmer seg med stormskritt, og hva er vel en bedre måte å ønske
-          den velkommen på enn med en herlig utendørs minifotografering?
+          Blir det ikke fotografering i barnehagen deres i år, og du ønsker
+          bilder av barna? Da har jeg løsningen for deg!
           <br />
-          <br />
-          Du velger selv hva slags fotografering du ønsker å booke, enten det er
-          familiefotografering eller parfotografering.
+          <br />I juni setter jeg av tid til utendørs fotografering av barn og
+          søsken. Her blir det rom for portretter av hvert enkelt barn og
+          søskenbilder sammen.
         </>
       ),
       button: {
@@ -36,41 +36,60 @@ const rawDiscountPosts = [
     description: (
       <>
         <div className="Discounts__Text">
-          Våren nærmer seg med stormskritt, og hva er vel en bedre måte å ønske
-          den velkommen på enn med en herlig utendørs minifotografering? Lørdag
-          20. april arrangerer jeg minifotograferinger, og jeg kunne ikke vært
-          mer begeistret for å fange de spesielle øyeblikkene dine i det vakre
-          vårværet!
+          <div className="Discounts__FreePregnancyNextDate">
+            Onsdag 5. juni 2024 og lørdag 8. juni 2024
+          </div>
+          Blir det ikke fotografering i barnehagen deres i år, og du ønsker
+          bilder av barna? Da har jeg løsningen for deg!I juni setter jeg av tid
+          til utendørs fotografering av barn og søsken. Her blir det rom for
+          portretter av hvert enkelt barn og søskenbilder sammen.
           <br />
           <br />
-          Enten du drømmer om nyfødtbilder utendørs, gravidfotografering,
-          familiefotografering, 1-års fotografering, mommy & me-fotografering,
-          konfirmantfotografering, parfotografering, portretter av deg selv
-          eller en kombinasjon, så er dette en perfekt mulighet!
+          Selve fotograferingen er gratis, du betaler kun for digitale
+          bildefiler eller andre bildeprodukter du ønsker å kjøpe etter
+          fotograferingen. Om du ikke møter opp til avtalt tid, vil du
+          faktureres kr. 500,- for uteblitt oppmøte.
+          <br />
+          <br />
+          Det blir ca. 10-15 minutter fotografering per familie, utendørs på
+          Jessheim i Ullensaker. Mer informasjon om fotograferingen og
+          oppmøtested sendes ut senere.
+          <br />
+          <br />
+          Etter fotograferingen vil dere motta et online bildegalleri hvor dere
+          kan se gjennom de beste bildene fra fotograferingen, og bestemme dere
+          for hvilke bilder og bildeprodukter dere ønsker å bestille. Det er
+          også mulighet for å sette opp en visningstime, hvor dere kan få se og
+          kjenne på de ulike bildeproduktene jeg tilbyr.
+          <br />
+          <br />
+          Dere vil få eksklusive barnehagepriser på produktene jeg tilbyr, som
+          kun vil gjelde i forbindelse med disse fotograferingene. Mer
+          informasjon om disse prisene, de ulike bildepakkene og en guide med
+          tips før fotografeiringen vil bli sendt ut på mail etter booking. For
+          at bookingen skal være gyldig, må denne fylles ut signeres.
           <br />
           <br />
           <div className="Discounts__DiscountTextImportant">
             Hva inkluderer det?
           </div>
-          -20 minutter valgfri fotografering
+          - Gratis fotografering
           <br />
-          - 5 valgfrie digitale bildefiler
+          - 10-15 minutter fotografering
+          <br />
+          - Barnehagepriser på produkter i etterkant
           <br />
           - Fotografering utendørs på Jessheim <br />
           - Online bildegalleri hvor du velger bilder <br />
-          - Rabattkupong til bruk på neste fotografering
-          <br />
-          <br />
-          <div className="Discounts__DiscountTextImportant">Kun kr. 1499,-</div>
         </div>
       </>
     ),
     valid: {
-      from: localTime("04.04.2024 00:00"),
-      to: localTime("21.04.2024 00:00"),
+      from: localTime("01.05.2024 00:00"),
+      to: localTime("08.06.2024 00:00"),
     },
     button: {
-      link: `https://skaugmedia.pixieset.com/booking/valgfri-minifotografering-20-april-2024`,
+      link: `/${ContactRoute}`,
     },
   },
 
@@ -173,7 +192,7 @@ const rawDiscountPosts = [
       </>
     ),
     valid: {
-      to: localTime("04.05.2024 00:00"),
+      to: localTime("02.05.2024 00:00"),
     },
     button: {
       link: `https://skaugmedia.pixieset.com/booking/minifotografering-av-konfirmanter`,

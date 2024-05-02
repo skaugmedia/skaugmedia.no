@@ -7,7 +7,6 @@ import "./BusinessPrices.css";
 import pageName from "./PageName";
 import Route from "./Route";
 import AIRoute from "/src/Routes/AI/Route";
-import BusinessPortraitsRoute from "/src/Routes/BusinessPortraits/Route";
 import BusinessPricesRoute from "/src/Routes/BusinessPrices/Route";
 import DesignInfoRoute from "/src/Routes/DesignInfo/Route";
 import FoodPhotographyRoute from "/src/Routes/FoodPhotography/Route";
@@ -86,12 +85,12 @@ export function BusinessPrices() {
                   >
                     Barnehagefotografering
                   </NavLink>
-                  <NavLink
+                  {/* <NavLink
                     to={`/${BusinessPricesRoute}/${BusinessPortraitsRoute}`}
                     className="BusinessPrices__CategoryButton"
                   >
                     Bedriftsportretter
-                  </NavLink>
+                  </NavLink> */}
                 </div>
                 <div className="BusinessPrices__ContentCategoryBox">
                   <h3 className="BusinessPrices__ContentCategoryHeader">

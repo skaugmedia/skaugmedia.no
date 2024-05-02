@@ -15,6 +15,10 @@
   border-radius: 100%;
 }
 
+.BusinessPrices__ContentSubHeader {
+  margin-top: 0;
+}
+
 .BusinessPrices__ContentCategory {
   display: flex;
   flex-flow: row;
@@ -25,11 +29,16 @@
   display: flex;
   flex-flow: column;
   gap: 10px;
+  margin-top: -5px;
 }
 
 .BusinessPrices__ContentCategoryHeader {
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: column;
 }
 
 .BusinessPrices__CategoryButton {
@@ -44,6 +53,7 @@
   text-align: center;
   text-decoration: none;
   font-weight: 300;
+  margin-top: 0px;
 }
 
 .BusinessPrice__BottomSection {
@@ -52,6 +62,7 @@
 
 .BusinessPrices__BottomImg {
   width: 100%;
+  margin-top: 20px;
 }
 
 .BusinessPrices__PackageBoxHeader {
@@ -509,5 +520,10 @@
   .BusinessPrices__PackageBigBoxImgSection,
   .BusinessPrices__PackageBigBoxTextSection {
     width: 100%;
+  }
+
+  .BusinessPrices__ContentCategory {
+    display: flex;
+    flex-flow: column;
   }
 }

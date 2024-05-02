@@ -50,6 +50,18 @@ import Weddingah7 from "/src/Images/Wedding/weddingAH_(7).jpg";
 import Weddingah8 from "/src/Images/Wedding/weddingAH_(8).jpg";
 import Weddingah9 from "/src/Images/Wedding/weddingAH_(9).jpg";
 
+import WeddingLJ1 from "/src/Images/Wedding/weddingLJ_1.jpg";
+import WeddingLJ10 from "/src/Images/Wedding/weddingLJ_10.jpg";
+import WeddingLJ11 from "/src/Images/Wedding/weddingLJ_11.jpg";
+import WeddingLJ2 from "/src/Images/Wedding/weddingLJ_2.jpg";
+import WeddingLJ3 from "/src/Images/Wedding/weddingLJ_3.jpg";
+import WeddingLJ4 from "/src/Images/Wedding/weddingLJ_4.jpg";
+import WeddingLJ5 from "/src/Images/Wedding/weddingLJ_5.jpg";
+import WeddingLJ6 from "/src/Images/Wedding/weddingLJ_6.jpg";
+import WeddingLJ7 from "/src/Images/Wedding/weddingLJ_7.jpg";
+import WeddingLJ8 from "/src/Images/Wedding/weddingLJ_8.jpg";
+import WeddingLJ9 from "/src/Images/Wedding/weddingLJ_9.jpg";
+
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import WeddingRoute from "../../../Routes/Wedding/Route";
 
@@ -209,8 +221,14 @@ export default {
       date: "2024-15-03",
     },
     {
-      description: "Bryllupsfotografering R + T",
-      tags: ["bryllup", "seremoni", "bryllupsseremoni", "sommer"],
+      description: "Bryllupsfotografering L + J",
+      tags: [
+        "bryllup",
+        "seremoni",
+        "bryllupsseremoni",
+        "rådhus",
+        "rådhusbryllup",
+      ],
       images: [
         {
           url: Weddingrt2,
@@ -377,6 +395,80 @@ export default {
         },
       ],
       date: "2023-07-07",
+    },
+    {
+      description: "Bryllupsfotografering R + T",
+      tags: ["bryllup", "seremoni", "bryllupsseremoni", "sommer"],
+      images: [
+        {
+          url: WeddingLJ1,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingLJ2,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingLJ3,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingLJ4,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingLJ5,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingLJ9,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: WeddingLJ7,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingLJ8,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingLJ6,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingLJ10,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingLJ11,
+          title: "Brudepar på Oslo Rådhus",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-03-23",
     },
   ],
 };

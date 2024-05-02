@@ -23,4 +23,8 @@
     width: 30%;
     margin: 9px auto;
   }
+
+  .Packages__PackageOverview {
+    width: 100%;
+  }
 }

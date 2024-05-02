@@ -35,7 +35,7 @@ export function Packages() {
         />
         <div className="Packages__Divider"></div>
         <Package
-          className="Packages__PackageHeading"
+          className="Packages__PackageOverview"
           heading="Strategy-pakken"
           subHeading={
             <>
@@ -61,6 +61,7 @@ export function Packages() {
         />
         <div className="Packages__Divider"></div>
         <Package
+          className="Packages__PackageOverview"
           heading="Impact-pakken"
           subHeading={
             <>
