@@ -1,0 +1,84 @@
+.TeamHelse_TopCoverImg {
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
+}
+
+.TeamHelse__Text {
+  font-family: nunito;
+}
+
+.TeamHelse__DisplayBox1 {
+  display: flex;
+  flex-flow: row;
+  max-width: var(max-width);
+  gap: 10px;
+}
+
+.TeamHelse__DisplayImage1 {
+  width: 35%;
+}
+
+.TeamHelse__DisplayImage2 {
+  width: 65%;
+}
+
+.TeamHelse__ColorDisplayRow {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.TeamHelse__ColorDisplay1 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 2px;
+}
+.TeamHelse__ColorDisplay2 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #86b2af;
+}
+.TeamHelse__ColorDisplay3 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #98b8d8;
+}
+.TeamHelse__ColorDisplay4 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #425475;
+}
+.TeamHelse__ColorDisplay5 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #ccb297;
+}
+.TeamHelse__ColorDisplay6 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #000000;
+}
+
+.TeamHelse__DisplayImage4 {
+  margin-top: 20px;
+}

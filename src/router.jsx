@@ -61,9 +61,15 @@ import LashbrowserRoute from "./Routes/Lashbrowser/Route";
 import { Maternity } from "./Routes/Maternity";
 import MaternityPageName from "./Routes/Maternity/PageName";
 import MaternityRoute from "./Routes/Maternity/Route";
+import { Naturalis } from "./Routes/Naturalis";
+import NaturalisPageName from "./Routes/Naturalis/PageName";
+import NaturalisRoute from "./Routes/Naturalis/Route";
 import { Newborn } from "./Routes/Newborn";
 import NewbornPageName from "./Routes/Newborn/PageName";
 import NewbornRoute from "./Routes/Newborn/Route";
+import { PentOgBrukt } from "./Routes/PentOgBrukt";
+import PentOgBruktPageName from "./Routes/PentOgBrukt/PageName";
+import PentOgBruktRoute from "./Routes/PentOgBrukt/Route";
 import { PhotoProducts } from "./Routes/PhotoProducts";
 import PhotoProductsPageName from "./Routes/PhotoProducts/PageName";
 import PhotoProductsRoute from "./Routes/PhotoProducts/Route";
@@ -83,6 +89,9 @@ import { Root } from "./Routes/Root";
 import { SocialMedia } from "./Routes/SocialMedia";
 import SocialMediaPageName from "./Routes/SocialMedia/PageName";
 import SocialMediaRoute from "./Routes/SocialMedia/Route";
+import { TeamHelse } from "./Routes/TeamHelse";
+import TeamHelsePageName from "./Routes/TeamHelse/PageName";
+import TeamHelseRoute from "./Routes/TeamHelse/Route";
 import { Wedding } from "./Routes/Wedding";
 import WeddingPageName from "./Routes/Wedding/PageName";
 import WeddingRoute from "./Routes/Wedding/Route";
@@ -147,9 +156,24 @@ export const router = createBrowserRouter([
                 handle: { pageName: DesignInfoPageName },
                 children: [
                   {
+                    path: TeamHelseRoute,
+                    element: <TeamHelse />,
+                    handle: { pageName: TeamHelsePageName },
+                  },
+                  {
                     path: LashbrowserRoute,
                     element: <Lashbrowser />,
                     handle: { pageName: LashbrowserPageName },
+                  },
+                  {
+                    path: PentOgBruktRoute,
+                    element: <PentOgBrukt />,
+                    handle: { pageName: PentOgBruktPageName },
+                  },
+                  {
+                    path: NaturalisRoute,
+                    element: <Naturalis />,
+                    handle: { pageName: NaturalisPageName },
                   },
                   {
                     path: ":projectId",

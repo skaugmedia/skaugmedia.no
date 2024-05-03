@@ -30,7 +30,7 @@ import PentogbruktSketch7 from "./Sketches/sketch7.jpg";
 import PentogbruktSketch8 from "./Sketches/sketch8.jpg";
 
 export default {
-  id: "pent-og-brukt-as",
+  id: "pentogbrukt",
   title: "Pent og Brukt AS",
   category: "Visuell identitet",
   date: "2021-11-01",
