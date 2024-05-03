@@ -2,6 +2,10 @@ import { NavLink, Outlet, useLoaderData } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
+import teamHelse from "../../Images/TeamHelse/teamhelse_logo.jpg";
+import lashbrowser from "../../Images/lashbrowser_forside.jpg";
+import LashBrowserRoute from "../Lashbrowser/Route";
+import TeamHelseRoute from "../TeamHelse/Route";
 import "./DesignInfo.css";
 import pageName from "./PageName";
 import Route from "./Route";
@@ -10,7 +14,21 @@ import { Project } from "/src/Components/Project";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function DesignInfo() {
-  const { projects } = useLoaderData();
+  const { projects: dataProjects } = useLoaderData();
+
+  const projects = [
+    {
+      id: LashBrowserRoute,
+      title: "Lashbrowser",
+      cover: { url: lashbrowser, title: "Lashbrowser" },
+    },
+    {
+      id: TeamHelseRoute,
+      title: "TeamHelse",
+      cover: { url: teamHelse, title: "TeamHelse" },
+    },
+    ...dataProjects,
+  ];
 
   if (!location.pathname.endsWith(Route)) {
     return <Outlet />;

@@ -1,14 +1,13 @@
-import LashBrowser from "./LashBrowser";
+import Coop from "./Coop";
+import Illustrasjoner from "./Illustrasjoner";
+import Kiehls from "./Kiehls";
 import Naturalis from "./Naturalis";
 import PentOgBrukt from "./PentOgBrukt";
 import Plantlife from "./Plantlife";
 import Saftig from "./Saftig";
-import Kiehls from "./Kiehls";
-import Coop from "./Coop";
-import Illustrasjoner from "./Illustrasjoner";
 
 export const projects = [
-  LashBrowser,
+  // LashBrowser,
   PentOgBrukt,
   Naturalis,
   Saftig,
