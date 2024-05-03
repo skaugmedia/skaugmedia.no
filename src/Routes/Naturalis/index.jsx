@@ -10,7 +10,7 @@ import responsive from "/src/Data/Business/GraphicalDesign/Naturalis/Images/mobi
 import paperbag from "/src/Data/Business/GraphicalDesign/Naturalis/Images/papirpose.jpg";
 import postalia from "/src/Data/Business/GraphicalDesign/Naturalis/Images/postalia.jpg";
 import pricetag from "/src/Data/Business/GraphicalDesign/Naturalis/Images/prislapper.jpg";
-import window from "/src/Data/Business/GraphicalDesign/Naturalis/Images/skiltvindu.jpg";
+import windowsign from "/src/Data/Business/GraphicalDesign/Naturalis/Images/skiltvindu.jpg";
 import thankyou from "/src/Data/Business/GraphicalDesign/Naturalis/Images/takkforhandelen.jpg";
 import businesscard from "/src/Data/Business/GraphicalDesign/Naturalis/Images/visittkort_gronn.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
@@ -93,7 +93,7 @@ export function Naturalis() {
         <div className="Naturalis__DisplayBox3">
           <img
             className="Naturalis__DisplayImage4"
-            src={window}
+            src={windowsign}
             alt="Logo på butikkvindu for Naturalis by Synne Wik"
           ></img>
           <img
