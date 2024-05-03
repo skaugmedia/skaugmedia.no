@@ -86,6 +86,9 @@ import { ProductPhotography } from "./Routes/ProductPhotography";
 import ProductPhotographyPageName from "./Routes/ProductPhotography/PageName";
 import ProductPhotographyRoute from "./Routes/ProductPhotography/Route";
 import { Root } from "./Routes/Root";
+import { Saftig } from "./Routes/Saftig";
+import SaftigPageName from "./Routes/Saftig/PageName";
+import SaftigRoute from "./Routes/Saftig/Route";
 import { SocialMedia } from "./Routes/SocialMedia";
 import SocialMediaPageName from "./Routes/SocialMedia/PageName";
 import SocialMediaRoute from "./Routes/SocialMedia/Route";
@@ -174,6 +177,11 @@ export const router = createBrowserRouter([
                     path: NaturalisRoute,
                     element: <Naturalis />,
                     handle: { pageName: NaturalisPageName },
+                  },
+                  {
+                    path: SaftigRoute,
+                    element: <Saftig />,
+                    handle: { pageName: SaftigPageName },
                   },
                   {
                     path: ":projectId",

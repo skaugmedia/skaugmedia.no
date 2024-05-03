@@ -95,7 +95,7 @@ export function PentOgBrukt() {
             alt="Plakat som viser hvor man kan parkere hos Pent og Brukt AS"
           ></img>
         </div>
-        <div className="PentOgBrukt__DisplayBox2">
+        <div className="PentOgBrukt__DisplayBox4">
           <img
             className="PentOgBrukt__DisplayImage6"
             src={openinghours}
