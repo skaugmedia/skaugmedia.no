@@ -1,4 +1,4 @@
-.Saftig_TopCoverImg {
+.Plantlife_TopCoverImg {
   width: 100%;
   height: 650px;
   background-size: cover;
@@ -10,46 +10,31 @@
   flex-flow: column;
 }
 
-.Saftig__Text {
+.Plantlife__Text {
   font-family: nunito;
 }
 
-.Saftig__DisplayBox1 {
+.Plantlife__DisplayBox1 {
   display: flex;
   flex-flow: row;
   max-width: var(max-width);
   gap: 10px;
 }
-.Saftig__DisplayBox2 {
-  display: flex;
-  flex-flow: row;
-  max-width: var(max-width);
-  gap: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.Saftig__DisplayBox3 {
+.Plantlife__DisplayBox2 {
   display: flex;
   flex-flow: row;
   max-width: var(max-width);
   gap: 10px;
   margin-bottom: 20px;
 }
-.Saftig__DisplayBox4 {
+.Plantlife__DisplayBox3 {
   display: flex;
   flex-flow: row;
   max-width: var(max-width);
   gap: 10px;
   margin-bottom: 20px;
 }
-.Saftig__DisplayBox5 {
-  display: flex;
-  flex-flow: row;
-  max-width: var(max-width);
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.Saftig__DisplayBox6 {
+.Plantlife__DisplayBox4 {
   display: flex;
   flex-flow: row;
   max-width: var(max-width);
@@ -57,105 +42,127 @@
   margin-bottom: 20px;
 }
 
-.Saftig__DisplayImage1 {
-  width: 35%;
+.Plantlife__DisplayImage1 {
+  width: 40%;
 }
 
-.Saftig__DisplayImage2 {
-  width: 64%;
+.Plantlife__DisplayImage2 {
+  width: 58%;
 }
-.Saftig__DisplayImage3 {
+.Plantlife__DisplayImage3 {
   width: 100%;
 }
-.Saftig__DisplayImage4 {
+.Plantlife__DisplayImage4 {
   width: 100%;
 }
-.Saftig__DisplayImage5 {
+.Plantlife__DisplayImage5 {
   width: 100%;
 }
-.Saftig__DisplayImage6 {
+.Plantlife__DisplayImage6 {
   width: 100%;
 }
-.Saftig__DisplayImage7 {
-  width: 100%;
+.Plantlife__DisplayImage7 {
+  width: 65%;
 }
 
-.Saftig__ColorDisplayRow {
+.Plantlife__ColorDisplayRow {
   display: flex;
   flex-flow: row;
   width: 100%;
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  justify-content:;
+  justify-content: space-between;
 }
 
-.Saftig__ColorDisplay {
-  width: calc(100% / 2);
+.Plantlife__ColorDisplay {
+  width: calc(100% / 9);
   border-radius: 100%;
   object-fit: contain;
   aspect-ratio: 1/1;
 }
 
-.Saftig__ColorDisplay1 {
+.Plantlife__ColorDisplay1 {
   background-color: #ffffff;
   border-color: lightgray;
   border-style: solid;
   border-width: 2px;
 }
+.Plantlife__ColorDisplay2 {
+  background-color: #b2e1d8;
+}
+.Plantlife__ColorDisplay3 {
+  background-color: #9fcfca;
+}
+.Plantlife__ColorDisplay4 {
+  background-color: #87e1d1;
+}
+.Plantlife__ColorDisplay5 {
+  background-color: #65baaf;
+}
 
-.Saftig__ColorDisplay2 {
+.Plantlife__ColorDisplay6 {
+  background-color: #009490;
+}
+.Plantlife__ColorDisplay7 {
+  background-color: #44797b;
+}
+
+.Plantlife__ColorDisplay8 {
+  background-color: #025157;
+}
+.Plantlife__ColorDisplay9 {
   background-color: #000000;
 }
 
 @media only screen and (max-width: 600px) {
-  .Saftig_TopCoverImg {
+  .Plantlife_TopCoverImg {
     width: 100%;
     height: 200px;
   }
 
-  .Saftig__DisplayBox1 {
+  .Plantlife__DisplayBox1 {
     flex-flow: column;
   }
-  .Saftig__DisplayBox2 {
+  .Plantlife__DisplayBox2 {
     flex-flow: column;
   }
-  .Saftig__DisplayBox3 {
+  .Plantlife__DisplayBox3 {
     flex-flow: column;
   }
-  .Saftig__DisplayBox4 {
+  .Plantlife__DisplayBox4 {
     flex-flow: column;
   }
-  .Saftig__DisplayBox5 {
+  .Plantlife__DisplayBox5 {
     flex-flow: column;
   }
-  .Saftig__DisplayImage1 {
+  .Plantlife__DisplayImage1 {
     width: 100%;
   }
 
-  .Saftig__DisplayImage2 {
+  .Plantlife__DisplayImage2 {
     width: 100%;
   }
 
-  .Saftig__DisplayImage3 {
+  .Plantlife__DisplayImage3 {
     width: 100%;
   }
 
-  .Saftig__DisplayImage4 {
+  .Plantlife__DisplayImage4 {
     width: 100%;
   }
-  .Saftig__DisplayImage5 {
-    width: 100%;
-  }
-
-  .Saftig__DisplayImage6 {
-    width: 100%;
-  }
-  .Saftig__DisplayImage7 {
+  .Plantlife__DisplayImage5 {
     width: 100%;
   }
 
-  .Saftig__DisplayImage8 {
+  .Plantlife__DisplayImage6 {
+    width: 100%;
+  }
+  .Plantlife__DisplayImage7 {
+    width: 100%;
+  }
+
+  .Plantlife__DisplayImage8 {
     width: 100%;
   }
 }

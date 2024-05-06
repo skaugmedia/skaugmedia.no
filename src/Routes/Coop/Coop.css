@@ -1,4 +1,4 @@
-.Saftig_TopCoverImg {
+.Coop_TopCoverImg {
   width: 100%;
   height: 650px;
   background-size: cover;
@@ -10,46 +10,31 @@
   flex-flow: column;
 }
 
-.Saftig__Text {
+.Coop__Text {
   font-family: nunito;
 }
 
-.Saftig__DisplayBox1 {
+.Coop__DisplayBox1 {
   display: flex;
   flex-flow: row;
   max-width: var(max-width);
   gap: 10px;
 }
-.Saftig__DisplayBox2 {
-  display: flex;
-  flex-flow: row;
-  max-width: var(max-width);
-  gap: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.Saftig__DisplayBox3 {
+.Coop__DisplayBox2 {
   display: flex;
   flex-flow: row;
   max-width: var(max-width);
   gap: 10px;
   margin-bottom: 20px;
 }
-.Saftig__DisplayBox4 {
+.Coop__DisplayBox3 {
   display: flex;
   flex-flow: row;
   max-width: var(max-width);
   gap: 10px;
   margin-bottom: 20px;
 }
-.Saftig__DisplayBox5 {
-  display: flex;
-  flex-flow: row;
-  max-width: var(max-width);
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.Saftig__DisplayBox6 {
+.Coop__DisplayBox4 {
   display: flex;
   flex-flow: row;
   max-width: var(max-width);
@@ -57,105 +42,128 @@
   margin-bottom: 20px;
 }
 
-.Saftig__DisplayImage1 {
+.Coop__DisplayImage1 {
   width: 35%;
 }
 
-.Saftig__DisplayImage2 {
+.Coop__DisplayImage2 {
+  width: 63%;
+}
+.Coop__DisplayImage3 {
+  width: 100%;
+}
+.Coop__DisplayImage4 {
   width: 64%;
 }
-.Saftig__DisplayImage3 {
+.Coop__DisplayImage5 {
+  width: 35%;
+}
+.Coop__DisplayImage6 {
   width: 100%;
 }
-.Saftig__DisplayImage4 {
-  width: 100%;
-}
-.Saftig__DisplayImage5 {
-  width: 100%;
-}
-.Saftig__DisplayImage6 {
-  width: 100%;
-}
-.Saftig__DisplayImage7 {
-  width: 100%;
+.Coop__DisplayImage7 {
+  width: 65%;
 }
 
-.Saftig__ColorDisplayRow {
+.Coop__ColorDisplayRow {
   display: flex;
   flex-flow: row;
   width: 100%;
   gap: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  justify-content:;
+  justify-content: space-between;
 }
 
-.Saftig__ColorDisplay {
-  width: calc(100% / 2);
+.Coop__ColorDisplay {
+  width: calc(100% / 9);
   border-radius: 100%;
   object-fit: contain;
   aspect-ratio: 1/1;
 }
 
-.Saftig__ColorDisplay1 {
+.Coop__ColorDisplay1 {
   background-color: #ffffff;
   border-color: lightgray;
   border-style: solid;
   border-width: 2px;
 }
 
-.Saftig__ColorDisplay2 {
-  background-color: #000000;
+.Coop__ColorDisplay2 {
+  background-color: #ffd040;
+}
+.Coop__ColorDisplay3 {
+  background-color: #ffc629;
+}
+.Coop__ColorDisplay4 {
+  background-color: #f5a800;
+}
+
+.Coop__ColorDisplay5 {
+  background-color: #87e1d1;
+}
+.Coop__ColorDisplay6 {
+  background-color: #66c9ba;
+}
+
+.Coop__ColorDisplay7 {
+  background-color: #feb0c0;
+}
+.Coop__ColorDisplay8 {
+  background-color: #f93549;
+}
+.Coop__ColorDisplay9 {
+  background-color: #c40d3c;
 }
 
 @media only screen and (max-width: 600px) {
-  .Saftig_TopCoverImg {
+  .Coop_TopCoverImg {
     width: 100%;
     height: 200px;
   }
 
-  .Saftig__DisplayBox1 {
+  .Coop__DisplayBox1 {
     flex-flow: column;
   }
-  .Saftig__DisplayBox2 {
+  .Coop__DisplayBox2 {
     flex-flow: column;
   }
-  .Saftig__DisplayBox3 {
+  .Coop__DisplayBox3 {
     flex-flow: column;
   }
-  .Saftig__DisplayBox4 {
+  .Coop__DisplayBox4 {
     flex-flow: column;
   }
-  .Saftig__DisplayBox5 {
+  .Coop__DisplayBox5 {
     flex-flow: column;
   }
-  .Saftig__DisplayImage1 {
+  .Coop__DisplayImage1 {
     width: 100%;
   }
 
-  .Saftig__DisplayImage2 {
+  .Coop__DisplayImage2 {
     width: 100%;
   }
 
-  .Saftig__DisplayImage3 {
+  .Coop__DisplayImage3 {
     width: 100%;
   }
 
-  .Saftig__DisplayImage4 {
+  .Coop__DisplayImage4 {
     width: 100%;
   }
-  .Saftig__DisplayImage5 {
-    width: 100%;
-  }
-
-  .Saftig__DisplayImage6 {
-    width: 100%;
-  }
-  .Saftig__DisplayImage7 {
+  .Coop__DisplayImage5 {
     width: 100%;
   }
 
-  .Saftig__DisplayImage8 {
+  .Coop__DisplayImage6 {
+    width: 100%;
+  }
+  .Coop__DisplayImage7 {
+    width: 100%;
+  }
+
+  .Coop__DisplayImage8 {
     width: 100%;
   }
 }

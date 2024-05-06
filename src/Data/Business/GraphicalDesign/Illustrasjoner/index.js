@@ -1,9 +1,9 @@
 import { oneLine } from "common-tags";
 
-import Popsicles from "./Images/popsicles.jpg";
+import GIF from "./Images/animated_giraffe.gif";
 import Elephant from "./Images/elephant.jpg";
 import Giraffe from "./Images/giraffe.jpg";
-import GIF from "./Images/animated_giraffe.gif";
+import Popsicles from "./Images/popsicles.jpg";
 
 import Illustration1 from "./Illustrations/illustration1.jpg";
 import Illustration2 from "./Illustrations/illustration2.jpg";

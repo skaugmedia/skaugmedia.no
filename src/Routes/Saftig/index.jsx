@@ -70,10 +70,7 @@ export function Saftig() {
             alt="Et oppslag med oppskrifter i magasinet Saftig"
           ></img>
         </div>
-        <div className="Saftig__ColorDisplayRow">
-          <div className="Saftig__ColorDisplay1"></div>
-          <div className="Saftig__ColorDisplay2"></div>
-        </div>
+
         <div className="Saftig__DisplayBox2">
           <img
             className="Saftig__DisplayImage3"

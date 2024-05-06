@@ -67,13 +67,13 @@ export function Lashbrowser() {
           ></img>
         </div>
         <div className="LashBrowser__ColorDisplayRow">
-          <div className="LashBrowser__ColorDisplay1"></div>
-          <div className="LashBrowser__ColorDisplay2"></div>
-          <div className="LashBrowser__ColorDisplay3"></div>
-          <div className="LashBrowser__ColorDisplay4"></div>
-          <div className="LashBrowser__ColorDisplay5"></div>
-          <div className="LashBrowser__ColorDisplay6"></div>
-          <div className="LashBrowser__ColorDisplay7"></div>
+          <div className="LashBrowser__ColorDisplay LashBrowser__ColorDisplay1"></div>
+          <div className="LashBrowser__ColorDisplay LashBrowser__ColorDisplay2"></div>
+          <div className="LashBrowser__ColorDisplay LashBrowser__ColorDisplay3"></div>
+          <div className="LashBrowser__ColorDisplay LashBrowser__ColorDisplay4"></div>
+          <div className="LashBrowser__ColorDisplay LashBrowser__ColorDisplay5"></div>
+          <div className="LashBrowser__ColorDisplay LashBrowser__ColorDisplay6"></div>
+          <div className="LashBrowser__ColorDisplay LashBrowser__ColorDisplay7"></div>
         </div>
         <div className="LashBrowser__DisplayBox2">
           <img

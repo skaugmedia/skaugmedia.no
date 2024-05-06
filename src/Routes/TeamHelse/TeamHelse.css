@@ -29,6 +29,13 @@
   width: 65%;
 }
 
+.TeamHelse__ColorDisplay {
+  width: calc(100% / 6);
+  border-radius: 100%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
 .TeamHelse__ColorDisplayRow {
   display: flex;
   flex-flow: row;
@@ -40,45 +47,45 @@
 }
 
 .TeamHelse__ColorDisplay1 {
-  width: 130px;
-  height: 130px;
-  border-radius: 100%;
   background-color: #ffffff;
   border-color: lightgray;
   border-style: solid;
   border-width: 2px;
 }
 .TeamHelse__ColorDisplay2 {
-  width: 130px;
-  height: 130px;
-  border-radius: 100%;
   background-color: #86b2af;
 }
 .TeamHelse__ColorDisplay3 {
-  width: 130px;
-  height: 130px;
-  border-radius: 100%;
   background-color: #98b8d8;
 }
 .TeamHelse__ColorDisplay4 {
-  width: 130px;
-  height: 130px;
-  border-radius: 100%;
   background-color: #425475;
 }
 .TeamHelse__ColorDisplay5 {
-  width: 130px;
-  height: 130px;
-  border-radius: 100%;
   background-color: #ccb297;
 }
 .TeamHelse__ColorDisplay6 {
-  width: 130px;
-  height: 130px;
-  border-radius: 100%;
   background-color: #000000;
 }
 
 .TeamHelse__DisplayImage4 {
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .TeamHelse_TopCoverImg {
+    width: 100%;
+    height: 200px;
+  }
+
+  .TeamHelse__DisplayBox1 {
+    flex-flow: column;
+  }
+  .TeamHelse__DisplayImage1 {
+    width: 100%;
+  }
+
+  .TeamHelse__DisplayImage2 {
+    width: 100%;
+  }
 }

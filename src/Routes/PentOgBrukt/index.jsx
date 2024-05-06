@@ -68,13 +68,13 @@ export function PentOgBrukt() {
           ></img>
         </div>
         <div className="PentOgBrukt__ColorDisplayRow">
-          <div className="PentOgBrukt__ColorDisplay1"></div>
-          <div className="PentOgBrukt__ColorDisplay2"></div>
-          <div className="PentOgBrukt__ColorDisplay3"></div>
-          <div className="PentOgBrukt__ColorDisplay4"></div>
-          <div className="PentOgBrukt__ColorDisplay5"></div>
-          <div className="PentOgBrukt__ColorDisplay6"></div>
-          <div className="PentOgBrukt__ColorDisplay7"></div>
+          <div className="PentOgBrukt__ColorDisplay1 PentOgBrukt__ColorDisplay"></div>
+          <div className="PentOgBrukt__ColorDisplay2 PentOgBrukt__ColorDisplay"></div>
+          <div className="PentOgBrukt__ColorDisplay3 PentOgBrukt__ColorDisplay"></div>
+          <div className="PentOgBrukt__ColorDisplay4 PentOgBrukt__ColorDisplay"></div>
+          <div className="PentOgBrukt__ColorDisplay5 PentOgBrukt__ColorDisplay"></div>
+          <div className="PentOgBrukt__ColorDisplay6 PentOgBrukt__ColorDisplay"></div>
+          <div className="PentOgBrukt__ColorDisplay7 PentOgBrukt__ColorDisplay"></div>
         </div>
         <div className="PentOgBrukt__DisplayBox2">
           <img

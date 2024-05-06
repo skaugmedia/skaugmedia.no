@@ -1,12 +1,12 @@
 import { oneLine } from "common-tags";
 
 import CoopCans from "./Images/allboxes.jpg";
-import CoopPattern1 from "./Images/pattern1.jpg";
-import CoopPattern2 from "./Images/pattern2.jpg";
-import CoopPattern3 from "./Images/pattern3.jpg";
 import CoopBox1 from "./Images/box1.jpg";
 import CoopBox2 from "./Images/box2.jpg";
 import CoopBox3 from "./Images/box3.jpg";
+import CoopPattern1 from "./Images/pattern1.jpg";
+import CoopPattern2 from "./Images/pattern2.jpg";
+import CoopPattern3 from "./Images/pattern3.jpg";
 
 import CoopFont1 from "./Fonts/font1.jpg";
 import CoopFont2 from "./Fonts/font2.jpg";
@@ -22,8 +22,8 @@ import CoopIllustration2 from "./Illustrations/illustrations2.jpg";
 import CoopIllustration3 from "./Illustrations/illustrations3.jpg";
 
 export default {
-  id: "coop-hermetikk",
-  title: "Coop hermetikk",
+  id: "coop",
+  title: "Coop",
   category: "Redesign og matemballasje",
   date: "2020-05-01",
   ingress: oneLine`

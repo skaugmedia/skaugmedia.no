@@ -20,6 +20,9 @@ import ConfirmationRoute from "./Routes/Confirmation/Route";
 import { Contact } from "./Routes/Contact";
 import ContactPageName from "./Routes/Contact/PageName";
 import ContactRoute from "./Routes/Contact/Route";
+import { Coop } from "./Routes/Coop";
+import CoopPageName from "./Routes/Coop/PageName";
+import CoopRoute from "./Routes/Coop/Route";
 import { Couples } from "./Routes/Couples";
 import CouplesPageName from "./Routes/Couples/PageName";
 import CouplesRoute from "./Routes/Couples/Route";
@@ -34,9 +37,6 @@ import { ErrorHandler } from "./Routes/ErrorHandler";
 import { Family } from "./Routes/Family";
 import FamilyPageName from "./Routes/Family/PageName";
 import FamilyRoute from "./Routes/Family/Route";
-import { FirstYear } from "./Routes/FirstYear";
-import FirstYearPageName from "./Routes/FirstYear/PageName";
-import FirstYearRoute from "./Routes/FirstYear/Route";
 import { FoodPhotography } from "./Routes/FoodPhotography";
 import FoodPhotographyPageName from "./Routes/FoodPhotography/PageName";
 import FoodPhotographyRoute from "./Routes/FoodPhotography/Route";
@@ -52,6 +52,10 @@ import HeadshotsRoute from "./Routes/Headshots/Route";
 import { Home } from "./Routes/Home";
 import HomePageName from "./Routes/Home/PageName";
 import HomeRoute from "./Routes/Home/Route";
+
+import { Kiehls } from "./Routes/Kiehls";
+import KiehlsPageName from "./Routes/Kiehls/PageName";
+import KiehlsRoute from "./Routes/Kiehls/Route";
 import { KindergartenPhotography } from "./Routes/KindergartenPhotography";
 import KindergartenPhotographyPageName from "./Routes/KindergartenPhotography/PageName";
 import KindergartenPhotographyRoute from "./Routes/KindergartenPhotography/Route";
@@ -79,6 +83,9 @@ import PhotographyPageName from "./Routes/Photography/PageName";
 import PhotographyRoute from "./Routes/Photography/Route";
 import { PhotographyCategory } from "./Routes/PhotographyCategory";
 import PhotographyCategoryLoader from "./Routes/PhotographyCategory/Loader";
+import { Plantlife } from "./Routes/Plantlife";
+import PlantlifePageName from "./Routes/Plantlife/PageName";
+import PlantlifeRoute from "./Routes/Plantlife/Route";
 import { PricesServices } from "./Routes/PricesServices";
 import PricesPageName from "./Routes/PricesServices/PageName";
 import PricesRoute from "./Routes/PricesServices/Route";
@@ -184,6 +191,22 @@ export const router = createBrowserRouter([
                     handle: { pageName: SaftigPageName },
                   },
                   {
+                    path: KiehlsRoute,
+                    element: <Kiehls />,
+                    handle: { pageName: KiehlsPageName },
+                  },
+                  {
+                    path: PlantlifeRoute,
+                    element: <Plantlife />,
+                    handle: { pageName: PlantlifePageName },
+                  },
+                  {
+                    path: CoopRoute,
+                    element: <Coop />,
+                    handle: { pageName: CoopPageName },
+                  },
+
+                  {
                     path: ":projectId",
                     loader: GraphicalDesignProjectLoader,
                     element: <GraphicalDesignProject />,
@@ -262,11 +285,7 @@ export const router = createBrowserRouter([
                 element: <Children />,
                 handle: { pageName: ChildrenPageName },
               },
-              {
-                path: FirstYearRoute,
-                element: <FirstYear />,
-                handle: { pageName: FirstYearPageName },
-              },
+
               {
                 path: ConfirmationRoute,
                 element: <Confirmation />,

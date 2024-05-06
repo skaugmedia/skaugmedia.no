@@ -67,12 +67,12 @@ export function TeamHelse() {
       </PageSection>
       <PageSection>
         <div className="TeamHelse__ColorDisplayRow">
-          <div className="TeamHelse__ColorDisplay1"></div>
-          <div className="TeamHelse__ColorDisplay2"></div>
-          <div className="TeamHelse__ColorDisplay3"></div>
-          <div className="TeamHelse__ColorDisplay4"></div>
-          <div className="TeamHelse__ColorDisplay5"></div>
-          <div className="TeamHelse__ColorDisplay6"></div>
+          <div className="TeamHelse__ColorDisplay TeamHelse__ColorDisplay1"></div>
+          <div className="TeamHelse__ColorDisplay TeamHelse__ColorDisplay2"></div>
+          <div className="TeamHelse__ColorDisplay TeamHelse__ColorDisplay3"></div>
+          <div className="TeamHelse__ColorDisplay TeamHelse__ColorDisplay4"></div>
+          <div className="TeamHelse__ColorDisplay TeamHelse__ColorDisplay5"></div>
+          <div className="TeamHelse__ColorDisplay TeamHelse__ColorDisplay6"></div>
         </div>
         <div className="TeamHelse__DisplayBox1">
           <img

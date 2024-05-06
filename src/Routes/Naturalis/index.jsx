@@ -76,12 +76,12 @@ export function Naturalis() {
           ></img>
         </div>
         <div className="Naturalis__ColorDisplayRow">
-          <div className="Naturalis__ColorDisplay1"></div>
-          <div className="Naturalis__ColorDisplay2"></div>
-          <div className="Naturalis__ColorDisplay3"></div>
-          <div className="Naturalis__ColorDisplay4"></div>
-          <div className="Naturalis__ColorDisplay5"></div>
-          <div className="Naturalis__ColorDisplay6"></div>
+          <div className="Naturalis__ColorDisplay Naturalis__ColorDisplay1"></div>
+          <div className="Naturalis__ColorDisplay Naturalis__ColorDisplay2"></div>
+          <div className="Naturalis__ColorDisplay Naturalis__ColorDisplay3"></div>
+          <div className="Naturalis__ColorDisplay Naturalis__ColorDisplay4"></div>
+          <div className="Naturalis__ColorDisplay Naturalis__ColorDisplay5"></div>
+          <div className="Naturalis__ColorDisplay Naturalis__ColorDisplay6"></div>
         </div>
         <div className="Naturalis__DisplayBox2">
           <img
@@ -114,9 +114,9 @@ export function Naturalis() {
             alt="Takk for handelen kort Naturalis by Synne Wik"
           ></img>
         </div>
-        <div className="Naturalis__DisplayBox2">
+        <div className="Naturalis__DisplayBox5">
           <img
-            className="Naturalis__DisplayImage6"
+            className="Naturalis__DisplayImage8"
             src={postalia}
             alt="Postalia Naturalis by Synne Wik"
           ></img>

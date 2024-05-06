@@ -2,15 +2,27 @@ import { NavLink, Outlet, useLoaderData } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
-import teamHelse from "../../Images/TeamHelse/teamhelse_logo.jpg";
 import lashbrowser from "../../Images/lashbrowser_forside.jpg";
+import CoopRoute from "../Coop/Route";
+import KiehlsRoute from "../Kiehls/Route";
 import LashBrowserRoute from "../Lashbrowser/Route";
-import TeamHelseRoute from "../TeamHelse/Route";
+import NaturalisRoute from "../Naturalis/Route";
+import PentOgBruktRoute from "../PentOgBrukt/Route";
+import PlantlifeRoute from "../Plantlife/Route";
+import SaftigRoute from "../Saftig/Route";
+import { default as TeamHelseRoute } from "../TeamHelse/Route";
 import "./DesignInfo.css";
 import pageName from "./PageName";
 import Route from "./Route";
 import { GalleryBrowser } from "/src/Components/GalleryBrowser";
 import { Project } from "/src/Components/Project";
+import coop from "/src/Data/Business/GraphicalDesign/Coop/Images/allboxes.jpg";
+import kiehls from "/src/Data/Business/GraphicalDesign/Kiehls/Images/kiehls_frontpage.jpg";
+import naturalis from "/src/Data/Business/GraphicalDesign/Naturalis/Images/brevpapir.jpg";
+import pentogbrukt from "/src/Data/Business/GraphicalDesign/PentOgBrukt/Images/gavekort.jpg";
+import plantlife from "/src/Data/Business/GraphicalDesign/Plantlife/Images/plantlife_logo.jpg";
+import saftig from "/src/Data/Business/GraphicalDesign/Saftig/Images/saftig_6.jpg";
+import teamHelse from "/src/Images/TeamHelse/teamhelse_logo.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 
 export function DesignInfo() {
@@ -18,15 +30,47 @@ export function DesignInfo() {
 
   const projects = [
     {
-      id: LashBrowserRoute,
-      title: "Lashbrowser",
-      cover: { url: lashbrowser, title: "Lashbrowser" },
-    },
-    {
       id: TeamHelseRoute,
       title: "TeamHelse",
       cover: { url: teamHelse, title: "TeamHelse" },
     },
+    {
+      id: LashBrowserRoute,
+      title: "Lashbrowser",
+      cover: { url: lashbrowser, title: "Lashbrowser" },
+    },
+
+    {
+      id: PentOgBruktRoute,
+      title: "Pent og Brukt AS",
+      cover: { url: pentogbrukt, title: "PentOgBrukt" },
+    },
+    {
+      id: NaturalisRoute,
+      title: "Naturalis by Synne Wik",
+      cover: { url: naturalis, title: "Naturalis" },
+    },
+    {
+      id: SaftigRoute,
+      title: "Bakemagasinet Saftig",
+      cover: { url: saftig, title: "Saftig" },
+    },
+    {
+      id: KiehlsRoute,
+      title: "Kiehl`s",
+      cover: { url: kiehls, title: "Kiehls" },
+    },
+    {
+      id: PlantlifeRoute,
+      title: "Plantlife",
+      cover: { url: plantlife, title: "Plantlife" },
+    },
+    {
+      id: CoopRoute,
+      title: "Coop hermetikk",
+      cover: { url: coop, title: "Coop" },
+    },
+
     ...dataProjects,
   ];
 
