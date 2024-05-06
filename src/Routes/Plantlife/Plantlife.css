@@ -1,0 +1,168 @@
+.Plantlife_TopCoverImg {
+  width: 100%;
+  height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
+}
+
+.Plantlife__Text {
+  font-family: nunito;
+}
+
+.Plantlife__DisplayBox1 {
+  display: flex;
+  flex-flow: row;
+  max-width: var(max-width);
+  gap: 10px;
+}
+.Plantlife__DisplayBox2 {
+  display: flex;
+  flex-flow: row;
+  max-width: var(max-width);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.Plantlife__DisplayBox3 {
+  display: flex;
+  flex-flow: row;
+  max-width: var(max-width);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.Plantlife__DisplayBox4 {
+  display: flex;
+  flex-flow: row;
+  max-width: var(max-width);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Plantlife__DisplayImage1 {
+  width: 40%;
+}
+
+.Plantlife__DisplayImage2 {
+  width: 58%;
+}
+.Plantlife__DisplayImage3 {
+  width: 100%;
+}
+.Plantlife__DisplayImage4 {
+  width: 100%;
+}
+.Plantlife__DisplayImage5 {
+  width: 100%;
+}
+.Plantlife__DisplayImage6 {
+  width: 100%;
+}
+.Plantlife__DisplayImage7 {
+  width: 65%;
+}
+
+.Plantlife__ColorDisplayRow {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.Plantlife__ColorDisplay {
+  width: calc(100% / 9);
+  border-radius: 100%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
+.Plantlife__ColorDisplay1 {
+  background-color: #ffffff;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 2px;
+}
+.Plantlife__ColorDisplay2 {
+  background-color: #b2e1d8;
+}
+.Plantlife__ColorDisplay3 {
+  background-color: #9fcfca;
+}
+.Plantlife__ColorDisplay4 {
+  background-color: #87e1d1;
+}
+.Plantlife__ColorDisplay5 {
+  background-color: #65baaf;
+}
+
+.Plantlife__ColorDisplay6 {
+  background-color: #009490;
+}
+.Plantlife__ColorDisplay7 {
+  background-color: #44797b;
+}
+
+.Plantlife__ColorDisplay8 {
+  background-color: #025157;
+}
+.Plantlife__ColorDisplay9 {
+  background-color: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  .Plantlife_TopCoverImg {
+    width: 100%;
+    height: 200px;
+  }
+
+  .Plantlife__DisplayBox1 {
+    flex-flow: column;
+  }
+  .Plantlife__DisplayBox2 {
+    flex-flow: column;
+  }
+  .Plantlife__DisplayBox3 {
+    flex-flow: column;
+  }
+  .Plantlife__DisplayBox4 {
+    flex-flow: column;
+  }
+  .Plantlife__DisplayBox5 {
+    flex-flow: column;
+  }
+  .Plantlife__DisplayImage1 {
+    width: 100%;
+  }
+
+  .Plantlife__DisplayImage2 {
+    width: 100%;
+  }
+
+  .Plantlife__DisplayImage3 {
+    width: 100%;
+  }
+
+  .Plantlife__DisplayImage4 {
+    width: 100%;
+  }
+  .Plantlife__DisplayImage5 {
+    width: 100%;
+  }
+
+  .Plantlife__DisplayImage6 {
+    width: 100%;
+  }
+  .Plantlife__DisplayImage7 {
+    width: 100%;
+  }
+
+  .Plantlife__DisplayImage8 {
+    width: 100%;
+  }
+}

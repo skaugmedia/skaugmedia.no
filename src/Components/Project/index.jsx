@@ -1,13 +1,8 @@
-import { NavLink } from "react-router-dom";
-import project from "../Project/Project.module.css";
+import classes from "../Project/Project.module.css";
 
-export function Project(props) {
-  const img = props.cover;
-  const plural = props.images.length === 1 ? "bilde" : "bilder";
-  return (
-    <div className={`${project.main} ${props.className}`}>
-      <img className={project.image} src={img.url} alt={img.title}></img>
-      <h3 className={project.title}>{props.title}</h3>
-    </div>
-  );
-}
+export const Project = ({ className, cover, title }) => (
+  <div className={`${classes.main} ${className}`}>
+    <img className={classes.image} src={cover.url} alt={cover.title}></img>
+    <h3 className={classes.title}>{title}</h3>
+  </div>
+);
