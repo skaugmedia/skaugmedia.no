@@ -2,15 +2,111 @@ import { localTime } from "../utils";
 import { freePregnancyDate, freePregnancyId } from "./FreePregnancyDate";
 import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
-import BirthdayDiscount from "/src/Images/Discounts/bursdagstilbud.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
+import SummerDiscount from "/src/Images/Discounts/summerdiscount.jpg";
+import WeddingDiscount from "/src/Images/Discounts/weddingdiscount.jpg";
 import KidsMinisession from "/src/Images/Kids/LP_2.jpg";
 import ChristmasDiscount from "/src/Images/christmas_minishoot.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
+  {
+    id: "sommertilbud",
+    title: "Sommertilbud",
+    img: {
+      src: SummerDiscount,
+      alt: "Vannmelon",
+    },
+    banner: {
+      subTitle: "20% rabatt på alle ordinære fotograferinger",
+      description: (
+        <>
+          Book en valgfri ordinær fotografering med dato i juni, juli eller
+          august og få 20% rabatt på fotograferingen.
+          <br />
+          <br />
+          *Tilbudet gjelder ikke for pakkepriser, gjelder også for allerede
+          bookede fotograferinger. Gjelder til og med 31.08.2024
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          <div className="Discounts__FreePregnancyNextDate">
+            20% rabatt på alle ordinære fotograferinger
+          </div>
+          Book en valgfri ordinær fotografering med dato i juni, juli eller
+          august og få 20% rabatt på fotograferingen.
+          <br />
+          <br />
+          *Tilbudet gjelder ikke for pakkepriser, gjelder også for allerede
+          bookede fotograferinger. Gjelder til og med 31.08.2024
+          <br />
+          <br />
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("12.06.2024 00:00"),
+      to: localTime("01.09.2024 00:00"),
+    },
+    button: {
+      link: `/${ContactRoute}`,
+    },
+  },
+  {
+    id: "bryllupstilbud",
+    title: "Bryllupstilbud",
+    img: {
+      src: WeddingDiscount,
+      alt: "Brudepar",
+    },
+    banner: {
+      subTitle: "20% rabatt på alle bryllup i 2024",
+      description: (
+        <>
+          Jeg har fortsatt ledig tid til bryllupsfotograferinger i 2024. Alle
+          bryllup som bookes med dato i 2024, får nå 20% rabatt.
+          <br />
+          <br />
+          *Tilbudet gjelder ikke for Gallactic-pakken.
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          <div className="Discounts__FreePregnancyNextDate">
+            20% rabatt på alle bryllup i 2024
+          </div>
+          Jeg har fortsatt ledig tid til bryllupsfotograferinger i 2024. Alle
+          bryllup som bookes med dato i 2024, får nå 20% rabatt.
+          <br />
+          <br />
+          *Tilbudet gjelder ikke for Gallactic-pakken.
+          <br />
+          <br />
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("01.06.2024 00:00"),
+      to: localTime("30.12.2024 00:00"),
+    },
+    button: {
+      link: `/${ContactRoute}`,
+    },
+  },
+
   {
     id: "barn-soskenfotografering",
     title: "Søsken og barnefotografering",
