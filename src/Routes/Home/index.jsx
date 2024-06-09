@@ -33,6 +33,9 @@ export function Home() {
     >
       <div className="Home__DiscountHeaderBox">
         {((discount) => {
+          if (!discount) {
+            return
+          }
           const linkId = discount.id ? `#${discount.id}` : "";
           const link = `${discount.banner.button.link}${linkId}`;
           return (
