@@ -25,6 +25,23 @@ import famL6 from "../../../Images/Family/fam_l_6.jpg";
 import famL7 from "../../../Images/Family/fam_l_7.jpg";
 import famL8 from "../../../Images/Family/fam_l_8.jpg";
 import famL9 from "../../../Images/Family/fam_l_9.jpg";
+
+import famHS1 from "../../../Images/Family/fam_hs_1.jpg";
+import famHS2 from "../../../Images/Family/fam_hs_2.jpg";
+import famHS3 from "../../../Images/Family/fam_hs_3.jpg";
+import famHS4 from "../../../Images/Family/fam_hs_4.jpg";
+
+import famBA1 from "../../../Images/Family/fam_ba_1.jpg";
+import famBA2 from "../../../Images/Family/fam_ba_2.jpg";
+import famBA3 from "../../../Images/Family/fam_ba_3.jpg";
+
+import famCK1 from "../../../Images/Family/fam_ck_1.jpg";
+import famCK2 from "../../../Images/Family/fam_ck_2.jpg";
+import famCK3 from "../../../Images/Family/fam_ck_3.jpg";
+
+import famCS1 from "../../../Images/Family/fam_cs_1.jpg";
+import famCS2 from "../../../Images/Family/fam_cs_2.jpg";
+
 import FamilyRoute from "../../../Routes/Family/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
@@ -37,8 +54,8 @@ export default {
   Bli med oss og la øyeblikkene bli til varige minner gjennom en familiefotografering som er perfekt for å fange deres unike bånd og kjærlighet. Ved å kombinere naturlig lys, autentiske øyeblikk og enkle retninger, skaper vi varige minner fylt med latter, nærhet og kjærlighet. La oss fange deres unike historie gjennom bilder som vil bli verdsatt i generasjoner fremover.
   `,
   cover: {
-    url: famE1,
-    title: "Familietid i skogen",
+    url: famCS2,
+    title: "Familie i en eng av Lupiner",
   },
   listing: {
     title: "Familiefotografering",
@@ -231,6 +248,109 @@ export default {
         },
       ],
       date: "2023-02-19",
+    },
+    {
+      description: "Familie i lupineng",
+      tags: ["familie", "blomster", "sommer"],
+      images: [
+        {
+          url: famHS1,
+          title: "Familien HS",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famHS2,
+          title: "Familien HS",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: famHS3,
+          title: "Familien HS",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famHS4,
+          title: "Familien HS",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-06-14",
+    },
+    {
+      description: "Familiefoto",
+      tags: ["familie", "gartneri", "sommer"],
+      images: [
+        {
+          url: famBA1,
+          title: "Familien BA",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famBA2,
+          title: "Familien BA",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: famBA3,
+          title: "Familien BA",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-06-08",
+    },
+    {
+      description: "Familiefoto",
+      tags: ["familie", "gartneri", "sommer"],
+      images: [
+        {
+          url: famCK1,
+          title: "Familien CK",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famCK2,
+          title: "Familien CK",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: famCK3,
+          title: "Familien CK",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-06-08",
+    },
+    {
+      description: "Familiefoto",
+      tags: ["familie", "skog", "sommer"],
+      images: [
+        {
+          url: famCS1,
+          title: "Familien CS",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famCS2,
+          title: "Familien CS",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-06-18",
     },
   ],
 };

@@ -27,6 +27,19 @@ import conf_sv_4 from "../../../Images/Confirmation/conf_SV_4.jpg";
 import conf_sv_5 from "../../../Images/Confirmation/conf_SV_5.jpg";
 import conf_sv_6 from "../../../Images/Confirmation/conf_SV_6.jpg";
 import conf_sv_7 from "../../../Images/Confirmation/conf_SV_7.jpg";
+
+import conf_JH_1 from "../../../Images/Confirmation/conf_JH_1.jpg";
+import conf_JH_2 from "../../../Images/Confirmation/conf_JH_2.jpg";
+import conf_JH_3 from "../../../Images/Confirmation/conf_JH_3.jpg";
+import conf_JH_4 from "../../../Images/Confirmation/conf_JH_4.jpg";
+import conf_JH_5 from "../../../Images/Confirmation/conf_JH_5.jpg";
+
+import conf_M_1 from "../../../Images/Confirmation/conf_M_1.jpg";
+import conf_M_2 from "../../../Images/Confirmation/conf_M_2.jpg";
+import conf_M_3 from "../../../Images/Confirmation/conf_M_3.jpg";
+import conf_M_4 from "../../../Images/Confirmation/conf_M_4.jpg";
+import conf_M_5 from "../../../Images/Confirmation/conf_M_5.jpg";
+
 import ConfirmationRoute from "../../../Routes/Confirmation/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
@@ -256,6 +269,80 @@ export default {
         },
       ],
       date: "2013-09-26",
+    },
+    {
+      description: "Konfirmanten JH",
+      tags: ["konfirmant", "jente", "festpyntet", "bunad"],
+      images: [
+        {
+          url: conf_JH_1,
+          title: "Konfirmanten JH",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: conf_JH_2,
+          title: "Konfirmanten JH",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: conf_JH_3,
+          title: "Konfirmanten JH",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: conf_JH_4,
+          title: "Konfirmanten JH",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: conf_JH_5,
+          title: "Konfirmanten JH",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-05-15",
+    },
+    {
+      description: "Konfirmanten M",
+      tags: ["konfirmant", "gutt", "dress", "urban"],
+      images: [
+        {
+          url: conf_M_1,
+          title: "Konfirmanten M",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: conf_M_2,
+          title: "Konfirmanten M",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: conf_M_3,
+          title: "Konfirmanten M",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: conf_M_4,
+          title: "Konfirmanten M",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: conf_M_5,
+          title: "Konfirmanten M",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-05-29",
     },
   ],
 };

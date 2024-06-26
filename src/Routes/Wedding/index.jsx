@@ -88,7 +88,7 @@ export function Wedding() {
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
-            15x15cm album med 20 bilder
+            15x15cm album med 10 bilder
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxPrice">Kr. 24.000,-</div>
@@ -129,7 +129,7 @@ export function Wedding() {
 
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
-            15x15cm album med 20 bilder
+            15x15cm album med 10 bilder
           </div>
           <div className="Wedding__PackageBoxDivider"></div>
           <div className="Wedding__PackageBoxText">
@@ -301,7 +301,7 @@ export function Wedding() {
 
             <div className="PhotoPrice__PackageBoxDivider"></div>
             <div className="Wedding__PackageBoxText">
-              15x15cm album med 20 bilder
+              15x15cm album med 10 bilder
             </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="PhotoPrice__PackageBoxText">
@@ -395,7 +395,7 @@ export function Wedding() {
             </div>
             <div className="PhotoPrice__PackageBoxDivider"></div>
             <div className="Wedding__PackageBoxText">
-              15x15cm album med 20 bilder
+              15x15cm album med 10 bilder
             </div>
             <div className="Wedding__PackageBoxDivider"></div>
             <div className="PhotoPrice__PackageBoxText">
@@ -641,7 +641,7 @@ export function Wedding() {
               </td>
             </tr>
             <tr>
-              <th>15x15cm album med 20 bilder</th>
+              <th>15x15cm album med 10 bilder</th>
               <td></td>
               <td>
                 <Check />

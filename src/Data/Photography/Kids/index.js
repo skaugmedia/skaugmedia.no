@@ -46,6 +46,16 @@ import H5 from "../../../Images/Kids/H_5.jpg";
 import H6 from "../../../Images/Kids/H_6.jpg";
 import H7 from "../../../Images/Kids/H_7.jpg";
 
+import FS1 from "../../../Images/Kids/FS_1.jpg";
+import FS2 from "../../../Images/Kids/FS_2.jpg";
+import FS3 from "../../../Images/Kids/FS_3.jpg";
+
+import LI1 from "../../../Images/Kids/LI_1.jpg";
+import LI2 from "../../../Images/Kids/LI_2.jpg";
+import LI3 from "../../../Images/Kids/LI_3.jpg";
+import LI4 from "../../../Images/Kids/LI_4.jpg";
+import LI5 from "../../../Images/Kids/LI_5.jpg";
+
 import ChildrenRoute from "../../../Routes/Children/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
@@ -57,7 +67,7 @@ export default {
   Utforsk magien av barndommens oppdagelser med skreddersydde fotograferinger for barn mellom 6 måneder og konfirmantalder. Sammen skaper vi minneverdige øyeblikk, fylt med latter, lek og kjærlighet. La oss fange de spontane smilene, den nysgjerrige utforskningen og den genuine gleden av barndommens eventyr, som vil bli skattert for alltid.
   `,
   cover: {
-    url: LG1,
+    url: LI2,
     title: "Barn",
   },
   listing: {
@@ -358,6 +368,68 @@ export default {
         },
       ],
       date: "2023-11-13",
+    },
+    {
+      description: "FS",
+      tags: ["jente", "baby", "sommer"],
+      images: [
+        {
+          url: FS1,
+          title: "FS",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: FS2,
+          title: "FS",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: FS3,
+          title: "FS",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-06-14",
+    },
+    {
+      description: "LI",
+      tags: ["jente", "barn", "søsken"],
+      images: [
+        {
+          url: LI1,
+          title: "Søskenfoto L + I",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LI2,
+          title: "Søskenfoto L + I",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: LI3,
+          title: "Søskenfoto L + I",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LI4,
+          title: "Søskenfoto L + I",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LI5,
+          title: "Søskenfoto L + I",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-05-07",
     },
   ],
 };

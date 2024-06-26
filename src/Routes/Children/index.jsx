@@ -172,14 +172,18 @@ export function Children() {
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
               <div className="PhotoPrice__PackageBoxText">
-                Laminert fotografi i ramme 30x40 cm
+                Touch Art Nature 20x20cm
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Touch Art Nature 30x30cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 5799,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 8299,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
@@ -206,20 +210,22 @@ export function Children() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                10 digitale bildefiler
+                5 digitale bildefiler
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Album 15x15 cm med 10 stk. bilder
+                Bildeboks 15x20cm med 10 bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">Lerret 20x30 cm</div>
+              <div className="PhotoPrice__PackageBoxText">
+                Touch Art Nature sirkel 30x30cm
+              </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 10.799,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 11.899,-</div>
             </div>
           </div>
         </PageSection>

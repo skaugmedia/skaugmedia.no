@@ -2,6 +2,7 @@ import { localTime } from "../utils";
 import { freePregnancyDate, freePregnancyId } from "./FreePregnancyDate";
 import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
+import MinishootAugust from "/src/Images/Discounts/minishootaugust.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
 import SummerDiscount from "/src/Images/Discounts/summerdiscount.jpg";
@@ -55,6 +56,77 @@ const rawDiscountPosts = [
     valid: {
       from: localTime("12.06.2024 00:00"),
       to: localTime("01.09.2024 00:00"),
+    },
+    button: {
+      link: `/${ContactRoute}`,
+    },
+  },
+  {
+    id: "minifoto-august",
+    title: "Valgfri minifotografering i august",
+    img: {
+      src: MinishootAugust,
+      alt: "Portrett av en ung dame i en eng",
+    },
+    banner: {
+      subTitle: "7. august og 10. august 2024",
+      description: (
+        <>
+          Valgfri minifotografering 7. eller 10. august. Passer like bra for en
+          søskenfotografering som en gravidfotografering.
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">Kun kr. 399,-</div>
+          <br />
+          *Booking er bindende. Ingen bilder er inkludert i prisen, dette kommer
+          i tillegg.
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          <div className="Discounts__FreePregnancyNextDate">
+            7. august og 10. august 2024
+          </div>
+          <IncludesList
+            items={[
+              "20 minutter valgfri fotografering utendørs på Jessheim",
+              "Online visningsgalleri hvor du kan velge dine bilder",
+              "Mulighet for å leie gravidkjole for kr. 200,-",
+              "Mulighet for en visningstime der du kan se på ulike fysiske bildeproduktene du kan bestille",
+              "Gode rabatter på bilder og produkter",
+              "Mulighet for å kjøpe flere bilder, og bildeprodukter",
+            ]}
+          />
+          Her velger du helt selv hva slags fotografering som skal gjennomføres,
+          men det er viktig at jeg får beskjed på forhånd- slik at jeg kan
+          planlegge og ta med det jeg trenger til deres fotografering.
+          <br />
+          <br />
+          Send en mail eller ta kontakt via kontaktskjema med ønsket dato og
+          tidspunkt, samt hvilken fotografering du ønsker deg. Om timen er
+          ledig, vil du motta en kontrakt som må fylles ut og signeres så snart
+          som mulig, samt en faktura som må betales for at bookingen skal være
+          gyldig. Om tidspunktet ikke er ledig, vil jeg gi deg beskjed og
+          foreslå et annet tidspunkt om det er noen ledige tider.
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">Kun kr. 399,-</div>
+          <br />
+          *Booking er bindende. Ingen bilder er inkludert i prisen, dette kommer
+          i tillegg.
+          <br />
+          <br />
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("30.06.2024 00:00"),
+      to: localTime("10.08.2024 00:00"),
     },
     button: {
       link: `/${ContactRoute}`,

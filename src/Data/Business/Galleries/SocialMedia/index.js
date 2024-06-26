@@ -29,10 +29,83 @@ import christmas_campaign_6 from "../../../../Images/Business/Pent_og_brukt/chri
 import christmas_campaign_7 from "../../../../Images/Business/Pent_og_brukt/christmas_campaign_7.jpg";
 import christmas_campaign_9 from "../../../../Images/Business/Pent_og_brukt/christmas_campaign_9.jpg";
 
+import spring_campaign_1 from "/src/Images/SocialMedia/spring_campaign_1.jpg";
+import spring_campaign_2 from "/src/Images/SocialMedia/spring_campaign_2.jpg";
+import spring_campaign_3 from "/src/Images/SocialMedia/spring_campaign_3.jpg";
+import spring_campaign_4 from "/src/Images/SocialMedia/spring_campaign_4.jpg";
+import spring_campaign_5 from "/src/Images/SocialMedia/spring_campaign_5.jpg";
+import spring_campaign_6 from "/src/Images/SocialMedia/spring_campaign_6.jpg";
+import spring_campaign_7 from "/src/Images/SocialMedia/spring_campaign_7.jpg";
+import spring_campaign_8 from "/src/Images/SocialMedia/spring_campaign_8.jpg";
+import spring_campaign_9 from "/src/Images/SocialMedia/spring_campaign_9.jpg";
+
 export default {
   id: "sosiale-medier",
   title: "Sosiale Medier",
   shoots: [
+    {
+      description: "Pent og Brukt vår",
+      tags: ["produkt", "bedrift", "vår"],
+      images: [
+        {
+          url: spring_campaign_2,
+          title: "Et bilde av en gammel keramikkmugge",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: spring_campaign_1,
+          title: "En samling av produkter fra butikken",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: spring_campaign_3,
+          title: "Bladformet bolle i teak",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: spring_campaign_4,
+          title: "En samling av produkter fra butikken vår",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: spring_campaign_5,
+          title: "En samling av produkter fra butikken vår",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: spring_campaign_6,
+          title: "Vaser og dekor fra butikken i sterkt lys",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: spring_campaign_7,
+          title: "Vaser og dekor fra butikken i sterkt lys",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: spring_campaign_8,
+          title: "En kurv fylt med tilbehør til planter",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: spring_campaign_9,
+          title: "En kurv fylt med tilbehør til planter",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-03-07",
+    },
+
     {
       description: "Pent og Brukt høst",
       tags: ["produkt", "bedrift", "høst"],
