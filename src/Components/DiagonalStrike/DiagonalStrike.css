@@ -1,0 +1,13 @@
+.DiagonalStrike {
+  position: relative;
+}
+
+.DiagonalStrike__Line {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  transform: skewY(-10deg);
+}

@@ -1,5 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
+import { PackagePriceOld } from "../../Components/PackagePriceOld";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import NewbornImg1 from "../../Images/Newborn/l_newborn_2.jpg";
@@ -92,6 +93,7 @@ export function Newborn() {
                 markedsføring
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
+              <PackagePriceOld>Kr. 1699,-</PackagePriceOld>
               <div className="PhotoPrice__PackageBoxPrice">Kr. 1189,-</div>
             </div>
 
