@@ -125,7 +125,7 @@ const rawDiscountPosts = [
       </>
     ),
     valid: {
-      from: localTime("30.06.2024 00:00"),
+      from: localTime("01.07.2024 00:00"),
       to: localTime("10.08.2024 00:00"),
     },
     button: {

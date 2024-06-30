@@ -141,7 +141,7 @@ export function PhotoProducts() {
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 1499,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1399,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -149,7 +149,7 @@ export function PhotoProducts() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 1999,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1899,-</div>
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
@@ -157,7 +157,7 @@ export function PhotoProducts() {
               </div>
             }
             price5={
-              <div className="ProductPriceSection__Price">Kr. 2699,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2399,-</div>
             }
             priceText6={false}
             price6={false}
@@ -205,7 +205,7 @@ export function PhotoProducts() {
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 1499,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1399,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -213,7 +213,7 @@ export function PhotoProducts() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 1999,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1899,-</div>
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
@@ -221,7 +221,7 @@ export function PhotoProducts() {
               </div>
             }
             price5={
-              <div className="ProductPriceSection__Price">Kr. 2499,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2399,-</div>
             }
             priceText6={false}
             price6={false}
@@ -256,7 +256,7 @@ export function PhotoProducts() {
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 1899,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2399,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
@@ -264,7 +264,7 @@ export function PhotoProducts() {
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 2799,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2999,-</div>
             }
             priceText3={false}
             price3={false}
@@ -295,7 +295,8 @@ export function PhotoProducts() {
             text={
               <div className="ProductPriceSection__Text">
                 Laminert bilde som er montert på en rund treplate. Disse kan
-                også fås i andre størrelser og andre former.
+                også fås i andre størrelser og andre former. (Bilde som viser
+                dette produktet kommer etterhvert.)
               </div>
             }
             priceText1={
@@ -352,6 +353,7 @@ export function PhotoProducts() {
                 lett kan bytte ut dekoren i rommet. Kjøp gjerne med et staffeli
                 eller en kloss til å stille dem ut med. Det er mulighet for å
                 bestille boksen i ulike størrelser og med flere bilder oppi.
+                (Bilde som viser dette produktet kommer etterhvert.)
               </div>
             }
             priceText1={
