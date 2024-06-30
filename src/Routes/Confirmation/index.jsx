@@ -79,6 +79,20 @@ export function Confirmation() {
             <div className="PhotoPrice__ShootDivider"></div>
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
+                Konfirmantfotografering - til markedsføring
+              </div>
+              <div className="PhotoPrice__PackageBoxSubHeading">
+                opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen, krever at bildene kan brukes til
+                markedsføring
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1049,-</div>
+            </div>
+
+            <div className="PhotoPrice__ShootDivider"></div>
+            <div className="PhotoPrice__PackageBoxShoot">
+              <div className="PhotoPrice__PackageBoxHeading">
                 MINIFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">

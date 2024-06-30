@@ -75,16 +75,17 @@ export function Maternity() {
             <div className="PhotoPrice__ShootDivider"></div>
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
-                GRAVIDFOTOGRAFERING + NYFØDTFOTOGRAFERING
+                GRAVIDFOTOGRAFERING - til markedsføring
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
-                opptil 1 time gravidfotografering, opptil 3 timer
-                nyfødtfotografering, en visningstime 1-3 uker etter
-                nyfødtfotograferingen og 10 digitale bildefiler
+                opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen, krever at bildene kan brukes til
+                markedsføring
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 7699,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1049,-</div>
             </div>
+
             <div className="PhotoPrice__ShootDivider"></div>
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
@@ -101,6 +102,20 @@ export function Maternity() {
           <div className="PhotoPrice__Choice">
             eller du kan booke en av disse pakkene:
           </div>
+          <div className="PhotoPrice__ShootDivider"></div>
+          <div className="PhotoPrice__PackageBoxShoot">
+            <div className="PhotoPrice__PackageBoxHeading">
+              GRAVIDFOTOGRAFERING + NYFØDTFOTOGRAFERING
+            </div>
+            <div className="PhotoPrice__PackageBoxSubHeading">
+              opptil 1 time gravidfotografering, opptil 3 timer
+              nyfødtfotografering, en visningstime 1-3 uker etter
+              nyfødtfotograferingen og 10 digitale bildefiler
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxPrice">Kr. 7699,-</div>
+          </div>
+          <div className="PhotoPrice__ShootDivider"></div>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__PackageBoxRow">
