@@ -108,6 +108,11 @@
   margin-bottom: 0px;
 }
 
+.PhotoPrice__PackageBoxPrice--Old {
+  color: #888 !important;
+  font-size: 1rem !important;
+}
+
 .PhotoPrice__PackageBoxRow {
   display: flex;
   flex-flow: row;

@@ -1,5 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
+import { PackagePriceOld } from "../../Components/PackagePriceOld";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import ChildrenImg2 from "../../Images/Kids/H_6.jpg";
@@ -92,6 +93,21 @@ export function Children() {
             <div className="PhotoPrice__ShootDivider"></div>
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
+                Barnefotografering - til markedsføring
+              </div>
+              <div className="PhotoPrice__PackageBoxSubHeading">
+                opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen, krever at bildene kan brukes til
+                markedsføring
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <PackagePriceOld>Kr. 1499,-</PackagePriceOld>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1049,-</div>
+            </div>
+
+            <div className="PhotoPrice__ShootDivider"></div>
+            <div className="PhotoPrice__PackageBoxShoot">
+              <div className="PhotoPrice__PackageBoxHeading">
                 MINIFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
@@ -172,14 +188,18 @@ export function Children() {
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
               <div className="PhotoPrice__PackageBoxText">
-                Laminert fotografi i ramme 30x40 cm
+                Touch Art Nature 20x20cm
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Touch Art Nature 30x30cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 5799,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 8299,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
@@ -206,20 +226,22 @@ export function Children() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                10 digitale bildefiler
+                5 digitale bildefiler
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Album 15x15 cm med 10 stk. bilder
+                Bildeboks 15x20cm med 10 bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">Lerret 20x30 cm</div>
+              <div className="PhotoPrice__PackageBoxText">
+                Touch Art Nature sirkel 30x30cm
+              </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 10.799,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 11.899,-</div>
             </div>
           </div>
         </PageSection>

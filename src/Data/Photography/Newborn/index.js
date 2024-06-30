@@ -15,6 +15,17 @@ import LO5 from "../../../Images/Newborn/newborn_LO_5.jpg";
 import LO6 from "../../../Images/Newborn/newborn_LO_6.jpg";
 import LO7 from "../../../Images/Newborn/newborn_LO_7.jpg";
 
+import TG1 from "../../../Images/Newborn/newborn_TG_1.jpg";
+import TG10 from "../../../Images/Newborn/newborn_TG_10.jpg";
+import TG2 from "../../../Images/Newborn/newborn_TG_2.jpg";
+import TG3 from "../../../Images/Newborn/newborn_TG_3.jpg";
+import TG4 from "../../../Images/Newborn/newborn_TG_4.jpg";
+import TG5 from "../../../Images/Newborn/newborn_TG_5.jpg";
+import TG6 from "../../../Images/Newborn/newborn_TG_6.jpg";
+import TG7 from "../../../Images/Newborn/newborn_TG_7.jpg";
+import TG8 from "../../../Images/Newborn/newborn_TG_8.jpg";
+import TG9 from "../../../Images/Newborn/newborn_TG_9.jpg";
+
 import NewbornRoute from "../../../Routes/Newborn/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "../../priceList";
@@ -26,8 +37,8 @@ export default {
   Opplev øyeblikket med naturlige nyfødtbilder, skapt i trygge og kjente omgivelser for både foreldre og barn. Med fokus på å fange den autentiske kjærligheten og intimiteten mellom familien, bringer jeg studioet til dere, slik at dere kan slappe av i komforten av deres eget hjem. 
   `,
   cover: {
-    url: LO1,
-    title: "LO",
+    url: TG2,
+    title: "TG",
   },
   listing: {
     title: "Nyfødtfotografering",
@@ -35,6 +46,73 @@ export default {
     link: `/${PricesRoute}/${NewbornRoute}`,
   },
   shoots: [
+    {
+      description: "TG",
+      tags: ["nyfødt", "baby", "jente", "utendørs"],
+      images: [
+        {
+          url: TG1,
+          title: "TG",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: TG2,
+          title: "TG",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: TG3,
+          title: "TG",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: TG4,
+          title: "TG",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: TG5,
+          title: "TG",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: TG6,
+          title: "TG",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: TG7,
+          title: "TG",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: TG8,
+          title: "TG",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: TG9,
+          title: "TG",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: TG10,
+          title: "TG",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-06-21",
+    },
     {
       description: "LO",
       tags: ["nyfødt", "baby", "gutt"],

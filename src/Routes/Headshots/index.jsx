@@ -1,5 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
+import { PackagePriceOld } from "../../Components/PackagePriceOld";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import HeadshotsImg2 from "../../Images/Portrait/port_IM_02.jpg";
@@ -117,6 +118,21 @@ export function Headshots() {
             </div>
             <div className="PhotoPrice__PackageBoxDivider"></div>
             <div className="PhotoPrice__PackageBoxPrice">Kr. 1499,-</div>
+          </div>
+          <div className="PhotoPrice__ShootDivider"></div>
+
+          <div className="PhotoPrice__PackageBoxShoot">
+            <div className="PhotoPrice__PackageBoxHeading">
+              PORTRETTFOTOGRAFERING - TIL MARKEDSFØRING
+            </div>
+            <div className="PhotoPrice__PackageBoxSubHeading">
+              opptil 1 time fotografering, inkludert en visningstime 1-3 uker
+              etter fotograferingen, krever at bildene kan brukes til
+              markedsføring
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <PackagePriceOld>Kr. 1499,-</PackagePriceOld>
+            <div className="PhotoPrice__PackageBoxPrice">Kr. 1049,-</div>
           </div>
 
           <div className="PhotoPrice__Choice">

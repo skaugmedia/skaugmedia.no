@@ -81,6 +81,13 @@
   margin-bottom: auto;
 }
 
+.Home__IncludesSpecialText {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+}
+
 .Home__DiscountSection {
   display: flex;
   flex-flow: row;

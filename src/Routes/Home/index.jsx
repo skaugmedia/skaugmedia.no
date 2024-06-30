@@ -34,7 +34,7 @@ export function Home() {
       <div className="Home__DiscountHeaderBox">
         {((discount) => {
           if (!discount) {
-            return
+            return;
           }
           const linkId = discount.id ? `#${discount.id}` : "";
           const link = `${discount.banner.button.link}${linkId}`;
@@ -111,6 +111,14 @@ export function Home() {
           </div>
           <div className="Home__IncludesSubtext">
             (unntak er bryllupsfotografering og gratis gravidfotografering)
+          </div>
+          <br />
+          <div className="Home__IncludesSpecialText">
+            Samtykker du til at jeg kan bruke bildene til markedsføring får du
+            30% rabatt på ordinær fotografering.{" "}
+          </div>
+          <div className="Home__IncludesSubtext">
+            (Gjelder ikke bryllup, pakkepriser eller minifotografering)
           </div>
         </div>
       </PageSection>

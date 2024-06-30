@@ -5,14 +5,16 @@ import { ProductPriceSection } from "../../Components/ProductPriceSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import pageName from "./PageName";
 import "./PhotoProducts.css";
-import DigitalImageImg from "/src/Images/Portrait/port_T_01.jpg";
-import BirthposterImg from "/src/Images/Prices/birthposter.jpg";
-import WallImageImg from "/src/Images/Prices/canvas.jpg";
+import DigitalImageImg from "/src/Images/Family/fam_hs_1.jpg";
+import ImageBoxImg from "/src/Images/Newborn/l_newborn_1.jpg";
 import PrintablesImg from "/src/Images/Prices/designpack.jpg";
 import PhotoProductImg from "/src/Images/Prices/photocopy1.jpg";
-import CardsImg from "/src/Images/Prices/takkekort.jpg";
-import AlbumImg from "/src/Images/WeddingPrice/album.jpg";
-import LaminatedFrameImg from "/src/Images/WeddingPrice/laminert.jpg";
+import AlbumImg from "/src/Images/WeddingPrice/album_dark.jpg";
+import BirthposterImg from "/src/Images/WeddingPrice/birthposter.jpg";
+import CardsImg from "/src/Images/WeddingPrice/designpack.jpg";
+import LaminatedFrameImg from "/src/Images/WeddingPrice/laminatedframe.jpg";
+import LaminatedImg from "/src/Images/WeddingPrice/laminert.jpg";
+import WoodPlateImg from "/src/Images/WeddingPrice/rund_treplate.jpg";
 import KapaImg from "/src/Images/WeddingPrice/skumplate.jpg";
 
 export function PhotoProducts() {
@@ -52,67 +54,49 @@ export function PhotoProducts() {
             outerClassName="Prices__Outer"
             reverse={true}
             imgSrc={PhotoProductImg}
-            imgAlt="En bildekopi i ramme av en konfirmant"
+            imgAlt="En bildekopi i ramme av en gravid kvinne"
             title="Bildekopi på fotopapir"
             text={
               <div className="ProductPriceSection__Text">
-                Gi liv til de best dyrebare øyeblikkene med bildekopier av høy
-                kvalitet. Min leverandør trykker hver enkelt bilde med
-                presisjon, og kvalitetssjekker bildet før de sendes avgårde til
-                meg, før jeg igjen sjekker at alt ser riktig ut. Disse løse
-                bildene er perfekte å ramme inn å gi bort i gave til den som har
-                alt! Ønsker du en annen størrelse, er det mulighet for at
-                trykkeriet kan trykke din størrelse.
+                Bildekopier av høy kvalitet, på fotopapir. Ønsker du en annen
+                størrelse, er det mulighet for at trykkeriet kan trykke din
+                størrelse.
               </div>
             }
             priceText1={
               <div className="ProductPriceSection__PriceText1">
-                Bildekopi 14x18cm
+                Bildekopi 13x18cm
               </div>
             }
-            price1={
-              <div className="ProductPriceSection__Price">fra Kr. 299,-</div>
-            }
+            price1={<div className="ProductPriceSection__Price">Kr. 399,-</div>}
             priceText2={
               <div className="ProductPriceSection__PriceText1">
                 Bildekopi 15x20cm
               </div>
             }
-            price2={
-              <div className="ProductPriceSection__Price">fra Kr. 389,-</div>
-            }
+            price2={<div className="ProductPriceSection__Price">Kr. 499,-</div>}
             priceText3={
+              <div className="ProductPriceSection__PriceText">
+                Bildekopi 20x20cm
+              </div>
+            }
+            price3={<div className="ProductPriceSection__Price">Kr. 599,-</div>}
+            priceText4={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 20x30cm
               </div>
             }
-            price3={
-              <div className="ProductPriceSection__Price">fra Kr. 599,-</div>
-            }
-            priceText4={
+            price4={<div className="ProductPriceSection__Price">Kr. 699,-</div>}
+            priceText5={
               <div className="ProductPriceSection__PriceText">
                 Bildekopi 30x40cm
               </div>
             }
-            price4={
-              <div className="ProductPriceSection__Price">fra Kr. 939,-</div>
-            }
-            priceText5={
-              <div className="ProductPriceSection__PriceText">
-                Bildekopi 40x50cm
-              </div>
-            }
             price5={
-              <div className="ProductPriceSection__Price">fra Kr. 1379,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1399,-</div>
             }
-            priceText6={
-              <div className="ProductPriceSection__PriceText">
-                Bildekopi 50x70cm
-              </div>
-            }
-            price6={
-              <div className="ProductPriceSection__Price">fra Kr. 2049,-</div>
-            }
+            priceText6={false}
+            price6={false}
             priceText7={false}
             price7={false}
             priceText8={false}
@@ -128,24 +112,15 @@ export function PhotoProducts() {
           <ProductPriceSection
             outerClassName="Prices__Outer"
             reverse={true}
-            imgSrc={LaminatedFrameImg}
+            imgSrc={LaminatedImg}
             imgAlt="En bildekopi i ramme av en konfirmant"
             title="Laminerte forstørrelser"
             text={
               <div className="ProductPriceSection__Text">
-                Utforsk utvalget av laminerte forstørrelser, som gir deg
-                muligheten til å nyte dine favorittbilder uten forstyrrende
-                refleksjoner fra glass. Forstørrelsene er trykket med presisjon
-                og deretter laminert for å beskytte bildet samtidig som det
-                fremhever fargene og detaljene. Denne unike kombinasjonen av
-                kvalitetstrykk og laminering gir et sluttresultat som er både
-                holdbart og visuelt imponerende. Med våre laminerte
-                forstørrelser kan du enkelt ramme inn dine minner og glede deg
-                over dem uten avbrytelser, samtidig som de er godt beskyttet for
-                å vare i mange år fremover. Hos meg kan du også bestille
-                passende rammer til dine forstørrelser. Ønsker du en annen
-                størrelse, er det mulighet for at trykkeriet kan trykke din
-                størrelse.
+                Laminerte bildekopier som er montert på kartong. Disse kan
+                plasseres i rammer eller de kan brukes som de er på veggen.
+                Ønsker du en annen størrelse, er det mulighet for at trykkeriet
+                kan trykke din størrelse.
               </div>
             }
             priceText1={
@@ -153,24 +128,20 @@ export function PhotoProducts() {
                 Laminert forstørrelse 14x18cm
               </div>
             }
-            price1={
-              <div className="ProductPriceSection__Price">fra Kr. 399,-</div>
-            }
+            price1={<div className="ProductPriceSection__Price">Kr. 699,-</div>}
             priceText2={
               <div className="ProductPriceSection__PriceText1">
                 Laminert forstørrelse 15x20cm
               </div>
             }
-            price2={
-              <div className="ProductPriceSection__Price">fra Kr. 479,-</div>
-            }
+            price2={<div className="ProductPriceSection__Price">Kr. 899,-</div>}
             priceText3={
               <div className="ProductPriceSection__PriceText">
                 Laminert forstørrelse 20x30cm
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">fra Kr. 699,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1399,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -178,7 +149,7 @@ export function PhotoProducts() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">fra Kr. 1299,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1899,-</div>
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
@@ -186,7 +157,7 @@ export function PhotoProducts() {
               </div>
             }
             price5={
-              <div className="ProductPriceSection__Price">fra Kr. 1599,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2399,-</div>
             }
             priceText6={false}
             price6={false}
@@ -210,13 +181,10 @@ export function PhotoProducts() {
             title="Trykk på skumplate"
             text={
               <div className="ProductPriceSection__Text">
-                Ta godt vare på bildene dine ved å bestille spesialtilpassede
-                laminerte fotopapirtrykk montert på kapa-plate. Du kan enkelt
-                velge de mest minneverdige øyeblikkene og omgjøre dem til vakre
-                veggbilder som vil pryde ditt hjem med personlig stil. Uansett
-                om det er hjertelige familieportretter, romantiske øyeblikk
-                eller naturlige skjønnheter, vil vårt høykvalitetsprodukt og
-                omhyggelig håndverk gjøre hvert bilde til enestående kunstverk.
+                Laminerte bildekopier montert på skumplate. Disse kan fint
+                brukes direkte på veggen som er, ved å kun montere oppheng på
+                baksiden. Ønsker du en annen størrelse, er det mulighet for at
+                trykkeriet kan trykke din størrelse.
               </div>
             }
             priceText1={
@@ -224,24 +192,20 @@ export function PhotoProducts() {
                 Skumplate 14x18cm
               </div>
             }
-            price1={
-              <div className="ProductPriceSection__Price">fra Kr. 829,-</div>
-            }
+            price1={<div className="ProductPriceSection__Price">Kr. 699,-</div>}
             priceText2={
               <div className="ProductPriceSection__PriceText1">
                 Skumplate 15x20cm
               </div>
             }
-            price2={
-              <div className="ProductPriceSection__Price">fra Kr. 1089,-</div>
-            }
+            price2={<div className="ProductPriceSection__Price">Kr. 899,-</div>}
             priceText3={
               <div className="ProductPriceSection__PriceText">
                 Skumplate 20x30cm
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">fra Kr. 1579,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1399,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -249,7 +213,7 @@ export function PhotoProducts() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">fra Kr. 1959,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1899,-</div>
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
@@ -257,7 +221,7 @@ export function PhotoProducts() {
               </div>
             }
             price5={
-              <div className="ProductPriceSection__Price">fra Kr. 2479,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2399,-</div>
             }
             priceText6={false}
             price6={false}
@@ -276,49 +240,152 @@ export function PhotoProducts() {
           <ProductPriceSection
             outerClassName="Prices__Outer"
             reverse={true}
-            imgSrc={WallImageImg}
+            imgSrc={LaminatedFrameImg}
             imgAlt="Lerretsbilder med mor og datter"
-            title="Trykk på lerret"
+            title="Laminert bilde i ramme"
             text={
               <div className="ProductPriceSection__Text">
-                Skap varige minner med våre førsteklasses lerretsbilder av
-                høyeste kvalitet. Våre dedikerte leverandører printer hvert
-                bilde med presisjon og gjennomfører nøye kvalitetskontroller før
-                de leveres til deg.
+                Du kan bestille et laminert bilde montert på kartong, og
+                plassert i ramme. Du kan velge mellom en sort eller eikefarget
+                treramme. Dette er en bestselger hos meg.
               </div>
             }
             priceText1={
               <div className="ProductPriceSection__PriceText1">
-                Lerret 20x25cm
+                Laminert bilde 30x40cm i ramme
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">fra Kr. 1579,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2399,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
-                Lerret 20x30cm
+                Laminert bilde 40x50cm i ramme
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">fra Kr. 1799,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2999,-</div>
+            }
+            priceText3={false}
+            price3={false}
+            priceText4={false}
+            price4={false}
+            priceText5={false}
+            price5={false}
+            priceText6={false}
+            price6={false}
+            priceText7={false}
+            price7={false}
+            priceText8={false}
+            price8={false}
+            priceText9={false}
+            price9={false}
+          />
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__BottomDivider"></div>
+        </PageSection>
+        <PageSection>
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={WoodPlateImg}
+            imgAlt="Lerretsbilder med mor og datter"
+            title="Trykk på rund treplate"
+            text={
+              <div className="ProductPriceSection__Text">
+                Laminert bilde som er montert på en rund treplate. Disse kan
+                også fås i andre størrelser og andre former. (Bilde som viser
+                dette produktet kommer etterhvert.)
+              </div>
+            }
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                Touch Art Nature 20x20 cm
+              </div>
+            }
+            price1={
+              <div className="ProductPriceSection__Price">Kr. 1699,-</div>
+            }
+            priceText2={
+              <div className="ProductPriceSection__PriceText">
+                Touch Art Nature 20x20 cm
+              </div>
+            }
+            price2={
+              <div className="ProductPriceSection__Price">Kr. 2799,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
-                Lerret 30x40cm
+                Touch Art Nature 40x40 cm
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">fra Kr. 2699,-</div>
+              <div className="ProductPriceSection__Price">Kr. 4199,-</div>
             }
-            priceText4={
-              <div className="ProductPriceSection__PriceText">
-                Lerret 40x50cm
+            priceText4={false}
+            price4={false}
+            priceText5={false}
+            price5={false}
+            priceText6={false}
+            price6={false}
+            priceText7={false}
+            price7={false}
+            priceText8={false}
+            price8={false}
+            priceText9={false}
+            price9={false}
+          />
+        </PageSection>
+        <PageSection>
+          <div className="PhotoPrice__BottomDivider"></div>
+        </PageSection>
+        <PageSection>
+          <ProductPriceSection
+            outerClassName="Prices__Outer"
+            reverse={true}
+            imgSrc={ImageBoxImg}
+            imgAlt="En gravid kvinne i snøvær"
+            title="Bildeboks"
+            text={
+              <div className="ProductPriceSection__Text">
+                En lekker bildeboks med 10 stk. laminerte bilder som gjør at du
+                lett kan bytte ut dekoren i rommet. Kjøp gjerne med et staffeli
+                eller en kloss til å stille dem ut med. Det er mulighet for å
+                bestille boksen i ulike størrelser og med flere bilder oppi.
+                (Bilde som viser dette produktet kommer etterhvert.)
               </div>
             }
-            price4={
-              <div className="ProductPriceSection__Price">fra Kr. 3499,-</div>
+            priceText1={
+              <div className="ProductPriceSection__PriceText1">
+                Bildeboks 15x20cm med 10 bilder
+              </div>
             }
+            price1={
+              <div className="ProductPriceSection__Price">fra Kr. 6199,-</div>
+            }
+            priceText2={
+              <div className="ProductPriceSection__PriceText">
+                Bildeboks 15x20cm med 10 bilder
+              </div>
+            }
+            price2={
+              <div className="ProductPriceSection__Price">fra Kr. 7499,-</div>
+            }
+            priceText3={
+              <p className="Prices__TabsContentTextFees">
+                Ekstra bilde per stk. Kr. 250,-
+                <br />
+                Staffeli i treverk Kr. 159,-
+                <br />
+                Akrylkloss med spor Kr. 199,-
+                <br />
+                Eikekloss med spor Kr. 219,-
+              </p>
+            }
+            price3={false}
+            priceText4={false}
+            price4={false}
             priceText5={false}
             price5={false}
             priceText6={false}
@@ -343,12 +410,10 @@ export function PhotoProducts() {
             title="Album"
             text={
               <div className="ProductPriceSection__Text">
-                La de mest dyrebare øyeblikkene få evig liv med våre
-                førsteklasses trykkede fotoalbum. Vår pålitelige leverandør
-                håndterer hvert bilde med omhu og nøyaktighet, og hver side
-                gjennomgår en grundig kvalitetskontroll før den blir sendt til
-                deg. Disse fotoalbumene er enestående gaver å ramme inn og gi
-                til noen som setter pris på det mest verdifulle.
+                La de mest dyrebare øyeblikkene få evig liv med førsteklasses
+                trykkede fotoalbum. Ønsker du bilde eller preg på forsiden,
+                flere sider eller en eske til å oppbevare albumet i, vil dette
+                variere prisen.
               </div>
             }
             priceText1={
@@ -357,48 +422,40 @@ export function PhotoProducts() {
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">fra Kr. 2999,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 3999,-</div>
             }
             priceText2={
-              <div className="ProductPriceSection__PriceText">
-                Album 16x12cm
-              </div>
-            }
-            price2={
-              <div className="ProductPriceSection__Price">fra Kr. 3199,-</div>
-            }
-            priceText3={
               <div className="ProductPriceSection__PriceText">
                 Album 20x20cm
               </div>
             }
-            price3={
-              <div className="ProductPriceSection__Price">fra Kr. 4399,-</div>
+            price2={
+              <div className="ProductPriceSection__Price">fra Kr. 4499,-</div>
             }
-            priceText4={
+            priceText3={
               <div className="ProductPriceSection__PriceText">
-                Album 25x25 cm
+                Album 25x25cm
               </div>
             }
-            price4={
+            price3={
               <div className="ProductPriceSection__Price">fra Kr. 6499,-</div>
             }
-            priceText5={
-              <div className="ProductPriceSection__PriceText">
-                Album 30x30 cm{" "}
-              </div>
+            priceText4={
+              <p className="Prices__TabsContentTextFees">
+                Preg på cover Kr. 250,-
+                <br />
+                Bilde på cover Kr. 700,-
+                <br />
+                Eske til album Kr. 1300,-
+                <br />
+                Ekstra oppslag per stk. Kr. 250,-
+              </p>
             }
-            price5={
-              <div className="ProductPriceSection__Price">fra Kr. 8399,-</div>
-            }
-            priceText6={
-              <div className="ProductPriceSection__PriceText">
-                Album 30x22 cm{" "}
-              </div>
-            }
-            price6={
-              <div className="ProductPriceSection__Price">fra Kr. 8699,-</div>
-            }
+            price4={false}
+            priceText5={false}
+            price5={false}
+            priceText6={false}
+            price6={false}
             priceText7={false}
             price7={false}
             priceText8={false}
@@ -419,14 +476,10 @@ export function PhotoProducts() {
             title="Digitale bildefiler"
             text={
               <div className="ProductPriceSection__Text">
-                Om du ønsker, kan du kjøpe digitale bildefiler i høy oppløsning.
-                Med disse filene kan du printe så mange ganger du ønsker, lagre
-                som backup eller bruke som ditt profilbilde på sosiale medier,
-                men husk å kreditere meg som fotograf under bildet.
-                <br />
                 Det minste antallet digitale bildefiler du kan bestille er:
                 pakken med 3 digitiale bildefiler. Etter kjøp av en bildepakke
-                kan du kjøpe enkeltbilder for kr. 650,- per stk.
+                kan du kjøpe enkeltbilder for kr. 650,- per stk. Du får bildene
+                du bestiller i både farger og sorthvitt.
               </div>
             }
             priceText1={
@@ -435,7 +488,7 @@ export function PhotoProducts() {
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 2299,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2399,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
@@ -443,7 +496,7 @@ export function PhotoProducts() {
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 3799,-</div>
+              <div className="ProductPriceSection__Price">Kr. 3999,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
@@ -451,7 +504,7 @@ export function PhotoProducts() {
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 5299,-</div>
+              <div className="ProductPriceSection__Price">Kr. 5399,-</div>
             }
             priceText4={
               <div className="ProductPriceSection__PriceText">
@@ -459,7 +512,7 @@ export function PhotoProducts() {
               </div>
             }
             price4={
-              <div className="ProductPriceSection__Price">Kr. 7199,-</div>
+              <div className="ProductPriceSection__Price">Kr. 7399,-</div>
             }
             priceText5={
               <div className="ProductPriceSection__PriceText">
@@ -467,7 +520,7 @@ export function PhotoProducts() {
               </div>
             }
             price5={
-              <div className="ProductPriceSection__Price">Kr. 7799,-</div>
+              <div className="ProductPriceSection__Price">Kr. 8399,-</div>
             }
             priceText6={
               <div className="ProductPriceSection__PriceText">
@@ -475,7 +528,7 @@ export function PhotoProducts() {
               </div>
             }
             price6={
-              <div className="ProductPriceSection__Price">Kr. 8899,-</div>
+              <div className="ProductPriceSection__Price">Kr. 9399,-</div>
             }
             priceText7={
               <div className="ProductPriceSection__PriceText">
@@ -483,7 +536,12 @@ export function PhotoProducts() {
               </div>
             }
             price7={<div className="ProductPriceSection__Price">Kr. 650,-</div>}
-            priceText8={false}
+            priceText8={
+              <p className="Prices__TabsContentTextFees">
+                Ønsker du å kjøpe digitale filer av de samme bildene du har
+                bestilt fysiske produkter av, koster det kr. 399,- per bilde.
+              </p>
+            }
             price8={false}
             priceText9={false}
             price9={false}
@@ -501,38 +559,35 @@ export function PhotoProducts() {
             title="Takkekort"
             text={
               <div className="ProductPriceSection__Text">
-                Ensidige takkekort inkluderer ditt valgte bilde og en personlig
-                melding som gir en ekstra spesiell touch. Hvert kort leveres
-                sammen med hvite konvolutter og er den perfekte måten å vise
-                takknemlighet overfor alle som har deltatt i eller gitt gaver
-                ved en betydningsfull anledning.
-                <br />
-                <br />
-                Dere kan velge mellom et lite utvalg av design, kortene er nøye
-                utformet for å forevige minnene fra din spesielle begivenhet og
-                er trykket med høyeste kvalitet for å sikre at bildene kommer
-                til sin fulle rett. Gi en personlig takk som varer med våre
-                vakre ensidige takkekort.
+                Dere kan velge mellom et lite utvalg av design og om du ønsker
+                ensidet, tosidet eller foldekort, alle leveres med enkle
+                konvolutter.
               </div>
             }
             priceText1={
               <div className="ProductPriceSection__PriceText1">
-                20 stk. ensidige takkekort 10x12 cm
+                25 stk. ensidige takkekort
               </div>
             }
-            price1={<div className="ProductPriceSection__Price">Kr. 759,-</div>}
+            price1={
+              <div className="ProductPriceSection__Price">Kr. 1199,-</div>
+            }
             priceText2={
               <div className="ProductPriceSection__PriceText">
-                20 stk. ensidige takkekort 10x18 cm
+                25 stk. tosidige takkekort
               </div>
             }
-            price2={<div className="ProductPriceSection__Price">Kr. 819,-</div>}
+            price2={
+              <div className="ProductPriceSection__Price">Kr. 1399,-</div>
+            }
             priceText3={
               <div className="ProductPriceSection__PriceText">
-                20 stk. ensidige takkekort 16x16 cm
+                25 stk. foldekort
               </div>
             }
-            price3={<div className="ProductPriceSection__Price">Kr. 849,-</div>}
+            price3={
+              <div className="ProductPriceSection__Price">Kr. 1799,-</div>
+            }
             priceText4={
               <p className="Prices__TabsContentTextFees">
                 Ekstra kort koster kr. 50,- per stk.
@@ -557,12 +612,11 @@ export function PhotoProducts() {
             title="Fødselsplakat"
             text={
               <div className="ProductPriceSection__Text">
-                Jeg tilbyr nå personlig fødselsplakat i to ulike størrelser,
-                hvor du velger om du ønsker å ha bilde på eller ikke. Du får
-                mulighet til å velge blandt et lite utvalg forhåndsdefinerte
-                design, og du velger selv hvilken informasjon du ønsker at skal
-                være på plakaten. Disse plakatene er perfekte som dekorasjon
-                under dåpsfesten eller til å henge på rommet til barnet.
+                Du får mulighet til å velge blandt et lite utvalg
+                forhåndsdefinerte design, og du velger selv hvilken informasjon
+                du ønsker at skal være på plakaten. Disse plakatene er perfekte
+                som dekorasjon under dåpsfesten eller til å henge på rommet til
+                barnet.
               </div>
             }
             priceText1={
@@ -576,7 +630,7 @@ export function PhotoProducts() {
                 Fødselsplakat m/bilde 20x30 cm
               </div>
             }
-            price2={<div className="ProductPriceSection__Price">Kr. 799,-</div>}
+            price2={<div className="ProductPriceSection__Price">Kr. 999,-</div>}
             priceText3={
               <div className="ProductPriceSection__PriceText">
                 Fødselsplakat u/bilde 30x40 cm

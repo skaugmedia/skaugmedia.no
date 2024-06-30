@@ -1,5 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
+import { PackagePriceOld } from "../../Components/PackagePriceOld";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import NewbornImg1 from "../../Images/Newborn/l_newborn_2.jpg";
@@ -84,6 +85,22 @@ export function Newborn() {
             <div className="PhotoPrice__ShootDivider"></div>
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
+                Nyfødtfotografering - til markedsføring
+              </div>
+              <div className="PhotoPrice__PackageBoxSubHeading">
+                opptil 3 timer fotografering, inkludert en visningstime 1-3 uker
+                etter fotograferingen, krever at bildene kan brukes til
+                markedsføring
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <PackagePriceOld>Kr. 1699,-</PackagePriceOld>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 1189,-</div>
+            </div>
+
+            <div className="PhotoPrice__ShootDivider"></div>
+
+            <div className="PhotoPrice__PackageBoxShoot">
+              <div className="PhotoPrice__PackageBoxHeading">
                 MINIFOTOGRAFERING
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
@@ -97,6 +114,19 @@ export function Newborn() {
           <div className="PhotoPrice__Choice">
             eller du kan booke en av disse pakkene:
           </div>
+          <div className="PhotoPrice__PackageBoxShoot">
+            <div className="PhotoPrice__PackageBoxHeading">
+              GRAVIDFOTOGRAFERING + NYFØDTFOTOGRAFERING
+            </div>
+            <div className="PhotoPrice__PackageBoxSubHeading">
+              opptil 1 time gravidfotografering, opptil 3 timer
+              nyfødtfotografering, en visningstime 1-3 uker etter
+              nyfødtfotograferingen og 10 digitale bildefiler
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxPrice">Kr. 7699,-</div>
+          </div>
+          <div className="PhotoPrice__ShootDivider"></div>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__PackageBoxRow">
@@ -160,11 +190,11 @@ export function Newborn() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                3 digitale bildefiler
+                5 digitale bildefiler
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Lerretsbilde 40x50 cm
+                Touch Art Nature 40x40 cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -175,7 +205,7 @@ export function Newborn() {
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 6899,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 9399,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
@@ -203,22 +233,26 @@ export function Newborn() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                10 høyoppløselige bildefiler
+                5 høyoppløselige bildefiler
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Album 15x15 cm med 10 stk. bilder
+                Bildeboks 15x20cm med 10 bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Laminert fotografi i ramme 30x40 cm
+                Touch Art Nature 30x30 cm
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Fødselsplakat med bilde 20x30 cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 10.599,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 13.999,-</div>
             </div>
           </div>
         </PageSection>
