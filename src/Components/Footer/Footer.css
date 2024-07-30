@@ -2,20 +2,29 @@
   justify-content: center;
   align-items: center;
   background-color: var(--blue);
-  height: 170px;
+  height: auto;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   margin-top: 30px;
 }
 
 .Footer__ContentBox {
   width: var(--content-width);
   align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.Footer__ColumnBox {
+  display: flex;
+  flex-flow: row;
+  gap: 30px;
 }
 
 .Footer__Links {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
+  align-items: flex-end;
   max-width: var(--content-width);
   width: 100%;
 }
@@ -28,7 +37,7 @@
   flex-flow: row;
   justify-content: space-between;
 
-  padding-right: 20px;
+  padding-right: 0px;
   text-decoration: none;
   font-family: oswald;
 }
@@ -36,24 +45,19 @@
   color: #000000;
 }
 
-.Footer__RowTwo {
+.Footer__ColumnOne {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: left;
-  gap: 30px;
+  gap: 10px;
   font-family: nunito;
-  padding-top: 15px;
-  align-items: center;
 }
 
-.Footer__RowLogo {
-  height: 15px;
-  margin-top: auto;
+.Footer__ColumnLogo {
+  height: auto;
+  width: 100px;
+  margin-top: 5px;
   margin-bottom: auto;
-}
-
-.Footer__SocialIcons {
-  padding-left: 70px;
 }
 
 a.Footer__Social {
@@ -62,8 +66,10 @@ a.Footer__Social {
 
 .Footer__SocialImg {
   width: 25px;
+  justify-content: space-between;
   margin-right: 7px;
-  margin-left: 7px;
+  align-items: left;
+  margin-top: 4px;
 }
 
 @media only screen and (max-width: 1000px) {
