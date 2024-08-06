@@ -14,6 +14,87 @@ import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
   {
+    id: "minifoto-august",
+    title: "Valgfri sommerlig minifotografering",
+    img: {
+      src: MinishootAugust,
+      alt: "Bilde av en mor og datter i sommerlige omgivelser",
+    },
+    banner: {
+      subTitle: "13. august 2024",
+      description: (
+        <>
+          Valgfri minifotografering tirsdag 13. august. Passer like bra for en
+          søskenfotografering som en gravidfotografering. 20 minutter
+          fotografering og 3 valgfrie digitale bildefiler inkludert.
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">Kr. 1599,-</div>
+          <br />
+          *Booking er bindende. Beløpet refunderes ikke ved avbestilling.
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          <div className="Discounts__FreePregnancyNextDate">
+            Tirsdag 13. august 2024
+          </div>
+          <IncludesList
+            items={[
+              "20 minutter valgfri fotografering utendørs på Jessheim",
+              "Online visningsgalleri hvor du kan velge dine bilder",
+              "Mulighet for å leie gravidkjole for kr. 200,-",
+              "Mulighet for en visningstime der du kan se på ulike fysiske bildeproduktene du kan bestille",
+              "15% rabatt på ekstra bildeprodukter",
+              "Mulighet for å kjøpe flere bilder, og bildeprodukter",
+              "3 valgfrie digitale bildefiler",
+              "Rabattkupong som kan brukes på din neste fotografering",
+              "Kontrakt og faktura sendes på mail og må signeres og betales for å bekrefte bookingen (beløpet refunderes ikke ved avbestilling)",
+            ]}
+          />
+          Her velger du helt selv hva slags fotografering som skal gjennomføres,
+          men det er viktig at jeg får beskjed på forhånd- slik at jeg kan
+          planlegge og ta med det jeg trenger til deres fotografering.
+          <br />
+          <br />
+          Dette oppsettet passer perfekt til søskenfotografering,
+          familiefotografering med opptil 4 sittende personer,
+          nyfødtfotografering i armene til foreldre, portretter av
+          enkeltpersoner, mommy and me-fotografering, parfotografering eller
+          konfirmanter.
+          <br />
+          <br />
+          Send en mail eller ta kontakt via kontaktskjema med ønsket dato og
+          tidspunkt, ditt fulle navn, adresse, postnummer og poststed, samt
+          hvilken fotografering du ønsker deg. Om timen er ledig, vil du motta
+          en kontrakt som må fylles ut og signeres så snart som mulig, samt en
+          faktura som må betales for at bookingen skal være gyldig. Om
+          tidspunktet ikke er ledig, vil jeg gi deg beskjed og foreslå et annet
+          tidspunkt om det er noen ledige tider.
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">Kun kr. 1599,-</div>
+          <br />
+          *Booking er bindende. Beløpet refunderes ikke ved avbestilling.
+          <br />
+          <br />
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("05.08.2024 00:00"),
+      to: localTime("13.08.2024 00:00"),
+    },
+    button: {
+      link: `/${ContactRoute}`,
+    },
+  },
+  {
     id: "sommertilbud",
     title: "Sommertilbud",
     img: {
@@ -61,77 +142,7 @@ const rawDiscountPosts = [
       link: `/${ContactRoute}`,
     },
   },
-  {
-    id: "minifoto-august",
-    title: "Valgfri minifotografering i august",
-    img: {
-      src: MinishootAugust,
-      alt: "Portrett av en ung dame i en eng",
-    },
-    banner: {
-      subTitle: "7. august og 10. august 2024",
-      description: (
-        <>
-          Valgfri minifotografering 7. eller 10. august. Passer like bra for en
-          søskenfotografering som en gravidfotografering.
-          <br />
-          <br />
-          <div className="Discounts__DiscountTextImportant">Kun kr. 399,-</div>
-          <br />
-          *Booking er bindende. Ingen bilder er inkludert i prisen, dette kommer
-          i tillegg.
-        </>
-      ),
-      button: {
-        link: `/${DiscountRoute}`,
-      },
-    },
-    description: (
-      <>
-        <div className="Discounts__Text">
-          <div className="Discounts__FreePregnancyNextDate">
-            7. august og 10. august 2024
-          </div>
-          <IncludesList
-            items={[
-              "20 minutter valgfri fotografering utendørs på Jessheim",
-              "Online visningsgalleri hvor du kan velge dine bilder",
-              "Mulighet for å leie gravidkjole for kr. 200,-",
-              "Mulighet for en visningstime der du kan se på ulike fysiske bildeproduktene du kan bestille",
-              "Gode rabatter på bilder og produkter",
-              "Mulighet for å kjøpe flere bilder, og bildeprodukter",
-            ]}
-          />
-          Her velger du helt selv hva slags fotografering som skal gjennomføres,
-          men det er viktig at jeg får beskjed på forhånd- slik at jeg kan
-          planlegge og ta med det jeg trenger til deres fotografering.
-          <br />
-          <br />
-          Send en mail eller ta kontakt via kontaktskjema med ønsket dato og
-          tidspunkt, samt hvilken fotografering du ønsker deg. Om timen er
-          ledig, vil du motta en kontrakt som må fylles ut og signeres så snart
-          som mulig, samt en faktura som må betales for at bookingen skal være
-          gyldig. Om tidspunktet ikke er ledig, vil jeg gi deg beskjed og
-          foreslå et annet tidspunkt om det er noen ledige tider.
-          <br />
-          <br />
-          <div className="Discounts__DiscountTextImportant">Kun kr. 399,-</div>
-          <br />
-          *Booking er bindende. Ingen bilder er inkludert i prisen, dette kommer
-          i tillegg.
-          <br />
-          <br />
-        </div>
-      </>
-    ),
-    valid: {
-      from: localTime("01.07.2024 00:00"),
-      to: localTime("10.08.2024 00:00"),
-    },
-    button: {
-      link: `/${ContactRoute}`,
-    },
-  },
+
   {
     id: "bryllupstilbud",
     title: "Bryllupstilbud",
