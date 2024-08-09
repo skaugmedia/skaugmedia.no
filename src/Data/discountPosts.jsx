@@ -2,6 +2,7 @@ import { localTime } from "../utils";
 import { freePregnancyDate, freePregnancyId } from "./FreePregnancyDate";
 import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
+import JessheimdageneDiscount from "/src/Images/Discounts/jessheimdagene.jpg";
 import MinishootAugust from "/src/Images/Discounts/minishootaugust.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
@@ -13,6 +14,55 @@ import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
+  {
+    id: "jessheimdagene",
+    title: "Jessheimdagene",
+    img: {
+      src: JessheimdageneDiscount,
+      alt: "Vannmelon",
+    },
+    banner: {
+      subTitle: "30% rabatt på alle ordinære fotograferinger",
+      description: (
+        <>
+          Booking av alle ordinære fotograferinger med dato i 2024, får 30%
+          rabatt i forbindelse med Jessheimdagene.
+          <br />
+          <br />
+          *Gjelder ikke bryllup, minifotograferinger eller pakkepriser. Kan ikke
+          kombineres med andre tilbud. Gjelder t.o.m. 18.08.2024
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          <div className="Discounts__FreePregnancyNextDate">
+            20% rabatt på alle ordinære fotograferinger
+          </div>
+          Book en valgfri ordinær fotografering med dato i 2024 og få 30% rabatt
+          på fotograferingen.
+          <br />
+          <br />
+          *Gjelder ikke bryllup, minifotograferinger eller pakkepriser. Kan ikke
+          kombineres med andre tilbud. Tilbudet gjelder t.o.m. 18.08.2024.
+          <br />
+          <br />
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("9.08.2024 00:00"),
+      to: localTime("19.08.2024 00:00"),
+    },
+    button: {
+      link: `/${ContactRoute}`,
+    },
+  },
+
   {
     id: "minifoto-august",
     title: "Valgfri sommerlig minifotografering",
