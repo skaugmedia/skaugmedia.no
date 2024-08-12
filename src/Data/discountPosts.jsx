@@ -2,6 +2,7 @@ import { localTime } from "../utils";
 import { freePregnancyDate, freePregnancyId } from "./FreePregnancyDate";
 import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
+import ChildSiblingPhoto from "/src/Images/Discounts/childsiblingphoto.jpg";
 import JessheimdageneDiscount from "/src/Images/Discounts/jessheimdagene.jpg";
 import MinishootAugust from "/src/Images/Discounts/minishootaugust.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
@@ -62,7 +63,84 @@ const rawDiscountPosts = [
       link: `/${ContactRoute}`,
     },
   },
-
+  {
+    id: "gratis-barnsoskenfoto",
+    title: "GRATIS søsken og barnefotografering",
+    img: {
+      src: ChildSiblingPhoto,
+      alt: "Bilde av to herlige brødre",
+    },
+    banner: {
+      subTitle: "07. september 2024",
+      description: (
+        <>
+          Jeg gjentar suksessen fra juni, og tilbyr igjen GRATIS
+          minifotografering av søsken og barn- med mulighet for fotografering
+          med foreldre hvis det er ledig tid. <br />
+          <br />
+          Hvilke besteforeldre, tanter og onkler er det som ikke vil ha herlige
+          bilder av barna dine til jul. Det kan derfor være lurt å planlegge
+          julegavene allerede nå!
+          <br />
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          <div className="Discounts__FreePregnancyNextDate">
+            Lørdag 07. august 2024
+          </div>
+          <IncludesList
+            items={[
+              "10-15 minutter fotografering utendørs på Jessheim",
+              "15% rabatt på bildeprodukter i etterkant av fotograferingen",
+              "Ingen bildeprodukter er inkludert i fotograferingen",
+            ]}
+          />
+          Selve fotograferingen er gratis, du betaler kun for digitale
+          bildefiler eller andre bildeprodukter du ønsker å kjøpe etter
+          fotograferingen. Om du ikke møter opp til avtalt tid, vil du
+          faktureres kr. 500,- for uteblitt oppmøte.
+          <br />
+          <br />
+          Det blir ca. 10-15 minutter fotografering per familie, utendørs på
+          Jessheim i Ullensaker.
+          <br />
+          <br />
+          Etter fotograferingen vil dere motta et online bildegalleri hvor dere
+          kan se gjennom de beste bildene fra fotograferingen, og bestemme dere
+          for hvilke bilder og bildeprodukter dere ønsker å bestille. Det er
+          også mulighet for å sette opp en visningstime, hvor dere kan få se og
+          kjenne på de ulike bildeproduktene jeg tilbyr.
+          <br />
+          <br />
+          Dere vil få 15% rabatt på alle bildeprodukter i etterkant av
+          fotograferingen. Mer informasjon om oppmøtested og en guide med tips
+          før fotografeiringen vil bli sendt ut på mail etter booking.
+          <br />
+          <br />
+          Du velger om du ønsker søskenbilder og/eller enkeltbilder av barna.
+          Det er også mulighet for familiefotografering hvis det er ledig tid
+          før neste familie kommer.
+          <br />
+          <br />
+          Du vil motta en kontrakt som må fylles ut og signeres så snart som
+          mulig, etter at jeg har bekreftet ditt tidspunkt.
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("13.08.2024 00:00"),
+      to: localTime("07.09.2024 00:00"),
+    },
+    button: {
+      link: `/${ContactRoute}`,
+    },
+  },
   {
     id: "minifoto-august",
     title: "Valgfri sommerlig minifotografering",
