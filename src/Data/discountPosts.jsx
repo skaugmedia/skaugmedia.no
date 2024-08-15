@@ -7,7 +7,6 @@ import JessheimdageneDiscount from "/src/Images/Discounts/jessheimdagene.jpg";
 import MinishootAugust from "/src/Images/Discounts/minishootaugust.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
-import SummerDiscount from "/src/Images/Discounts/summerdiscount.jpg";
 import WeddingDiscount from "/src/Images/Discounts/weddingdiscount.jpg";
 import KidsMinisession from "/src/Images/Kids/LP_2.jpg";
 import ChristmasDiscount from "/src/Images/christmas_minishoot.jpg";
@@ -20,7 +19,7 @@ const rawDiscountPosts = [
     title: "Jessheimdagene",
     img: {
       src: JessheimdageneDiscount,
-      alt: "Vannmelon",
+      alt: "Et lykkelig par med sine to hunder",
     },
     banner: {
       subTitle: "30% rabatt på alle ordinære fotograferinger",
@@ -42,7 +41,7 @@ const rawDiscountPosts = [
       <>
         <div className="Discounts__Text">
           <div className="Discounts__FreePregnancyNextDate">
-            20% rabatt på alle ordinære fotograferinger
+            30% rabatt på alle ordinære fotograferinger
           </div>
           Book en valgfri ordinær fotografering med dato i 2024 og få 30% rabatt
           på fotograferingen.
@@ -217,54 +216,6 @@ const rawDiscountPosts = [
     valid: {
       from: localTime("05.08.2024 00:00"),
       to: localTime("13.08.2024 00:00"),
-    },
-    button: {
-      link: `/${ContactRoute}`,
-    },
-  },
-  {
-    id: "sommertilbud",
-    title: "Sommertilbud",
-    img: {
-      src: SummerDiscount,
-      alt: "Vannmelon",
-    },
-    banner: {
-      subTitle: "20% rabatt på alle ordinære fotograferinger",
-      description: (
-        <>
-          Book en valgfri ordinær fotografering med dato i juni, juli eller
-          august og få 20% rabatt på fotograferingen.
-          <br />
-          <br />
-          *Tilbudet gjelder ikke for pakkepriser, gjelder også for allerede
-          bookede fotograferinger. Gjelder til og med 31.08.2024
-        </>
-      ),
-      button: {
-        link: `/${DiscountRoute}`,
-      },
-    },
-    description: (
-      <>
-        <div className="Discounts__Text">
-          <div className="Discounts__FreePregnancyNextDate">
-            20% rabatt på alle ordinære fotograferinger
-          </div>
-          Book en valgfri ordinær fotografering med dato i juni, juli eller
-          august og få 20% rabatt på fotograferingen.
-          <br />
-          <br />
-          *Tilbudet gjelder ikke for pakkepriser, gjelder også for allerede
-          bookede fotograferinger. Gjelder til og med 31.08.2024
-          <br />
-          <br />
-        </div>
-      </>
-    ),
-    valid: {
-      from: localTime("12.06.2024 00:00"),
-      to: localTime("01.09.2024 00:00"),
     },
     button: {
       link: `/${ContactRoute}`,
