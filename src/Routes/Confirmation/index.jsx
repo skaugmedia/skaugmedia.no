@@ -119,12 +119,13 @@ export function Confirmation() {
                 </div>
               </div>
               <div className="PhotoPrice__PackageBoxText">
-                1 time portrettfotografering på valgfri lokasjon
+                1 time fotografering på valgfri lokasjon
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Visningstime 1-3 uker etter fotograferingen
               </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -149,37 +150,33 @@ export function Confirmation() {
                 </div>
               </div>
               <div className="PhotoPrice__PackageBoxText">
-                1 time portrettfotografering på valgfri lokasjon
+                1 time fotografering på valgfri lokasjon
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Visningstime 1-3 uker etter fotograferingen
               </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
 
+              <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
               </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                5 digitale bildefiler
-              </div>
 
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
-              <div className="PhotoPrice__PackageBoxText">
-                Touch Art Nature 20x20cm
-              </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Touch Art Nature 30x30cm
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Laminert bilde i ramme 40x50cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 5899,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 6499,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
@@ -190,12 +187,13 @@ export function Confirmation() {
                 </div>
               </div>
               <div className="PhotoPrice__PackageBoxText">
-                1 time portrettfotografering på valgfri lokasjon
+                1 time fotografering på valgfri lokasjon
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Visningstime 1-3 uker etter fotograferingen
               </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -210,14 +208,14 @@ export function Confirmation() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Touch Art Nature sirkel 30x30cm
+                Touch Art Nature sirkel 20x20cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 11.899,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 12.199,-</div>
             </div>
           </div>
         </PageSection>

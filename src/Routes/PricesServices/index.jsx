@@ -10,6 +10,8 @@ import * as ids from "./Ids";
 import pageName from "./PageName";
 import "./Prices.css";
 import Route from "./Route";
+import CouplesButton from "/src/Images/Prices/Couples_button.jpg";
+import MommyAndMeButton from "/src/Images/Prices/MommyAndMe_button.jpg";
 import ChildrenButton from "/src/Images/Prices/children_button.jpg";
 import ConfirmationButton from "/src/Images/Prices/confirmation_button.jpg";
 import FamilyButton from "/src/Images/Prices/family_button.jpg";
@@ -22,12 +24,16 @@ import ChildrenPageName from "/src/Routes/Children/PageName";
 import ChildrenRoute from "/src/Routes/Children/Route";
 import ConfirmationPageName from "/src/Routes/Confirmation/PageName";
 import ConfirmationRoute from "/src/Routes/Confirmation/Route";
+import CouplesPageName from "/src/Routes/Couples/PageName";
+import CouplesRoute from "/src/Routes/Couples/Route";
 import FamilyPageName from "/src/Routes/Family/PageName";
 import FamilyRoute from "/src/Routes/Family/Route";
 import HeadshotsPageName from "/src/Routes/Headshots/PageName";
 import HeadshotsRoute from "/src/Routes/Headshots/Route";
 import MaternityPageName from "/src/Routes/Maternity/PageName";
 import MaternityRoute from "/src/Routes/Maternity/Route";
+import MommyAndMePageName from "/src/Routes/MommyAndMe/PageName";
+import MommyAndMeRoute from "/src/Routes/MommyAndMe/Route";
 import NewbornPageName from "/src/Routes/Newborn/PageName";
 import NewbornRoute from "/src/Routes/Newborn/Route";
 import PhotoProductsPageName from "/src/Routes/PhotoProducts/PageName";
@@ -89,6 +95,18 @@ export function PricesServices() {
       imgSrc: ConfirmationButton,
       title: ConfirmationPageName,
       imgAlt: ConfirmationPageName,
+    },
+    {
+      link: MommyAndMeRoute,
+      imgSrc: MommyAndMeButton,
+      title: MommyAndMePageName,
+      imgAlt: MommyAndMePageName,
+    },
+    {
+      link: CouplesRoute,
+      imgSrc: CouplesButton,
+      title: CouplesPageName,
+      imgAlt: CouplesPageName,
     },
     {
       link: WeddingRoute,

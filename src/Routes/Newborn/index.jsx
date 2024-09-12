@@ -5,7 +5,7 @@ import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import NewbornImg1 from "../../Images/Newborn/l_newborn_2.jpg";
 import NewbornImg2 from "../../Images/Newborn/newborn_LO_4.jpg";
-import NewbornImg from "../../Images/Newborn/newborn_LO_5.jpg";
+import NewbornImg from "../../Images/Newborn/newborn_M_1.jpg";
 import "./Newborn.css";
 import pageName from "./PageName";
 import Gallery from "/src/Data/Photography/Newborn";
@@ -149,6 +149,7 @@ export function Newborn() {
               <div className="PhotoPrice__PackageBoxText">
                 Fotografering med søsken og foreldre
               </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -184,28 +185,27 @@ export function Newborn() {
               <div className="PhotoPrice__PackageBoxText">
                 Fotografering med søsken og foreldre
               </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
               </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
+
               <div className="PhotoPrice__PackageBoxText">
-                5 digitale bildefiler
+                Touch Art Nature 30x30cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Touch Art Nature 40x40 cm
-              </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Fødselsplakat med bilde 20x30 cm
+                Laminert bilde i ramme 40x50cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 9399,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 6499,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
@@ -227,13 +227,14 @@ export function Newborn() {
               <div className="PhotoPrice__PackageBoxText">
                 Fotografering med søsken og foreldre
               </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                5 høyoppløselige bildefiler
+                5 digitale bildefiler
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
@@ -241,21 +242,18 @@ export function Newborn() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Touch Art Nature 30x30 cm
-              </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Fødselsplakat med bilde 20x30 cm
+                Touch Art Nature sirkel 20x20cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 13.999,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 12.199,-</div>
             </div>
           </div>
         </PageSection>
+
         <PageSection>
           <div className="Prices__BottomSection">
             <div className="Prices__TextInfoHeader">Ønsker du delbetaling?</div>

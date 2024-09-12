@@ -65,6 +65,10 @@ import LashbrowserRoute from "./Routes/Lashbrowser/Route";
 import { Maternity } from "./Routes/Maternity";
 import MaternityPageName from "./Routes/Maternity/PageName";
 import MaternityRoute from "./Routes/Maternity/Route";
+import { MommyAndMe } from "./Routes/MommyAndMe";
+import MommyAndMePageName from "./Routes/MommyAndMe/PageName";
+import MommyAndMeRoute from "./Routes/MommyAndMe/Route";
+
 import { Naturalis } from "./Routes/Naturalis";
 import NaturalisPageName from "./Routes/Naturalis/PageName";
 import NaturalisRoute from "./Routes/Naturalis/Route";
@@ -290,6 +294,11 @@ export const router = createBrowserRouter([
                 path: ConfirmationRoute,
                 element: <Confirmation />,
                 handle: { pageName: ConfirmationPageName },
+              },
+              {
+                path: MommyAndMeRoute,
+                element: <MommyAndMe />,
+                handle: { pageName: MommyAndMePageName },
               },
               {
                 path: HeadshotsRoute,

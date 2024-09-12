@@ -53,8 +53,7 @@ export function Children() {
             cake-smash.
           </p>
           <p className="PhotoPrice__TopContentText">
-            Ønsker du 1-års fotografering med cakesmash? Kake til cake-smash
-            koster kr. 800,-
+            Ønsker du 1-års fotografering med cakesmash? Ta gjerne med en kake!
           </p>
 
           <img
@@ -138,10 +137,7 @@ export function Children() {
               <div className="PhotoPrice__PackageBoxText">
                 Visningstime 1-3 uker etter fotograferingen
               </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Lån av klær er inkludert i prisen
-              </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -172,34 +168,27 @@ export function Children() {
               <div className="PhotoPrice__PackageBoxText">
                 Visningstime 1-3 uker etter fotograferingen
               </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Lån av klær er inkludert i prisen
-              </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
               </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                5 digitale bildefiler
-              </div>
 
               <div className="PhotoPrice__PackageBoxDivider"></div>
 
-              <div className="PhotoPrice__PackageBoxText">
-                Touch Art Nature 20x20cm
-              </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Touch Art Nature 30x30cm
+              </div>
+              <div className="PhotoPrice__PackageBoxDivider"></div>
+              <div className="PhotoPrice__PackageBoxText">
+                Laminert bilde i ramme 40x50cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 8299,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 6499,-</div>
             </div>
             <div className="PhotoPrice__ResponsiveDivider"></div>
             <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
@@ -216,10 +205,7 @@ export function Children() {
               <div className="PhotoPrice__PackageBoxText">
                 Visningstime 1-3 uker etter fotograferingen
               </div>
-              <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxText">
-                Lån av klær er inkludert i prisen
-              </div>
+
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 Online bildegalleri hvor dere velger bilder
@@ -234,14 +220,14 @@ export function Children() {
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
-                Touch Art Nature sirkel 30x30cm
+                Touch Art Nature sirkel 20x20cm
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
               <div className="PhotoPrice__PackageBoxText">
                 15% ekstra rabatt på bildeprodukter
               </div>
               <div className="PhotoPrice__PackageBoxDivider"></div>
-              <div className="PhotoPrice__PackageBoxPrice">Kr. 11.899,-</div>
+              <div className="PhotoPrice__PackageBoxPrice">Kr. 12.199,-</div>
             </div>
           </div>
         </PageSection>
@@ -255,8 +241,8 @@ export function Children() {
             </div>
             <div className="Prices__TextInfoHeader">Ønsker du cake-smash?</div>
             <div className="Prices__TextInfo">
-              Ved cake-smash til fotografering av 1-åringer kommer et tillegg på
-              kr. 800,-
+              Ta gjerne med deg en kake til fotograferingen, men dette avtales
+              på forhånd.
             </div>
             <div className="Prices__TextInfoHeader">
               Ønsker du fotografering etter kl. 16.00 på en hverdag?

@@ -56,6 +56,17 @@ import LI3 from "../../../Images/Kids/LI_3.jpg";
 import LI4 from "../../../Images/Kids/LI_4.jpg";
 import LI5 from "../../../Images/Kids/LI_5.jpg";
 
+import HR1 from "../../../Images/Kids/HR_1.jpg";
+import HR2 from "../../../Images/Kids/HR_2.jpg";
+import HR3 from "../../../Images/Kids/HR_3.jpg";
+import HR4 from "../../../Images/Kids/HR_4.jpg";
+
+import LBK11 from "../../../Images/Kids/LBK1_1.jpg";
+import LBK12 from "../../../Images/Kids/LBK1_2.jpg";
+import LBK13 from "../../../Images/Kids/LBK1_3.jpg";
+import LBK14 from "../../../Images/Kids/LBK1_4.jpg";
+import LBK15 from "../../../Images/Kids/LBK1_5.jpg";
+
 import ChildrenRoute from "../../../Routes/Children/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
@@ -76,6 +87,75 @@ export default {
     link: `/${PricesRoute}/${ChildrenRoute}`,
   },
   shoots: [
+    {
+      description: "HR",
+      tags: ["gutt", "1-åring", "barn", "studio"],
+      images: [
+        {
+          url: LBK11,
+          title: "1-åring bursdag i studio",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LBK12,
+          title: "1-åring bursdag i studio",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LBK13,
+          title: "1-åring bursdag i studio",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LBK14,
+          title: "1-åring bursdag i studio",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: LBK15,
+          title: "1-åring bursdag i studio",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-07-25",
+    },
+    {
+      description: "HR",
+      tags: ["jente", "1-åring", "barn", "utendørs"],
+      images: [
+        {
+          url: HR1,
+          title: "1-åring utendørs",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: HR2,
+          title: "1-åring utendørs",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: HR3,
+          title: "1-åring utendørs",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: HR4,
+          title: "1-åring utendørs",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-07-25",
+    },
+
     {
       description: "LP",
       tags: ["gutt", "1-åring", "barn"],

@@ -26,6 +26,15 @@ import TG7 from "../../../Images/Newborn/newborn_TG_7.jpg";
 import TG8 from "../../../Images/Newborn/newborn_TG_8.jpg";
 import TG9 from "../../../Images/Newborn/newborn_TG_9.jpg";
 
+import ML1 from "../../../Images/Newborn/newborn_M_1.jpg";
+import ML2 from "../../../Images/Newborn/newborn_M_2.jpg";
+import ML3 from "../../../Images/Newborn/newborn_M_3.jpg";
+import ML4 from "../../../Images/Newborn/newborn_M_4.jpg";
+import ML5 from "../../../Images/Newborn/newborn_M_5.jpg";
+import ML6 from "../../../Images/Newborn/newborn_M_6.jpg";
+import ML7 from "../../../Images/Newborn/newborn_M_7.jpg";
+import ML8 from "../../../Images/Newborn/newborn_M_8.jpg";
+
 import NewbornRoute from "../../../Routes/Newborn/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "../../priceList";
@@ -46,6 +55,61 @@ export default {
     link: `/${PricesRoute}/${NewbornRoute}`,
   },
   shoots: [
+    {
+      description: "ML",
+      tags: ["nyfødt", "baby", "gutt", "hjemmebesøk"],
+      images: [
+        {
+          url: ML1,
+          title: "Nyfødt gutt",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: ML2,
+          title: "Nyfødt gutt",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: ML3,
+          title: "Nyfødt gutt",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: ML4,
+          title: "Nyfødt gutt",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: ML5,
+          title: "Nyfødt gutt",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: ML6,
+          title: "Nyfødt gutt",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: ML7,
+          title: "Nyfødt gutt",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: ML8,
+          title: "Nyfødt gutt",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-08-02",
+    },
     {
       description: "TG",
       tags: ["nyfødt", "baby", "jente", "utendørs"],

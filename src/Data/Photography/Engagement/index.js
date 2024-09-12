@@ -24,6 +24,11 @@ import coup_MP_2 from "../../../Images/Couple/coup_MP_2.jpg";
 import coup_MP_3 from "../../../Images/Couple/coup_MP_3.jpg";
 import coup_MP_4 from "../../../Images/Couple/coup_MP_4.jpg";
 
+import coup_DL_1 from "../../../Images/Couple/coup_DL_1.jpg";
+import coup_DL_2 from "../../../Images/Couple/coup_DL_2.jpg";
+import coup_DL_3 from "../../../Images/Couple/coup_DL_3.jpg";
+import coup_DL_4 from "../../../Images/Couple/coup_DL_4.jpg";
+
 import CouplesRoute from "../../../Routes/Couples/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
@@ -45,6 +50,38 @@ export default {
     link: `/${PricesRoute}/${CouplesRoute}`,
   },
   shoots: [
+    {
+      description: "Parfotografering i sola",
+      tags: ["hund", "kjæreste", "sommer"],
+      images: [
+        {
+          url: coup_DL_1,
+          title: "Kjærestepar i sola",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: coup_DL_2,
+          title: "Kjærestepar i sola",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: coup_DL_3,
+          title: "Kjærestepar i sola",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: coup_DL_4,
+          title: "Kjærestepar i sola",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-06-28",
+    },
     {
       description: "Forlovelse J + L",
       tags: ["forlovelse", "kjæreste"],

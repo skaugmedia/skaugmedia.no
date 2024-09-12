@@ -3,61 +3,50 @@ import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PackagePriceOld } from "../../Components/PackagePriceOld";
 import { PageSection } from "../../Components/PageSection";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
-import FamilyImg from "../../Images/Family/fam_AV_3.jpg";
-import FamilyImg2 from "../../Images/Family/fam_ST_3.jpg";
-import FamilyImg1 from "../../Images/Family/fam_e_3.jpg";
-import "./Family.css";
+import MommyandmeImg3 from "../../Images/Mommy&me/dad_VL_5.jpg";
+import MommyandmeImg1 from "../../Images/Mommy&me/mom_IL_4.jpg";
+import MommyandmeImg2 from "../../Images/Mommy&me/mom_RL_1.jpg";
+import "./MommyAndMe.css";
 import pageName from "./PageName";
-import Gallery from "/src/Data/Photography/Family";
+import Gallery from "/src/Data/Photography/Mommyandme";
 import ContactRoute from "/src/Routes/Contact/Route";
 import PhotographyRoute from "/src/Routes/Photography/Route";
 
-export function Family() {
+export function MommyAndMe() {
   const location = useLocation();
   return (
     <>
       <SkaugHelmet
         title={pageName}
-        description="Produkter og tjenester relatert til fotografi av familier."
+        description="Produkter og tjenester relatert til fotografering av foreldre og barna deres."
         canonical={location.pathname}
       />
-      <div className="Family">
+      <div className="Mommyandme">
         <PageSection>
-          <DesignHeading h1>Familiefotografering</DesignHeading>
+          <DesignHeading h1>Mommy/daddy & me fotografering</DesignHeading>
         </PageSection>
         <PageSection>
           <div className="PhotoPrice__TopContentHeader">
-            Familie er det kjæreste vi har,
+            Barnet ditt vokser så fort,
           </div>
           <div className="PhotoPrice__TopContentSubHeader">
-            bilder av de du er glade i er så utrolig viktig!
+            så bilder med bare deg og barnet er så koselig å ha!
           </div>
 
           <p className="PhotoPrice__TopContentText">
-            Familien er hjertet av livet ditt, og hvert øyeblikk sammen utgjør
-            en unik del av din reise. Familiefotografering gir deg muligheten
-            til å fange disse øyeblikkene som definerer din families historie.
-            Det handler om å formidle kjærlighet, samhørighet og øyeblikk som
-            skaper de mest dyrebare minnene. Familiefotografering handler om å
-            fange øyeblikkene som definerer din families historie, uansett om
-            det er en spontan lek i parken, en hengivenhetserklæring eller en
-            enkel sammenkomst.
-          </p>
-          <p className="PhotoPrice__TopContentText">
-            Søskenfotografering, parfotografering, mommy & me og daddy & me går
-            alle inn under denne fotograferingen. Under en familiefotografering
-            fanger jeg så mange øyeblikk jeg kan, hele familien samlet, mor og
-            far, søsken sammen, far og barn sammen og mor og barn sammen.
-          </p>
-          <p className="PhotoPrice__TopContentText">
-            Består familien av fler enn 6 personer, kommer det et tillegg på kr.
-            250,- per person utover dette.
+            Det er noe helt spesielt med bilder som kun viser deg og barna dine
+            – øyeblikk som fanger den unike kjærligheten og båndet dere deler.
+            Disse bildene blir et vakkert minne om små stunder fylt med nærhet,
+            latter og glede. Det er en påminnelse om tiden dere har sammen, og
+            hvor verdifulle disse øyeblikkene er. Å ha bilder med bare deg og
+            barna dine gir deg en mulighet til å bevare disse minnene for alltid
+            – og skape noe som kan verdsettes gjennom hele livet.
           </p>
 
           <img
             className="PhotoPrice__Img"
-            src={FamilyImg}
-            alt="En herlig liten familie ute en eng med strå"
+            src={MommyandmeImg1}
+            alt="En herlig mor med hennes sønn i solsikkeåker."
           ></img>
         </PageSection>
         <PageSection>
@@ -78,7 +67,7 @@ export function Family() {
           <div className="PhotoPrice__PackageBoxRowShoot">
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
-                FAMILIEFOTOGRAFERING
+                Mommy & Me fotografering
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
                 opptil 1 time fotografering, inkludert en visningstime 1-3 uker
@@ -91,7 +80,7 @@ export function Family() {
             <div className="PhotoPrice__ShootDivider"></div>
             <div className="PhotoPrice__PackageBoxShoot">
               <div className="PhotoPrice__PackageBoxHeading">
-                Familiefotografering - til markedsføring
+                Mommy & Me fotografering - til markedsføring
               </div>
               <div className="PhotoPrice__PackageBoxSubHeading">
                 opptil 1 time fotografering, inkludert en visningstime 1-3 uker
@@ -280,12 +269,12 @@ export function Family() {
           <div className="PhotoPrice__GalleryImageBox">
             <img
               className="PhotoPrice__GalleryImage"
-              src={FamilyImg1}
+              src={MommyandmeImg2}
               alt="Far og sønn som har det gøy i skogen"
             ></img>
             <img
               className="PhotoPrice__GalleryImage"
-              src={FamilyImg2}
+              src={MommyandmeImg3}
               alt="Mor, far og datter som går vekk fra kameraet i skogen."
             ></img>
           </div>

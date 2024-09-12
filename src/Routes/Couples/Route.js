@@ -1,1 +1,1 @@
-export default "par";
+export default "parfotografering";

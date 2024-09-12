@@ -92,6 +92,18 @@ import preg_ik_3 from "../../../Images/Pregnant/preg_ik_3.jpg";
 import preg_ik_4 from "../../../Images/Pregnant/preg_ik_4.jpg";
 import preg_ik_5 from "../../../Images/Pregnant/preg_ik_5.jpg";
 
+import preg_IK1_1 from "../../../Images/Pregnant/preg_IK1_1.jpg";
+import preg_IK1_2 from "../../../Images/Pregnant/preg_IK1_2.jpg";
+import preg_IK1_3 from "../../../Images/Pregnant/preg_IK1_3.jpg";
+import preg_IK1_4 from "../../../Images/Pregnant/preg_IK1_4.jpg";
+import preg_IK1_5 from "../../../Images/Pregnant/preg_IK1_5.jpg";
+import preg_IK1_6 from "../../../Images/Pregnant/preg_IK1_6.jpg";
+
+import preg_EH_1 from "../../../Images/Pregnant/preg_EH_1.jpg";
+import preg_EH_2 from "../../../Images/Pregnant/preg_EH_2.jpg";
+import preg_EH_3 from "../../../Images/Pregnant/preg_EH_3.jpg";
+import preg_EH_4 from "../../../Images/Pregnant/preg_EH_4.jpg";
+
 import { priceList } from "/src/Data/priceList";
 
 import MaternityRoute from "../../../Routes/Maternity/Route";
@@ -104,8 +116,8 @@ export default {
     Det er så viktig å fange noen bilder av magen mens den stråler som mest, plutselig er den borte! Med det vakre utendørslandskapet som bakgrunn, fanger vi de naturlige lyset og omgivelsene for å skape bilder som stråler av forventning, kjærlighet og forundring. Enten det er i en skog, på en strand, eller på et annet sted som betyr noe for dere, bringer jeg min ekspertise og lidenskap for å fange disse spesielle øyeblikkene.
   `,
   cover: {
-    url: preg_ag_3,
-    title: "En gravid kvinne som står på bryggen",
+    url: preg_IK1_5,
+    title: "En gravid kvinne med partneren sin",
   },
   listing: {
     title: "Gravidfotografering",
@@ -113,6 +125,83 @@ export default {
     link: `/${PricesRoute}/${MaternityRoute}`,
   },
   shoots: [
+    {
+      description: "Gravidfotografering i vann",
+      tags: ["gravid", "sommer", "Nordbytjernet", "partner", "familie"],
+      images: [
+        {
+          url: preg_EH_1,
+          title: "Gravidfotografering i vann",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_EH_2,
+          title: "Gravidfotografering i vann med familien",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_EH_3,
+          title: "Gravidfotografering i vann med partner",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_EH_4,
+          title: "Gravidfotografering i vann",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-07-31",
+    },
+
+    {
+      description: "Gravide I med partner",
+      tags: ["gravid", "sommer", "Nordbytjernet", "partner"],
+      images: [
+        {
+          url: preg_IK1_1,
+          title: "Gravid med partner",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_IK1_2,
+          title: "Gravid med partner",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_IK1_3,
+          title: "Gravid med partner",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: preg_IK1_4,
+          title: "Gravid med partner",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: preg_IK1_5,
+          title: "Gravid med partner",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: preg_IK1_6,
+          title: "Gravid med partner",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-06-03",
+    },
+
     {
       description: "Gravide A",
       tags: ["gravid", "sommer", "skog"],

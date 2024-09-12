@@ -305,15 +305,15 @@ export function PhotoProducts() {
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">Kr. 1699,-</div>
+              <div className="ProductPriceSection__Price">Kr. 1899,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
-                Touch Art Nature 20x20 cm
+                Touch Art Nature 30x30 cm
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">Kr. 2799,-</div>
+              <div className="ProductPriceSection__Price">Kr. 2299,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
@@ -321,7 +321,7 @@ export function PhotoProducts() {
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">Kr. 4199,-</div>
+              <div className="ProductPriceSection__Price">Kr. 3999,-</div>
             }
             priceText4={false}
             price4={false}
@@ -366,7 +366,7 @@ export function PhotoProducts() {
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
-                Bildeboks 15x20cm med 10 bilder
+                Bildeboks 20x25cm med 10 bilder
               </div>
             }
             price2={
@@ -422,7 +422,7 @@ export function PhotoProducts() {
               </div>
             }
             price1={
-              <div className="ProductPriceSection__Price">fra Kr. 3999,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 3199,-</div>
             }
             priceText2={
               <div className="ProductPriceSection__PriceText">
@@ -430,7 +430,7 @@ export function PhotoProducts() {
               </div>
             }
             price2={
-              <div className="ProductPriceSection__Price">fra Kr. 4499,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 4199,-</div>
             }
             priceText3={
               <div className="ProductPriceSection__PriceText">
@@ -438,7 +438,7 @@ export function PhotoProducts() {
               </div>
             }
             price3={
-              <div className="ProductPriceSection__Price">fra Kr. 6499,-</div>
+              <div className="ProductPriceSection__Price">fra Kr. 6399,-</div>
             }
             priceText4={
               <p className="Prices__TabsContentTextFees">

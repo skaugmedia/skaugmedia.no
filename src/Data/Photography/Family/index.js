@@ -14,16 +14,11 @@ import famH3 from "../../../Images/Family/fam_h_3.jpg";
 import famH4 from "../../../Images/Family/fam_h_4.jpg";
 import famH5 from "../../../Images/Family/fam_h_5.jpg";
 import famH6 from "../../../Images/Family/fam_h_6.jpg";
-import famL1 from "../../../Images/Family/fam_l_1.jpg";
 import famL10 from "../../../Images/Family/fam_l_10.jpg";
 import famL11 from "../../../Images/Family/fam_l_11.jpg";
 import famL2 from "../../../Images/Family/fam_l_2.jpg";
 import famL3 from "../../../Images/Family/fam_l_3.jpg";
-import famL4 from "../../../Images/Family/fam_l_4.jpg";
 import famL5 from "../../../Images/Family/fam_l_5.jpg";
-import famL6 from "../../../Images/Family/fam_l_6.jpg";
-import famL7 from "../../../Images/Family/fam_l_7.jpg";
-import famL8 from "../../../Images/Family/fam_l_8.jpg";
 import famL9 from "../../../Images/Family/fam_l_9.jpg";
 
 import famHS1 from "../../../Images/Family/fam_hs_1.jpg";
@@ -41,6 +36,17 @@ import famCK3 from "../../../Images/Family/fam_ck_3.jpg";
 
 import famCS1 from "../../../Images/Family/fam_cs_1.jpg";
 import famCS2 from "../../../Images/Family/fam_cs_2.jpg";
+
+import famAV1 from "../../../Images/Family/fam_AV_1.jpg";
+import famAV2 from "../../../Images/Family/fam_AV_2.jpg";
+import famAV3 from "../../../Images/Family/fam_AV_3.jpg";
+import famAV4 from "../../../Images/Family/fam_AV_4.jpg";
+import famAV5 from "../../../Images/Family/fam_AV_5.jpg";
+
+import famST1 from "../../../Images/Family/fam_ST_1.jpg";
+import famST2 from "../../../Images/Family/fam_ST_2.jpg";
+import famST3 from "../../../Images/Family/fam_ST_3.jpg";
+import famST4 from "../../../Images/Family/fam_ST_4.jpg";
 
 import FamilyRoute from "../../../Routes/Family/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
@@ -63,6 +69,77 @@ export default {
     link: `/${PricesRoute}/${FamilyRoute}`,
   },
   shoots: [
+    {
+      description: "Familien T",
+      tags: ["familie", "skog", "sommer"],
+      images: [
+        {
+          url: famST3,
+          title: "Familiefotografering i skogen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famST1,
+          title: "Familiefotografering i skogen",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famST2,
+          title: "Familiefotografering i skogen",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: famST4,
+          title: "Familiefotografering i skogen",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-08-02",
+    },
+    {
+      description: "Familien V",
+      tags: ["familie", "strå", "sommer"],
+      images: [
+        {
+          url: famAV3,
+          title: "Familiefotografering i strå",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famAV1,
+          title: "Familiefotografering i strå",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famAV2,
+          title: "Familiefotografering i strå",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: famAV4,
+          title: "Familiefotografering i strå",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: famAV5,
+          title: "Familiefotografering i strå",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-07-31",
+    },
     {
       description: "Familien H",
       tags: ["familie", "skog", "høst"],
@@ -178,12 +255,6 @@ export default {
       tags: ["familie", "snø"],
       images: [
         {
-          url: famL1,
-          title: "Familietid i snøen",
-          width: 1000,
-          height: 667,
-        },
-        {
           url: famL2,
           title: "Familietid i snøen",
           width: 667,
@@ -196,12 +267,6 @@ export default {
           width: 667,
           height: 1000,
         },
-        {
-          url: famL4,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
 
         {
           url: famL5,
@@ -209,25 +274,7 @@ export default {
           width: 667,
           height: 1000,
         },
-        {
-          url: famL6,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
-        {
-          url: famL7,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
 
-        {
-          url: famL8,
-          title: "Familietid i snøen",
-          width: 667,
-          height: 1000,
-        },
         {
           url: famL9,
           title: "Familietid i snøen",

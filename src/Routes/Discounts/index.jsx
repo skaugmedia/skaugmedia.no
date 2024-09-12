@@ -44,6 +44,20 @@ export function Discounts() {
 
           <div className="Discounts__RegularDiscountsRow">
             <FixedDiscount
+              imgSrc={TenPercent}
+              imgAlt="Konfirmant i vårfarger"
+              discount="30%"
+              text={
+                <>
+                  avslag på nyfødtfotografering, ved booking før graviduke 30
+                  <br />
+                  <span className="Discounts__RegularDiscountsTenPercentTextImportant">
+                    *Gjelder ikke minifoto eller pakkepriser
+                  </span>
+                </>
+              }
+            />{" "}
+            <FixedDiscount
               imgSrc={NewbornDiscount}
               imgAlt="Våken nyfødt baby"
               discount="GRATIS"
@@ -52,10 +66,13 @@ export function Discounts() {
                   minifotografering ved 6-9 mnd,
                   <br />
                   etter nyfødtfotografering
+                  <br />
+                  <span className="Discounts__RegularDiscountsTenPercentTextImportant">
+                    *Ingen bildeprodukter inkludert
+                  </span>
                 </>
               }
             />
-
             <FixedDiscount
               imgSrc={OneYear}
               imgAlt="Ettåring som spiser på Duplo"
@@ -64,20 +81,9 @@ export function Discounts() {
                 <>
                   avslag på 1-års fotografering, <br />
                   etter nyfødtfotografering
-                </>
-              }
-            />
-
-            <FixedDiscount
-              imgSrc={TenPercent}
-              imgAlt="Konfirmant i vårfarger"
-              discount="20%"
-              text={
-                <>
-                  avslag på din neste fotografering <br />
+                  <br />
                   <span className="Discounts__RegularDiscountsTenPercentTextImportant">
-                    *Gjelder kun privatpersoner og kan ikke kombineres med andre
-                    tilbud
+                    *Gjelder ikke minifoto eller pakkepriser
                   </span>
                 </>
               }
