@@ -3,34 +3,43 @@ import { freePregnancyDate, freePregnancyId } from "./FreePregnancyDate";
 import { IncludesList } from "/src/Components/IncludesList";
 import MinishootConfirmation from "/src/Images/Confirmation/conf_L_4.jpg";
 import ChildSiblingPhoto from "/src/Images/Discounts/childsiblingphoto.jpg";
-import JessheimdageneDiscount from "/src/Images/Discounts/jessheimdagene.jpg";
+import ChristmasDiscount from "/src/Images/Discounts/christmas_mini.jpg";
 import MinishootAugust from "/src/Images/Discounts/minishootaugust.jpg";
 import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
 import WeddingDiscount from "/src/Images/Discounts/weddingdiscount.jpg";
 import KidsMinisession from "/src/Images/Kids/LP_2.jpg";
-import ChristmasDiscount from "/src/Images/christmas_minishoot.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
   {
-    id: "jessheimdagene",
-    title: "Jessheimdagene",
+    id: "minifoto-jul",
+    title: "Juleminis",
     img: {
-      src: JessheimdageneDiscount,
-      alt: "Et lykkelig par med sine to hunder",
+      src: ChristmasDiscount,
+      alt: "Bilde av en liten gutt ute i julete omgivelser",
     },
     banner: {
-      subTitle: "30% rabatt på alle ordinære fotograferinger",
+      subTitle: "23. og 26. oktober 2024",
       description: (
         <>
-          Booking av alle ordinære fotograferinger med dato i 2024, får 30%
-          rabatt i forbindelse med Jessheimdagene.
+          Julekortfotografering utendørs på Jessheim, med to ulike juleoppsett-
+          både hvit jul og rød tradisjonell jul. Perfekt for barn som kan sitte
+          selv, søsken og familier.
           <br />
           <br />
-          *Gjelder ikke bryllup, minifotograferinger eller pakkepriser. Kan ikke
-          kombineres med andre tilbud. Gjelder t.o.m. 18.08.2024
+          -15-20 minutter fotografering
+          <br />
+          -2 digitale bildefiler
+          <br />
+          -Gode rabatter på bildeprodukter og julekort
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">Kr. 1499,-</div>
+          <br />
+          *Du mottar en kontrakt som må fylles ut og signeres. Når denne er
+          signert får du en faktura som må betales for å bekrefte booking.
         </>
       ),
       button: {
@@ -41,22 +50,46 @@ const rawDiscountPosts = [
       <>
         <div className="Discounts__Text">
           <div className="Discounts__FreePregnancyNextDate">
-            30% rabatt på alle ordinære fotograferinger
+            23. og 26. oktober 2024
           </div>
-          Book en valgfri ordinær fotografering med dato i 2024 og få 30% rabatt
-          på fotograferingen.
+          <IncludesList
+            items={[
+              "15-20 minutter fotografering utendørs på Jessheim",
+              "Online visningsgalleri hvor du kan velge dine bilder",
+              "Mulighet for en visningstime der du kan se på ulike fysiske bildeproduktene du kan bestille",
+              "Rabatt på bildeprodukter og julekort",
+              "Mulighet for å kjøpe flere bilder og bildeprodukter",
+              "2 valgfrie digitale bildefiler",
+              "Kontrakt og faktura sendes på mail og må signeres og betales for å bekrefte bookingen (beløpet refunderes ikke om du avbestiller eller ikke møter opp)",
+            ]}
+          />
+          Dette oppsettet passer perfekt til barn som kan sitte selv,
+          søskenfotografering, familiefotografering, nyfødtfotografering i
+          armene til foreldre, mommy and me-fotografering eller
+          parfotografering.
           <br />
           <br />
-          *Gjelder ikke bryllup, minifotograferinger eller pakkepriser. Kan ikke
-          kombineres med andre tilbud. Tilbudet gjelder t.o.m. 18.08.2024.
+          Send en mail eller ta kontakt via kontaktskjema med ønsket dato og
+          tidspunkt, samt hvilken fotografering du ønsker deg. Om timen er
+          ledig, vil du motta en kontrakt som må fylles ut og signeres så snart
+          som mulig, og etter denne er signert får du en faktura som må betales
+          for at bookingen skal være gyldig. Om tidspunktet ikke er ledig, vil
+          jeg gi deg beskjed og foreslå et annet tidspunkt om det er noen ledige
+          tider.
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">Kun kr. 1599,-</div>
+          <br />
+          *Booking er bindende. Beløpet refunderes ikke ved avbestilling eller
+          ved uteblitt oppmøte.
           <br />
           <br />
         </div>
       </>
     ),
     valid: {
-      from: localTime("9.08.2024 00:00"),
-      to: localTime("19.08.2024 00:00"),
+      from: localTime("18.09.2024 00:00"),
+      to: localTime("26.10.2024 00:00"),
     },
     button: {
       link: `/${ContactRoute}`,
