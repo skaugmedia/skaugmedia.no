@@ -9,10 +9,74 @@ import PregnancyFree from "/src/Images/Discounts/preg_c_10.jpg";
 import SpringDiscount from "/src/Images/Discounts/springoffer.jpg";
 import WeddingDiscount from "/src/Images/Discounts/weddingdiscount.jpg";
 import KidsMinisession from "/src/Images/Kids/LP_2.jpg";
+import DigitalDiscount from "/src/Images/Newborn/newborn_TG_5.jpg";
 import ContactRoute from "/src/Routes/Contact/Route";
 import DiscountRoute from "/src/Routes/Discounts/Route";
 
 const rawDiscountPosts = [
+  {
+    id: "discount-offer-digital-files",
+    title: "Supertilbud til tidligere kunder",
+    img: {
+      src: DigitalDiscount,
+      alt: "Bilde av hånden til en nyfødt baby",
+    },
+    banner: {
+      subTitle: "Digitale bildefiler",
+      description: (
+        <>
+          Alle som har bestilt bilder fra sin fotografering hos meg tidligere,
+          får nå et supertilbud på digitale bildefiler fra vår tidligere
+          fotografering, som gjelder frem til og med 15. november.
+        </>
+      ),
+      button: {
+        link: `/${DiscountRoute}`,
+      },
+    },
+    description: (
+      <>
+        <div className="Discounts__Text">
+          <div className="Discounts__FreePregnancyNextDate">
+            Supertilbud for tidligere kunder
+          </div>
+          Alle som har bestilt bilder fra sin fotografering hos meg tidligere,
+          får nå et supertilbud på digitale bildefiler fra vår tidligere
+          fotografering, som gjelder frem til og med 15. november. Det samme
+          tilbudet gjelder for alle som har fått spesialpriser i forbindelse med
+          rabatter, barnehagefotografering osv.
+          <br />
+          <br />
+          Gi meg beskjed om dette er noe du ønsker, så kan jeg åpne
+          visningsgalleriet deres, slik at dere kan se gjennom bildene igjen.
+          Det vil være noe leveringstid, men du er garantert å få bildene dine i
+          god tid før jul.
+          <br />
+          <br />
+          <div className="Discounts__DiscountTextImportant">
+            3 digitale bildefiler nå kr. 1399,- (før kr. 2399,-)
+            <br />
+            6 digitale bildefiler nå kr. 2399,- (før kr. 3999,-)
+            <br />
+            10 digitale bildefiler nå kr. 3199,- (før kr. 5399,-)
+            <br />
+            15 digitale bildefiler nå kr. 4399,- (før kr. 7399,-)
+            <br />
+            20 digitale bildefiler nå kr. 4999,- (før kr. 8399,-)
+            <br />
+            25 digitale bildefiler nå kr. 5599,- (før kr. 9399,-)
+          </div>
+        </div>
+      </>
+    ),
+    valid: {
+      from: localTime("15.10.2024 00:00"),
+      to: localTime("15.11.2024 00:00"),
+    },
+    button: {
+      link: `/${ContactRoute}`,
+    },
+  },
   {
     id: "minifoto-jul",
     title: "Juleminis",
