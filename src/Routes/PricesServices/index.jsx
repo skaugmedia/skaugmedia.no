@@ -100,9 +100,14 @@ export function PricesServices() {
       </PageSection>
 
       <PageSection>
-        <div style={{ margin: "1rem 0" }}>
-          <ButtonLink className="call-to-action" to={`/${ContactRoute}`}>Trykk her for å booke!</ButtonLink>
+        <div className="PhotoPrice__BottomDivider"></div>
+        <div className="PhotoPrice__BookingText">
+          Ønsker du å booke?
         </div>
+        <div style={{ margin: "1rem 0" }}>
+          <NavLink className="PhotoPrice__BookingButton" to={`/${ContactRoute}`}>Trykk her for å booke!</NavLink>
+        </div>
+        <div className="PhotoPrice__BottomDivider"></div>
       </PageSection>
 
       <PageSection innerClassName="Prices__Section">
