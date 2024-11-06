@@ -795,6 +795,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .PhotoPrice__PriceListBox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .PhotoPrice__PriceListImg {
+    width: 80%;
+    height: 100%;
+  }
+
   .ProductPriceSection--reverse {
     margin-top: 20px;
   }
