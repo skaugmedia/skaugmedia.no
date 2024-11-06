@@ -7,20 +7,14 @@ import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
 import cover from "../../Images/Home/cover_photo.jpg";
 import PhotographerImg from "../../Images/Home/ninaskaug.jpg";
-import freePregnancyShoot from "../../Images/Prices/free_pregnant_shoot.jpg";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
 import "./Home.css";
 import pageName from "./PageName";
 import { portfolio } from "./portfolio";
-import {
-  freePregnancyDate,
-  freePregnancyId,
-} from "/src/Data/FreePregnancyDate";
 import { discountPosts } from "/src/Data/discountPosts";
 import DiscountHeaderImg from "/src/Images/Discounts/discount.png";
 import ContactRoute from "/src/Routes/Contact/Route";
-import DiscountRoute from "/src/Routes/Discounts/Route";
 
 export function Home() {
   const location = useLocation();
@@ -108,34 +102,6 @@ export function Home() {
         outerClassName="regular-discounts-outer"
         innerClassName="regular-discounts"
       >
-        <div className="free-pregnancy-row">
-          <div className="free-pregnancy-textbox">
-            <div className="free-pregnancy-header">HVER MÅNED</div>
-            <div className="free-pregnancy-sub-header">
-              GRATIS MINIFOTOGRAFERING AV GRAVIDE
-            </div>
-            <div className="free-pregnancy-next-date">
-              Neste ledige dato: {freePregnancyDate.nextDate}
-            </div>
-            <div className="free-pregnancy-text">
-              Hver måned setter jeg av en dato der jeg tilbyr GRATIS utendørs
-              minifotografering av gravide som er i uke 30-36 av svangerskapet.
-              Fotograferingen vil foregå på en utendørs lokasjon på Jessheim.
-              <br />
-              <br />
-              Det er begrenset med kapasitet, så book tidlig!
-            </div>
-            <ActionButton to={`${DiscountRoute}#${freePregnancyId}`}>
-              Les mer her
-            </ActionButton>
-          </div>
-          <img
-            className="free-pregnancy-img"
-            src={freePregnancyShoot}
-            alt="Gratis minifotografering av gravide"
-          ></img>
-        </div>
-
         <div className="Home__DiscountSection">
           <div className="Home__Discount_NewbornSquare">
             <img
