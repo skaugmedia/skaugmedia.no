@@ -227,9 +227,8 @@ export function PricesServices() {
           text={
             <div className="ProductPriceSection__Text">
               Det minste antallet digitale bildefiler du kan bestille er: pakken
-              med 3 digitiale bildefiler. Etter kjøp av en bildepakke kan du
-              kjøpe enkeltbilder for kr. 650,- per stk. Du får bildene du
-              bestiller i både farger og sorthvitt.
+              med 3 digitiale bildefiler. Du får bildene du bestiller i både
+              farger og sorthvitt.
             </div>
           }
           priceText1={
