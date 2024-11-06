@@ -119,54 +119,71 @@ export function PricesServices() {
         </div>
       </PageSection>
       <PageSection>
-        <div className="Prices__BottomSection">
-          <div className="Prices__TextIntroHeader">
-            Ønsker du kun å booke fotografering?
+        Nina, skriv noe artig her.
+      </PageSection>
+      <PageSection>
+        <h2 className="Prices__Header">Pakkepriser</h2>
+        <div className="PhotoPrice__PackageBoxRow">
+          <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package1">
+            <div className="PhotoPrice__PackageBoxHeader">
+              <div className="PhotoPrice__PackageBoxHeading">Bronseglimt</div>
+              <div className="PhotoPrice__PackageBoxSubHeading"></div>
+            </div>
+            <div className="PhotoPrice__PackageBoxText">
+              Valgfri fotografering
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              Online bildegalleri
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              10 høyoppløselige bildefiler
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxPrice">
+              Kr. 8000,-
+            </div>
           </div>
-          <div className="Prices__TextIntro">
-            Du kan velge å booke kun fotografering inkludert en visningstime i
-            etterkant av fotograferingen, eller du kan velge en pakkepris med
-            fotografering og bildeprodukter inkludert.
+          <div className="PhotoPrice__ResponsiveDivider"></div>
+          <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package2">
+            <div className="PhotoPrice__PackageBoxHeader">
+              <div className="PhotoPrice__PackageBoxHeading">Sølvglimt</div>
+              <div className="PhotoPrice__PackageBoxSubHeading"></div>
+            </div>
+            <div className="PhotoPrice__PackageBoxText">
+              Valgfri fotografering
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              Online bildegalleri
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              20 høyoppløselige bildefiler
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxPrice">Kr. 10.000,-</div>
           </div>
-          <div className="Prices__TextIntroHeader">
-            Ønsker du å booke en minifotografering?
-          </div>
-          <div className="Prices__TextIntro">
-            Du kan velge å booke en valgfri minifotografering, inkludert 3
-            digitale bildefiler. En slik minifotografering gjelder ikke for
-            nyfødfotografering hjemme hos dere, eller bryllupsfotografering. En
-            minifotografering har en fast pris på kr. 1400,- (Unntak ved
-            spesialtilbud)
-          </div>
-          <div className="Prices__TextIntroHeader">Ønsker du delbetaling?</div>
-          <div className="Prices__TextIntro">
-            Du kan nå velge å delbetale om du ønsker dette, men ingen
-            bildeprodukter vil bli utlevert før siste faktura er betalt. Si ifra
-            når du legger inn booking, hvis du ønsker dette.
-          </div>
-          <div className="Prices__TextIntroHeader">
-            Ønsker du fotografering etter kl. 16.00 på en hverdag?
-          </div>
-          <div className="Prices__TextIntro">
-            Etter kl. 16.00 på en hverdag vil det alltid tilkomme et tillegg på
-            kr. 400,- for alle fotograferinger.
-          </div>
-
-          <div className="Prices__TextIntroHeader">
-            Ønsker du fotografering i en helg eller på en helligdag?
-          </div>
-          <div className="Prices__TextIntro">
-            Alle helger og helligdager vil det tilkomme et helgetillegg på kr.
-            700,- (unntak ved bryllupsfotografering og ved fastsatte
-            minifotograferinger med dato i helg)
-          </div>
-          <div className="Prices__TextIntroHeader">
-            Ønsker du at jeg skal komme til deg?
-          </div>
-          <div className="Prices__TextIntro">
-            Jeg kommer gjerne til deg, men all kjøring utover 30km fra Jessheim,
-            vil faktureres med kr. 10,- per km. I tillegg vil betalt parkering
-            under fotograferingen faktureres i sin helhet.
+          <div className="PhotoPrice__ResponsiveDivider"></div>
+          <div className="PhotoPrice__PackageBox PhotoPrice__PackageBox--Package3">
+            <div className="PhotoPrice__PackageBoxHeader">
+              <div className="PhotoPrice__PackageBoxHeading">Gullglimt</div>
+              <div className="PhotoPrice__PackageBoxSubHeading"></div>
+            </div>
+            <div className="PhotoPrice__PackageBoxText">
+              Valgfri fotografering
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              Online bildegalleri
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxText">
+              30 høyoppløselige bildefiler
+            </div>
+            <div className="PhotoPrice__PackageBoxDivider"></div>
+            <div className="PhotoPrice__PackageBoxPrice">Kr. 12.500,-</div>
           </div>
         </div>
       </PageSection>
