@@ -62,6 +62,13 @@ import WeddingLJ7 from "/src/Images/Wedding/weddingLJ_7.jpg";
 import WeddingLJ8 from "/src/Images/Wedding/weddingLJ_8.jpg";
 import WeddingLJ9 from "/src/Images/Wedding/weddingLJ_9.jpg";
 
+import WeddingKD1 from "/src/Images/Wedding/wedding_KD_1.jpg";
+import WeddingKD2 from "/src/Images/Wedding/wedding_KD_2.jpg";
+import WeddingKD3 from "/src/Images/Wedding/wedding_KD_3.jpg";
+import WeddingKD4 from "/src/Images/Wedding/wedding_KD_4.jpg";
+import WeddingKD5 from "/src/Images/Wedding/wedding_KD_5.jpg";
+import WeddingKD6 from "/src/Images/Wedding/wedding_KD_6.jpg";
+
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import WeddingRoute from "../../../Routes/Wedding/Route";
 
@@ -72,7 +79,7 @@ export default {
   La oss fange hvert øyeblikk av deres unike kjærlighetshistorie gjennom en bryllupsfotografering som er skreddersydd for akkurat dere. Fra de intime blikkene under vielsen til de hjertelige omfavnelsene på dansegulvet, vil jeg være der for å fange øyeblikkene med autentisk lidenskap og kreativitet. Med en blanding av naturlig lys og artistisk retning, skaper jeg tidløse bilder som reflekterer deres personlighet og den dype forbindelsen dere deler.
   `,
   cover: {
-    url: Weddingah12,
+    url: WeddingKD5,
     title: "Brudepar ute i snøen",
   },
   listing: {
@@ -81,6 +88,49 @@ export default {
     link: `/${PricesRoute}/${WeddingRoute}`,
   },
   shoots: [
+    {
+      description: "Bryllupsfotografering K + T",
+      tags: ["bryllup", "seremoni", "bryllupsseremoni", "høst", "golden hour"],
+      images: [
+        {
+          url: WeddingKD1,
+          title: "Brudepar i golden hour",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingKD2,
+          title: "Brudepar i golden hour",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingKD3,
+          title: "Brudepar i golden hour",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingKD4,
+          title: "Brudepar i golden hour",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: WeddingKD5,
+          title: "Brudepar i golden hour",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: WeddingKD6,
+          title: "Brudepar i golden hour",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-15-03",
+    },
     {
       description: "Bryllupsfotografering A + H",
       tags: ["bryllup", "seremoni", "bryllupsseremoni", "vinter"],

@@ -43,6 +43,13 @@ import famAV3 from "../../../Images/Family/fam_AV_3.jpg";
 import famAV4 from "../../../Images/Family/fam_AV_4.jpg";
 import famAV5 from "../../../Images/Family/fam_AV_5.jpg";
 
+import famSH1 from "../../../Images/Family/fam_SH_1.jpg";
+import famSH2 from "../../../Images/Family/fam_SH_2.jpg";
+import famSH3 from "../../../Images/Family/fam_SH_3.jpg";
+import famSH4 from "../../../Images/Family/fam_SH_4.jpg";
+import famSH5 from "../../../Images/Family/fam_SH_5.jpg";
+import famSH6 from "../../../Images/Family/fam_SH_6.jpg";
+
 import famST1 from "../../../Images/Family/fam_ST_1.jpg";
 import famST2 from "../../../Images/Family/fam_ST_2.jpg";
 import famST3 from "../../../Images/Family/fam_ST_3.jpg";
@@ -100,6 +107,51 @@ export default {
         },
       ],
       date: "2024-08-02",
+    },
+    {
+      description: "Familien H",
+      tags: ["familie", "skog", "høst"],
+      images: [
+        {
+          url: famSH1,
+          title: "Familiefotografering i skogen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famSH2,
+          title: "Familiefotografering i skogen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: famSH3,
+          title: "Familiefotografering i skogen",
+          width: 667,
+          height: 1000,
+        },
+
+        {
+          url: famSH4,
+          title: "Familiefotografering i skogen",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: famSH5,
+          title: "Familiefotografering i skogen",
+          width: 1000,
+          height: 667,
+        },
+
+        {
+          url: famSH6,
+          title: "Familiefotografering i skogen",
+          width: 667,
+          height: 1000,
+        },
+      ],
+      date: "2024-09-25",
     },
     {
       description: "Familien V",

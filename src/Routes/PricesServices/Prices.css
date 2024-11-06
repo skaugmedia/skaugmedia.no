@@ -1,3 +1,59 @@
+.Prices__GiftcardSection {
+  margin-bottom: 15px;
+}
+
+.PhotoPrice__PriceListBox {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PhotoPrice__PriceListImg {
+  width: 70%;
+  height: 100%;
+}
+
+.PhotoPrice__PhotographyList {
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.PhotoPrice__BottomDividerPriceList {
+  margin: 9px 0;
+  width: 100%;
+}
+
+.PhotoPrice__PriceListWedding {
+  font-family: nunito;
+  font-size: 0.85em;
+  margin-top: 10px;
+}
+
+.PhotoPrice__PriceListWeddingLink {
+  font-family: oswald;
+  font-weight: 700;
+  font-size: 1em;
+  margin-left: 2.5px;
+  color: var(--blue);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.PhotoPrice__PriceListWeddingLink:hover {
+  color: black;
+  font-size: 1em;
+}
+
+.PhotoPrice__PriceInformation {
+  font-family: nunito;
+  margin-top: 15px;
+}
+
 .Prices__PriceText {
   margin-bottom: 10px;
 }
@@ -39,9 +95,11 @@
   color: white;
 }
 
-.Prices__Category_PriceImg:hover {}
+.Prices__Category_PriceImg:hover {
+}
 
-.Prices__Category_PriceTextBox {}
+.Prices__Category_PriceTextBox {
+}
 
 .Prices__Category_PriceHeader {
   font-size: 1.5em;
@@ -104,8 +162,8 @@
   opacity: 0;
 }
 
-.container:focus-within+.content,
-.container:focus+.content {
+.container:focus-within + .content,
+.container:focus + .content {
   display: initial;
 }
 
@@ -141,11 +199,13 @@
   height: 100%;
   z-index: 1;
   border-radius: 4px;
-  clip-path: polygon(0% 0%,
-      calc(100% - 5px) 0%,
-      100% 50%,
-      calc(100% - 5px) 100%,
-      0% 100%);
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 5px) 0%,
+    100% 50%,
+    calc(100% - 5px) 100%,
+    0% 100%
+  );
 }
 
 .color1 {
@@ -240,7 +300,8 @@
   padding-bottom: 10px;
 }
 
-.Prices__TabsProducts {}
+.Prices__TabsProducts {
+}
 
 .Prices__TabsContentPriceKidsCopies {
   text-align: right;
@@ -361,7 +422,8 @@
   flex-flow: column;
 }
 
-.ProductPriceSection__Text {}
+.ProductPriceSection__Text {
+}
 
 .ButtonText {
   margin-left: 70px;
@@ -498,7 +560,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.CompanyPrice__Info>* {
+.CompanyPrice__Info > * {
   justify-self: start;
 }
 
@@ -869,7 +931,8 @@
     width: 100%;
   }
 
-  .ProductPriceSection {}
+  .ProductPriceSection {
+  }
 
   .Prices__Header {
     display: flex;
@@ -1082,7 +1145,8 @@
     width: 50;
   }
 
-  .ProductPriceSection__ImgSection {}
+  .ProductPriceSection__ImgSection {
+  }
 
   .Prices__ServicesImg {
     object-fit: cover;

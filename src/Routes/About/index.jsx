@@ -23,16 +23,14 @@ export function About() {
         <div className="AboutMe__Box">
           <div className="AboutMe__Text">
             <p>
-              Jeg heter Nina Merethe Skaug og jeg jobber som fotograf og
-              designer i Skaug Media. Jeg elsker å jobbe kreativt og jeg brenner
-              for å levere flotte bilder som du kan henge på veggen og som du
-              kan ha glede av i mange år fremover, om ikke for alltid!
+              Jeg heter Nina Merethe Skaug og jeg er fotograf og grafisk
+              designer i Skaug Media. Nå jobber jeg ikke lenger fulltid i Skaug
+              Media, men jeg tar gjerne på meg oppdrag en gang i blandt.
             </p>
             <p>
               Jeg bor på Jessheim i Ullensaker kommune, sammen med min forlovede
-              og en sønn på snart 2 år. Jeg tar på meg oppdrag på Romerike, Oslo
-              og omegn, men ta gjerne kontakt om du lurer på om du bor for langt
-              unna.
+              og en sønn på 3 år. Jeg tar på meg oppdrag på Romerike, Oslo og
+              omegn.
             </p>
             <p>
               For meg er det viktig at dere skal ha en hyggelig opplevelse med å
@@ -41,22 +39,17 @@ export function About() {
               bra, og jeg ønsker å fange de magiske øyeblikkene.
             </p>
             <p>
-              Jeg har ikke eget studio, da jeg alltid fotograferer på location,
-              og aller helst utendørs. Jeg vil alltid hjelpe til med veiledning
-              i forhold til valg av location og hva dere skal ha på dere under
-              fotograferingen. For gravide, nyfødt og babyer har jeg en liten
-              kundegarderobe som kan brukes ved fotografering. Om det skulle
-              være noe dere lurer på, så er ingen spørsmål dumme, og jeg svarer
-              så godt jeg kan på hva enn det måtte være!
+              Jeg har ikke eget studio, da jeg i hovedsak fotograferer utendørs,
+              men jeg har mulighet for å sette opp et lite ministudio for
+              fotografering av barn - om du har god nok plass hjemme. For
+              gravide, nyfødt og barn har jeg en liten kundegarderobe som kan
+              brukes ved fotografering. Om det skulle være noe dere lurer på, så
+              er ingen spørsmål dumme, og jeg svarer så godt jeg kan på hva enn
+              det måtte være!
             </p>
             <p>
-              I all hovedsak fotograferer jeg konfirmanter, baby, barn, familie,
-              portretter, produkter og matfotografi. I høst skal jeg starte opp
-              med eiendomsfotografering, og bruke en del av tiden min på dette.
-              Jeg fotograferer også for næringsliv og bedrifter, samt at jeg
-              leverer ulike designtjenester til både privatpersoner og
-              næringsliv. Jeg tilbyr både fulle designpakker og enkle
-              designtjenester, alt etter hva slags behov og ønsker dere har.
+              I all hovedsak fotograferer jeg gravide, barn, familie,
+              konfirmanter, portretter, produkter og mat.
             </p>
           </div>
 

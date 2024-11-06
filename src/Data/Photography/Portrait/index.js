@@ -41,6 +41,16 @@ import port_T_04 from "../../../Images/Portrait/port_T_04.jpg";
 import port_T_05 from "../../../Images/Portrait/port_T_05.jpg";
 import port_T_06 from "../../../Images/Portrait/port_T_06.jpg";
 
+import port_LG_1 from "../../../Images/Portrait/port_LG_1.jpg";
+import port_LG_2 from "../../../Images/Portrait/port_LG_2.jpg";
+import port_LG_3 from "../../../Images/Portrait/port_LG_3.jpg";
+import port_LG_4 from "../../../Images/Portrait/port_LG_4.jpg";
+import port_LG_5 from "../../../Images/Portrait/port_LG_5.jpg";
+import port_LG_6 from "../../../Images/Portrait/port_LG_6.jpg";
+import port_LG_7 from "../../../Images/Portrait/port_LG_7.jpg";
+import port_LG_8 from "../../../Images/Portrait/port_LG_8.jpg";
+import port_LG_9 from "../../../Images/Portrait/port_LG_9.jpg";
+
 import HeadshotsRoute from "../../../Routes/Headshots/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
@@ -61,6 +71,67 @@ export default {
     link: `/${PricesRoute}/${HeadshotsRoute}`,
   },
   shoots: [
+    {
+      description: "LG",
+      tags: ["portrett", "dame", "natur", "beige", "sommer", "strå"],
+      images: [
+        {
+          url: port_LG_1,
+          title: "LG",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_LG_2,
+          title: "LG",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_LG_3,
+          title: "LG",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_LG_4,
+          title: "LG",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_LG_5,
+          title: "LG",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_LG_6,
+          title: "LG",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_LG_7,
+          title: "LG",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_LG_8,
+          title: "LG",
+          height: 1000,
+          width: 667,
+        },
+        {
+          url: port_LG_9,
+          title: "LG",
+          height: 1000,
+          width: 667,
+        },
+      ],
+      date: "2024-08-06",
+    },
     {
       description: "IM",
       tags: ["portrett", "dame", "natur", "frodig", "sommer", "solsikke"],

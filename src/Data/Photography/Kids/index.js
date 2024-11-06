@@ -67,6 +67,10 @@ import LBK13 from "../../../Images/Kids/LBK1_3.jpg";
 import LBK14 from "../../../Images/Kids/LBK1_4.jpg";
 import LBK15 from "../../../Images/Kids/LBK1_5.jpg";
 
+import AH1 from "../../../Images/Kids/baby_AH_1.jpg";
+import AH2 from "../../../Images/Kids/baby_AH_2.jpg";
+import AH3 from "../../../Images/Kids/baby_AH_3.jpg";
+
 import ChildrenRoute from "../../../Routes/Children/Route";
 import PricesRoute from "../../../Routes/PricesServices/Route";
 import { priceList } from "/src/Data/priceList";
@@ -87,6 +91,31 @@ export default {
     link: `/${PricesRoute}/${ChildrenRoute}`,
   },
   shoots: [
+    {
+      description: "AH",
+      tags: ["jente", "1-åring", "barn", "skog", "lyng"],
+      images: [
+        {
+          url: AH1,
+          title: "1-åring i lyng i skogen",
+          width: 1000,
+          height: 667,
+        },
+        {
+          url: AH2,
+          title: "1-åring i lyng i skogen",
+          width: 667,
+          height: 1000,
+        },
+        {
+          url: AH3,
+          title: "1-åring i lyng i skogen",
+          width: 1000,
+          height: 667,
+        },
+      ],
+      date: "2024-10-09",
+    },
     {
       description: "HR",
       tags: ["gutt", "1-åring", "barn", "studio"],

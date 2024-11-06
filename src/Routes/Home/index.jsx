@@ -5,8 +5,8 @@ import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
 import { PortfolioCard } from "../../Components/PortfolioCard";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import OneYearDiscount from "../../Images/1-year-photo.jpg";
-import cover from "../../Images/Home/cover_photo.jpg";
 import PhotographerImg from "../../Images/Home/ninaskaug.jpg";
+import cover from "../../Images/cover_top.jpg";
 import newbornDiscount from "../../Images/newborn_offer.jpg";
 import quotepng from "../../Images/quote_icon.png";
 import "./Home.css";
@@ -86,12 +86,14 @@ export function Home() {
           <div className="Home__PhotographerTextSection">
             Hei,
             <br />
-            jeg heter Nina Merethe Skaug og er fotograf og designer, som jobber
-            med privatpersoner og næringsliv. Jeg tilbyr ikke fotografering i
-            studio, og jeg jobber aller helst utendørs, men kommer også gjerne
-            hjem til dere for fotografering. De fleste som booker meg som sin
-            fotograf booker gravidfotografering, barnefotografering og
-            konfirmantfotografering. <br />
+            jeg heter Nina Merethe Skaug og jeg er fotograf og designer, som
+            jobber med privatpersoner og næringsliv. Jeg fotograferer i hovedsak
+            utendørs, jeg har ikke tilgang til et studio, men jeg kan komme hjem
+            til deg for å gjennomføre en fotografering. De fleste som booker meg
+            som sin fotograf booker gravidfotografering, barnefotografering og
+            familiefotografering. Jeg jobber ikke lenger fulltid som fotograf og
+            designer, men jeg tar gjerne på meg et oppdrag en gang i blandt!
+            <br />
             <br />
             Jeg gleder meg til å høre fra deg!
           </div>
