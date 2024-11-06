@@ -30,9 +30,6 @@ import { DesignInfo } from "./Routes/DesignInfo";
 import DesignInfoLoader from "./Routes/DesignInfo/Loader";
 import DesignInfoPageName from "./Routes/DesignInfo/PageName";
 import DesignInfoRoute from "./Routes/DesignInfo/Route";
-import { Discounts } from "./Routes/Discounts";
-import DiscountsPageName from "./Routes/Discounts/PageName";
-import DiscountsRoute from "./Routes/Discounts/Route";
 import { ErrorHandler } from "./Routes/ErrorHandler";
 import { Family } from "./Routes/Family";
 import FamilyPageName from "./Routes/Family/PageName";
@@ -321,11 +318,6 @@ export const router = createBrowserRouter([
                 handle: { pageName: PhotoProductsPageName },
               },
             ],
-          },
-          {
-            path: DiscountsRoute,
-            element: <Discounts />,
-            handle: { pageName: DiscountsPageName },
           },
         ],
       },

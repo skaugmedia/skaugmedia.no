@@ -5,8 +5,6 @@ import BusinessPricesPageName from "../../Routes/BusinessPrices/PageName";
 import BusinessPricesRoute from "../../Routes/BusinessPrices/Route";
 import ContactPageName from "../../Routes/Contact/PageName";
 import ContactRoute from "../../Routes/Contact/Route";
-import DiscountsPageName from "../../Routes/Discounts/PageName";
-import DiscountsRoute from "../../Routes/Discounts/Route";
 import HomePageName from "../../Routes/Home/PageName";
 import HomeRoute from "../../Routes/Home/Route";
 import PhotographyPageName from "../../Routes/Photography/PageName";
@@ -29,9 +27,6 @@ export const Nav = ({ containerClassName, linkClassName }) => (
       {PricesPageName}
     </NavLink>
 
-    <NavLink className={linkClassName} to={DiscountsRoute}>
-      {DiscountsPageName}
-    </NavLink>
     <NavLink className={linkClassName} to={AboutRoute}>
       {AboutPageName}
     </NavLink>
