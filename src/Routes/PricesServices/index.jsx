@@ -96,7 +96,7 @@ export function PricesServices() {
             <li key={p.name}>{p.name} {p.price}</li>
           ))}
         </ul>
-        Les mer om de ulike bryllupspakkene <NavLink to={`/${WeddingRoute}`}>her</NavLink>.
+        Les mer om de ulike bryllupspakkene <NavLink to={WeddingRoute}>her</NavLink>.
       </PageSection>
 
       <PageSection>
