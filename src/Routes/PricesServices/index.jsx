@@ -1,44 +1,15 @@
 import { useEffect, useRef, useState } from "react";
-import { Outlet, useLocation } from "react-router-dom";
+import ContactRoute from "../Contact/Route";
+import { ButtonLink } from "../../Components/ButtonLink";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import DesignHeading from "../../Components/Headings/DesignHeading";
 import { PageSection } from "../../Components/PageSection";
-import { PortfolioBrowser } from "../../Components/PortfolioBrowser";
-import { PortfolioCard } from "../../Components/PortfolioCard";
 import { SkaugHelmet } from "../../Components/SkaugHelmet";
 import WeddingRoute from "../Wedding/Route";
 import * as ids from "./Ids";
 import pageName from "./PageName";
 import "./Prices.css";
 import Route from "./Route";
-import CouplesButton from "/src/Images/Prices/Couples_button.jpg";
-import MommyAndMeButton from "/src/Images/Prices/MommyAndMe_button.jpg";
-import ChildrenButton from "/src/Images/Prices/children_button.jpg";
-import ConfirmationButton from "/src/Images/Prices/confirmation_button.jpg";
-import FamilyButton from "/src/Images/Prices/family_button.jpg";
-import HeadshotsButton from "/src/Images/Prices/headshots_button.jpg";
-import MaternityButton from "/src/Images/Prices/maternity_button.jpg";
-import NewbornButton from "/src/Images/Prices/newborn_button.jpg";
-import PhotoProductsButton from "/src/Images/Prices/photoproducts_button.jpg";
-import WeddingButton from "/src/Images/Prices/wedding_button.jpg";
-import ChildrenPageName from "/src/Routes/Children/PageName";
-import ChildrenRoute from "/src/Routes/Children/Route";
-import ConfirmationPageName from "/src/Routes/Confirmation/PageName";
-import ConfirmationRoute from "/src/Routes/Confirmation/Route";
-import CouplesPageName from "/src/Routes/Couples/PageName";
-import CouplesRoute from "/src/Routes/Couples/Route";
-import FamilyPageName from "/src/Routes/Family/PageName";
-import FamilyRoute from "/src/Routes/Family/Route";
-import HeadshotsPageName from "/src/Routes/Headshots/PageName";
-import HeadshotsRoute from "/src/Routes/Headshots/Route";
-import MaternityPageName from "/src/Routes/Maternity/PageName";
-import MaternityRoute from "/src/Routes/Maternity/Route";
-import MommyAndMePageName from "/src/Routes/MommyAndMe/PageName";
-import MommyAndMeRoute from "/src/Routes/MommyAndMe/Route";
-import NewbornPageName from "/src/Routes/Newborn/PageName";
-import NewbornRoute from "/src/Routes/Newborn/Route";
-import PhotoProductsPageName from "/src/Routes/PhotoProducts/PageName";
-import PhotoProductsRoute from "/src/Routes/PhotoProducts/Route";
-import WeddingPageName from "/src/Routes/Wedding/PageName";
 
 export function PricesServices() {
   const location = useLocation();
@@ -65,67 +36,42 @@ export function PricesServices() {
     }
   }, [location.hash]);
 
-  const priceSections = [
+  const prices = [
     {
-      link: MaternityRoute,
-      imgSrc: MaternityButton,
-      title: MaternityPageName,
-      imgAlt: MaternityPageName,
+      name: "Gravidfotografering",
+      price: "kr. 1700,-",
     },
     {
-      link: FamilyRoute,
-      imgSrc: FamilyButton,
-      title: FamilyPageName,
-      imgAlt: FamilyPageName,
+      name: "Familiefotografering",
+      price: "kr. 1700,-",
     },
     {
-      link: NewbornRoute,
-      imgSrc: NewbornButton,
-      title: NewbornPageName,
-      imgAlt: NewbornPageName,
+      name: "Nyfødtfotografering",
+      price: "kr. 1900,-",
     },
     {
-      link: ChildrenRoute,
-      imgSrc: ChildrenButton,
-      title: ChildrenPageName,
-      imgAlt: ChildrenPageName,
+      name: "Barnefotografering",
+      price: "kr. 1700,-",
     },
     {
-      link: ConfirmationRoute,
-      imgSrc: ConfirmationButton,
-      title: ConfirmationPageName,
-      imgAlt: ConfirmationPageName,
+      name: "Konfirmantfotografering",
+      price: "kr. 1700,-",
     },
     {
-      link: MommyAndMeRoute,
-      imgSrc: MommyAndMeButton,
-      title: MommyAndMePageName,
-      imgAlt: MommyAndMePageName,
+      name: "Mommy & me-fotografering",
+      price: "kr. 1700,-",
     },
     {
-      link: CouplesRoute,
-      imgSrc: CouplesButton,
-      title: CouplesPageName,
-      imgAlt: CouplesPageName,
+      name: "Parfotografering",
+      price: "kr. 1700,-",
     },
     {
-      link: WeddingRoute,
-      imgSrc: WeddingButton,
-      title: WeddingPageName,
-      imgAlt: WeddingPageName,
-    },
-
-    {
-      link: HeadshotsRoute,
-      imgSrc: HeadshotsButton,
-      title: HeadshotsPageName,
-      imgAlt: HeadshotsPageName,
+      name: "Profilbilder",
+      price: "fra kr. 1500,-",
     },
     {
-      link: PhotoProductsRoute,
-      imgSrc: PhotoProductsButton,
-      title: PhotoProductsPageName,
-      imgAlt: PhotoProductsPageName,
+      name: "Bryllupsfotografering",
+      price: "kr. 16.000,-",
     },
   ];
 
@@ -140,6 +86,21 @@ export function PricesServices() {
         <DesignHeading h1 className="prices-heading">
           {pageName}
         </DesignHeading>
+      </PageSection>
+
+      <PageSection>
+        <ul>
+          {prices.map((p) => (
+            <li key={p.name}>{p.name} {p.price}</li>
+          ))}
+        </ul>
+        Les mer om de ulike bryllupspakkene <NavLink to={`/${WeddingRoute}`}>her</NavLink>.
+      </PageSection>
+
+      <PageSection>
+        <div style={{ margin: "1rem 0" }}>
+          <ButtonLink className="call-to-action" to={`/${ContactRoute}`}>Trykk her for å booke!</ButtonLink>
+        </div>
       </PageSection>
 
       <PageSection innerClassName="Prices__Section">
@@ -157,14 +118,6 @@ export function PricesServices() {
           </div>
         </div>
       </PageSection>
-      <PageSection>
-        <PortfolioBrowser>
-          {priceSections.map((p) => (
-            <PortfolioCard key={p.link} {...p} />
-          ))}
-        </PortfolioBrowser>
-      </PageSection>
-
       <PageSection>
         <div className="Prices__BottomSection">
           <div className="Prices__TextIntroHeader">

@@ -5,6 +5,7 @@
 .Prices__CategoryNav {
   text-decoration: none;
 }
+
 .Prices__CategoryNav:hover {
   opacity: 80%;
 }
@@ -38,11 +39,9 @@
   color: white;
 }
 
-.Prices__Category_PriceImg:hover {
-}
+.Prices__Category_PriceImg:hover {}
 
-.Prices__Category_PriceTextBox {
-}
+.Prices__Category_PriceTextBox {}
 
 .Prices__Category_PriceHeader {
   font-size: 1.5em;
@@ -57,6 +56,7 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .Prices__Category_PriceHeader:hover {
   color: grey;
 }
@@ -89,27 +89,33 @@
   gap: 5px;
   justify-content: center;
 }
+
 .Prices__ServicesImg {
   width: 50%;
   margin-left: 10px;
 }
+
 .Prices__ServicesRow {
   position: relative;
 }
+
 .container:focus-within,
 .container:focus {
   opacity: 0;
 }
-.container:focus-within + .content,
-.container:focus + .content {
+
+.container:focus-within+.content,
+.container:focus+.content {
   display: initial;
 }
+
 .container {
   display: flex;
   flex-flow: column;
   gap: 10px;
   width: 500px;
 }
+
 .btn {
   border: 1px #888;
   border-radius: 4px;
@@ -124,6 +130,7 @@
   color: inherit;
   text-decoration: inherit;
 }
+
 .backdrop {
   width: 20px;
   max-width: calc(100% + 20px);
@@ -134,39 +141,46 @@
   height: 100%;
   z-index: 1;
   border-radius: 4px;
-  clip-path: polygon(
-    0% 0%,
-    calc(100% - 5px) 0%,
-    100% 50%,
-    calc(100% - 5px) 100%,
-    0% 100%
-  );
+  clip-path: polygon(0% 0%,
+      calc(100% - 5px) 0%,
+      100% 50%,
+      calc(100% - 5px) 100%,
+      0% 100%);
 }
+
 .color1 {
   background-color: var(--dark-orange);
 }
+
 .color2 {
   background-color: var(--green);
 }
+
 .color3 {
   background-color: var(--blue);
 }
+
 .color4 {
   background-color: var(--dark-pink);
 }
+
 .color5 {
   background-color: var(--light-orange);
 }
+
 .color6 {
   background-color: var(--light-pink);
 }
+
 .color7 {
   background-color: var(--lightblue);
 }
+
 .btn:hover .backdrop {
   width: 100%;
   clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
 }
+
 .text {
   position: relative;
   z-index: 2;
@@ -226,8 +240,8 @@
   padding-bottom: 10px;
 }
 
-.Prices__TabsProducts {
-}
+.Prices__TabsProducts {}
+
 .Prices__TabsContentPriceKidsCopies {
   text-align: right;
   font-weight: 500;
@@ -347,8 +361,7 @@
   flex-flow: column;
 }
 
-.ProductPriceSection__Text {
-}
+.ProductPriceSection__Text {}
 
 .ButtonText {
   margin-left: 70px;
@@ -422,10 +435,12 @@
   margin-bottom: 5px;
   font-family: nunito;
 }
+
 .Prices__TextIntro {
   font-family: nunito;
   margin-bottom: 5px;
 }
+
 .Prices__WeddingPackageSection {
   display: flex;
   align-items: flex-start;
@@ -483,7 +498,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.CompanyPrice__Info > * {
+.CompanyPrice__Info>* {
   justify-self: start;
 }
 
@@ -713,10 +728,15 @@
   min-height: 250px;
 }
 
+.call-to-action {
+  background-color: var(--lightgreen);
+}
+
 @media only screen and (max-width: 600px) {
   .ProductPriceSection--reverse {
     margin-top: 20px;
   }
+
   .Prices__TextIntro {
     font-size: 0.9em;
   }
@@ -849,8 +869,7 @@
     width: 100%;
   }
 
-  .ProductPriceSection {
-  }
+  .ProductPriceSection {}
 
   .Prices__Header {
     display: flex;
@@ -950,6 +969,7 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .category-title-offers {
     font-size: 1.25em;
     text-align: left;
@@ -957,6 +977,7 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .prices-offers-next-free-date-box {
     width: 100%;
     padding-left: 30px;
@@ -970,19 +991,24 @@
   .ProductPriceSection__ImgSection {
     width: 100%;
   }
+
   .ProductPriceSection__Textbox {
     width: 100%;
   }
+
   .ProductPriceSection__ContentBox {
     position: relative;
   }
+
   .ProductPriceSection__ContentText {
     width: 50%;
   }
+
   .ProductPriceSection__ContentPrice {
     text-align: right;
     width: 50%;
   }
+
   .ProductPriceSection__Price {
     width: auto;
   }
@@ -1013,6 +1039,7 @@
   .ProductPriceSection--reverse {
     flex-flow: column-reverse;
   }
+
   .Prices__TabsContentHeaderBox {
     flex-flow: column;
   }
@@ -1020,12 +1047,15 @@
   .Prices__TabsContentPriceKidsCopies {
     text-align: left;
   }
+
   .Prices__TabsContentPricePortraitWallphotos {
     text-align: left;
   }
+
   .Prices__TabsContentPriceFamilyAlbum {
     text-align: left;
   }
+
   .Prices__TabsContentPriceDesign {
     text-align: left;
   }
@@ -1052,8 +1082,7 @@
     width: 50;
   }
 
-  .ProductPriceSection__ImgSection {
-  }
+  .ProductPriceSection__ImgSection {}
 
   .Prices__ServicesImg {
     object-fit: cover;
