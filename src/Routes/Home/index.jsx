@@ -103,25 +103,6 @@ export function Home() {
           </div>
         </div>
       </PageSection>
-      <PageSection>
-        <div className="Home__IncludedSection">
-          <div className="Home__IncludesText">
-            Du kan booke kun fotografering, eller velge en pakkepris med
-            bildeprodukter inkludert
-          </div>
-          <div className="Home__IncludesSubtext">
-            (unntak er bryllupsfotografering og gratis gravidfotografering)
-          </div>
-          <br />
-          <div className="Home__IncludesSpecialText">
-            Samtykker du til at jeg kan bruke bildene til markedsføring får du
-            30% rabatt på ordinær fotografering.{" "}
-          </div>
-          <div className="Home__IncludesSubtext">
-            (Gjelder ikke bryllup, pakkepriser eller minifotografering)
-          </div>
-        </div>
-      </PageSection>
 
       <PageSection
         outerClassName="regular-discounts-outer"
